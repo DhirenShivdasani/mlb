@@ -1,0 +1,31 @@
+name: Update Data
+
+on:
+  schedule:
+    - cron: '*/2 * * * *'
+  workflow_dispatch:
+  
+jobs:
+  update_data:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Set this to your required Python version
+    - name: Run mlb_props.py
+      run: python mlb_props.py
+    - name: Stash changes
+      run: git stash push -u
+    - name: Pull changes from the remote repository
+      run: git pull --rebase
+    - name: Pop stashed changes
+      run: git stash pop
+    - name: Commit and push if there are changes
+      run: |
+        git config user.email "dhiren3102@gmail.com"
+        git config user.name "DhirenShivdasani"
+        git add .
+        git commit -m "Automated data update" -a || exit 0  # '-a' to include all changes
+        git push https://${{ secrets.MLB_SECRET }}@github.com/DhirenShivdasani/mlb.git main
