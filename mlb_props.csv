@@ -89,8 +89,8 @@ Bryan Ramos,CWS,CLE,bases,Over,(0.5) -145,,(0.5) -145
 Bryan Ramos,CWS,CLE,bases,Under,(0.5) 110,,(0.5) 110
 Bryan Ramos,CWS,CLE,runs,Over,(0.5) 205,,(0.5) 200
 Bryan Ramos,CWS,CLE,runs,Under,(0.5) -285,,(0.5) -275
-Cal Quantrill,COL,SF,strikeouts,Over,(3.5) -135,(3.5) -130,(3.5) -140
-Cal Quantrill,COL,SF,strikeouts,Under,(3.5) 110,(3.5) 102,(3.5) 105
+Cal Quantrill,COL,SF,strikeouts,Over,(3.5) -135,(3.5) -122,(3.5) -140
+Cal Quantrill,COL,SF,strikeouts,Under,(3.5) 110,(3.5) -104,(3.5) 105
 Cal Raleigh,SEA,@MIN,bases,Over,(0.5) -145,,(0.5) -145
 Cal Raleigh,SEA,@MIN,bases,Under,(0.5) 110,,(0.5) 110
 Cal Raleigh,SEA,@MIN,runs,Over,(0.5) 160,,(0.5) 160
@@ -194,7 +194,7 @@ Gleyber Torres,NYY,HOU,bases,Under,(0.5) 140,,(0.5) 140
 Gleyber Torres,NYY,HOU,runs,Over,(0.5) 150,,(0.5) 150
 Gleyber Torres,NYY,HOU,runs,Under,(0.5) -205,,(0.5) -200
 Hunter Greene,CIN,ARI,strikeouts,Over,(6.5) -105,(6.5) -102,(6.5) -110
-Hunter Greene,CIN,ARI,strikeouts,Under,(6.5) -125,(6.5) -126,(6.5) -120
+Hunter Greene,CIN,ARI,strikeouts,Under,(6.5) -125,(6.5) -124,(6.5) -120
 Hunter Renfroe,KC,@LAA,bases,Over,(0.5) -185,,(0.5) -185
 Hunter Renfroe,KC,@LAA,bases,Under,(0.5) 140,,(0.5) 140
 Hunter Renfroe,KC,@LAA,runs,Over,(0.5) 135,,(0.5) 135
@@ -295,8 +295,8 @@ Jung Hoo Lee,SF,@COL,bases,Over,(1.5) -125,,(1.5) -120
 Jung Hoo Lee,SF,@COL,bases,Under,(1.5) -105,,(1.5) -105
 Jung Hoo Lee,SF,@COL,runs,Over,(0.5) -115,,(0.5) -110
 Jung Hoo Lee,SF,@COL,runs,Under,(0.5) -115,,(0.5) -115
-Keaton Winn,SF,@COL,strikeouts,Over,(4.5) -110,(4.5) -113,(4.5) -105
-Keaton Winn,SF,@COL,strikeouts,Under,(4.5) -115,(4.5) -113,(4.5) -125
+Keaton Winn,SF,@COL,strikeouts,Over,(4.5) -110,(4.5) -108,(4.5) -105
+Keaton Winn,SF,@COL,strikeouts,Under,(4.5) -115,(4.5) -120,(4.5) -125
 Ketel Marte,ARI,@CIN,bases,Over,(1.5) 110,,(1.5) 115
 Ketel Marte,ARI,@CIN,bases,Under,(1.5) -150,,(1.5) -150
 Ketel Marte,ARI,@CIN,runs,Over,(0.5) -110,,(0.5) -110
@@ -321,8 +321,8 @@ Lars Nootbaar,STL,@MIL,bases,Over,(1.5) 125,,(1.5) 125
 Lars Nootbaar,STL,@MIL,bases,Under,(1.5) -165,,(1.5) -160
 Lars Nootbaar,STL,@MIL,runs,Over,(0.5) 100,,(0.5) 100
 Lars Nootbaar,STL,@MIL,runs,Under,(0.5) -130,,(0.5) -130
-Logan Gilbert,SEA,@MIN,strikeouts,Over,(6.5) -115,(6.5) -104,(6.5) -115
-Logan Gilbert,SEA,@MIN,strikeouts,Under,(6.5) -110,(6.5) -122,(6.5) -115
+Logan Gilbert,SEA,@MIN,strikeouts,Over,(6.5) -110,(6.5) -104,(6.5) -115
+Logan Gilbert,SEA,@MIN,strikeouts,Under,(6.5) -115,(6.5) -120,(6.5) -115
 Logan O'Hoppe,LAA,KC,bases,Over,(1.5) 120,,(1.5) 120
 Logan O'Hoppe,LAA,KC,bases,Under,(1.5) -160,,(1.5) -155
 Logan O'Hoppe,LAA,KC,runs,Over,(0.5) 125,,(0.5) 125
@@ -339,8 +339,8 @@ Maikel Garcia,KC,@LAA,bases,Over,(1.5) 100,,(1.5) 105
 Maikel Garcia,KC,@LAA,bases,Under,(1.5) -130,,(1.5) -135
 Maikel Garcia,KC,@LAA,runs,Over,(0.5) -115,,(0.5) -115
 Maikel Garcia,KC,@LAA,runs,Under,(0.5) -115,,(0.5) -110
-Marcus Stroman,NYY,HOU,strikeouts,Over,(4.5) 115,(4.5) 116,(4.5) 125
-Marcus Stroman,NYY,HOU,strikeouts,Under,(4.5) -145,(4.5) -146,(4.5) -160
+Marcus Stroman,NYY,HOU,strikeouts,Over,(4.5) 115,(4.5) 114,(4.5) 125
+Marcus Stroman,NYY,HOU,strikeouts,Under,(4.5) -145,(4.5) -144,(4.5) -160
 Masyn Winn,STL,@MIL,bases,Over,(0.5) -185,,(0.5) -185
 Masyn Winn,STL,@MIL,bases,Under,(0.5) 140,,(0.5) 140
 Masyn Winn,STL,@MIL,runs,Over,(0.5) 160,,(0.5) 160
@@ -407,8 +407,8 @@ Oswaldo Cabrera,NYY,HOU,bases,Over,(0.5) -130,,(0.5) -125
 Oswaldo Cabrera,NYY,HOU,bases,Under,(0.5) 100,,(0.5) -105
 Oswaldo Cabrera,NYY,HOU,runs,Over,(0.5) 160,,(0.5) 165
 Oswaldo Cabrera,NYY,HOU,runs,Under,(0.5) -220,,(0.5) -225
-Pablo Lopez,MIN,SEA,strikeouts,Over,(8.5) 135,(7.5) -146,(8.5) 120
-Pablo Lopez,MIN,SEA,strikeouts,Under,(8.5) -175,(7.5) 114,(8.5) -160
+Pablo Lopez,MIN,SEA,strikeouts,Over,(8.5) 135,(7.5) -148,(8.5) 120
+Pablo Lopez,MIN,SEA,strikeouts,Under,(8.5) -175,(7.5) 116,(8.5) -160
 Paul DeJong,CWS,CLE,bases,Over,(0.5) -120,,(0.5) -120
 Paul DeJong,CWS,CLE,bases,Under,(0.5) -110,,(0.5) -110
 Paul DeJong,CWS,CLE,runs,Over,(0.5) 215,,(0.5) 210
@@ -419,8 +419,8 @@ Rhys Hoskins,MIL,STL,bases,Over,(0.5) -165,,(0.5) -155
 Rhys Hoskins,MIL,STL,bases,Under,(0.5) 120,,(0.5) 120
 Rhys Hoskins,MIL,STL,runs,Over,(0.5) 170,,(0.5) 165
 Rhys Hoskins,MIL,STL,runs,Under,(0.5) -230,,(0.5) -225
-Ronel Blanco,HOU,@NYY,strikeouts,Over,(4.5) -145,(4.5) -148,(5.5) 125
-Ronel Blanco,HOU,@NYY,strikeouts,Under,(4.5) 115,(4.5) 118,(5.5) 125
+Ronel Blanco,HOU,@NYY,strikeouts,Over,(4.5) -145,(4.5) -138,(5.5) 125
+Ronel Blanco,HOU,@NYY,strikeouts,Under,(4.5) 115,(4.5) 108,(5.5) 125
 Ryan Jeffers,MIN,SEA,bases,Over,(0.5) -185,,(0.5) -185
 Ryan Jeffers,MIN,SEA,bases,Under,(0.5) 140,,(0.5) 140
 Ryan Jeffers,MIN,SEA,runs,Over,(0.5) 145,,(0.5) 145
@@ -443,8 +443,8 @@ Santiago Espinal,CIN,ARI,runs,Over,(0.5) 140,,(0.5) 145
 Santiago Espinal,CIN,ARI,runs,Under,(0.5) -190,,(0.5) -190
 Slade Cecconi,ARI,@CIN,strikeouts,Over,(4.5) 120,(4.5) 122,(4.5) 105
 Slade Cecconi,ARI,@CIN,strikeouts,Under,(4.5) -150,(4.5) -156,(4.5) -140
-Sonny Gray,STL,@MIL,strikeouts,Over,(6.5) -115,(6.5) -104,(6.5) -125
-Sonny Gray,STL,@MIL,strikeouts,Under,(6.5) -110,(6.5) -122,(6.5) -105
+Sonny Gray,STL,@MIL,strikeouts,Over,(6.5) -115,(6.5) -104,(6.5) -105
+Sonny Gray,STL,@MIL,strikeouts,Under,(6.5) -110,(6.5) -122,(6.5) -125
 Spencer Steer,CIN,ARI,bases,Over,(1.5) 110,,(1.5) 110
 Spencer Steer,CIN,ARI,bases,Under,(1.5) -145,,(1.5) -145
 Spencer Steer,CIN,ARI,runs,Over,(0.5) -115,,(0.5) -120
