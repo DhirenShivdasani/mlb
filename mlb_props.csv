@@ -83,7 +83,7 @@ Austin Martin,MIN,@TOR,runs,Over,(0.5) 185,,
 Austin Martin,MIN,@TOR,runs,Under,(0.5) -255,,
 Austin Riley,ATL,@NYM,bases,Over,(1.5) 140,,(1.5) 140
 Austin Riley,ATL,@NYM,bases,Under,(1.5) -185,,(1.5) -185
-Austin Riley,ATL,@NYM,runs,Over,(0.5) ,,(0.5) 115
+Austin Riley,ATL,@NYM,runs,Over,(0.5) 115,,(0.5) 115
 Austin Riley,ATL,@NYM,runs,Under,(0.5) -155,,(0.5) -150
 Austin Slater,SF,CIN,bases,Over,(0.5) -190,,
 Austin Slater,SF,CIN,bases,Under,(0.5) 140,,
@@ -661,8 +661,8 @@ Leody Taveras,TEX,@COL,bases,Over,(1.5) 135,,(1.5) 135
 Leody Taveras,TEX,@COL,bases,Under,(1.5) -180,,(1.5) -175
 Leody Taveras,TEX,@COL,runs,Over,(0.5) 125,,(0.5) 125
 Leody Taveras,TEX,@COL,runs,Under,(0.5) -165,,(0.5) -160
-Logan O'Hoppe,LAA,KC,bases,Over,(1.5) 145,,(1.5) 145
-Logan O'Hoppe,LAA,KC,bases,Under,(1.5) -195,,(1.5) -190
+Logan O'Hoppe,LAA,KC,bases,Over,(0.5) -195,,(1.5) 145
+Logan O'Hoppe,LAA,KC,bases,Under,(0.5) 145,,(1.5) -190
 Logan O'Hoppe,LAA,KC,runs,Over,(0.5) 145,,(0.5) 145
 Logan O'Hoppe,LAA,KC,runs,Under,(0.5) -195,,(0.5) -190
 Logan Webb,SF,CIN,strikeouts,Over,(5.5) 115,(5.5) 112,
@@ -873,8 +873,8 @@ Randy Arozarena,TB,NYY,bases,Over,(0.5) -165,,(0.5) -160
 Randy Arozarena,TB,NYY,bases,Under,(0.5) 125,,(0.5) 125
 Randy Arozarena,TB,NYY,runs,Over,(0.5) 140,,(0.5) 140
 Randy Arozarena,TB,NYY,runs,Under,(0.5) -190,,(0.5) -190
-Ranger Suarez,PHI,@MIA,strikeouts,Over,(5.5) 105,(5.5) 132,(5.5) 105
-Ranger Suarez,PHI,@MIA,strikeouts,Under,(5.5) -135,(5.5) -170,(5.5) -135
+Ranger Suarez,PHI,@MIA,strikeouts,Over,(5.5) 105,(5.5) 130,(5.5) 105
+Ranger Suarez,PHI,@MIA,strikeouts,Under,(5.5) -135,(5.5) -166,(5.5) -135
 Rhys Hoskins,MIL,STL,bases,Over,(1.5) 130,,
 Rhys Hoskins,MIL,STL,bases,Under,(1.5) -170,,
 Rhys Hoskins,MIL,STL,runs,Over,(0.5) 105,,
