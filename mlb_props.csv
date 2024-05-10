@@ -113,8 +113,8 @@ Brandon Nimmo,NYM,ATL,bases,Over,(0.5) -160,,(0.5) -160
 Brandon Nimmo,NYM,ATL,bases,Under,(0.5) 120,,(0.5) 120
 Brandon Nimmo,NYM,ATL,runs,Over,(0.5) 125,,(0.5) 125
 Brandon Nimmo,NYM,ATL,runs,Under,(0.5) -170,,(0.5) -165
-Brandon Pfaadt,ARI,@BAL,strikeouts,Over,(5.5) 125,(4.5) -150,(5.5) 120
-Brandon Pfaadt,ARI,@BAL,strikeouts,Under,(5.5) -155,(4.5) 118,(5.5) -160
+Brandon Pfaadt,ARI,@BAL,strikeouts,Over,(5.5) 125,(4.5) -148,(5.5) 120
+Brandon Pfaadt,ARI,@BAL,strikeouts,Under,(5.5) -155,(4.5) 116,(5.5) -160
 Brayan Rocchio,CLE,@CWS,bases,Over,(0.5) -190,,(0.5) -190
 Brayan Rocchio,CLE,@CWS,bases,Under,(0.5) 145,,(0.5) 145
 Brayan Rocchio,CLE,@CWS,runs,Over,(0.5) 130,,(0.5) 130
@@ -173,8 +173,8 @@ Cal Raleigh,SEA,OAK,bases,Over,(0.5) -145,,
 Cal Raleigh,SEA,OAK,bases,Under,(0.5) 110,,
 Cal Raleigh,SEA,OAK,runs,Over,(0.5) 140,,
 Cal Raleigh,SEA,OAK,runs,Under,(0.5) -190,,
-Carlos Carrasco,CLE,@CWS,strikeouts,Over,(4.5) 105,(4.5) -111,(4.5) 100
-Carlos Carrasco,CLE,@CWS,strikeouts,Under,(4.5) -135,(4.5) -115,(4.5) -135
+Carlos Carrasco,CLE,@CWS,strikeouts,Over,(4.5) 105,(4.5) 100,(4.5) 100
+Carlos Carrasco,CLE,@CWS,strikeouts,Under,(4.5) -135,(4.5) -128,(4.5) -135
 Carlos Correa,MIN,@TOR,bases,Over,(1.5) 105,,(1.5) 105
 Carlos Correa,MIN,@TOR,bases,Under,(1.5) -140,,(1.5) -140
 Carlos Correa,MIN,@TOR,runs,Over,(0.5) 115,,(0.5) 115
@@ -201,8 +201,8 @@ Charlie Blackmon,COL,TEX,bases,Over,(1.5) 100,,(1.5) 100
 Charlie Blackmon,COL,TEX,bases,Under,(1.5) -130,,(1.5) -135
 Charlie Blackmon,COL,TEX,runs,Over,(0.5) 110,,(0.5) 110
 Charlie Blackmon,COL,TEX,runs,Under,(0.5) -145,,(0.5) -140
-Charlie Morton,ATL,@NYM,strikeouts,Over,(6.5) 115,(5.5) -140,(5.5) -145
-Charlie Morton,ATL,@NYM,strikeouts,Under,(6.5) -150,(5.5) 110,(5.5) 110
+Charlie Morton,ATL,@NYM,strikeouts,Over,(6.5) 115,(5.5) -138,(5.5) -145
+Charlie Morton,ATL,@NYM,strikeouts,Under,(6.5) -150,(5.5) 108,(5.5) 110
 Christian Vazquez,MIN,@TOR,bases,Over,(0.5) -185,,(0.5) -190
 Christian Vazquez,MIN,@TOR,bases,Under,(0.5) 135,,(0.5) 140
 Christian Vazquez,MIN,@TOR,runs,Over,(0.5) 205,,(0.5) 200
@@ -345,8 +345,8 @@ Garrett Cooper,BOS,WSH,bases,Over,(1.5) 135,,(1.5) 130
 Garrett Cooper,BOS,WSH,bases,Under,(1.5) -180,,(1.5) -165
 Garrett Cooper,BOS,WSH,runs,Over,(0.5) 135,,(0.5) 135
 Garrett Cooper,BOS,WSH,runs,Under,(0.5) -185,,(0.5) -175
-Garrett Crochet,CWS,CLE,strikeouts,Over,(6.5) 125,(6.5) 112,(6.5) 120
-Garrett Crochet,CWS,CLE,strikeouts,Under,(6.5) -155,(6.5) -142,(6.5) -160
+Garrett Crochet,CWS,CLE,strikeouts,Over,(6.5) 125,(6.5) 116,(6.5) 120
+Garrett Crochet,CWS,CLE,strikeouts,Under,(6.5) -155,(6.5) -148,(6.5) -160
 Gary Sanchez,MIL,STL,bases,Over,(0.5) -170,,
 Gary Sanchez,MIL,STL,bases,Under,(0.5) 130,,
 Gary Sanchez,MIL,STL,runs,Over,(0.5) 125,,
@@ -371,8 +371,8 @@ Gleyber Torres,NYY,@TB,bases,Over,(1.5) 145,,(1.5) 145
 Gleyber Torres,NYY,@TB,bases,Under,(1.5) -195,,(1.5) -190
 Gleyber Torres,NYY,@TB,runs,Over,(0.5) 145,,(0.5) 145
 Gleyber Torres,NYY,@TB,runs,Under,(0.5) -195,,(0.5) -190
-Griffin Canning,LAA,KC,strikeouts,Over,(4.5) -140,(4.5) -108,(4.5) -125
-Griffin Canning,LAA,KC,strikeouts,Under,(4.5) 110,(4.5) -118,(4.5) -105
+Griffin Canning,LAA,KC,strikeouts,Over,(4.5) -140,(4.5) -116,(4.5) -125
+Griffin Canning,LAA,KC,strikeouts,Under,(4.5) 110,(4.5) -110,(4.5) -105
 Gunnar Henderson,BAL,ARI,bases,Over,(1.5) 110,,(1.5) 115
 Gunnar Henderson,BAL,ARI,bases,Under,(1.5) -150,,(1.5) -150
 Gunnar Henderson,BAL,ARI,runs,Over,(0.5) -105,,(0.5) -105
@@ -557,8 +557,8 @@ Jose Miranda,MIN,@TOR,bases,Over,(1.5) 120,,(1.5) 120
 Jose Miranda,MIN,@TOR,bases,Under,(1.5) -160,,(1.5) -155
 Jose Miranda,MIN,@TOR,runs,Over,(0.5) 140,,(0.5) 135
 Jose Miranda,MIN,@TOR,runs,Under,(0.5) -190,,(0.5) -185
-Jose Quintana,NYM,ATL,strikeouts,Over,(3.5) -165,(3.5) -134,(3.5) -165
-Jose Quintana,NYM,ATL,strikeouts,Under,(3.5) 130,(3.5) 106,(3.5) 125
+Jose Quintana,NYM,ATL,strikeouts,Over,(3.5) -165,(3.5) -152,(3.5) -165
+Jose Quintana,NYM,ATL,strikeouts,Under,(3.5) 130,(3.5) 120,(3.5) 125
 Jose Ramirez,CLE,@CWS,bases,Over,(1.5) 100,,(1.5) 105
 Jose Ramirez,CLE,@CWS,bases,Under,(1.5) -135,,(1.5) -135
 Jose Ramirez,CLE,@CWS,runs,Over,(0.5) 100,,(0.5) 105
