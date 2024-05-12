@@ -79,8 +79,8 @@ Austin Riley,ATL,@NYM,bases,Over,(1.5) 130,,(1.5) 130
 Austin Riley,ATL,@NYM,bases,Under,(1.5) -175,,(1.5) -175
 Austin Riley,ATL,@NYM,runs,Over,(0.5) 115,,(0.5) 115
 Austin Riley,ATL,@NYM,runs,Under,(0.5) -155,,(0.5) -155
-Bailey Falter,PIT,CHC,strikeouts,Over,(4.5) 105,(4.5) 110,(4.5) 110
-Bailey Falter,PIT,CHC,strikeouts,Under,(4.5) -135,(4.5) -140,(4.5) -140
+Bailey Falter,PIT,CHC,strikeouts,Over,(4.5) 105,(4.5) 130,(4.5) 110
+Bailey Falter,PIT,CHC,strikeouts,Under,(4.5) -135,(4.5) -166,(4.5) -140
 Bailey Ober,MIN,@TOR,strikeouts,Over,(4.5) -135,(4.5) -136,(4.5) -140
 Bailey Ober,MIN,@TOR,strikeouts,Under,(4.5) 105,(4.5) 106,(4.5) 110
 Ben Rortvedt,TB,NYY,bases,Over,(0.5) -105,,
@@ -321,8 +321,8 @@ Francisco Lindor,NYM,ATL,bases,Over,(1.5) 115,,(1.5) 115
 Francisco Lindor,NYM,ATL,bases,Under,(1.5) -150,,(1.5) -150
 Francisco Lindor,NYM,ATL,runs,Over,(0.5) 105,,(0.5) 105
 Francisco Lindor,NYM,ATL,runs,Under,(0.5) -135,,(0.5) -135
-Frankie Montas,CIN,@SF,strikeouts,Over,(4.5) -110,(4.5) -108,(4.5) 100
-Frankie Montas,CIN,@SF,strikeouts,Under,(4.5) -115,(4.5) -118,(4.5) -130
+Frankie Montas,CIN,@SF,strikeouts,Over,(4.5) -110,(4.5) -102,(4.5) 100
+Frankie Montas,CIN,@SF,strikeouts,Under,(4.5) -115,(4.5) -125,(4.5) -130
 Freddie Freeman,LAD,@SD,bases,Over,(1.5) 110,,(1.5) 110
 Freddie Freeman,LAD,@SD,bases,Under,(1.5) -150,,(1.5) -145
 Freddie Freeman,LAD,@SD,runs,Over,(0.5) 100,,(0.5) 100
@@ -557,8 +557,8 @@ Jose Trevino,NYY,@TB,bases,Over,(0.5) -195,,
 Jose Trevino,NYY,@TB,bases,Under,(0.5) 145,,
 Jose Trevino,NYY,@TB,runs,Over,(0.5) 180,,
 Jose Trevino,NYY,@TB,runs,Under,(0.5) -250,,
-Jose Urena,TEX,@COL,strikeouts,Over,(3.5) -130,(3.5) -138,
-Jose Urena,TEX,@COL,strikeouts,Under,(3.5) 105,(3.5) 108,
+Jose Urena,TEX,@COL,strikeouts,Over,(3.5) -130,(3.5) -128,
+Jose Urena,TEX,@COL,strikeouts,Under,(3.5) 105,(3.5) 100,
 Josh Bell,MIA,PHI,bases,Over,(0.5) -170,,(0.5) -160
 Josh Bell,MIA,PHI,bases,Under,(0.5) 125,,(0.5) 125
 Josh Bell,MIA,PHI,runs,Over,(0.5) 165,,(0.5) 165
@@ -613,10 +613,10 @@ Korey Lee,CWS,CLE,bases,Over,(0.5) -195,,
 Korey Lee,CWS,CLE,bases,Under,(0.5) 145,,
 Korey Lee,CWS,CLE,runs,Over,(0.5) 150,,
 Korey Lee,CWS,CLE,runs,Under,(0.5) -200,,
-Kyle Harrison,SF,CIN,strikeouts,Over,(4.5) -160,(4.5) -166,(4.5) -160
-Kyle Harrison,SF,CIN,strikeouts,Under,(4.5) 125,(4.5) 130,(4.5) 125
-Kyle Hendricks,CHC,@PIT,strikeouts,Over,(3.5) -120,(3.5) -138,(3.5) -120
-Kyle Hendricks,CHC,@PIT,strikeouts,Under,(3.5) -105,(3.5) 108,(3.5) -105
+Kyle Harrison,SF,CIN,strikeouts,Over,(4.5) -160,(4.5) -158,(4.5) -160
+Kyle Harrison,SF,CIN,strikeouts,Under,(4.5) 125,(4.5) 124,(4.5) 125
+Kyle Hendricks,CHC,@PIT,strikeouts,Over,(3.5) -120,(3.5) -132,(3.5) -120
+Kyle Hendricks,CHC,@PIT,strikeouts,Under,(3.5) -105,(3.5) 104,(3.5) -105
 Kyle Manzardo,CLE,@CWS,bases,Over,(0.5) -135,,
 Kyle Manzardo,CLE,@CWS,bases,Under,(0.5) 100,,
 Kyle Manzardo,CLE,@CWS,runs,Over,(0.5) 135,,
@@ -667,7 +667,7 @@ Luis Guillorme,LAA,KC,bases,Over,(0.5) -155,,
 Luis Guillorme,LAA,KC,bases,Under,(0.5) 115,,
 Luis Guillorme,LAA,KC,runs,Over,(0.5) 235,,
 Luis Guillorme,LAA,KC,runs,Under,(0.5) -330,,
-Luis Severino,NYM,ATL,strikeouts,Over,(5.5) 130,(4.5) -144,(5.5) 125
+Luis Severino,NYM,ATL,strikeouts,Over,(5.5) 130,(4.5) -142,(5.5) 125
 Luis Severino,NYM,ATL,strikeouts,Under,(5.5) -165,(4.5) 112,(5.5) -165
 Luis Urias,SEA,OAK,bases,Over,(0.5) -155,,
 Luis Urias,SEA,OAK,bases,Under,(0.5) 115,,
@@ -744,7 +744,7 @@ Michael Harris,ATL,@NYM,bases,Under,(1.5) -165,,(1.5) -160
 Michael Harris,ATL,@NYM,runs,Over,(0.5) 125,,(0.5) 130
 Michael Harris,ATL,@NYM,runs,Under,(0.5) -170,,(0.5) -165
 Michael Soroka,CWS,CLE,strikeouts,Over,(3.5) 100,(3.5) 104,
-Michael Soroka,CWS,CLE,strikeouts,Under,(3.5) -130,(3.5) -132,
+Michael Soroka,CWS,CLE,strikeouts,Under,(3.5) -130,(3.5) -130,
 Michael Taylor,PIT,CHC,bases,Over,(0.5) -105,,(0.5) -105
 Michael Taylor,PIT,CHC,bases,Under,(0.5) -125,,(0.5) -120
 Michael Taylor,PIT,CHC,runs,Over,(0.5) 200,,(0.5) 200
