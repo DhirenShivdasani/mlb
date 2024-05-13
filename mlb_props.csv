@@ -224,7 +224,7 @@ David Fry,CLE,@TEX,bases,Under,(0.5) 150,,(0.5) 150
 David Fry,CLE,@TEX,runs,Over,(0.5) 135,,(0.5) 135
 David Fry,CLE,@TEX,runs,Under,(0.5) -180,,(0.5) -175
 Dominic Smith,BOS,TB,bases,Over,(1.5) 140,,(1.5) 145
-Dominic Smith,BOS,TB,bases,Under,(1.5) -180,,(1.5) -190
+Dominic Smith,BOS,TB,bases,Under,(1.5) -190,,(1.5) -190
 Dominic Smith,BOS,TB,runs,Over,(0.5) 155,,(0.5) 160
 Dominic Smith,BOS,TB,runs,Under,(0.5) -215,,(0.5) -210
 Dylan Moore,SEA,KC,bases,Over,(0.5) -120,,(0.5) -120
@@ -303,8 +303,8 @@ George Springer,TOR,@BAL,bases,Over,(1.5) 120,,(1.5) 120
 George Springer,TOR,@BAL,bases,Under,(1.5) -155,,(1.5) -160
 George Springer,TOR,@BAL,runs,Over,(0.5) 120,,(0.5) 120
 George Springer,TOR,@BAL,runs,Under,(0.5) -160,,(0.5) -155
-Graham Ashcraft,CIN,@ARI,strikeouts,Over,(4.5) -105,(4.5) 110,(4.5) 100
-Graham Ashcraft,CIN,@ARI,strikeouts,Under,(4.5) -120,(4.5) -140,(4.5) -130
+Graham Ashcraft,CIN,@ARI,strikeouts,Over,(4.5) 100,(4.5) 110,(4.5) 100
+Graham Ashcraft,CIN,@ARI,strikeouts,Under,(4.5) -125,(4.5) -140,(4.5) -130
 Gunnar Henderson,BAL,TOR,bases,Over,(1.5) 105,,(1.5) 110
 Gunnar Henderson,BAL,TOR,bases,Under,(1.5) -140,,(1.5) -145
 Gunnar Henderson,BAL,TOR,runs,Over,(0.5) -130,,(0.5) -125
@@ -403,7 +403,7 @@ Jared Triolo,PIT,@MIL,runs,Over,(0.5) 160,,(0.5) 160
 Jared Triolo,PIT,@MIL,runs,Under,(0.5) -220,,(0.5) -210
 Jarren Duran,BOS,TB,bases,Over,(1.5) -130,,(1.5) -125
 Jarren Duran,BOS,TB,bases,Under,(1.5) -105,,(1.5) -105
-Jarren Duran,BOS,TB,runs,Over,(0.5) -115,,(0.5) -110
+Jarren Duran,BOS,TB,runs,Over,(0.5) -120,,(0.5) -110
 Jarren Duran,BOS,TB,runs,Under,(0.5) -115,,(0.5) -120
 Javier Baez,DET,MIA,bases,Over,(1.5) 145,,(1.5) 145
 Javier Baez,DET,MIA,bases,Under,(1.5) -195,,(1.5) -190
@@ -480,9 +480,9 @@ Jordan Beck,COL,@SD,runs,Under,(0.5) -300,,(0.5) -300
 Jordan Hicks,SF,LAD,strikeouts,Over,(3.5) -135,(4.5) 120,(3.5) -140
 Jordan Hicks,SF,LAD,strikeouts,Under,(3.5) 110,(4.5) -152,(3.5) 105
 Jordan Montgomery,ARI,CIN,strikeouts,Over,(4.5) 100,(4.5) -104,(4.5) 110
-Jordan Montgomery,ARI,CIN,strikeouts,Under,(4.5) -140,(4.5) -122,(4.5) -145
-Jordan Westburg,BAL,TOR,bases,Over,(1.5) 115,,(1.5) 115
-Jordan Westburg,BAL,TOR,bases,Under,(1.5) -150,,(1.5) -155
+Jordan Montgomery,ARI,CIN,strikeouts,Under,(4.5) -130,(4.5) -122,(4.5) -145
+Jordan Westburg,BAL,TOR,bases,Over,(1.5) 120,,(1.5) 115
+Jordan Westburg,BAL,TOR,bases,Under,(1.5) -155,,(1.5) -155
 Jordan Westburg,BAL,TOR,runs,Over,(0.5) 120,,(0.5) 120
 Jordan Westburg,BAL,TOR,runs,Under,(0.5) -160,,(0.5) -160
 Jorge Polanco,SEA,KC,bases,Over,(0.5) -145,,(0.5) -145
@@ -655,8 +655,8 @@ Matt Chapman,SF,LAD,bases,Over,(1.5) 130,,(1.5) 130
 Matt Chapman,SF,LAD,bases,Under,(1.5) -170,,(1.5) -175
 Matt Chapman,SF,LAD,runs,Over,(0.5) 140,,(0.5) 140
 Matt Chapman,SF,LAD,runs,Under,(0.5) -185,,(0.5) -185
-Matt Manning,DET,MIA,strikeouts,Over,(4.5) -105,(4.5) 102,(4.5) 100
-Matt Manning,DET,MIA,strikeouts,Under,(4.5) -125,(4.5) -130,(4.5) -130
+Matt Manning,DET,MIA,strikeouts,Over,(4.5) -105,(4.5) -106,(4.5) 100
+Matt Manning,DET,MIA,strikeouts,Under,(4.5) -125,(4.5) -120,(4.5) -130
 Matt Olson,ATL,CHC,bases,Over,(1.5) 125,,(1.5) 125
 Matt Olson,ATL,CHC,bases,Under,(1.5) -170,,(1.5) -160
 Matt Olson,ATL,CHC,runs,Over,(0.5) 105,,(0.5) 105
@@ -841,8 +841,8 @@ Ronald Acuna,ATL,CHC,bases,Over,(1.5) 105,,(1.5) 105
 Ronald Acuna,ATL,CHC,bases,Under,(1.5) -140,,(1.5) -140
 Ronald Acuna,ATL,CHC,runs,Over,(0.5) -125,,(0.5) -125
 Ronald Acuna,ATL,CHC,runs,Under,(0.5) -105,,(0.5) -105
-Ross Stripling,OAK,@HOU,strikeouts,Over,(3.5) 120,(3.5) 104,(3.5) 115
-Ross Stripling,OAK,@HOU,strikeouts,Under,(3.5) -150,(3.5) -132,(3.5) -150
+Ross Stripling,OAK,@HOU,strikeouts,Over,(3.5) 120,(3.5) 102,(3.5) 115
+Ross Stripling,OAK,@HOU,strikeouts,Under,(3.5) -150,(3.5) -130,(3.5) -150
 Ryan McMahon,COL,@SD,bases,Over,(1.5) 145,,(1.5) 145
 Ryan McMahon,COL,@SD,bases,Under,(1.5) -200,,(1.5) -200
 Ryan McMahon,COL,@SD,runs,Over,(0.5) 140,,(0.5) 140
@@ -891,10 +891,10 @@ Shohei Ohtani,LAD,@SF,runs,Over,(0.5) -165,,(0.5) -160
 Shohei Ohtani,LAD,@SF,runs,Under,(0.5) 125,,(0.5) 125
 Shota Imanaga,CHC,@ATL,strikeouts,Over,(5.5) 115,(5.5) -104,(5.5) 110
 Shota Imanaga,CHC,@ATL,strikeouts,Under,(5.5) -145,(5.5) -122,(5.5) -145
-Sixto Sanchez,MIA,@DET,strikeouts,Over,(3.5) 105,(3.5) 122,(3.5) 100
-Sixto Sanchez,MIA,@DET,strikeouts,Under,(3.5) -130,(3.5) -156,(3.5) -130
-Spencer Arrighetti,HOU,OAK,strikeouts,Over,(5.5) -150,(6.5) 122,(5.5) -155
-Spencer Arrighetti,HOU,OAK,strikeouts,Under,(5.5) 120,(6.5) -154,(5.5) 115
+Sixto Sanchez,MIA,@DET,strikeouts,Over,(3.5) 105,(3.5) 112,(3.5) 100
+Sixto Sanchez,MIA,@DET,strikeouts,Under,(3.5) -130,(3.5) -142,(3.5) -130
+Spencer Arrighetti,HOU,OAK,strikeouts,Over,(5.5) -150,(5.5) -146,(5.5) -155
+Spencer Arrighetti,HOU,OAK,strikeouts,Under,(5.5) 120,(5.5) 114,(5.5) 115
 Spencer Steer,CIN,@ARI,bases,Over,(1.5) -105,,(1.5) 100
 Spencer Steer,CIN,@ARI,bases,Under,(1.5) -125,,(1.5) -130
 Spencer Steer,CIN,@ARI,runs,Over,(0.5) 105,,(0.5) 105
@@ -925,7 +925,7 @@ Thairo Estrada,SF,LAD,bases,Over,(1.5) 130,,(1.5) 130
 Thairo Estrada,SF,LAD,bases,Under,(1.5) -175,,(1.5) -165
 Thairo Estrada,SF,LAD,runs,Over,(0.5) 135,,(0.5) 135
 Thairo Estrada,SF,LAD,runs,Under,(0.5) -180,,(0.5) -175
-Tomas Nido,NYM,PHI,bases,Over,(0.5) -120,,(0.5) -120
+Tomas Nido,NYM,PHI,bases,Over,(0.5) -130,,(0.5) -120
 Tomas Nido,NYM,PHI,bases,Under,(0.5) -110,,(0.5) -110
 Tomas Nido,NYM,PHI,runs,Over,(0.5) 275,,(0.5) 280
 Tomas Nido,NYM,PHI,runs,Under,(0.5) -400,,(0.5) -400
@@ -941,8 +941,8 @@ Travis d'Arnaud,ATL,CHC,bases,Over,(0.5) -165,,(0.5) -160
 Travis d'Arnaud,ATL,CHC,bases,Under,(0.5) 120,,(0.5) 125
 Travis d'Arnaud,ATL,CHC,runs,Over,(0.5) 150,,(0.5) 150
 Travis d'Arnaud,ATL,CHC,runs,Under,(0.5) -205,,(0.5) -200
-Trevor Williams,WSH,@CWS,strikeouts,Over,(3.5) -110,(3.5) -132,(3.5) -110
-Trevor Williams,WSH,@CWS,strikeouts,Under,(3.5) -115,(3.5) 104,(3.5) -115
+Trevor Williams,WSH,@CWS,strikeouts,Over,(3.5) -115,(3.5) -132,(3.5) -110
+Trevor Williams,WSH,@CWS,strikeouts,Under,(3.5) -110,(3.5) 104,(3.5) -115
 Trey Lipscomb,WSH,@CWS,bases,Over,(0.5) -205,,(0.5) -200
 Trey Lipscomb,WSH,@CWS,bases,Under,(0.5) 155,,(0.5) 155
 Trey Lipscomb,WSH,@CWS,runs,Over,(0.5) 150,,(0.5) 145
