@@ -126,7 +126,7 @@ Bryan Reynolds,PIT,@MIL,bases,Under,(1.5) -155,,(1.5) -155
 Bryan Reynolds,PIT,@MIL,runs,Over,(0.5) 100,,(0.5) 100
 Bryan Reynolds,PIT,@MIL,runs,Under,(0.5) -135,,(0.5) -135
 Bryce Harper,PHI,@NYM,bases,Over,(1.5) 145,,(1.5) 145
-Bryce Harper,PHI,@NYM,bases,Under,(1.5) -195,,(1.5) 145
+Bryce Harper,PHI,@NYM,bases,Under,(1.5) -195,,(1.5) -190
 Bryce Harper,PHI,@NYM,runs,Over,(0.5) 110,,(0.5) 105
 Bryce Harper,PHI,@NYM,runs,Under,(0.5) -145,,(0.5) -140
 Bryson Stott,PHI,@NYM,bases,Over,(0.5) -190,,(0.5) -190
@@ -190,7 +190,7 @@ Colton Cowser,BAL,TOR,bases,Under,(0.5) 115,,(0.5) 115
 Colton Cowser,BAL,TOR,runs,Over,(0.5) 150,,(0.5) 150
 Colton Cowser,BAL,TOR,runs,Under,(0.5) -200,,(0.5) -200
 Connor Joe,PIT,@MIL,bases,Over,(1.5) 145,,(1.5) 145
-Connor Joe,PIT,@MIL,bases,Under,(1.5) 155,,(1.5) 155
+Connor Joe,PIT,@MIL,bases,Under,(1.5) -195,,(1.5) -190
 Connor Joe,PIT,@MIL,runs,Over,(0.5) 140,,(0.5) 140
 Connor Joe,PIT,@MIL,runs,Under,(0.5) -185,,(0.5) -185
 Connor Wong,BOS,TB,bases,Over,(0.5) -185,,(0.5) -175
@@ -358,7 +358,7 @@ JJ Bleday,OAK,@HOU,bases,Under,(0.5) 125,,(0.5) 125
 JJ Bleday,OAK,@HOU,runs,Over,(0.5) 115,,(0.5) 115
 JJ Bleday,OAK,@HOU,runs,Under,(0.5) -155,,(0.5) -155
 Jack Suwinski,PIT,@MIL,bases,Over,(1.5) 130,,(1.5) 130
-Jack Suwinski,PIT,@MIL,bases,Under,(1.5) 130,,(1.5) 135
+Jack Suwinski,PIT,@MIL,bases,Under,(1.5) -175,,(1.5) -175
 Jack Suwinski,PIT,@MIL,runs,Over,(0.5) 120,,(0.5) 125
 Jack Suwinski,PIT,@MIL,runs,Under,(0.5) -165,,(0.5) -160
 Jackson Merrill,SD,COL,bases,Over,(1.5) 125,,(1.5) 125
@@ -537,8 +537,8 @@ Justin Turner,TOR,@BAL,bases,Over,(1.5) 140,,(1.5) 140
 Justin Turner,TOR,@BAL,bases,Under,(1.5) -190,,(1.5) -190
 Justin Turner,TOR,@BAL,runs,Over,(0.5) 135,,(0.5) 135
 Justin Turner,TOR,@BAL,runs,Under,(0.5) -180,,(0.5) -185
-Keibert Ruiz,WSH,@CWS,bases,Over,(1.5) 140,,(1.5) 140
-Keibert Ruiz,WSH,@CWS,bases,Under,(1.5) 145,,(1.5) 145
+Keibert Ruiz,WSH,@CWS,bases,Over,(0.5) -195,,(0.5) -190
+Keibert Ruiz,WSH,@CWS,bases,Under,(0.5) 145,,(0.5) 145
 Keibert Ruiz,WSH,@CWS,runs,Over,(0.5) 135,,(0.5) 140
 Keibert Ruiz,WSH,@CWS,runs,Under,(0.5) -185,,(0.5) -190
 Kerry Carpenter,DET,MIA,bases,Over,(1.5) 125,,(1.5) 125
@@ -745,8 +745,8 @@ Nick Gordon,MIA,@DET,bases,Over,(1.5) 155,,(1.5) 150
 Nick Gordon,MIA,@DET,bases,Under,(1.5) -205,,(1.5) -200
 Nick Gordon,MIA,@DET,runs,Over,(0.5) 170,,(0.5) 165
 Nick Gordon,MIA,@DET,runs,Under,(0.5) -230,,(0.5) -225
-Nick Senzel,WSH,@CWS,bases,Over,(1.5) 135,,(1.5) 135
-Nick Senzel,WSH,@CWS,bases,Under,(1.5) 140,,(1.5) 140
+Nick Senzel,WSH,@CWS,bases,Over,(0.5) -190,,(0.5) -185
+Nick Senzel,WSH,@CWS,bases,Under,(0.5) 140,,(0.5) 140
 Nick Senzel,WSH,@CWS,runs,Over,(0.5) 120,,(0.5) 120
 Nick Senzel,WSH,@CWS,runs,Under,(0.5) -160,,(0.5) -155
 Nicky Lopez,CWS,WSH,bases,Over,(0.5) -180,,(0.5) -165
@@ -1012,7 +1012,7 @@ William Contreras,MIL,PIT,bases,Under,(1.5) -145,,(1.5) -145
 William Contreras,MIL,PIT,runs,Over,(0.5) -105,,(0.5) -105
 William Contreras,MIL,PIT,runs,Under,(0.5) -125,,(0.5) -120
 Willy Adames,MIL,PIT,bases,Over,(1.5) 145,,(1.5) 145
-Willy Adames,MIL,PIT,bases,Under,(1.5) 150,,(1.5) 150
+Willy Adames,MIL,PIT,bases,Under,(1.5) -195,,(1.5) -190
 Willy Adames,MIL,PIT,runs,Over,(0.5) 125,,(0.5) 125
 Willy Adames,MIL,PIT,runs,Under,(0.5) -170,,(0.5) -165
 Wilmer Flores,SF,LAD,bases,Over,(0.5) -195,,(0.5) -190
