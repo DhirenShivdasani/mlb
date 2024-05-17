@@ -28,7 +28,7 @@ if response.status_code == 200:
             master_df['PlayerName'] = master_df['firstName'] + ' ' + master_df['lastName']
             master_df.drop(['firstName', 'lastName'], axis =1, inplace = True)
 
-sportsbooks = ['draftkings', 'fanduel', 'mgm', 'pointsbet']
+sportsbooks = ['draftkings', 'fanduel', 'mgm']
 props = ['strikeouts', 'bases', 'runs']
 
 # Flatten each prop for each sportsbook into separate DataFrames
