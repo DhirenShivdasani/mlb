@@ -25,8 +25,6 @@ jobs:
       run: python mlb_props.py
     - name: Pull changes from the remote repository
       run: git pull --rebase
-    - name: Pop stashed changes
-      run: git stash pop
     - name: Commit and push if there are changes
       run: |
         git config user.email "dhiren3102@gmail.com"
