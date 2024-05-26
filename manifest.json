@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "DFS Odds Comparison",
+    "description": "Compare prop bet odds from PrizePicks with FanDuel, BetMGM, and DraftKings.",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "host_permissions": [
+      "http://127.0.0.1:5000/",
+      "*://*.underdogfantasy.com/pick-em/higher-lower/all/mlb*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.underdogfantasy.com/pick-em/higher-lower/all/mlb*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}
