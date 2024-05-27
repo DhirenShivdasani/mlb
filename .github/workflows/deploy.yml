@@ -49,6 +49,9 @@ jobs:
       run: git fetch heroku
       
     - name: Pull Changes
+      run: git pull heroku main
+      
+    - name: Pull Changes
       run: git pull origin main
       
     - name: Deploy to Heroku
