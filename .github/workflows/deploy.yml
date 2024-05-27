@@ -1,8 +1,6 @@
 name: Deploy to Heroku
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Runs at midnight every day
   push:
     branches:
       - main
@@ -12,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v2
 
     - name: Set up Python
@@ -25,19 +23,18 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Update merged_data.csv
+    - name: Fetch Heroku repository
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: |
-        python merged_data.py # This script updates your merged_data.csv
+        git remote add heroku https://git.heroku.com/dfs-odds-extension.git
+        git fetch heroku
 
-    - name: Commit updated merged_data.csv
-      run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
-        git add merged_data.csv
-        git commit -m "Update merged_data.csv"
+    - name: Merge Heroku main branch
+      run: git merge heroku/main --allow-unrelated-histories
 
     - name: Deploy to Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: |
-        git push https://heroku:$HEROKU_API_KEY@git.heroku.com/dfs-odds-extension.git HEAD:main
+      run: git push heroku HEAD:main
+
