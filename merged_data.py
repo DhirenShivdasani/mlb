@@ -27,7 +27,8 @@ betting_odds_data['Prop'] = betting_odds_data['Prop'].map(prop_types)
 merged_data = pd.merge(betting_odds_data, prizepicks_data, left_on=['PlayerName', 'Prop'], right_on=['Name', 'Prop'], how='left')
 
 r = merged_data.drop(['Team', 'Name', 'Unnamed: 0'], axis =1)
+
 r =r.dropna(subset=['Value'])
-r = r.where(pd.notnull(r), None)
+r = r.where(pd.notnull(r), "None")
 
 r.to_csv('merged_data.csv')
