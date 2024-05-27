@@ -33,6 +33,9 @@ jobs:
     
     - name: Run mlb_props.py
       run: python mlb_props.py
+      
+    - name: Run merged_data.py
+      run: python merged_data.py
     
     - name: Pull changes from the remote repository
       run: |
