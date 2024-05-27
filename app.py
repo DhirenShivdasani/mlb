@@ -13,5 +13,4 @@ def get_merged_data():
     return jsonify(merged_data.to_dict(orient='records'))
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(debug=True)
