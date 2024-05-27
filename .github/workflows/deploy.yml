@@ -62,7 +62,7 @@ jobs:
         git pull origin main || echo "No changes to pull"
 
     - name: Unshallow the repository
-      run: git fetch --all --unshallow
+      run: git fetch --unshallow
 
     - name: Deploy to Heroku
       run: git push heroku main --force
