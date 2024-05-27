@@ -51,14 +51,15 @@ jobs:
     - name: Merge Heroku main branch
       run: git merge heroku/main --allow-unrelated-histories || true
 
-    - name: Pull Changes
-      run: git pull origin main
-
     - name: Handle Merge Conflicts
       run: |
-        git checkout --ours .
-        git add .
-        git commit -m "Resolved merge conflicts"
+        git diff --name-only --diff-filter=U | xargs git checkout --ours --
+        git add -A
+        git commit -m "Resolved merge conflicts" || echo "No conflicts to resolve"
+
+    - name: Pull Changes from Origin
+      run: |
+        git pull origin main || echo "No changes to pull"
 
     - name: Deploy to Heroku
       run: git push heroku HEAD:main --force
