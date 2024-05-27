@@ -23,8 +23,8 @@ jobs:
         pip install -r requirements.txt  # If you have a requirements.txt
     - name: Run mlb_props.py
       run: python mlb_props.py
-    - name: Run merged_props.py
-      run: python merged_props.py
+    - name: Run merged_data.py
+      run: python merged_data.py
     - name: Pull changes from the remote repository
       run: git pull --rebase
     - name: Commit and push if there are changes
