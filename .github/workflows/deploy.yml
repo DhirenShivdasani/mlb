@@ -48,8 +48,5 @@ jobs:
     - name: Fetch Heroku repository
       run: git fetch heroku
 
-    - name: Merge Heroku main branch
-      run: git merge heroku/main --allow-unrelated-histories
-
     - name: Deploy to Heroku
       run: git push heroku HEAD:main
