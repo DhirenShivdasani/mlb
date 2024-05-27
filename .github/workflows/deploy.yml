@@ -1,8 +1,6 @@
 name: Deploy to Heroku
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Runs at midnight every day
   push:
     branches:
       - main
@@ -12,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v2
 
     - name: Set up Python
@@ -25,19 +23,33 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Update merged_data.csv
-      run: |
-        python merged_data.py # This script updates your merged_data.csv
+    - name: Install Heroku CLI
+      run: curl https://cli-assets.heroku.com/install.sh | sh
 
-    - name: Commit updated merged_data.csv
-      run: |
-        git config --global user.email "you@example.com"
-        git config --global user.name "Your Name"
-        git add merged_data.csv
-        git commit -m "Update merged_data.csv"
-
-    - name: Deploy to Heroku
+    - name: Authenticate with Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: |
-        git push https://heroku:$HEROKU_API_KEY@git.heroku.com/dfs-odds-extension.git HEAD:main
+        echo "machine api.heroku.com" > ~/.netrc
+        echo "  login ${{ secrets.HEROKU_EMAIL }}" >> ~/.netrc
+        echo "  password ${{ secrets.HEROKU_API_KEY }}" >> ~/.netrc
+        echo "machine git.heroku.com" >> ~/.netrc
+        echo "  login ${{ secrets.HEROKU_EMAIL }}" >> ~/.netrc
+        echo "  password ${{ secrets.HEROKU_API_KEY }}" >> ~/.netrc
+
+    - name: Configure Git
+      run: |
+        git config --global user.email "dhiren3102@gmail.com"
+        git config --global user.name "DhirenShivdasani"
+
+    - name: Add Heroku remote
+      run: git remote add heroku https://git.heroku.com/dfs-odds-extension.git
+
+    - name: Fetch Heroku repository
+      run: git fetch heroku
+
+    - name: Merge Heroku main branch
+      run: git merge heroku/main --allow-unrelated-histories
+
+    - name: Deploy to Heroku
+      run: git push heroku HEAD:main
