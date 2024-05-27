@@ -59,7 +59,7 @@ jobs:
 
     - name: Pull Changes from Origin
       run: |
-        git pull origin main || echo "No changes to pull"
+        git pull heroku main || echo "No changes to pull"
 
     - name: Unshallow the repository
       run: git fetch --unshallow
