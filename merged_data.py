@@ -10,7 +10,7 @@ prizepicks_data = prizepicks_data[(prizepicks_data['Prop'] == 'Total Bases') |
                                   (prizepicks_data['Prop'] == 'Earned Runs Allowed')]
 prop_types= {
     'Pitcher Strikeouts': 'Strikeouts',
-    'Earned Runs Allowed': 'Runs',
+    'Earned Runs Allowed': 'Earned Runs Allowed',
     'Total Bases': 'Total Bases'# example of making an indirect relationship
     # Add other mappings as required
 }
@@ -18,7 +18,7 @@ prizepicks_data['Prop'] = prizepicks_data['Prop'].map(prop_types)
 
 prop_types= {
     'strikeouts': 'Strikeouts',
-    'runs': 'Runs', 
+    'runs': 'Earned Runs Allowed', 
     'bases': 'Total Bases'# example of making an indirect relationship
     # Add other mappings as required
 }
