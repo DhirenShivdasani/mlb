@@ -2,7 +2,7 @@ chrome.runtime.onInstalled.addListener(() => {
   console.log('Extension installed');
 
   // Load the merged data from your Flask server
-  fetch('http://127.0.0.1:5000/merged_data')
+  fetch('https://dfs-odds-extension-11be6b12d681.herokuapp.com/merged_data')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok ' + response.statusText);
