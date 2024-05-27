@@ -49,4 +49,4 @@ jobs:
       run: git fetch heroku
 
     - name: Deploy to Heroku
-      run: git push heroku HEAD:main
+      run: git push heroku main
