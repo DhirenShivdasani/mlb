@@ -1,6 +1,13 @@
 name: Update Data
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'mlb_props.py'
+      - 'requirements.txt'
+      - '.github/workflows/update_data.yml'  # Only run when these files change
   schedule:
     - cron: '0 * * * *'  # Runs every hour
   workflow_dispatch:
