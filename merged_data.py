@@ -7,10 +7,10 @@ prizepicks_data = pd.read_csv('test2.csv')
 
 prizepicks_data = prizepicks_data[(prizepicks_data['Prop'] == 'Total Bases') | 
                                   (prizepicks_data['Prop'] == 'Pitcher Strikeouts') | 
-                                  (prizepicks_data['Prop'] == 'Earned Runs Allowed')]
+                                  (prizepicks_data['Prop'] == 'Runs')]
 prop_types= {
     'Pitcher Strikeouts': 'Strikeouts',
-    'Earned Runs Allowed': 'Earned Runs Allowed',
+    'Runs': 'Runs',
     'Total Bases': 'Total Bases'# example of making an indirect relationship
     # Add other mappings as required
 }
@@ -18,7 +18,7 @@ prizepicks_data['Prop'] = prizepicks_data['Prop'].map(prop_types)
 
 prop_types= {
     'strikeouts': 'Strikeouts',
-    'runs': 'Earned Runs Allowed', 
+    'runs': 'Runs', 
     'bases': 'Total Bases'# example of making an indirect relationship
     # Add other mappings as required
 }
