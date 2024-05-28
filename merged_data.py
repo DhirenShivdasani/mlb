@@ -30,5 +30,6 @@ r = merged_data.drop(['Team', 'Name', 'Unnamed: 0'], axis =1)
 
 r =r.dropna(subset=['Value'])
 r = r.where(pd.notnull(r), "None")
+r=r.drop_duplicates()
 
 r.to_csv('merged_data.csv')
