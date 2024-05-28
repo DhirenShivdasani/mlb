@@ -104,9 +104,45 @@ function insertOddsData(oddsData) {
           }
         });
       });
+      element.addEventListener1('click', () => {
+        console.log('New game Props clicked:', playerName);
+        chrome.storage.local.get('oddsData', (result) => {
+          if (result.oddsData) {
+            insertOddsData(result.oddsData);
+          } else {
+            console.log('No odds data found in storage.');
+          }
+        });
+      });
     }
   });
 }
+
+document.addEventListener('click', (event) => {
+  const propElement = event.target.closest('.styles__overUnderCell__KgzNn');
+  if (propElement) {
+    chrome.storage.local.get('oddsData', (result) => {
+      if (result.oddsData) {
+        insertOddsData(result.oddsData);
+      } else {
+        console.log('No odds data found in storage.');
+      }
+    });
+  }
+});
+
+document.addEventListener1('click', (event) => {
+  const propElement = event.target.closest('.styles__accordion__bInXb styles__accordionWrapper__boe45');
+  if (propElement) {
+    chrome.storage.local.get('oddsData', (result) => {
+      if (result.oddsData) {
+        insertOddsData(result.oddsData);
+      } else {
+        console.log('No odds data found in storage.');
+      }
+    });
+  }
+});
 
 // Listen for messages from the background script
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
@@ -118,3 +154,4 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     sendResponse({ status: 'Odds data insertion scheduled' });
   }
 });
+
