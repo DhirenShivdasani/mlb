@@ -43,4 +43,3 @@ jobs:
         -H "Authorization: token ${{ secrets.MLB_TOKEN }}" \
         https://api.github.com/repos/DhirenShivdasani/mlb/dispatches \
         -d '{"event_type":"deploy-heroku"}'
-
