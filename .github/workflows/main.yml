@@ -25,6 +25,9 @@ jobs:
       run: python mlb_props.py
     - name: Run merged_data.py
       run: python merged_data.py
+    - name: Stash changes
+      run: |
+        git stash
     - name: Pull changes from the remote repository
       run: git pull --rebase
     - name: Commit and push if there are changes
