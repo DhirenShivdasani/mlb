@@ -71,6 +71,7 @@ function insertOddsData(oddsData) {
                 <div>DraftKings: ${match.draftkings}</div>
                 <div>FanDuel: ${match.fanduel}</div>
                 <div>MGM: ${match.mgm}</div>
+                <div>BetRivers: ${match.betrivers}</div>
                 <br>
               `;
             });
