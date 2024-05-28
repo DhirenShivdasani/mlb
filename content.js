@@ -104,36 +104,14 @@ function insertOddsData(oddsData) {
           }
         });
       });
-      element.addEventListener1('click', () => {
-        console.log('New game Props clicked:', playerName);
-        chrome.storage.local.get('oddsData', (result) => {
-          if (result.oddsData) {
-            insertOddsData(result.oddsData);
-          } else {
-            console.log('No odds data found in storage.');
-          }
-        });
-      });
     }
   });
 }
 
 document.addEventListener('click', (event) => {
   const propElement = event.target.closest('.styles__overUnderCell__KgzNn');
-  if (propElement) {
-    chrome.storage.local.get('oddsData', (result) => {
-      if (result.oddsData) {
-        insertOddsData(result.oddsData);
-      } else {
-        console.log('No odds data found in storage.');
-      }
-    });
-  }
-});
-
-document.addEventListener1('click', (event) => {
-  const propElement = event.target.closest('.styles__accordion__bInXb styles__accordionWrapper__boe45');
-  if (propElement) {
+  const gameElement = event.target.closest('.styles__headerRow__jgOPy.styles__accordionHeaderRow__QXBl9');
+  if (propElement || gameElement) {
     chrome.storage.local.get('oddsData', (result) => {
       if (result.oddsData) {
         insertOddsData(result.oddsData);
