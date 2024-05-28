@@ -17,14 +17,10 @@ style.innerHTML = `
   .odds-symbol {
     margin-left: 10px;
     cursor: pointer;
-    width: 24px;
-    height: 24px;
-    background: url('${chrome.runtime.getURL('icon.png')}') no-repeat center center;
-    background-size: contain;
-    display: inline-block;
+    color: red;
+    font-size: 1.5em; /* Increase the font size for a bigger icon */
   }
 `;
-
 
 document.head.appendChild(style);
 
@@ -95,34 +91,20 @@ function insertOddsData(oddsData) {
           }
         }
       });
+
+      // Add click event listener to the prop element
+      element.addEventListener('click', () => {
+        console.log('Prop element clicked:', playerName);
+        chrome.storage.local.get('oddsData', (result) => {
+          if (result.oddsData) {
+            insertOddsData(result.oddsData);
+          } else {
+            console.log('No odds data found in storage.');
+          }
+        });
+      });
     }
   });
-}
-
-// Add a button to the page to manually trigger the odds data insertion
-function addManualTriggerButton() {
-  const button = document.createElement('button');
-  button.textContent = 'Find Odds';
-  button.style.position = 'fixed';
-  button.style.top = '10px';
-  button.style.right = '10px';
-  button.style.zIndex = '1000';
-  button.style.padding = '10px 20px';
-  button.style.backgroundColor = '#007bff';
-  button.style.color = '#fff';
-  button.style.border = 'none';
-  button.style.borderRadius = '5px';
-  button.style.cursor = 'pointer';
-  button.addEventListener('click', () => {
-    chrome.storage.local.get('oddsData', (result) => {
-      if (result.oddsData) {
-        insertOddsData(result.oddsData);
-      } else {
-        console.log('No odds data found in storage.');
-      }
-    });
-  });
-  document.body.appendChild(button);
 }
 
 // Listen for messages from the background script
@@ -131,10 +113,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.type === 'ODDS_DATA') {
     setTimeout(() => {
       insertOddsData(message.data);
-      addManualTriggerButton(); // Add the manual trigger button
     }, 5000); // 5-second delay before inserting odds data
     sendResponse({ status: 'Odds data insertion scheduled' });
   }
 });
-
-document.querySelectorAll('.styles__overUnderCell__KgzNn')
