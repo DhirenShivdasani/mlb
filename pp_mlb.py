@@ -41,7 +41,7 @@ ppPlayers = []
 
 wait = WebDriverWait(driver, 10)  # Wait for up to 10 seconds
 try:
-    element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[3]/div[1]/div/main/div/nav[1]/div/button[2]")))
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[3]/div[1]/div/main/div/nav[1]/div/button[3]")))
     element.click()
 except Exception as e:
     print(f"Error: {e}")
