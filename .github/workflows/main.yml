@@ -36,7 +36,7 @@ jobs:
         git config user.name "DhirenShivdasani"
         git add .
         git commit -m "Automated data update" -a || exit 0  # '-a' to include all changes
-        git push https://${{ secrets.MLB_SECRET }}@github.com/DhirenShivdasani/mlb.git main
+        git push origin main
     - name: Trigger deploy workflow
       run: |
         curl -X POST -H "Accept: application/vnd.github.v3+json" \
