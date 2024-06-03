@@ -133,29 +133,21 @@ function insertOddsDataPrizePicks(oddsData) {
 
   propBetElements.forEach((element) => {
     const playerNameElement = element.querySelector('#test-player-name');
-    const propTypeElements = element.querySelectorAll('.flex .flex .flex .flex');
+    const propContainerElements = element.querySelectorAll('.flex.justify-center.gap-2.self-end.py-2');
+    console.log(propContainerElements);
 
-    if (playerNameElement && propTypeElements.length > 0) {
+    if (playerNameElement && propContainerElements.length > 0) {
       const playerName = playerNameElement.innerText;
 
-      propTypeElements.forEach((propElement) => {
-        const propText = propElement.innerText.trim();
-        console.log('Prop Text:', propText);
+      propContainerElements.forEach((containerElement) => {
+        const propValueElement = containerElement.querySelector('.flex.flex-1.items-center.pr-2');
+        const propTypeElement = containerElement.querySelector('.self-center .text-left.text-xs.font-medium');
 
-        let propValue = null;
-        let propType = null;
+        const propValue = propValueElement ? propValueElement.innerText.trim() : null;
+        const propType = propTypeElement ? propTypeElement.innerText.trim() : null;
 
-        if (/^\d+(\.\d+)?\s+[\s\S]+$/.test(propText)) {
-          const match = propText.match(/^(\d+(\.\d+)?)(?:\s+)([\s\S]+)$/);
-          console.log('Match (Number followed by text):', match);
-          if (match) {
-            propValue = match[1];
-            propType = match[3].trim();
-          }
-        } else {
-          propType = propText;
-          console.log('Match (Only text):', propType);
-        }
+        console.log('Prop Value:', propValue);
+        console.log('Prop Type:', propType);
 
         if (propType) {
           const matchingOdds = oddsData.filter(odds => odds.PlayerName === playerName && odds.Prop === propType);
@@ -198,7 +190,7 @@ function insertOddsDataPrizePicks(oddsData) {
               oddsDiv.style.display = 'none';
             });
 
-            propElement.insertAdjacentElement('afterend', symbol);
+            containerElement.insertAdjacentElement('afterend', symbol);
             document.body.appendChild(oddsDiv);
           }
         }
@@ -206,6 +198,8 @@ function insertOddsDataPrizePicks(oddsData) {
     }
   });
 }
+
+
 document.addEventListener('click', (event) => {
   const url = window.location.href;
   console.log(url)
@@ -226,7 +220,8 @@ document.addEventListener('click', (event) => {
     }
   } else if (isPrizePicks) {
     const propElement = event.target.closest('li[id^="test-projection-li"]');
-    if (propElement) {
+    const statButton = event.target.closest('.stat');
+    if (propElement || statButton) {
       chrome.storage.local.get('oddsData', (result) => {
         if (result.oddsData) {
           insertOddsDataPrizePicks(result.oddsData);
