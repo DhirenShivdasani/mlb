@@ -2,12 +2,12 @@ name: Update Data
 
 on:
   schedule:
-    - cron: '*/2 * * * *'  # Runs every 2 minutes
+    - cron: '*/10 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
-  
+
 jobs:
   update_data:
     runs-on: ubuntu-latest
@@ -26,15 +26,9 @@ jobs:
     - name: Run merged_data.py
       run: python merged_data.py
     - name: Stash changes
-      run: git stash push -u
+      run: git stash
     - name: Pull changes from the remote repository
       run: git pull --rebase
-    - name: Check stash entries
-      id: check_stash
-      run: echo "::set-output name=has_stash::$(git stash list | wc -l)"
-    - name: Pop stashed changes if any
-      if: steps.check_stash.outputs.has_stash != '0'
-      run: git stash pop
     - name: Commit and push if there are changes
       run: |
         git config user.email "dhiren3102@gmail.com"
@@ -43,10 +37,8 @@ jobs:
         git commit -m "Automated data update" -a || exit 0  # '-a' to include all changes
         git push origin main
     - name: Trigger deploy workflow
-      env:
-        GITHUB_TOKEN: ${{ secrets.MLB_TOKEN }}
       run: |
-        curl -X POST -H "Accept: application/vnd.github.v3+json" \
-        -H "Authorization: token $GITHUB_TOKEN" \
+        curl -X GET -H "Accept: application/vnd.github.v3+json" \
+        -H "Authorization: token ${{ secrets.MLB_TOKEN }}" \
         https://api.github.com/repos/DhirenShivdasani/mlb/dispatches \
         -d '{"event_type":"deploy-heroku"}'
