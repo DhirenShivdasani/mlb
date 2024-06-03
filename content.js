@@ -39,20 +39,34 @@ function insertOddsData(oddsData) {
   console.log('Found propBetElements:', propBetElements);
 
   propBetElements.forEach((element) => {
-    const playerNameElement = element.querySelector('h1.styles__playerName__jW6mb[data-testid="player-name"]');
-    const propTypeElements = element.querySelectorAll('div.styles__statLine__K1NYh p'); // Adjust as needed
-
+    const playerNameElement = element.querySelector('h1.styles__playerName__Coe_G[data-testid="player-name"]');
+    const propTypeElements = element.querySelectorAll('div.styles__currentStat__S6U2b div');
+    
     if (playerNameElement && propTypeElements.length > 0) {
       const playerName = playerNameElement.innerText;
 
       propTypeElements.forEach((propElement) => {
-        const propText = propElement.innerText;
-        const match = propText.match(/^(\d+(\.\d+)?)\s+(.*)$/);
-        if (match) {
-          const propValue = match[1];
-          const propType = match[3];
+        const propText = propElement.innerText.trim(); // Ensure no leading/trailing whitespace
+        console.log('Prop Text:', propText); // Log the text content
 
-          // Find matching odds data
+        let propValue = null;
+        let propType = null;
+
+        // Check if propText is a number followed by text or just text
+        if (/^\d+(\.\d+)?\s+[\s\S]+$/.test(propText)) {
+          const match = propText.match(/^(\d+(\.\d+)?)(?:\s+)([\s\S]+)$/);
+          console.log('Match (Number followed by text):', match); // Log the match result
+          if (match) {
+            propValue = match[1];
+            propType = match[3].trim();
+          }
+        } else {
+          // Handle cases where propText is only text
+          propType = propText;
+          console.log('Match (Only text):', propType); // Log the propType
+        }
+
+        if (propType) {
           const matchingOdds = oddsData.filter(odds => odds.PlayerName === playerName && odds.Prop === propType);
 
           if (matchingOdds.length > 0) {
@@ -65,6 +79,13 @@ function insertOddsData(oddsData) {
 
             const oddsDiv = document.createElement('div');
             oddsDiv.className = 'odds-comparison';
+            oddsDiv.style.display = 'none'; // Initially hidden
+            oddsDiv.style.position = 'absolute';
+            oddsDiv.style.backgroundColor = '#fff';
+            oddsDiv.style.border = '1px solid #ccc';
+            oddsDiv.style.padding = '10px';
+            oddsDiv.style.zIndex = '1000';
+
             matchingOdds.forEach(match => {
               oddsDiv.innerHTML += `
                 <div>${match.Over_Under}</div>
@@ -91,18 +112,6 @@ function insertOddsData(oddsData) {
             document.body.appendChild(oddsDiv);
           }
         }
-      });
-
-      // Add click event listener to the prop element
-      element.addEventListener('click', () => {
-        console.log('Prop element clicked:', playerName);
-        chrome.storage.local.get('oddsData', (result) => {
-          if (result.oddsData) {
-            insertOddsData(result.oddsData);
-          } else {
-            console.log('No odds data found in storage.');
-          }
-        });
       });
     }
   });
