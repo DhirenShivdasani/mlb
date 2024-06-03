@@ -1,36 +1,37 @@
 {
-    "manifest_version": 3,
-    "name": "DFS Odds Comparison",
-    "description": "Compare prop bet odds from PrizePicks with FanDuel, BetMGM, and DraftKings.",
-    "version": "1.0",
-    "permissions": [
+  "manifest_version": 3,
+  "name": "DFS Odds Comparison",
+  "description": "Compare prop bet odds from PrizePicks with FanDuel, BetMGM, and DraftKings.",
+  "version": "1.0",
+  "permissions": [
       "activeTab",
       "storage"
-    ],
-    "host_permissions": [
+  ],
+  "host_permissions": [
       "http://127.0.0.1:5000/",
-      "*://*.underdogfantasy.com/pick-em/higher-lower/all/mlb*"
-    ],
-    "background": {
+      "*://*.underdogfantasy.com/pick-em/higher-lower/all/mlb*",
+      "*://app.prizepicks.com/*"
+  ],
+  "background": {
       "service_worker": "background.js"
-    },
-    "content_scripts": [
+  },
+  "content_scripts": [
       {
-        "matches": ["*://*.underdogfantasy.com/pick-em/higher-lower/all/mlb*"],
-        "js": ["content.js"]
+          "matches": ["*://*.underdogfantasy.com/pick-em/higher-lower/all/mlb*", "*://app.prizepicks.com/*"],
+          "js": ["content.js"]
       }
-    ],
-    "action": {
+  ],
+  "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
+          "16": "icon.png",
+          "48": "icon.png",
+          "128": "icon.png"
       }
-    },
-    "icons": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-    }
+  },
+  "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+  }
 }
