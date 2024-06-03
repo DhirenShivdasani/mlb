@@ -56,9 +56,10 @@ jobs:
 
     - name: Handle Merge Conflicts
       run: |
-        git diff --name-only --diff-filter=U | xargs git checkout --ours --
+        git diff --name-only --diff-filter=U | xargs git checkout --ours
         git add -A
         git commit -m "Resolved merge conflicts" || echo "No conflicts to resolve"
+
 
     - name: Pull Changes from Origin
       run: |
