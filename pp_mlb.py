@@ -28,7 +28,7 @@ driver = uc.Chrome(options=chrome_options)
 driver.get("https://app.prizepicks.com/")
 # time.sleep(5)
 
-wait = WebDriverWait(driver, timeout = 10)  # Wait for up to 10 seconds
+wait = WebDriverWait(driver, timeout = 20)  # Wait for up to 10 seconds
 try:
     element = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[3]/div[3]/div/div/button')))
     element.click()
@@ -41,7 +41,7 @@ ppPlayers = []
 
 wait = WebDriverWait(driver, 10)  # Wait for up to 10 seconds
 try:
-    element = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div/div[3]/div[1]/div/main/div/nav[1]/div/button[2]")))
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='name'][normalize-space()='MLB']")))
     element.click()
 except Exception as e:
     print(f"Error: {e}")
