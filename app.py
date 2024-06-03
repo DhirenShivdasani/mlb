@@ -10,7 +10,7 @@ merged_data = pd.read_csv('merged_data.csv')
 
 @app.route('/merged_data')
 def get_merged_data():
-    return jsonify(merged_data.sort_values(by = 'FanDuel').to_dict(orient='records'))
-, 
+    return jsonify(merged_data.to_dict(orient='records'))
+
 if __name__ == '__main__':
     app.run(debug=True)
