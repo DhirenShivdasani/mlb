@@ -1,23 +1,23 @@
-const ws = new WebSocket('ws://dfs-odds-extension-11be6b12d681.herokuapp.com/merged_data');
+// const ws = new WebSocket('ws://dfs-odds-extension-11be6b12d681.herokuapp.com/merged_data');
 
-ws.onmessage = (event) => {
-    if (event.data === 'update') {
-        console.log('Data updated, reloading extension...');
-        // Reload the extension or trigger necessary updates
-        location.reload();
-    }
-};
+// ws.onmessage = (event) => {
+//     if (event.data === 'update') {
+//         console.log('Data updated, reloading extension...');
+//         // Reload the extension or trigger necessary updates
+//         location.reload();
+//     }
+// };
 
-ws.onopen = () => {
-    console.log('Connected to WebSocket server');
-};
+// ws.onopen = () => {
+//     console.log('Connected to WebSocket server');
+// };
 
-ws.onclose = () => {
-    console.log('Disconnected from WebSocket server');
-};
+// ws.onclose = () => {
+//     console.log('Disconnected from WebSocket server');
+// };
 
 
-console.log('Content script loaded');
+// console.log('Content script loaded');
 // Increase the limit of max listeners
 
 
