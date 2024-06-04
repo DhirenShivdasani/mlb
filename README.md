@@ -17,7 +17,7 @@ Once the extension is installed and activated, it adds an informational icon nex
 
 ### Screenshots
 
-![Odds Comparison Example](mlb/Screenshot 2024-06-04 at 7.22.29 PM.png)
+![Odds Comparison Example](Screenshot 2024-06-04 at 7.22.29 PM.png)
 
 ## Technology Stack
 
