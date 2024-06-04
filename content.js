@@ -1,4 +1,4 @@
-const ws = new WebSocket('ws://dfs-odds-extension-11be6b12d681.herokuapp.com');
+const ws = new WebSocket('ws://dfs-odds-extension-11be6b12d681.herokuapp.com/merged_data');
 
 ws.onmessage = (event) => {
     if (event.data === 'update') {
