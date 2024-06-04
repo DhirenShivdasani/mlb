@@ -1,4 +1,4 @@
-const socket = new WebSocket('wss://dfs-odds-extension-11be6b12d681.herokuapp.com');
+const socket = new WebSocket('wss://dfs-odds-extension-11be6b12d681.herokuapp.com/merged_data');
 
 socket.addEventListener('open', function (event) {
     console.log('WebSocket is open now.');
