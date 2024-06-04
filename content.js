@@ -57,7 +57,6 @@ function insertOddsDataUnderdog(oddsData) {
 
   // Select all player prop bet elements
   const propBetElements = document.querySelectorAll('.styles__overUnderCell__KgzNn');
-  console.log('Found propBetElements:', propBetElements);
 
   propBetElements.forEach((element) => {
     const playerNameElement = element.querySelector('h1.styles__playerName__Coe_G[data-testid="player-name"]');
@@ -68,7 +67,6 @@ function insertOddsDataUnderdog(oddsData) {
 
       propTypeElements.forEach((propElement) => {
         const propText = propElement.innerText.trim(); // Ensure no leading/trailing whitespace
-        console.log('Prop Text:', propText); // Log the text content
 
         let propValue = null;
         let propType = null;
@@ -76,7 +74,6 @@ function insertOddsDataUnderdog(oddsData) {
         // Check if propText is a number followed by text or just text
         if (/^\d+(\.\d+)?\s+[\s\S]+$/.test(propText)) {
           const match = propText.match(/^(\d+(\.\d+)?)(?:\s+)([\s\S]+)$/);
-          console.log('Match (Number followed by text):', match); // Log the match result
           if (match) {
             propValue = match[1];
             propType = match[3].trim();
@@ -84,14 +81,13 @@ function insertOddsDataUnderdog(oddsData) {
         } else {
           // Handle cases where propText is only text
           propType = propText;
-          console.log('Match (Only text):', propType); // Log the propType
+          // Log the propType
         }
 
         if (propType) {
           const matchingOdds = oddsData.filter(odds => odds.PlayerName === playerName && odds.Prop === propType);
 
           if (matchingOdds.length > 0) {
-            console.log('Found matching odds for player:', playerName, matchingOdds);
 
             // Create a symbol to indicate available odds data
             const symbol = document.createElement('span');

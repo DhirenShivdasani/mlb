@@ -56,18 +56,18 @@ jobs:
 
     - name: Handle Merge Conflicts
       run: |
-        git diff --name-only --diff-filter=U | xargs git checkout --ours
+        for file in $(git diff --name-only --diff-filter=U); do
+          git checkout --ours -- "$file";
+        done
         git add -A
         git commit -m "Resolved merge conflicts" || echo "No conflicts to resolve"
 
-
     - name: Pull Changes from Origin
       run: |
-        git pull heroku main || echo "No changes to pull"
+        git pull origin main || echo "No changes to pull"
 
     - name: Unshallow the repository
       run: git fetch --unshallow
 
     - name: Deploy to Heroku
       run: git push heroku main --force
-
