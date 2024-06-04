@@ -38,7 +38,7 @@ jobs:
         git push origin main
     - name: Trigger deploy workflow
       run: |
-        curl -X GET -H "Accept: application/vnd.github.v3+json" \
+        curl -X POST -H "Accept: application/vnd.github.v3+json" \
         -H "Authorization: token ${{ secrets.MLB_TOKEN }}" \
         https://api.github.com/repos/DhirenShivdasani/mlb/dispatches \
         -d '{"event_type":"deploy-heroku"}'
