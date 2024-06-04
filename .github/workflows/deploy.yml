@@ -1,73 +1,44 @@
-name: Deploy to Heroku
+name: Update Data
 
 on:
-  push:
-    branches:
-      - main
-  repository_dispatch:
-    types: [deploy-heroku]
+  schedule:
+    - cron: '*/10 * * * *'
   workflow_dispatch:
-   
+
+permissions:
+  contents: write
+
 jobs:
-  deploy:
+  update_data:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
+    - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9'
-
+        python-version: '3.8'  # Set this to your required Python version
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
-    - name: Install Heroku CLI
-      run: curl https://cli-assets.heroku.com/install.sh | sh
-
-    - name: Authenticate with Heroku
-      env:
-        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        pip install -r requirements.txt  # If you have a requirements.txt
+    - name: Run mlb_props.py
+      run: python mlb_props.py
+    - name: Run merged_data.py
+      run: python merged_data.py
+    - name: Stash changes
+      run: git stash
+    - name: Pull changes from the remote repository
+      run: git pull --rebase
+    - name: Commit and push if there are changes
       run: |
-        echo "machine api.heroku.com" > ~/.netrc
-        echo "  login ${{ secrets.HEROKU_EMAIL }}" >> ~/.netrc
-        echo "  password ${{ secrets.HEROKU_API_KEY }}" >> ~/.netrc
-        echo "machine git.heroku.com" >> ~/.netrc
-        echo "  login ${{ secrets.HEROKU_EMAIL }}" >> ~/.netrc
-        echo "  password ${{ secrets.HEROKU_API_KEY }}" >> ~/.netrc
-
-    - name: Configure Git
+        git config user.email "dhiren3102@gmail.com"
+        git config user.name "DhirenShivdasani"
+        git add .
+        git commit -m "Automated data update" -a || exit 0  # '-a' to include all changes
+        git push origin main
+    - name: Trigger deploy workflow
       run: |
-        git config --global user.email "dhiren3102@gmail.com"
-        git config --global user.name "DhirenShivdasani"
-
-    - name: Add Heroku remote
-      run: git remote add heroku https://git.heroku.com/dfs-odds-extension.git
-
-    - name: Fetch Heroku repository
-      run: git fetch heroku
-
-    - name: Merge Heroku main branch
-      run: git merge heroku/main --allow-unrelated-histories || true
-
-    - name: Handle Merge Conflicts
-      run: |
-        for file in $(git diff --name-only --diff-filter=U); do
-          git checkout --ours -- "$file";
-        done
-        git add -A
-        git commit -m "Resolved merge conflicts" || echo "No conflicts to resolve"
-
-    - name: Pull Changes from Origin
-      run: |
-        git pull origin main || echo "No changes to pull"
-
-    - name: Unshallow the repository
-      run: git fetch --unshallow
-
-    - name: Deploy to Heroku
-      run: git push heroku main --force
+        curl -X POST -H "Accept: application/vnd.github.v3+json" \
+        -H "Authorization: token ${{ secrets.MLB_TOKEN }}" \
+        https://api.github.com/repos/DhirenShivdasani/mlb/dispatches \
+        -d '{"event_type":"deploy-heroku"}'
