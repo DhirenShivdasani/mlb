@@ -1,24 +1,24 @@
-const socket = new WebSocket('wss://dfs-odds-extension-11be6b12d681.herokuapp.com/merged_data');
+// const socket = new WebSocket('wss://dfs-odds-extension-11be6b12d681.herokuapp.com/merged_data');
 
-socket.addEventListener('open', function (event) {
-    console.log('WebSocket is open now.');
-});
+// socket.addEventListener('open', function (event) {
+//     console.log('WebSocket is open now.');
+// });
 
-socket.addEventListener('message', function (event) {
-    console.log('Message from server ', event.data);
-    if (event.data === 'update') {
-        // Logic to reload or restart your extension
-        chrome.runtime.reload();
-    }
-});
+// socket.addEventListener('message', function (event) {
+//     console.log('Message from server ', event.data);
+//     if (event.data === 'update') {
+//         // Logic to reload or restart your extension
+//         chrome.runtime.reload();
+//     }
+// });
 
-socket.addEventListener('close', function (event) {
-    console.log('WebSocket is closed now.');
-});
+// socket.addEventListener('close', function (event) {
+//     console.log('WebSocket is closed now.');
+// });
 
-socket.addEventListener('error', function (event) {
-    console.error('WebSocket error observed:', event);
-});
+// socket.addEventListener('error', function (event) {
+//     console.error('WebSocket error observed:', event);
+// });
 
 
 
