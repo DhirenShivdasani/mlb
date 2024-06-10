@@ -1,26 +1,51 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 h1 {
-    margin-top: 20px;
+    color: #007bff;
+    margin-bottom: 20px;
 }
 
 #odds-container {
-    margin-top: 20px;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-p {
+.odds-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.odds-card p {
     margin: 5px 0;
 }
 
 hr {
-    margin: 20px 0;
-    border: 1px solid #ccc;
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    #odds-container {
+        width: 90%;
+    }
 }
