@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Odds Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Live Odds Tracker</h1>
+    <div id="odds-container"></div>
+
+    <script>
+        const container = document.getElementById('odds-container');
+
+        async function fetchOdds() {
+            const response = await fetch('/merged_data');
+            const data = await response.json();
+            container.innerHTML = '';
+            data.forEach(odds => {
+                const oddsDiv = document.createElement('div');
+                oddsDiv.innerHTML = `
+                    <p>Player: ${odds.PlayerName}</p>
+                    <p>Prop: ${odds.Prop}</p>
+                    <p>Over/Under: ${odds.Over_Under}</p>
+                    <p>DraftKings: ${odds.draftkings}</p>
+                    <p>FanDuel: ${odds.fanduel}</p>
+                    <p>MGM: ${odds.mgm}</p>
+                    <p>BetRivers: ${odds.betrivers}</p>
+                    <hr>
+                `;
+                container.appendChild(oddsDiv);
+            });
+        }
+
+        async function setupWebSocket() {
+            const ws = new WebSocket(`ws://${window.location.hostname}:${window.location.port + 1}`);
+            ws.onmessage = () => {
+                fetchOdds();
+            };
+        }
+
+        fetchOdds();
+        setupWebSocket();
+    </script>
+</body>
+</html>

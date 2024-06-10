@@ -1,5 +1,5 @@
 from flask_cors import CORS
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import asyncio
 import websockets
 import threading
@@ -29,16 +29,20 @@ async def websocket_handler(websocket, path):
 def start_websocket_server(port):
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-    start_server = websockets.serve(websocket_handler, "0.0.0.0", port)
+    start_server = websockets.serve(websocket_handler, "0.0.0.0", port + 1)  # WebSocket on different port
     loop.run_until_complete(start_server)
     loop.run_forever()
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/merged_data', methods=['GET', 'POST'])
 def get_merged_data():
     if request.method == 'POST':
         threading.Thread(target=asyncio.run, args=(notify_clients(),)).start()
     try:
-        merged_data = pd.read_csv('merged_data.csv')
+        merged_data = pd.read_csv('data/merged_data.csv')
         return jsonify(merged_data.sort_values(by='fanduel', ascending=True).to_dict(orient='records'))
     except Exception as e:
         return jsonify({"error": str(e)}), 500
