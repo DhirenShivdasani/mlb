@@ -42,7 +42,7 @@ def get_merged_data():
     if request.method == 'POST':
         threading.Thread(target=asyncio.run, args=(notify_clients(),)).start()
     try:
-        merged_data = pd.read_csv('data/merged_data.csv')
+        merged_data = pd.read_csv('merged_data.csv')
         return jsonify(merged_data.sort_values(by='fanduel', ascending=True).to_dict(orient='records'))
     except Exception as e:
         return jsonify({"error": str(e)}), 500
