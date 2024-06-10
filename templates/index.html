@@ -19,14 +19,15 @@
             container.innerHTML = '';
             data.forEach(odds => {
                 const oddsDiv = document.createElement('div');
+                oddsDiv.className = 'odds-card';
                 oddsDiv.innerHTML = `
-                    <p>Player: ${odds.PlayerName}</p>
-                    <p>Prop: ${odds.Prop}</p>
-                    <p>Over/Under: ${odds.Over_Under}</p>
-                    <p>DraftKings: ${odds.draftkings}</p>
-                    <p>FanDuel: ${odds.fanduel}</p>
-                    <p>MGM: ${odds.mgm}</p>
-                    <p>BetRivers: ${odds.betrivers}</p>
+                    <p><strong>Player:</strong> ${odds.PlayerName}</p>
+                    <p><strong>Prop:</strong> ${odds.Prop}</p>
+                    <p><strong>Over/Under:</strong> ${odds.Over_Under}</p>
+                    <p><strong>DraftKings:</strong> ${odds.draftkings}</p>
+                    <p><strong>FanDuel:</strong> ${odds.fanduel}</p>
+                    <p><strong>MGM:</strong> ${odds.mgm}</p>
+                    <p><strong>BetRivers:</strong> ${odds.betrivers}</p>
                     <hr>
                 `;
                 container.appendChild(oddsDiv);
