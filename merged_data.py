@@ -42,4 +42,4 @@ subprocess.run(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com
 subprocess.run(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 subprocess.run(['git', 'add', 'merged_data.csv'])
 subprocess.run(['git', 'commit', '-m', 'Automated update of merged_data.csv'])
-subprocess.run(['git', 'push', 'https://<MLB_TOKEN>@github.com/<DhirenShivdasani>/<mlb>.git'])
+subprocess.run(['git', 'push', 'https://MLB_TOKEN@github.com/DhirenShivdasani/mlb.git'])
