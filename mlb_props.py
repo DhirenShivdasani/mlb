@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import json
 import pandas as pd
+import subprocess
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
@@ -66,3 +67,9 @@ pivot_df = consolidated_df.pivot_table(index=['PlayerName', 'team', 'opp', 'Prop
 pivot_df.replace('() nan', None, inplace=True)
 
 pivot_df.to_csv('mlb_props.csv', index = False)
+
+subprocess.run(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
+subprocess.run(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+subprocess.run(['git', 'add', 'mlb_props.csv'])
+subprocess.run(['git', 'commit', '-m', 'Automated update of mlb_props.csv'])
+subprocess.run(['git', 'push', 'https://<MLB>@github.com/<DhirenShivdasani>/<mlb>.git'])

@@ -36,3 +36,9 @@ r.sort_values(by = 'fanduel', ascending=True, inplace = True)
 
 
 r.to_csv('merged_data.csv')
+
+subprocess.run(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
+subprocess.run(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+subprocess.run(['git', 'add', 'merged_data.csv'])
+subprocess.run(['git', 'commit', '-m', 'Automated update of merged_data.csv'])
+subprocess.run(['git', 'push', 'https://<MLB>@github.com/<DhirenShivdasani>/<mlb>.git'])
