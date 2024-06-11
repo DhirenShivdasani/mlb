@@ -100,7 +100,7 @@ def push_to_heroku():
     try:
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
-        subprocess.check_call(['git', 'push', 'heroku', 'master'])
+        subprocess.check_call(['git', 'push', 'origin', 'main'])
         print("Changes pushed to Heroku")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to Heroku: {e}")
