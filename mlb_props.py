@@ -68,8 +68,12 @@ pivot_df.replace('() nan', None, inplace=True)
 
 pivot_df.to_csv('mlb_props.csv', index = False)
 
-subprocess.run(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
-subprocess.run(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
-subprocess.run(['git', 'add', 'mlb_props.csv'])
-subprocess.run(['git', 'commit', '-m', 'Automated update of mlb_props.csv'])
-subprocess.run(['git', 'push', 'origin main'])
+try:
+    subprocess.run(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
+    subprocess.run(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+    subprocess.run(['git', 'add', 'mlb_props.csv'])
+    subprocess.run(['git', 'commit', '-m', 'Automated update of mlb_props.csv'])
+    subprocess.run(['git', 'push', 'origin', 'main'])
+    print("Git push successful.")
+except Exception as e:
+    print(f"Git push failed: {e}")
