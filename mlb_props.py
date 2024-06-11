@@ -94,4 +94,14 @@ pivot_df = consolidated_df.pivot_table(index=['PlayerName', 'team', 'opp', 'Prop
 pivot_df.replace('() nan', None, inplace=True)
 
 pivot_df.to_csv('mlb_props.csv', index = False)
+
 upload_to_aws('mlb_props.csv', BUCKET_NAME, 'mlb_props.csv')
+def push_to_heroku():
+    try:
+        subprocess.check_call(['git', 'add', '.'])
+        subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
+        subprocess.check_call(['git', 'push', 'heroku', 'master'])
+        print("Changes pushed to Heroku")
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred while pushing to Heroku: {e}")
+push_to_heroku()

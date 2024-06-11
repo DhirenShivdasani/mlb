@@ -62,3 +62,13 @@ r.sort_values(by = 'fanduel', ascending=True, inplace = True)
 
 r.to_csv('merged_data.csv')
 upload_to_aws('merged_data.csv', BUCKET_NAME, 'merged_data.csv')
+
+def push_to_heroku():
+    try:
+        subprocess.check_call(['git', 'add', '.'])
+        subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
+        subprocess.check_call(['git', 'push', 'heroku', 'master'])
+        print("Changes pushed to Heroku")
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred while pushing to Heroku: {e}")
+push_to_heroku()
