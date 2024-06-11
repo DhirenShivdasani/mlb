@@ -1,4 +1,5 @@
 import pandas as pd
+import subprocess
 
 # Load the CSV files
 betting_odds_data = pd.read_csv('mlb_props.csv')
