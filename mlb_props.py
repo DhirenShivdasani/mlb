@@ -96,12 +96,33 @@ pivot_df.replace('() nan', None, inplace=True)
 pivot_df.to_csv('mlb_props.csv', index = False)
 
 upload_to_aws('mlb_props.csv', BUCKET_NAME, 'mlb_props.csv')
-def push_to_heroku():
+
+def download_from_s3(bucket, s3_file, local_file):
     try:
+        s3.download_file(bucket, s3_file, local_file)
+        print(f"Download Successful: {s3_file}")
+        return True
+    except FileNotFoundError:
+        print("The file was not found")
+        return False
+    except NoCredentialsError:
+        print("Credentials not available")
+        return False
+s3_file = 'mlb_props.csv'
+local_file = 'mlb_props.csv'
+def push_to_github():
+    try:
+        subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
+        subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
         subprocess.check_call(['git', 'push', 'origin', 'main'])
-        print("Changes pushed to Heroku")
+        print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
-        print(f"An error occurred while pushing to Heroku: {e}")
-push_to_heroku()
+        print(f"An error occurred while pushing to GitHub: {e}")
+
+# Download the file from S3
+if download_from_s3(BUCKET_NAME, s3_file, local_file):
+    push_to_github()
+else:
+    print("Failed to download file from S3, not pushing to GitHub")
