@@ -112,7 +112,7 @@ s3_file = 'mlb_props.csv'
 local_file = 'mlb_props.csv'
 def push_to_github():
     try:
-        repo_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current script directory
+        repo_dir = '/app'  # This is the default Heroku directory
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'your_email@example.com'])
