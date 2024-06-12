@@ -72,3 +72,23 @@ def push_to_heroku():
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to Heroku: {e}")
 push_to_heroku()
+
+def download_from_s3(bucket, s3_file, local_file):
+    try:
+        s3.download_file(bucket, s3_file, local_file)
+        print(f"Download Successful: {s3_file}")
+        return True
+    except FileNotFoundError:
+        print("The file was not found")
+        return False
+    except NoCredentialsError:
+        print("Credentials not available")
+        return False
+s3_file = 'merged_data.csv'
+local_file = 'your-merged_data-csv-file.csv'
+
+# Download the file from S3
+if download_from_s3(BUCKET_NAME, s3_file, local_file):
+    s3_file.to_csv('merged_data.csv')
+else:
+    print("Failed to download file from S3, not pushing to GitHub")
