@@ -77,14 +77,17 @@ def download_from_s3(bucket, s3_file, local_file):
         return False
 def push_to_github():
     try:
-        repo_dir = '/app'  # This is the default Heroku directory
+        repo_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current script directory
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'your_email@example.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'Your Name'])
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
-        subprocess.check_call(['git', 'push', 'origin', 'main'])
+        # Use the token from environment variables for authentication
+        subprocess.check_call([
+            'git', 'push', 'https://{MLB}@github.com/DhirenShivdasani/mlb.git', 'main'
+        ], env={'GITHUB_TOKEN': os.getenv('GITHUB_TOKEN')})
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
