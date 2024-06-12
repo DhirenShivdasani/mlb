@@ -112,8 +112,11 @@ s3_file = 'mlb_props.csv'
 local_file = 'mlb_props.csv'
 def push_to_github():
     try:
-        subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
-        subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+        repo_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current script directory
+        os.chdir(repo_dir)
+        print(f"Current directory: {os.getcwd()}")
+        subprocess.check_call(['git', 'config', '--global', 'user.email', 'your_email@example.com'])
+        subprocess.check_call(['git', 'config', '--global', 'user.name', 'Your Name'])
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
         subprocess.check_call(['git', 'push', 'origin', 'main'])

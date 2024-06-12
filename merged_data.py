@@ -77,14 +77,18 @@ def download_from_s3(bucket, s3_file, local_file):
         return False
 def push_to_github():
     try:
-        subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
-        subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+        repo_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current script directory
+        os.chdir(repo_dir)
+        print(f"Current directory: {os.getcwd()}")
+        subprocess.check_call(['git', 'config', '--global', 'user.email', 'your_email@example.com'])
+        subprocess.check_call(['git', 'config', '--global', 'user.name', 'Your Name'])
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
         subprocess.check_call(['git', 'push', 'origin', 'main'])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
+
 s3_file = 'merged_data.csv'
 local_file = 'merged_data.csv'
 
