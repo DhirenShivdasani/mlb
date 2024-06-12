@@ -75,6 +75,16 @@ def download_from_s3(bucket, s3_file, local_file):
     except NoCredentialsError:
         print("Credentials not available")
         return False
+def push_to_github():
+    try:
+        subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
+        subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+        subprocess.check_call(['git', 'add', '.'])
+        subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
+        subprocess.check_call(['git', 'push', 'origin', 'main'])
+        print("Changes pushed to GitHub")
+    except subprocess.CalledProcessError as e:
+        print(f"An error occurred while pushing to GitHub: {e}")
 s3_file = 'merged_data.csv'
 local_file = 'merged_data.csv'
 
