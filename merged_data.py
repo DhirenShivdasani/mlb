@@ -81,13 +81,16 @@ def push_to_github():
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
+        print('good')
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+        print('good')
         subprocess.check_call(['git', 'add', '.'])
+        print('good')
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
         # Use the token from environment variables for authentication
         subprocess.check_call([
             'git', 'push', 'https://{MLB}@github.com/DhirenShivdasani/mlb.git', 'main'
-        ], env={'GITHUB_TOKEN': os.getenv('GITHUB_TOKEN')})
+        ], env={'MLB_TOKEN': os.getenv('MLB_TOKEN')})
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
