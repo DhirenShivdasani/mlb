@@ -61,7 +61,7 @@ def push_to_github():
         subprocess.check_call(['git', 'reset', '--hard', 'origin/main'])
 
         # Add and commit changes
-        subprocess.check_call(['git', 'add', '.'])
+        subprocess.check_call(['git', 'add', 'mlb_props.csv'])
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
