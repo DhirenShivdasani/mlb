@@ -63,14 +63,14 @@ def push_to_github():
             # Make an initial commit
             subprocess.check_call(['git', 'add', '.'])
             subprocess.check_call(['git', 'commit', '-m', 'Initial commit'])
-
         else:
-            # Stash local changes if there is an initial commit
+            # Handle untracked files
+            subprocess.check_call(['git', 'add', '.'])
             subprocess.check_call(['git', 'stash'])
-
+            
             # Pull the latest changes from the remote repository
             subprocess.check_call(['git', 'pull', '--rebase', 'origin', 'main'])
-
+            
             # Apply the stashed changes
             subprocess.check_call(['git', 'stash', 'pop'])
 
