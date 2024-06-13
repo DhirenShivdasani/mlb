@@ -43,12 +43,7 @@ def push_to_github():
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
 
-        # Initialize git repository if not found
-        if not os.path.exists(os.path.join(repo_dir, '.git')):
-            subprocess.check_call(['git', 'init'])
-            subprocess.check_call(['git', 'checkout', '-b', 'main'])
-            subprocess.check_call(['git', 'remote', 'add', 'origin', 'https://github.com/DhirenShivdasani/mlb.git'])
-
+        # Configure Git if needed
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
@@ -61,20 +56,21 @@ def push_to_github():
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
-        if result.stdout:
+        if result.stdout.strip():
             # There are changes to commit
             subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
         else:
-            print("No changes to commit, pushing anyway")
+            print("No changes to commit")
 
         # Use the token from environment variables for authentication
         github_token = os.getenv('GITHUB_TOKEN')
         subprocess.check_call([
-            'git', 'push', 'https://{}@github.com/DhirenShivdasani/mlb.git'.format(github_token), 'main'
+            'git', 'push', f'https://{github_token}@github.com/DhirenShivdasani/mlb.git', 'main'
         ])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
+
 
 # Load the CSV files
 betting_odds_data = pd.read_csv('mlb_props.csv')
