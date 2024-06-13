@@ -51,6 +51,10 @@ def push_to_github():
 
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+
+        # Pull changes from the remote repository
+        subprocess.check_call(['git', 'pull', 'origin', 'main'])
+
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
 
@@ -70,14 +74,14 @@ prizepicks_data = pd.read_csv('test2.csv')
 prizepicks_data = prizepicks_data[(prizepicks_data['Prop'] == 'Total Bases') | 
                                   (prizepicks_data['Prop'] == 'Pitcher Strikeouts') | 
                                   (prizepicks_data['Prop'] == 'Runs')]
-prop_types= {
+prop_types = {
     'Pitcher Strikeouts': 'Strikeouts',
     'Runs': 'Runs',
     'Total Bases': 'Total Bases'
 }
 prizepicks_data['Prop'] = prizepicks_data['Prop'].map(prop_types)
 
-prop_types= {
+prop_types = {
     'strikeouts': 'Strikeouts',
     'runs': 'Runs', 
     'bases': 'Total Bases'
