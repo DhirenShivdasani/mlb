@@ -115,17 +115,40 @@ def push_to_github():
         repo_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current script directory
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
+
+        # Initialize git repository if not found
+        if not os.path.exists(os.path.join(repo_dir, '.git')):
+            subprocess.check_call(['git', 'init'])
+            subprocess.check_call(['git', 'checkout', '-b', 'main'])
+            subprocess.check_call(['git', 'remote', 'add', 'origin', 'https://github.com/DhirenShivdasani/mlb.git'])
+
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+
+        # Pull the latest changes from the remote repository
+        subprocess.check_call(['git', 'fetch', 'origin'])
+        subprocess.check_call(['git', 'reset', '--hard', 'origin/main'])
+
+        # Add and commit changes
         subprocess.check_call(['git', 'add', '.'])
-        subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
+
+        # Check for changes before attempting to commit
+        result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
+        if result.stdout:
+            # There are changes to commit
+            subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
+        else:
+            print("No changes to commit, pushing anyway")
+
         # Use the token from environment variables for authentication
+        github_token = os.getenv('GITHUB_TOKEN')
         subprocess.check_call([
-            'git', 'push', 'https://{MLB}@github.com/DhirenShivdasani/mlb.git', 'main'
-        ], env={'GITHUB_TOKEN': os.getenv('GITHUB_TOKEN')})
+            'git', 'push', 'https://{}@github.com/DhirenShivdasani/mlb.git'.format(github_token), 'main'
+        ])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
+
 
 # Download the file from S3
 if download_from_s3(BUCKET_NAME, s3_file, local_file):
