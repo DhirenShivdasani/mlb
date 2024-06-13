@@ -52,14 +52,23 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
-        # Stash local changes
-        subprocess.check_call(['git', 'stash'])
+        # Check if there is an initial commit
+        try:
+            subprocess.check_call(['git', 'rev-parse', '--verify', 'HEAD'])
+            initial_commit = False
+        except subprocess.CalledProcessError:
+            initial_commit = True
+
+        if not initial_commit:
+            # Stash local changes if there is an initial commit
+            subprocess.check_call(['git', 'stash'])
 
         # Pull the latest changes from the remote repository
         subprocess.check_call(['git', 'pull', '--rebase', 'origin', 'main'])
 
-        # Apply the stashed changes
-        subprocess.check_call(['git', 'stash', 'pop'])
+        if not initial_commit:
+            # Apply the stashed changes
+            subprocess.check_call(['git', 'stash', 'pop'])
 
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
