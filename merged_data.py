@@ -113,6 +113,7 @@ local_file = 'merged_data.csv'
 
 # Download the file from S3
 if download_from_s3(BUCKET_NAME, s3_file, local_file):
+    print('p')
     push_to_github()
 else:
     print("Failed to download file from S3, not pushing to GitHub")
