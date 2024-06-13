@@ -52,28 +52,11 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
-        # Check if there is an initial commit
-        try:
-            subprocess.check_call(['git', 'rev-parse', '--verify', 'HEAD'])
-            initial_commit = False
-        except subprocess.CalledProcessError:
-            initial_commit = True
+        # Pull the latest changes from the remote repository
+        subprocess.check_call(['git', 'fetch', 'origin'])
+        subprocess.check_call(['git', 'reset', '--hard', 'origin/main'])
 
-        if initial_commit:
-            # Make an initial commit
-            subprocess.check_call(['git', 'add', '.'])
-            subprocess.check_call(['git', 'commit', '-m', 'Initial commit'])
-        else:
-            # Handle untracked files
-            subprocess.check_call(['git', 'add', '.'])
-            subprocess.check_call(['git', 'stash'])
-
-            # Pull the latest changes from the remote repository
-            subprocess.check_call(['git', 'pull', '--rebase', 'origin', 'main'])
-
-            # Apply the stashed changes
-            subprocess.check_call(['git', 'stash', 'pop'])
-
+        # Add and commit changes
         subprocess.check_call(['git', 'add', '.'])
 
         # Check for changes before attempting to commit
@@ -87,7 +70,7 @@ def push_to_github():
         # Use the token from environment variables for authentication
         github_token = os.getenv('GITHUB_TOKEN')
         subprocess.check_call([
-            'git', 'push', 'https://{}@github.com/DhirenShivdasani/mlb.git'.format(github_token), 'master'
+            'git', 'push', 'https://{}@github.com/DhirenShivdasani/mlb.git'.format(github_token), 'main'
         ])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
