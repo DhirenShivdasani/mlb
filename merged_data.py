@@ -52,8 +52,8 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
-        # Pull changes from the remote repository
-        subprocess.check_call(['git', 'pull', 'origin', 'main'])
+        # Pull the latest changes from the remote repository
+        subprocess.check_call(['git', 'pull', '--rebase', 'origin', 'main'])
 
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
