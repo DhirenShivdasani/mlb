@@ -47,12 +47,7 @@ def push_to_github():
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
 
-        # Initialize git repository if not found
-        if not os.path.exists(os.path.join(repo_dir, '.git')):
-            subprocess.check_call(['git', 'init'])
-            subprocess.check_call(['git', 'checkout', '-b', 'main'])
-            subprocess.check_call(['git', 'remote', 'add', 'origin', 'https://github.com/DhirenShivdasani/mlb.git'])
-
+        # Configure Git if needed
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
@@ -61,20 +56,20 @@ def push_to_github():
         subprocess.check_call(['git', 'reset', '--hard', 'origin/main'])
 
         # Add and commit changes
-        subprocess.check_call(['git', 'add', 'mlb_props.csv'])
+        subprocess.check_call(['git', 'add', '.'])
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
-        if result.stdout:
+        if result.stdout.strip():
             # There are changes to commit
             subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
         else:
-            print("No changes to commit, pushing anyway")
+            print("No changes to commit")
 
         # Use the token from environment variables for authentication
         github_token = os.getenv('GITHUB_TOKEN')
         subprocess.check_call([
-            'git', 'push', 'https://{}@github.com/DhirenShivdasani/mlb.git'.format(github_token), 'main'
+            'git', 'push', f'https://{github_token}@github.com/DhirenShivdasani/mlb.git', 'main'
         ])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
