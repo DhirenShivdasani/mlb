@@ -87,7 +87,7 @@ def push_to_github():
         # Use the token from environment variables for authentication
         github_token = os.getenv('GITHUB_TOKEN')
         subprocess.check_call([
-            'git', 'push', 'https://{}@github.com/DhirenShivdasani/mlb.git'.format(github_token), 'main'
+            'git', 'push', 'https://{}@github.com/DhirenShivdasani/mlb.git'.format(github_token), 'master'
         ])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
