@@ -46,13 +46,14 @@ def push_to_github():
         # Initialize git repository if not found
         if not os.path.exists(os.path.join(repo_dir, '.git')):
             subprocess.check_call(['git', 'init'])
+            subprocess.check_call(['git', 'checkout', '-b', 'main'])
             subprocess.check_call(['git', 'remote', 'add', 'origin', 'https://github.com/DhirenShivdasani/mlb.git'])
 
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
         subprocess.check_call(['git', 'add', '.'])
         subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
-        
+
         # Use the token from environment variables for authentication
         github_token = os.getenv('GITHUB_TOKEN')
         subprocess.check_call([
