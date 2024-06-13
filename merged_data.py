@@ -75,8 +75,13 @@ def push_to_github():
             subprocess.check_call(['git', 'stash', 'pop'])
 
         subprocess.check_call(['git', 'add', '.'])
-        subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
 
+        # Try committing changes if there are any
+        try:
+            subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
+        except subprocess.CalledProcessError:
+            print("No changes to commit, pushing anyway")
+        
         # Use the token from environment variables for authentication
         github_token = os.getenv('GITHUB_TOKEN')
         subprocess.check_call([
