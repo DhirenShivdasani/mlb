@@ -59,14 +59,18 @@ def push_to_github():
         except subprocess.CalledProcessError:
             initial_commit = True
 
-        if not initial_commit:
+        if initial_commit:
+            # Make an initial commit
+            subprocess.check_call(['git', 'add', '.'])
+            subprocess.check_call(['git', 'commit', '-m', 'Initial commit'])
+
+        else:
             # Stash local changes if there is an initial commit
             subprocess.check_call(['git', 'stash'])
 
-        # Pull the latest changes from the remote repository
-        subprocess.check_call(['git', 'pull', '--rebase', 'origin', 'main'])
+            # Pull the latest changes from the remote repository
+            subprocess.check_call(['git', 'pull', '--rebase', 'origin', 'main'])
 
-        if not initial_commit:
             # Apply the stashed changes
             subprocess.check_call(['git', 'stash', 'pop'])
 
