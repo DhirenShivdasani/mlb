@@ -43,17 +43,19 @@ def download_from_s3(bucket, s3_file, local_file):
 
 def push_to_github():
     try:
-        repo_dir = os.path.dirname(os.path.abspath(__file__))  # Get the current script directory
+        repo_url = 'https://github.com/DhirenShivdasani/mlb.git'
+        repo_dir = '/tmp/mlb-repo'  # Using /tmp directory for temporary cloning
+        github_token = os.getenv('GITHUB_TOKEN')
+
+        # Clone the repository
+        subprocess.check_call(['git', 'clone', repo_url, repo_dir])
+
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
 
-        # Configure Git if needed
+        # Configure Git
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
-
-        # Pull the latest changes from the remote repository
-        subprocess.check_call(['git', 'fetch', 'origin'])
-        subprocess.check_call(['git', 'reset', '--hard', 'origin/main'])
 
         # Add and commit changes
         subprocess.check_call(['git', 'add', '.'])
@@ -66,15 +68,13 @@ def push_to_github():
         else:
             print("No changes to commit")
 
-        # Use the token from environment variables for authentication
-        github_token = os.getenv('GITHUB_TOKEN')
+        # Push changes to GitHub using the token for authentication
         subprocess.check_call([
             'git', 'push', f'https://{github_token}@github.com/DhirenShivdasani/mlb.git', 'main'
         ])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
-
 
 # Load the CSV files
 betting_odds_data = pd.read_csv('mlb_props.csv')

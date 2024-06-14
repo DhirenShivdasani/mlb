@@ -5,6 +5,7 @@ import json
 import pandas as pd
 import subprocess
 import os
+import shutil
 import boto3
 from botocore.exceptions import NoCredentialsError
 from dotenv import load_dotenv
@@ -50,6 +51,10 @@ def push_to_github():
         repo_url = 'https://github.com/DhirenShivdasani/mlb.git'
         repo_dir = '/tmp/mlb-repo'  # Using /tmp directory for temporary cloning
         github_token = os.getenv('GITHUB_TOKEN')
+
+        # Remove the existing repository directory if it exists
+        if os.path.exists(repo_dir):
+            shutil.rmtree(repo_dir)
 
         # Clone the repository
         subprocess.check_call(['git', 'clone', repo_url, repo_dir])
