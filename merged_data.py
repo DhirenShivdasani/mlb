@@ -41,11 +41,20 @@ def download_from_s3(bucket, s3_file, local_file):
         print("Credentials not available")
         return False
 
+def handle_remove_readonly(func, path, exc_info):
+    import stat
+    os.chmod(path, stat.S_IWRITE)
+    func(path)
+
 def push_to_github():
     try:
         repo_url = 'https://github.com/DhirenShivdasani/mlb.git'
         repo_dir = '/tmp/mlb-repo'  # Using /tmp directory for temporary cloning
         github_token = os.getenv('GITHUB_TOKEN')
+
+        # Remove the existing repository directory if it exists
+        if os.path.exists(repo_dir):
+            shutil.rmtree(repo_dir, onerror=handle_remove_readonly)
 
         # Clone the repository
         subprocess.check_call(['git', 'clone', repo_url, repo_dir])
