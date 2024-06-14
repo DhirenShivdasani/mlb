@@ -34,6 +34,8 @@ def download_from_s3(bucket, s3_file, local_file):
     try:
         s3.download_file(bucket, s3_file, local_file)
         print(f"Download Successful: {s3_file}")
+        with open(local_file, 'r') as file:
+            print("Content after download:\n", file.read())
         return True
     except FileNotFoundError:
         print("The file was not found")
@@ -67,8 +69,22 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
+        # Print the file content before and after the update
+        with open('merged_data.csv', 'r') as file:
+            print("Before update:\n", file.read())
+
+        # Explicitly touch the file to update its timestamp
+        open('merged_data.csv', 'a').close()
+        os.utime('merged_data.csv', None)
+
+        with open('merged_data.csv', 'r') as file:
+            print("After update:\n", file.read())
+
+        # Check the status before adding files
+        subprocess.check_call(['git', 'status'])
+
         # Add and commit changes
-        subprocess.check_call(['git', 'add', '.'])
+        subprocess.check_call(['git', 'add', '-f', 'merged_data.csv'])  # Force add the specific file
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
