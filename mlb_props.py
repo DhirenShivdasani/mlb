@@ -84,7 +84,7 @@ def push_to_github():
 
         # Push changes to GitHub using the token for authentication
         env = os.environ.copy()
-        env['GIT_ASKPASS'] = os.path.abspath('echo-github-token.bat')
+        env['GIT_ASKPASS'] = os.path.abspath('C:\Users\dhire\OneDrive\Desktop\code\MLB-player-prop-analysis\echo-github-token.bat')
         subprocess.check_call(['git', 'push', 'origin', 'main'], env=env)
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
