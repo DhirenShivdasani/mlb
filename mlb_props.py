@@ -74,8 +74,10 @@ def push_to_github():
         # Add and commit changes
         subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         time.sleep(3)
+        print('sleeping')
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
+        print('checking status')
         if result.stdout.strip():
             # There are changes to commit
             print("Changes detected. Committing...")
