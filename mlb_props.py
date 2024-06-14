@@ -66,6 +66,12 @@ def push_to_github():
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
 
+        # Print content before download
+        print("Content of merged_data.csv before download:")
+        if os.path.exists('merged_data.csv'):
+            with open('merged_data.csv', 'r') as file:
+                print(file.read())
+
         # Configure Git
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
@@ -75,6 +81,11 @@ def push_to_github():
 
         # Add and commit changes
         subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+        # Print content after download
+        print("Content of merged_data.csv after download:")
+        with open('merged_data.csv', 'r') as file:
+            print(file.read())
 
         # Check the status to ensure files are staged
         status_result = subprocess.run(['git', 'status'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
@@ -86,6 +97,11 @@ def push_to_github():
             # There are changes to commit
             print("Changes detected. Committing...")
             subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+            # Print the diff to confirm changes
+            diff_result = subprocess.run(['git', 'diff', '--cached'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            print("Git diff output:\n", diff_result.stdout)
+
             # Push changes to GitHub using the token for authentication
             repo_url_with_token = f'https://{github_token}@github.com/DhirenShivdasani/mlb.git'
             subprocess.check_call(['git', 'push', repo_url_with_token, 'main'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -94,6 +110,7 @@ def push_to_github():
             print("No changes to commit")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e.output.decode()}")
+
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
