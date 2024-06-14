@@ -9,7 +9,7 @@ import shutil
 import boto3
 from botocore.exceptions import NoCredentialsError
 from dotenv import load_dotenv
-
+import time
 # Load environment variables from .env file
 load_dotenv()
 
@@ -73,7 +73,7 @@ def push_to_github():
 
         # Add and commit changes
         subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
+        time.sleep(3)
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
         if result.stdout.strip():
