@@ -70,23 +70,8 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
-        # Print the file content before and after the update
-        with open('merged_data.csv', 'r') as file:
-            print("Before update:\n", file.read())
-
-        # Manually delete and recreate the file to ensure changes are recognized
-        os.remove('merged_data.csv')
-
-        # Create and write the updated data to the file
-        with open('merged_data.csv', 'w') as file:
-            r.to_csv(file, index=False)
-
-        with open('merged_data.csv', 'r') as file:
-            print("After update:\n", file.read())
-
         # Add and commit changes
-        subprocess.check_call(['git', 'add', '-A'])  # Force add all changes
-        subprocess.check_call(['git', 'status', '-v'])
+        subprocess.check_call(['git', 'add', '.'])
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
@@ -97,10 +82,14 @@ def push_to_github():
             print("No changes to commit")
 
         # Push changes to GitHub using the token for authentication
-        subprocess.check_call(['git', 'push', 'origin', 'main', '--verbose'])
+        env = os.environ.copy()
+        env['GIT_ASKPASS'] = os.path.abspath('echo-github-token.sh')
+        env['GITHUB_TOKEN'] = github_token
+        subprocess.check_call(['git', 'push', 'origin', 'main'], env=env)
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
+
 
 def implied_probability(odds):
     try:
