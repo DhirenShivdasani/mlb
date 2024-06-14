@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Odds Tracker</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -93,7 +92,7 @@
         const container = document.getElementById('odds-container');
 
         async function fetchOdds() {
-            const response = await fetch('/');
+            const response = await fetch('/merged_data');
             const data = await response.json();
             container.innerHTML = '';
             data.forEach(odds => {
