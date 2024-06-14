@@ -83,13 +83,12 @@ def push_to_github():
             print("No changes to commit")
 
         # Push changes to GitHub using the token for authentication
-        env = os.environ.copy()
-        env['GIT_ASKPASS'] = os.path.abspath('C:\Users\dhire\OneDrive\Desktop\code\MLB-player-prop-analysis\echo-github-token.bat')
-        subprocess.check_call(['git', 'push', 'origin', 'main'], env=env)
+        repo_url_with_token = f'https://{github_token}@github.com/DhirenShivdasani/mlb.git'
+        subprocess.check_call(['git', 'push', repo_url_with_token, 'main'])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
-
+        
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
