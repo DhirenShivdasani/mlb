@@ -84,7 +84,7 @@ def push_to_github():
 
         # Print content after download
         print("Content of merged_data.csv after download:")
-        with open('merged_data.csv', 'r') as file:
+        with open('mlb_props.csv', 'r') as file:
             print(file.read())
 
         # Check the status to ensure files are staged
@@ -92,7 +92,7 @@ def push_to_github():
         print("Git status output before commit:\n", status_result.stdout)
 
         # Force update file timestamp
-        os.utime('merged_data.csv', None)
+        os.utime('mlb_props.csv', None)
 
         # Add and commit changes again
         subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
