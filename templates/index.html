@@ -5,6 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Odds Tracker</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin: 0;
+        }
+
+        #odds-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .odds-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(100% - 40px);
+            max-width: 600px;
+        }
+
+        .odds-card p {
+            margin: 5px 0;
+        }
+
+        .odds-card hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 10px 0;
+        }
+
+        .prop-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .prop-row p {
+            flex: 1;
+            min-width: 120px;
+        }
+    </style>
 </head>
 <body>
     <h1>Live Odds Tracker</h1>
@@ -22,12 +76,18 @@
                 oddsDiv.className = 'odds-card';
                 oddsDiv.innerHTML = `
                     <p><strong>Player:</strong> ${odds.PlayerName}</p>
-                    <p><strong>Prop:</strong> ${odds.Prop}</p>
-                    <p><strong>Over/Under:</strong> ${odds.Over_Under}</p>
-                    <p><strong>DraftKings:</strong> ${odds.draftkings}</p>
-                    <p><strong>FanDuel:</strong> ${odds.fanduel}</p>
-                    <p><strong>MGM:</strong> ${odds.mgm}</p>
-                    <p><strong>BetRivers:</strong> ${odds.betrivers}</p>
+                    <div class="prop-row">
+                        <p><strong>Prop:</strong> ${odds.Prop}</p>
+                        <p><strong>Over/Under:</strong> ${odds.Over_Under}</p>
+                    </div>
+                    <div class="prop-row">
+                        <p><strong>DraftKings:</strong> ${odds.draftkings}</p>
+                        <p><strong>FanDuel:</strong> ${odds.fanduel}</p>
+                    </div>
+                    <div class="prop-row">
+                        <p><strong>MGM:</strong> ${odds.mgm}</p>
+                        <p><strong>BetRivers:</strong> ${odds.betrivers}</p>
+                    </div>
                     <hr>
                 `;
                 container.appendChild(oddsDiv);
