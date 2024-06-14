@@ -91,6 +91,12 @@ def push_to_github():
         status_result = subprocess.run(['git', 'status'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         print("Git status output before commit:\n", status_result.stdout)
 
+        # Force update file timestamp
+        os.utime('merged_data.csv', None)
+
+        # Add and commit changes again
+        subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         if result.stdout.strip():
@@ -110,7 +116,6 @@ def push_to_github():
             print("No changes to commit")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e.output.decode()}")
-
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
