@@ -62,7 +62,7 @@ def push_to_github():
             shutil.rmtree(repo_dir, onerror=handle_remove_readonly)
 
         # Clone the repository
-        subprocess.check_call(['git', 'clone', repo_url, repo_dir])
+        subprocess.check_call(['git', 'clone', repo_url, repo_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
@@ -72,23 +72,23 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
         # Add and commit changes
-        subprocess.check_call(['git', 'add', '.'])
+        subprocess.check_call(['git', 'add', '.'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
         if result.stdout.strip():
             # There are changes to commit
-            subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'])
+            subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         else:
             print("No changes to commit")
 
         # Push changes to GitHub using the token for authentication
         repo_url_with_token = f'https://{github_token}@github.com/DhirenShivdasani/mlb.git'
-        subprocess.check_call(['git', 'push', repo_url_with_token, 'main'])
+        subprocess.check_call(['git', 'push', repo_url_with_token, 'main'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
-        print(f"An error occurred while pushing to GitHub: {e}")
-        
+        print(f"An error occurred while pushing to GitHub: {e.output}")
+
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
