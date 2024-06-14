@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
         }
@@ -16,9 +16,11 @@
         h1 {
             text-align: center;
             padding: 20px;
-            background-color: #4CAF50;
+            background-color: #007bff;
             color: white;
             margin: 0;
+            font-size: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         #odds-container {
@@ -30,12 +32,17 @@
 
         .odds-card {
             background: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             margin: 10px;
             padding: 20px;
             width: calc(100% - 40px);
             max-width: 600px;
+            transition: transform 0.3s;
+        }
+
+        .odds-card:hover {
+            transform: translateY(-5px);
         }
 
         .odds-card p {
@@ -44,19 +51,37 @@
 
         .odds-card hr {
             border: none;
-            border-top: 1px solid #ccc;
-            margin: 10px 0;
+            border-top: 1px solid #ddd;
+            margin: 15px 0;
         }
 
         .prop-row {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            margin-bottom: 10px;
         }
 
         .prop-row p {
             flex: 1;
-            min-width: 120px;
+            min-width: 140px;
+        }
+
+        .prop-row p strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .prop-row {
+                flex-direction: column;
+            }
+
+            .prop-row p {
+                min-width: 100%;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
@@ -68,7 +93,7 @@
         const container = document.getElementById('odds-container');
 
         async function fetchOdds() {
-            const response = await fetch('/');
+            const response = await fetch('/merged_data');
             const data = await response.json();
             container.innerHTML = '';
             data.forEach(odds => {
