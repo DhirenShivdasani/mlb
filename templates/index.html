@@ -22,6 +22,31 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
+        .filters {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .filter {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .filter label {
+            font-weight: bold;
+        }
+
+        .filter input, .filter select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
         #odds-container {
             display: flex;
             flex-wrap: wrap;
@@ -86,14 +111,33 @@
 </head>
 <body>
     <h1>Live Odds Tracker</h1>
+    <div class="filters">
+        <div class="filter">
+            <label for="player-name">Filter by Player:</label>
+            <input type="text" id="player-name" placeholder="Enter player name" onkeyup="applyFilters()">
+        </div>
+        <div class="filter">
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by" onchange="applyFilters()">
+                <option value="default">Default</option>
+                <option value="impliedProbAsc">Implied Prob % (Low to High)</option>
+                <option value="impliedProbDesc">Implied Prob % (High to Low)</option>
+            </select>
+        </div>
+    </div>
     <div id="odds-container"></div>
 
     <script>
         const container = document.getElementById('odds-container');
+        let oddsData = [];
 
         async function fetchOdds() {
             const response = await fetch('/merged_data');
-            const data = await response.json();
+            oddsData = await response.json();
+            displayOdds(oddsData);
+        }
+
+        function displayOdds(data) {
             container.innerHTML = '';
             data.forEach(odds => {
                 const oddsDiv = document.createElement('div');
@@ -113,12 +157,31 @@
                         <p><strong>BetRivers:</strong> ${odds.betrivers}</p>
                     </div>
                     <div class="prop-row">
-                        <p><strong>Implied Prob:</strong> ${odds.Implied_Prob}</p>
+                        <p><strong>Implied Prob:</strong> ${parseFloat(odds.Implied_Prob).toFixed(2)}%</p>
                     </div>
                     <hr>
                 `;
                 container.appendChild(oddsDiv);
             });
+        }
+
+        function applyFilters() {
+            const playerNameFilter = document.getElementById('player-name').value.toLowerCase();
+            const sortBy = document.getElementById('sort-by').value;
+
+            let filteredData = oddsData;
+
+            if (playerNameFilter) {
+                filteredData = filteredData.filter(odds => odds.PlayerName.toLowerCase().includes(playerNameFilter));
+            }
+
+            if (sortBy === 'impliedProbAsc') {
+                filteredData.sort((a, b) => parseFloat(a.avg_implied_prob) - parseFloat(b.avg_implied_prob));
+            } else if (sortBy === 'impliedProbDesc') {
+                filteredData.sort((a, b) => parseFloat(b.avg_implied_prob) - parseFloat(a.avg_implied_prob));
+            }
+
+            displayOdds(filteredData);
         }
 
         async function setupWebSocket() {
