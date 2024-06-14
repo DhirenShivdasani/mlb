@@ -71,8 +71,23 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
+        # Print the file content before and after the update
+        with open('mlb_props.csv', 'r') as file:
+            print("Before update:\n", file.read())
+
+        # Manually delete and recreate the file to ensure changes are recognized
+        os.remove('mlb_props.csv')
+
+        # Create and write the updated data to the file
+        with open('mlb_props.csv', 'w') as file:
+            pivot_df.to_csv(file, index=False)
+
+        with open('mlb_props.csv', 'r') as file:
+            print("After update:\n", file.read())
+
         # Add and commit changes
-        subprocess.check_call(['git', 'add', '.'])
+        subprocess.check_call(['git', 'add', '-A'])  # Force add all changes
+        subprocess.check_call(['git', 'status', '-v'])
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
@@ -83,13 +98,10 @@ def push_to_github():
             print("No changes to commit")
 
         # Push changes to GitHub using the token for authentication
-        subprocess.check_call([
-            'git', 'push', f'https://{github_token}@github.com/DhirenShivdasani/mlb.git', 'main'
-        ])
+        subprocess.check_call(['git', 'push', 'origin', 'main', '--verbose'])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
-
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')

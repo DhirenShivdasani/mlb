@@ -73,18 +73,19 @@ def push_to_github():
         with open('merged_data.csv', 'r') as file:
             print("Before update:\n", file.read())
 
-        # Explicitly touch the file to update its timestamp
-        open('merged_data.csv', 'a').close()
-        os.utime('merged_data.csv', None)
+        # Manually delete and recreate the file to ensure changes are recognized
+        os.remove('merged_data.csv')
+
+        # Create and write the updated data to the file
+        with open('merged_data.csv', 'w') as file:
+            r.to_csv(file, index=False)
 
         with open('merged_data.csv', 'r') as file:
             print("After update:\n", file.read())
 
-        # Check the status before adding files
-        subprocess.check_call(['git', 'status'])
-
         # Add and commit changes
-        subprocess.check_call(['git', 'add', '-f', 'merged_data.csv'])  # Force add the specific file
+        subprocess.check_call(['git', 'add', '-A'])  # Force add all changes
+        subprocess.check_call(['git', 'status', '-v'])
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
@@ -95,9 +96,7 @@ def push_to_github():
             print("No changes to commit")
 
         # Push changes to GitHub using the token for authentication
-        subprocess.check_call([
-            'git', 'push', f'https://{github_token}@github.com/DhirenShivdasani/mlb.git', 'main'
-        ])
+        subprocess.check_call(['git', 'push', 'origin', 'main', '--verbose'])
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
@@ -105,6 +104,10 @@ def push_to_github():
 # Load the CSV files
 betting_odds_data = pd.read_csv('mlb_props.csv')
 prizepicks_data = pd.read_csv('test2.csv')
+
+# Debug print the initial data
+print("Initial betting_odds_data:\n", betting_odds_data.head())
+print("Initial prizepicks_data:\n", prizepicks_data.head())
 
 prizepicks_data = prizepicks_data[(prizepicks_data['Prop'] == 'Total Bases') | 
                                   (prizepicks_data['Prop'] == 'Pitcher Strikeouts') | 
@@ -131,7 +134,16 @@ r = r.where(pd.notnull(r), "None")
 r = r.drop_duplicates()
 r.sort_values(by='fanduel', ascending=True, inplace=True)
 
-r.to_csv('merged_data.csv')
+# Debug print the merged data
+print("Merged data:\n", r.head())
+
+# Remove the existing file to force Git to recognize changes
+if os.path.exists('merged_data.csv'):
+    os.remove('merged_data.csv')
+
+# Save the updated data to the file
+r.to_csv('merged_data.csv', index=False)
+
 upload_to_aws('merged_data.csv', BUCKET_NAME, 'merged_data.csv')
 
 s3_file = 'merged_data.csv'
