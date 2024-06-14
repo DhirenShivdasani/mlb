@@ -83,7 +83,7 @@ def push_to_github():
 
         # Push changes to GitHub using the token for authentication
         env = os.environ.copy()
-        env['GIT_ASKPASS'] = os.path.abspath('echo-github-token.sh')
+        env['GIT_ASKPASS'] = os.path.abspath('echo-github-token.bat')
         env['GITHUB_TOKEN'] = github_token
         subprocess.check_call(['git', 'push', 'origin', 'main'], env=env)
         print("Changes pushed to GitHub")
