@@ -84,12 +84,10 @@ def push_to_github():
         # Push changes to GitHub using the token for authentication
         env = os.environ.copy()
         env['GIT_ASKPASS'] = os.path.abspath('echo-github-token.bat')
-        env['GITHUB_TOKEN'] = github_token
         subprocess.check_call(['git', 'push', 'origin', 'main'], env=env)
         print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
-
 
 def implied_probability(odds):
     try:
