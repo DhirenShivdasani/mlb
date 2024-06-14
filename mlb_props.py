@@ -63,7 +63,6 @@ def push_to_github():
 
         # Clone the repository
         subprocess.check_call(['git', 'clone', repo_url, repo_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
         os.chdir(repo_dir)
         print(f"Current directory: {os.getcwd()}")
 
@@ -71,13 +70,18 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
+        # Ensure file system registers the changes
+        time.sleep(2)
+
         # Add and commit changes
         subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        time.sleep(3)
-        print('sleeping')
+
+        # Check the status to ensure files are staged
+        status_result = subprocess.run(['git', 'status'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        print("Git status output before commit:\n", status_result.stdout)
+
         # Check for changes before attempting to commit
-        result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
-        print('checking status')
+        result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         if result.stdout.strip():
             # There are changes to commit
             print("Changes detected. Committing...")
@@ -90,7 +94,6 @@ def push_to_github():
             print("No changes to commit")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e.output.decode()}")
-
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
