@@ -67,9 +67,9 @@ def push_to_github():
         print(f"Current directory: {os.getcwd()}")
 
         # Print content before download
-        print("Content of merged_data.csv before download:")
-        if os.path.exists('merged_data.csv'):
-            with open('merged_data.csv', 'r') as file:
+        print("Content of mlb_props.csv before download:")
+        if os.path.exists('mlb_props.csv'):
+            with open('mlb_props.csv', 'r') as file:
                 print(file.read())
 
         # Configure Git
