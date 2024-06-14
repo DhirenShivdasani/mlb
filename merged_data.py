@@ -121,7 +121,7 @@ def calculate_average_implied_probability(df):
     
     # Calculate the average implied probability for each row
     df['Implied_Prob'] = df[['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob']].mean(axis=1) * 100
-    df['Implied_Prob'] =df['Implied Prob'].round(2).astype(str) + '%'
+    df['Implied_Prob'] =df['Implied_Prob'].round(2).astype(str) + '%'
     # Clean up the intermediate columns
     df.drop(columns=['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob'], inplace=True)
     
