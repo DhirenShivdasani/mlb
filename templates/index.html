@@ -68,7 +68,7 @@
         const container = document.getElementById('odds-container');
 
         async function fetchOdds() {
-            const response = await fetch('/merged_data');
+            const response = await fetch('/');
             const data = await response.json();
             container.innerHTML = '';
             data.forEach(odds => {
