@@ -5,6 +5,7 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 from dotenv import load_dotenv
 import shutil
+import numpy as np
 
 # Load environment variables from .env file
 load_dotenv()
@@ -101,6 +102,30 @@ def push_to_github():
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e}")
 
+def implied_probability(odds):
+    try:
+        odds = float(odds)
+        if odds > 0:
+            return 100 / (odds + 100)
+        else:
+            return abs(odds) / (abs(odds) + 100)
+    except ValueError:
+        return np.nan
+
+def calculate_average_implied_probability(df):
+    # Calculate the implied probability for each sportsbook's odds
+    for sportsbook in ['betrivers', 'draftkings', 'fanduel', 'mgm']:
+        df[f'{sportsbook}_implied_prob'] = df[sportsbook].apply(
+            lambda x: implied_probability(x.split(' ')[1]) if ' ' in x and x.split(' ')[1] else np.nan
+        )
+    
+    # Calculate the average implied probability for each row
+    df['Implied_Prob'] = df[['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob']].mean(axis=1) * 100
+    df['Implied_Prob'] =df['Implied Prob'].round(2).astype(str) + '%'
+    # Clean up the intermediate columns
+    df.drop(columns=['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob'], inplace=True)
+    
+    return df
 # Load the CSV files
 betting_odds_data = pd.read_csv('mlb_props.csv')
 prizepicks_data = pd.read_csv('test2.csv')
@@ -133,6 +158,8 @@ r = r.dropna(subset=['Value'])
 r = r.where(pd.notnull(r), "None")
 r = r.drop_duplicates()
 r.sort_values(by='fanduel', ascending=True, inplace=True)
+
+r = calculate_average_implied_probability(r)
 
 # Debug print the merged data
 print("Merged data:\n", r.head())

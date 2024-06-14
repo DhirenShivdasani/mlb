@@ -110,6 +110,7 @@ function insertOddsDataUnderdog(oddsData) {
                 <div>FanDuel: ${match.fanduel}</div>
                 <div>MGM: ${match.mgm}</div>
                 <div>BetRivers: ${match.betrivers}</div>
+                <div>Implied Prob: ${match.Implied_Prob}</div>
                 <br>
               `;
             });
