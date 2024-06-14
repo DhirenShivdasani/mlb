@@ -72,22 +72,22 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
         # Add and commit changes
-        subprocess.check_call(['git', 'add', '.'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE)
         if result.stdout.strip():
             # There are changes to commit
+            print("Changes detected. Committing...")
             subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            # Push changes to GitHub using the token for authentication
+            repo_url_with_token = f'https://{github_token}@github.com/DhirenShivdasani/mlb.git'
+            subprocess.check_call(['git', 'push', repo_url_with_token, 'main'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            print("Changes pushed to GitHub")
         else:
             print("No changes to commit")
-
-        # Push changes to GitHub using the token for authentication
-        repo_url_with_token = f'https://{github_token}@github.com/DhirenShivdasani/mlb.git'
-        subprocess.check_call(['git', 'push', repo_url_with_token, 'main'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        print("Changes pushed to GitHub")
     except subprocess.CalledProcessError as e:
-        print(f"An error occurred while pushing to GitHub: {e.output}")
+        print(f"An error occurred while pushing to GitHub: {e.output.decode()}")
 
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
