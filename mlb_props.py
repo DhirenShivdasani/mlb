@@ -67,35 +67,35 @@ def push_to_github():
         print(f"Current directory: {os.getcwd()}")
 
         # Print content before download
-        print("Content of mlb_props.csv before download:")
-        if os.path.exists('mlb_props.csv'):
-            with open('mlb_props.csv', 'r') as file:
+        print("Content of merged_data.csv before download:")
+        if os.path.exists('merged_data.csv'):
+            with open('merged_data.csv', 'r') as file:
                 print(file.read())
 
         # Configure Git
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
+        # Download the file from S3 again
+        download_from_s3(BUCKET_NAME, 'merged_data.csv', 'merged_data.csv')
+
         # Ensure file system registers the changes
         time.sleep(2)
 
+        # Force update file timestamp
+        os.utime('merged_data.csv', None)
+
         # Add and commit changes
-        subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.check_call(['git', 'add', 'merged_data.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Print content after download
         print("Content of merged_data.csv after download:")
-        with open('mlb_props.csv', 'r') as file:
+        with open('merged_data.csv', 'r') as file:
             print(file.read())
 
         # Check the status to ensure files are staged
         status_result = subprocess.run(['git', 'status'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         print("Git status output before commit:\n", status_result.stdout)
-
-        # Force update file timestamp
-        os.utime('mlb_props.csv', None)
-
-        # Add and commit changes again
-        subprocess.check_call(['git', 'add', '--all'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Check for changes before attempting to commit
         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -116,6 +116,7 @@ def push_to_github():
             print("No changes to commit")
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e.output.decode()}")
+
 url = 'https://www.rotowire.com/betting/mlb/player-props.php'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
