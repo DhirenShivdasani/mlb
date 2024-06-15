@@ -6,6 +6,7 @@ from botocore.exceptions import NoCredentialsError
 from dotenv import load_dotenv
 import shutil
 import time
+import hashlib
 
 # Load environment variables from .env file
 load_dotenv()
@@ -48,6 +49,13 @@ def handle_remove_readonly(func, path, exc_info):
     os.chmod(path, stat.S_IWRITE)
     func(path)
 
+def file_hash(filepath):
+    hasher = hashlib.sha256()
+    with open(filepath, 'rb') as f:
+        buf = f.read()
+        hasher.update(buf)
+    return hasher.hexdigest()
+
 def push_to_github():
     try:
         repo_url = 'https://github.com/DhirenShivdasani/mlb.git'
@@ -64,8 +72,9 @@ def push_to_github():
         print(f"Current directory: {os.getcwd()}")
 
         # Print content before download
-        print("Content of merged_data.csv before download:")
         if os.path.exists('merged_data.csv'):
+            print("Content of merged_data.csv before download:")
+            print(file_hash('merged_data.csv'))
             with open('merged_data.csv', 'r') as file:
                 print(file.read())
 
@@ -77,7 +86,7 @@ def push_to_github():
         download_from_s3(BUCKET_NAME, 'merged_data.csv', 'merged_data.csv')
 
         # Ensure file system registers the changes
-        time.sleep(2)
+        time.sleep(5)
 
         # Force update file timestamp
         os.utime('merged_data.csv', None)
@@ -87,6 +96,7 @@ def push_to_github():
 
         # Print content after download
         print("Content of merged_data.csv after download:")
+        print(file_hash('merged_data.csv'))
         with open('merged_data.csv', 'r') as file:
             print(file.read())
 
