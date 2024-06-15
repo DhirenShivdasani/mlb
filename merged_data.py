@@ -6,7 +6,7 @@ from botocore.exceptions import NoCredentialsError
 from dotenv import load_dotenv
 import shutil
 import time
-
+import numpy as np
 # Load environment variables from .env file
 load_dotenv()
 
