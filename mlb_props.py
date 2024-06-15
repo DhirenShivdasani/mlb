@@ -68,8 +68,8 @@ def push_to_github():
 
         # Print content before download
         print("Content of merged_data.csv before download:")
-        if os.path.exists('merged_data.csv'):
-            with open('merged_data.csv', 'r') as file:
+        if os.path.exists('mlb_props.csv'):
+            with open('mlb_props.csv', 'r') as file:
                 print(file.read())
 
         # Configure Git
@@ -77,20 +77,20 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
         # Download the file from S3 again
-        download_from_s3(BUCKET_NAME, 'merged_data.csv', 'merged_data.csv')
+        download_from_s3(BUCKET_NAME, 'mlb_props.csv', 'mlb_props.csv')
 
         # Ensure file system registers the changes
         time.sleep(2)
 
         # Force update file timestamp
-        os.utime('merged_data.csv', None)
+        os.utime('mlb_props.csv', None)
 
         # Add and commit changes
-        subprocess.check_call(['git', 'add', 'merged_data.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.check_call(['git', 'add', 'mlb_props.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Print content after download
-        print("Content of merged_data.csv after download:")
-        with open('merged_data.csv', 'r') as file:
+        print("Content of mlb_props.csv after download:")
+        with open('mlb_props.csv', 'r') as file:
             print(file.read())
 
         # Check the status to ensure files are staged
