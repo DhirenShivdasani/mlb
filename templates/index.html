@@ -176,9 +176,9 @@
             }
 
             if (sortBy === 'impliedProbAsc') {
-                filteredData.sort((a, b) => parseFloat(a.Implied_Prob) - parseFloat(b.avg_implied_prob));
+                filteredData.sort((a, b) => parseFloat(a.Implied_Prob) - parseFloat(b.Implied_Prob));
             } else if (sortBy === 'impliedProbDesc') {
-                filteredData.sort((a, b) => parseFloat(b.Implied_Prob) - parseFloat(a.avg_implied_prob));
+                filteredData.sort((a, b) => parseFloat(b.Implied_Prob) - parseFloat(a.Implied_Prob));
             }
 
             displayOdds(filteredData);
