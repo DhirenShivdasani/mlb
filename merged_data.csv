@@ -21,8 +21,8 @@ Taijuan Walker,PHI,@BAL,Strikeouts,Over,(5.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
 Carlos Carrasco,CLE,@TOR,Strikeouts,Over,(5.5) ,(3.5) ,(3.5) ,(3.5) ,3.5,nan%
 Taijuan Walker,PHI,@BAL,Strikeouts,Under,(5.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
 Carlos Carrasco,CLE,@TOR,Strikeouts,Under,(5.5) ,(3.5) ,(3.5) ,(3.5) ,3.5,nan%
-Ty Blach,COL,PIT,Strikeouts,Under,(3.5) -167,(3.5) -190,(3.5) -174,(3.5) -175,3.0,63.8%
-Ty Blach,COL,PIT,Strikeouts,Over,(3.5) 125,(3.5) 145,(3.5) 138,(3.5) 130,3.0,42.69%
+Ty Blach,COL,PIT,Strikeouts,Under,(3.5) -165,(3.5) -190,(3.5) -174,(3.5) -175,3.0,63.73%
+Ty Blach,COL,PIT,Strikeouts,Over,(3.5) 123,(3.5) 145,(3.5) 138,(3.5) 130,3.0,42.79%
 Trevor Rogers,MIA,@WSH,Strikeouts,Under,(3.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
 Trevor Rogers,MIA,@WSH,Strikeouts,Over,(3.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
 Keaton Winn,SF,LAA,Strikeouts,Under,(5.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
@@ -57,16 +57,16 @@ Shota Imanaga,CHC,STL,Strikeouts,Over,(7.5) ,(5.5) ,(6.5) ,(5.5) ,6.0,nan%
 Bailey Ober,MIN,OAK,Strikeouts,Under,(7.5) ,(6.5) ,(6.5) ,(6.5) ,6.0,nan%
 Grayson Rodriguez,BAL,PHI,Strikeouts,Under,(6.5) ,(6.5) ,(6.5) ,(6.5) ,6.0,nan%
 Grayson Rodriguez,BAL,PHI,Strikeouts,Over,(6.5) ,(6.5) ,(6.5) ,(6.5) ,6.0,nan%
-Jared Jones,PIT,@COL,Strikeouts,Under,(6.5) -134,(6.5) -155,(6.5) -130,(6.5) -150,6.0,58.64%
+Jared Jones,PIT,@COL,Strikeouts,Under,(6.5) -136,(6.5) -155,(6.5) -130,(6.5) -150,6.0,58.73%
 Yoshinobu Yamamoto,LAD,KC,Strikeouts,Under,(6.5) -141,(6.5) -125,(6.5) -146,(6.5) -140,6.0,57.94%
-Jared Jones,PIT,@COL,Strikeouts,Over,(6.5) 100,(6.5) 115,(6.5) 102,(6.5) 115,6.0,48.13%
+Jared Jones,PIT,@COL,Strikeouts,Over,(6.5) 102,(6.5) 115,(6.5) 102,(6.5) 115,6.0,48.01%
 Yoshinobu Yamamoto,LAD,KC,Strikeouts,Over,(6.5) 106,(6.5) 100,(6.5) 114,(6.5) 105,6.0,48.51%
 Yasmani Grandal,PIT,@COL,Runs,Under,(0.5) -127,(0.5) -130,None,(0.5) -135,0.5,56.64%
 Yasmani Grandal,PIT,@COL,Runs,Over,(0.5) -107,(0.5) 100,None,(0.5) 100,0.5,50.56%
-Yasmani Grandal,PIT,@COL,Total Bases,Under,(1.5) -148,(1.5) -125,None,(1.5) -125,1.5,56.93%
+Yasmani Grandal,PIT,@COL,Total Bases,Under,(1.5) -150,(1.5) -125,None,(1.5) -125,1.5,57.04%
 Royce Lewis,MIN,OAK,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Royce Lewis,MIN,OAK,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Yasmani Grandal,PIT,@COL,Total Bases,Over,(1.5) 105,(1.5) -105,None,(1.5) -105,1.5,50.41%
+Yasmani Grandal,PIT,@COL,Total Bases,Over,(1.5) 107,(1.5) -105,None,(1.5) -105,1.5,50.25%
 Willi Castro,MIN,OAK,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Seiya Suzuki,CHC,STL,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Seiya Suzuki,CHC,STL,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
@@ -77,8 +77,8 @@ Tyler Locklear,SEA,TEX,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Shohei Ohtani,LAD,KC,Total Bases,Over,(1.5) -143,(1.5) -115,None,(1.5) -120,1.5,55.63%
 Shohei Ohtani,LAD,KC,Total Bases,Under,(1.5) 104,(1.5) -115,None,(1.5) -110,1.5,51.63%
 Tyler Locklear,SEA,TEX,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Tommy Pham,CWS,@ARI,Runs,Over,(0.5) 108,(0.5) -110,None,(0.5) -105,0.5,50.56%
-Tommy Pham,CWS,@ARI,Runs,Under,(0.5) -148,(0.5) -120,None,(0.5) -120,0.5,56.26%
+Tommy Pham,CWS,@ARI,Runs,Over,(0.5) 106,(0.5) -110,None,(0.5) -105,0.5,50.71%
+Tommy Pham,CWS,@ARI,Runs,Under,(0.5) -143,(0.5) -120,None,(0.5) -120,0.5,55.98%
 Willi Castro,MIN,OAK,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Will Benson,CIN,@MIL,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Daniel Schneemann,CLE,@TOR,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
@@ -87,25 +87,25 @@ Dane Myers,MIA,@WSH,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Dane Myers,MIA,@WSH,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Dylan Moore,SEA,TEX,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Dylan Moore,SEA,TEX,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Ezequiel Tovar,COL,PIT,Total Bases,Over,(1.5) 102,(1.5) -110,None,(1.5) -105,1.5,51.04%
-Ezequiel Tovar,COL,PIT,Total Bases,Under,(1.5) -141,(1.5) -120,None,(1.5) -125,1.5,56.2%
+Ezequiel Tovar,COL,PIT,Total Bases,Over,(1.5) 104,(1.5) -110,None,(1.5) -105,1.5,50.87%
+Ezequiel Tovar,COL,PIT,Total Bases,Under,(1.5) -143,(1.5) -120,None,(1.5) -125,1.5,56.32%
 Garrett Hampson,KC,@LAD,Total Bases,Over,None,(0.5) -105,None,(0.5) -105,0.5,51.22%
 Garrett Hampson,KC,@LAD,Total Bases,Under,None,(0.5) -125,None,(0.5) -125,0.5,55.56%
 Garrett Stubbs,PHI,@BAL,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
 Garrett Stubbs,PHI,@BAL,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
-Jared Triolo,PIT,@COL,Total Bases,Over,None,(1.5) -105,None,(1.5) 100,1.5,50.61%
-Jared Triolo,PIT,@COL,Total Bases,Under,None,(1.5) -125,None,(1.5) -130,1.5,56.04%
-Jared Triolo,PIT,@COL,Runs,Over,None,(0.5) -105,None,(0.5) 100,0.5,50.61%
-Jared Triolo,PIT,@COL,Runs,Under,None,(0.5) -125,None,(0.5) -130,0.5,56.04%
+Jared Triolo,PIT,@COL,Total Bases,Over,(1.5) 104,(1.5) -105,None,(1.5) 100,1.5,50.08%
+Jared Triolo,PIT,@COL,Total Bases,Under,(1.5) -143,(1.5) -125,None,(1.5) -130,1.5,56.98%
+Jared Triolo,PIT,@COL,Runs,Over,(0.5) 100,(0.5) -105,None,(0.5) 100,0.5,50.41%
+Jared Triolo,PIT,@COL,Runs,Under,(0.5) -137,(0.5) -125,None,(0.5) -130,0.5,56.63%
 Ben Rortvedt,TB,@ATL,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
 Jon Singleton,HOU,DET,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Christopher Morel,CHC,STL,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Ketel Marte,ARI,CWS,Runs,Over,(0.5) 105,(0.5) -115,None,(0.5) -110,0.5,51.55%
+Ketel Marte,ARI,CWS,Runs,Over,(0.5) 106,(0.5) -115,None,(0.5) -110,0.5,51.47%
 Ketel Marte,ARI,CWS,Runs,Under,(0.5) -143,(0.5) -115,None,(0.5) -120,0.5,55.63%
 Kevin Kiermaier,TOR,CLE,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
 Kevin Kiermaier,TOR,CLE,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
 Christopher Morel,CHC,STL,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Charlie Blackmon,COL,PIT,Total Bases,Under,(1.5) -155,(1.5) -135,None,(1.5) -130,1.5,58.25%
+Charlie Blackmon,COL,PIT,Total Bases,Under,(1.5) -152,(1.5) -135,None,(1.5) -130,1.5,58.1%
 Charlie Blackmon,COL,PIT,Total Bases,Over,(1.5) 110,(1.5) 100,None,(1.5) 100,1.5,49.21%
 Cavan Biggio,LAD,KC,Total Bases,Under,(1.5) -335,(0.5) -110,None,None,0.5,64.7%
 Matt Chapman,SF,LAA,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
