@@ -1,12 +1,16 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
-Tommy Pham,CWS,@ARI,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Brett Wisely,SF,LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Brett Wisely,SF,LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Tommy Pham,CWS,@ARI,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Joc Pederson,ARI,CWS,Runs,Under,(0.5) ,(0.5) ,(0.5) -125,(0.5) ,0.5,55.56%
-Rowdy Tellez,PIT,@COL,Runs,Under,(0.5) ,(0.5) ,(0.5) -450,(0.5) ,0.5,81.82%
-Joc Pederson,ARI,CWS,Runs,Over,(0.5) ,(0.5) ,(0.5) 100,(0.5) ,0.5,50.0%
-Rowdy Tellez,PIT,@COL,Runs,Over,(0.5) ,(0.5) ,(0.5) 310,(0.5) ,0.5,24.39%
+Rowdy Tellez,PIT,@COL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Joc Pederson,ARI,CWS,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Joc Pederson,ARI,CWS,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Rowdy Tellez,PIT,@COL,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Freddie Freeman,LAD,KC,Runs,Under,(0.5) ,(0.5) ,(0.5) -250,(0.5) ,0.5,71.43%
+Brett Wisely,SF,LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) -260,(0.5) ,0.5,72.22%
+Tommy Pham,CWS,@ARI,Runs,Under,(0.5) ,(0.5) ,(0.5) -310,(0.5) ,0.5,75.61%
+Freddie Freeman,LAD,KC,Runs,Over,(0.5) ,(0.5) ,(0.5) 185,(0.5) ,0.5,35.09%
+Brett Wisely,SF,LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) 190,(0.5) ,0.5,34.48%
+Tommy Pham,CWS,@ARI,Runs,Over,(0.5) ,(0.5) ,(0.5) 230,(0.5) ,0.5,30.3%
+Ketel Marte,ARI,CWS,Runs,Under,(0.5) ,(0.5) ,(1.5) -210,(0.5) ,0.5,67.74%
+Ketel Marte,ARI,CWS,Runs,Over,(0.5) ,(0.5) ,(1.5) 160,(0.5) ,0.5,38.46%
 Dakota Hudson,COL,PIT,Strikeouts,Over,(5.5) ,(3.5) ,(2.5) ,(3.5) ,3.0,nan%
 Dakota Hudson,COL,PIT,Strikeouts,Under,(5.5) ,(3.5) ,(2.5) ,(3.5) ,3.0,nan%
 Drew Thorpe,CWS,@ARI,Strikeouts,Over,(4.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
@@ -19,37 +23,33 @@ Brady Singer,KC,@LAD,Strikeouts,Under,(4.5) ,(4.5) ,(4.5) ,(4.5) ,5.0,nan%
 Brady Singer,KC,@LAD,Strikeouts,Over,(4.5) ,(4.5) ,(4.5) ,(4.5) ,5.0,nan%
 Dane Dunning,TEX,@SEA,Strikeouts,Under,(5.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
 Dane Dunning,TEX,@SEA,Strikeouts,Over,(5.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
-Logan Gilbert,SEA,TEX,Strikeouts,Over,(5.5) ,(6.5) ,(5.5) ,(6.5) ,6.0,nan%
 Logan Gilbert,SEA,TEX,Strikeouts,Under,(5.5) ,(6.5) ,(5.5) ,(6.5) ,6.0,nan%
+Logan Gilbert,SEA,TEX,Strikeouts,Over,(5.5) ,(6.5) ,(5.5) ,(6.5) ,6.0,nan%
 Kutter Crawford,BOS,NYY,Strikeouts,Under,(5.5) 138,(5.5) -170,(5.5) -170,(5.5) -165,5.0,57.55%
 Kutter Crawford,BOS,NYY,Strikeouts,Over,(5.5) 120,(5.5) 130,(5.5) 132,(5.5) 130,5.0,43.88%
 Tyler Glasnow,LAD,KC,Strikeouts,Over,(7.5) ,(7.5) ,(7.5) ,(7.5) ,7.5,nan%
 Tyler Glasnow,LAD,KC,Strikeouts,Under,(7.5) ,(7.5) ,(7.5) ,(7.5) ,7.5,nan%
-Shohei Ohtani,LAD,KC,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Shohei Ohtani,LAD,KC,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Mookie Betts,LAD,KC,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Rowdy Tellez,PIT,@COL,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Rowdy Tellez,PIT,@COL,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Kyle Isbel,KC,@LAD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Kyle Isbel,KC,@LAD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Rowdy Tellez,PIT,@COL,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Mookie Betts,LAD,KC,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Mookie Betts,LAD,KC,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Shohei Ohtani,LAD,KC,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Andrew Knizner,TEX,@SEA,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
-Ketel Marte,ARI,CWS,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Kyle Isbel,KC,@LAD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Andrew Knizner,TEX,@SEA,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
 Andrew Vaughn,CWS,@ARI,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Andrew Vaughn,CWS,@ARI,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Cavan Biggio,LAD,KC,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Cavan Biggio,LAD,KC,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 David Hamilton,BOS,NYY,Runs,Over,None,(0.5) 105,None,(0.5) 100,0.5,49.39%
+Kyle Isbel,KC,@LAD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 David Hamilton,BOS,NYY,Runs,Under,None,(0.5) -135,None,(0.5) -135,0.5,57.45%
-Ketel Marte,ARI,CWS,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Freddie Freeman,LAD,KC,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Freddy Fermin,KC,@LAD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Freddy Fermin,KC,@LAD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Jarren Duran,BOS,NYY,Total Bases,Over,(1.5) -109,(1.5) -125,None,(1.5) -125,1.5,54.42%
 Jarren Duran,BOS,NYY,Total Bases,Under,(1.5) -127,(1.5) -105,None,(1.5) -105,1.5,52.8%
 Tyler Locklear,SEA,TEX,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Juan Soto,NYY,@BOS,Total Bases,Over,(1.5) -106,(1.5) -115,None,(1.5) -110,1.5,52.44%
 Juan Soto,NYY,@BOS,Total Bases,Under,(1.5) -132,(1.5) -115,None,(1.5) -120,1.5,54.98%
-Freddie Freeman,LAD,KC,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Freddy Fermin,KC,@LAD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Tyler Locklear,SEA,TEX,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
