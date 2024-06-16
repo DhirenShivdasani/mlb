@@ -1,16 +1,16 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
 Freddie Freeman,LAD,KC,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Tommy Pham,CWS,@ARI,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Rowdy Tellez,PIT,@COL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Brett Wisely,SF,LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Brett Wisely,SF,LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Tommy Pham,CWS,@ARI,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Freddie Freeman,LAD,KC,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Joc Pederson,ARI,CWS,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Joc Pederson,ARI,CWS,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Rowdy Tellez,PIT,@COL,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Tommy Pham,CWS,@ARI,Runs,Under,(0.5) ,(0.5) ,(0.5) -270,(0.5) ,0.5,72.97%
-Tommy Pham,CWS,@ARI,Runs,Over,(0.5) ,(0.5) ,(0.5) 210,(0.5) ,0.5,32.26%
-Ketel Marte,ARI,CWS,Runs,Under,(0.5) ,(0.5) ,(1.5) -260,(0.5) ,0.5,72.22%
-Ketel Marte,ARI,CWS,Runs,Over,(0.5) ,(0.5) ,(1.5) 200,(0.5) ,0.5,33.33%
+Ketel Marte,ARI,CWS,Runs,Under,(0.5) ,(0.5) ,(1.5) -700,(0.5) ,0.5,87.5%
+Brett Wisely,SF,LAA,Runs,Under,(0.5) ,(0.5) ,(1.5) -750,(0.5) ,0.5,88.24%
+Ketel Marte,ARI,CWS,Runs,Over,(0.5) ,(0.5) ,(1.5) 450,(0.5) ,0.5,18.18%
+Brett Wisely,SF,LAA,Runs,Over,(0.5) ,(0.5) ,(1.5) 450,(0.5) ,0.5,18.18%
 Dakota Hudson,COL,PIT,Strikeouts,Over,(5.5) ,(3.5) ,(2.5) ,(3.5) ,3.0,nan%
 Dakota Hudson,COL,PIT,Strikeouts,Under,(5.5) ,(3.5) ,(2.5) ,(3.5) ,3.0,nan%
 Drew Thorpe,CWS,@ARI,Strikeouts,Over,(4.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
@@ -22,7 +22,7 @@ Jordan Montgomery,ARI,CWS,Strikeouts,Over,(3.5) ,(4.5) ,(4.5) ,(4.5) ,4.5,nan%
 Brady Singer,KC,@LAD,Strikeouts,Under,(4.5) ,(4.5) ,(4.5) ,(4.5) ,5.0,nan%
 Brady Singer,KC,@LAD,Strikeouts,Over,(4.5) ,(4.5) ,(4.5) ,(4.5) ,5.0,nan%
 Kutter Crawford,BOS,NYY,Strikeouts,Over,(5.5) 120,(5.5) 130,(4.5) -170,(5.5) 130,5.0,48.84%
-Kutter Crawford,BOS,NYY,Strikeouts,Under,(5.5) 138,(5.5) -170,(4.5) 132,(5.5) -165,5.0,52.59%
+Kutter Crawford,BOS,NYY,Strikeouts,Under,(5.5) 133,(5.5) -170,(4.5) 132,(5.5) -165,5.0,52.81%
 Dane Dunning,TEX,@SEA,Strikeouts,Under,(5.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
 Dane Dunning,TEX,@SEA,Strikeouts,Over,(5.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
 Logan Gilbert,SEA,TEX,Strikeouts,Under,(5.5) ,(6.5) ,(5.5) ,(6.5) ,6.0,nan%
@@ -46,10 +46,10 @@ David Hamilton,BOS,NYY,Runs,Over,None,(0.5) 105,None,(0.5) 100,0.5,49.39%
 Kyle Isbel,KC,@LAD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 David Hamilton,BOS,NYY,Runs,Under,None,(0.5) -135,None,(0.5) -135,0.5,57.45%
 Freddy Fermin,KC,@LAD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Jarren Duran,BOS,NYY,Total Bases,Over,(1.5) -109,(1.5) -125,None,(1.5) -125,1.5,54.42%
-Jarren Duran,BOS,NYY,Total Bases,Under,(1.5) -127,(1.5) -105,None,(1.5) -105,1.5,52.8%
+Jarren Duran,BOS,NYY,Total Bases,Over,(1.5) -108,(1.5) -125,None,(1.5) -125,1.5,54.34%
+Jarren Duran,BOS,NYY,Total Bases,Under,(1.5) -129,(1.5) -105,None,(1.5) -105,1.5,52.92%
 Tyler Locklear,SEA,TEX,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Juan Soto,NYY,@BOS,Total Bases,Over,(1.5) -106,(1.5) -115,None,(1.5) -110,1.5,52.44%
-Juan Soto,NYY,@BOS,Total Bases,Under,(1.5) -132,(1.5) -115,None,(1.5) -120,1.5,54.98%
+Juan Soto,NYY,@BOS,Total Bases,Over,(1.5) -109,(1.5) -115,None,(1.5) -110,1.5,52.67%
+Juan Soto,NYY,@BOS,Total Bases,Under,(1.5) -127,(1.5) -115,None,(1.5) -120,1.5,54.66%
 Freddy Fermin,KC,@LAD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Tyler Locklear,SEA,TEX,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
