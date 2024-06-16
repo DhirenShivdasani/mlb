@@ -183,10 +183,10 @@ Bryson Stott,PHI,@BAL,bases,Over,(1.5) ,(1.5) ,,(1.5)
 Bryson Stott,PHI,@BAL,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Bryson Stott,PHI,@BAL,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Bryson Stott,PHI,@BAL,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
-Byron Buxton,MIN,OAK,bases,Over,(1.5) ,(1.5) ,,(1.5) 
-Byron Buxton,MIN,OAK,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Byron Buxton,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) 
-Byron Buxton,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) 
+Byron Buxton,MIN,OAK,bases,Over,(1.5) ,(1.5) ,,(1.5) 120
+Byron Buxton,MIN,OAK,bases,Under,(1.5) ,(1.5) ,,(1.5) -160
+Byron Buxton,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) 120
+Byron Buxton,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) -155
 CJ Abrams,WSH,MIA,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 CJ Abrams,WSH,MIA,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 CJ Abrams,WSH,MIA,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -195,14 +195,14 @@ Cal Raleigh,SEA,TEX,bases,Over,(1.5) ,(0.5) ,,(0.5)
 Cal Raleigh,SEA,TEX,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Cal Raleigh,SEA,TEX,runs,Over,(0.5) ,(0.5) ,,(0.5) 
 Cal Raleigh,SEA,TEX,runs,Under,(0.5) ,(0.5) ,,(0.5) 
-Carlos Correa,MIN,OAK,bases,Over,(1.5) ,(1.5) ,,(1.5) 
-Carlos Correa,MIN,OAK,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Carlos Correa,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) 
-Carlos Correa,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) 
-Carlos Santana,MIN,OAK,bases,Over,(1.5) ,(0.5) ,,(0.5) 
-Carlos Santana,MIN,OAK,bases,Under,(1.5) ,(0.5) ,,(0.5) 
-Carlos Santana,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) 
-Carlos Santana,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) 
+Carlos Correa,MIN,OAK,bases,Over,(1.5) ,(1.5) ,,(1.5) 110
+Carlos Correa,MIN,OAK,bases,Under,(1.5) ,(1.5) ,,(1.5) -145
+Carlos Correa,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) 110
+Carlos Correa,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) -145
+Carlos Santana,MIN,OAK,bases,Over,(1.5) ,(0.5) ,,(0.5) -185
+Carlos Santana,MIN,OAK,bases,Under,(1.5) ,(0.5) ,,(0.5) 135
+Carlos Santana,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) 125
+Carlos Santana,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) -160
 Carson Kelly,DET,@HOU,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Carson Kelly,DET,@HOU,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Carson Kelly,DET,@HOU,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -1055,10 +1055,10 @@ Rowdy Tellez,PIT,@COL,bases,Over,(1.5) ,(1.5) ,,(1.5)
 Rowdy Tellez,PIT,@COL,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Rowdy Tellez,PIT,@COL,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Rowdy Tellez,PIT,@COL,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
-Royce Lewis,MIN,OAK,bases,Over,(1.5) ,(1.5) ,,(1.5) 
-Royce Lewis,MIN,OAK,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Royce Lewis,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) 
-Royce Lewis,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) 
+Royce Lewis,MIN,OAK,bases,Over,(1.5) ,(1.5) ,,(1.5) -120
+Royce Lewis,MIN,OAK,bases,Under,(1.5) ,(1.5) ,,(1.5) -105
+Royce Lewis,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) -140
+Royce Lewis,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) 105
 Ryan Bliss,SEA,TEX,bases,Over,,(0.5) ,,(0.5) 
 Ryan Bliss,SEA,TEX,bases,Under,,(0.5) ,,(0.5) 
 Ryan Bliss,SEA,TEX,runs,Over,,(0.5) ,,(0.5) 
@@ -1215,10 +1215,10 @@ Will Smith,LAD,KC,bases,Over,(1.5) ,(1.5) ,,(1.5)
 Will Smith,LAD,KC,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Will Smith,LAD,KC,runs,Over,(0.5) ,(0.5) ,,(0.5) 
 Will Smith,LAD,KC,runs,Under,(0.5) ,(0.5) ,,(0.5) 
-Willi Castro,MIN,OAK,bases,Over,(1.5) ,(0.5) ,,(0.5) 
-Willi Castro,MIN,OAK,bases,Under,(1.5) ,(0.5) ,,(0.5) 
-Willi Castro,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) 
-Willi Castro,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) 
+Willi Castro,MIN,OAK,bases,Over,(1.5) ,(0.5) ,,(1.5) 115
+Willi Castro,MIN,OAK,bases,Under,(1.5) ,(0.5) ,,(1.5) -155
+Willi Castro,MIN,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5) -110
+Willi Castro,MIN,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) -120
 William Contreras,MIL,CIN,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 William Contreras,MIL,CIN,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 William Contreras,MIL,CIN,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
