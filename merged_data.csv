@@ -1,18 +1,18 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
 Adley Rutschman,BAL,PHI,Runs,Over,(0.5) 128,(0.5) 125,None,(0.5) 130,0.5,43.93%
-Lane Thomas,WSH,MIA,Runs,Over,None,(0.5) -105,None,(0.5) 100,0.5,50.61%
-Lane Thomas,WSH,MIA,Runs,Under,None,(0.5) -125,None,(0.5) -130,0.5,56.04%
-Marcell Ozuna,ATL,TB,Runs,Over,None,(0.5) -130,None,(0.5) -130,0.5,56.52%
-Marcell Ozuna,ATL,TB,Runs,Under,None,(0.5) 100,None,(0.5) 100,0.5,50.0%
+Lane Thomas,WSH,MIA,Runs,Over,(0.5) 104,(0.5) -105,None,(0.5) 100,0.5,50.08%
+Lane Thomas,WSH,MIA,Runs,Under,(0.5) -141,(0.5) -125,None,(0.5) -130,0.5,56.86%
+Marcell Ozuna,ATL,TB,Runs,Over,(0.5) -118,(0.5) -130,None,(0.5) -125,0.5,55.4%
+Marcell Ozuna,ATL,TB,Runs,Under,(0.5) -115,(0.5) 100,None,(0.5) -105,0.5,51.57%
 Matt Chapman,SF,LAA,Total Bases,Over,None,(1.5) 115,None,None,1.5,46.51%
 Matt Chapman,SF,LAA,Total Bases,Under,None,(1.5) -150,None,None,1.5,60.0%
-Matt Olson,ATL,TB,Runs,Over,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
-Matt Olson,ATL,TB,Runs,Under,None,(0.5) -110,None,(0.5) -110,0.5,52.38%
-Ozzie Albies,ATL,TB,Runs,Over,None,(0.5) -115,None,(0.5) -115,0.5,53.49%
-Ozzie Albies,ATL,TB,Runs,Under,None,(0.5) -115,None,(0.5) -115,0.5,53.49%
+Matt Olson,ATL,TB,Runs,Over,(0.5) -105,(0.5) -120,None,(0.5) -120,0.5,53.44%
+Matt Olson,ATL,TB,Runs,Under,(0.5) -130,(0.5) -110,None,(0.5) -110,0.5,53.76%
+Ozzie Albies,ATL,TB,Runs,Over,(0.5) -104,(0.5) -115,None,(0.5) -115,0.5,52.65%
+Ozzie Albies,ATL,TB,Runs,Under,(0.5) -132,(0.5) -115,None,(0.5) -115,0.5,54.62%
 Kyle Schwarber,PHI,@BAL,Runs,Under,(0.5) -125,(0.5) -145,None,(0.5) -145,0.5,57.97%
-Royce Lewis,MIN,OAK,Total Bases,Over,None,(1.5) 105,None,None,1.5,48.78%
-Seiya Suzuki,CHC,STL,Runs,Over,(0.5) -129,(0.5) -115,None,(0.5) -115,0.5,54.44%
+Royce Lewis,MIN,OAK,Total Bases,Over,None,(1.5) 110,None,None,1.5,47.62%
+Seiya Suzuki,CHC,STL,Runs,Over,(0.5) -129,(0.5) -115,None,(0.5) -120,0.5,54.79%
 Seiya Suzuki,CHC,STL,Runs,Under,(0.5) -107,(0.5) -115,None,(0.5) -110,0.5,52.52%
 Shohei Ohtani,LAD,KC,Total Bases,Over,None,(1.5) -125,None,(1.5) -125,1.5,55.56%
 Shohei Ohtani,LAD,KC,Total Bases,Under,None,(1.5) -105,None,(1.5) -105,1.5,51.22%
@@ -22,27 +22,27 @@ Tyler Locklear,SEA,TEX,Total Bases,Over,None,(0.5) -125,None,None,0.5,55.56%
 Tyler Locklear,SEA,TEX,Total Bases,Under,None,(0.5) -105,None,None,0.5,51.22%
 Will Benson,CIN,@MIL,Total Bases,Over,None,(0.5) -105,None,(0.5) -105,0.5,51.22%
 Will Benson,CIN,@MIL,Total Bases,Under,None,(0.5) -125,None,(0.5) -125,0.5,55.56%
-Royce Lewis,MIN,OAK,Total Bases,Under,None,(1.5) -135,None,None,1.5,57.45%
+Royce Lewis,MIN,OAK,Total Bases,Under,None,(1.5) -150,None,None,1.5,60.0%
 Kyle Schwarber,PHI,@BAL,Runs,Over,(0.5) -109,(0.5) 110,None,(0.5) 110,0.5,49.13%
-Kevin Kiermaier,TOR,CLE,Total Bases,Under,None,(0.5) 100,None,(0.5) -105,0.5,50.61%
-Kevin Kiermaier,TOR,CLE,Total Bases,Over,None,(0.5) -130,None,(0.5) -125,0.5,56.04%
+Kevin Kiermaier,TOR,CLE,Total Bases,Under,(1.5) -375,(0.5) 100,None,(0.5) -105,0.5,60.06%
+Kevin Kiermaier,TOR,CLE,Total Bases,Over,(1.5) 230,(0.5) -130,None,(0.5) -125,0.5,47.46%
 Adley Rutschman,BAL,PHI,Runs,Under,(0.5) -177,(0.5) -170,None,(0.5) -165,0.5,63.04%
 Alec Bohm,PHI,@BAL,Total Bases,Over,(1.5) 120,(1.5) 110,None,(1.5) 115,1.5,46.53%
-Alec Bohm,PHI,@BAL,Total Bases,Under,(1.5) -167,(1.5) -150,None,(1.5) -150,1.5,60.85%
-Bailey Ober,MIN,OAK,Strikeouts,Over,None,(5.5) -145,None,None,6.0,59.18%
-Bailey Ober,MIN,OAK,Strikeouts,Under,None,(5.5) 115,None,None,6.0,46.51%
+Alec Bohm,PHI,@BAL,Total Bases,Under,(1.5) -175,(1.5) -150,None,(1.5) -150,1.5,61.21%
+Bailey Ober,MIN,OAK,Strikeouts,Over,None,(5.5) -155,None,None,6.0,60.78%
+Bailey Ober,MIN,OAK,Strikeouts,Under,None,(5.5) 125,None,None,6.0,44.44%
 Ben Rortvedt,TB,@ATL,Total Bases,Over,None,(0.5) -145,None,(0.5) -140,0.5,58.76%
 Ben Rortvedt,TB,@ATL,Total Bases,Under,None,(0.5) 110,None,(0.5) 105,0.5,48.2%
-Brandon Nimmo,NYM,SD,Runs,Over,None,(0.5) 125,None,(0.5) 130,0.5,43.96%
-Brandon Nimmo,NYM,SD,Runs,Under,None,(0.5) -170,None,(0.5) -165,0.5,62.61%
+Brandon Nimmo,NYM,SD,Runs,Over,(0.5) 138,(0.5) 125,None,(0.5) 130,0.5,43.31%
+Brandon Nimmo,NYM,SD,Runs,Under,(0.5) -195,(0.5) -170,None,(0.5) -165,0.5,63.78%
 Cavan Biggio,LAD,KC,Total Bases,Over,None,(0.5) -125,None,(0.5) -120,0.5,55.05%
 Cavan Biggio,LAD,KC,Total Bases,Under,None,(0.5) -105,None,(0.5) -110,0.5,51.8%
-Christopher Morel,CHC,STL,Runs,Over,(0.5) -137,(0.5) -125,None,(0.5) -125,0.5,56.31%
-Christopher Morel,CHC,STL,Runs,Under,(0.5) 102,(0.5) -105,None,(0.5) -105,0.5,50.65%
-Dane Myers,MIA,@WSH,Total Bases,Over,None,(0.5) -140,None,(0.5) -140,0.5,58.33%
-Dane Myers,MIA,@WSH,Total Bases,Under,None,(0.5) 105,None,(0.5) 105,0.5,48.78%
-Daniel Schneemann,CLE,@TOR,Total Bases,Over,None,(0.5) -140,None,(0.5) -140,0.5,58.33%
-Daniel Schneemann,CLE,@TOR,Total Bases,Under,None,(0.5) 105,None,(0.5) 105,0.5,48.78%
+Christopher Morel,CHC,STL,Runs,Over,(0.5) -137,(0.5) -125,None,(0.5) -130,0.5,56.63%
+Christopher Morel,CHC,STL,Runs,Under,(0.5) 102,(0.5) -105,None,(0.5) 100,0.5,50.24%
+Dane Myers,MIA,@WSH,Total Bases,Over,(1.5) 185,(0.5) -140,None,(0.5) -140,0.5,50.58%
+Dane Myers,MIA,@WSH,Total Bases,Under,(1.5) -275,(0.5) 105,None,(0.5) 105,0.5,56.96%
+Daniel Schneemann,CLE,@TOR,Total Bases,Over,(1.5) 220,(0.5) -140,None,(0.5) -140,0.5,49.31%
+Daniel Schneemann,CLE,@TOR,Total Bases,Under,(1.5) -335,(0.5) 105,None,(0.5) 105,0.5,58.19%
 Danny Jansen,TOR,CLE,Runs,Over,None,(0.5) 115,None,(0.5) 120,0.5,45.98%
 Danny Jansen,TOR,CLE,Runs,Under,None,(0.5) -155,None,(0.5) -155,0.5,60.78%
 Garrett Stubbs,PHI,@BAL,Total Bases,Over,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
@@ -50,4 +50,4 @@ Garrett Stubbs,PHI,@BAL,Total Bases,Under,None,(0.5) -110,None,(0.5) -110,0.5,52
 Ketel Marte,ARI,CWS,Runs,Over,None,(0.5) -120,None,(0.5) -115,0.5,54.02%
 Ketel Marte,ARI,CWS,Runs,Under,None,(0.5) -110,None,(0.5) -115,0.5,52.93%
 Willi Castro,MIN,OAK,Runs,Over,None,(0.5) 130,None,None,0.5,43.48%
-Willi Castro,MIN,OAK,Runs,Under,None,(0.5) -170,None,None,0.5,62.96%
+Willi Castro,MIN,OAK,Runs,Under,None,(0.5) -175,None,None,0.5,63.64%
