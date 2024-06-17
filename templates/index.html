@@ -97,6 +97,18 @@
             color: #333;
         }
 
+        #notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
         @media (max-width: 600px) {
             .prop-row {
                 flex-direction: column;
@@ -125,10 +137,12 @@
             </select>
         </div>
     </div>
+    <div id="notification">New data available. Please refresh the page.</div>
     <div id="odds-container"></div>
 
     <script>
         const container = document.getElementById('odds-container');
+        const notification = document.getElementById('notification');
         let oddsData = [];
 
         async function fetchOdds() {
@@ -185,9 +199,9 @@
         }
 
         async function setupWebSocket() {
-            const ws = new WebSocket(`ws://${window.location.hostname}:${window.location.port + 1}`);
+            const ws = new WebSocket(`ws://${window.location.hostname}:${parseInt(window.location.port, 10) + 1}`);
             ws.onmessage = () => {
-                fetchOdds();
+                notification.style.display = 'block';
             };
         }
 
