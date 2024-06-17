@@ -93,7 +93,7 @@ Bryson Stott,PHI,SD,bases,Over,(1.5) 143,(1.5) 120,,(1.5) 120
 Bryson Stott,PHI,SD,bases,Under,(1.5) -205,(1.5) -155,,(1.5) -155
 Bryson Stott,PHI,SD,runs,Over,(0.5) 108,(0.5) 100,,(0.5) 105
 Bryson Stott,PHI,SD,runs,Under,(0.5) -148,(0.5) -130,,(0.5) -135
-Cal Quantrill,COL,LAD,strikeouts,Over,(3.5) -136,(3.5) -130,(3.5) -120,(3.5) -125
+Cal Quantrill,COL,LAD,strikeouts,Over,(3.5) -136,(3.5) -130,(3.5) -118,(3.5) -125
 Cal Quantrill,COL,LAD,strikeouts,Under,(3.5) 102,(3.5) 100,(3.5) -106,(3.5) -105
 Carson Spiers,CIN,@PIT,strikeouts,Over,(4.5) 128,(4.5) 120,(4.5) 118,(4.5) 130
 Carson Spiers,CIN,@PIT,strikeouts,Under,(4.5) 135,(4.5) -150,(4.5) -150,(4.5) -165
@@ -125,8 +125,8 @@ Corey Seager,TEX,NYM,bases,Over,(1.5) 120,(1.5) 135,,(1.5) 135
 Corey Seager,TEX,NYM,bases,Under,(1.5) -167,(1.5) -180,,(1.5) -185
 Corey Seager,TEX,NYM,runs,Over,(0.5) -104,(0.5) 130,,(0.5) 125
 Corey Seager,TEX,NYM,runs,Under,(0.5) -132,(0.5) -170,,(0.5) -160
-Cristopher Sanchez,PHI,SD,strikeouts,Over,(4.5) 120,(4.5) 140,(4.5) 120,(4.5) 130
-Cristopher Sanchez,PHI,SD,strikeouts,Under,(4.5) 143,(4.5) -180,(4.5) -152,(4.5) -175
+Cristopher Sanchez,PHI,SD,strikeouts,Over,(4.5) 120,(3.5) -170,(4.5) 124,(4.5) 130
+Cristopher Sanchez,PHI,SD,strikeouts,Under,(4.5) 143,(3.5) 135,(4.5) -156,(4.5) -175
 Danny Jansen,TOR,BOS,bases,Over,(1.5) 117,(1.5) 115,,(1.5) 115
 Danny Jansen,TOR,BOS,bases,Under,(1.5) -165,(1.5) -150,,(1.5) -150
 Danny Jansen,TOR,BOS,runs,Over,(0.5) 108,(0.5) 105,,(0.5) 105
@@ -145,8 +145,8 @@ David Dahl,PHI,SD,runs,Over,,(0.5) 155,,(0.5) 155
 David Dahl,PHI,SD,runs,Under,,(0.5) -210,,(0.5) -210
 David Peterson,NYM,@TEX,strikeouts,Over,(4.5) -112,(4.5) -105,(4.5) -115,(4.5) -105
 David Peterson,NYM,@TEX,strikeouts,Under,(4.5) -120,(4.5) -120,(4.5) -111,(4.5) -120
-Donovan Solano,SD,@PHI,bases,Over,(1.5) 143,(1.5) 130,,(1.5) 125
-Donovan Solano,SD,@PHI,bases,Under,(1.5) -200,(1.5) -175,,(1.5) -160
+Donovan Solano,SD,@PHI,bases,Over,(1.5) 143,(1.5) 120,,(1.5) 125
+Donovan Solano,SD,@PHI,bases,Under,(1.5) -200,(1.5) -160,,(1.5) -160
 Donovan Solano,SD,@PHI,runs,Over,(0.5) 145,(0.5) 130,,(0.5) 125
 Donovan Solano,SD,@PHI,runs,Under,(0.5) -200,(0.5) -175,,(0.5) -165
 Dylan Carlson,STL,@MIA,bases,Over,(1.5) 148,(1.5) 150,,(1.5) 150
@@ -273,8 +273,8 @@ Jake Rogers,DET,@ATL,bases,Over,,(0.5) -145,,
 Jake Rogers,DET,@ATL,bases,Under,,(0.5) 110,,
 Jake Rogers,DET,@ATL,runs,Over,,(0.5) 190,,
 Jake Rogers,DET,@ATL,runs,Under,,(0.5) -265,,
-James Paxton,LAD,@COL,strikeouts,Over,(4.5) 138,(3.5) -160,(4.5) 104,(3.5) -165
-James Paxton,LAD,@COL,strikeouts,Under,(4.5) 125,(3.5) 125,(4.5) -132,(3.5) 130
+James Paxton,LAD,@COL,strikeouts,Over,(4.5) 138,(3.5) -160,(4.5) 114,(3.5) -165
+James Paxton,LAD,@COL,strikeouts,Under,(4.5) 125,(3.5) 125,(4.5) -146,(3.5) 130
 Jamie Westbrook,BOS,@TOR,bases,Over,(1.5) 165,(0.5) -175,,(0.5) -165
 Jamie Westbrook,BOS,@TOR,bases,Under,(1.5) -240,(0.5) 130,,(0.5) 130
 Jamie Westbrook,BOS,@TOR,runs,Over,(0.5) 175,(0.5) 170,,(0.5) 170
@@ -317,8 +317,8 @@ Joey Ortiz,MIL,@LAA,bases,Over,(1.5) 148,(1.5) 155,,(1.5) 155
 Joey Ortiz,MIL,@LAA,bases,Under,(1.5) -210,(1.5) -210,,(1.5) -210
 Joey Ortiz,MIL,@LAA,runs,Over,(0.5) 114,(0.5) 135,,(0.5) 135
 Joey Ortiz,MIL,@LAA,runs,Under,(0.5) -155,(0.5) -180,,(0.5) -175
-Jon Gray,TEX,NYM,strikeouts,Over,(5.5) -124,(5.5) -110,(5.5) -104,(5.5) -110
-Jon Gray,TEX,NYM,strikeouts,Under,(5.5) -108,(5.5) -115,(5.5) -122,(5.5) -120
+Jon Gray,TEX,NYM,strikeouts,Over,(5.5) -124,(5.5) -105,(5.5) -104,(5.5) -110
+Jon Gray,TEX,NYM,strikeouts,Under,(5.5) -108,(5.5) -125,(5.5) -122,(5.5) -120
 Jonathan India,CIN,@PIT,bases,Over,(1.5) 190,(0.5) -140,,(0.5) -140
 Jonathan India,CIN,@PIT,bases,Under,(1.5) -286,(0.5) 105,,(0.5) 105
 Jonathan India,CIN,@PIT,runs,Over,(0.5) 190,(0.5) 200,,(0.5) 195
