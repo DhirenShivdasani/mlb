@@ -15,6 +15,14 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 chrome_options = uc.ChromeOptions()
 chrome_options.add_experimental_option("prefs", {"profile.managed_default_content_settings.images": 2})
 chrome_options.add_argument("--disable-notifications")
+chrome_options = uc.ChromeOptions()
+chrome_options.add_argument("--headless")  # Run Chrome in headless mode
+chrome_options.add_argument("--disable-gpu")  # Disable GPU acceleration
+chrome_options.add_argument("--no-sandbox")  # Bypass OS security model
+chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
+chrome_options.add_argument("--window-size=1920x1080")  # Set window size for headless mode
+chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+
 chrome_options.add_experimental_option("prefs", {
     "profile.default_content_setting_values.geolocation": 1, # 1:Allow, 2:Block
 })
@@ -41,8 +49,8 @@ ppPlayers = []
 
 wait = WebDriverWait(driver, 10)  # Wait for up to 10 seconds
 try:
-    element = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='name'][normalize-space()='MLB']")))
-    element.click()
+    mlb_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[text()='MLB']")))
+    mlb_button.click()
 except Exception as e:
     print(f"Error: {e}")
 
