@@ -73,7 +73,7 @@ def push_to_github():
         print(f"Current directory: {os.getcwd()}")
 
         # Print content before download
-        print("Content of merged_data.csv before download:")
+        print("Content of test2.csv before download:")
         if os.path.exists('test2.csv'):
             with open('test2.csv', 'r') as file:
                 print(file.read())
@@ -133,6 +133,7 @@ chrome_options.add_argument("--no-sandbox")  # Bypass OS security model
 chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
 chrome_options.add_argument("--window-size=1920x1080")  # Set window size for headless mode
 chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+chrome_options.binary_location = "/app/.apt/usr/bin/google-chrome"  # Path for Heroku
 
 chrome_options.add_experimental_option("prefs", {
     "profile.default_content_setting_values.geolocation": 1, # 1:Allow, 2:Block
