@@ -109,8 +109,8 @@ Brandon Nimmo,NYM,@TEX,runs,Over,(0.5) 105,,(0.5) 100
 Brandon Nimmo,NYM,@TEX,runs,Under,(0.5) -135,,(0.5) -135
 Brandon Pfaadt,ARI,@WSH,strikeouts,Over,(5.5) 110,,(5.5) 120
 Brandon Pfaadt,ARI,@WSH,strikeouts,Under,(5.5) -140,,(5.5) -160
-Brayan Bello,BOS,@TOR,strikeouts,Over,(4.5) -105,,(4.5) -110
-Brayan Bello,BOS,@TOR,strikeouts,Under,(4.5) -120,,(4.5) -120
+Brayan Bello,BOS,@TOR,strikeouts,Over,(4.5) -105,(4.5) -106,(4.5) -110
+Brayan Bello,BOS,@TOR,strikeouts,Under,(4.5) -120,(4.5) -120,(4.5) -120
 Brayan Rocchio,CLE,SEA,bases,Over,(0.5) -190,,(0.5) -185
 Brayan Rocchio,CLE,SEA,bases,Under,(0.5) 140,,(0.5) 140
 Brayan Rocchio,CLE,SEA,runs,Over,(0.5) 155,,(0.5) 160
@@ -187,8 +187,8 @@ Christian Yelich,MIL,@LAA,bases,Over,(1.5) 125,,(1.5) 125
 Christian Yelich,MIL,@LAA,bases,Under,(1.5) -165,,(1.5) -160
 Christian Yelich,MIL,@LAA,runs,Over,(0.5) 100,,(0.5) 100
 Christian Yelich,MIL,@LAA,runs,Under,(0.5) -130,,(0.5) -130
-Cole Ragans,KC,@OAK,strikeouts,Over,(7.5) -115,(7.5) -113,(7.5) -115
-Cole Ragans,KC,@OAK,strikeouts,Under,(7.5) -110,(7.5) -113,(7.5) -110
+Cole Ragans,KC,@OAK,strikeouts,Over,(7.5) -115,(7.5) -115,(7.5) -115
+Cole Ragans,KC,@OAK,strikeouts,Under,(7.5) -110,(7.5) -111,(7.5) -110
 Colt Keith,DET,@ATL,bases,Over,(0.5) -205,,(0.5) -200
 Colt Keith,DET,@ATL,bases,Under,(0.5) 150,,(0.5) 150
 Colt Keith,DET,@ATL,runs,Over,(0.5) 160,,(0.5) 160
@@ -321,7 +321,7 @@ Gavin Lux,LAD,@COL,bases,Over,(1.5) 140,,(1.5) 140
 Gavin Lux,LAD,@COL,bases,Under,(1.5) -190,,(1.5) -190
 Gavin Lux,LAD,@COL,runs,Over,(0.5) 100,,(0.5) 100
 Gavin Lux,LAD,@COL,runs,Under,(0.5) -130,,(0.5) -130
-Gavin Sheets,CWS,HOU,bases,Over,(0.5) -180,,(0.5) -190
+Gavin Sheets,CWS,HOU,bases,Over,(0.5) -190,,(0.5) -190
 Gavin Sheets,CWS,HOU,bases,Under,(0.5) 140,,(0.5) 145
 Gavin Sheets,CWS,HOU,runs,Over,(0.5) 125,,(0.5) 125
 Gavin Sheets,CWS,HOU,runs,Under,(0.5) -165,,(0.5) -160
@@ -485,7 +485,7 @@ Josh Lowe,TB,@MIN,runs,Over,(0.5) 145,,(0.5) 145
 Josh Lowe,TB,@MIN,runs,Under,(0.5) -195,,(0.5) -200
 Josh Naylor,CLE,SEA,bases,Over,(1.5) 100,,(1.5) 105
 Josh Naylor,CLE,SEA,bases,Under,(1.5) -135,,(1.5) -140
-Josh Naylor,CLE,SEA,runs,Over,(0.5) 115,,(0.5) 120
+Josh Naylor,CLE,SEA,runs,Over,(0.5) 120,,(0.5) 120
 Josh Naylor,CLE,SEA,runs,Under,(0.5) -160,,(0.5) -155
 Josh Rojas,SEA,@CLE,bases,Over,(1.5) 130,,(1.5) 135
 Josh Rojas,SEA,@CLE,bases,Under,(1.5) -175,,(1.5) -175
@@ -519,8 +519,8 @@ Ketel Marte,ARI,@WSH,bases,Over,(1.5) -135,,(1.5) -140
 Ketel Marte,ARI,@WSH,bases,Under,(1.5) 105,,(1.5) 105
 Ketel Marte,ARI,@WSH,runs,Over,(0.5) -160,,(0.5) -160
 Ketel Marte,ARI,@WSH,runs,Under,(0.5) 120,,(0.5) 125
-Kevin Gausman,TOR,BOS,strikeouts,Over,(6.5) 100,,(6.5) 100
-Kevin Gausman,TOR,BOS,strikeouts,Under,(6.5) -130,,(6.5) -135
+Kevin Gausman,TOR,BOS,strikeouts,Over,(6.5) 100,(6.5) 104,(6.5) 100
+Kevin Gausman,TOR,BOS,strikeouts,Under,(6.5) -130,(6.5) -132,(6.5) -135
 Kevin Kiermaier,TOR,BOS,bases,Over,(0.5) -125,,(0.5) -125
 Kevin Kiermaier,TOR,BOS,bases,Under,(0.5) -105,,(0.5) -105
 Kevin Kiermaier,TOR,BOS,runs,Over,(0.5) 200,,(0.5) 200
@@ -577,8 +577,8 @@ Luis Garcia,WSH,ARI,bases,Over,(1.5) 100,,(1.5) 100
 Luis Garcia,WSH,ARI,bases,Under,(1.5) -130,,(1.5) -130
 Luis Garcia,WSH,ARI,runs,Over,(0.5) 115,,(0.5) 115
 Luis Garcia,WSH,ARI,runs,Under,(0.5) -150,,(0.5) -150
-Luis Medina,OAK,KC,strikeouts,Over,(4.5) 120,(3.5) -156,(4.5) 115
-Luis Medina,OAK,KC,strikeouts,Under,(4.5) -150,(3.5) 122,(4.5) -150
+Luis Medina,OAK,KC,strikeouts,Over,(4.5) 120,(3.5) -160,(4.5) 115
+Luis Medina,OAK,KC,strikeouts,Under,(4.5) -150,(3.5) 126,(4.5) -150
 Luis Rengifo,LAA,MIL,bases,Over,(1.5) 155,,(1.5) 155
 Luis Rengifo,LAA,MIL,bases,Under,(1.5) -205,,(1.5) -200
 Luis Rengifo,LAA,MIL,runs,Over,(0.5) 135,,(0.5) 135
@@ -614,7 +614,7 @@ Marcus Semien,TEX,NYM,runs,Under,(0.5) -145,,(0.5) -140
 Mark Canha,DET,@ATL,bases,Over,(1.5) 145,,(1.5) 145
 Mark Canha,DET,@ATL,bases,Under,(1.5) -195,,(1.5) -190
 Mark Canha,DET,@ATL,runs,Over,(0.5) 135,,(0.5) 135
-Mark Canha,DET,@ATL,runs,Under,(0.5) -170,,(0.5) -175
+Mark Canha,DET,@ATL,runs,Under,(0.5) -180,,(0.5) -175
 Mark Vientos,NYM,@TEX,bases,Over,(1.5) 120,,(1.5) 115
 Mark Vientos,NYM,@TEX,bases,Under,(1.5) -155,,(1.5) -155
 Mark Vientos,NYM,@TEX,runs,Over,(0.5) 120,,(0.5) 115
