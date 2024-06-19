@@ -883,10 +883,10 @@ Rafael Marchan,PHI,SD,bases,Over,,(0.5) -135,,(0.5) -135
 Rafael Marchan,PHI,SD,bases,Under,,(0.5) 100,,(0.5) 100
 Rafael Marchan,PHI,SD,runs,Over,,(0.5) 175,,(0.5) 175
 Rafael Marchan,PHI,SD,runs,Under,,(0.5) -240,,(0.5) -250
-Ramon Laureano,ATL,DET,bases,Over,,(0.5) -110,,
-Ramon Laureano,ATL,DET,bases,Under,,(0.5) -120,,
+Ramon Laureano,ATL,DET,bases,Over,,(0.5) -110,,(0.5) -105
+Ramon Laureano,ATL,DET,bases,Under,,(0.5) -120,,(0.5) -120
 Ramon Laureano,ATL,DET,runs,Over,,(0.5) 210,,(0.5) 210
-Ramon Laureano,ATL,DET,runs,Under,,(0.5) -290,,(0.5) 
+Ramon Laureano,ATL,DET,runs,Under,,(0.5) -290,,(0.5) -275
 Ramon Urias,BAL,@NYY,bases,Over,,(0.5) -145,,(0.5) -150
 Ramon Urias,BAL,@NYY,bases,Under,,(0.5) 110,,(0.5) 115
 Ramon Urias,BAL,@NYY,runs,Over,,(0.5) 190,,(0.5) 190
@@ -1119,6 +1119,8 @@ Yasmani Grandal,PIT,CIN,bases,Over,,(0.5) -150,,(0.5) -150
 Yasmani Grandal,PIT,CIN,bases,Under,,(0.5) 115,,(0.5) 115
 Yasmani Grandal,PIT,CIN,runs,Over,,(0.5) 195,,(0.5) 185
 Yasmani Grandal,PIT,CIN,runs,Under,,(0.5) -270,,(0.5) -250
+Yonny Chirinos,MIA,STL,strikeouts,Over,(3.5) 128,(3.5) 120,(3.5) 116,(3.5) 120
+Yonny Chirinos,MIA,STL,strikeouts,Under,(3.5) -175,(3.5) -155,(3.5) -148,(3.5) -155
 Yordan Alvarez,HOU,@CWS,bases,Over,(1.5) 128,(1.5) 125,,(1.5) 120
 Yordan Alvarez,HOU,@CWS,bases,Under,(1.5) -180,(1.5) -165,,(1.5) -160
 Yordan Alvarez,HOU,@CWS,runs,Over,(0.5) 110,(0.5) 110,,(0.5) 105
