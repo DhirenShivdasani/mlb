@@ -293,8 +293,8 @@ Elly De La Cruz,CIN,@PIT,bases,Over,(0.5) -175,,(0.5) -175
 Elly De La Cruz,CIN,@PIT,bases,Under,(0.5) 135,,(0.5) 130
 Elly De La Cruz,CIN,@PIT,runs,Over,(0.5) 110,,(0.5) 110
 Elly De La Cruz,CIN,@PIT,runs,Under,(0.5) -145,,(0.5) -145
-Eugenio Suarez,ARI,@WSH,bases,Over,(1.5) 125,,(1.5) 125
-Eugenio Suarez,ARI,@WSH,bases,Under,(1.5) -165,,(1.5) -160
+Eugenio Suarez,ARI,@WSH,bases,Over,(1.5) 120,,(1.5) 125
+Eugenio Suarez,ARI,@WSH,bases,Under,(1.5) -160,,(1.5) -160
 Eugenio Suarez,ARI,@WSH,runs,Over,(0.5) 105,,(0.5) 100
 Eugenio Suarez,ARI,@WSH,runs,Under,(0.5) -135,,(0.5) -130
 Ezequiel Duran,TEX,NYM,bases,Over,(0.5) -175,,(0.5) -175
@@ -370,7 +370,7 @@ Harrison Bader,NYM,@TEX,bases,Under,(1.5) -170,,(1.5) -175
 Harrison Bader,NYM,@TEX,runs,Over,(0.5) 120,,(0.5) 120
 Harrison Bader,NYM,@TEX,runs,Under,(0.5) -160,,(0.5) -155
 Heliot Ramos,SF,@CHC,bases,Over,(1.5) -110,,
-Heliot Ramos,SF,@CHC,bases,Under,(1.5) -120,,
+Heliot Ramos,SF,@CHC,bases,Under,(1.5) -130,,
 Heliot Ramos,SF,@CHC,runs,Over,(0.5) -120,,
 Heliot Ramos,SF,@CHC,runs,Under,(0.5) -110,,
 Hunter Brown,HOU,@CWS,strikeouts,Over,(6.5) 130,(6.5) 118,(6.5) 125
@@ -528,7 +528,7 @@ Josh Lowe,TB,@MIN,bases,Under,(0.5) 140,,(0.5) 140
 Josh Lowe,TB,@MIN,runs,Over,(0.5) 155,,(0.5) 155
 Josh Lowe,TB,@MIN,runs,Under,(0.5) -210,,(0.5) -200
 Josh Naylor,CLE,SEA,bases,Over,(1.5) 110,,(1.5) 110
-Josh Naylor,CLE,SEA,bases,Under,(1.5) -145,,(1.5) -145
+Josh Naylor,CLE,SEA,bases,Under,(1.5) -135,,(1.5) -145
 Josh Naylor,CLE,SEA,runs,Over,(0.5) 125,,(0.5) 125
 Josh Naylor,CLE,SEA,runs,Under,(0.5) -170,,(0.5) -165
 Josh Rojas,SEA,@CLE,bases,Over,(1.5) 140,,(1.5) 140
@@ -599,8 +599,8 @@ Kyle Schwarber,PHI,SD,runs,Over,(0.5) -185,,(0.5) -185
 Kyle Schwarber,PHI,SD,runs,Under,(0.5) 140,,(0.5) 140
 Lane Thomas,WSH,ARI,bases,Over,(1.5) 145,,(1.5) 140
 Lane Thomas,WSH,ARI,bases,Under,(1.5) -190,,(1.5) -185
-Lane Thomas,WSH,ARI,runs,Over,(0.5) 115,,(0.5) 110
-Lane Thomas,WSH,ARI,runs,Under,(0.5) -155,,(0.5) -145
+Lane Thomas,WSH,ARI,runs,Over,(0.5) 110,,(0.5) 110
+Lane Thomas,WSH,ARI,runs,Under,(0.5) -145,,(0.5) -145
 Lenyn Sosa,CWS,HOU,bases,Over,(0.5) -165,,(0.5) -160
 Lenyn Sosa,CWS,HOU,bases,Under,(0.5) 125,,(0.5) 125
 Lenyn Sosa,CWS,HOU,runs,Over,(0.5) 190,,(0.5) 185
@@ -662,7 +662,7 @@ Marcus Semien,TEX,NYM,runs,Under,(0.5) -145,,(0.5) -140
 Mark Canha,DET,@ATL,bases,Over,(1.5) 145,,(1.5) 145
 Mark Canha,DET,@ATL,bases,Under,(1.5) -195,,(1.5) -190
 Mark Canha,DET,@ATL,runs,Over,(0.5) 135,,(0.5) 135
-Mark Canha,DET,@ATL,runs,Under,(0.5) -180,,(0.5) -175
+Mark Canha,DET,@ATL,runs,Under,(0.5) -170,,(0.5) -175
 Mark Vientos,NYM,@TEX,bases,Over,(1.5) 120,,(1.5) 115
 Mark Vientos,NYM,@TEX,bases,Under,(1.5) -155,,(1.5) -155
 Mark Vientos,NYM,@TEX,runs,Over,(0.5) 115,,(0.5) 115
@@ -800,11 +800,11 @@ Otto Lopez,MIA,STL,bases,Under,(0.5) 150,,
 Otto Lopez,MIA,STL,runs,Over,(0.5) 185,,
 Otto Lopez,MIA,STL,runs,Under,(0.5) -255,,
 Patrick Bailey,SF,@CHC,bases,Over,(1.5) 110,,
-Patrick Bailey,SF,@CHC,bases,Under,(1.5) -145,,
+Patrick Bailey,SF,@CHC,bases,Under,(1.5) -160,,
 Patrick Bailey,SF,@CHC,runs,Over,(0.5) -115,,
 Patrick Bailey,SF,@CHC,runs,Under,(0.5) -115,,
-Patrick Corbin,WSH,ARI,strikeouts,Over,(3.5) 120,(3.5) 120,(3.5) 120
-Patrick Corbin,WSH,ARI,strikeouts,Under,(3.5) -155,(3.5) -152,(3.5) -155
+Patrick Corbin,WSH,ARI,strikeouts,Over,(3.5) 115,(3.5) 120,(3.5) 120
+Patrick Corbin,WSH,ARI,strikeouts,Under,(3.5) -145,(3.5) -152,(3.5) -155
 Paul DeJong,CWS,HOU,bases,Over,(0.5) -165,,(0.5) -160
 Paul DeJong,CWS,HOU,bases,Under,(0.5) 125,,(0.5) 125
 Paul DeJong,CWS,HOU,runs,Over,(0.5) 165,,(0.5) 170
