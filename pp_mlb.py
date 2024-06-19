@@ -133,6 +133,12 @@ chrome_options.add_argument("--no-sandbox")  # Bypass OS security model
 chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
 chrome_options.add_argument("--window-size=1920x1080")  # Set window size for headless mode
 chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+if 'DYNO' in os.environ:
+    chrome_options.binary_location = '/app/.apt/usr/bin/google-chrome'
+    browser_executable_path = '/app/.apt/usr/bin/google-chrome'
+else:
+    chrome_options.binary_location = 'C:/Program Files/Google/Chrome/Application/chrome.exe'  # Adjust this path to your local Chrome binary location
+    browser_executable_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe'  # Adjust this path to your local Chrome binary location
 
 chrome_options.add_experimental_option("prefs", {
     "profile.default_content_setting_values.geolocation": 1, # 1:Allow, 2:Block
@@ -141,7 +147,7 @@ chrome_options.add_experimental_option("prefs", {
 chrome_options.page_load_strategy = 'eager'  # Waits for the DOMContentLoaded event
 
 
-driver = uc.Chrome(options=chrome_options)
+driver = uc.Chrome(options=chrome_options, browser_executable_path='/app/.apt/usr/bin/google-chrome')
 
 
 driver.get("https://app.prizepicks.com/")
