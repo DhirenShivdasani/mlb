@@ -1,6 +1,7 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
 Trea Turner,PHI,SD,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Carlos Correa,MIN,TB,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Bryce Harper,PHI,SD,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Bryce Harper,PHI,SD,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Francisco Lindor,NYM,@TEX,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Heliot Ramos,SF,@CHC,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Heliot Ramos,SF,@CHC,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
@@ -8,10 +9,8 @@ Seiya Suzuki,CHC,SF,Runs,Over,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Lane Thomas,WSH,ARI,Runs,Under,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Lane Thomas,WSH,ARI,Runs,Over,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Seiya Suzuki,CHC,SF,Runs,Under,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Trevor Larnach,MIN,TB,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Trevor Larnach,MIN,TB,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Brice Turang,MIL,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Joc Pederson,ARI,@WSH,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Trea Turner,PHI,SD,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Cody Bellinger,CHC,SF,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Cody Bellinger,CHC,SF,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Francisco Lindor,NYM,@TEX,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
@@ -21,55 +20,56 @@ Eddie Rosario,WSH,ARI,Runs,Over,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Eddie Rosario,WSH,ARI,Runs,Under,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Elly De La Cruz,CIN,@PIT,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Elly De La Cruz,CIN,@PIT,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Bryce Harper,PHI,SD,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Bryce Harper,PHI,SD,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Carlos Correa,MIN,TB,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Andrew McCutchen,PIT,CIN,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Joc Pederson,ARI,@WSH,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Jorge Soler,SF,@CHC,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Jorge Soler,SF,@CHC,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Max Kepler,MIN,TB,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Max Kepler,MIN,TB,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Matt Vierling,DET,@ATL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Trea Turner,PHI,SD,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Brice Turang,MIL,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Jose Altuve,HOU,@CWS,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+William Contreras,MIL,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Alex Bregman,HOU,@CWS,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Alex Bregman,HOU,@CWS,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Matt Vierling,DET,@ATL,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Andrew McCutchen,PIT,CIN,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Andrew McCutchen,PIT,CIN,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Jose Altuve,HOU,@CWS,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Jarren Duran,BOS,@TOR,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Austin Riley,ATL,DET,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+William Contreras,MIL,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Jorge Soler,SF,@CHC,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Jorge Soler,SF,@CHC,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Matt Vierling,DET,@ATL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Joc Pederson,ARI,@WSH,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Austin Riley,ATL,DET,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Jose Altuve,HOU,@CWS,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Jarren Duran,BOS,@TOR,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-William Contreras,MIL,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) -140,(0.5) ,0.5,58.33%
-Brice Turang,MIL,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) -140,(0.5) ,0.5,58.33%
-Maikel Garcia,KC,@OAK,Runs,Under,(0.5) ,(0.5) ,(0.5) -160,(0.5) ,0.5,61.54%
-Nolan Jones,COL,LAD,Runs,Under,(0.5) ,(0.5) ,(0.5) -430,(0.5) ,0.5,81.13%
-William Contreras,MIL,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) 110,(0.5) ,0.5,47.62%
-Brice Turang,MIL,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) 110,(0.5) ,0.5,47.62%
-Maikel Garcia,KC,@OAK,Runs,Over,(0.5) ,(0.5) ,(0.5) 125,(0.5) ,0.5,44.44%
-Nolan Jones,COL,LAD,Runs,Over,(0.5) ,(0.5) ,(0.5) 300,(0.5) ,0.5,25.0%
-Ketel Marte,ARI,@WSH,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Ozzie Albies,ATL,DET,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Jarred Kelenic,ATL,DET,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Corey Seager,TEX,NYM,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Austin Riley,ATL,DET,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Max Kepler,MIN,TB,Runs,Under,(0.5) ,(0.5) ,(0.5) -185,(0.5) ,0.5,64.91%
+Maikel Garcia,KC,@OAK,Runs,Under,(0.5) ,(0.5) ,(0.5) -340,(0.5) ,0.5,77.27%
+Nolan Jones,COL,LAD,Runs,Under,(0.5) ,(0.5) ,(0.5) -340,(0.5) ,0.5,77.27%
+Trevor Larnach,MIN,TB,Runs,Under,(0.5) ,(0.5) ,(0.5) -600,(0.5) ,0.5,85.71%
+Max Kepler,MIN,TB,Runs,Over,(0.5) ,(0.5) ,(0.5) 145,(0.5) ,0.5,40.82%
+Maikel Garcia,KC,@OAK,Runs,Over,(0.5) ,(0.5) ,(0.5) 250,(0.5) ,0.5,28.57%
+Nolan Jones,COL,LAD,Runs,Over,(0.5) ,(0.5) ,(0.5) 250,(0.5) ,0.5,28.57%
+Trevor Larnach,MIN,TB,Runs,Over,(0.5) ,(0.5) ,(0.5) 390,(0.5) ,0.5,20.41%
 Corey Seager,TEX,NYM,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Ketel Marte,ARI,@WSH,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Ketel Marte,ARI,@WSH,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Corey Seager,TEX,NYM,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+J.P. Crawford,SEA,@CLE,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Jarred Kelenic,ATL,DET,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 J.P. Crawford,SEA,@CLE,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Ketel Marte,ARI,@WSH,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Ozzie Albies,ATL,DET,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Jarred Kelenic,ATL,DET,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-J.P. Crawford,SEA,@CLE,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Christian Yelich,MIL,@LAA,Runs,Under,(0.5) ,(0.5) ,(1.5) -140,(0.5) ,0.5,58.33%
-Christian Yelich,MIL,@LAA,Runs,Over,(0.5) ,(0.5) ,(1.5) 110,(0.5) ,0.5,47.62%
+Ozzie Albies,ATL,DET,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Christian Yelich,MIL,@LAA,Runs,Under,(0.5) ,(0.5) ,(1.5) -190,(0.5) ,0.5,65.52%
+Carlos Correa,MIN,TB,Runs,Under,(0.5) ,(0.5) ,(1.5) -280,(0.5) ,0.5,73.68%
+Christian Yelich,MIL,@LAA,Runs,Over,(0.5) ,(0.5) ,(1.5) 150,(0.5) ,0.5,40.0%
+Carlos Correa,MIN,TB,Runs,Over,(0.5) ,(0.5) ,(1.5) 210,(0.5) ,0.5,32.26%
 Corbin Carroll,ARI,@WSH,Runs,Over,(0.5) ,(0.5) ,(2.5) ,(0.5) ,0.5,nan%
-Brenton Doyle,COL,LAD,Runs,Over,(0.5) ,(0.5) ,(2.5) ,(0.5) ,0.5,nan%
 Corbin Carroll,ARI,@WSH,Runs,Under,(0.5) ,(0.5) ,(2.5) ,(0.5) ,0.5,nan%
-Brenton Doyle,COL,LAD,Runs,Under,(0.5) ,(0.5) ,(2.5) ,(0.5) ,0.5,nan%
-Hogan Harris,OAK,KC,Strikeouts,Over,(5.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
+Brenton Doyle,COL,LAD,Runs,Under,(0.5) ,(0.5) ,(2.5) -800,(0.5) ,0.5,88.89%
+Brenton Doyle,COL,LAD,Runs,Over,(0.5) ,(0.5) ,(2.5) 500,(0.5) ,0.5,16.67%
 Slade Cecconi,ARI,@WSH,Strikeouts,Under,(4.5) ,(3.5) ,(3.5) ,(3.5) ,3.5,nan%
 Slade Cecconi,ARI,@WSH,Strikeouts,Over,(4.5) ,(3.5) ,(3.5) ,(3.5) ,3.5,nan%
-Jonathan Cannon,CWS,HOU,Strikeouts,Under,(5.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
+Hogan Harris,OAK,KC,Strikeouts,Over,(5.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
 Hogan Harris,OAK,KC,Strikeouts,Under,(5.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
+Jonathan Cannon,CWS,HOU,Strikeouts,Under,(5.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
 Jonathan Cannon,CWS,HOU,Strikeouts,Over,(5.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
 Casey Mize,DET,@ATL,Strikeouts,Over,None,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
 Bailey Falter,PIT,CIN,Strikeouts,Under,(3.5) ,(3.5) ,(3.5) ,(3.5) ,4.0,nan%
