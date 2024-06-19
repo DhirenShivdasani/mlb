@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,10 +42,19 @@
             font-weight: bold;
         }
 
-        .filter input, .filter select {
-            padding: 5px;
+        .filter input,
+        .filter select {
+            padding: 8px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            outline: none;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .filter input:focus,
+        .filter select:focus {
+            border-color: #007bff;
         }
 
         #odds-container {
@@ -98,15 +108,14 @@
         }
 
         #notification {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+            display: none;
+            text-align: center;
+            padding: 10px;
             background-color: #ffeb3b;
             color: #333;
-            padding: 10px 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            display: none;
+            margin: 0;
+            font-size: 1rem;
+            font-weight: bold;
         }
 
         @media (max-width: 600px) {
@@ -121,8 +130,10 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Live Odds Tracker</h1>
+    <div id="notification">New data available. Please refresh the page.</div>
     <div class="filters">
         <div class="filter">
             <label for="player-name">Filter by Player:</label>
@@ -137,7 +148,6 @@
             </select>
         </div>
     </div>
-    <div id="notification">New data available. Please refresh the page.</div>
     <div id="odds-container"></div>
 
     <script>
@@ -199,7 +209,7 @@
         }
 
         async function setupWebSocket() {
-            const ws = new WebSocket(`ws://${window.location.hostname}:${parseInt(window.location.port, 10) + 1}`);
+            const ws = new WebSocket(`ws://${window.location.hostname}:${window.location.port + 1}`);
             ws.onmessage = () => {
                 notification.style.display = 'block';
             };
@@ -209,4 +219,5 @@
         setupWebSocket();
     </script>
 </body>
+
 </html>
