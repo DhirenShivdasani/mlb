@@ -1,35 +1,13 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
-William Contreras,MIL,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-William Contreras,MIL,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Andy Pages,LAD,@COL,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Andy Pages,LAD,@COL,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Andrew Heaney,TEX,NYM,Strikeouts,Over,(3.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
-Ryan Feltner,COL,LAD,Strikeouts,Over,(4.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
-Ryan Feltner,COL,LAD,Strikeouts,Under,(4.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
-Tyler Anderson,LAA,MIL,Strikeouts,Over,(5.5) ,(4.5) ,(4.5) ,(4.5) ,4.5,nan%
-Tyler Anderson,LAA,MIL,Strikeouts,Under,(5.5) ,(4.5) ,(4.5) ,(4.5) ,4.5,nan%
-Andrew Heaney,TEX,NYM,Strikeouts,Under,(3.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
-Bobby Miller,LAD,@COL,Strikeouts,Under,(7.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
-Sean Manaea,NYM,@TEX,Strikeouts,Under,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
-Sean Manaea,NYM,@TEX,Strikeouts,Over,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
-Bobby Miller,LAD,@COL,Strikeouts,Over,(7.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
-Garrett Crochet,CWS,HOU,Strikeouts,Under,(5.5) ,(6.5) ,(6.5) ,(6.5) ,6.5,nan%
-Garrett Crochet,CWS,HOU,Strikeouts,Over,(5.5) ,(6.5) ,(6.5) ,(6.5) ,6.5,nan%
-Freddy Peralta,MIL,@LAA,Strikeouts,Under,(7.5) ,(6.5) ,(6.5) ,(6.5) ,7.0,nan%
-Freddy Peralta,MIL,@LAA,Strikeouts,Over,(7.5) ,(6.5) ,(6.5) ,(6.5) ,7.0,nan%
-Cole Ragans,KC,@OAK,Strikeouts,Under,(7.5) ,(7.5) ,(7.5) ,(7.5) ,8.0,nan%
-Cole Ragans,KC,@OAK,Strikeouts,Over,(7.5) ,(7.5) ,(7.5) ,(7.5) ,8.0,nan%
-Francisco Lindor,NYM,@TEX,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Francisco Lindor,NYM,@TEX,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Korey Lee,CWS,HOU,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Korey Lee,CWS,HOU,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Ezequiel Tovar,COL,LAD,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Ezequiel Tovar,COL,LAD,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Daz Cameron,OAK,KC,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Daz Cameron,OAK,KC,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Shohei Ohtani,LAD,@COL,Total Bases,Over,(1.5) ,(2.5) ,None,(2.5) ,2.5,nan%
-Shohei Ohtani,LAD,@COL,Total Bases,Under,(1.5) ,(2.5) ,None,(2.5) ,2.5,nan%
-Chas McCormick,HOU,@CWS,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
-Chas McCormick,HOU,@CWS,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
-Zach Neto,LAA,MIL,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Zach Neto,LAA,MIL,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Andy Pages,LAD,@COL,Runs,Over,None,(0.5) -160,None,(0.5) -150,0.5,60.77%
+Andy Pages,LAD,@COL,Runs,Under,None,(0.5) 120,None,(0.5) 115,0.5,45.98%
+Chas McCormick,HOU,@CWS,Total Bases,Over,None,(0.5) -145,None,None,0.5,59.18%
+Chas McCormick,HOU,@CWS,Total Bases,Under,None,(0.5) 105,None,None,0.5,48.78%
+Ezequiel Tovar,COL,LAD,Total Bases,Over,None,(1.5) -120,None,(1.5) -115,1.5,54.02%
+Ezequiel Tovar,COL,LAD,Total Bases,Under,None,(1.5) -110,None,(1.5) -115,1.5,52.93%
+Korey Lee,CWS,HOU,Total Bases,Over,None,(0.5) 105,None,None,0.5,48.78%
+Korey Lee,CWS,HOU,Total Bases,Under,None,(0.5) -145,None,None,0.5,59.18%
+Shohei Ohtani,LAD,@COL,Total Bases,Over,None,(2.5) -105,None,(2.5) 105,2.5,50.0%
+Shohei Ohtani,LAD,@COL,Total Bases,Under,None,(2.5) -130,None,(2.5) -135,2.5,56.98%
+William Contreras,MIL,@SD,Runs,Over,None,(0.5) -115,None,(0.5) -110,0.5,52.93%
+William Contreras,MIL,@SD,Runs,Under,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
