@@ -150,7 +150,7 @@ chrome_options.page_load_strategy = 'eager'  # Waits for the DOMContentLoaded ev
 
 print(f"Chrome binary location: {chrome_options.binary_location}")
 
-driver = uc.Chrome(options=chrome_options, browser_executable_path='/app/.apt/usr/bin/google-chrome')
+driver = uc.Chrome(options=chrome_options, browser_executable_path='/app/.apt/usr/bin/chromedriver')
 
 
 driver.get("https://app.prizepicks.com/")
