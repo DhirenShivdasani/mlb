@@ -1,21 +1,21 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
-Ketel Marte,ARI,@WSH,Runs,Under,(0.5) ,(0.5) ,(0.5) -135,(0.5) ,0.5,57.45%
-Lane Thomas,WSH,ARI,Runs,Under,(0.5) ,(0.5) ,(0.5) -180,(0.5) ,0.5,64.29%
-Eddie Rosario,WSH,ARI,Runs,Under,(0.5) ,(0.5) ,(0.5) -190,(0.5) ,0.5,65.52%
-Ketel Marte,ARI,@WSH,Runs,Over,(0.5) ,(0.5) ,(0.5) 105,(0.5) ,0.5,48.78%
-Lane Thomas,WSH,ARI,Runs,Over,(0.5) ,(0.5) ,(0.5) 140,(0.5) ,0.5,41.67%
-Eddie Rosario,WSH,ARI,Runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) ,0.5,40.0%
-Dylan Moore,SEA,@CLE,Runs,Under,(0.5) ,(0.5) ,(1.5) -145,(0.5) ,0.5,59.18%
-Dylan Moore,SEA,@CLE,Runs,Over,(0.5) ,(0.5) ,(1.5) 115,(0.5) ,0.5,46.51%
+Lane Thomas,WSH,ARI,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Lane Thomas,WSH,ARI,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Eddie Rosario,WSH,ARI,Runs,Under,(0.5) ,(0.5) ,(0.5) -185,(0.5) ,0.5,64.91%
+Ketel Marte,ARI,@WSH,Runs,Under,(0.5) ,(0.5) ,(0.5) -195,(0.5) ,0.5,66.1%
+Eddie Rosario,WSH,ARI,Runs,Over,(0.5) ,(0.5) ,(0.5) 145,(0.5) ,0.5,40.82%
+Ketel Marte,ARI,@WSH,Runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) ,0.5,40.0%
+Dylan Moore,SEA,@CLE,Runs,Under,(0.5) ,(0.5) ,(1.5) -260,(0.5) ,0.5,72.22%
+Dylan Moore,SEA,@CLE,Runs,Over,(0.5) ,(0.5) ,(1.5) 200,(0.5) ,0.5,33.33%
 Ryne Nelson,ARI,@WSH,Strikeouts,Under,(3.5) ,(3.5) ,(3.5) ,(3.5) ,3.5,nan%
 Ryne Nelson,ARI,@WSH,Strikeouts,Over,(3.5) ,(3.5) ,(3.5) ,(3.5) ,3.5,nan%
 Andre Pallante,STL,SF,Strikeouts,Over,(3.5) -110,(3.5) -105,(3.5) -106,(3.5) ,3.5,51.69%
 Andre Pallante,STL,SF,Strikeouts,Under,(3.5) -121,(3.5) -125,(3.5) -118,(3.5) ,3.5,54.81%
 Adam Mazur,SD,MIL,Strikeouts,Over,(4.5) 138,(3.5) -165,(3.5) -154,(3.5) -165,4.0,56.79%
-Mitch Spence,OAK,KC,Strikeouts,Under,(3.5) -150,(3.5) -145,(3.5) -156,(3.5) -145,3.0,59.83%
+Mitch Spence,OAK,KC,Strikeouts,Under,(5.5) ,(3.5) -130,(3.5) -154,(3.5) -135,3.0,58.2%
 Bryse Wilson,MIL,@SD,Strikeouts,Under,(3.5) -177,(2.5) 135,(3.5) -186,(2.5) 135,3.0,53.51%
+Mitch Spence,OAK,KC,Strikeouts,Over,(5.5) ,(3.5) 100,(3.5) 120,(3.5) 100,3.0,48.48%
 Adam Mazur,SD,MIL,Strikeouts,Under,(4.5) 123,(3.5) 130,(3.5) 120,(3.5) 130,4.0,44.31%
-Mitch Spence,OAK,KC,Strikeouts,Over,(3.5) 112,(3.5) 110,(3.5) 122,(3.5) 110,3.0,46.86%
 Bryse Wilson,MIL,@SD,Strikeouts,Over,(3.5) 132,(2.5) -175,(3.5) 144,(2.5) -175,3.0,52.84%
 Logan Allen,CLE,SEA,Strikeouts,Over,(4.5) ,(4.5) ,(4.5) ,(4.5) ,4.5,nan%
 Luis Castillo,SEA,@CLE,Strikeouts,Under,(4.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
@@ -27,22 +27,22 @@ Logan Allen,CLE,SEA,Strikeouts,Under,(4.5) ,(4.5) ,(4.5) ,(4.5) ,4.5,nan%
 Zack Littell,TB,@MIN,Strikeouts,Under,(3.5) ,(3.5) ,(4.5) ,(3.5) ,4.0,nan%
 Keaton Winn,SF,@STL,Strikeouts,Under,(4.5) -113,(4.5) -110,(4.5) -102,(4.5) -105,4.5,51.79%
 Keaton Winn,SF,@STL,Strikeouts,Over,(4.5) -118,(4.5) -120,(4.5) -125,(4.5) -120,4.5,54.69%
-Cole Irvin,BAL,@NYY,Strikeouts,Under,(4.5) 140,(4.5) -185,(4.5) -148,(4.5) -165,4.0,57.13%
-Cole Irvin,BAL,@NYY,Strikeouts,Over,(4.5) 123,(4.5) 140,(4.5) 116,(4.5) 125,4.0,44.31%
-Spencer Arrighetti,HOU,@CWS,Strikeouts,Under,(5.5) -130,(5.5) -125,(5.5) -128,(5.5) -135,5.5,56.42%
-Seth Lugo,KC,@OAK,Strikeouts,Over,(6.5) 133,(5.5) -145,(5.5) -156,(5.5) -150,6.0,55.76%
-Gavin Stone,LAD,@COL,Strikeouts,Under,(5.5) 128,(5.5) -160,(5.5) -166,(5.5) -160,5.0,57.34%
-Spencer Arrighetti,HOU,@CWS,Strikeouts,Over,(5.5) -103,(5.5) -105,(5.5) 100,(5.5) 105,5.5,50.18%
-Seth Lugo,KC,@OAK,Strikeouts,Under,(6.5) 118,(5.5) 115,(5.5) 122,(5.5) 115,6.0,45.98%
-Gavin Stone,LAD,@COL,Strikeouts,Over,(5.5) 128,(5.5) 120,(5.5) 130,(5.5) 120,5.0,44.56%
+Cole Irvin,BAL,@NYY,Strikeouts,Under,(4.5) 140,(4.5) -185,(4.5) -160,(4.5) -165,4.0,57.6%
+Cole Irvin,BAL,@NYY,Strikeouts,Over,(4.5) 123,(4.5) 140,(4.5) 124,(4.5) 125,4.0,43.9%
+Spencer Arrighetti,HOU,@CWS,Strikeouts,Under,(5.5) -132,(5.5) -125,(5.5) -128,(5.5) -135,5.5,56.51%
+Seth Lugo,KC,@OAK,Strikeouts,Over,(6.5) 130,(5.5) -145,(5.5) -162,(5.5) -150,6.0,56.12%
+Gavin Stone,LAD,@COL,Strikeouts,Under,(5.5) 128,(5.5) -160,(5.5) -170,(5.5) -160,5.0,57.47%
+Spencer Arrighetti,HOU,@CWS,Strikeouts,Over,(5.5) 100,(5.5) -105,(5.5) 100,(5.5) 105,5.5,50.0%
+Seth Lugo,KC,@OAK,Strikeouts,Under,(6.5) 120,(5.5) 115,(5.5) 126,(5.5) 115,6.0,45.68%
+Gavin Stone,LAD,@COL,Strikeouts,Over,(5.5) 128,(5.5) 120,(5.5) 132,(5.5) 120,5.0,44.47%
 MacKenzie Gore,WSH,ARI,Strikeouts,Over,(4.5) ,(5.5) ,(6.5) ,(5.5) ,6.0,nan%
 MacKenzie Gore,WSH,ARI,Strikeouts,Under,(4.5) ,(5.5) ,(6.5) ,(5.5) ,6.0,nan%
-Luis Gil,NYY,BAL,Strikeouts,Under,(6.5) 132,(6.5) -140,(6.5) -136,(6.5) -150,6.0,54.77%
+Luis Gil,NYY,BAL,Strikeouts,Under,(6.5) 132,(6.5) -140,(6.5) -138,(6.5) -150,6.0,54.85%
 Luis Gil,NYY,BAL,Strikeouts,Over,(6.5) 116,(6.5) 105,(6.5) 108,(6.5) 115,6.0,47.42%
 Ty Blach,COL,LAD,Strikeouts,Over,None,(2.5) -125,None,(2.5) -115,2.5,54.52%
 Yordan Alvarez,HOU,@CWS,Runs,Under,(0.5) 112,(0.5) -110,None,(0.5) -105,0.5,50.26%
 Yordan Alvarez,HOU,@CWS,Runs,Over,(0.5) -152,(0.5) -125,None,(0.5) -125,0.5,57.14%
-Yordan Alvarez,HOU,@CWS,Total Bases,Under,(1.5) -105,(1.5) -120,None,(1.5) -120,1.5,53.44%
+Yordan Alvarez,HOU,@CWS,Total Bases,Under,(1.5) -104,(1.5) -120,None,(1.5) -120,1.5,53.36%
 Miguel Vargas,LAD,@COL,Total Bases,Over,(1.5) -107,(1.5) -135,None,(1.5) -130,1.5,55.22%
 Miguel Vargas,LAD,@COL,Total Bases,Under,(1.5) -130,(1.5) 100,None,(1.5) 100,1.5,52.17%
 Brenton Doyle,COL,LAD,Total Bases,Under,(1.5) -122,(1.5) -120,None,(1.5) -115,1.5,54.33%
@@ -51,14 +51,14 @@ Nolan Jones,COL,LAD,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Nolan Jones,COL,LAD,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Ty Blach,COL,LAD,Strikeouts,Under,None,(2.5) 100,None,(2.5) -115,2.5,51.74%
 Bo Naylor,CLE,SEA,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
-Yordan Alvarez,HOU,@CWS,Total Bases,Over,(1.5) -132,(1.5) -110,None,(1.5) -110,1.5,53.89%
+Yordan Alvarez,HOU,@CWS,Total Bases,Over,(1.5) -134,(1.5) -110,None,(1.5) -110,1.5,54.01%
 William Contreras,MIL,@SD,Runs,Under,(0.5) -124,(0.5) -130,None,(0.5) -130,0.5,56.13%
 Anthony Volpe,NYY,BAL,Runs,Under,(0.5) -129,(0.5) -110,None,(0.5) -110,0.5,53.7%
 Anthony Volpe,NYY,BAL,Runs,Over,(0.5) -107,(0.5) -120,None,(0.5) -120,0.5,53.59%
 William Contreras,MIL,@SD,Runs,Over,(0.5) -110,(0.5) -105,None,(0.5) 100,0.5,51.2%
-Tyler Soderstrom,OAK,KC,Total Bases,Under,(1.5) -315,(0.5) -105,None,None,0.5,63.56%
+Tyler Soderstrom,OAK,KC,Total Bases,Under,(1.5) -345,(0.5) -105,None,None,0.5,64.37%
 Taylor Walls,TB,@MIN,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
-Tyler Soderstrom,OAK,KC,Total Bases,Over,(1.5) 210,(0.5) -125,None,None,0.5,43.91%
+Tyler Soderstrom,OAK,KC,Total Bases,Over,(1.5) 225,(0.5) -125,None,None,0.5,43.16%
 Taylor Walls,TB,@MIN,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
 Bo Naylor,CLE,SEA,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
 Matt Carpenter,STL,SF,Total Bases,Under,None,(0.5) -110,None,(0.5) -105,0.5,51.8%
