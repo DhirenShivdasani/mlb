@@ -17,27 +17,6 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 from dotenv import load_dotenv
 import os
-
-chrome_options = uc.ChromeOptions()
-chrome_options.add_argument("--headless")
-chrome_options.add_argument("--disable-gpu")
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
-chrome_options.add_argument("--window-size=1920x1080")
-chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
-
-if 'DYNO' in os.environ:
-    chrome_options.binary_location = '/app/.apt/usr/bin/google-chrome'
-    chromedriver_path = '/app/.chromedriver/bin/chromedriver'
-else:
-    chrome_options.binary_location = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
-    chromedriver_path = 'C:/Path/To/Your/Local/ChromeDriver'
-
-print(f"Chrome binary location: {chrome_options.binary_location}")
-print(f"ChromeDriver path: {chromedriver_path}")
-
-driver = uc.Chrome(options=chrome_options, browser_executable_path=chromedriver_path)
-
 # Load environment variables from .env file
 load_dotenv()
 
@@ -145,6 +124,33 @@ def push_to_github():
     except subprocess.CalledProcessError as e:
         print(f"An error occurred while pushing to GitHub: {e.output.decode()}")
 
+chrome_options = uc.ChromeOptions()
+chrome_options.add_experimental_option("prefs", {"profile.managed_default_content_settings.images": 2})
+chrome_options.add_argument("--disable-notifications")
+chrome_options = uc.ChromeOptions()
+chrome_options.add_argument("--headless")  # Run Chrome in headless mode
+chrome_options.add_argument("--disable-gpu")  # Disable GPU acceleration
+chrome_options.add_argument("--no-sandbox")  # Bypass OS security model
+chrome_options.add_argument("--disable-dev-shm-usage")  # Overcome limited resource problems
+chrome_options.add_argument("--window-size=1920x1080")  # Set window size for headless mode
+chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+
+if 'DYNO' in os.environ:
+    chrome_options.binary_location = '/app/.apt/usr/bin/google-chrome'
+    browser_executable_path = '/app/.apt/usr/bin/google-chrome'
+else:
+    chrome_options.binary_location = 'C:/Program Files/Google/Chrome/Application/chrome.exe'  # Adjust this path to your local Chrome binary location
+    browser_executable_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe'  # Adjust this path to your local Chrome binary location
+
+chrome_options.add_experimental_option("prefs", {
+    "profile.default_content_setting_values.geolocation": 1, # 1:Allow, 2:Block
+})
+
+chrome_options.page_load_strategy = 'eager'  # Waits for the DOMContentLoaded event
+
+print(f"Chrome binary location: {chrome_options.binary_location}")
+
+driver = uc.Chrome(options=chrome_options, browser_executable_path='/app/.apt/usr/bin/google-chrome')
 
 
 driver.get("https://app.prizepicks.com/")
