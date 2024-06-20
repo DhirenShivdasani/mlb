@@ -143,9 +143,7 @@ chrome_options.page_load_strategy = 'eager'  # Waits for the DOMContentLoaded ev
 
 if 'DYNO' in os.environ:
     chrome_options.binary_location = '/app/.apt/usr/bin/google-chrome'
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--headless')
+    browser_executable_path = '/app/.apt/usr/bin/chromedriver'
 else:
     chrome_options.binary_location = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
     browser_executable_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
