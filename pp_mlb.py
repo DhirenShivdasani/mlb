@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 import undetected_chromedriver as uc
+from selenium.common.exceptions import TimeoutException
 import time
 import pandas as pd
 from selenium.webdriver.common.by import By
@@ -146,6 +147,7 @@ chrome_options.add_experimental_option("prefs", {
 
 chrome_options.page_load_strategy = 'eager'  # Waits for the DOMContentLoaded event
 
+print(f"Chrome binary location: {chrome_options.binary_location}")
 
 driver = uc.Chrome(options=chrome_options, browser_executable_path='/app/.apt/usr/bin/google-chrome')
 
@@ -174,9 +176,14 @@ except Exception as e:
 time.sleep(4)
 
 
-stat_container = WebDriverWait(driver, 15).until(
-    EC.visibility_of_element_located((By.CLASS_NAME, "stat-container"))
-)
+try:
+    stat_container = WebDriverWait(driver, 30).until(
+        EC.visibility_of_element_located((By.CLASS_NAME, "stat-container"))
+    )
+except TimeoutException:
+    print(driver.page_source)
+    raise
+
 
 categories = driver.find_element(By.CSS_SELECTOR, ".stat-container").text.split('\n')
 
