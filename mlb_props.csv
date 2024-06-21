@@ -269,8 +269,8 @@ Ha-Seong Kim,SD,MIL,runs,Over,,(0.5) 150,,(0.5) 155
 Ha-Seong Kim,SD,MIL,runs,Under,,(0.5) -210,,(0.5) -210
 Heliot Ramos,SF,@STL,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Heliot Ramos,SF,@STL,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Heliot Ramos,SF,@STL,runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) 
-Heliot Ramos,SF,@STL,runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) 
+Heliot Ramos,SF,@STL,runs,Over,(0.5) ,(0.5) ,(1.5) 500,(0.5) 
+Heliot Ramos,SF,@STL,runs,Under,(0.5) ,(0.5) ,(1.5) -800,(0.5) 
 Hunter Goodman,COL,LAD,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Hunter Goodman,COL,LAD,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Hunter Goodman,COL,LAD,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -585,8 +585,8 @@ Nicky Lopez,CWS,HOU,runs,Over,,(0.5) ,(0.5) ,(0.5)
 Nicky Lopez,CWS,HOU,runs,Under,,(0.5) ,(0.5) ,(0.5) 
 Nolan Gorman,STL,SF,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Nolan Gorman,STL,SF,bases,Under,(1.5) ,(0.5) ,,(0.5) 
-Nolan Gorman,STL,SF,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
-Nolan Gorman,STL,SF,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
+Nolan Gorman,STL,SF,runs,Over,(0.5) ,(0.5) ,(0.5) 550,(0.5) 
+Nolan Gorman,STL,SF,runs,Under,(0.5) ,(0.5) ,(0.5) -950,(0.5) 
 Nolan Jones,COL,LAD,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Nolan Jones,COL,LAD,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Nolan Jones,COL,LAD,runs,Over,(0.5) ,(0.5) ,,(0.5) 
@@ -601,8 +601,8 @@ Oswaldo Cabrera,NYY,BAL,runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5)
 Oswaldo Cabrera,NYY,BAL,runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) 
 Patrick Bailey,SF,@STL,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Patrick Bailey,SF,@STL,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Patrick Bailey,SF,@STL,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
-Patrick Bailey,SF,@STL,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
+Patrick Bailey,SF,@STL,runs,Over,(0.5) ,(0.5) ,(0.5) 550,(0.5) 
+Patrick Bailey,SF,@STL,runs,Under,(0.5) ,(0.5) ,(0.5) -950,(0.5) 
 Paul DeJong,CWS,HOU,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Paul DeJong,CWS,HOU,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Paul DeJong,CWS,HOU,runs,Over,(0.5) ,(0.5) ,,(0.5) 
@@ -613,8 +613,8 @@ Paul Goldschmidt,STL,SF,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5)
 Paul Goldschmidt,STL,SF,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Pedro Pages,STL,SF,bases,Over,(1.5) ,(0.5) ,,
 Pedro Pages,STL,SF,bases,Under,(1.5) ,(0.5) ,,
-Pedro Pages,STL,SF,runs,Over,,(0.5) ,(0.5) ,
-Pedro Pages,STL,SF,runs,Under,,(0.5) ,(0.5) ,
+Pedro Pages,STL,SF,runs,Over,,(0.5) ,(0.5) 430,
+Pedro Pages,STL,SF,runs,Under,,(0.5) ,(0.5) -650,
 Ramon Urias,BAL,@NYY,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Ramon Urias,BAL,@NYY,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Ramon Urias,BAL,@NYY,runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) 
