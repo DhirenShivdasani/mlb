@@ -144,6 +144,8 @@ chrome_options.page_load_strategy = 'eager'  # Waits for the DOMContentLoaded ev
 if 'DYNO' in os.environ:
     chrome_options.binary_location = '/app/.apt/usr/bin/google-chrome'
     browser_executable_path = '/app/.apt/usr/bin/chromedriver'
+    service = Service(browser_executable_path)
+
 else:
     chrome_options.binary_location = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
     browser_executable_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
@@ -151,7 +153,7 @@ else:
 print(f"Chrome binary location: {chrome_options.binary_location}")
 print(f"Chromedriver path: {browser_executable_path}")
 
-driver = uc.Chrome(options=chrome_options, browser_executable_path=browser_executable_path)
+driver = uc.Chrome(service=service, options=chrome_options, browser_executable_path=browser_executable_path)
 
 driver.get("https://app.prizepicks.com/")
 # time.sleep(5)
