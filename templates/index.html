@@ -13,14 +13,23 @@
             padding: 0;
         }
 
-        h1 {
-            text-align: center;
-            padding: 20px;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #007bff;
             color: white;
-            margin: 0;
-            font-size: 2rem;
+            padding: 10px 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .header .last-updated {
+            font-size: 1rem;
         }
 
         .filters {
@@ -132,7 +141,10 @@
 </head>
 
 <body>
-    <h1>Live Odds Tracker</h1>
+    <div class="header">
+        <h1>Live Odds Tracker</h1>
+        <div class="last-updated" id="last-updated">Last updated: N/A</div>
+    </div>
     <div id="notification">New data available. Please refresh the page.</div>
     <div class="filters">
         <div class="filter">
@@ -153,12 +165,14 @@
     <script>
         const container = document.getElementById('odds-container');
         const notification = document.getElementById('notification');
+        const lastUpdatedElement = document.getElementById('last-updated');
         let oddsData = [];
 
         async function fetchOdds() {
             const response = await fetch('/merged_data');
             oddsData = await response.json();
             displayOdds(oddsData);
+            updateLastUpdated();
         }
 
         function displayOdds(data) {
@@ -207,6 +221,19 @@
             }
 
             displayOdds(filteredData);
+        }
+
+        function updateLastUpdated() {
+            const now = new Date();
+            const formattedTime = now.toLocaleString('en-US', {
+                hour12: true,
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+            lastUpdatedElement.textContent = `Last updated: ${formattedTime}`;
         }
 
         async function setupWebSocket() {
