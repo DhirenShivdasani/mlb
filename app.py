@@ -10,15 +10,15 @@ import bcrypt
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 
-# Connect to the database
-conn = psycopg2.connect(DATABASE_URL)
-cur = conn.cursor()
-
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for sessions
 CORS(app)
 
 connected_clients = set()
+
+def get_db_connection():
+    conn = psycopg2.connect(DATABASE_URL)
+    return conn
 
 async def notify_clients():
     if connected_clients:
@@ -48,10 +48,16 @@ def get_historical_data():
         return jsonify({"error": "Unauthorized"}), 401
     player_name = request.args.get('player_name')
     prop = request.args.get('prop')
-    cur.execute("SELECT timestamp, draftkings, fanduel, mgm, betrivers FROM odds WHERE player_name = %s AND prop = %s ORDER BY timestamp", (player_name, prop))
-    rows = cur.fetchall()
-    data = [{'timestamp': row[0], 'draftkings': row[1], 'fanduel': row[2], 'mgm': row[3], 'betrivers': row[4]} for row in rows]
-    return jsonify(data)
+    conn = get_db_connection()
+    cur = conn.cursor()
+    try:
+        cur.execute("SELECT timestamp, draftkings, fanduel, mgm, betrivers FROM odds WHERE player_name = %s AND prop = %s ORDER BY timestamp", (player_name, prop))
+        rows = cur.fetchall()
+        data = [{'timestamp': row[0], 'draftkings': row[1], 'fanduel': row[2], 'mgm': row[3], 'betrivers': row[4]} for row in rows]
+        return jsonify(data)
+    finally:
+        cur.close()
+        conn.close()
 
 @app.route('/')
 def index():
@@ -79,6 +85,8 @@ def register():
         username = data['username']
         password = data['password']
         hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        conn = get_db_connection()
+        cur = conn.cursor()
         try:
             cur.execute('''
                 INSERT INTO users (username, password)
@@ -87,7 +95,11 @@ def register():
             conn.commit()
             return jsonify({"status": "success"}), 201
         except psycopg2.IntegrityError:
+            conn.rollback()
             return jsonify({"status": "error", "message": "Username already exists"}), 400
+        finally:
+            cur.close()
+            conn.close()
     return render_template('register.html')
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -96,14 +108,23 @@ def login():
         data = request.json
         username = data['username']
         password = data['password']
-        cur.execute('''
-            SELECT id, password FROM users WHERE username = %s
-        ''', (username,))
-        user = cur.fetchone()
-        if user and bcrypt.checkpw(password.encode('utf-8'), user[1]):
-            session['user_id'] = user[0]
-            return jsonify({"status": "success"}), 200
-        return jsonify({"status": "error", "message": "Invalid credentials"}), 401
+        conn = get_db_connection()
+        cur = conn.cursor()
+        try:
+            cur.execute('''
+                SELECT id, password FROM users WHERE username = %s
+            ''', (username,))
+            user = cur.fetchone()
+            if user and bcrypt.checkpw(password.encode('utf-8'), user[1]):
+                session['user_id'] = user[0]
+                return jsonify({"status": "success"}), 200
+            return jsonify({"status": "error", "message": "Invalid credentials"}), 401
+        except psycopg2.Error as e:
+            conn.rollback()
+            return jsonify({"status": "error", "message": str(e)}), 500
+        finally:
+            cur.close()
+            conn.close()
     return render_template('login.html')
 
 @app.route('/logout', methods=['POST'])
@@ -113,6 +134,8 @@ def logout():
 
 if __name__ == '__main__':
     # Initialize the users table
+    conn = get_db_connection()
+    cur = conn.cursor()
     cur.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id SERIAL PRIMARY KEY,
@@ -121,6 +144,9 @@ if __name__ == '__main__':
         )
     ''')
     conn.commit()
+    cur.close()
+    conn.close()
+    
     port = int(os.environ.get('PORT', 5000))
     threading.Thread(target=start_websocket_server, args=(port,)).start()
     app.run(debug=True, use_reloader=False, port=port)
