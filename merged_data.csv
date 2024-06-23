@@ -1,9 +1,9 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
-Christian Yelich,MIL,@SD,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Christian Yelich,MIL,@SD,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-William Contreras,MIL,@SD,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-William Contreras,MIL,@SD,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Luis Arraez,SD,MIL,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Luis Arraez,SD,MIL,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Matt Carpenter,STL,SF,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Matt Carpenter,STL,SF,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Christian Yelich,MIL,@SD,Runs,Over,None,(0.5) 110,None,(0.5) 115,0.5,47.07%
+Christian Yelich,MIL,@SD,Runs,Under,None,(0.5) -150,None,(0.5) -150,0.5,60.0%
+Luis Arraez,SD,MIL,Total Bases,Over,None,(1.5) 115,None,(1.5) 115,1.5,46.51%
+Luis Arraez,SD,MIL,Total Bases,Under,None,(1.5) -155,None,(1.5) -150,1.5,60.39%
+Matt Carpenter,STL,SF,Total Bases,Over,None,(0.5) -160,None,(0.5) -155,0.5,61.16%
+Matt Carpenter,STL,SF,Total Bases,Under,None,(0.5) 120,None,(0.5) 115,0.5,45.98%
+William Contreras,MIL,@SD,Runs,Over,None,(0.5) 105,None,(0.5) 110,0.5,48.2%
+William Contreras,MIL,@SD,Runs,Under,None,(0.5) -140,None,(0.5) -145,0.5,58.76%
