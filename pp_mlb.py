@@ -148,7 +148,8 @@ else:
     chrome_options.binary_location = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
     driver = uc.Chrome(options=chrome_options, browser_executable_path='C:/Program Files/Google/Chrome/Application/chrome.exe')
 
-
+print(f"Chrome binary location: {chrome_options.binary_location}")
+print(f"Chromedriver path: {os.environ.get('CHROMEDRIVER_PATH')}")
 driver.get("https://app.prizepicks.com/")
 # time.sleep(5)
 
