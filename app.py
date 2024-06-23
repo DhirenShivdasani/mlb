@@ -5,6 +5,13 @@ import websockets
 import threading
 import pandas as pd
 import os
+import psycopg2
+
+DATABASE_URL = os.getenv('DATABASE_URL')
+
+# Connect to the database
+conn = psycopg2.connect(DATABASE_URL)
+cur = conn.cursor()
 
 app = Flask(__name__)
 CORS(app)
@@ -32,6 +39,15 @@ def start_websocket_server(port):
     start_server = websockets.serve(websocket_handler, "0.0.0.0", port + 1)  # WebSocket on different port
     loop.run_until_complete(start_server)
     loop.run_forever()
+
+@app.route('/get_historical_data', methods=['GET'])
+def get_historical_data():
+    player_name = request.args.get('player_name')
+    prop = request.args.get('prop')
+    cur.execute("SELECT timestamp, draftkings, fanduel, mgm, betrivers FROM odds WHERE player_name = %s AND prop = %s ORDER BY timestamp", (player_name, prop))
+    rows = cur.fetchall()
+    data = [{'timestamp': row[0], 'draftkings': row[1], 'fanduel': row[2], 'mgm': row[3], 'betrivers': row[4]} for row in rows]
+    return jsonify(data)
 
 @app.route('/')
 def index():

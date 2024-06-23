@@ -127,6 +127,24 @@
             font-weight: bold;
         }
 
+        #historicalModal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 90%;
+            max-width: 600px;
+        }
+        #historicalChart {
+            width: 100%;
+            height: 400px;
+        }
+
         @media (max-width: 600px) {
             .prop-row {
                 flex-direction: column;
@@ -166,6 +184,9 @@
         const container = document.getElementById('odds-container');
         const notification = document.getElementById('notification');
         const lastUpdatedElement = document.getElementById('last-updated');
+        const historicalModal = document.getElementById('historicalModal');
+        const historicalChartElement = document.getElementById('historicalChart');
+        let historicalChart;
         let oddsData = [];
 
         async function fetchOdds() {
@@ -241,6 +262,71 @@
             ws.onmessage = () => {
                 notification.style.display = 'block';
             };
+        }
+
+        async function showHistoricalData(playerName, prop) {
+            const response = await fetch(`/get_historical_data?player_name=${playerName}&prop=${prop}`);
+            const data = await response.json();
+            const timestamps = data.map(item => new Date(item.timestamp).toLocaleString());
+            const draftkings = data.map(item => parseFloat(item.draftkings));
+            const fanduel = data.map(item => parseFloat(item.fanduel));
+            const mgm = data.map(item => parseFloat(item.mgm));
+            const betrivers = data.map(item => parseFloat(item.betrivers));
+
+            if (historicalChart) {
+                historicalChart.destroy();
+            }
+
+            historicalChart = new Chart(historicalChartElement, {
+                type: 'line',
+                data: {
+                    labels: timestamps,
+                    datasets: [
+                        {
+                            label: 'DraftKings',
+                            data: draftkings,
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            label: 'FanDuel',
+                            data: fanduel,
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            label: 'MGM',
+                            data: mgm,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            label: 'BetRivers',
+                            data: betrivers,
+                            borderColor: 'rgba(153, 102, 255, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        x: { display: true, title: { display: true, text: 'Date' } },
+                        y: { display: true, title: { display: true, text: 'Odds' } }
+                    }
+                }
+            });
+
+            historicalModal.style.display = 'block';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == historicalModal) {
+                historicalModal.style.display = 'none';
+            }
         }
 
         fetchOdds();
