@@ -27,7 +27,7 @@ def init_db():
         CREATE TABLE IF NOT EXISTS users (
             id SERIAL PRIMARY KEY,
             username VARCHAR(255) UNIQUE NOT NULL,
-            password BYTEA NOT NULL
+            password TEXT NOT NULL
         )
     ''')
     conn.commit()
@@ -101,7 +101,7 @@ def register():
         data = request.json
         username = data['username']
         password = data['password']
-        hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
         conn = get_db_connection()
         cur = conn.cursor()
         try:
@@ -132,7 +132,7 @@ def login():
                 SELECT id, password FROM users WHERE username = %s
             ''', (username,))
             user = cur.fetchone()
-            if user and bcrypt.checkpw(password.encode('utf-8'), user[1]):
+            if user and bcrypt.checkpw(password.encode('utf-8'), user[1].encode('utf-8')):
                 session['user_id'] = user[0]
                 return jsonify({"status": "success"}), 200
             return jsonify({"status": "error", "message": "Invalid credentials"}), 401
