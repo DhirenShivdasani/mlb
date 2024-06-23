@@ -20,6 +20,23 @@ def get_db_connection():
     conn = psycopg2.connect(DATABASE_URL)
     return conn
 
+def init_db():
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+            id SERIAL PRIMARY KEY,
+            username VARCHAR(255) UNIQUE NOT NULL,
+            password VARCHAR(255) NOT NULL
+        )
+    ''')
+    conn.commit()
+    cur.close()
+    conn.close()
+    print("Database initialized and users table created.")
+
+init_db()
+
 async def notify_clients():
     if connected_clients:
         message = "update"
@@ -133,20 +150,6 @@ def logout():
     return jsonify({"status": "success"}), 200
 
 if __name__ == '__main__':
-    # Initialize the users table
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute('''
-        CREATE TABLE IF NOT EXISTS users (
-            id SERIAL PRIMARY KEY,
-            username VARCHAR(255) UNIQUE NOT NULL,
-            password VARCHAR(255) NOT NULL
-        )
-    ''')
-    conn.commit()
-    cur.close()
-    conn.close()
-    
     port = int(os.environ.get('PORT', 5000))
     threading.Thread(target=start_websocket_server, args=(port,)).start()
     app.run(debug=True, use_reloader=False, port=port)
