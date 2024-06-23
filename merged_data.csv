@@ -1,97 +1,98 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
-Matt Olson,ATL,@NYY,Runs,Over,(0.5) ,(0.5) ,(0.5) -105,(0.5) ,0.5,51.22%
-Austin Riley,ATL,@NYY,Runs,Under,(0.5) ,(0.5) ,(0.5) -110,(0.5) ,0.5,52.38%
-Austin Riley,ATL,@NYY,Runs,Over,(0.5) ,(0.5) ,(0.5) -115,(0.5) ,0.5,53.49%
-Matt Olson,ATL,@NYY,Runs,Under,(0.5) ,(0.5) ,(0.5) -120,(0.5) ,0.5,54.55%
-Ozzie Albies,ATL,@NYY,Runs,Under,(0.5) ,(0.5) ,(0.5) -160,(0.5) ,0.5,61.54%
+Ozzie Albies,ATL,@NYY,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Ozzie Albies,ATL,@NYY,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Isiah Kiner-Falefa,TOR,@CLE,Runs,Under,(0.5) ,(0.5) ,(0.5) -150,(0.5) ,0.5,60.0%
+Matt Olson,ATL,@NYY,Runs,Under,(0.5) ,(0.5) ,(0.5) -155,(0.5) ,0.5,60.78%
+Austin Riley,ATL,@NYY,Runs,Under,(0.5) ,(0.5) ,(0.5) -155,(0.5) ,0.5,60.78%
 Bryan Reynolds,PIT,TB,Runs,Under,(0.5) ,(0.5) ,(0.5) -180,(0.5) ,0.5,64.29%
-Ke'Bryan Hayes,PIT,TB,Runs,Under,(0.5) ,(0.5) ,(0.5) -190,(0.5) ,0.5,65.52%
-Anthony Volpe,NYY,ATL,Runs,Under,(0.5) ,(0.5) ,(0.5) -195,(0.5) ,0.5,66.1%
-Ozzie Albies,ATL,@NYY,Runs,Over,(0.5) ,(0.5) ,(0.5) 125,(0.5) ,0.5,44.44%
+Ke'Bryan Hayes,PIT,TB,Runs,Under,(0.5) ,(0.5) ,(0.5) -210,(0.5) ,0.5,67.74%
+Anthony Volpe,NYY,ATL,Runs,Under,(0.5) ,(0.5) ,(0.5) -210,(0.5) ,0.5,67.74%
+Isiah Kiner-Falefa,TOR,@CLE,Runs,Over,(0.5) ,(0.5) ,(0.5) 115,(0.5) ,0.5,46.51%
+Austin Riley,ATL,@NYY,Runs,Over,(0.5) ,(0.5) ,(0.5) 120,(0.5) ,0.5,45.45%
+Matt Olson,ATL,@NYY,Runs,Over,(0.5) ,(0.5) ,(0.5) 120,(0.5) ,0.5,45.45%
 Bryan Reynolds,PIT,TB,Runs,Over,(0.5) ,(0.5) ,(0.5) 140,(0.5) ,0.5,41.67%
-Ke'Bryan Hayes,PIT,TB,Runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) ,0.5,40.0%
-Anthony Volpe,NYY,ATL,Runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) ,0.5,40.0%
-Tobias Myers,MIL,@SD,Strikeouts,Under,(4.5) ,(2.5) 135,(3.5) -154,(2.5) 135,3.0,48.58%
-Tobias Myers,MIL,@SD,Strikeouts,Over,(4.5) ,(2.5) -180,(3.5) 120,(2.5) -175,3.0,57.79%
+Ke'Bryan Hayes,PIT,TB,Runs,Over,(0.5) ,(0.5) ,(0.5) 160,(0.5) ,0.5,38.46%
+Anthony Volpe,NYY,ATL,Runs,Over,(0.5) ,(0.5) ,(0.5) 160,(0.5) ,0.5,38.46%
+Matt Vierling,DET,CWS,Runs,Under,(0.5) ,(0.5) ,(1.5) -150,(0.5) ,0.5,60.0%
+Matt Vierling,DET,CWS,Runs,Over,(0.5) ,(0.5) ,(1.5) 120,(0.5) ,0.5,45.45%
+Tobias Myers,MIL,@SD,Strikeouts,Under,(4.5) ,(2.5) 135,(3.5) -142,(2.5) 135,3.0,47.93%
+Tobias Myers,MIL,@SD,Strikeouts,Over,(4.5) ,(2.5) -180,(3.5) 112,(2.5) -175,3.0,58.36%
+Aaron Civale,TB,@PIT,Strikeouts,Over,(6.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
+Reese Olson,DET,CWS,Strikeouts,Over,(6.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
+Triston McKenzie,CLE,TOR,Strikeouts,Over,(5.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
+Triston McKenzie,CLE,TOR,Strikeouts,Under,(5.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
 Jonathan Cannon,CWS,@DET,Strikeouts,Over,(5.5) ,(4.5) ,(4.5) ,(3.5) ,4.0,nan%
 Jonathan Cannon,CWS,@DET,Strikeouts,Under,(5.5) ,(4.5) ,(4.5) ,(3.5) ,4.0,nan%
-Reese Olson,DET,CWS,Strikeouts,Over,(6.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
-Reese Olson,DET,CWS,Strikeouts,Under,(6.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
-Triston McKenzie,CLE,TOR,Strikeouts,Over,(5.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
-Aaron Civale,TB,@PIT,Strikeouts,Over,(6.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
-Triston McKenzie,CLE,TOR,Strikeouts,Under,(5.5) ,(4.5) ,(4.5) ,(4.5) ,4.0,nan%
 Aaron Civale,TB,@PIT,Strikeouts,Under,(6.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
-Alec Marsh,KC,@TEX,Strikeouts,Over,(4.5) -114,(4.5) -120,(4.5) -102,(4.5) -115,4.5,52.95%
-Javier Assad,CHC,NYM,Strikeouts,Under,(4.5) 105,(4.5) 105,(4.5) -112,(4.5) 105,5.0,49.79%
-Javier Assad,CHC,NYM,Strikeouts,Over,(4.5) -139,(4.5) -140,(4.5) -112,(4.5) -140,5.0,56.91%
-Alec Marsh,KC,@TEX,Strikeouts,Under,(4.5) -117,(4.5) -110,(4.5) -125,(4.5) -110,4.5,53.56%
-Hogan Harris,OAK,MIN,Strikeouts,Under,None,(3.5) 135,(4.5) -158,(3.5) 130,4.0,49.09%
-Luis Severino,NYM,@CHC,Strikeouts,Over,(5.5) 120,(5.5) 135,(4.5) -158,(5.5) 120,5.0,48.68%
-Hogan Harris,OAK,MIN,Strikeouts,Over,None,(3.5) -170,(4.5) 124,(3.5) -175,4.0,57.08%
-Luis Severino,NYM,@CHC,Strikeouts,Under,(5.5) 135,(5.5) -175,(4.5) 124,(5.5) -160,5.0,53.09%
-Max Fried,ATL,@NYY,Strikeouts,Over,(4.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
+Reese Olson,DET,CWS,Strikeouts,Under,(6.5) ,(5.5) ,(4.5) ,(5.5) ,5.0,nan%
+Alec Marsh,KC,@TEX,Strikeouts,Over,(4.5) -115,(4.5) -120,(4.5) -102,(4.5) -115,4.5,53.0%
+Alec Marsh,KC,@TEX,Strikeouts,Under,(4.5) -115,(4.5) -110,(4.5) -125,(4.5) -110,4.5,53.45%
+Javier Assad,CHC,NYM,Strikeouts,Over,(4.5) -139,(4.5) -140,(4.5) -130,(4.5) -140,5.0,57.84%
+Hogan Harris,OAK,MIN,Strikeouts,Under,None,(3.5) 135,(4.5) -154,(3.5) 130,4.0,48.89%
+Luis Severino,NYM,@CHC,Strikeouts,Over,(5.5) 120,(5.5) 135,(4.5) -156,(5.5) 120,5.0,48.6%
+Javier Assad,CHC,NYM,Strikeouts,Under,(4.5) 105,(4.5) 105,(4.5) 102,(4.5) 105,5.0,48.96%
+Luis Severino,NYM,@CHC,Strikeouts,Under,(5.5) 135,(5.5) -175,(4.5) 122,(5.5) -160,5.0,53.19%
+Hogan Harris,OAK,MIN,Strikeouts,Over,None,(3.5) -170,(4.5) 122,(3.5) -175,4.0,57.21%
 Max Fried,ATL,@NYY,Strikeouts,Under,(4.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
-Yusei Kikuchi,TOR,@CLE,Strikeouts,Under,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
-Yusei Kikuchi,TOR,@CLE,Strikeouts,Over,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
-Bryce Miller,SEA,@MIA,Strikeouts,Under,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
-Nestor Cortes,NYY,ATL,Strikeouts,Over,(5.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
-Bryce Miller,SEA,@MIA,Strikeouts,Over,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
 Nestor Cortes,NYY,ATL,Strikeouts,Under,(5.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
+Nestor Cortes,NYY,ATL,Strikeouts,Over,(5.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
+Yusei Kikuchi,TOR,@CLE,Strikeouts,Over,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
+Yusei Kikuchi,TOR,@CLE,Strikeouts,Under,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
+Max Fried,ATL,@NYY,Strikeouts,Over,(4.5) ,(5.5) ,(5.5) ,(5.5) ,5.5,nan%
+Bryce Miller,SEA,@MIA,Strikeouts,Under,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
+Bryce Miller,SEA,@MIA,Strikeouts,Over,(6.5) ,(5.5) ,(5.5) ,(5.5) ,5.0,nan%
 Logan Webb,SF,@STL,Strikeouts,Under,(5.5) -148,(5.5) -130,(5.5) -138,(5.5) -145,5.5,58.34%
-Jake Irvin,WSH,@COL,Strikeouts,Under,(5.5) 143,(5.5) -145,(5.5) -142,(5.5) -145,5.0,54.55%
-Framber Valdez,HOU,BAL,Strikeouts,Under,(5.5) -141,(5.5) -150,(5.5) -150,(5.5) -160,5.0,60.01%
-Michael King,SD,MIL,Strikeouts,Over,(6.5) 138,(5.5) -145,(5.5) -152,(5.5) -145,6.0,55.18%
+Jake Irvin,WSH,@COL,Strikeouts,Under,(5.5) 143,(5.5) -125,(5.5) -148,(5.5) -145,5.0,53.89%
+Framber Valdez,HOU,BAL,Strikeouts,Under,(5.5) -141,(5.5) -150,(5.5) -152,(5.5) -160,5.0,60.09%
+Michael King,SD,MIL,Strikeouts,Over,(6.5) 138,(5.5) -145,(5.5) -158,(5.5) -145,6.0,55.41%
 Logan Webb,SF,@STL,Strikeouts,Over,(5.5) 112,(5.5) 100,(5.5) 108,(5.5) 110,5.5,48.22%
-Jake Irvin,WSH,@COL,Strikeouts,Over,(5.5) 114,(5.5) 110,(5.5) 112,(5.5) 110,5.0,47.28%
-Framber Valdez,HOU,BAL,Strikeouts,Over,(5.5) 106,(5.5) 115,(5.5) 118,(5.5) 125,5.0,46.34%
-Michael King,SD,MIL,Strikeouts,Under,(6.5) 112,(5.5) 110,(5.5) 120,(5.5) 110,6.0,46.97%
+Jake Irvin,WSH,@COL,Strikeouts,Over,(5.5) 114,(5.5) -105,(5.5) 116,(5.5) 110,5.0,47.97%
+Framber Valdez,HOU,BAL,Strikeouts,Over,(5.5) 106,(5.5) 115,(5.5) 120,(5.5) 125,5.0,46.24%
+Michael King,SD,MIL,Strikeouts,Under,(6.5) 112,(5.5) 110,(5.5) 124,(5.5) 110,6.0,46.76%
 Sonny Gray,STL,SF,Strikeouts,Under,(6.5) 138,(6.5) -145,(6.5) -156,(6.5) -150,6.0,55.53%
 Sonny Gray,STL,SF,Strikeouts,Over,(6.5) 112,(6.5) 115,(6.5) 122,(6.5) 115,6.0,46.31%
-Paul Skenes,PIT,TB,Strikeouts,Over,(6.5) ,(7.5) ,(7.5) ,(7.5) ,8.0,nan%
+Nick Lodolo,CIN,BOS,Strikeouts,Over,(8.5) ,(7.5) ,(7.5) ,(7.5) 105,7.0,48.78%
+Nick Lodolo,CIN,BOS,Strikeouts,Under,(8.5) ,(7.5) ,(7.5) ,(7.5) -135,7.0,57.45%
 Paul Skenes,PIT,TB,Strikeouts,Under,(6.5) ,(7.5) ,(7.5) ,(7.5) ,8.0,nan%
-Nick Lodolo,CIN,BOS,Strikeouts,Under,(7.5) 135,(7.5) ,(7.5) ,(7.5) -135,7.0,50.0%
-Nick Lodolo,CIN,BOS,Strikeouts,Over,(7.5) 108,(7.5) ,(7.5) ,(7.5) 105,7.0,48.43%
-Miguel Amaya,CHC,NYM,Total Bases,Over,None,(0.5) -115,None,(0.5) -110,0.5,52.93%
-Matt Vierling,DET,CWS,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Matt Vierling,DET,CWS,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Miguel Amaya,CHC,NYM,Total Bases,Under,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
-Trey Lipscomb,WSH,@COL,Total Bases,Under,None,(1.5) -135,None,(1.5) -135,1.5,57.45%
-Nick Senzel,WSH,@COL,Runs,Over,(0.5) -107,(0.5) -125,None,(0.5) -120,0.5,53.93%
-Nick Senzel,WSH,@COL,Total Bases,Under,(1.5) -143,(1.5) -120,None,(1.5) -115,1.5,55.63%
+Paul Skenes,PIT,TB,Strikeouts,Over,(6.5) ,(7.5) ,(7.5) ,(7.5) ,8.0,nan%
+TJ Friedl,CIN,BOS,Runs,Over,(0.5) ,(0.5) ,None,(0.5) -125,0.5,55.56%
+Will Benson,CIN,BOS,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) 100,0.5,50.0%
+Will Benson,CIN,BOS,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) -135,0.5,57.45%
+Ryan McMahon,COL,WSH,Runs,Under,(0.5) -121,(0.5) -120,None,(0.5) -120,0.5,54.61%
+Ryan McMahon,COL,WSH,Runs,Over,(0.5) -113,(0.5) -115,None,(0.5) -110,0.5,52.97%
+TJ Friedl,CIN,BOS,Runs,Under,(0.5) ,(0.5) ,None,(0.5) -105,0.5,51.22%
 Trey Lipscomb,WSH,@COL,Total Bases,Over,None,(1.5) 100,None,(1.5) 100,1.5,50.0%
-Tyler O'Neill,BOS,@CIN,Runs,Over,(0.5) -106,(0.5) ,None,(0.5) -115,0.5,52.47%
-Tyler O'Neill,BOS,@CIN,Runs,Under,(0.5) -129,(0.5) ,None,(0.5) -115,0.5,54.91%
-Tyler Soderstrom,OAK,MIN,Total Bases,Over,(1.5) 195,(0.5) -125,None,None,0.5,44.73%
-Tyler Soderstrom,OAK,MIN,Total Bases,Under,(1.5) -295,(0.5) -110,None,None,0.5,63.53%
-TJ Friedl,CIN,BOS,Runs,Under,(0.5) -117,(0.5) ,None,(0.5) -105,0.5,52.57%
-TJ Friedl,CIN,BOS,Runs,Over,(0.5) -117,(0.5) ,None,(0.5) -125,0.5,54.74%
-Ryan McMahon,COL,WSH,Runs,Under,(0.5) -120,(0.5) -120,None,(0.5) -120,0.5,54.55%
-Nick Senzel,WSH,@COL,Total Bases,Over,(1.5) 104,(1.5) -115,None,(1.5) -110,1.5,51.63%
-Ryan McMahon,COL,WSH,Runs,Over,(0.5) -114,(0.5) -115,None,(0.5) -110,0.5,53.05%
-Will Benson,CIN,BOS,Total Bases,Under,(1.5) -295,(0.5) ,None,(0.5) 100,0.5,62.34%
-Yordan Alvarez,HOU,BAL,Runs,Over,(0.5) -104,(0.5) -120,None,(0.5) -115,0.5,53.0%
-Yordan Alvarez,HOU,BAL,Runs,Under,(0.5) -132,(0.5) -115,None,(0.5) -110,0.5,54.26%
 Ozzie Albies,ATL,@NYY,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Ozzie Albies,ATL,@NYY,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Nolan Jones,COL,WSH,Runs,Under,(0.5) -120,(0.5) -105,None,(0.5) 100,0.5,51.92%
-Nolan Jones,COL,WSH,Runs,Over,(0.5) -114,(0.5) -130,None,(0.5) -130,0.5,55.44%
+Tyler Soderstrom,OAK,MIN,Total Bases,Under,(1.5) -295,(0.5) -110,None,None,0.5,63.53%
+Tyler Soderstrom,OAK,MIN,Total Bases,Over,(1.5) 195,(0.5) -125,None,None,0.5,44.73%
+Miguel Amaya,CHC,NYM,Total Bases,Over,None,(0.5) -115,None,(0.5) -110,0.5,52.93%
+Miguel Amaya,CHC,NYM,Total Bases,Under,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
+Yordan Alvarez,HOU,BAL,Runs,Over,(0.5) -104,(0.5) -120,None,(0.5) -115,0.5,53.0%
+Nolan Jones,COL,WSH,Runs,Under,(0.5) -117,(0.5) -105,None,(0.5) 100,0.5,51.71%
+Tyler O'Neill,BOS,@CIN,Runs,Under,(0.5) ,(0.5) ,None,(0.5) -115,0.5,53.49%
+Tyler O'Neill,BOS,@CIN,Runs,Over,(0.5) ,(0.5) ,None,(0.5) -115,0.5,53.49%
+Nolan Jones,COL,WSH,Runs,Over,(0.5) -117,(0.5) -130,None,(0.5) -130,0.5,55.65%
+Trey Lipscomb,WSH,@COL,Total Bases,Under,None,(1.5) -135,None,(1.5) -135,1.5,57.45%
 Nick Senzel,WSH,@COL,Runs,Under,(0.5) -129,(0.5) -110,None,(0.5) -105,0.5,53.31%
-Will Benson,CIN,BOS,Total Bases,Over,(1.5) 200,(0.5) ,None,(0.5) -135,0.5,45.39%
-Marcus Semien,TEX,KC,Runs,Under,(0.5) -124,(0.5) -125,None,(0.5) -125,0.5,55.49%
+Nick Senzel,WSH,@COL,Runs,Over,(0.5) -106,(0.5) -125,None,(0.5) -120,0.5,53.85%
+Nick Senzel,WSH,@COL,Total Bases,Under,(1.5) -141,(1.5) -125,None,(1.5) -115,1.5,55.85%
+Nick Senzel,WSH,@COL,Total Bases,Over,(1.5) 102,(1.5) -110,None,(1.5) -110,1.5,51.42%
+Yordan Alvarez,HOU,BAL,Runs,Under,(0.5) -132,(0.5) -115,None,(0.5) -110,0.5,54.26%
 Jose Siri,TB,@PIT,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Marcell Ozuna,ATL,@NYY,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-David Hamilton,BOS,@CIN,Total Bases,Under,(1.5) -375,(0.5) ,None,(0.5) -120,0.5,66.75%
-David Hamilton,BOS,@CIN,Total Bases,Over,(1.5) 240,(0.5) ,None,(0.5) -110,0.5,40.9%
+Marcus Semien,TEX,KC,Runs,Over,(0.5) -112,(0.5) -110,None,(0.5) -105,0.5,52.14%
+David Hamilton,BOS,@CIN,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) -120,0.5,54.55%
+David Hamilton,BOS,@CIN,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) -110,0.5,52.38%
 Corey Seager,TEX,KC,Runs,Under,(0.5) -120,(0.5) -115,None,(0.5) -115,0.5,53.84%
-Corey Seager,TEX,KC,Runs,Over,(0.5) -113,(0.5) -115,None,(0.5) -115,0.5,53.34%
-Corey Seager,TEX,KC,Total Bases,Under,(1.5) -132,(1.5) -120,None,(1.5) -120,1.5,55.33%
-Corey Seager,TEX,KC,Total Bases,Over,(1.5) -106,(1.5) -110,None,(1.5) -110,1.5,52.07%
+Corey Seager,TEX,KC,Runs,Over,(0.5) -114,(0.5) -115,None,(0.5) -115,0.5,53.42%
+Corey Seager,TEX,KC,Total Bases,Under,(1.5) -134,(1.5) -120,None,(1.5) -120,1.5,55.45%
+Corey Seager,TEX,KC,Total Bases,Over,(1.5) -105,(1.5) -110,None,(1.5) -110,1.5,51.99%
 Colton Cowser,BAL,@HOU,Total Bases,Under,(1.5) -345,(0.5) -115,None,(0.5) -110,0.5,61.13%
 Colton Cowser,BAL,@HOU,Total Bases,Over,(1.5) 230,(0.5) -120,None,(0.5) -115,0.5,46.11%
 Bryan Reynolds,PIT,TB,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Bryan Reynolds,PIT,TB,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Elly De La Cruz,CIN,BOS,Runs,Over,(0.5) -124,(0.5) ,None,(0.5) -130,0.5,55.94%
-Brenton Doyle,COL,WSH,Runs,Under,(0.5) -118,(0.5) -120,None,(0.5) -120,0.5,54.41%
+Elly De La Cruz,CIN,BOS,Runs,Over,(0.5) ,(0.5) ,None,(0.5) -130,0.5,56.52%
+Brenton Doyle,COL,WSH,Runs,Under,(0.5) -120,(0.5) -120,None,(0.5) -120,0.5,54.55%
 Brenton Doyle,COL,WSH,Total Bases,Under,(1.5) -139,(1.5) -115,None,(1.5) -110,1.5,54.68%
 Brenton Doyle,COL,WSH,Total Bases,Over,(1.5) 100,(1.5) -115,None,(1.5) -120,1.5,52.68%
 Brendan Rodgers,COL,WSH,Total Bases,Under,(1.5) -134,(1.5) -120,None,(1.5) -120,1.5,55.45%
@@ -102,32 +103,31 @@ Austin Riley,ATL,@NYY,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Austin Riley,ATL,@NYY,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Adley Rutschman,BAL,@HOU,Runs,Under,(0.5) -121,(0.5) -130,None,(0.5) -130,0.5,55.93%
 Adley Rutschman,BAL,@HOU,Runs,Over,(0.5) -113,(0.5) -105,None,(0.5) 100,0.5,51.42%
-Brenton Doyle,COL,WSH,Runs,Over,(0.5) -115,(0.5) -115,None,(0.5) -110,0.5,53.12%
-Elly De La Cruz,CIN,BOS,Runs,Under,(0.5) -109,(0.5) ,None,(0.5) 100,0.5,51.08%
-Ezequiel Tovar,COL,WSH,Total Bases,Over,(1.5) -109,(1.5) -125,None,(1.5) -120,1.5,54.08%
-Ezequiel Tovar,COL,WSH,Total Bases,Under,(1.5) -129,(1.5) -105,None,(1.5) -110,1.5,53.31%
+Brenton Doyle,COL,WSH,Runs,Over,(0.5) -114,(0.5) -115,None,(0.5) -110,0.5,53.05%
+Marcus Semien,TEX,KC,Runs,Under,(0.5) -122,(0.5) -125,None,(0.5) -125,0.5,55.36%
+Elly De La Cruz,CIN,BOS,Runs,Under,(0.5) ,(0.5) ,None,(0.5) 100,0.5,50.0%
+Ezequiel Tovar,COL,WSH,Total Bases,Under,(1.5) -127,(1.5) -115,None,(1.5) -110,1.5,53.94%
+Marcell Ozuna,ATL,@NYY,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Marcell Ozuna,ATL,@NYY,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Lawrence Butler,OAK,MIN,Total Bases,Under,(1.5) -345,(0.5) -125,None,(0.5) -125,0.5,62.88%
 Lawrence Butler,OAK,MIN,Total Bases,Over,(1.5) 225,(0.5) -105,None,(0.5) -105,0.5,44.4%
-Keibert Ruiz,WSH,@COL,Total Bases,Under,(1.5) -143,(1.5) -120,None,(1.5) -120,1.5,55.98%
-Keibert Ruiz,WSH,@COL,Total Bases,Over,(1.5) 104,(1.5) -110,None,(1.5) -110,1.5,51.26%
+Keibert Ruiz,WSH,@COL,Total Bases,Under,(1.5) -148,(1.5) -120,None,(1.5) -120,1.5,56.26%
+Keibert Ruiz,WSH,@COL,Total Bases,Over,(1.5) 105,(1.5) -110,None,(1.5) -110,1.5,51.18%
 Zack Gelof,OAK,MIN,Total Bases,Over,(1.5) 210,(0.5) -135,None,(0.5) -135,0.5,49.05%
 Jose Siri,TB,@PIT,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Jonathan India,CIN,BOS,Runs,Under,(0.5) -139,(0.5) ,None,(0.5) -130,0.5,57.34%
-Jonathan India,CIN,BOS,Runs,Over,(0.5) 102,(0.5) ,None,(0.5) 100,0.5,49.75%
+Jonathan India,CIN,BOS,Runs,Under,(0.5) ,(0.5) ,None,(0.5) -130,0.5,56.52%
+Jonathan India,CIN,BOS,Runs,Over,(0.5) ,(0.5) ,None,(0.5) 100,0.5,50.0%
+Ezequiel Tovar,COL,WSH,Total Bases,Over,(1.5) -110,(1.5) -120,None,(1.5) -120,1.5,53.82%
 Jake Bauers,MIL,@SD,Total Bases,Under,(1.5) -315,(0.5) -110,None,(0.5) -105,0.5,59.83%
-Jake Bauers,MIL,@SD,Total Bases,Over,(1.5) 205,(0.5) -125,None,(0.5) -120,0.5,47.63%
-Jacob Young,WSH,@COL,Runs,Under,None,(0.5) -130,None,(0.5) -125,0.5,56.04%
-Jacob Young,WSH,@COL,Runs,Over,None,(0.5) -105,None,(0.5) -105,0.5,51.22%
+Jacob Young,WSH,@COL,Runs,Under,None,(0.5) -125,None,(0.5) -125,0.5,55.56%
+Jacob Young,WSH,@COL,Runs,Over,None,(0.5) -110,None,(0.5) -105,0.5,51.8%
 Jack Suwinski,PIT,TB,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Jack Suwinski,PIT,TB,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Isiah Kiner-Falefa,TOR,@CLE,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Isiah Kiner-Falefa,TOR,@CLE,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Hunter Goodman,COL,WSH,Runs,Under,None,(0.5) -130,None,(0.5) -135,0.5,56.98%
 Hunter Goodman,COL,WSH,Runs,Over,None,(0.5) -105,None,(0.5) 100,0.5,50.61%
 Francisco Lindor,NYM,@CHC,Runs,Under,(0.5) -122,(0.5) -120,None,(0.5) -120,0.5,54.68%
 Francisco Lindor,NYM,@CHC,Runs,Over,(0.5) -112,(0.5) -110,None,(0.5) -110,0.5,52.53%
-Ezequiel Tovar,COL,WSH,Runs,Under,(0.5) -110,(0.5) -125,None,(0.5) -125,0.5,54.5%
-Ezequiel Tovar,COL,WSH,Runs,Over,(0.5) -124,(0.5) -110,None,(0.5) -105,0.5,52.99%
-Marcus Semien,TEX,KC,Runs,Over,(0.5) -110,(0.5) -110,None,(0.5) -105,0.5,51.99%
+Ezequiel Tovar,COL,WSH,Runs,Under,(0.5) -109,(0.5) -125,None,(0.5) -125,0.5,54.42%
+Ezequiel Tovar,COL,WSH,Runs,Over,(0.5) -125,(0.5) -110,None,(0.5) -105,0.5,53.05%
+Jake Bauers,MIL,@SD,Total Bases,Over,(1.5) 205,(0.5) -125,None,(0.5) -120,0.5,47.63%
 Zack Gelof,OAK,MIN,Total Bases,Under,(1.5) -315,(0.5) 100,None,(0.5) 100,0.5,58.63%
