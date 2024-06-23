@@ -101,7 +101,7 @@ def register():
         data = request.json
         username = data['username']
         password = data['password']
-        hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
         conn = get_db_connection()
         cur = conn.cursor()
         try:
@@ -143,7 +143,6 @@ def login():
             cur.close()
             conn.close()
     return render_template('login.html')
-
 
 @app.route('/logout', methods=['POST'])
 def logout():
