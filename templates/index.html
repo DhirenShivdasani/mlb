@@ -171,6 +171,19 @@
             <input type="text" id="player-name" placeholder="Enter player name" onkeyup="applyFilters()">
         </div>
         <div class="filter">
+            <label for="team-opponent">Filter by Game:</label>
+            <input type="text" id="team-opponent" placeholder="Enter team vs opponent" onkeyup="applyFilters()">
+        </div>
+        <div class="filter">
+            <label for="prop-type">Filter by Prop:</label>
+            <select id="prop-type" onchange="applyFilters()">
+                <option value="all">All</option>
+                <option value="Runs">Runs</option>
+                <option value="Strikeouts">Strikeouts</option>
+                <option value="Total Bases">Total Bases</option>
+            </select>
+        </div>
+        <div class="filter">
             <label for="sort-by">Sort by:</label>
             <select id="sort-by" onchange="applyFilters()">
                 <option value="default">Default</option>
@@ -234,12 +247,22 @@
 
         function applyFilters() {
             const playerNameFilter = document.getElementById('player-name').value.toLowerCase();
+            const teamOpponentFilter = document.getElementById('team-opponent').value.toLowerCase();
+            const propTypeFilter = document.getElementById('prop-type').value;
             const sortBy = document.getElementById('sort-by').value;
 
             let filteredData = oddsData;
 
             if (playerNameFilter) {
                 filteredData = filteredData.filter(odds => odds.PlayerName.toLowerCase().includes(playerNameFilter));
+            }
+
+            if (teamOpponentFilter) {
+                filteredData = filteredData.filter(odds => `${odds.team} vs. ${odds.opp}`.toLowerCase().includes(teamOpponentFilter));
+            }
+
+            if (propTypeFilter !== 'all') {
+                filteredData = filteredData.filter(odds => odds.Prop === propTypeFilter);
             }
 
             if (sortBy === 'impliedProbAsc') {
