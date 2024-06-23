@@ -302,7 +302,7 @@ Ezequiel Duran,TEX,KC,bases,Under,(1.5) -190,,(1.5) -190
 Ezequiel Duran,TEX,KC,runs,Over,(0.5) 135,,(0.5) 140
 Ezequiel Duran,TEX,KC,runs,Under,(0.5) -185,,(0.5) -185
 Ezequiel Tovar,COL,WSH,bases,Over,(1.5) -125,,(1.5) -125
-Ezequiel Tovar,COL,WSH,bases,Under,(1.5) ,,(1.5) -105
+Ezequiel Tovar,COL,WSH,bases,Under,(1.5) -110,,(1.5) -105
 Ezequiel Tovar,COL,WSH,runs,Over,(0.5) -110,,(0.5) -105
 Ezequiel Tovar,COL,WSH,runs,Under,(0.5) -125,,(0.5) -120
 Framber Valdez,HOU,BAL,strikeouts,Over,(5.5) -115,(5.5) 106,(5.5) 100
@@ -521,7 +521,7 @@ Jorge Mateo,BAL,@HOU,runs,Over,(0.5) 150,,(0.5) 145
 Jorge Mateo,BAL,@HOU,runs,Under,(0.5) -205,,(0.5) -200
 Jorge Soler,SF,@STL,bases,Over,(1.5) 130,,(1.5) 135
 Jorge Soler,SF,@STL,bases,Under,(1.5) -180,,(1.5) -175
-Jorge Soler,SF,@STL,runs,Over,(0.5) 135,,(0.5) 140
+Jorge Soler,SF,@STL,runs,Over,(0.5) ,,(0.5) 140
 Jorge Soler,SF,@STL,runs,Under,(0.5) -185,,(0.5) -185
 Jose Altuve,HOU,BAL,bases,Over,(1.5) 110,,(1.5) 110
 Jose Altuve,HOU,BAL,bases,Under,(1.5) -150,,(1.5) -150
@@ -635,8 +635,8 @@ Leody Taveras,TEX,KC,bases,Over,(1.5) 140,,(1.5) 145
 Leody Taveras,TEX,KC,bases,Under,(1.5) -195,,(1.5) -190
 Leody Taveras,TEX,KC,runs,Over,(0.5) 130,,(0.5) 135
 Leody Taveras,TEX,KC,runs,Under,(0.5) -180,,(0.5) -175
-Logan Webb,SF,@STL,strikeouts,Over,(5.5) 125,,(5.5) 125
-Logan Webb,SF,@STL,strikeouts,Under,(5.5) ,,(5.5) -160
+Logan Webb,SF,@STL,strikeouts,Over,(5.5) 125,(5.5) 114,(5.5) 125
+Logan Webb,SF,@STL,strikeouts,Under,(5.5) -160,(5.5) -146,(5.5) -160
 Lourdes Gurriel,ARI,@PHI,bases,Over,(1.5) -110,,(1.5) -110
 Lourdes Gurriel,ARI,@PHI,bases,Under,(1.5) -120,,(1.5) -120
 Lourdes Gurriel,ARI,@PHI,runs,Over,(0.5) -105,,(0.5) -105
@@ -923,9 +923,9 @@ Shea Langeliers,OAK,MIN,runs,Over,(0.5) 155,,(0.5) 155
 Shea Langeliers,OAK,MIN,runs,Under,(0.5) -215,,(0.5) -210
 Slade Cecconi,ARI,@PHI,strikeouts,Over,(3.5) -135,(3.5) -132,(3.5) -135
 Slade Cecconi,ARI,@PHI,strikeouts,Under,(3.5) 105,(3.5) 104,(3.5) 105
-Sonny Gray,STL,SF,strikeouts,Over,(5.5) -150,,(5.5) -150
-Sonny Gray,STL,SF,strikeouts,Under,(5.5) 115,,(5.5) 115
-Spencer Horwitz,TOR,@CLE,bases,Over,(1.5) 105,,(1.5) 115
+Sonny Gray,STL,SF,strikeouts,Over,(5.5) -150,(5.5) -156,(5.5) -150
+Sonny Gray,STL,SF,strikeouts,Under,(5.5) 115,(5.5) 122,(5.5) 115
+Spencer Horwitz,TOR,@CLE,bases,Over,(1.5) 115,,(1.5) 115
 Spencer Horwitz,TOR,@CLE,bases,Under,(1.5) -155,,(1.5) -150
 Spencer Horwitz,TOR,@CLE,runs,Over,(0.5) 100,,(0.5) 100
 Spencer Horwitz,TOR,@CLE,runs,Under,(0.5) -135,,(0.5) -135
@@ -963,8 +963,8 @@ Trey Lipscomb,WSH,@COL,bases,Over,(1.5) 105,,(1.5) 110
 Trey Lipscomb,WSH,@COL,bases,Under,(1.5) -145,,(1.5) -140
 Trey Lipscomb,WSH,@COL,runs,Over,(0.5) 100,,(0.5) 100
 Trey Lipscomb,WSH,@COL,runs,Under,(0.5) -135,,(0.5) -135
-Triston McKenzie,CLE,TOR,strikeouts,Over,(4.5) 115,,(4.5) 115
-Triston McKenzie,CLE,TOR,strikeouts,Under,(4.5) -145,,(4.5) -150
+Triston McKenzie,CLE,TOR,strikeouts,Over,(4.5) 115,(4.5) 126,(4.5) 115
+Triston McKenzie,CLE,TOR,strikeouts,Under,(4.5) -145,(4.5) -160,(4.5) -150
 Ty France,SEA,@MIA,bases,Over,(0.5) -200,,
 Ty France,SEA,@MIA,bases,Under,(0.5) 145,,
 Ty France,SEA,@MIA,runs,Over,(0.5) 135,,
@@ -1033,8 +1033,8 @@ Yordan Alvarez,HOU,BAL,bases,Over,(1.5) 105,,(1.5) 110
 Yordan Alvarez,HOU,BAL,bases,Under,(1.5) -145,,(1.5) -140
 Yordan Alvarez,HOU,BAL,runs,Over,(0.5) -110,,(0.5) -110
 Yordan Alvarez,HOU,BAL,runs,Under,(0.5) -125,,(0.5) -120
-Yusei Kikuchi,TOR,@CLE,strikeouts,Over,(5.5) 105,,(5.5) 110
-Yusei Kikuchi,TOR,@CLE,strikeouts,Under,(5.5) -140,,(5.5) -140
+Yusei Kikuchi,TOR,@CLE,strikeouts,Over,(5.5) 105,(4.5) -166,(5.5) 110
+Yusei Kikuchi,TOR,@CLE,strikeouts,Under,(5.5) -140,(4.5) 130,(5.5) -140
 Zach McKinstry,DET,CWS,bases,Over,(0.5) -195,,(0.5) -190
 Zach McKinstry,DET,CWS,bases,Under,(0.5) 145,,(0.5) 145
 Zach McKinstry,DET,CWS,runs,Over,(0.5) 135,,(0.5) 140
