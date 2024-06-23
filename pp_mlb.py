@@ -143,7 +143,7 @@ chrome_options.page_load_strategy = 'eager'  # Waits for the DOMContentLoaded ev
 
 if 'DYNO' in os.environ:
     chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
-    driver = uc.Chrome(options=chrome_options, browser_executable_path=os.environ.get('CHROMEDRIVER_PATH'))
+    driver = uc.Chrome(options=chrome_options)
 else:
     chrome_options.binary_location = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
     driver = uc.Chrome(options=chrome_options, browser_executable_path='C:/Program Files/Google/Chrome/Application/chrome.exe')
