@@ -132,7 +132,7 @@ def login():
                 SELECT id, password FROM users WHERE username = %s
             ''', (username,))
             user = cur.fetchone()
-            if user and bcrypt.checkpw(password.encode('utf-8'), user[1]):
+            if user and bcrypt.checkpw(password.encode('utf-8'), user[1].encode('utf-8')):
                 session['user_id'] = user[0]
                 return jsonify({"status": "success"}), 200
             return jsonify({"status": "error", "message": "Invalid credentials"}), 401
@@ -143,6 +143,7 @@ def login():
             cur.close()
             conn.close()
     return render_template('login.html')
+
 
 @app.route('/logout', methods=['POST'])
 def logout():
