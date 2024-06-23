@@ -140,6 +140,7 @@
             width: 90%;
             max-width: 600px;
         }
+
         #historicalChart {
             width: 100%;
             height: 400px;
@@ -179,13 +180,12 @@
         </div>
     </div>
     <div id="odds-container"></div>
-
     <div id="historicalModal">
         <canvas id="historicalChart"></canvas>
         <button onclick="closeHistoricalModal()">Close</button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const container = document.getElementById('odds-container');
         const notification = document.getElementById('notification');
@@ -226,6 +226,7 @@
                         <p><strong>Implied Prob:</strong> ${parseFloat(odds.Implied_Prob).toFixed(2)}%</p>
                     </div>
                     <hr>
+                    <button onclick="showHistoricalData('${odds.PlayerName}', '${odds.Prop}')">View Historical Data</button>
                 `;
                 container.appendChild(oddsDiv);
             });
@@ -261,13 +262,6 @@
                 minute: '2-digit'
             });
             lastUpdatedElement.textContent = `Last updated: ${formattedTime}`;
-        }
-
-        async function setupWebSocket() {
-            const ws = new WebSocket(`ws://${window.location.hostname}:${window.location.port + 1}`);
-            ws.onmessage = () => {
-                notification.style.display = 'block';
-            };
         }
 
         async function showHistoricalData(playerName, prop) {
@@ -329,14 +323,17 @@
             historicalModal.style.display = 'block';
         }
 
+        function closeHistoricalModal() {
+            historicalModal.style.display = 'none';
+        }
+
         window.onclick = function(event) {
             if (event.target == historicalModal) {
-                historicalModal.style.display = 'none';
+                closeHistoricalModal();
             }
         }
 
         fetchOdds();
-        setupWebSocket();
     </script>
 </body>
 
