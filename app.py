@@ -1,11 +1,12 @@
 from flask_cors import CORS
-from flask import Flask, jsonify, request, render_template
+from flask import Flask, jsonify, request, render_template, session, redirect, url_for
 import asyncio
 import websockets
 import threading
 import pandas as pd
 import os
 import psycopg2
+import bcrypt
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 
@@ -14,6 +15,7 @@ conn = psycopg2.connect(DATABASE_URL)
 cur = conn.cursor()
 
 app = Flask(__name__)
+app.secret_key = os.urandom(24)  # Secret key for sessions
 CORS(app)
 
 connected_clients = set()
@@ -42,6 +44,8 @@ def start_websocket_server(port):
 
 @app.route('/get_historical_data', methods=['GET'])
 def get_historical_data():
+    if 'user_id' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
     player_name = request.args.get('player_name')
     prop = request.args.get('prop')
     cur.execute("SELECT timestamp, draftkings, fanduel, mgm, betrivers FROM odds WHERE player_name = %s AND prop = %s ORDER BY timestamp", (player_name, prop))
@@ -51,10 +55,14 @@ def get_historical_data():
 
 @app.route('/')
 def index():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
     return render_template('index.html')
 
 @app.route('/merged_data', methods=['GET', 'POST'])
 def get_merged_data():
+    if 'user_id' not in session:
+        return jsonify({"error": "Unauthorized"}), 401
     if request.method == 'POST':
         threading.Thread(target=asyncio.run, args=(notify_clients(),)).start()
     try:
@@ -63,7 +71,56 @@ def get_merged_data():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+# User authentication routes
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        data = request.json
+        username = data['username']
+        password = data['password']
+        hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        try:
+            cur.execute('''
+                INSERT INTO users (username, password)
+                VALUES (%s, %s)
+            ''', (username, hashed_password))
+            conn.commit()
+            return jsonify({"status": "success"}), 201
+        except psycopg2.IntegrityError:
+            return jsonify({"status": "error", "message": "Username already exists"}), 400
+    return render_template('register.html')
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        data = request.json
+        username = data['username']
+        password = data['password']
+        cur.execute('''
+            SELECT id, password FROM users WHERE username = %s
+        ''', (username,))
+        user = cur.fetchone()
+        if user and bcrypt.checkpw(password.encode('utf-8'), user[1]):
+            session['user_id'] = user[0]
+            return jsonify({"status": "success"}), 200
+        return jsonify({"status": "error", "message": "Invalid credentials"}), 401
+    return render_template('login.html')
+
+@app.route('/logout', methods=['POST'])
+def logout():
+    session.pop('user_id', None)
+    return jsonify({"status": "success"}), 200
+
 if __name__ == '__main__':
+    # Initialize the users table
+    cur.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+            id SERIAL PRIMARY KEY,
+            username VARCHAR(255) UNIQUE NOT NULL,
+            password VARCHAR(255) NOT NULL
+        )
+    ''')
+    conn.commit()
     port = int(os.environ.get('PORT', 5000))
     threading.Thread(target=start_websocket_server, args=(port,)).start()
     app.run(debug=True, use_reloader=False, port=port)
