@@ -180,6 +180,12 @@
     </div>
     <div id="odds-container"></div>
 
+    <div id="historicalModal">
+        <canvas id="historicalChart"></canvas>
+        <button onclick="closeHistoricalModal()">Close</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script>
         const container = document.getElementById('odds-container');
         const notification = document.getElementById('notification');
