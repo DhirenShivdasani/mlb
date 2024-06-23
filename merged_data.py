@@ -7,6 +7,9 @@ from dotenv import load_dotenv
 import shutil
 import time
 import numpy as np
+import psycopg2
+from datetime import datetime
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -18,6 +21,11 @@ s3 = boto3.client(
 )
 
 BUCKET_NAME = os.getenv('BUCKET_NAME')
+
+# PostgreSQL connection
+DATABASE_URL = os.getenv('DATABASE_URL')
+conn = psycopg2.connect(DATABASE_URL)
+cur = conn.cursor()
 
 def upload_to_aws(local_file, bucket, s3_file):
     try:
@@ -138,6 +146,16 @@ def calculate_average_implied_probability(df):
     df.drop(columns=['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob'], inplace=True)
     
     return df
+
+def save_to_postgres(df):
+    timestamp = datetime.now()
+    for index, row in df.iterrows():
+        cur.execute("""
+            INSERT INTO odds (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], row['Implied_Prob']))
+    conn.commit()
+
 # Load the CSV files
 betting_odds_data = pd.read_csv('mlb_props.csv')
 prizepicks_data = pd.read_csv('test2.csv')
@@ -175,6 +193,9 @@ r = calculate_average_implied_probability(r)
 
 # Debug print the merged data
 print("Merged data:\n", r.head())
+
+# Save the updated data to PostgreSQL
+save_to_postgres(r)
 
 # Remove the existing file to force Git to recognize changes
 if os.path.exists('merged_data.csv'):
