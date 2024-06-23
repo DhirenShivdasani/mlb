@@ -153,7 +153,7 @@ else:
 print(f"Chrome binary location: {chrome_options.binary_location}")
 print(f"Chromedriver path: {browser_executable_path}")
 
-driver = uc.Chrome(service=service, options=chrome_options, browser_executable_path=browser_executable_path)
+driver = uc.Chrome(options=chrome_options, browser_executable_path=browser_executable_path)
 
 driver.get("https://app.prizepicks.com/")
 # time.sleep(5)
