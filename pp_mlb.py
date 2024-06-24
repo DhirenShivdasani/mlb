@@ -25,69 +25,69 @@ def handle_remove_readonly(func, path, exc_info):
     os.chmod(path, stat.S_IWRITE)
     func(path)
 
-def push_to_github():
-    try:
-        repo_url = 'https://github.com/DhirenShivdasani/mlb.git'
-        repo_dir = '/tmp/mlb-repo'  # Using /tmp directory for temporary cloning
-        github_token = os.getenv('GITHUB_TOKEN')
+# def push_to_github():
+#     try:
+#         repo_url = 'https://github.com/DhirenShivdasani/mlb.git'
+#         repo_dir = '/tmp/mlb-repo'  # Using /tmp directory for temporary cloning
+#         github_token = os.getenv('GITHUB_TOKEN')
 
-        # Remove the existing repository directory if it exists
-        if os.path.exists(repo_dir):
-            shutil.rmtree(repo_dir, onerror=handle_remove_readonly)
+#         # Remove the existing repository directory if it exists
+#         if os.path.exists(repo_dir):
+#             shutil.rmtree(repo_dir, onerror=handle_remove_readonly)
 
-        # Clone the repository
-        subprocess.check_call(['git', 'clone', repo_url, repo_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        os.chdir(repo_dir)
-        print(f"Current directory: {os.getcwd()}")
+#         # Clone the repository
+#         subprocess.check_call(['git', 'clone', repo_url, repo_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#         os.chdir(repo_dir)
+#         print(f"Current directory: {os.getcwd()}")
 
-        # Print content before download
-        print("Content of test2.csv before download:")
-        if os.path.exists('test2.csv'):
-            with open('test2.csv', 'r') as file:
-                print(file.read())
+#         # Print content before download
+#         print("Content of test2.csv before download:")
+#         if os.path.exists('test2.csv'):
+#             with open('test2.csv', 'r') as file:
+#                 print(file.read())
 
-        # Configure Git
-        subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
-        subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
+#         # Configure Git
+#         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
+#         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
 
-        # Ensure file system registers the changes
-        time.sleep(2)
+#         # Ensure file system registers the changes
+#         time.sleep(2)
 
-        # Force update file timestamp
-        os.utime('test2.csv', None)
+#         # Force update file timestamp
+#         os.utime('test2.csv', None)
 
-        # Add and commit changes
-        subprocess.check_call(['git', 'add', 'test2.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#         # Add and commit changes
+#         subprocess.check_call(['git', 'add', 'test2.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-        # Print content after download
-        print("Content of test2.csv after download:")
-        with open('test2.csv', 'r') as file:
-            print(file.read())
+#         # Print content after download
+#         print("Content of test2.csv after download:")
+#         with open('test2.csv', 'r') as file:
+#             print(file.read())
 
-        # Check the status to ensure files are staged
-        status_result = subprocess.run(['git', 'status'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-        print("Git status output before commit:\n", status_result.stdout)
+#         # Check the status to ensure files are staged
+#         status_result = subprocess.run(['git', 'status'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+#         print("Git status output before commit:\n", status_result.stdout)
 
-        # Check for changes before attempting to commit
-        result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        if result.stdout.strip():
-            # There are changes to commit
-            print("Changes detected. Committing...")
-            subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#         # Check for changes before attempting to commit
+#         result = subprocess.run(['git', 'status', '--porcelain'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#         if result.stdout.strip():
+#             # There are changes to commit
+#             print("Changes detected. Committing...")
+#             subprocess.check_call(['git', 'commit', '-m', 'Automated update by scheduler'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-            # Print the diff to confirm changes
-            diff_result = subprocess.run(['git', 'diff', '--cached'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            print("Git diff output:\n", diff_result.stdout)
+#             # Print the diff to confirm changes
+#             diff_result = subprocess.run(['git', 'diff', '--cached'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+#             print("Git diff output:\n", diff_result.stdout)
 
-            # Push changes to GitHub using the token for authentication
-            repo_url_with_token = f'https://{github_token}@github.com/DhirenShivdasani/mlb.git'
-            subprocess.check_call(['git', 'push', repo_url_with_token, 'main'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-            print("Changes pushed to GitHub")
-        else:
-            print("No changes to commit")
-    except subprocess.CalledProcessError as e:
-        print(f"An error occurred while pushing to GitHub: {e.output.decode()}")
+#             # Push changes to GitHub using the token for authentication
+#             repo_url_with_token = f'https://{github_token}@github.com/DhirenShivdasani/mlb.git'
+#             subprocess.check_call(['git', 'push', repo_url_with_token, 'main'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+#             print("Changes pushed to GitHub")
+#         else:
+#             print("No changes to commit")
+#     except subprocess.CalledProcessError as e:
+#         print(f"An error occurred while pushing to GitHub: {e.output.decode()}")
 
 chrome_options = uc.ChromeOptions()
 chrome_options.add_experimental_option("prefs", {"profile.managed_default_content_settings.images": 2})
@@ -194,5 +194,5 @@ print("These are all of the props offered by PP.", '\n')
 print(dfProps)
 print('\n')
 
-push_to_github()
+# push_to_github()
 
