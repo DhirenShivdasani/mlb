@@ -9,10 +9,10 @@ Adam Frazier,KC,MIA,bases,Over,(1.5) 105,,(1.5) 110
 Adam Frazier,KC,MIA,bases,Under,(1.5) -145,,(1.5) -145
 Adam Frazier,KC,MIA,runs,Over,(0.5) -145,,(0.5) -145
 Adam Frazier,KC,MIA,runs,Under,(0.5) 110,,(0.5) 110
-Addison Barger,TOR,@BOS,bases,Over,(1.5) 140,,
-Addison Barger,TOR,@BOS,bases,Under,(1.5) -190,,
-Addison Barger,TOR,@BOS,runs,Over,(0.5) 140,,
-Addison Barger,TOR,@BOS,runs,Under,(0.5) -195,,
+Addison Barger,TOR,@BOS,bases,Over,(1.5) 145,,
+Addison Barger,TOR,@BOS,bases,Under,(1.5) -195,,
+Addison Barger,TOR,@BOS,runs,Over,(0.5) 145,,
+Addison Barger,TOR,@BOS,runs,Under,(0.5) -200,,
 Adley Rutschman,BAL,CLE,bases,Over,(1.5) 140,,(1.5) 140
 Adley Rutschman,BAL,CLE,bases,Under,(1.5) -190,,(1.5) -190
 Adley Rutschman,BAL,CLE,runs,Over,(0.5) 120,,(0.5) 125
@@ -131,8 +131,8 @@ Christian Yelich,MIL,TEX,bases,Over,(1.5) 135,,
 Christian Yelich,MIL,TEX,bases,Under,(1.5) -185,,
 Christian Yelich,MIL,TEX,runs,Over,(0.5) 100,,
 Christian Yelich,MIL,TEX,runs,Under,(0.5) -135,,
-Cole Ragans,KC,MIA,strikeouts,Over,(6.5) -145,(6.5) -116,(6.5) -145
-Cole Ragans,KC,MIA,strikeouts,Under,(6.5) 110,(6.5) -110,(6.5) 110
+Cole Ragans,KC,MIA,strikeouts,Over,(6.5) -145,(6.5) -122,(6.5) -145
+Cole Ragans,KC,MIA,strikeouts,Under,(6.5) 110,(6.5) -106,(6.5) 110
 Colt Keith,DET,PHI,bases,Over,(1.5) 145,,(1.5) 145
 Colt Keith,DET,PHI,bases,Under,(1.5) -200,,(1.5) -190
 Colt Keith,DET,PHI,runs,Over,(0.5) 160,,(0.5) 165
@@ -158,9 +158,9 @@ Daniel Schneemann,CLE,@BAL,bases,Under,(0.5) 105,,(0.5) 105
 Daniel Schneemann,CLE,@BAL,runs,Over,(0.5) 170,,(0.5) 175
 Daniel Schneemann,CLE,@BAL,runs,Under,(0.5) -235,,(0.5) -225
 Danny Jansen,TOR,@BOS,bases,Over,(1.5) 125,,
-Danny Jansen,TOR,@BOS,bases,Under,(1.5) -170,,
-Danny Jansen,TOR,@BOS,runs,Over,(0.5) 120,,
-Danny Jansen,TOR,@BOS,runs,Under,(0.5) -165,,
+Danny Jansen,TOR,@BOS,bases,Under,(1.5) -175,,
+Danny Jansen,TOR,@BOS,runs,Over,(0.5) 125,,
+Danny Jansen,TOR,@BOS,runs,Under,(0.5) -175,,
 Danny Mendick,CWS,LAD,bases,Over,(0.5) -135,,
 Danny Mendick,CWS,LAD,bases,Under,(0.5) 100,,
 Danny Mendick,CWS,LAD,runs,Over,(0.5) 175,,
@@ -175,8 +175,8 @@ David Fry,CLE,@BAL,runs,Over,(0.5) 130,,(0.5) 130
 David Fry,CLE,@BAL,runs,Under,(0.5) -175,,(0.5) -175
 Davis Schneider,TOR,@BOS,bases,Over,(0.5) -180,,
 Davis Schneider,TOR,@BOS,bases,Under,(0.5) 130,,
-Davis Schneider,TOR,@BOS,runs,Over,(0.5) 135,,
-Davis Schneider,TOR,@BOS,runs,Under,(0.5) -185,,
+Davis Schneider,TOR,@BOS,runs,Over,(0.5) 140,,
+Davis Schneider,TOR,@BOS,runs,Under,(0.5) -190,,
 Dominic Canzone,SEA,@TB,bases,Over,(0.5) -155,,(0.5) -155
 Dominic Canzone,SEA,@TB,bases,Under,(0.5) 115,,(0.5) 120
 Dominic Canzone,SEA,@TB,runs,Over,(0.5) 165,,(0.5) 165
@@ -229,8 +229,8 @@ Garrett Stubbs,PHI,@DET,bases,Over,(0.5) -130,,(0.5) -130
 Garrett Stubbs,PHI,@DET,bases,Under,(0.5) -105,,(0.5) 100
 Garrett Stubbs,PHI,@DET,runs,Over,(0.5) 195,,(0.5) 190
 Garrett Stubbs,PHI,@DET,runs,Under,(0.5) -275,,(0.5) -250
-George Springer,TOR,@BOS,bases,Over,(1.5) 125,,
-George Springer,TOR,@BOS,bases,Under,(1.5) -170,,
+George Springer,TOR,@BOS,bases,Over,(1.5) 130,,
+George Springer,TOR,@BOS,bases,Under,(1.5) -180,,
 George Springer,TOR,@BOS,runs,Over,(0.5) 130,,
 George Springer,TOR,@BOS,runs,Under,(0.5) -175,,
 Gio Urshela,DET,PHI,bases,Over,(1.5) 140,,(1.5) 140
@@ -257,8 +257,8 @@ Isaac Paredes,TB,SEA,runs,Over,(0.5) 195,,(0.5) 195
 Isaac Paredes,TB,SEA,runs,Under,(0.5) -275,,(0.5) -250
 Isiah Kiner-Falefa,TOR,@BOS,bases,Over,(1.5) 115,,
 Isiah Kiner-Falefa,TOR,@BOS,bases,Under,(1.5) -155,,
-Isiah Kiner-Falefa,TOR,@BOS,runs,Over,(0.5) 110,,
-Isiah Kiner-Falefa,TOR,@BOS,runs,Under,(0.5) -155,,
+Isiah Kiner-Falefa,TOR,@BOS,runs,Over,(0.5) 115,,
+Isiah Kiner-Falefa,TOR,@BOS,runs,Under,(0.5) -160,,
 J.P. Crawford,SEA,@TB,bases,Over,(0.5) -175,,(0.5) -175
 J.P. Crawford,SEA,@TB,bases,Under,(0.5) 130,,(0.5) 130
 J.P. Crawford,SEA,@TB,runs,Over,(0.5) 125,,(0.5) 125
@@ -405,8 +405,8 @@ Keibert Ruiz,WSH,@SD,bases,Over,(0.5) -165,,(0.5) -160
 Keibert Ruiz,WSH,@SD,bases,Under,(0.5) 120,,(0.5) 120
 Keibert Ruiz,WSH,@SD,runs,Over,(0.5) 215,,(0.5) 210
 Keibert Ruiz,WSH,@SD,runs,Under,(0.5) -310,,(0.5) -300
-Kevin Kiermaier,TOR,@BOS,bases,Over,(0.5) -150,,
-Kevin Kiermaier,TOR,@BOS,bases,Under,(0.5) 110,,
+Kevin Kiermaier,TOR,@BOS,bases,Over,(0.5) -145,,
+Kevin Kiermaier,TOR,@BOS,bases,Under,(0.5) 105,,
 Kevin Kiermaier,TOR,@BOS,runs,Over,(0.5) 195,,
 Kevin Kiermaier,TOR,@BOS,runs,Under,(0.5) -275,,
 Kevin Pillar,LAA,OAK,bases,Over,(0.5) -180,,
@@ -629,10 +629,10 @@ Shohei Ohtani,LAD,@CWS,bases,Over,(1.5) 110,,
 Shohei Ohtani,LAD,@CWS,bases,Under,(1.5) -150,,
 Shohei Ohtani,LAD,@CWS,runs,Over,(0.5) -115,,
 Shohei Ohtani,LAD,@CWS,runs,Under,(0.5) -115,,
-Spencer Horwitz,TOR,@BOS,bases,Over,(1.5) 120,,
-Spencer Horwitz,TOR,@BOS,bases,Under,(1.5) -165,,
-Spencer Horwitz,TOR,@BOS,runs,Over,(0.5) 120,,
-Spencer Horwitz,TOR,@BOS,runs,Under,(0.5) -160,,
+Spencer Horwitz,TOR,@BOS,bases,Over,(1.5) 125,,
+Spencer Horwitz,TOR,@BOS,bases,Under,(1.5) -170,,
+Spencer Horwitz,TOR,@BOS,runs,Over,(0.5) 125,,
+Spencer Horwitz,TOR,@BOS,runs,Under,(0.5) -165,,
 Spencer Schwellenbach,ATL,@STL,strikeouts,Over,(4.5) -110,(4.5) 100,(4.5) -110
 Spencer Schwellenbach,ATL,@STL,strikeouts,Under,(4.5) -120,(4.5) -128,(4.5) -120
 Spencer Steer,CIN,PIT,bases,Over,(1.5) -105,,(1.5) -105
@@ -651,8 +651,8 @@ Taj Bradley,TB,SEA,strikeouts,Over,(6.5) -140,(6.5) -136,(6.5) -125
 Taj Bradley,TB,SEA,strikeouts,Under,(6.5) 110,(6.5) 108,(6.5) -105
 Tanner Bibee,CLE,@BAL,strikeouts,Over,(5.5) -135,(5.5) -120,(5.5) -130
 Tanner Bibee,CLE,@BAL,strikeouts,Under,(5.5) 105,(5.5) -106,(5.5) 100
-Tanner Houck,BOS,TOR,strikeouts,Over,(4.5) -160,,
-Tanner Houck,BOS,TOR,strikeouts,Under,(4.5) 125,,
+Tanner Houck,BOS,TOR,strikeouts,Over,(4.5) -170,(4.5) -160,
+Tanner Houck,BOS,TOR,strikeouts,Under,(4.5) 130,(4.5) 126,
 Taylor Walls,TB,SEA,bases,Over,(0.5) -105,,(0.5) 100
 Taylor Walls,TB,SEA,bases,Under,(0.5) -135,,(0.5) -130
 Taylor Walls,TB,SEA,runs,Over,(0.5) 195,,(0.5) 195
