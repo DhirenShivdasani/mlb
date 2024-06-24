@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,15 +30,6 @@
 
         .header .last-updated {
             font-size: 1rem;
-        }
-
-        .logout-button {
-            background-color: #ff4d4d;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
         }
 
         .filters {
@@ -148,6 +140,7 @@
             width: 90%;
             max-width: 600px;
         }
+
         #historicalChart {
             width: 100%;
             height: 400px;
@@ -165,17 +158,30 @@
         }
     </style>
 </head>
+
 <body>
     <div class="header">
         <h1>Live Odds Tracker</h1>
         <div class="last-updated" id="last-updated">Last updated: N/A</div>
-        <button class="logout-button" onclick="logout()">Logout</button>
     </div>
     <div id="notification">New data available. Please refresh the page.</div>
     <div class="filters">
         <div class="filter">
             <label for="player-name">Filter by Player:</label>
             <input type="text" id="player-name" placeholder="Enter player name" onkeyup="applyFilters()">
+        </div>
+        <div class="filter">
+            <label for="team-opponent">Filter by Game:</label>
+            <input type="text" id="team-opponent" placeholder="Enter team vs opponent" onkeyup="applyFilters()">
+        </div>
+        <div class="filter">
+            <label for="prop-type">Filter by Prop:</label>
+            <select id="prop-type" onchange="applyFilters()">
+                <option value="all">All</option>
+                <option value="Runs">Runs</option>
+                <option value="Strikeouts">Strikeouts</option>
+                <option value="Total Bases">Total Bases</option>
+            </select>
         </div>
         <div class="filter">
             <label for="sort-by">Sort by:</label>
@@ -187,11 +193,12 @@
         </div>
     </div>
     <div id="odds-container"></div>
-
     <div id="historicalModal">
-        <div id="historicalChart"></div>
+        <canvas id="historicalChart"></canvas>
+        <button onclick="closeHistoricalModal()">Close</button>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const container = document.getElementById('odds-container');
         const notification = document.getElementById('notification');
@@ -232,6 +239,7 @@
                         <p><strong>Implied Prob:</strong> ${parseFloat(odds.Implied_Prob).toFixed(2)}%</p>
                     </div>
                     <hr>
+                    <button onclick="showHistoricalData('${odds.PlayerName}', '${odds.Prop}')">View Historical Data</button>
                 `;
                 container.appendChild(oddsDiv);
             });
@@ -239,12 +247,22 @@
 
         function applyFilters() {
             const playerNameFilter = document.getElementById('player-name').value.toLowerCase();
+            const teamOpponentFilter = document.getElementById('team-opponent').value.toLowerCase();
+            const propTypeFilter = document.getElementById('prop-type').value;
             const sortBy = document.getElementById('sort-by').value;
 
             let filteredData = oddsData;
 
             if (playerNameFilter) {
                 filteredData = filteredData.filter(odds => odds.PlayerName.toLowerCase().includes(playerNameFilter));
+            }
+
+            if (teamOpponentFilter) {
+                filteredData = filteredData.filter(odds => `${odds.team} vs. ${odds.opp}`.toLowerCase().includes(teamOpponentFilter));
+            }
+
+            if (propTypeFilter !== 'all') {
+                filteredData = filteredData.filter(odds => odds.Prop === propTypeFilter);
             }
 
             if (sortBy === 'impliedProbAsc') {
@@ -267,13 +285,6 @@
                 minute: '2-digit'
             });
             lastUpdatedElement.textContent = `Last updated: ${formattedTime}`;
-        }
-
-        async function setupWebSocket() {
-            const ws = new WebSocket(`ws://${window.location.hostname}:${window.location.port + 1}`);
-            ws.onmessage = () => {
-                notification.style.display = 'block';
-            };
         }
 
         async function showHistoricalData(playerName, prop) {
@@ -335,27 +346,18 @@
             historicalModal.style.display = 'block';
         }
 
-        function logout() {
-            fetch('/logout', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    window.location.href = '/login';
-                }
-            });
+        function closeHistoricalModal() {
+            historicalModal.style.display = 'none';
         }
 
         window.onclick = function(event) {
             if (event.target == historicalModal) {
-                historicalModal.style.display = 'none';
+                closeHistoricalModal();
             }
         }
 
         fetchOdds();
-        setupWebSocket();
     </script>
 </body>
+
 </html>
