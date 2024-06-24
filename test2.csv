@@ -1,133 +1,106 @@
 ,Name,Team,Value,Prop
 0,Shohei Ohtani,LAD - DH,11.5,Hitter Fantasy Score
-1,Matt Waldron,SD - P,27.5,Pitcher Fantasy Score
-2,Justin Steele,CHC - P,5.0,Pitcher Strikeouts
+1,Justin Steele,CHC - P,5.0,Pitcher Strikeouts
+2,Matt Waldron,SD - P,27.5,Pitcher Fantasy Score
 3,Garrett Crochet,CWS - P,7.0,Pitcher Strikeouts
-4,Tanner Houck,BOS - P,5.0,Pitcher Strikeouts
-5,Cole Ragans,KC - P,38.5,Pitcher Fantasy Score
-6,Cole Ragans,KC - P,6.5,Pitcher Strikeouts
-7,Bryan Reynolds,PIT - OF,9.5,Hitter Fantasy Score
-8,Tanner Houck,BOS - P,31.5,Pitcher Fantasy Score
-9,Justin Steele,CHC - P,32.0,Pitcher Fantasy Score
-10,William Contreras,MIL - C,7.0,Hitter Fantasy Score
-11,Bailey Falter,PIT - P,5.5,Hits Allowed
-12,Jarren Duran,BOS - OF,9.0,Hitter Fantasy Score
-13,Matt Waldron,SD - P,4.0,Pitcher Strikeouts
-14,Elly De La Cruz,CIN - IF,1.5,Hits+Runs+RBIs
-15,Freddy Peralta,MIL - P,36.5,Pitcher Fantasy Score
-16,Michael Lorenzen,TEX - P,17.5,Pitching Outs
-17,Carson Spiers,CIN - P,4.5,Pitcher Strikeouts
-18,Tanner Houck,BOS - P,5.0,Pitcher Strikeouts
-19,Lance Lynn,STL - P,5.0,Pitcher Strikeouts
-20,Spencer Schwellenbach,ATL - P,4.5,Pitcher Strikeouts
-21,Garrett Crochet,CWS - P,7.0,Pitcher Strikeouts
-22,James Paxton,LAD - P,4.0,Pitcher Strikeouts
-23,Cole Ragans,KC - P,6.5,Pitcher Strikeouts
-24,Roddery Muñoz,MIA - P,3.5,Pitcher Strikeouts
-25,Michael Lorenzen,TEX - P,4.0,Pitcher Strikeouts
-26,Griffin Canning,LAA - P,5.0,Pitcher Strikeouts
-27,Luis Medina,OAK - P,4.0,Pitcher Strikeouts
-28,Matt Waldron,SD - P,4.0,Pitcher Strikeouts
-29,Justin Steele,CHC - P,5.0,Pitcher Strikeouts
-30,Spencer Schwellenbach + Lance Lynn,ATL/STL - P,9.5,Pitcher Strikeouts (Combo)
-31,Roddery Muñoz + Cole Ragans,MIA/KC - P,10.0,Pitcher Strikeouts (Combo)
-32,Tyler Stephenson,CIN - C,1.5,Total Bases
-33,Vladimir Guerrero Jr.,TOR - IF,1.5,Total Bases
-34,Marcell Ozuna,ATL - DH,1.5,Total Bases
-35,Matt Olson,ATL - IF,1.5,Total Bases
-36,Ozzie Albies,ATL - IF,1.5,Total Bases
-37,Salvador Perez,KC - C,1.5,Total Bases
-38,Jonah Heim,TEX - C,0.5,Total Bases
-39,Miguel Amaya,CHC - C,0.5,Total Bases
-40,Spencer Schwellenbach + Lance Lynn,ATL/STL - P,0.5,1st Inning Runs Allowed
-41,Roddery Muñoz + Cole Ragans,MIA/KC - P,0.5,1st Inning Runs Allowed
-42,Bailey Falter,PIT - P,5.5,Hits Allowed
-43,Roddery Muñoz,MIA - P,5.5,Hits Allowed
-44,Matt Waldron,SD - P,5.5,Hits Allowed
-45,Griffin Canning,LAA - P,1.5,Walks Allowed
-46,Justin Steele,CHC - P,1.5,Walks Allowed
-47,Bailey Falter,PIT - P,1.5,Walks Allowed
-48,Tanner Houck,BOS - P,31.5,Pitcher Fantasy Score
-49,Spencer Schwellenbach,ATL - P,26.0,Pitcher Fantasy Score
-50,Garrett Crochet,CWS - P,37.5,Pitcher Fantasy Score
-51,Cole Ragans,KC - P,38.5,Pitcher Fantasy Score
-52,Freddy Peralta,MIL - P,36.5,Pitcher Fantasy Score
-53,Griffin Canning,LAA - P,27.5,Pitcher Fantasy Score
-54,Matt Waldron,SD - P,27.5,Pitcher Fantasy Score
-55,Justin Steele,CHC - P,32.0,Pitcher Fantasy Score
-56,Elly De La Cruz,CIN - IF,1.5,Hits+Runs+RBIs
-57,Santiago Espinal,CIN - IF,1.5,Hits+Runs+RBIs
-58,Addison Barger,TOR - OF,1.5,Hits+Runs+RBIs
-59,Justin Turner,TOR - IF,1.5,Hits+Runs+RBIs
-60,Spencer Horwitz,TOR - IF,1.5,Hits+Runs+RBIs
-61,Nolan Gorman,STL - IF,1.5,Hits+Runs+RBIs
-62,Freddie Freeman,LAD - IF,1.5,Hits+Runs+RBIs
-63,Bryan De La Cruz,MIA - OF,1.5,Hits+Runs+RBIs
-64,Kyle Isbel,KC - OF,1.5,Hits+Runs+RBIs
-65,Jazz Chisholm Jr.,MIA - OF,1.5,Hits+Runs+RBIs
-66,Willy Adames,MIL - IF,1.5,Hits+Runs+RBIs
-67,Corey Seager,TEX - IF,1.5,Hits+Runs+RBIs
-68,Brent Rooker,OAK - OF,1.5,Hits+Runs+RBIs
-69,Logan O'Hoppe,LAA - C,1.5,Hits+Runs+RBIs
-70,Nolan Schanuel,LAA - IF,1.5,Hits+Runs+RBIs
-71,Shea Langeliers,OAK - C,1.5,Hits+Runs+RBIs
-72,Taylor Ward,LAA - OF,1.5,Hits+Runs+RBIs
-73,Willie Calhoun,LAA - IF,1.5,Hits+Runs+RBIs
-74,Ha-Seong Kim,SD - IF,1.5,Hits+Runs+RBIs
-75,CJ Abrams,WSH - IF,1.5,Hits+Runs+RBIs
-76,Joey Meneses,WSH - IF,1.5,Hits+Runs+RBIs
-77,Lane Thomas,WSH - OF,1.5,Hits+Runs+RBIs
-78,Luis García,WSH - IF,1.5,Hits+Runs+RBIs
-79,Seiya Suzuki,CHC - OF,1.5,Hits+Runs+RBIs
-80,Jesús Sánchez,MIA - OF,0.5,Singles
-81,Spencer Schwellenbach,ATL - P,16.5,Pitching Outs
-82,James Paxton,LAD - P,15.5,Pitching Outs
-83,Michael Lorenzen,TEX - P,17.5,Pitching Outs
-84,Patrick Corbin,WSH - P,17.0,Pitching Outs
-85,Bryan Reynolds,PIT - OF,9.5,Hitter Fantasy Score
-86,Elly De La Cruz,CIN - IF,8.5,Hitter Fantasy Score
-87,Rafael Devers,BOS - IF,7.5,Hitter Fantasy Score
-88,Vladimir Guerrero Jr.,TOR - IF,6.5,Hitter Fantasy Score
-89,Jarren Duran,BOS - OF,9.0,Hitter Fantasy Score
-90,Marcell Ozuna,ATL - DH,8.0,Hitter Fantasy Score
-91,Matt Olson,ATL - IF,7.5,Hitter Fantasy Score
-92,Ozzie Albies,ATL - IF,7.5,Hitter Fantasy Score
-93,Christian Yelich,MIL - OF,8.0,Hitter Fantasy Score
-94,Corey Seager,TEX - IF,6.5,Hitter Fantasy Score
-95,William Contreras,MIL - C,7.0,Hitter Fantasy Score
-96,Marcus Semien,TEX - IF,6.0,Hitter Fantasy Score
-97,Bobby Witt Jr.,KC - IF,10.0,Hitter Fantasy Score
-98,Shohei Ohtani,LAD - DH,11.5,Hitter Fantasy Score
-99,Freddie Freeman,LAD - IF,8.0,Hitter Fantasy Score
-100,Manny Machado,SD - IF,7.5,Hitter Fantasy Score
-101,CJ Abrams,WSH - IF,7.0,Hitter Fantasy Score
-102,Luis Arraez,SD - IF,6.5,Hitter Fantasy Score
-103,Cody Bellinger,CHC - OF,8.0,Hitter Fantasy Score
-104,Seiya Suzuki,CHC - OF,7.5,Hitter Fantasy Score
-105,Christian Yelich,MIL - OF,0.5,Walks
-106,Taylor Ward,LAA - OF,0.5,Walks
-107,James Paxton,LAD - P,2.5,Earned Runs Allowed
-108,Griffin Canning,LAA - P,2.5,Earned Runs Allowed
-109,Luis Medina,OAK - P,2.5,Earned Runs Allowed
-110,Elly De La Cruz,CIN - IF,0.5,Runs
-111,Jeimer Candelario,CIN - IF,0.5,Runs
-112,Jarred Kelenic,ATL - OF,0.5,Runs
-113,MJ Melendez,KC - OF,0.5,Runs
-114,Brice Turang,MIL - IF,0.5,Runs
-115,William Contreras,MIL - C,0.5,Runs
-116,Manny Machado,SD - IF,0.5,Runs
-117,Brendan Donovan,STL - OF,0.5,Hitter Strikeouts
-118,Ozzie Albies,ATL - IF,0.5,Hitter Strikeouts
-119,Masyn Winn,STL - IF,0.5,Hitter Strikeouts
-120,Eloy Jiménez,CWS - DH,0.5,Hitter Strikeouts
-121,Andy Pages,LAD - OF,1.5,Hitter Strikeouts
-122,Miguel Rojas,LAD - IF,0.5,Hitter Strikeouts
-123,Nick Fortes,MIA - C,0.5,Hitter Strikeouts
-124,Miguel Andujar,OAK - OF,0.5,Hitter Strikeouts
-125,Luis Rengifo,LAA - IF,0.5,Hitter Strikeouts
-126,Jackson Merrill,SD - OF,0.5,Hitter Strikeouts
-127,Joey Meneses,WSH - IF,0.5,Hitter Strikeouts
-128,Donovan Solano,SD - IF,0.5,Hitter Strikeouts
-129,Jake Cronenworth,SD - IF,0.5,Hitter Strikeouts
-130,Manny Machado,SD - IF,0.5,Hitter Strikeouts
-131,Nico Hoerner,CHC - IF,0.5,Hitter Strikeouts
+4,Cole Ragans,KC - P,38.5,Pitcher Fantasy Score
+5,Cole Ragans,KC - P,6.5,Pitcher Strikeouts
+6,Justin Steele,CHC - P,32.0,Pitcher Fantasy Score
+7,William Contreras,MIL - C,7.0,Hitter Fantasy Score
+8,Matt Waldron,SD - P,4.0,Pitcher Strikeouts
+9,James Paxton,LAD - P,15.5,Pitching Outs
+10,Griffin Canning,LAA - P,27.5,Pitcher Fantasy Score
+11,Freddy Peralta,MIL - P,36.5,Pitcher Fantasy Score
+12,Lance Lynn,STL - P,5.0,Pitcher Strikeouts
+13,Spencer Schwellenbach,ATL - P,4.5,Pitcher Strikeouts
+14,Garrett Crochet,CWS - P,7.0,Pitcher Strikeouts
+15,James Paxton,LAD - P,4.0,Pitcher Strikeouts
+16,Cole Ragans,KC - P,6.5,Pitcher Strikeouts
+17,Roddery Muñoz,MIA - P,3.5,Pitcher Strikeouts
+18,Michael Lorenzen,TEX - P,4.0,Pitcher Strikeouts
+19,Griffin Canning,LAA - P,5.0,Pitcher Strikeouts
+20,Luis Medina,OAK - P,4.0,Pitcher Strikeouts
+21,Matt Waldron,SD - P,4.0,Pitcher Strikeouts
+22,Justin Steele,CHC - P,5.0,Pitcher Strikeouts
+23,Spencer Schwellenbach + Lance Lynn,ATL/STL - P,9.5,Pitcher Strikeouts (Combo)
+24,Roddery Muñoz + Cole Ragans,MIA/KC - P,10.0,Pitcher Strikeouts (Combo)
+25,Marcell Ozuna,ATL - DH,1.5,Total Bases
+26,Matt Olson,ATL - IF,1.5,Total Bases
+27,Ozzie Albies,ATL - IF,1.5,Total Bases
+28,Salvador Perez,KC - C,1.5,Total Bases
+29,Jonah Heim,TEX - C,0.5,Total Bases
+30,Spencer Schwellenbach + Lance Lynn,ATL/STL - P,0.5,1st Inning Runs Allowed
+31,Roddery Muñoz + Cole Ragans,MIA/KC - P,0.5,1st Inning Runs Allowed
+32,Roddery Muñoz,MIA - P,5.5,Hits Allowed
+33,Matt Waldron,SD - P,5.5,Hits Allowed
+34,Griffin Canning,LAA - P,1.5,Walks Allowed
+35,Spencer Schwellenbach,ATL - P,26.0,Pitcher Fantasy Score
+36,Garrett Crochet,CWS - P,37.5,Pitcher Fantasy Score
+37,Cole Ragans,KC - P,38.5,Pitcher Fantasy Score
+38,Freddy Peralta,MIL - P,36.5,Pitcher Fantasy Score
+39,Griffin Canning,LAA - P,27.5,Pitcher Fantasy Score
+40,Matt Waldron,SD - P,27.5,Pitcher Fantasy Score
+41,Justin Steele,CHC - P,32.0,Pitcher Fantasy Score
+42,Nolan Gorman,STL - IF,1.5,Hits+Runs+RBIs
+43,Freddie Freeman,LAD - IF,1.5,Hits+Runs+RBIs
+44,Bryan De La Cruz,MIA - OF,1.5,Hits+Runs+RBIs
+45,Kyle Isbel,KC - OF,1.5,Hits+Runs+RBIs
+46,Jazz Chisholm Jr.,MIA - OF,1.5,Hits+Runs+RBIs
+47,Willy Adames,MIL - IF,1.5,Hits+Runs+RBIs
+48,Corey Seager,TEX - IF,1.5,Hits+Runs+RBIs
+49,Brent Rooker,OAK - OF,1.5,Hits+Runs+RBIs
+50,Logan O'Hoppe,LAA - C,1.5,Hits+Runs+RBIs
+51,Nolan Schanuel,LAA - IF,1.5,Hits+Runs+RBIs
+52,Shea Langeliers,OAK - C,1.5,Hits+Runs+RBIs
+53,Taylor Ward,LAA - OF,1.5,Hits+Runs+RBIs
+54,Willie Calhoun,LAA - IF,1.5,Hits+Runs+RBIs
+55,Ha-Seong Kim,SD - IF,1.5,Hits+Runs+RBIs
+56,CJ Abrams,WSH - IF,1.5,Hits+Runs+RBIs
+57,Joey Meneses,WSH - IF,1.5,Hits+Runs+RBIs
+58,Lane Thomas,WSH - OF,1.5,Hits+Runs+RBIs
+59,Luis García,WSH - IF,1.5,Hits+Runs+RBIs
+60,Jesús Sánchez,MIA - OF,0.5,Singles
+61,Spencer Schwellenbach,ATL - P,16.5,Pitching Outs
+62,James Paxton,LAD - P,15.5,Pitching Outs
+63,Michael Lorenzen,TEX - P,17.5,Pitching Outs
+64,Patrick Corbin,WSH - P,17.0,Pitching Outs
+65,Marcell Ozuna,ATL - DH,8.0,Hitter Fantasy Score
+66,Matt Olson,ATL - IF,7.5,Hitter Fantasy Score
+67,Ozzie Albies,ATL - IF,7.5,Hitter Fantasy Score
+68,Christian Yelich,MIL - OF,8.0,Hitter Fantasy Score
+69,Corey Seager,TEX - IF,6.5,Hitter Fantasy Score
+70,William Contreras,MIL - C,7.0,Hitter Fantasy Score
+71,Marcus Semien,TEX - IF,6.0,Hitter Fantasy Score
+72,Bobby Witt Jr.,KC - IF,10.0,Hitter Fantasy Score
+73,Shohei Ohtani,LAD - DH,11.5,Hitter Fantasy Score
+74,Freddie Freeman,LAD - IF,8.0,Hitter Fantasy Score
+75,Manny Machado,SD - IF,7.5,Hitter Fantasy Score
+76,CJ Abrams,WSH - IF,7.0,Hitter Fantasy Score
+77,Luis Arraez,SD - IF,6.5,Hitter Fantasy Score
+78,Cody Bellinger,CHC - OF,8.0,Hitter Fantasy Score
+79,Seiya Suzuki,CHC - OF,7.5,Hitter Fantasy Score
+80,Christian Yelich,MIL - OF,0.5,Walks
+81,Taylor Ward,LAA - OF,0.5,Walks
+82,James Paxton,LAD - P,2.5,Earned Runs Allowed
+83,Griffin Canning,LAA - P,2.5,Earned Runs Allowed
+84,Luis Medina,OAK - P,2.5,Earned Runs Allowed
+85,Jarred Kelenic,ATL - OF,0.5,Runs
+86,MJ Melendez,KC - OF,0.5,Runs
+87,Brice Turang,MIL - IF,0.5,Runs
+88,William Contreras,MIL - C,0.5,Runs
+89,Manny Machado,SD - IF,0.5,Runs
+90,Brendan Donovan,STL - OF,0.5,Hitter Strikeouts
+91,Ozzie Albies,ATL - IF,0.5,Hitter Strikeouts
+92,Masyn Winn,STL - IF,0.5,Hitter Strikeouts
+93,Eloy Jiménez,CWS - DH,0.5,Hitter Strikeouts
+94,Andy Pages,LAD - OF,1.5,Hitter Strikeouts
+95,Miguel Rojas,LAD - IF,0.5,Hitter Strikeouts
+96,Nick Fortes,MIA - C,0.5,Hitter Strikeouts
+97,Miguel Andujar,OAK - OF,0.5,Hitter Strikeouts
+98,Luis Rengifo,LAA - IF,0.5,Hitter Strikeouts
+99,Jackson Merrill,SD - OF,0.5,Hitter Strikeouts
+100,Joey Meneses,WSH - IF,0.5,Hitter Strikeouts
+101,Donovan Solano,SD - IF,0.5,Hitter Strikeouts
+102,Jake Cronenworth,SD - IF,0.5,Hitter Strikeouts
+103,Manny Machado,SD - IF,0.5,Hitter Strikeouts
+104,Nico Hoerner,CHC - IF,0.5,Hitter Strikeouts
