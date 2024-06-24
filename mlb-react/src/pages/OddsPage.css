@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.header .last-updated {
+    font-size: 1rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.filter label {
+    font-weight: bold;
+}
+
+.filter input,
+.filter select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.filter input:focus,
+.filter select:focus {
+    border-color: #007bff;
+}
+
+#odds-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.odds-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 600px;
+    transition: transform 0.3s;
+}
+
+.odds-card:hover {
+    transform: translateY(-5px);
+}
+
+.odds-card p {
+    margin: 5px 0;
+}
+
+.odds-card hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+.prop-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.prop-row p {
+    flex: 1;
+    min-width: 140px;
+}
+
+.prop-row p strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#notification {
+    display: none;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffeb3b;
+    color: #333;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#historicalModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 90%;
+    max-width: 600px;
+}
+
+#historicalChart {
+    width: 100%;
+    height: 400px;
+}
+
+@media (max-width: 600px) {
+    .prop-row {
+        flex-direction: column;
+    }
+
+    .prop-row p {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+}

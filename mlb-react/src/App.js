@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import StatCard from './components/StatCard';
 import { useState } from 'react';
+import OddsPage from './pages/OddsPage';
 
 function App() {
   const [cards, setCards] = useState([
@@ -19,21 +20,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className='text-3xl'>Miles</h1>
-      <button className='btn btn-secondary btn-outline'>Click me</button>
-      <div className='flex flex-wrap justify-center items-center'>
-        {cards.map((card, index) => (
-          <div className='p-2'>
-            <StatCard key={index}
-            title={card.title}
-            description={card.description}
-            removeCard={() => removeCard(index)}
-            />
-          </div>
-        ))}
-      </div>
-
+      <OddsPage />
     </div>
+
+
   );
 }
 
