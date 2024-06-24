@@ -12,31 +12,33 @@ jobs:
   update_data:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.8'  # Set this to your required Python version
+        python-version: '3.8'  # Ensure this matches your required Python version
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt  # If you have a requirements.txt
+        pip install -r requirements.txt  # Ensure your `requirements.txt` is present in the repo
+
     - name: Run pp_mlb.py
       run: python pp_mlb.py
-    - name: Stash changes
-      run: git stash
-    - name: Pull changes from the remote repository
-      run: git pull --rebase
-    - name: Commit and push if there are changes
+
+    - name: Commit and push changes if any
       run: |
-        git config user.email "dhiren3102@gmail.com"
-        git config user.name "DhirenShivdasani"
+        git config --global user.email "dhiren3102@gmail.com"
+        git config --global user.name "DhirenShivdasani"
         git add .
-        git commit -m "Automated data update" -a || exit 0  # '-a' to include all changes
+        git commit -m "Automated data update" || echo "No changes to commit"
         git push origin main
+
     - name: Trigger deploy workflow
       run: |
         curl -X POST -H "Accept: application/vnd.github.v3+json" \
-        -H "Authorization: token ${{ secrets.MLB_TOKEN }}" \
+        -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
         https://api.github.com/repos/DhirenShivdasani/mlb/dispatches \
         -d '{"event_type":"deploy-heroku"}'
