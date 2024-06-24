@@ -110,8 +110,7 @@ if 'DYNO' in os.environ:
     chrome_options.binary_location = os.environ.get('GOOGLE_CHROME_BIN')
     driver = uc.Chrome(options=chrome_options)
 else:
-    chrome_options.binary_location = 'C:/Program Files/Google/Chrome/Application/chrome.exe'
-    driver = uc.Chrome(options=chrome_options, browser_executable_path='C:/Program Files/Google/Chrome/Application/chrome.exe')
+    driver = uc.Chrome(options=chrome_options)
 
 print(f"Chrome binary location: {chrome_options.binary_location}")
 print(f"Chromedriver path: {os.environ.get('CHROMEDRIVER_PATH')}")
