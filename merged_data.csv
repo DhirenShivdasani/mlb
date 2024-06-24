@@ -10,7 +10,7 @@ Marcus Semien,TEX,@MIL,Runs,Over,None,(0.5) 130,None,None,0.5,43.48%
 Marcus Semien,TEX,@MIL,Runs,Under,None,(0.5) -180,None,None,0.5,64.29%
 Matt Olson,ATL,@STL,Runs,Over,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
 Matt Olson,ATL,@STL,Runs,Under,None,(0.5) -110,None,(0.5) -105,0.5,51.8%
-Ke'Bryan Hayes,PIT,@CIN,Runs,Under,None,(0.5) -170,None,(0.5) -165,0.5,62.61%
+Ke'Bryan Hayes,PIT,@CIN,Runs,Under,(0.5) -150,(0.5) -170,None,(0.5) -165,0.5,61.74%
 Matt Vierling,DET,PHI,Runs,Over,(0.5) 140,(0.5) 120,None,(0.5) 125,0.5,43.86%
 Nick Senzel,WSH,@SD,Total Bases,Over,None,(0.5) -145,None,(0.5) -145,1.5,59.18%
 Nick Senzel,WSH,@SD,Total Bases,Under,None,(0.5) 105,None,(0.5) 110,1.5,48.2%
@@ -23,7 +23,7 @@ Ozzie Albies,ATL,@STL,Runs,Under,None,(0.5) -105,None,(0.5) -105,0.5,51.22%
 Tyler Soderstrom,OAK,@LAA,Total Bases,Over,None,(0.5) -155,None,None,0.5,60.78%
 Tyler Soderstrom,OAK,@LAA,Total Bases,Under,None,(0.5) 115,None,None,0.5,46.51%
 Matt Vierling,DET,PHI,Runs,Under,(0.5) -195,(0.5) -165,None,(0.5) -165,0.5,63.54%
-Ke'Bryan Hayes,PIT,@CIN,Runs,Over,None,(0.5) 125,None,(0.5) 125,0.5,44.44%
+Ke'Bryan Hayes,PIT,@CIN,Runs,Over,(0.5) 110,(0.5) 125,None,(0.5) 125,0.5,45.5%
 Jose Siri,TB,SEA,Total Bases,Under,(1.5) -420,(0.5) -120,None,(0.5) -120,0.5,63.29%
 Jose Siri,TB,SEA,Total Bases,Over,(1.5) 260,(0.5) -115,None,(0.5) -110,0.5,44.55%
 Adley Rutschman,BAL,CLE,Runs,Under,(0.5) -139,(0.5) -165,None,(0.5) -160,0.5,60.65%
@@ -31,23 +31,23 @@ Austin Riley,ATL,@STL,Total Bases,Over,None,(1.5) 100,None,(1.5) 105,1.5,49.39%
 Austin Riley,ATL,@STL,Total Bases,Under,None,(1.5) -135,None,(1.5) -140,1.5,57.89%
 Austin Riley,ATL,@STL,Runs,Over,None,(0.5) 100,None,(0.5) 105,0.5,49.39%
 Austin Riley,ATL,@STL,Runs,Under,None,(0.5) -135,None,(0.5) -135,0.5,57.45%
-Bryan Reynolds,PIT,@CIN,Total Bases,Over,None,(1.5) -130,None,(1.5) -130,1.5,56.52%
-Bryan Reynolds,PIT,@CIN,Total Bases,Under,None,(1.5) -105,None,(1.5) 100,1.5,50.61%
-Bryan Reynolds,PIT,@CIN,Runs,Over,None,(0.5) -145,None,(0.5) -135,0.5,58.32%
-Bryan Reynolds,PIT,@CIN,Runs,Under,None,(0.5) 105,None,(0.5) 105,0.5,48.78%
+Bryan Reynolds,PIT,@CIN,Total Bases,Over,(1.5) -121,(1.5) -130,None,(1.5) -130,1.5,55.93%
+Bryan Reynolds,PIT,@CIN,Total Bases,Under,(1.5) -115,(1.5) -105,None,(1.5) 100,1.5,51.57%
+Bryan Reynolds,PIT,@CIN,Runs,Over,(0.5) -143,(0.5) -145,None,(0.5) -135,0.5,58.49%
+Bryan Reynolds,PIT,@CIN,Runs,Under,(0.5) 105,(0.5) 105,None,(0.5) 105,0.5,48.78%
 Colton Cowser,BAL,CLE,Total Bases,Over,None,(0.5) -135,None,(0.5) -130,0.5,56.98%
 Colton Cowser,BAL,CLE,Total Bases,Under,None,(0.5) 100,None,(0.5) 100,0.5,50.0%
 Corey Seager,TEX,@MIL,Total Bases,Over,None,(1.5) 120,None,None,1.5,45.45%
 Corey Seager,TEX,@MIL,Total Bases,Under,None,(1.5) -160,None,None,1.5,61.54%
 Corey Seager,TEX,@MIL,Runs,Over,None,(0.5) 115,None,None,0.5,46.51%
 Corey Seager,TEX,@MIL,Runs,Under,None,(0.5) -155,None,None,0.5,60.78%
-Elly De La Cruz,CIN,PIT,Runs,Over,None,(0.5) -110,None,(0.5) -110,0.5,52.38%
-Elly De La Cruz,CIN,PIT,Runs,Under,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
+Elly De La Cruz,CIN,PIT,Runs,Over,(0.5) 102,(0.5) -110,None,(0.5) -110,0.5,51.42%
+Elly De La Cruz,CIN,PIT,Runs,Under,(0.5) -139,(0.5) -120,None,(0.5) -120,0.5,55.75%
 Isiah Kiner-Falefa,TOR,@BOS,Runs,Over,None,(0.5) 115,None,None,0.5,46.51%
 Isiah Kiner-Falefa,TOR,@BOS,Runs,Under,None,(0.5) -160,None,None,0.5,61.54%
 Jacob Young,WSH,@SD,Runs,Over,None,(0.5) 195,None,(0.5) 195,0.5,33.9%
 Jacob Young,WSH,@SD,Runs,Under,None,(0.5) -275,None,(0.5) -275,0.5,73.33%
-Jonathan India,CIN,PIT,Runs,Over,None,(0.5) 120,None,(0.5) 125,0.5,44.95%
-Jonathan India,CIN,PIT,Runs,Under,None,(0.5) -165,None,(0.5) -165,0.5,62.26%
+Jonathan India,CIN,PIT,Runs,Over,(0.5) 120,(0.5) 120,None,(0.5) 125,0.5,45.12%
+Jonathan India,CIN,PIT,Runs,Under,(0.5) -162,(0.5) -165,None,(0.5) -165,0.5,62.12%
 Zack Gelof,OAK,@LAA,Total Bases,Over,None,(0.5) -150,None,None,0.5,60.0%
 Zack Gelof,OAK,@LAA,Total Bases,Under,None,(0.5) 110,None,None,0.5,47.62%
