@@ -1,5 +1,4 @@
 from flask_cors import CORS
-from flask import Flask, jsonify, request, render_template, session, redirect, url_for
 import asyncio
 import websockets
 import threading
@@ -7,7 +6,9 @@ import pandas as pd
 import os
 import psycopg2
 import bcrypt
+from flask import Flask, jsonify, request, session, send_from_directory,redirect, url_for,render_template
 
+prod = True
 DATABASE_URL = os.getenv('DATABASE_URL')
 
 app = Flask(__name__)
@@ -61,7 +62,7 @@ def start_websocket_server(port):
 
 @app.route('/get_historical_data', methods=['GET'])
 def get_historical_data():
-    if 'user_id' not in session:
+    if 'user_id' not in session and prod:
         return jsonify({"error": "Unauthorized"}), 401
     player_name = request.args.get('player_name')
     prop = request.args.get('prop')
@@ -78,13 +79,13 @@ def get_historical_data():
 
 @app.route('/')
 def index():
-    if 'user_id' not in session:
+    if 'user_id' not in session and prod:
         return redirect(url_for('login'))
     return render_template('index.html')
 
 @app.route('/merged_data', methods=['GET', 'POST'])
 def get_merged_data():
-    if 'user_id' not in session:
+    if 'user_id' not in session and prod:
         return jsonify({"error": "Unauthorized"}), 401
     if request.method == 'POST':
         threading.Thread(target=asyncio.run, args=(notify_clients(),)).start()
@@ -148,6 +149,7 @@ def login():
 def logout():
     session.pop('user_id', None)
     return jsonify({"status": "success"}), 200
+
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
