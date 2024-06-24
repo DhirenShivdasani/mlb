@@ -20,39 +20,6 @@ import os
 # Load environment variables from .env file
 load_dotenv()
 
-# Initialize S3 client
-s3 = boto3.client(
-    's3',
-    aws_access_key_id=os.getenv('AWS_ACCESS_KEY_ID'),
-    aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY')
-)
-
-BUCKET_NAME = os.getenv('BUCKET_NAME')
-
-def upload_to_aws(local_file, bucket, s3_file):
-    try:
-        s3.upload_file(local_file, bucket, s3_file)
-        print(f"Upload Successful: {s3_file}")
-        return True
-    except FileNotFoundError:
-        print("The file was not found")
-        return False
-    except NoCredentialsError:
-        print("Credentials not available")
-        return False
-
-def download_from_s3(bucket, s3_file, local_file):
-    try:
-        s3.download_file(bucket, s3_file, local_file)
-        print(f"Download Successful: {s3_file}")
-        return True
-    except FileNotFoundError:
-        print("The file was not found")
-        return False
-    except NoCredentialsError:
-        print("Credentials not available")
-        return False
-
 def handle_remove_readonly(func, path, exc_info):
     import stat
     os.chmod(path, stat.S_IWRITE)
@@ -83,8 +50,6 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.email', 'dhiren3102@gmail.com'])
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
-        # Download the file from S3 again
-        download_from_s3(BUCKET_NAME, 'test2.csv', 'test2.csv')
 
         # Ensure file system registers the changes
         time.sleep(2)
@@ -230,14 +195,5 @@ print("These are all of the props offered by PP.", '\n')
 print(dfProps)
 print('\n')
 
-upload_to_aws('test2.csv', BUCKET_NAME, 'test2.csv')
-
-s3_file = 'test2.csv'
-local_file = 'test2.csv'
-
-# Download the file from S3
-if download_from_s3(BUCKET_NAME, s3_file, local_file):
-    push_to_github()
-else:
-    print("Failed to download file from S3, not pushing to GitHub")
+push_to_github()
 
