@@ -1,5 +1,5 @@
 from flask_cors import CORS
-from flask import Flask, jsonify, request, render_template, session, redirect, url_for, send_from_directory
+from flask import Flask, jsonify, request, render_template, session, redirect, url_for
 import asyncio
 import websockets
 import threading
@@ -10,7 +10,7 @@ import bcrypt
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 
-app = Flask(__name__, static_folder='client/build', static_url_path='/')
+app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for sessions
 CORS(app)
 
@@ -75,6 +75,12 @@ def get_historical_data():
     finally:
         cur.close()
         conn.close()
+
+@app.route('/')
+def index():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+    return render_template('index.html')
 
 @app.route('/merged_data', methods=['GET', 'POST'])
 def get_merged_data():
@@ -142,14 +148,6 @@ def login():
 def logout():
     session.pop('user_id', None)
     return jsonify({"status": "success"}), 200
-
-@app.route('/')
-def serve_react_app():
-    return send_from_directory(app.static_folder, 'index.html')
-
-@app.errorhandler(404)
-def not_found(e):
-    return send_from_directory(app.static_folder, 'index.html')
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
