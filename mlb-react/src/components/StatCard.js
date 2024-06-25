@@ -11,7 +11,6 @@ export default function StatCard({ index, odds, showHistoricalData }) {
                 <div className="divider"></div>
                 <div className="flex flex-col space-y-2">
                     <div className="flex justify-between text-gray-400">
-                        <p><strong>Prop:</strong> {odds.Prop}</p>
                         <p><strong>Over/Under:</strong> {odds.Over_Under}</p>
                     </div>
                     <div className="flex justify-between text-gray-400">
@@ -28,7 +27,7 @@ export default function StatCard({ index, odds, showHistoricalData }) {
                 </div>
                 <div className="divider"></div>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary" onClick={() => showHistoricalData(odds.PlayerName, odds.Prop)}>View Historical Data</button>
+                    <button className="btn btn-primary" onClick={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)}>View Historical Data</button>
                 </div>
             </div>
         </div>

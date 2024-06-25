@@ -96,6 +96,7 @@ body {
 
 .text-gray-300 {
     color: #d1d5db; /* Light gray text */
+    margin-right: auto;
 }
 
 .text-gray-400 {
