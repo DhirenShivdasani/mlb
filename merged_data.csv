@@ -17,28 +17,28 @@ Brayan Bello,BOS,TOR,Strikeouts,Under,(4.5) -115,(4.5) -110,(4.5) -110,(4.5) -11
 Brayan Bello,BOS,TOR,Strikeouts,Over,(4.5) -115,(4.5) -115,(4.5) -116,(4.5) -120,4.5,53.81%
 Kyle Gibson,STL,ATL,Strikeouts,Over,(4.5) -136,(4.5) -125,(4.5) -130,(4.5) -135,4.5,56.79%
 Mitch Spence,OAK,@LAA,Strikeouts,Under,(4.5) -150,(4.5) -145,(4.5) -150,(4.5) -150,4.0,59.8%
-Logan Allen,CLE,@BAL,Strikeouts,Under,(4.5) -129,(4.5) -135,(4.5) -154,(4.5) -135,4.0,57.96%
+Logan Allen,CLE,@BAL,Strikeouts,Under,(4.5) -129,(4.5) -135,(4.5) -154,(4.5) -135,4.5,57.96%
 Bobby Miller,LAD,@CWS,Strikeouts,Over,(5.5) 128,(4.5) -160,(4.5) -158,(4.5) -145,5.0,56.46%
 Andrew Heaney,TEX,@MIL,Strikeouts,Over,(5.5) 128,(5.5) 115,(4.5) -170,(4.5) -155,5.0,53.53%
 Kyle Gibson,STL,ATL,Strikeouts,Under,(4.5) 102,(4.5) -105,(4.5) 104,(4.5) 100,4.5,49.94%
 Mitch Spence,OAK,@LAA,Strikeouts,Over,(4.5) 112,(4.5) 115,(4.5) 118,(4.5) 115,4.0,46.52%
-Logan Allen,CLE,@BAL,Strikeouts,Over,(4.5) -104,(4.5) 105,(4.5) 120,(4.5) 105,4.0,48.5%
+Logan Allen,CLE,@BAL,Strikeouts,Over,(4.5) -104,(4.5) 105,(4.5) 120,(4.5) 105,4.5,48.5%
 Bobby Miller,LAD,@CWS,Strikeouts,Under,(5.5) 123,(4.5) 125,(4.5) 124,(4.5) 110,5.0,45.39%
 Andrew Heaney,TEX,@MIL,Strikeouts,Under,(5.5) 123,(5.5) -150,(4.5) 132,(4.5) 120,5.0,48.35%
 MacKenzie Gore,WSH,@SD,Strikeouts,Under,(5.5) 106,(5.5) 100,(5.5) -102,(5.5) 100,5.5,49.76%
 Mitch Keller,PIT,@CIN,Strikeouts,Under,(5.5) 102,(5.5) -115,(5.5) -106,(5.5) 100,5.5,51.11%
 Zack Littell,TB,SEA,Strikeouts,Over,(5.5) -113,(5.5) -105,(5.5) -106,(5.5) -105,5.5,51.74%
 Gerrit Cole,NYY,@NYM,Strikeouts,Under,(5.5) -113,(5.5) -115,(5.5) -111,(5.5) -105,5.5,52.59%
-Kevin Gausman,TOR,@BOS,Strikeouts,Over,(5.5) -110,(5.5) -105,(5.5) -113,(5.5) -110,5.5,52.26%
 Kevin Gausman,TOR,@BOS,Strikeouts,Under,(5.5) -121,(5.5) -120,(5.5) -113,(5.5) -120,5.5,54.22%
+Kevin Gausman,TOR,@BOS,Strikeouts,Over,(5.5) -110,(5.5) -105,(5.5) -113,(5.5) -110,5.5,52.26%
 Gerrit Cole,NYY,@NYM,Strikeouts,Over,(5.5) -118,(5.5) -115,(5.5) -115,(5.5) -125,5.5,54.17%
-Zack Littell,TB,SEA,Strikeouts,Under,(5.5) -118,(5.5) -125,(5.5) -120,(5.5) -125,5.5,54.95%
 Mitch Keller,PIT,@CIN,Strikeouts,Over,(5.5) -136,(5.5) -115,(5.5) -120,(5.5) -130,5.5,55.55%
+Zack Littell,TB,SEA,Strikeouts,Under,(5.5) -118,(5.5) -125,(5.5) -120,(5.5) -125,5.5,54.95%
 MacKenzie Gore,WSH,@SD,Strikeouts,Over,(5.5) -141,(5.5) -130,(5.5) -125,(5.5) -130,5.5,56.78%
-Tyler Anderson,LAA,OAK,Strikeouts,Under,(5.5) -127,(5.5) -130,(5.5) -132,(5.5) -125,5.5,56.23%
+Tyler Anderson,LAA,OAK,Strikeouts,Under,(5.5) -127,(5.5) -130,(5.5) -132,(5.5) -125,5.0,56.23%
 Brandon Pfaadt,ARI,MIN,Strikeouts,Under,(5.5) 148,(5.5) -145,(5.5) -138,(5.5) -150,5.0,54.37%
 Seth Lugo,KC,MIA,Strikeouts,Under,(5.5) 145,(5.5) -145,(5.5) -148,(5.5) -150,5.0,54.92%
-Tyler Anderson,LAA,OAK,Strikeouts,Over,(5.5) -106,(5.5) -105,(5.5) 104,(5.5) -105,5.5,50.73%
+Tyler Anderson,LAA,OAK,Strikeouts,Over,(5.5) -106,(5.5) -105,(5.5) 104,(5.5) -105,5.0,50.73%
 Brandon Pfaadt,ARI,MIN,Strikeouts,Over,(5.5) 110,(5.5) 110,(5.5) 108,(5.5) 115,5.0,47.46%
 Seth Lugo,KC,MIA,Strikeouts,Over,(5.5) 115,(5.5) 115,(5.5) 116,(5.5) 115,5.0,46.46%
 Tarik Skubal,DET,PHI,Strikeouts,Over,(6.5) 106,(6.5) -110,(6.5) -102,(6.5) -105,6.5,50.66%
@@ -51,85 +51,77 @@ Hunter Brown,HOU,COL,Strikeouts,Under,(7.5) -117,(7.5) -135,(7.5) -130,(7.5) -14
 Hunter Greene,CIN,PIT,Strikeouts,Under,(6.5) ,(7.5) -130,(7.5) -152,(7.5) -155,7.0,59.21%
 Hunter Brown,HOU,COL,Strikeouts,Over,(7.5) -114,(7.5) 100,(7.5) 102,(7.5) 105,7.5,50.39%
 Hunter Greene,CIN,PIT,Strikeouts,Over,(6.5) ,(7.5) 100,(7.5) 120,(7.5) 115,7.0,47.32%
-Zack Gelof,OAK,@LAA,Total Bases,Over,None,(0.5) -115,None,(0.5) -115,0.5,53.49%
-Yordan Alvarez,HOU,COL,Runs,Under,(0.5) -107,(0.5) -115,None,(0.5) -110,0.5,52.52%
-Nolan Jones,COL,@HOU,Total Bases,Over,(1.5) 205,(0.5) -125,None,(0.5) -125,0.5,47.97%
-Nolan Jones,COL,@HOU,Total Bases,Under,(1.5) -305,(0.5) -105,None,(0.5) -105,0.5,59.25%
-Rafael Devers,BOS,TOR,Runs,Over,(0.5) -122,(0.5) -120,None,(0.5) -120,0.5,54.68%
-Rafael Devers,BOS,TOR,Runs,Under,(0.5) -112,(0.5) -115,None,(0.5) -110,0.5,52.9%
-Willi Castro,MIN,@ARI,Runs,Over,(0.5) 108,(0.5) -105,None,(0.5) -105,0.5,50.17%
-Yordan Alvarez,HOU,COL,Runs,Over,(0.5) -127,(0.5) -115,None,(0.5) -115,0.5,54.31%
-Yordan Alvarez,HOU,COL,Total Bases,Under,(1.5) -122,(1.5) -120,None,(1.5) -120,1.5,54.68%
-Royce Lewis,MIN,@ARI,Runs,Under,(0.5) -143,(0.5) -125,None,(0.5) -125,0.5,56.65%
-Ryan Mountcastle,BAL,CLE,Total Bases,Over,(1.5) -132,(1.5) -130,None,(1.5) -130,1.5,56.65%
-Yordan Alvarez,HOU,COL,Total Bases,Over,(1.5) -114,(1.5) -110,None,(1.5) -110,1.5,52.68%
-Adley Rutschman,BAL,CLE,Total Bases,Over,(1.5) 100,(1.5) -105,None,(1.5) -105,1.5,50.81%
 Willi Castro,MIN,@ARI,Runs,Under,(0.5) -148,(0.5) -125,None,(0.5) -125,0.5,56.93%
-Zack Gelof,OAK,@LAA,Total Bases,Under,None,(0.5) -115,None,(0.5) -115,0.5,53.49%
-Royce Lewis,MIN,@ARI,Runs,Over,(0.5) 106,(0.5) -110,None,(0.5) -105,0.5,50.71%
-Ryan Mountcastle,BAL,CLE,Total Bases,Under,(1.5) -106,(1.5) -105,None,(1.5) 100,1.5,50.89%
-Vinnie Pasquantino,KC,MIA,Runs,Over,(0.5) -120,(0.5) -120,None,(0.5) -120,0.5,54.55%
-Taylor Walls,TB,SEA,Total Bases,Over,None,(0.5) -125,None,(0.5) -110,0.5,53.97%
-Taylor Walls,TB,SEA,Total Bases,Under,None,(0.5) -105,None,(0.5) -120,0.5,52.88%
-Trent Grisham,NYY,@NYM,Total Bases,Over,None,(0.5) -105,None,(0.5) 100,0.5,50.61%
-Spencer Horwitz,TOR,@BOS,Runs,Under,(0.5) -129,(0.5) -125,None,(0.5) -125,0.5,55.81%
-Spencer Horwitz,TOR,@BOS,Runs,Over,(0.5) -106,(0.5) -105,None,(0.5) -105,0.5,51.3%
-Trent Grisham,NYY,@NYM,Total Bases,Under,None,(0.5) -130,None,(0.5) -130,0.5,56.52%
-Vinnie Pasquantino,KC,MIA,Runs,Under,(0.5) -114,(0.5) -115,None,(0.5) -110,0.5,53.05%
-Tyler O'Neill,BOS,TOR,Runs,Over,(0.5) -110,(0.5) -110,None,(0.5) -110,0.5,52.38%
+Zack Gelof,OAK,@LAA,Total Bases,Over,None,(0.5) -115,None,(0.5) -115,0.5,53.49%
 Salvador Perez,KC,MIA,Runs,Over,(0.5) -118,(0.5) -115,None,(0.5) -110,0.5,53.33%
 Salvador Perez,KC,MIA,Total Bases,Under,(1.5) -115,(1.5) -120,None,(1.5) -120,1.5,54.19%
+Ryan Mountcastle,BAL,CLE,Total Bases,Over,(1.5) -132,(1.5) -130,None,(1.5) -130,1.5,56.65%
+Ryan Mountcastle,BAL,CLE,Total Bases,Under,(1.5) -106,(1.5) -105,None,(1.5) 100,1.5,50.89%
+Royce Lewis,MIN,@ARI,Runs,Under,(0.5) -143,(0.5) -125,None,(0.5) -125,0.5,56.65%
+Royce Lewis,MIN,@ARI,Runs,Over,(0.5) 106,(0.5) -110,None,(0.5) -105,0.5,50.71%
+Rafael Devers,BOS,TOR,Runs,Under,(0.5) -112,(0.5) -115,None,(0.5) -110,0.5,52.9%
+Rafael Devers,BOS,TOR,Runs,Over,(0.5) -122,(0.5) -120,None,(0.5) -120,0.5,54.68%
+Nolan Jones,COL,@HOU,Total Bases,Under,(1.5) -305,(0.5) -105,None,(0.5) -105,0.5,59.25%
+Nolan Jones,COL,@HOU,Total Bases,Over,(1.5) 205,(0.5) -125,None,(0.5) -125,0.5,47.97%
+Zack Gelof,OAK,@LAA,Total Bases,Under,None,(0.5) -115,None,(0.5) -115,0.5,53.49%
 Salvador Perez,KC,MIA,Total Bases,Over,(1.5) -121,(1.5) -110,None,(1.5) -110,1.5,53.17%
+Salvador Perez,KC,MIA,Runs,Under,(0.5) -115,(0.5) -120,None,(0.5) -115,0.5,53.84%
+Yordan Alvarez,HOU,COL,Total Bases,Over,(1.5) -114,(1.5) -110,None,(1.5) -110,1.5,52.68%
+Yordan Alvarez,HOU,COL,Total Bases,Under,(1.5) -122,(1.5) -120,None,(1.5) -120,1.5,54.68%
+Spencer Horwitz,TOR,@BOS,Runs,Over,(0.5) -106,(0.5) -105,None,(0.5) -105,0.5,51.3%
+Spencer Horwitz,TOR,@BOS,Runs,Under,(0.5) -129,(0.5) -125,None,(0.5) -125,0.5,55.81%
+Alex Bregman,HOU,COL,Runs,Over,(0.5) -127,(0.5) -110,None,(0.5) -105,0.5,53.18%
+Yordan Alvarez,HOU,COL,Runs,Under,(0.5) -107,(0.5) -115,None,(0.5) -110,0.5,52.52%
+Taylor Walls,TB,SEA,Total Bases,Over,None,(0.5) -125,None,(0.5) -110,0.5,53.97%
+Taylor Walls,TB,SEA,Total Bases,Under,None,(0.5) -105,None,(0.5) -120,0.5,52.88%
+Yordan Alvarez,HOU,COL,Runs,Over,(0.5) -127,(0.5) -115,None,(0.5) -115,0.5,54.31%
+Tyler O'Neill,BOS,TOR,Runs,Over,(0.5) -110,(0.5) -110,None,(0.5) -110,0.5,52.38%
 Tyler O'Neill,BOS,TOR,Runs,Under,(0.5) -124,(0.5) -125,None,(0.5) -120,0.5,55.15%
 Vinnie Pasquantino,KC,MIA,Total Bases,Over,(1.5) -115,(1.5) -115,None,(1.5) -110,1.5,53.12%
 Vinnie Pasquantino,KC,MIA,Total Bases,Under,(1.5) -121,(1.5) -120,None,(1.5) -120,1.5,54.61%
-Salvador Perez,KC,MIA,Runs,Under,(0.5) -115,(0.5) -120,None,(0.5) -115,0.5,53.84%
-Michael Toglia,COL,@HOU,Total Bases,Under,(1.5) -360,(0.5) -120,None,(0.5) -120,0.5,62.45%
-Anthony Santander,BAL,CLE,Runs,Under,(0.5) -134,(0.5) -120,None,(0.5) -120,0.5,55.45%
-Max Kepler,MIN,@ARI,Total Bases,Under,(1.5) -139,(1.5) -125,None,(1.5) -125,1.5,56.42%
-Freddie Freeman,LAD,@CWS,Total Bases,Under,(1.5) -117,(1.5) 100,None,(1.5) -110,1.5,52.1%
-Freddie Freeman,LAD,@CWS,Total Bases,Over,(1.5) -120,(1.5) -135,None,(1.5) -120,1.5,55.51%
-Alex Bregman,HOU,COL,Runs,Over,(0.5) -127,(0.5) -110,None,(0.5) -105,0.5,53.18%
+Vinnie Pasquantino,KC,MIA,Runs,Over,(0.5) -120,(0.5) -120,None,(0.5) -120,0.5,54.55%
+Vinnie Pasquantino,KC,MIA,Runs,Under,(0.5) -114,(0.5) -115,None,(0.5) -110,0.5,53.05%
+Willi Castro,MIN,@ARI,Runs,Over,(0.5) 108,(0.5) -105,None,(0.5) -105,0.5,50.17%
 Alex Bregman,HOU,COL,Runs,Under,(0.5) -108,(0.5) -125,None,(0.5) -120,0.5,54.01%
-Andrew McCutchen,PIT,@CIN,Runs,Over,None,(0.5) -120,None,(0.5) -105,0.5,52.88%
-Andrew McCutchen,PIT,@CIN,Runs,Under,None,(0.5) -115,None,(0.5) -120,0.5,54.02%
-Bryan De La Cruz,MIA,@KC,Runs,Under,(0.5) -150,(0.5) -130,None,(0.5) -125,0.5,57.36%
 Bryan De La Cruz,MIA,@KC,Runs,Over,(0.5) 110,(0.5) -105,None,(0.5) -105,0.5,50.02%
-Bryan De La Cruz,MIA,@KC,Total Bases,Under,(1.5) -121,(1.5) -120,None,(1.5) -120,1.5,54.61%
-Geraldo Perdomo,ARI,MIN,Total Bases,Over,None,(0.5) -130,None,(0.5) -125,0.5,56.04%
-Bryan De La Cruz,MIA,@KC,Total Bases,Over,(1.5) -115,(1.5) -110,None,(1.5) -110,1.5,52.75%
-Brandon Crawford,STL,ATL,Total Bases,Over,None,(0.5) ,None,(0.5) -120,0.5,54.55%
-Bo Bichette,TOR,@BOS,Runs,Under,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
-Bo Bichette,TOR,@BOS,Runs,Over,None,(0.5) -115,None,(0.5) -110,0.5,52.93%
-Austin Riley,ATL,@STL,Total Bases,Under,(1.5) -130,(1.5) -130,None,(1.5) -125,1.5,56.2%
-Austin Riley,ATL,@STL,Total Bases,Over,(1.5) -107,(1.5) -105,None,(1.5) -105,1.5,51.38%
-Andy Pages,LAD,@CWS,Total Bases,Over,(1.5) -112,(1.5) -130,None,(1.5) -125,1.5,54.97%
-Andy Pages,LAD,@CWS,Total Bases,Under,(1.5) -125,(1.5) -105,None,(1.5) -105,1.5,52.66%
-Anthony Volpe,NYY,@NYM,Runs,Under,(0.5) -118,(0.5) -115,None,(0.5) -120,0.5,54.05%
-Anthony Volpe,NYY,@NYM,Runs,Over,(0.5) -115,(0.5) -120,None,(0.5) -110,0.5,53.47%
-Brandon Crawford,STL,ATL,Total Bases,Under,None,(0.5) ,None,(0.5) -110,0.5,52.38%
-Michael Toglia,COL,@HOU,Total Bases,Over,(1.5) 230,(0.5) -110,None,(0.5) -110,0.5,45.02%
-Geraldo Perdomo,ARI,MIN,Total Bases,Under,None,(0.5) -105,None,(0.5) -105,0.5,51.22%
-Jarred Kelenic,ATL,@STL,Runs,Under,(0.5) -136,(0.5) -125,None,(0.5) -130,0.5,56.57%
-Max Kepler,MIN,@ARI,Total Bases,Over,(1.5) 100,(1.5) -110,None,(1.5) -105,1.5,51.2%
-Matt Olson,ATL,@STL,Runs,Under,(0.5) -122,(0.5) -115,None,(0.5) -120,0.5,54.33%
-Matt Olson,ATL,@STL,Runs,Over,(0.5) -110,(0.5) -115,None,(0.5) -110,0.5,52.75%
-Marcell Ozuna,ATL,@STL,Runs,Under,(0.5) -104,(0.5) -105,None,(0.5) 100,0.5,50.73%
-Marcell Ozuna,ATL,@STL,Runs,Over,(0.5) -132,(0.5) -130,None,(0.5) -135,0.5,56.96%
-Marcell Ozuna,ATL,@STL,Total Bases,Under,(1.5) -105,(1.5) -115,None,(1.5) -110,1.5,52.36%
-Marcell Ozuna,ATL,@STL,Total Bases,Over,(1.5) -134,(1.5) -115,None,(1.5) -120,1.5,55.1%
-Maikel Garcia,KC,MIA,Total Bases,Under,(1.5) -118,(1.5) -130,None,(1.5) -125,1.5,55.4%
-Maikel Garcia,KC,MIA,Total Bases,Over,(1.5) -118,(1.5) -105,None,(1.5) -105,1.5,52.19%
-Jarred Kelenic,ATL,@STL,Runs,Over,(0.5) 100,(0.5) -110,None,(0.5) 100,0.5,50.79%
-Anthony Santander,BAL,CLE,Runs,Over,(0.5) -103,(0.5) -115,None,(0.5) -110,0.5,52.2%
-Adley Rutschman,BAL,CLE,Total Bases,Under,(1.5) -141,(1.5) -125,None,(1.5) -125,1.5,56.54%
-Juan Soto,NYY,@NYM,Runs,Under,(0.5) -110,(0.5) -105,None,(0.5) -105,0.5,51.61%
-Juan Soto,NYY,@NYM,Runs,Over,(0.5) -124,(0.5) -130,None,(0.5) -125,0.5,55.81%
-Jose Siri,TB,SEA,Total Bases,Under,(1.5) -295,(0.5) -115,None,(0.5) -115,0.5,60.55%
+Michael Toglia,COL,@HOU,Total Bases,Under,(1.5) -360,(0.5) -120,None,(0.5) -120,0.5,62.45%
 Jose Siri,TB,SEA,Total Bases,Over,(1.5) 195,(0.5) -115,None,(0.5) -115,0.5,46.96%
 Jose Altuve,HOU,COL,Total Bases,Under,(1.5) -127,(1.5) -125,None,(1.5) -125,1.5,55.69%
 Jose Altuve,HOU,COL,Total Bases,Over,(1.5) -109,(1.5) -105,None,(1.5) -105,1.5,51.53%
 Jordan Westburg,BAL,CLE,Runs,Under,(0.5) -143,(0.5) -120,None,(0.5) -120,0.5,55.98%
 Jordan Westburg,BAL,CLE,Runs,Over,(0.5) 105,(0.5) -110,None,(0.5) -110,0.5,51.18%
-MJ Melendez,KC,MIA,Runs,Over,(0.5) -105,(0.5) -110,None,(0.5) -105,0.5,51.61%
+Jarred Kelenic,ATL,@STL,Runs,Under,(0.5) -136,(0.5) -125,None,(0.5) -130,0.5,56.57%
+Jarred Kelenic,ATL,@STL,Runs,Over,(0.5) 100,(0.5) -110,None,(0.5) 100,0.5,50.79%
+Geraldo Perdomo,ARI,MIN,Total Bases,Under,None,(0.5) -105,None,(0.5) -105,0.5,51.22%
+Geraldo Perdomo,ARI,MIN,Total Bases,Over,None,(0.5) -130,None,(0.5) -125,0.5,56.04%
+Freddie Freeman,LAD,@CWS,Total Bases,Under,(1.5) -117,(1.5) 100,None,(1.5) -110,1.5,52.1%
+Freddie Freeman,LAD,@CWS,Total Bases,Over,(1.5) -120,(1.5) -135,None,(1.5) -120,1.5,55.51%
+David Fry,CLE,@BAL,Runs,Under,(0.5) -152,(0.5) -145,None,(0.5) -140,0.5,59.28%
+David Fry,CLE,@BAL,Runs,Over,(0.5) 112,(0.5) 105,None,(0.5) 105,0.5,48.24%
+Bo Bichette,TOR,@BOS,Runs,Over,None,(0.5) -115,None,(0.5) -110,0.5,52.93%
+Bo Bichette,TOR,@BOS,Runs,Under,None,(0.5) -120,None,(0.5) -120,0.5,54.55%
+Bryan De La Cruz,MIA,@KC,Total Bases,Over,(1.5) -115,(1.5) -110,None,(1.5) -110,1.5,52.75%
+Bryan De La Cruz,MIA,@KC,Runs,Under,(0.5) -150,(0.5) -130,None,(0.5) -125,0.5,57.36%
+Jose Siri,TB,SEA,Total Bases,Under,(1.5) -295,(0.5) -115,None,(0.5) -115,0.5,60.55%
+Andrew McCutchen,PIT,@CIN,Runs,Over,None,(0.5) -120,None,(0.5) -105,0.5,52.88%
+Juan Soto,NYY,@NYM,Runs,Over,(0.5) -124,(0.5) -130,None,(0.5) -125,0.5,55.81%
+Anthony Volpe,NYY,@NYM,Runs,Under,(0.5) -118,(0.5) -115,None,(0.5) -120,0.5,54.05%
+Michael Toglia,COL,@HOU,Total Bases,Over,(1.5) 230,(0.5) -110,None,(0.5) -110,0.5,45.02%
+Max Kepler,MIN,@ARI,Total Bases,Under,(1.5) -139,(1.5) -125,None,(1.5) -125,1.5,56.42%
+Max Kepler,MIN,@ARI,Total Bases,Over,(1.5) 100,(1.5) -110,None,(1.5) -105,1.5,51.2%
+Matt Olson,ATL,@STL,Runs,Under,(0.5) -122,(0.5) -115,None,(0.5) -120,0.5,54.33%
+Matt Olson,ATL,@STL,Runs,Over,(0.5) -110,(0.5) -115,None,(0.5) -110,0.5,52.75%
+Marcell Ozuna,ATL,@STL,Runs,Under,(0.5) -104,(0.5) -105,None,(0.5) 100,0.5,50.73%
+Bryan De La Cruz,MIA,@KC,Total Bases,Under,(1.5) -121,(1.5) -120,None,(1.5) -120,1.5,54.61%
+Marcell Ozuna,ATL,@STL,Total Bases,Under,(1.5) -105,(1.5) -115,None,(1.5) -110,1.5,52.36%
+Marcell Ozuna,ATL,@STL,Total Bases,Over,(1.5) -134,(1.5) -115,None,(1.5) -120,1.5,55.1%
+Maikel Garcia,KC,MIA,Total Bases,Under,(1.5) -118,(1.5) -130,None,(1.5) -125,1.5,55.4%
+Maikel Garcia,KC,MIA,Total Bases,Over,(1.5) -118,(1.5) -105,None,(1.5) -105,1.5,52.19%
 MJ Melendez,KC,MIA,Runs,Under,(0.5) -130,(0.5) -125,None,(0.5) -125,0.5,55.88%
+MJ Melendez,KC,MIA,Runs,Over,(0.5) -105,(0.5) -110,None,(0.5) -105,0.5,51.61%
+Andrew McCutchen,PIT,@CIN,Runs,Under,None,(0.5) -115,None,(0.5) -120,0.5,54.02%
+Anthony Santander,BAL,CLE,Runs,Over,(0.5) -103,(0.5) -115,None,(0.5) -110,0.5,52.2%
+Anthony Santander,BAL,CLE,Runs,Under,(0.5) -134,(0.5) -120,None,(0.5) -120,0.5,55.45%
+Anthony Volpe,NYY,@NYM,Runs,Over,(0.5) -115,(0.5) -120,None,(0.5) -110,0.5,53.47%
+Juan Soto,NYY,@NYM,Runs,Under,(0.5) -110,(0.5) -105,None,(0.5) -105,0.5,51.61%
+Marcell Ozuna,ATL,@STL,Runs,Over,(0.5) -132,(0.5) -130,None,(0.5) -135,0.5,56.96%
