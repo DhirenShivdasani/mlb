@@ -18,8 +18,13 @@ CORS(app)
 connected_clients = set()
 
 def get_db_connection():
-    conn = psycopg2.connect(DATABASE_URL)
-    return conn
+    try:
+        conn = psycopg2.connect(DATABASE_URL)
+        print("Database connection successful")
+        return conn
+    except Exception as e:
+        print(f"Error connecting to the database: {e}")
+        raise
 
 def init_db():
     conn = get_db_connection()
@@ -62,20 +67,39 @@ def start_websocket_server(port):
 
 @app.route('/get_historical_data', methods=['GET'])
 def get_historical_data():
-    if 'user_id' not in session and prod:
+    if 'user_id' not in session and os.getenv('PROD'):
         return jsonify({"error": "Unauthorized"}), 401
+
+    print(f"Full request URL: {request.url}")
+    print(f"Request args: {request.args}")
     player_name = request.args.get('player_name')
     prop = request.args.get('prop')
+
+    print(f"Received player_name: {player_name}, prop: {prop}")  # Debug print
+
+
+    if not player_name or not prop:
+        return jsonify({"error": "Missing player_name or prop parameter"}), 400
+    
     conn = get_db_connection()
     cur = conn.cursor()
+
+
     try:
-        cur.execute("SELECT timestamp, draftkings, fanduel, mgm, betrivers FROM odds WHERE player_name = %s AND prop = %s ORDER BY timestamp", (player_name, prop))
+        query = "SELECT timestamp, draftkings, fanduel, mgm, betrivers FROM odds WHERE player_name = %s AND prop = %s ORDER BY timestamp;"
+        print(f"Executing query: {query} with player_name={player_name} and prop={prop}")
+        cur.execute(query, (player_name, prop))
         rows = cur.fetchall()
         data = [{'timestamp': row[0], 'draftkings': row[1], 'fanduel': row[2], 'mgm': row[3], 'betrivers': row[4]} for row in rows]
+        print("Fetched data:", data)
         return jsonify(data)
+    except Exception as e:
+        print("Error fetching data:", e)
+        return jsonify({"error": "Error fetching data"}), 500
     finally:
         cur.close()
         conn.close()
+
 
 @app.route('/')
 def index():
