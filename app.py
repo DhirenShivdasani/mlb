@@ -74,21 +74,25 @@ def get_historical_data():
     print(f"Request args: {request.args}")
     player_name = request.args.get('player_name')
     prop = request.args.get('prop')
+    over_under = request.args.get('over_under')
 
-    print(f"Received player_name: {player_name}, prop: {prop}")  # Debug print
+    print(f"Received player_name: {player_name}, prop: {prop}, over_under: {over_under}")  # Debug print
 
-
-    if not player_name or not prop:
-        return jsonify({"error": "Missing player_name or prop parameter"}), 400
+    if not player_name or not prop or not over_under:
+        return jsonify({"error": "Missing player_name, prop, or over_under parameter"}), 400
     
     conn = get_db_connection()
     cur = conn.cursor()
 
-
     try:
-        query = "SELECT timestamp, draftkings, fanduel, mgm, betrivers FROM odds WHERE player_name = %s AND prop = %s ORDER BY timestamp;"
-        print(f"Executing query: {query} with player_name={player_name} and prop={prop}")
-        cur.execute(query, (player_name, prop))
+        query = """
+        SELECT timestamp, draftkings, fanduel, mgm, betrivers 
+        FROM odds 
+        WHERE player_name = %s AND prop = %s AND over_under = %s 
+        ORDER BY timestamp;
+        """
+        print(f"Executing query: {query} with player_name={player_name}, prop={prop}, over_under={over_under}")
+        cur.execute(query, (player_name, prop, over_under))
         rows = cur.fetchall()
         data = [{'timestamp': row[0], 'draftkings': row[1], 'fanduel': row[2], 'mgm': row[3], 'betrivers': row[4]} for row in rows]
         print("Fetched data:", data)
@@ -99,6 +103,7 @@ def get_historical_data():
     finally:
         cur.close()
         conn.close()
+
 
 
 @app.route('/')
