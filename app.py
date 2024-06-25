@@ -8,7 +8,7 @@ import psycopg2
 import bcrypt
 from flask import Flask, jsonify, request, session, send_from_directory,redirect, url_for,render_template
 
-prod = True
+prod = False
 DATABASE_URL = os.getenv('DATABASE_URL')
 
 app = Flask(__name__)

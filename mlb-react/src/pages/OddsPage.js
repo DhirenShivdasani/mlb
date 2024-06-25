@@ -70,6 +70,7 @@ const OddsPage = ({ updateLastUpdated }) => {
     const showHistoricalData = async (playerName, prop) => {
         const encodedPlayerName = encodeURIComponent(playerName);
         const encodedProp = encodeURIComponent(prop);
+        
         const url = `/get_historical_data?player_name=${encodedPlayerName}&prop=${encodedProp}`;
 
         try {
