@@ -16,8 +16,8 @@
 14,Vladimir Guerrero Jr.,TOR - IF,7.5,Hitter Fantasy Score
 15,Zack Littell,TB - P,5.5,Pitcher Strikeouts
 16,Gerrit Cole,NYY - P,5.5,Pitcher Strikeouts
-17,Aaron Judge,NYY - OF,1.5,Total Bases
-18,Hunter Greene,CIN - P,7.0,Pitcher Strikeouts
+17,Hunter Greene,CIN - P,7.0,Pitcher Strikeouts
+18,Aaron Judge,NYY - OF,1.5,Total Bases
 19,Aaron Judge,NYY - OF,9.0,Hitter Fantasy Score
 20,Cole Irvin,BAL - P,3.5,Pitcher Strikeouts
 21,Logan Allen,CLE - P,4.0,Pitcher Strikeouts
@@ -109,7 +109,7 @@
 107,Bobby Miller,LAD - P,1.5,Walks Allowed
 108,Cole Irvin,BAL - P,25.0,Pitcher Fantasy Score
 109,Ranger Suárez,PHI - P,31.5,Pitcher Fantasy Score
-110,Tarik Skubal,DET - P,34.5,Pitcher Fantasy Score
+110,Tarik Skubal,DET - P,33.5,Pitcher Fantasy Score
 111,Luis Castillo,SEA - P,34.5,Pitcher Fantasy Score
 112,Zack Littell,TB - P,30.0,Pitcher Fantasy Score
 113,Kevin Gausman,TOR - P,30.5,Pitcher Fantasy Score
@@ -126,171 +126,170 @@
 124,José Ramírez,CLE - IF,2.5,Hits+Runs+RBIs
 125,Gunnar Henderson,BAL - IF,1.5,Hits+Runs+RBIs
 126,Ramón Urías,BAL - IF,1.5,Hits+Runs+RBIs
-127,Andy Ibáñez,DET - IF,1.5,Hits+Runs+RBIs
-128,Gio Urshela,DET - IF,1.5,Hits+Runs+RBIs
-129,Bryce Harper,PHI - IF,1.5,Hits+Runs+RBIs
-130,Mark Canha,DET - OF,1.5,Hits+Runs+RBIs
-131,Nick Castellanos,PHI - OF,1.5,Hits+Runs+RBIs
-132,Cal Raleigh,SEA - C,1.5,Hits+Runs+RBIs
-133,Josh Lowe,TB - OF,1.5,Hits+Runs+RBIs
-134,Dominic Canzone,SEA - OF,1.5,Hits+Runs+RBIs
-135,Yandy Díaz,TB - IF,1.5,Hits+Runs+RBIs
-136,J.P. Crawford,SEA - IF,1.5,Hits+Runs+RBIs
-137,Jorge Polanco,SEA - IF,1.5,Hits+Runs+RBIs
-138,Francisco Lindor,NYM - IF,1.5,Hits+Runs+RBIs
-139,Alex Verdugo,NYY - OF,1.5,Hits+Runs+RBIs
-140,DJ LeMahieu,NYY - IF,1.5,Hits+Runs+RBIs
-141,Gleyber Torres,NYY - IF,1.5,Hits+Runs+RBIs
-142,J.D. Davis,NYY - IF,1.5,Hits+Runs+RBIs
-143,Jose Trevino,NYY - C,1.5,Hits+Runs+RBIs
-144,Bryan Reynolds,PIT - OF,1.5,Hits+Runs+RBIs
-145,Elly De La Cruz,CIN - IF,1.5,Hits+Runs+RBIs
-146,Jeimer Candelario,CIN - IF,1.5,Hits+Runs+RBIs
-147,Tyler Stephenson,CIN - C,1.5,Hits+Runs+RBIs
-148,Oneil Cruz,PIT - IF,1.5,Hits+Runs+RBIs
-149,Ceddanne Rafaela,BOS - OF,1.5,Hits+Runs+RBIs
-150,David Hamilton,BOS - IF,1.5,Hits+Runs+RBIs
-151,Masataka Yoshida,BOS - OF,1.5,Hits+Runs+RBIs
-152,Daulton Varsho,TOR - OF,1.5,Hits+Runs+RBIs
-153,Wilyer Abreu,BOS - OF,1.5,Hits+Runs+RBIs
-154,Paul Goldschmidt,STL - IF,1.5,Hits+Runs+RBIs
-155,Travis d'Arnaud,ATL - C,1.5,Hits+Runs+RBIs
-156,Willson Contreras,STL - C,1.5,Hits+Runs+RBIs
-157,Jake Meyers,HOU - OF,1.5,Hits+Runs+RBIs
-158,Mauricio Dubón,HOU - OF,1.5,Hits+Runs+RBIs
-159,Andrew Benintendi,CWS - OF,1.5,Hits+Runs+RBIs
-160,Andrew Vaughn,CWS - IF,1.5,Hits+Runs+RBIs
-161,Luis Robert,CWS - OF,1.5,Hits+Runs+RBIs
-162,Gavin Lux,LAD - IF,1.5,Hits+Runs+RBIs
-163,Josh Bell,MIA - IF,1.5,Hits+Runs+RBIs
-164,Nick Gordon,MIA - OF,1.5,Hits+Runs+RBIs
-165,Bobby Witt Jr.,KC - IF,2.5,Hits+Runs+RBIs
-166,Otto Lopez,MIA - IF,1.5,Hits+Runs+RBIs
-167,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
-168,Tim Anderson,MIA - IF,1.5,Hits+Runs+RBIs
-169,Kyle Isbel,KC - OF,1.5,Hits+Runs+RBIs
-170,Nick Loftin,KC - IF,1.5,Hits+Runs+RBIs
-171,Adolis García,TEX - OF,1.5,Hits+Runs+RBIs
-172,Marcus Semien,TEX - IF,1.5,Hits+Runs+RBIs
-173,Joey Ortiz,MIL - IF,1.5,Hits+Runs+RBIs
-174,Nathaniel Lowe,TEX - IF,1.5,Hits+Runs+RBIs
-175,Rhys Hoskins,MIL - IF,1.5,Hits+Runs+RBIs
-176,Christian Yelich,MIL - OF,1.5,Hits+Runs+RBIs
-177,Brandon Drury,LAA - IF,1.5,Hits+Runs+RBIs
-178,Brent Rooker,OAK - OF,1.5,Hits+Runs+RBIs
-179,Logan O'Hoppe,LAA - C,1.5,Hits+Runs+RBIs
-180,Max Schuemann,OAK - IF,1.5,Hits+Runs+RBIs
-181,Luis Rengifo,LAA - IF,1.5,Hits+Runs+RBIs
-182,Miguel Andujar,OAK - OF,1.5,Hits+Runs+RBIs
-183,Nolan Schanuel,LAA - IF,1.5,Hits+Runs+RBIs
-184,Shea Langeliers,OAK - C,1.5,Hits+Runs+RBIs
-185,Taylor Ward,LAA - OF,1.5,Hits+Runs+RBIs
-186,Tyler Soderstrom,OAK - IF,0.5,Hits+Runs+RBIs
-187,Willie Calhoun,LAA - IF,1.5,Hits+Runs+RBIs
-188,Zach Neto,LAA - IF,1.5,Hits+Runs+RBIs
-189,Travis Jankowski,TEX - OF,1.5,Hits+Runs+RBIs
-190,Carlos Correa,MIN - IF,1.5,Hits+Runs+RBIs
-191,Corbin Carroll,AZ - OF,1.5,Hits+Runs+RBIs
-192,Carlos Santana,MIN - IF,1.5,Hits+Runs+RBIs
-193,Ketel Marte,AZ - IF,1.5,Hits+Runs+RBIs
-194,Trevor Larnach,MIN - OF,1.5,Hits+Runs+RBIs
-195,Lourdes Gurriel Jr.,AZ - OF,1.5,Hits+Runs+RBIs
-196,Tucker Barnhart,AZ - C,0.5,Hits+Runs+RBIs
-197,Joey Meneses,WSH - IF,1.5,Hits+Runs+RBIs
-198,Donovan Solano,SD - IF,1.5,Hits+Runs+RBIs
-199,Lane Thomas,WSH - OF,1.5,Hits+Runs+RBIs
-200,Jackson Merrill,SD - OF,1.5,Hits+Runs+RBIs
-201,Jake Cronenworth,SD - IF,1.5,Hits+Runs+RBIs
-202,Jurickson Profar,SD - OF,1.5,Hits+Runs+RBIs
-203,Manny Machado,SD - IF,1.5,Hits+Runs+RBIs
-204,Christopher Morel,CHC - IF,1.5,Hits+Runs+RBIs
-205,Brett Wisely,SF - IF,1.5,Hits+Runs+RBIs
-206,Cody Bellinger,CHC - OF,1.5,Hits+Runs+RBIs
-207,Jorge Soler,SF - DH,1.5,Hits+Runs+RBIs
-208,Patrick Bailey,SF - C,1.5,Hits+Runs+RBIs
-209,William Contreras,MIL - C,0.5,Singles
-210,Brayan Bello,BOS - P,16.5,Pitching Outs
-211,Kyle Gibson,STL - P,17.5,Pitching Outs
-212,Reynaldo López,ATL - P,17.0,Pitching Outs
-213,Austin Gomber,COL - P,16.5,Pitching Outs
-214,Mitch Spence,OAK - P,17.5,Pitching Outs
-215,MacKenzie Gore,WSH - P,17.5,Pitching Outs
-216,Andrew Heaney,TEX - P,15.5,Pitching Outs
-217,José Ramírez,CLE - IF,9.5,Hitter Fantasy Score
-218,Gunnar Henderson,BAL - IF,7.5,Hitter Fantasy Score
-219,Steven Kwan,CLE - OF,7.0,Hitter Fantasy Score
-220,Adley Rutschman,BAL - C,7.5,Hitter Fantasy Score
-221,Bryce Harper,PHI - IF,7.5,Hitter Fantasy Score
-222,Kyle Schwarber,PHI - DH,6.5,Hitter Fantasy Score
-223,Trea Turner,PHI - IF,7.5,Hitter Fantasy Score
-224,Yandy Díaz,TB - IF,7.0,Hitter Fantasy Score
-225,Aaron Judge,NYY - OF,9.0,Hitter Fantasy Score
-226,Pete Alonso,NYM - IF,6.0,Hitter Fantasy Score
-227,Juan Soto,NYY - OF,8.0,Hitter Fantasy Score
-228,Bryan Reynolds,PIT - OF,8.5,Hitter Fantasy Score
-229,Elly De La Cruz,CIN - IF,8.5,Hitter Fantasy Score
-230,Rafael Devers,BOS - IF,7.5,Hitter Fantasy Score
-231,Vladimir Guerrero Jr.,TOR - IF,7.5,Hitter Fantasy Score
-232,Jarren Duran,BOS - OF,9.5,Hitter Fantasy Score
-233,Marcell Ozuna,ATL - DH,7.5,Hitter Fantasy Score
-234,Ozzie Albies,ATL - IF,7.0,Hitter Fantasy Score
-235,Bobby Witt Jr.,KC - IF,9.5,Hitter Fantasy Score
-236,Corey Seager,TEX - IF,8.0,Hitter Fantasy Score
-237,Christian Yelich,MIL - OF,7.0,Hitter Fantasy Score
-238,Marcus Semien,TEX - IF,7.0,Hitter Fantasy Score
-239,William Contreras,MIL - C,6.5,Hitter Fantasy Score
-240,Yordan Alvarez,HOU - OF,8.5,Hitter Fantasy Score
-241,Jose Altuve,HOU - IF,8.5,Hitter Fantasy Score
-242,Shohei Ohtani,LAD - DH,10.5,Hitter Fantasy Score
-243,Freddie Freeman,LAD - IF,8.5,Hitter Fantasy Score
-244,Carlos Correa,MIN - IF,7.0,Hitter Fantasy Score
-245,Ketel Marte,AZ - IF,6.5,Hitter Fantasy Score
-246,Manny Machado,SD - IF,7.5,Hitter Fantasy Score
-247,Luis Arraez,SD - IF,6.0,Hitter Fantasy Score
-248,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score
-249,Seiya Suzuki,CHC - OF,7.5,Hitter Fantasy Score
-250,Shohei Ohtani,LAD - DH,0.5,Walks
-251,Andruw Monasterio,MIL - IF,0.5,Hits
-252,David Peterson,NYM - P,2.5,Earned Runs Allowed
-253,Seth Lugo,KC - P,2.5,Earned Runs Allowed
-254,Hunter Brown,HOU - P,1.5,Earned Runs Allowed
-255,Bryse Wilson,MIL - P,2.5,Earned Runs Allowed
-256,Tyler Anderson,LAA - P,2.5,Earned Runs Allowed
-257,Brandon Pfaadt,AZ - P,2.5,Earned Runs Allowed
-258,Cole Irvin,BAL - P,2.5,Earned Runs Allowed
-259,Andrew Heaney,TEX - P,2.5,Earned Runs Allowed
-260,José Ramírez,CLE - IF,0.5,RBIs
-261,Shohei Ohtani,LAD - DH,0.5,RBIs
-262,Anthony Santander,BAL - OF,0.5,Runs
-263,Jordan Westburg,BAL - IF,0.5,Runs
-264,Matt Vierling,DET - IF,0.5,Runs
-265,Anthony Volpe,NYY - IF,0.5,Runs
-266,Andrew McCutchen,PIT - OF,0.5,Runs
-267,Rafael Devers,BOS - IF,0.5,Runs
-268,Bo Bichette,TOR - IF,0.5,Runs
-269,Tyler O'Neill,BOS - OF,0.5,Runs
-270,Spencer Horwitz,TOR - IF,0.5,Runs
-271,Jarred Kelenic,ATL - OF,0.5,Runs
-272,Matt Olson,ATL - IF,0.5,Runs
-273,Yordan Alvarez,HOU - OF,0.5,Runs
-274,Alex Bregman,HOU - IF,0.5,Runs
-275,Bryan De La Cruz,MIA - OF,0.5,Runs
-276,Salvador Perez,KC - C,0.5,Runs
-277,Vinnie Pasquantino,KC - IF,0.5,Runs
-278,Jazz Chisholm Jr.,MIA - OF,0.5,Runs
-279,MJ Melendez,KC - OF,0.5,Runs
-280,William Contreras,MIL - C,0.5,Runs
-281,Royce Lewis,MIN - IF,0.5,Runs
-282,Willi Castro,MIN - IF,0.5,Runs
-283,Alec Bohm,PHI - IF,0.5,Hitter Strikeouts
-284,Colt Keith,DET - IF,0.5,Hitter Strikeouts
-285,Jose Siri,TB - OF,1.5,Hitter Strikeouts
-286,Masataka Yoshida,BOS - OF,0.5,Hitter Strikeouts
-287,Dominic Smith,BOS - IF,0.5,Hitter Strikeouts
-288,Ozzie Albies,ATL - IF,0.5,Hitter Strikeouts
-289,Forrest Wall,ATL - OF,0.5,Hitter Strikeouts
-290,Corey Seager,TEX - IF,0.5,Hitter Strikeouts
-291,Alec Burleson,STL - OF,0.5,Hitter Strikeouts
-292,Brendan Donovan,STL - OF,0.5,Hitter Strikeouts
-293,Jonah Heim,TEX - C,0.5,Hitter Strikeouts
-294,Nolan Gorman,STL - IF,1.5,Hitter Strikeouts
+127,Gio Urshela,DET - IF,1.5,Hits+Runs+RBIs
+128,Bryce Harper,PHI - IF,1.5,Hits+Runs+RBIs
+129,Mark Canha,DET - OF,1.5,Hits+Runs+RBIs
+130,Nick Castellanos,PHI - OF,1.5,Hits+Runs+RBIs
+131,Cal Raleigh,SEA - C,1.5,Hits+Runs+RBIs
+132,Josh Lowe,TB - OF,1.5,Hits+Runs+RBIs
+133,Dominic Canzone,SEA - OF,1.5,Hits+Runs+RBIs
+134,Yandy Díaz,TB - IF,1.5,Hits+Runs+RBIs
+135,J.P. Crawford,SEA - IF,1.5,Hits+Runs+RBIs
+136,Jorge Polanco,SEA - IF,1.5,Hits+Runs+RBIs
+137,Francisco Lindor,NYM - IF,1.5,Hits+Runs+RBIs
+138,Alex Verdugo,NYY - OF,1.5,Hits+Runs+RBIs
+139,DJ LeMahieu,NYY - IF,1.5,Hits+Runs+RBIs
+140,Gleyber Torres,NYY - IF,1.5,Hits+Runs+RBIs
+141,J.D. Davis,NYY - IF,1.5,Hits+Runs+RBIs
+142,Jose Trevino,NYY - C,1.5,Hits+Runs+RBIs
+143,Bryan Reynolds,PIT - OF,1.5,Hits+Runs+RBIs
+144,Elly De La Cruz,CIN - IF,1.5,Hits+Runs+RBIs
+145,Jeimer Candelario,CIN - IF,1.5,Hits+Runs+RBIs
+146,Tyler Stephenson,CIN - C,1.5,Hits+Runs+RBIs
+147,Oneil Cruz,PIT - IF,1.5,Hits+Runs+RBIs
+148,Ceddanne Rafaela,BOS - OF,1.5,Hits+Runs+RBIs
+149,David Hamilton,BOS - IF,1.5,Hits+Runs+RBIs
+150,Masataka Yoshida,BOS - OF,1.5,Hits+Runs+RBIs
+151,Daulton Varsho,TOR - OF,1.5,Hits+Runs+RBIs
+152,Wilyer Abreu,BOS - OF,1.5,Hits+Runs+RBIs
+153,Paul Goldschmidt,STL - IF,1.5,Hits+Runs+RBIs
+154,Travis d'Arnaud,ATL - C,1.5,Hits+Runs+RBIs
+155,Willson Contreras,STL - C,1.5,Hits+Runs+RBIs
+156,Jake Meyers,HOU - OF,1.5,Hits+Runs+RBIs
+157,Mauricio Dubón,HOU - OF,1.5,Hits+Runs+RBIs
+158,Andrew Benintendi,CWS - OF,1.5,Hits+Runs+RBIs
+159,Andrew Vaughn,CWS - IF,1.5,Hits+Runs+RBIs
+160,Luis Robert,CWS - OF,1.5,Hits+Runs+RBIs
+161,Gavin Lux,LAD - IF,1.5,Hits+Runs+RBIs
+162,Josh Bell,MIA - IF,1.5,Hits+Runs+RBIs
+163,Nick Gordon,MIA - OF,1.5,Hits+Runs+RBIs
+164,Bobby Witt Jr.,KC - IF,2.5,Hits+Runs+RBIs
+165,Otto Lopez,MIA - IF,1.5,Hits+Runs+RBIs
+166,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
+167,Tim Anderson,MIA - IF,1.5,Hits+Runs+RBIs
+168,Kyle Isbel,KC - OF,1.5,Hits+Runs+RBIs
+169,Nick Loftin,KC - IF,1.5,Hits+Runs+RBIs
+170,Adolis García,TEX - OF,1.5,Hits+Runs+RBIs
+171,Marcus Semien,TEX - IF,1.5,Hits+Runs+RBIs
+172,Joey Ortiz,MIL - IF,1.5,Hits+Runs+RBIs
+173,Nathaniel Lowe,TEX - IF,1.5,Hits+Runs+RBIs
+174,Rhys Hoskins,MIL - IF,1.5,Hits+Runs+RBIs
+175,Christian Yelich,MIL - OF,1.5,Hits+Runs+RBIs
+176,Brandon Drury,LAA - IF,1.5,Hits+Runs+RBIs
+177,Brent Rooker,OAK - OF,1.5,Hits+Runs+RBIs
+178,Logan O'Hoppe,LAA - C,1.5,Hits+Runs+RBIs
+179,Max Schuemann,OAK - IF,1.5,Hits+Runs+RBIs
+180,Luis Rengifo,LAA - IF,1.5,Hits+Runs+RBIs
+181,Miguel Andujar,OAK - OF,1.5,Hits+Runs+RBIs
+182,Nolan Schanuel,LAA - IF,1.5,Hits+Runs+RBIs
+183,Shea Langeliers,OAK - C,1.5,Hits+Runs+RBIs
+184,Taylor Ward,LAA - OF,1.5,Hits+Runs+RBIs
+185,Tyler Soderstrom,OAK - IF,0.5,Hits+Runs+RBIs
+186,Willie Calhoun,LAA - IF,1.5,Hits+Runs+RBIs
+187,Zach Neto,LAA - IF,1.5,Hits+Runs+RBIs
+188,Travis Jankowski,TEX - OF,1.5,Hits+Runs+RBIs
+189,Carlos Correa,MIN - IF,1.5,Hits+Runs+RBIs
+190,Corbin Carroll,AZ - OF,1.5,Hits+Runs+RBIs
+191,Carlos Santana,MIN - IF,1.5,Hits+Runs+RBIs
+192,Ketel Marte,AZ - IF,1.5,Hits+Runs+RBIs
+193,Trevor Larnach,MIN - OF,1.5,Hits+Runs+RBIs
+194,Lourdes Gurriel Jr.,AZ - OF,1.5,Hits+Runs+RBIs
+195,Tucker Barnhart,AZ - C,0.5,Hits+Runs+RBIs
+196,Joey Meneses,WSH - IF,1.5,Hits+Runs+RBIs
+197,Donovan Solano,SD - IF,1.5,Hits+Runs+RBIs
+198,Lane Thomas,WSH - OF,1.5,Hits+Runs+RBIs
+199,Jackson Merrill,SD - OF,1.5,Hits+Runs+RBIs
+200,Jake Cronenworth,SD - IF,1.5,Hits+Runs+RBIs
+201,Jurickson Profar,SD - OF,1.5,Hits+Runs+RBIs
+202,Manny Machado,SD - IF,1.5,Hits+Runs+RBIs
+203,Christopher Morel,CHC - IF,1.5,Hits+Runs+RBIs
+204,Brett Wisely,SF - IF,1.5,Hits+Runs+RBIs
+205,Cody Bellinger,CHC - OF,1.5,Hits+Runs+RBIs
+206,Patrick Bailey,SF - C,1.5,Hits+Runs+RBIs
+207,William Contreras,MIL - C,0.5,Singles
+208,Wilmer Flores,SF - IF,0.5,Singles
+209,Brayan Bello,BOS - P,16.5,Pitching Outs
+210,Kyle Gibson,STL - P,17.5,Pitching Outs
+211,Reynaldo López,ATL - P,17.0,Pitching Outs
+212,Austin Gomber,COL - P,16.5,Pitching Outs
+213,Mitch Spence,OAK - P,17.5,Pitching Outs
+214,MacKenzie Gore,WSH - P,17.5,Pitching Outs
+215,Andrew Heaney,TEX - P,15.5,Pitching Outs
+216,José Ramírez,CLE - IF,9.5,Hitter Fantasy Score
+217,Gunnar Henderson,BAL - IF,7.5,Hitter Fantasy Score
+218,Steven Kwan,CLE - OF,7.0,Hitter Fantasy Score
+219,Adley Rutschman,BAL - C,7.5,Hitter Fantasy Score
+220,Bryce Harper,PHI - IF,7.5,Hitter Fantasy Score
+221,Kyle Schwarber,PHI - DH,6.5,Hitter Fantasy Score
+222,Trea Turner,PHI - IF,7.5,Hitter Fantasy Score
+223,Yandy Díaz,TB - IF,7.0,Hitter Fantasy Score
+224,Aaron Judge,NYY - OF,9.0,Hitter Fantasy Score
+225,Pete Alonso,NYM - IF,6.0,Hitter Fantasy Score
+226,Juan Soto,NYY - OF,8.0,Hitter Fantasy Score
+227,Bryan Reynolds,PIT - OF,8.5,Hitter Fantasy Score
+228,Elly De La Cruz,CIN - IF,8.5,Hitter Fantasy Score
+229,Rafael Devers,BOS - IF,7.5,Hitter Fantasy Score
+230,Vladimir Guerrero Jr.,TOR - IF,7.5,Hitter Fantasy Score
+231,Jarren Duran,BOS - OF,9.5,Hitter Fantasy Score
+232,Marcell Ozuna,ATL - DH,7.5,Hitter Fantasy Score
+233,Ozzie Albies,ATL - IF,7.0,Hitter Fantasy Score
+234,Bobby Witt Jr.,KC - IF,9.5,Hitter Fantasy Score
+235,Corey Seager,TEX - IF,8.0,Hitter Fantasy Score
+236,Christian Yelich,MIL - OF,7.0,Hitter Fantasy Score
+237,Marcus Semien,TEX - IF,7.0,Hitter Fantasy Score
+238,William Contreras,MIL - C,6.5,Hitter Fantasy Score
+239,Yordan Alvarez,HOU - OF,8.5,Hitter Fantasy Score
+240,Jose Altuve,HOU - IF,8.5,Hitter Fantasy Score
+241,Shohei Ohtani,LAD - DH,10.5,Hitter Fantasy Score
+242,Freddie Freeman,LAD - IF,8.5,Hitter Fantasy Score
+243,Carlos Correa,MIN - IF,7.0,Hitter Fantasy Score
+244,Ketel Marte,AZ - IF,6.5,Hitter Fantasy Score
+245,Manny Machado,SD - IF,7.5,Hitter Fantasy Score
+246,Luis Arraez,SD - IF,6.0,Hitter Fantasy Score
+247,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score
+248,Seiya Suzuki,CHC - OF,7.5,Hitter Fantasy Score
+249,Shohei Ohtani,LAD - DH,0.5,Walks
+250,Andruw Monasterio,MIL - IF,0.5,Hits
+251,David Peterson,NYM - P,2.5,Earned Runs Allowed
+252,Seth Lugo,KC - P,2.5,Earned Runs Allowed
+253,Hunter Brown,HOU - P,1.5,Earned Runs Allowed
+254,Bryse Wilson,MIL - P,2.5,Earned Runs Allowed
+255,Tyler Anderson,LAA - P,2.5,Earned Runs Allowed
+256,Brandon Pfaadt,AZ - P,2.5,Earned Runs Allowed
+257,Cole Irvin,BAL - P,2.5,Earned Runs Allowed
+258,Andrew Heaney,TEX - P,2.5,Earned Runs Allowed
+259,José Ramírez,CLE - IF,0.5,RBIs
+260,Shohei Ohtani,LAD - DH,0.5,RBIs
+261,Anthony Santander,BAL - OF,0.5,Runs
+262,Jordan Westburg,BAL - IF,0.5,Runs
+263,Matt Vierling,DET - IF,0.5,Runs
+264,Anthony Volpe,NYY - IF,0.5,Runs
+265,Andrew McCutchen,PIT - OF,0.5,Runs
+266,Rafael Devers,BOS - IF,0.5,Runs
+267,Bo Bichette,TOR - IF,0.5,Runs
+268,Tyler O'Neill,BOS - OF,0.5,Runs
+269,Spencer Horwitz,TOR - IF,0.5,Runs
+270,Jarred Kelenic,ATL - OF,0.5,Runs
+271,Matt Olson,ATL - IF,0.5,Runs
+272,Yordan Alvarez,HOU - OF,0.5,Runs
+273,Alex Bregman,HOU - IF,0.5,Runs
+274,Bryan De La Cruz,MIA - OF,0.5,Runs
+275,Salvador Perez,KC - C,0.5,Runs
+276,Vinnie Pasquantino,KC - IF,0.5,Runs
+277,Jazz Chisholm Jr.,MIA - OF,0.5,Runs
+278,MJ Melendez,KC - OF,0.5,Runs
+279,William Contreras,MIL - C,0.5,Runs
+280,Royce Lewis,MIN - IF,0.5,Runs
+281,Willi Castro,MIN - IF,0.5,Runs
+282,Alec Bohm,PHI - IF,0.5,Hitter Strikeouts
+283,Colt Keith,DET - IF,0.5,Hitter Strikeouts
+284,Jose Siri,TB - OF,1.5,Hitter Strikeouts
+285,Masataka Yoshida,BOS - OF,0.5,Hitter Strikeouts
+286,Dominic Smith,BOS - IF,0.5,Hitter Strikeouts
+287,Ozzie Albies,ATL - IF,0.5,Hitter Strikeouts
+288,Forrest Wall,ATL - OF,0.5,Hitter Strikeouts
+289,Corey Seager,TEX - IF,0.5,Hitter Strikeouts
+290,Alec Burleson,STL - OF,0.5,Hitter Strikeouts
+291,Brendan Donovan,STL - OF,0.5,Hitter Strikeouts
+292,Jonah Heim,TEX - C,0.5,Hitter Strikeouts
+293,Nolan Gorman,STL - IF,1.5,Hitter Strikeouts
