@@ -1,7 +1,7 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
 Carlos Carrasco,CLE,@BAL,Strikeouts,Over,(3.5) 102,(3.5) -110,(3.5) -104,(3.5) -105,3.5,51.02%
-Bryce Elder,ATL,@STL,Strikeouts,Over,None,(3.5) -120,(3.5) -113,(3.5) -120,3.5,54.05%
 Bryce Elder,ATL,@STL,Strikeouts,Under,None,(3.5) -105,(3.5) -113,(3.5) -105,3.5,51.83%
+Bryce Elder,ATL,@STL,Strikeouts,Over,None,(3.5) -120,(3.5) -113,(3.5) -120,3.5,54.05%
 Carlos Carrasco,CLE,@BAL,Strikeouts,Under,(3.5) -134,(3.5) -120,(3.5) -122,(3.5) -125,3.5,55.58%
 Gavin Stone,LAD,@CWS,Strikeouts,Over,(4.5) -132,(4.5) -140,(4.5) -132,(4.5) -150,5.0,58.03%
 Erick Fedde,CWS,LAD,Strikeouts,Over,(4.5) -143,(4.5) -130,(4.5) -146,(4.5) -145,5.0,58.48%
@@ -17,25 +17,23 @@ Luis Gil,NYY,@NYM,Strikeouts,Over,(6.5) 135,(5.5) -140,(5.5) -142,(5.5) -140,6.0
 Grayson Rodriguez,BAL,CLE,Strikeouts,Over,(5.5) 110,(5.5) 110,(5.5) 106,(5.5) 120,5.0,47.31%
 Sean Manaea,NYM,NYY,Strikeouts,Over,(5.5) 105,(5.5) -105,(5.5) 110,(5.5) -105,5.5,49.71%
 Luis Gil,NYY,@NYM,Strikeouts,Under,(6.5) 112,(5.5) 105,(5.5) 112,(5.5) 105,6.0,47.98%
-Max Kepler,MIN,@ARI,Total Bases,Over,(1.5) -103,(1.5) -110,None,(1.5) -105,1.5,51.45%
-Max Kepler,MIN,@ARI,Total Bases,Under,(1.5) -137,(1.5) -125,None,(1.5) -120,1.5,55.97%
-Royce Lewis,MIN,@ARI,Total Bases,Over,(1.5) -115,(1.5) -120,None,(1.5) -120,1.5,54.19%
-Adley Rutschman,BAL,CLE,Runs,Over,(0.5) -136,(0.5) -125,None,(0.5) -125,0.5,56.25%
-Ryan Mountcastle,BAL,CLE,Runs,Under,(0.5) -125,(0.5) -110,None,(0.5) -110,0.5,53.44%
-Ryan Mountcastle,BAL,CLE,Runs,Over,(0.5) -108,(0.5) -120,None,(0.5) -120,0.5,53.67%
 Jordan Westburg,BAL,CLE,Runs,Under,(0.5) -136,(0.5) -120,None,(0.5) -115,0.5,55.22%
+Max Kepler,MIN,@ARI,Total Bases,Over,(1.5) -103,(1.5) -110,None,(1.5) -105,1.5,51.45%
+Ryan Mountcastle,BAL,CLE,Runs,Over,(0.5) -108,(0.5) -120,None,(0.5) -120,0.5,53.67%
+Royce Lewis,MIN,@ARI,Total Bases,Over,(1.5) -115,(1.5) -120,None,(1.5) -120,1.5,54.19%
+Royce Lewis,MIN,@ARI,Total Bases,Under,(1.5) -121,(1.5) -110,None,(1.5) -110,1.5,53.17%
+Jordan Westburg,BAL,CLE,Runs,Over,(0.5) 100,(0.5) -115,None,(0.5) -110,0.5,51.96%
+Ryan Mountcastle,BAL,CLE,Runs,Under,(0.5) -125,(0.5) -110,None,(0.5) -110,0.5,53.44%
 Ryan O'Hearn,BAL,CLE,Total Bases,Over,(1.5) 107,(1.5) -105,None,(1.5) 100,1.5,49.84%
 Ryan O'Hearn,BAL,CLE,Total Bases,Under,(1.5) -150,(1.5) -125,None,(1.5) -135,1.5,57.67%
 Ryan O'Hearn,BAL,CLE,Runs,Over,(0.5) -107,(0.5) -110,None,(0.5) -110,0.5,52.15%
 Ryan O'Hearn,BAL,CLE,Runs,Under,(0.5) -127,(0.5) -120,None,(0.5) -115,0.5,54.66%
-Trent Grisham,NYY,@NYM,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
-Trent Grisham,NYY,@NYM,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
 Tucker Barnhart,ARI,MIN,Total Bases,Over,None,(0.5) -105,None,(0.5) -105,0.5,51.22%
 Tucker Barnhart,ARI,MIN,Total Bases,Under,None,(0.5) -130,None,(0.5) -125,0.5,56.04%
-Royce Lewis,MIN,@ARI,Total Bases,Under,(1.5) -121,(1.5) -110,None,(1.5) -110,1.5,53.17%
-Jordan Westburg,BAL,CLE,Runs,Over,(0.5) 100,(0.5) -115,None,(0.5) -110,0.5,51.96%
-Gunnar Henderson,BAL,CLE,Total Bases,Over,(1.5) -120,(1.5) -125,None,(1.5) -130,1.5,55.54%
-Jordan Westburg,BAL,CLE,Total Bases,Over,(1.5) -113,(1.5) -130,None,(1.5) -125,1.5,55.04%
+Max Kepler,MIN,@ARI,Total Bases,Under,(1.5) -137,(1.5) -125,None,(1.5) -120,1.5,55.97%
+Jordan Westburg,BAL,CLE,Total Bases,Under,(1.5) -124,(1.5) -105,None,(1.5) -105,1.5,52.6%
+Adley Rutschman,BAL,CLE,Runs,Over,(0.5) -136,(0.5) -125,None,(0.5) -125,0.5,56.25%
+Gunnar Henderson,BAL,CLE,Total Bases,Under,(1.5) -117,(1.5) -110,None,(1.5) 100,1.5,52.1%
 Adley Rutschman,BAL,CLE,Runs,Under,(0.5) 100,(0.5) -110,None,(0.5) -105,0.5,51.2%
 Anthony Santander,BAL,CLE,Runs,Over,(0.5) 100,(0.5) -115,None,(0.5) -110,0.5,51.96%
 Anthony Santander,BAL,CLE,Runs,Under,(0.5) -136,(0.5) -120,None,(0.5) -120,0.5,55.57%
@@ -56,8 +54,6 @@ Freddie Freeman,LAD,@CWS,Total Bases,Under,(1.5) -118,(1.5) -120,None,(1.5) -115
 Freddie Freeman,LAD,@CWS,Runs,Over,(0.5) -114,(0.5) -125,None,(0.5) -125,0.5,54.79%
 Freddie Freeman,LAD,@CWS,Runs,Under,(0.5) -120,(0.5) -110,None,(0.5) -105,0.5,52.72%
 Willi Castro,MIN,@ARI,Runs,Over,(0.5) -107,(0.5) -115,None,(0.5) -110,0.5,52.52%
-Gunnar Henderson,BAL,CLE,Total Bases,Under,(1.5) -117,(1.5) -110,None,(1.5) 100,1.5,52.1%
-Jason Heyward,LAD,@CWS,Runs,Over,(0.5) 130,(0.5) 120,None,(0.5) ,0.5,44.47%
-Jason Heyward,LAD,@CWS,Runs,Under,(0.5) -180,(0.5) -165,None,(0.5) ,0.5,63.27%
-Jordan Westburg,BAL,CLE,Total Bases,Under,(1.5) -124,(1.5) -105,None,(1.5) -105,1.5,52.6%
+Gunnar Henderson,BAL,CLE,Total Bases,Over,(1.5) -120,(1.5) -125,None,(1.5) -130,1.5,55.54%
+Jordan Westburg,BAL,CLE,Total Bases,Over,(1.5) -113,(1.5) -130,None,(1.5) -125,1.5,55.04%
 Willi Castro,MIN,@ARI,Runs,Under,(0.5) -127,(0.5) -120,None,(0.5) -120,0.5,55.01%
