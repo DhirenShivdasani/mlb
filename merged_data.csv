@@ -1,65 +1,83 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
+Adley Rutschman,BAL,CLE,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Adley Rutschman,BAL,CLE,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Anthony Santander,BAL,CLE,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Anthony Santander,BAL,CLE,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Anthony Volpe,NYY,@NYM,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Anthony Volpe,NYY,@NYM,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Wilyer Abreu,BOS,TOR,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Wilyer Abreu,BOS,TOR,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Jordan Westburg,BAL,CLE,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Jordan Westburg,BAL,CLE,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 JJ Bleday,OAK,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) -1200,(0.5) ,0.5,92.31%
 JJ Bleday,OAK,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) 650,(0.5) ,0.5,13.33%
-Yordan Alvarez,HOU,COL,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Ryan Mountcastle,BAL,CLE,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Jose Altuve,HOU,COL,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Jose Altuve,HOU,COL,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Yordan Alvarez,HOU,COL,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Freddie Freeman,LAD,@CWS,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Ryan Mountcastle,BAL,CLE,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Jose Altuve,HOU,COL,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Freddie Freeman,LAD,@CWS,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Yordan Alvarez,HOU,COL,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Bo Bichette,TOR,@BOS,Runs,Over,None,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Bo Bichette,TOR,@BOS,Runs,Under,None,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Taylor Ward,LAA,OAK,Runs,Under,(0.5) ,(0.5) ,(1.5) -700,(0.5) ,0.5,87.5%
 Taylor Ward,LAA,OAK,Runs,Over,(0.5) ,(0.5) ,(1.5) 450,(0.5) ,0.5,18.18%
-Tyler O'Neill,BOS,TOR,Runs,Under,(0.5) ,(0.5) ,(2.5) ,(0.5) ,0.5,nan%
 Tyler O'Neill,BOS,TOR,Runs,Over,(0.5) ,(0.5) ,(2.5) ,(0.5) ,0.5,nan%
-Freddie Freeman,LAD,@CWS,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Rafael Devers,BOS,TOR,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Rafael Devers,BOS,TOR,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Royce Lewis,MIN,@ARI,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Royce Lewis,MIN,@ARI,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Shohei Ohtani,LAD,@CWS,Total Bases,Over,(1.5) ,(2.5) ,None,(2.5) ,2.5,nan%
-Shohei Ohtani,LAD,@CWS,Total Bases,Under,(1.5) ,(2.5) ,None,(2.5) ,2.5,nan%
+Tyler O'Neill,BOS,TOR,Runs,Under,(0.5) ,(0.5) ,(2.5) ,(0.5) ,0.5,nan%
 Taylor Walls,TB,SEA,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Taylor Walls,TB,SEA,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Shohei Ohtani,LAD,@CWS,Total Bases,Under,(1.5) ,(2.5) ,None,(2.5) ,2.5,nan%
+Shohei Ohtani,LAD,@CWS,Total Bases,Over,(1.5) ,(2.5) ,None,(2.5) ,2.5,nan%
+Bo Naylor,CLE,@BAL,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Freddie Freeman,LAD,@CWS,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Royce Lewis,MIN,@ARI,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Rafael Devers,BOS,TOR,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Rafael Devers,BOS,TOR,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Nolan Jones,COL,@HOU,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Royce Lewis,MIN,@ARI,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Bo Naylor,CLE,@BAL,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Trent Grisham,NYY,@NYM,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
+Nolan Jones,COL,@HOU,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Trent Grisham,NYY,@NYM,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
 Tucker Barnhart,ARI,MIN,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Tucker Barnhart,ARI,MIN,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Will Smith,LAD,@CWS,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Will Smith,LAD,@CWS,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Willi Castro,MIN,@ARI,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Willi Castro,MIN,@ARI,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Yordan Alvarez,HOU,COL,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Yordan Alvarez,HOU,COL,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Nolan Jones,COL,@HOU,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Nolan Jones,COL,@HOU,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Taylor Walls,TB,SEA,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Nick Senzel,WSH,@SD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Nick Senzel,WSH,@SD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Mitch Haniger,SEA,@TB,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
 Freddie Freeman,LAD,@CWS,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 David Hamilton,BOS,TOR,Runs,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
+Corbin Carroll,ARI,MIN,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Gunnar Henderson,BAL,CLE,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,1.5,nan%
+Gunnar Henderson,BAL,CLE,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,1.5,nan%
+Corbin Carroll,ARI,MIN,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Cavan Biggio,LAD,@CWS,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Cavan Biggio,LAD,@CWS,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Carlos Correa,MIN,@ARI,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Jacob Young,WSH,@SD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Jacob Young,WSH,@SD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Jordan Westburg,BAL,CLE,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Jordan Westburg,BAL,CLE,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Cavan Biggio,LAD,@CWS,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Carlos Correa,MIN,@ARI,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+David Hamilton,BOS,TOR,Runs,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
 Jorge Polanco,SEA,@TB,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Jorge Polanco,SEA,@TB,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Carlos Correa,MIN,@ARI,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Bryce Johnson,SD,WSH,Total Bases,Under,(1.5) ,None,None,None,0.5,nan%
 Logan O'Hoppe,LAA,OAK,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Logan O'Hoppe,LAA,OAK,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Max Kepler,MIN,@ARI,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Bryce Johnson,SD,WSH,Total Bases,Over,(1.5) ,None,None,None,0.5,nan%
 Max Kepler,MIN,@ARI,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Max Schuemann,OAK,@LAA,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Max Schuemann,OAK,@LAA,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Michael Toglia,COL,@HOU,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Bryce Johnson,SD,WSH,Total Bases,Over,(1.5) ,None,None,None,0.5,nan%
+Michael Toglia,COL,@HOU,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Mitch Garver,SEA,@TB,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Mitch Garver,SEA,@TB,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
 Mitch Haniger,SEA,@TB,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
-Mitch Haniger,SEA,@TB,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
-David Hamilton,BOS,TOR,Runs,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
-Michael Toglia,COL,@HOU,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Jorge Polanco,SEA,@TB,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Max Kepler,MIN,@ARI,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
