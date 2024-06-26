@@ -1,56 +1,41 @@
 ,Name,Team,Value,Prop
-0,MacKenzie Gore,WSH - P,5.5,Pitcher Strikeouts
-1,Tyler Anderson,LAA - P,5.0,Pitcher Strikeouts
-2,Kyle Hendricks,CHC - P,3.0,Pitcher Strikeouts
-3,Seiya Suzuki,CHC - OF,1.5,Hits+Runs+RBIs
-4,Mitch Spence,OAK - P,4.0,Pitcher Strikeouts
-5,Tyler Anderson,LAA - P,5.0,Pitcher Strikeouts
-6,Brandon Pfaadt,AZ - P,5.0,Pitcher Strikeouts
-7,Joe Ryan,MIN - P,6.0,Pitcher Strikeouts
-8,Adam Mazur,SD - P,3.5,Pitcher Strikeouts
-9,MacKenzie Gore,WSH - P,5.5,Pitcher Strikeouts
-10,Kyle Hendricks,CHC - P,3.0,Pitcher Strikeouts
-11,Mitch Spence + Tyler Anderson,OAK/LAA - P,9.5,Pitcher Strikeouts (Combo)
-12,Joe Ryan + Brandon Pfaadt,MIN/AZ - P,11.5,Pitcher Strikeouts (Combo)
-13,Eugenio Suárez,AZ - IF,0.5,Total Bases
-14,Max Kepler,MIN - OF,1.5,Total Bases
-15,Geraldo Perdomo,AZ - IF,0.5,Total Bases
-16,MacKenzie Gore,WSH - P,5.5,Hits Allowed
-17,Mitch Spence,OAK - P,26.5,Pitcher Fantasy Score
-18,Tyler Anderson,LAA - P,32.5,Pitcher Fantasy Score
-19,Joe Ryan,MIN - P,36.0,Pitcher Fantasy Score
-20,Brandon Pfaadt,AZ - P,30.0,Pitcher Fantasy Score
-21,MacKenzie Gore,WSH - P,33.0,Pitcher Fantasy Score
-22,Brent Rooker,OAK - OF,1.5,Hits+Runs+RBIs
-23,Miguel Andujar,OAK - OF,1.5,Hits+Runs+RBIs
-24,Nolan Schanuel,LAA - IF,1.5,Hits+Runs+RBIs
-25,Willie Calhoun,LAA - IF,1.5,Hits+Runs+RBIs
-26,Zach Neto,LAA - IF,1.5,Hits+Runs+RBIs
-27,Carlos Correa,MIN - IF,1.5,Hits+Runs+RBIs
-28,Corbin Carroll,AZ - OF,1.5,Hits+Runs+RBIs
-29,Ketel Marte,AZ - IF,1.5,Hits+Runs+RBIs
-30,Lourdes Gurriel Jr.,AZ - OF,1.5,Hits+Runs+RBIs
-31,Tucker Barnhart,AZ - C,0.5,Hits+Runs+RBIs
-32,Donovan Solano,SD - IF,1.5,Hits+Runs+RBIs
-33,Lane Thomas,WSH - OF,1.5,Hits+Runs+RBIs
-34,Jackson Merrill,SD - OF,1.5,Hits+Runs+RBIs
-35,Jake Cronenworth,SD - IF,1.5,Hits+Runs+RBIs
-36,Jurickson Profar,SD - OF,1.5,Hits+Runs+RBIs
-37,Manny Machado,SD - IF,1.5,Hits+Runs+RBIs
-38,Daz Cameron,OAK - OF,1.5,Hits+Runs+RBIs
-39,Patrick Bailey,SF - C,1.5,Hits+Runs+RBIs
-40,Seiya Suzuki,CHC - OF,1.5,Hits+Runs+RBIs
-41,Mitch Spence,OAK - P,17.5,Pitching Outs
-42,MacKenzie Gore,WSH - P,17.5,Pitching Outs
-43,Carlos Correa,MIN - IF,7.0,Hitter Fantasy Score
-44,Ketel Marte,AZ - IF,6.5,Hitter Fantasy Score
-45,Manny Machado,SD - IF,7.0,Hitter Fantasy Score
-46,Luis Arraez,SD - IF,6.0,Hitter Fantasy Score
-47,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score
-48,Seiya Suzuki,CHC - OF,7.0,Hitter Fantasy Score
-49,Miguel Amaya,CHC - C,0.5,Hits
-50,Tyler Anderson,LAA - P,2.5,Earned Runs Allowed
-51,Brandon Pfaadt,AZ - P,2.5,Earned Runs Allowed
-52,Royce Lewis,MIN - IF,0.5,Runs
-53,Willi Castro,MIN - IF,0.5,Runs
-54,Luis Rengifo,LAA - IF,0.5,Hitter Strikeouts
+0,Yandy Díaz,TB - IF,7.0,Hitter Fantasy Score
+1,Elly De La Cruz,CIN - IF,8.5,Hitter Fantasy Score
+2,Bryan Reynolds,PIT - OF,8.5,Hitter Fantasy Score
+3,Bryce Harper,PHI - IF,9.5,Hitter Fantasy Score
+4,Trea Turner,PHI - IF,8.5,Hitter Fantasy Score
+5,Kyle Schwarber,PHI - DH,7.5,Hitter Fantasy Score
+6,Corey Seager,TEX - IF,7.5,Hitter Fantasy Score
+7,Christian Yelich,MIL - OF,7.0,Hitter Fantasy Score
+8,Marcus Semien,TEX - IF,7.0,Hitter Fantasy Score
+9,William Contreras,MIL - C,6.5,Hitter Fantasy Score
+10,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
+11,Yordan Alvarez,HOU - OF,9.0,Hitter Fantasy Score
+12,Ryan McMahon,COL - IF,7.5,Hitter Fantasy Score
+13,Jose Altuve,HOU - IF,9.0,Hitter Fantasy Score
+14,Ezequiel Tovar,COL - IF,7.5,Hitter Fantasy Score
+15,Alex Bregman,HOU - IF,8.5,Hitter Fantasy Score
+16,Manny Machado,SD - IF,7.5,Hitter Fantasy Score
+17,CJ Abrams,WSH - IF,6.5,Hitter Fantasy Score
+18,Luis Arraez,SD - IF,6.0,Hitter Fantasy Score
+19,José Ramírez,CLE - IF,9.0,Hitter Fantasy Score
+20,Gunnar Henderson,BAL - IF,9.0,Hitter Fantasy Score
+21,Steven Kwan,CLE - OF,7.5,Hitter Fantasy Score
+22,Adley Rutschman,BAL - C,7.5,Hitter Fantasy Score
+23,Aaron Judge,NYY - OF,9.5,Hitter Fantasy Score
+24,Pete Alonso,NYM - IF,6.5,Hitter Fantasy Score
+25,Juan Soto,NYY - OF,8.5,Hitter Fantasy Score
+26,Rafael Devers,BOS - IF,7.5,Hitter Fantasy Score
+27,Vladimir Guerrero Jr.,TOR - IF,7.5,Hitter Fantasy Score
+28,Jarren Duran,BOS - OF,8.5,Hitter Fantasy Score
+29,Marcell Ozuna,ATL - DH,7.5,Hitter Fantasy Score
+30,Matt Olson,ATL - IF,7.0,Hitter Fantasy Score
+31,Ozzie Albies,ATL - IF,7.5,Hitter Fantasy Score
+32,Shohei Ohtani,LAD - DH,11.5,Hitter Fantasy Score
+33,Freddie Freeman,LAD - IF,8.5,Hitter Fantasy Score
+34,Carlos Correa,MIN - IF,7.5,Hitter Fantasy Score
+35,Ketel Marte,AZ - IF,7.0,Hitter Fantasy Score
+36,Royce Lewis,MIN - IF,7.5,Hitter Fantasy Score
+37,Christian Walker,AZ - IF,7.0,Hitter Fantasy Score
+38,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score
+39,Seiya Suzuki,CHC - OF,7.0,Hitter Fantasy Score
