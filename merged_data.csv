@@ -1,16 +1,16 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
-Michael Wacha,KC,CLE,Strikeouts,Over,(3.5) -108,(3.5) -115,(3.5) -106,(3.5) -125,3.5,53.11%
-Ben Lively,CLE,@KC,Strikeouts,Over,(3.5) -107,(3.5) -105,(3.5) -111,(3.5) -105,3.5,51.68%
-Ben Lively,CLE,@KC,Strikeouts,Under,(3.5) -125,(3.5) -120,(3.5) -115,(3.5) -125,3.5,54.79%
-Michael Wacha,KC,CLE,Strikeouts,Under,(3.5) -124,(3.5) -110,(3.5) -120,(3.5) -105,3.5,53.38%
-Jordan Hicks,SF,CHC,Strikeouts,Over,(4.5) -103,(4.5) -105,(4.5) -106,(4.5) -105,4.5,51.16%
+Michael Wacha,KC,CLE,Strikeouts,Over,(3.5) -108,(3.5) -110,(3.5) -106,(3.5) -105,3.5,51.74%
+Ben Lively,CLE,@KC,Strikeouts,Over,(3.5) -107,(3.5) 100,(3.5) -111,(3.5) 100,3.5,51.07%
+Ben Lively,CLE,@KC,Strikeouts,Under,(3.5) -125,(3.5) -125,(3.5) -115,(3.5) -130,3.5,55.28%
+Michael Wacha,KC,CLE,Strikeouts,Under,(3.5) -124,(3.5) -120,(3.5) -120,(3.5) -125,3.5,55.0%
+Jordan Hicks,SF,CHC,Strikeouts,Over,(4.5) 100,(4.5) -105,(4.5) -106,(4.5) -105,4.5,50.97%
 Andrew Abbott,CIN,@STL,Strikeouts,Under,(4.5) -117,(4.5) -115,(4.5) -111,(4.5) -115,4.5,53.38%
 Andrew Abbott,CIN,@STL,Strikeouts,Over,(4.5) -114,(4.5) -115,(4.5) -115,(4.5) -115,4.5,53.43%
-Jordan Hicks,SF,CHC,Strikeouts,Under,(4.5) -130,(4.5) -120,(4.5) -120,(4.5) -120,4.5,55.04%
-Trevor Rogers,MIA,@PHI,Strikeouts,Under,(4.5) -159,(4.5) -120,(4.5) -136,(4.5) ,4.5,57.85%
-Miles Mikolas,STL,CIN,Strikeouts,Under,(4.5) -148,(4.5) -150,(4.5) -156,(4.5) -150,4.0,60.15%
-Trevor Rogers,MIA,@PHI,Strikeouts,Over,(4.5) 120,(4.5) -110,(4.5) 106,(4.5) ,4.5,48.79%
-Miles Mikolas,STL,CIN,Strikeouts,Over,(4.5) 110,(4.5) 115,(4.5) 122,(4.5) 115,4.0,46.42%
+Jordan Hicks,SF,CHC,Strikeouts,Under,(4.5) -132,(4.5) -120,(4.5) -120,(4.5) -120,4.5,55.13%
+Trevor Rogers,MIA,@PHI,Strikeouts,Under,(4.5) -159,(4.5) -125,(4.5) -136,(4.5) ,4.5,58.19%
+Miles Mikolas,STL,CIN,Strikeouts,Under,(4.5) -141,(4.5) -150,(4.5) -156,(4.5) -145,4.0,59.66%
+Trevor Rogers,MIA,@PHI,Strikeouts,Over,(4.5) 120,(4.5) -105,(4.5) 108,(4.5) ,4.5,48.25%
+Miles Mikolas,STL,CIN,Strikeouts,Over,(4.5) 106,(4.5) 115,(4.5) 122,(4.5) 110,4.0,46.93%
 Zack Wheeler,PHI,MIA,Strikeouts,Over,(6.5) -148,(7.5) 135,(6.5) -132,(7.5) 125,7.0,50.89%
 Zack Wheeler,PHI,MIA,Strikeouts,Under,(6.5) 110,(7.5) -175,(6.5) 104,(7.5) -165,7.0,55.63%
 Mickey Moniak,LAA,DET,Total Bases,Under,(1.5) -295,(0.5) -105,None,None,0.5,62.95%
@@ -24,52 +24,52 @@ Marcell Ozuna,ATL,@CWS,Total Bases,Under,None,(1.5) ,None,None,1.5,nan%
 Matt Vierling,DET,@LAA,Runs,Under,(0.5) -124,(0.5) -115,None,None,0.5,54.42%
 Nick Castellanos,PHI,MIA,Runs,Over,(0.5) 102,(0.5) -115,None,(0.5) -110,0.5,51.79%
 Nick Fortes,MIA,@PHI,Total Bases,Under,None,(0.5) -125,None,(0.5) -120,0.5,55.05%
-Nick Fortes,MIA,@PHI,Total Bases,Over,None,(0.5) -110,None,(0.5) -110,0.5,52.38%
-Willson Contreras,STL,CIN,Runs,Under,(0.5) -122,(0.5) -125,None,(0.5) -120,0.5,55.02%
-Willson Contreras,STL,CIN,Runs,Over,(0.5) -110,(0.5) -110,None,(0.5) -110,0.5,52.38%
+Nick Fortes,MIA,@PHI,Total Bases,Over,None,(0.5) -110,None,(0.5) -105,0.5,51.8%
+Willson Contreras,STL,CIN,Runs,Under,(0.5) -125,(0.5) -125,None,(0.5) -120,0.5,55.22%
+Willson Contreras,STL,CIN,Runs,Over,(0.5) -109,(0.5) -110,None,(0.5) -110,0.5,52.31%
 Trea Turner,PHI,MIA,Total Bases,Under,(1.5) -117,(1.5) -110,None,(1.5) -105,1.5,52.51%
 Trea Turner,PHI,MIA,Total Bases,Over,(1.5) -120,(1.5) -125,None,(1.5) -125,1.5,55.22%
 Steven Kwan,CLE,@KC,Runs,Under,(0.5) -125,(0.5) -120,None,(0.5) -120,0.5,54.88%
-Steven Kwan,CLE,@KC,Runs,Over,(0.5) -109,(0.5) -115,None,(0.5) -110,0.5,52.67%
-Steven Kwan,CLE,@KC,Total Bases,Under,(1.5) -141,(1.5) -125,None,(1.5) -125,1.5,56.54%
-Steven Kwan,CLE,@KC,Total Bases,Over,(1.5) 102,(1.5) -105,None,(1.5) -105,1.5,50.65%
-Salvador Perez,KC,CLE,Total Bases,Under,(1.5) -129,(1.5) -125,None,(1.5) -125,1.5,55.81%
-Salvador Perez,KC,CLE,Total Bases,Over,(1.5) -108,(1.5) -105,None,(1.5) -105,1.5,51.45%
+Steven Kwan,CLE,@KC,Runs,Over,(0.5) -109,(0.5) -115,None,(0.5) -105,0.5,52.29%
+Steven Kwan,CLE,@KC,Total Bases,Under,(1.5) -141,(1.5) -125,None,(1.5) -130,1.5,56.86%
+Steven Kwan,CLE,@KC,Total Bases,Over,(1.5) 102,(1.5) -105,None,(1.5) 100,1.5,50.24%
+Salvador Perez,KC,CLE,Total Bases,Under,(1.5) -129,(1.5) -125,None,(1.5) -130,1.5,56.14%
+Salvador Perez,KC,CLE,Total Bases,Over,(1.5) -108,(1.5) -105,None,(1.5) 100,1.5,51.05%
 Riley Greene,DET,@LAA,Runs,Under,(0.5) -122,(0.5) -125,None,None,0.5,55.26%
 Riley Greene,DET,@LAA,Runs,Over,(0.5) -112,(0.5) -105,None,None,0.5,52.02%
 Paul DeJong,CWS,ATL,Total Bases,Under,(1.5) -335,(0.5) -115,None,None,0.5,65.25%
 Paul DeJong,CWS,ATL,Total Bases,Over,(1.5) 210,(0.5) -115,None,None,0.5,42.87%
 Marcell Ozuna,ATL,@CWS,Total Bases,Over,None,(1.5) ,None,None,1.5,nan%
-Nick Castellanos,PHI,MIA,Runs,Under,(0.5) -137,(0.5) -115,None,(0.5) -120,0.5,55.28%
+Nick Castellanos,PHI,MIA,Runs,Under,(0.5) -137,(0.5) -115,None,(0.5) -115,0.5,54.93%
 Maikel Garcia,KC,CLE,Total Bases,Under,(1.5) -121,(1.5) -125,None,(1.5) -125,1.5,55.29%
 Aaron Judge,NYY,@TOR,Total Bases,Over,(1.5) -121,(1.5) -120,None,None,1.5,54.65%
-Ketel Marte,ARI,MIN,Runs,Under,(0.5) -130,(0.5) -125,None,None,0.5,56.04%
+Ketel Marte,ARI,MIN,Runs,Under,(0.5) -134,(0.5) -125,None,None,0.5,56.41%
 Bryce Harper,PHI,MIA,Runs,Over,(0.5) -120,(0.5) -115,None,(0.5) -115,0.5,53.84%
 Bo Bichette,TOR,NYY,Runs,Under,(0.5) -132,(0.5) -115,None,None,0.5,55.19%
 Bo Bichette,TOR,NYY,Runs,Over,(0.5) -103,(0.5) -115,None,None,0.5,52.11%
 Bo Bichette,TOR,NYY,Total Bases,Under,(1.5) -121,(1.5) -110,None,None,1.5,53.57%
 Bo Bichette,TOR,NYY,Total Bases,Over,(1.5) -115,(1.5) -120,None,None,1.5,54.02%
 Anthony Volpe,NYY,@TOR,Runs,Under,(0.5) -130,(0.5) -115,None,None,0.5,55.01%
-Bryce Harper,PHI,MIA,Runs,Under,(0.5) -114,(0.5) -115,None,(0.5) -115,0.5,53.42%
+Bryce Harper,PHI,MIA,Runs,Under,(0.5) -114,(0.5) -115,None,(0.5) -110,0.5,53.05%
 Anthony Volpe,NYY,@TOR,Runs,Over,(0.5) -106,(0.5) -120,None,None,0.5,53.0%
-Alec Bohm,PHI,MIA,Runs,Over,(0.5) -121,(0.5) -125,None,(0.5) -125,0.5,55.29%
+Alec Bohm,PHI,MIA,Runs,Over,(0.5) -121,(0.5) -125,None,(0.5) -130,0.5,55.61%
 Alec Bohm,PHI,MIA,Total Bases,Under,(1.5) -124,(1.5) -110,None,(1.5) -105,1.5,52.99%
 Alec Bohm,PHI,MIA,Total Bases,Over,(1.5) -113,(1.5) -125,None,(1.5) -120,1.5,54.38%
-Adley Rutschman,BAL,TEX,Runs,Under,(0.5) -117,(0.5) -115,None,(0.5) -115,0.5,53.63%
-Adley Rutschman,BAL,TEX,Runs,Over,(0.5) -117,(0.5) -120,None,(0.5) -115,0.5,53.98%
+Adley Rutschman,BAL,TEX,Runs,Under,(0.5) -122,(0.5) -115,None,(0.5) -115,0.5,53.98%
+Adley Rutschman,BAL,TEX,Runs,Over,(0.5) -112,(0.5) -120,None,(0.5) -110,0.5,53.25%
 Aaron Judge,NYY,@TOR,Total Bases,Under,(1.5) -115,(1.5) -115,None,None,1.5,53.49%
-Alec Bohm,PHI,MIA,Runs,Under,(0.5) -112,(0.5) -110,None,(0.5) -105,0.5,52.14%
+Alec Bohm,PHI,MIA,Runs,Under,(0.5) -112,(0.5) -110,None,(0.5) 100,0.5,51.74%
 Colt Keith,DET,@LAA,Runs,Over,(0.5) -118,(0.5) -105,None,None,0.5,52.67%
 Colt Keith,DET,@LAA,Runs,Under,(0.5) -115,(0.5) -125,None,None,0.5,54.52%
 Corey Julks,CWS,ATL,Total Bases,Over,(1.5) 260,(0.5) -120,None,None,0.5,41.16%
-Ketel Marte,ARI,MIN,Runs,Over,(0.5) -105,(0.5) -110,None,None,0.5,51.8%
+Ketel Marte,ARI,MIN,Runs,Over,(0.5) -103,(0.5) -110,None,None,0.5,51.56%
 Jose Herrera,ARI,MIN,Total Bases,Over,None,(0.5) -105,None,None,0.5,51.22%
 Jo Adell,LAA,DET,Total Bases,Under,None,(0.5) -120,None,None,0.5,54.55%
 Jo Adell,LAA,DET,Total Bases,Over,None,(0.5) -110,None,None,0.5,52.38%
 Jarred Kelenic,ATL,@CWS,Runs,Under,None,(0.5) ,None,None,0.5,nan%
 Jarred Kelenic,ATL,@CWS,Runs,Over,None,(0.5) ,None,None,0.5,nan%
-Gunnar Henderson,BAL,TEX,Total Bases,Under,(1.5) -129,(1.5) -115,None,(1.5) -105,1.5,53.68%
-Gunnar Henderson,BAL,TEX,Total Bases,Over,(1.5) -109,(1.5) -120,None,(1.5) -120,1.5,53.75%
+Gunnar Henderson,BAL,TEX,Total Bases,Under,(1.5) -134,(1.5) -115,None,(1.5) -105,1.5,53.99%
+Gunnar Henderson,BAL,TEX,Total Bases,Over,(1.5) -105,(1.5) -120,None,(1.5) -120,1.5,53.44%
 Elly De La Cruz,CIN,@STL,Runs,Under,(0.5) -143,(0.5) -115,None,(0.5) -105,0.5,54.52%
 Elly De La Cruz,CIN,@STL,Runs,Over,(0.5) 106,(0.5) -120,None,(0.5) -120,0.5,52.54%
 Danny Mendick,CWS,ATL,Total Bases,Under,None,(0.5) -105,None,None,0.5,51.22%
