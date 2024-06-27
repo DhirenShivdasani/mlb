@@ -160,7 +160,7 @@ def save_to_postgres(df):
             implied_prob = float(implied_prob.strip('%'))
 
         cur.execute("""
-            INSERT INTO odds (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
+            INSERT INTO mlb (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob))
     conn.commit()

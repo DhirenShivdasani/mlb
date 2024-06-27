@@ -83,3 +83,19 @@ body {
   color: red;
   margin-bottom: 10px;
 }
+
+.sport-selector {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #333;
+  color: white;
+}
+
+.sport-selector:hover {
+  background-color: #555;
+  color: #fff;
+}

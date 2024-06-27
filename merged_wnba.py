@@ -149,21 +149,21 @@ def calculate_average_implied_probability(df):
     
     return df
 
-# def save_to_postgres(df):
-#     timestamp = datetime.now()
-#     for index, row in df.iterrows():
-#         # Replace 'nan%' with None
-#         implied_prob = row['Implied_Prob']
-#         if implied_prob == 'nan%':
-#             implied_prob = None
-#         else:
-#             implied_prob = float(implied_prob.strip('%'))
+def save_to_postgres(df):
+    timestamp = datetime.now()
+    for index, row in df.iterrows():
+        # Replace 'nan%' with None
+        implied_prob = row['Implied_Prob']
+        if implied_prob == 'nan%':
+            implied_prob = None
+        else:
+            implied_prob = float(implied_prob.strip('%'))
 
-#         cur.execute("""
-#             INSERT INTO odds (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
-#             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-#         """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob))
-#     conn.commit()
+        cur.execute("""
+            INSERT INTO wnba (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob))
+    conn.commit()
 
 
 # Load the CSV files
