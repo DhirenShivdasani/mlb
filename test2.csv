@@ -10,17 +10,17 @@
 8,Zack Wheeler,PHI - P,7.0,Pitcher Strikeouts
 9,Jack Flaherty,DET - P,41.5,Pitcher Fantasy Score
 10,Corbin Burnes,BAL - P,5.5,Pitcher Strikeouts
-11,Trevor Rogers,MIA - P,4.5,Pitcher Strikeouts
+11,Trevor Rogers,MIA - P,4.0,Pitcher Strikeouts
 12,Vladimir Guerrero Jr.,TOR - IF,8.0,Hitter Fantasy Score
 13,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
 14,Trevor Rogers + Zack Wheeler,MIA/PHI - P,0.5,1st Inning Runs Allowed
-15,Trevor Rogers,MIA - P,4.5,Pitcher Strikeouts
+15,Trevor Rogers,MIA - P,4.0,Pitcher Strikeouts
 16,Zack Wheeler,PHI - P,7.0,Pitcher Strikeouts
 17,Corbin Burnes,BAL - P,5.5,Pitcher Strikeouts
 18,Jon Gray,TEX - P,4.0,Pitcher Strikeouts
 19,José Berríos,TOR - P,5.0,Pitcher Strikeouts
 20,Carlos Rodón,NYY - P,5.0,Pitcher Strikeouts
-21,Miles Mikolas,STL - P,4.0,Pitcher Strikeouts
+21,Miles Mikolas,STL - P,4.5,Pitcher Strikeouts
 22,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
 23,Davis Daniel,LAA - P,4.0,Pitcher Strikeouts
 24,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
@@ -29,16 +29,16 @@
 27,Gunnar Henderson,BAL - IF,1.5,Total Bases
 28,Maikel Garcia,KC - IF,1.5,Total Bases
 29,José Ramírez,CLE - IF,1.5,Total Bases
-30,Salvador Perez,KC - C,1.5,Total Bases
-31,Mickey Moniak,LAA - OF,0.5,Total Bases
-32,Jo Adell,LAA - OF,0.5,Total Bases
-33,Trevor Rogers + Zack Wheeler,MIA/PHI - P,0.5,1st Inning Runs Allowed
-34,Carlos Rodón + José Berríos,NYY/TOR - P,0.5,1st Inning Runs Allowed
-35,Andrew Abbott + Miles Mikolas,CIN/STL - P,0.5,1st Inning Runs Allowed
-36,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
-37,Trevor Rogers,MIA - P,5.5,Hits Allowed
-38,Miles Mikolas,STL - P,5.5,Hits Allowed
-39,Davis Daniel,LAA - P,4.5,Hits Allowed
+30,Mickey Moniak,LAA - OF,0.5,Total Bases
+31,Jo Adell,LAA - OF,0.5,Total Bases
+32,Trevor Rogers + Zack Wheeler,MIA/PHI - P,0.5,1st Inning Runs Allowed
+33,Carlos Rodón + José Berríos,NYY/TOR - P,0.5,1st Inning Runs Allowed
+34,Andrew Abbott + Miles Mikolas,CIN/STL - P,0.5,1st Inning Runs Allowed
+35,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
+36,Trevor Rogers,MIA - P,5.5,Hits Allowed
+37,Miles Mikolas,STL - P,5.5,Hits Allowed
+38,Davis Daniel,LAA - P,4.5,Hits Allowed
+39,Michael Wacha,KC - P,5.5,Hits Allowed
 40,Zack Wheeler,PHI - P,45.5,Pitcher Fantasy Score
 41,Corbin Burnes,BAL - P,33.5,Pitcher Fantasy Score
 42,Carlos Rodón,NYY - P,31.0,Pitcher Fantasy Score
@@ -48,52 +48,57 @@
 46,Edmundo Sosa,PHI - IF,1.5,Hits+Runs+RBIs
 47,Kyle Schwarber,PHI - DH,1.5,Hits+Runs+RBIs
 48,Adolis García,TEX - OF,1.5,Hits+Runs+RBIs
-49,Whit Merrifield,PHI - OF,1.5,Hits+Runs+RBIs
-50,Corey Seager,TEX - IF,1.5,Hits+Runs+RBIs
-51,Wyatt Langford,TEX - OF,1.5,Hits+Runs+RBIs
-52,Alex Verdugo,NYY - OF,1.5,Hits+Runs+RBIs
-53,Justin Turner,TOR - IF,1.5,Hits+Runs+RBIs
-54,Masyn Winn,STL - IF,1.5,Hits+Runs+RBIs
-55,Nolan Arenado,STL - IF,1.5,Hits+Runs+RBIs
-56,Paul Goldschmidt,STL - IF,1.5,Hits+Runs+RBIs
-57,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
-58,Daniel Schneemann,CLE - IF,1.5,Hits+Runs+RBIs
-59,Michael Massey,KC - IF,1.5,Hits+Runs+RBIs
+49,Corey Seager,TEX - IF,1.5,Hits+Runs+RBIs
+50,Wyatt Langford,TEX - OF,1.5,Hits+Runs+RBIs
+51,Alex Verdugo,NYY - OF,1.5,Hits+Runs+RBIs
+52,Justin Turner,TOR - IF,1.5,Hits+Runs+RBIs
+53,Masyn Winn,STL - IF,1.5,Hits+Runs+RBIs
+54,Nolan Arenado,STL - IF,1.5,Hits+Runs+RBIs
+55,Paul Goldschmidt,STL - IF,1.5,Hits+Runs+RBIs
+56,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
+57,Daniel Schneemann,CLE - IF,1.5,Hits+Runs+RBIs
+58,MJ Melendez,KC - OF,1.5,Hits+Runs+RBIs
+59,Andrés Giménez,CLE - IF,1.5,Hits+Runs+RBIs
 60,Gio Urshela,DET - IF,1.5,Hits+Runs+RBIs
 61,Logan O'Hoppe,LAA - C,1.5,Hits+Runs+RBIs
 62,Mark Canha,DET - OF,1.5,Hits+Runs+RBIs
 63,Wenceel Pérez,DET - OF,1.5,Hits+Runs+RBIs
-64,Zack Wheeler,PHI - P,20.5,Pitching Outs
-65,José Berríos,TOR - P,17.5,Pitching Outs
-66,Andrew Abbott,CIN - P,16.5,Pitching Outs
-67,Ben Lively,CLE - P,16.0,Pitching Outs
-68,Michael Wacha,KC - P,16.0,Pitching Outs
-69,Bryce Harper,PHI - IF,9.0,Hitter Fantasy Score
-70,Trea Turner,PHI - IF,8.5,Hitter Fantasy Score
-71,Kyle Schwarber,PHI - DH,7.5,Hitter Fantasy Score
-72,Gunnar Henderson,BAL - IF,9.5,Hitter Fantasy Score
-73,Corey Seager,TEX - IF,7.0,Hitter Fantasy Score
-74,Adley Rutschman,BAL - C,7.0,Hitter Fantasy Score
-75,Aaron Judge,NYY - OF,10.5,Hitter Fantasy Score
-76,Vladimir Guerrero Jr.,TOR - IF,8.0,Hitter Fantasy Score
-77,Juan Soto,NYY - OF,8.0,Hitter Fantasy Score
-78,Elly De La Cruz,CIN - IF,9.5,Hitter Fantasy Score
-79,José Ramírez,CLE - IF,9.5,Hitter Fantasy Score
-80,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
-81,Steven Kwan,CLE - OF,7.5,Hitter Fantasy Score
-82,Riley Greene,DET - OF,0.5,Walks
-83,José Berríos,TOR - P,2.5,Earned Runs Allowed
-84,Andrew Abbott,CIN - P,2.5,Earned Runs Allowed
-85,Nick Castellanos,PHI - OF,0.5,Runs
-86,Bryce Harper,PHI - IF,0.5,Runs
-87,Adley Rutschman,BAL - C,0.5,Runs
-88,Bo Bichette,TOR - IF,0.5,Runs
-89,Anthony Volpe,NYY - IF,0.5,Runs
-90,Elly De La Cruz,CIN - IF,0.5,Runs
-91,Willson Contreras,STL - C,0.5,Runs
-92,José Ramírez,CLE - IF,0.5,Runs
-93,Steven Kwan,CLE - OF,0.5,Runs
-94,Matt Vierling,DET - IF,0.5,Runs
-95,Riley Greene,DET - OF,0.5,Runs
-96,Alejandro Kirk,TOR - C,0.5,Hitter Strikeouts
-97,José Fermín,STL - IF,0.5,Hitter Strikeouts
+64,Tyler Freeman,CLE - OF,1.5,Hits+Runs+RBIs
+65,Andrés Giménez,CLE - IF,0.5,Singles
+66,Tyler Freeman,CLE - OF,0.5,Singles
+67,Zack Wheeler,PHI - P,20.5,Pitching Outs
+68,José Berríos,TOR - P,17.5,Pitching Outs
+69,Andrew Abbott,CIN - P,16.5,Pitching Outs
+70,Ben Lively,CLE - P,16.0,Pitching Outs
+71,Michael Wacha,KC - P,16.0,Pitching Outs
+72,Bryce Harper,PHI - IF,9.0,Hitter Fantasy Score
+73,Trea Turner,PHI - IF,8.5,Hitter Fantasy Score
+74,Kyle Schwarber,PHI - DH,7.5,Hitter Fantasy Score
+75,Gunnar Henderson,BAL - IF,9.5,Hitter Fantasy Score
+76,Corey Seager,TEX - IF,7.0,Hitter Fantasy Score
+77,Adley Rutschman,BAL - C,7.0,Hitter Fantasy Score
+78,Aaron Judge,NYY - OF,10.5,Hitter Fantasy Score
+79,Vladimir Guerrero Jr.,TOR - IF,8.0,Hitter Fantasy Score
+80,Juan Soto,NYY - OF,8.0,Hitter Fantasy Score
+81,Elly De La Cruz,CIN - IF,9.5,Hitter Fantasy Score
+82,José Ramírez,CLE - IF,9.5,Hitter Fantasy Score
+83,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
+84,Steven Kwan,CLE - OF,7.5,Hitter Fantasy Score
+85,Riley Greene,DET - OF,0.5,Walks
+86,José Berríos,TOR - P,2.5,Earned Runs Allowed
+87,Andrew Abbott,CIN - P,2.5,Earned Runs Allowed
+88,Nick Castellanos,PHI - OF,0.5,Runs
+89,Bryce Harper,PHI - IF,0.5,Runs
+90,Adley Rutschman,BAL - C,0.5,Runs
+91,Bo Bichette,TOR - IF,0.5,Runs
+92,Anthony Volpe,NYY - IF,0.5,Runs
+93,Elly De La Cruz,CIN - IF,0.5,Runs
+94,Willson Contreras,STL - C,0.5,Runs
+95,José Ramírez,CLE - IF,0.5,Runs
+96,Steven Kwan,CLE - OF,0.5,Runs
+97,Matt Vierling,DET - IF,0.5,Runs
+98,Riley Greene,DET - OF,0.5,Runs
+99,Alejandro Kirk,TOR - C,0.5,Hitter Strikeouts
+100,José Fermín,STL - IF,0.5,Hitter Strikeouts
+101,Andrés Giménez,CLE - IF,0.5,Hitter Strikeouts
+102,Hunter Renfroe,KC - OF,0.5,Hitter Strikeouts
