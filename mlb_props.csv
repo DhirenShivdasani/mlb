@@ -139,8 +139,8 @@ Brenton Doyle,COL,@HOU,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5)
 Brenton Doyle,COL,@HOU,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Brett Wisely,SF,CHC,bases,Over,(1.5) ,(1.5) ,,(1.5) 135
 Brett Wisely,SF,CHC,bases,Under,(1.5) ,(1.5) ,,(1.5) -175
-Brett Wisely,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 115,(0.5) 110
-Brett Wisely,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -145,(0.5) -145
+Brett Wisely,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 175,(0.5) 110
+Brett Wisely,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -230,(0.5) -145
 Brice Turang,MIL,TEX,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Brice Turang,MIL,TEX,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Brice Turang,MIL,TEX,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -169,8 +169,8 @@ Bryson Stott,PHI,@DET,runs,Over,(0.5) ,(0.5) ,(2.5) ,(0.5)
 Bryson Stott,PHI,@DET,runs,Under,(0.5) ,(0.5) ,(2.5) ,(0.5) 
 Byron Buxton,MIN,@ARI,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Byron Buxton,MIN,@ARI,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Byron Buxton,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 115,(0.5) 
-Byron Buxton,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -145,(0.5) 
+Byron Buxton,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
+Byron Buxton,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 CJ Abrams,WSH,@SD,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 CJ Abrams,WSH,@SD,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 CJ Abrams,WSH,@SD,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -183,12 +183,12 @@ Carlos Carrasco,CLE,@BAL,strikeouts,Over,(5.5) ,(3.5) ,(3.5) ,(3.5)
 Carlos Carrasco,CLE,@BAL,strikeouts,Under,(5.5) ,(3.5) ,(3.5) ,(3.5) 
 Carlos Correa,MIN,@ARI,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Carlos Correa,MIN,@ARI,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Carlos Correa,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 100,(0.5) 
-Carlos Correa,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -130,(0.5) 
+Carlos Correa,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
+Carlos Correa,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Carlos Santana,MIN,@ARI,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Carlos Santana,MIN,@ARI,bases,Under,(1.5) ,(0.5) ,,(0.5) 
-Carlos Santana,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 130,(0.5) 
-Carlos Santana,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -165,(0.5) 
+Carlos Santana,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
+Carlos Santana,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Carson Kelly,DET,PHI,bases,Over,,(0.5) ,,(0.5) 
 Carson Kelly,DET,PHI,bases,Under,,(0.5) ,,(0.5) 
 Carson Kelly,DET,PHI,runs,Over,,(0.5) ,(0.5) ,(0.5) 
@@ -215,20 +215,20 @@ Christian Vazquez,MIN,@ARI,runs,Over,,(0.5) ,,(0.5)
 Christian Vazquez,MIN,@ARI,runs,Under,,(0.5) ,,(0.5) 
 Christian Walker,ARI,MIN,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Christian Walker,ARI,MIN,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Christian Walker,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 100,(0.5) 
-Christian Walker,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -125,(0.5) 
+Christian Walker,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) 
+Christian Walker,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -190,(0.5) 
 Christian Yelich,MIL,TEX,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Christian Yelich,MIL,TEX,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Christian Yelich,MIL,TEX,runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) 
 Christian Yelich,MIL,TEX,runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) 
 Christopher Morel,CHC,@SF,bases,Over,(1.5) ,(0.5) ,,(0.5) -175
 Christopher Morel,CHC,@SF,bases,Under,(1.5) ,(0.5) ,,(0.5) 135
-Christopher Morel,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 140,(0.5) 140
-Christopher Morel,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -180,(0.5) -185
+Christopher Morel,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 140
+Christopher Morel,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) -185
 Cody Bellinger,CHC,@SF,bases,Over,(1.5) ,(1.5) ,,(1.5) 125
 Cody Bellinger,CHC,@SF,bases,Under,(1.5) ,(1.5) ,,(1.5) -165
-Cody Bellinger,CHC,@SF,runs,Over,(0.5) ,(0.5) ,,(0.5) 120
-Cody Bellinger,CHC,@SF,runs,Under,(0.5) ,(0.5) ,,(0.5) -160
+Cody Bellinger,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 170,(0.5) 120
+Cody Bellinger,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -220,(0.5) -160
 Colt Keith,DET,PHI,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Colt Keith,DET,PHI,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Colt Keith,DET,PHI,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -239,8 +239,8 @@ Connor Joe,PIT,@CIN,runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5)
 Connor Joe,PIT,@CIN,runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) 
 Corbin Carroll,ARI,MIN,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Corbin Carroll,ARI,MIN,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Corbin Carroll,ARI,MIN,runs,Over,(0.5) ,(0.5) ,,(0.5) 
-Corbin Carroll,ARI,MIN,runs,Under,(0.5) ,(0.5) ,,(0.5) 
+Corbin Carroll,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 135,(0.5) 
+Corbin Carroll,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -175,(0.5) 
 Corey Seager,TEX,@MIL,bases,Over,,(1.5) ,,(1.5) 
 Corey Seager,TEX,@MIL,bases,Under,,(1.5) ,,(1.5) 
 Corey Seager,TEX,@MIL,runs,Over,,(0.5) ,,(0.5) 
@@ -261,8 +261,8 @@ Danny Jansen,TOR,@BOS,runs,Over,,(0.5) ,,(0.5)
 Danny Jansen,TOR,@BOS,runs,Under,,(0.5) ,,(0.5) 
 Dansby Swanson,CHC,@SF,bases,Over,(1.5) ,(0.5) ,,(0.5) -190
 Dansby Swanson,CHC,@SF,bases,Under,(1.5) ,(0.5) ,,(0.5) 145
-Dansby Swanson,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) 160
-Dansby Swanson,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -195,(0.5) -210
+Dansby Swanson,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 210,(0.5) 160
+Dansby Swanson,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -280,(0.5) -210
 David Dahl,PHI,@DET,bases,Over,,(1.5) ,,(1.5) 
 David Dahl,PHI,@DET,bases,Under,,(1.5) ,,(1.5) 
 David Dahl,PHI,@DET,runs,Over,,(0.5) ,(0.5) ,(0.5) 
@@ -274,7 +274,7 @@ David Hamilton,BOS,TOR,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5)
 David Villar,SF,CHC,bases,Over,,(0.5) ,,(0.5) -110
 David Villar,SF,CHC,bases,Under,,(0.5) ,,(0.5) -120
 David Villar,SF,CHC,runs,Over,,(0.5) ,(0.5) 185,(0.5) 180
-David Villar,SF,CHC,runs,Under,,(0.5) ,(0.5) -250,(0.5) -250
+David Villar,SF,CHC,runs,Under,,(0.5) ,(0.5) -240,(0.5) -250
 Davis Schneider,TOR,@BOS,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Davis Schneider,TOR,@BOS,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Davis Schneider,TOR,@BOS,runs,Over,(0.5) ,(0.5) ,,(0.5) 
@@ -349,8 +349,8 @@ Erick Fedde,CWS,LAD,strikeouts,Over,(3.5) ,(5.5) ,(4.5) ,(5.5)
 Erick Fedde,CWS,LAD,strikeouts,Under,(3.5) ,(5.5) ,(4.5) ,(5.5) 
 Eugenio Suarez,ARI,MIN,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Eugenio Suarez,ARI,MIN,bases,Under,(1.5) ,(0.5) ,,(0.5) 
-Eugenio Suarez,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) 
-Eugenio Suarez,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -190,(0.5) 
+Eugenio Suarez,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 160,(0.5) 
+Eugenio Suarez,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -210,(0.5) 
 Ezequiel Duran,TEX,@MIL,bases,Over,,(0.5) ,,(0.5) 
 Ezequiel Duran,TEX,@MIL,bases,Under,,(0.5) ,,(0.5) 
 Ezequiel Duran,TEX,@MIL,runs,Over,,(0.5) ,,(0.5) 
@@ -409,8 +409,8 @@ George Springer,TOR,@BOS,runs,Over,,(0.5) ,(0.5) ,(0.5)
 George Springer,TOR,@BOS,runs,Under,,(0.5) ,(0.5) ,(0.5) 
 Geraldo Perdomo,ARI,MIN,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Geraldo Perdomo,ARI,MIN,bases,Under,(1.5) ,(0.5) ,,(0.5) 
-Geraldo Perdomo,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 160,(0.5) 
-Geraldo Perdomo,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -210,(0.5) 
+Geraldo Perdomo,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 175,(0.5) 
+Geraldo Perdomo,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -240,(0.5) 
 Gio Urshela,DET,PHI,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Gio Urshela,DET,PHI,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Gio Urshela,DET,PHI,runs,Over,(0.5) ,(0.5) ,,(0.5) 
@@ -443,8 +443,8 @@ Hayden Wesneski,CHC,@SF,strikeouts,Over,,(2.5) ,,(2.5) -140
 Hayden Wesneski,CHC,@SF,strikeouts,Under,,(2.5) ,,(2.5) 110
 Heliot Ramos,SF,CHC,bases,Over,(1.5) ,(1.5) ,,(1.5) 140
 Heliot Ramos,SF,CHC,bases,Under,(1.5) ,(1.5) ,,(1.5) -185
-Heliot Ramos,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 120,(0.5) 120
-Heliot Ramos,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -155,(0.5) -155
+Heliot Ramos,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 175,(0.5) 120
+Heliot Ramos,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -230,(0.5) -155
 Heston Kjerstad,BAL,CLE,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Heston Kjerstad,BAL,CLE,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Heston Kjerstad,BAL,CLE,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -455,8 +455,8 @@ Hunter Renfroe,KC,MIA,runs,Over,,(0.5) ,(0.5) ,(0.5)
 Hunter Renfroe,KC,MIA,runs,Under,,(0.5) ,(0.5) ,(0.5) 
 Ian Happ,CHC,@SF,bases,Over,(1.5) ,(0.5) ,,(0.5) -155
 Ian Happ,CHC,@SF,bases,Under,(1.5) ,(0.5) ,,(0.5) 120
-Ian Happ,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 130,(0.5) 125
-Ian Happ,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -165,(0.5) -160
+Ian Happ,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(1.5) 170,(0.5) 125
+Ian Happ,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(1.5) -220,(0.5) -160
 Isaac Paredes,TB,SEA,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Isaac Paredes,TB,SEA,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Isaac Paredes,TB,SEA,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -523,8 +523,8 @@ Jake Fraley,CIN,PIT,runs,Over,(0.5) ,(0.5) ,,(0.5)
 Jake Fraley,CIN,PIT,runs,Under,(0.5) ,(0.5) ,,(0.5) 
 Jake McCarthy,ARI,MIN,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Jake McCarthy,ARI,MIN,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Jake McCarthy,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 140,(0.5) 
-Jake McCarthy,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -180,(0.5) 
+Jake McCarthy,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 145,(0.5) 
+Jake McCarthy,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -185,(0.5) 
 Jake Meyers,HOU,COL,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Jake Meyers,HOU,COL,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Jake Meyers,HOU,COL,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -583,8 +583,8 @@ Jo Adell,LAA,OAK,runs,Over,(0.5) ,(0.5) ,,(0.5)
 Jo Adell,LAA,OAK,runs,Under,(0.5) ,(0.5) ,,(0.5) 
 Joc Pederson,ARI,MIN,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Joc Pederson,ARI,MIN,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Joc Pederson,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 100,(0.5) 
-Joc Pederson,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -125,(0.5) 
+Joc Pederson,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) 
+Joc Pederson,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -195,(0.5) 
 Joey Estes,OAK,@LAA,strikeouts,Over,(5.5) ,(3.5) ,(3.5) ,(3.5) 
 Joey Estes,OAK,@LAA,strikeouts,Under,(5.5) ,(3.5) ,(3.5) ,(3.5) 
 Joey Loperfido,HOU,COL,bases,Over,,(0.5) ,,(0.5) 
@@ -629,8 +629,8 @@ Jorge Polanco,SEA,@TB,runs,Over,(0.5) ,(0.5) ,,(0.5)
 Jorge Polanco,SEA,@TB,runs,Under,(0.5) ,(0.5) ,,(0.5) 
 Jorge Soler,SF,CHC,bases,Over,(1.5) ,(0.5) ,,(0.5) -185
 Jorge Soler,SF,CHC,bases,Under,(1.5) ,(0.5) ,,(0.5) 135
-Jorge Soler,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 130,(0.5) 130
-Jorge Soler,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -165,(0.5) -165
+Jorge Soler,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 130
+Jorge Soler,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) -165
 Jose Altuve,HOU,COL,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Jose Altuve,HOU,COL,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Jose Altuve,HOU,COL,runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) 
@@ -697,8 +697,8 @@ Ke'Bryan Hayes,PIT,@CIN,runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5)
 Ke'Bryan Hayes,PIT,@CIN,runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) 
 Ketel Marte,ARI,MIN,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Ketel Marte,ARI,MIN,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Ketel Marte,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 100,(0.5) 
-Ketel Marte,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -125,(0.5) 
+Ketel Marte,ARI,MIN,runs,Over,(0.5) ,(0.5) ,(0.5) 145,(0.5) 
+Ketel Marte,ARI,MIN,runs,Under,(0.5) ,(0.5) ,(0.5) -185,(0.5) 
 Kevin Kiermaier,TOR,@BOS,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Kevin Kiermaier,TOR,@BOS,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Kevin Kiermaier,TOR,@BOS,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -776,7 +776,7 @@ Luis Gil,NYY,@NYM,strikeouts,Under,(4.5) ,(5.5) ,(5.5) ,(5.5)
 Luis Matos,SF,CHC,bases,Over,(1.5) ,(0.5) ,,(0.5) -190
 Luis Matos,SF,CHC,bases,Under,(1.5) ,(0.5) ,,(0.5) 145
 Luis Matos,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 175,(0.5) 175
-Luis Matos,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -230,(0.5) -250
+Luis Matos,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -240,(0.5) -250
 Luis Ortiz,PIT,@CIN,strikeouts,Over,,,(3.5) ,
 Luis Ortiz,PIT,@CIN,strikeouts,Under,,,(3.5) ,
 Luis Rengifo,LAA,OAK,bases,Over,(1.5) ,(1.5) ,,(1.5) 
@@ -841,8 +841,8 @@ Matt Carpenter,STL,ATL,runs,Over,,(0.5) ,,(0.5)
 Matt Carpenter,STL,ATL,runs,Under,,(0.5) ,,(0.5) 
 Matt Chapman,SF,CHC,bases,Over,(1.5) ,(1.5) ,,(1.5) 140
 Matt Chapman,SF,CHC,bases,Under,(1.5) ,(1.5) ,,(1.5) -185
-Matt Chapman,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 115,(0.5) 115
-Matt Chapman,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -150,(0.5) -150
+Matt Chapman,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) 115
+Matt Chapman,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -195,(0.5) -150
 Matt Olson,ATL,@STL,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Matt Olson,ATL,@STL,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Matt Olson,ATL,@STL,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -859,16 +859,16 @@ Matthew Liberatore,STL,ATL,strikeouts,Over,,(2.5) ,,(2.5)
 Matthew Liberatore,STL,ATL,strikeouts,Under,,(2.5) ,,(2.5) 
 Max Kepler,MIN,@ARI,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Max Kepler,MIN,@ARI,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Max Kepler,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 140,(0.5) 
-Max Kepler,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -180,(0.5) 
+Max Kepler,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 115,(0.5) 
+Max Kepler,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -145,(0.5) 
 Max Schuemann,OAK,@LAA,bases,Over,,(0.5) ,,(0.5) 
 Max Schuemann,OAK,@LAA,bases,Under,,(0.5) ,,(0.5) 
 Max Schuemann,OAK,@LAA,runs,Over,,(0.5) ,(0.5) ,(0.5) 
 Max Schuemann,OAK,@LAA,runs,Under,,(0.5) ,(0.5) ,(0.5) 
 Michael Busch,CHC,@SF,bases,Over,(1.5) ,(0.5) ,,(0.5) -130
 Michael Busch,CHC,@SF,bases,Under,(1.5) ,(0.5) ,,(0.5) 100
-Michael Busch,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 195,(0.5) 130
-Michael Busch,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -260,(0.5) -175
+Michael Busch,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 175,(0.5) 130
+Michael Busch,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -230,(0.5) -175
 Michael Conforto,SF,CHC,bases,Over,(1.5) ,(0.5) ,,(0.5) -140
 Michael Conforto,SF,CHC,bases,Under,(1.5) ,(0.5) ,,(0.5) 105
 Michael Conforto,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 160,(0.5) 160
@@ -889,8 +889,8 @@ Mickey Moniak,LAA,OAK,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5)
 Mickey Moniak,LAA,OAK,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Miguel Amaya,CHC,@SF,bases,Over,(1.5) ,(0.5) ,,(0.5) -145
 Miguel Amaya,CHC,@SF,bases,Under,(1.5) ,(0.5) ,,(0.5) 110
-Miguel Amaya,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 220,(0.5) 220
-Miguel Amaya,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -300,(0.5) -300
+Miguel Amaya,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 310,(0.5) 220
+Miguel Amaya,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -450,(0.5) -300
 Miguel Andujar,OAK,@LAA,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Miguel Andujar,OAK,@LAA,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Miguel Andujar,OAK,@LAA,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -951,8 +951,8 @@ Nicky Lopez,CWS,LAD,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5)
 Nicky Lopez,CWS,LAD,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Nico Hoerner,CHC,@SF,bases,Over,(1.5) ,(1.5) ,,(1.5) 115
 Nico Hoerner,CHC,@SF,bases,Under,(1.5) ,(1.5) ,,(1.5) -150
-Nico Hoerner,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 160,(0.5) -105
-Nico Hoerner,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -210,(0.5) -125
+Nico Hoerner,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 125,(0.5) -105
+Nico Hoerner,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -160,(0.5) -125
 Nolan Arenado,STL,ATL,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Nolan Arenado,STL,ATL,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Nolan Arenado,STL,ATL,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -991,8 +991,8 @@ Ozzie Albies,ATL,@STL,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5)
 Ozzie Albies,ATL,@STL,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Patrick Bailey,SF,CHC,bases,Over,(1.5) ,(0.5) ,,(0.5) -185
 Patrick Bailey,SF,CHC,bases,Under,(1.5) ,(0.5) ,,(0.5) 140
-Patrick Bailey,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 140,(0.5) 130
-Patrick Bailey,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -180,(0.5) -165
+Patrick Bailey,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 130
+Patrick Bailey,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) -165
 Paul DeJong,CWS,LAD,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Paul DeJong,CWS,LAD,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Paul DeJong,CWS,LAD,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -1011,8 +1011,8 @@ Pete Alonso,NYM,NYY,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5)
 Pete Alonso,NYM,NYY,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Pete Crow-Armstrong,CHC,@SF,bases,Over,(1.5) ,(0.5) ,,(0.5) -145
 Pete Crow-Armstrong,CHC,@SF,bases,Under,(1.5) ,(0.5) ,,(0.5) 110
-Pete Crow-Armstrong,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) 145
-Pete Crow-Armstrong,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -195,(0.5) -190
+Pete Crow-Armstrong,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 220,(0.5) 145
+Pete Crow-Armstrong,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -300,(0.5) -190
 Rafael Devers,BOS,TOR,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Rafael Devers,BOS,TOR,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Rafael Devers,BOS,TOR,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -1059,8 +1059,8 @@ Rowdy Tellez,PIT,@CIN,runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5)
 Rowdy Tellez,PIT,@CIN,runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) 
 Royce Lewis,MIN,@ARI,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Royce Lewis,MIN,@ARI,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Royce Lewis,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 110,(0.5) 
-Royce Lewis,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -140,(0.5) 
+Royce Lewis,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 100,(0.5) 
+Royce Lewis,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -125,(0.5) 
 Ryan Bliss,SEA,@TB,bases,Over,,(0.5) ,,(0.5) 
 Ryan Bliss,SEA,@TB,bases,Under,,(0.5) ,,(0.5) 
 Ryan Bliss,SEA,@TB,runs,Over,,(0.5) ,(0.5) ,(0.5) 
@@ -1111,8 +1111,8 @@ Sean Murphy,ATL,@STL,runs,Over,,(0.5) ,,(0.5)
 Sean Murphy,ATL,@STL,runs,Under,,(0.5) ,,(0.5) 
 Seiya Suzuki,CHC,@SF,bases,Over,(1.5) ,(1.5) ,,(1.5) 125
 Seiya Suzuki,CHC,@SF,bases,Under,(1.5) ,(1.5) ,,(1.5) -165
-Seiya Suzuki,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 125,(0.5) 120
-Seiya Suzuki,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -160,(0.5) -160
+Seiya Suzuki,CHC,@SF,runs,Over,(0.5) ,(0.5) ,(0.5) 160,(0.5) 120
+Seiya Suzuki,CHC,@SF,runs,Under,(0.5) ,(0.5) ,(0.5) -210,(0.5) -160
 Shea Langeliers,OAK,@LAA,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Shea Langeliers,OAK,@LAA,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 Shea Langeliers,OAK,@LAA,runs,Over,(0.5) ,(0.5) ,,(0.5) 
@@ -1157,8 +1157,8 @@ Teoscar Hernandez,LAD,@CWS,runs,Over,(0.5) ,(0.5) ,,(0.5)
 Teoscar Hernandez,LAD,@CWS,runs,Under,(0.5) ,(0.5) ,,(0.5) 
 Thairo Estrada,SF,CHC,bases,Over,(1.5) ,(1.5) ,,(1.5) 145
 Thairo Estrada,SF,CHC,bases,Under,(1.5) ,(1.5) ,,(1.5) -190
-Thairo Estrada,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) 145
-Thairo Estrada,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -195,(0.5) -190
+Thairo Estrada,SF,CHC,runs,Over,(0.5) ,(0.5) ,(0.5) 145,(0.5) 145
+Thairo Estrada,SF,CHC,runs,Under,(0.5) ,(0.5) ,(0.5) -185,(0.5) -190
 Tim Anderson,MIA,@KC,bases,Over,(1.5) ,(1.5) ,,
 Tim Anderson,MIA,@KC,bases,Under,(1.5) ,(1.5) ,,
 Tim Anderson,MIA,@KC,runs,Over,(0.5) ,(0.5) ,,
@@ -1181,16 +1181,16 @@ Trent Grisham,NYY,@NYM,runs,Over,,(0.5) ,,(0.5)
 Trent Grisham,NYY,@NYM,runs,Under,,(0.5) ,,(0.5) 
 Trevor Larnach,MIN,@ARI,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Trevor Larnach,MIN,@ARI,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Trevor Larnach,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 150,(0.5) 
-Trevor Larnach,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -195,(0.5) 
+Trevor Larnach,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
+Trevor Larnach,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 Trey Cabbage,HOU,COL,bases,Over,,(0.5) ,,(0.5) 
 Trey Cabbage,HOU,COL,bases,Under,,(0.5) ,,(0.5) 
 Trey Cabbage,HOU,COL,runs,Over,,(0.5) ,,(0.5) 
 Trey Cabbage,HOU,COL,runs,Under,,(0.5) ,,(0.5) 
 Tucker Barnhart,ARI,MIN,bases,Over,,(0.5) ,,(0.5) 
 Tucker Barnhart,ARI,MIN,bases,Under,,(0.5) ,,(0.5) 
-Tucker Barnhart,ARI,MIN,runs,Over,,(0.5) ,(0.5) 260,(0.5) 
-Tucker Barnhart,ARI,MIN,runs,Under,,(0.5) ,(0.5) -370,(0.5) 
+Tucker Barnhart,ARI,MIN,runs,Over,,(0.5) ,(0.5) 250,(0.5) 
+Tucker Barnhart,ARI,MIN,runs,Under,,(0.5) ,(0.5) -340,(0.5) 
 Ty France,SEA,@TB,bases,Over,(1.5) ,(0.5) ,,(0.5) 
 Ty France,SEA,@TB,bases,Under,(1.5) ,(0.5) ,,(0.5) 
 Ty France,SEA,@TB,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
@@ -1255,8 +1255,8 @@ Will Smith,LAD,@CWS,runs,Over,(0.5) ,(0.5) ,,(0.5)
 Will Smith,LAD,@CWS,runs,Under,(0.5) ,(0.5) ,,(0.5) 
 Willi Castro,MIN,@ARI,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 Willi Castro,MIN,@ARI,bases,Under,(1.5) ,(1.5) ,,(1.5) 
-Willi Castro,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) 135,(0.5) 
-Willi Castro,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) -175,(0.5) 
+Willi Castro,MIN,@ARI,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
+Willi Castro,MIN,@ARI,runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) 
 William Contreras,MIL,TEX,bases,Over,(1.5) ,(1.5) ,,(1.5) 
 William Contreras,MIL,TEX,bases,Under,(1.5) ,(1.5) ,,(1.5) 
 William Contreras,MIL,TEX,runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) 
