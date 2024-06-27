@@ -85,8 +85,8 @@ const LoginPage = ({ onLogin }) => {
       <div className="hidden lg:flex w-1/2 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557683304-673a23048d34')" }}>
         <div className="bg-gradient-to-r from-black to-transparent opacity-75 w-full h-full flex items-center justify-center">
           <div className="text-white text-center px-10 space-y-5">
-            <h2 className="text-4xl font-bold">Welcome to Live Odds Tracker</h2>
-            <p className="text-lg">Track the latest sports betting odds with ease and confidence.</p>
+            <h2 className="text-4xl font-bold">Welcome to Live Odds Tracker for Player Props</h2>
+            <p className="text-lg">Track the latest sports betting odds available with ease for the wide variety of player props available on DFS betting platforms</p>
           </div>
         </div>
       </div>

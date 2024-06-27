@@ -48,6 +48,10 @@
   transform: rotateY(180deg);
 }
 
+.flip-card-front{
+  color: white;
+}
+
 /* Animated Background */
 .animated-background {
   background: linear-gradient(45deg, #3b82f6, #2563eb, #1e40af);
