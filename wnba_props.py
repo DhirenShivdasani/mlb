@@ -181,7 +181,7 @@ pivot_df.replace('() nan', None, inplace=True)
 
 pivot_df.to_csv('wnba_props.csv', index=False)
 
-upload_to_aws('wnba_props.csv', BUCKET_NAME, 'mlb_props.csv')
+upload_to_aws('wnba_props.csv', BUCKET_NAME, 'wnba_props.csv')
 
 s3_file = 'wnba_props.csv'
 local_file = 'wnba_props.csv'
