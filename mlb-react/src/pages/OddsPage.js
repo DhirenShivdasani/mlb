@@ -4,7 +4,7 @@ import './OddsPage.css';
 import StatCard from '../components/StatCard';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
-const OddsPage = ({ updateLastUpdated }) => {
+const OddsPage = ({ updateLastUpdated, sport }) => {
     const [oddsData, setOddsData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [historicalData, setHistoricalData] = useState([]);
@@ -25,10 +25,10 @@ const OddsPage = ({ updateLastUpdated }) => {
 
     useEffect(() => {
         fetchOdds();
-    }, []);
+    }, [sport]);
 
     const fetchOdds = async () => {
-        const response = await fetch('/merged_${sport}');
+        const response = await fetch('/merged_data?sport=${sport}`');
         const data = await response.json();
         setOddsData(data);
         setFilteredData(data); // Set filteredData to initial data
@@ -286,88 +286,83 @@ const OddsPage = ({ updateLastUpdated }) => {
     return (
         <div>
             <div id="notification" className="bg-yellow-300 text-gray-800 p-2 text-center">New data available. Please refresh the page.</div>
-            <div className="flex">
-                <div className="filters flex flex-col justify-start gap-4 p-4 bg-base-200 rounded-lg shadow-md w-1/4">
-                    <div className="filter">
+            <div className="filters flex flex-wrap justify-center gap-4 p-4 bg-base-200 rounded-lg shadow-md">
+                <div className="filter">
                     <label htmlFor="player-name" className="text-white">Filter by Player:</label>
                     <input
                         type="text"
                         id="player-name"
                         name="playerName"
                         placeholder="Enter player name"
-                        className="input input-bordered w-full"
+                        className="input input-bordered w-full max-w-xs"
                         onChange={handleFilterChange}
-                        value={filters.playerName}
+                        value={filters.playerName} // Ensure input value reflects the filter state
                     />
-                    </div>
-                    <div className="filter">
+                </div>
+                <div className="filter">
                     <label htmlFor="team-opponent" className="text-white">Filter by Game:</label>
                     <input
                         type="text"
                         id="team-opponent"
                         name="teamOpponent"
                         placeholder="Enter team vs opponent"
-                        className="input input-bordered w-full"
+                        className="input input-bordered w-full max-w-xs"
                         onChange={handleFilterChange}
-                        value={filters.teamOpponent}
+                        value={filters.teamOpponent} // Ensure input value reflects the filter state
                     />
-                    </div>
-                    <div className="filter">
+                </div>
+                <div className="filter">
                     <label htmlFor="prop-type" className="text-white">Filter by Prop:</label>
                     <select
                         id="prop-type"
                         name="propType"
-                        className="select select-bordered w-full"
+                        className="select select-bordered w-full max-w-xs"
                         onChange={handleFilterChange}
-                        value={filters.propType}
+                        value={filters.propType} // Ensure select value reflects the filter state
                     >
                         <option value="all">All</option>
                         <option value="Runs">Runs</option>
                         <option value="Strikeouts">Strikeouts</option>
                         <option value="Total Bases">Total Bases</option>
                     </select>
-                    </div>
-                    <div className="filter">
+                </div>
+                <div className="filter">
                     <label htmlFor="sort-by" className="text-white">Sort by:</label>
                     <select
                         id="sort-by"
                         name="sortBy"
-                        className="select select-bordered w-full"
+                        className="select select-bordered w-full max-w-xs"
                         onChange={handleFilterChange}
-                        value={filters.sortBy}
+                        value={filters.sortBy} // Ensure select value reflects the filter state
                     >
                         <option value="default">Default</option>
                         <option value="impliedProbAsc">Implied Prob % (Low to High)</option>
                         <option value="impliedProbDesc">Implied Prob % (High to Low)</option>
                     </select>
-                    </div>
                 </div>
-                <div className="flex-grow">
-                    <div id="odds-container">
-                    {getPaginatedData().map((odds, index) => (
-                        <StatCard key={index} odds={odds} showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} />
-                    ))}
-                    </div>
-                    <div className="pagination-controls flex justify-center gap-4 mt-4">
-                    <button
-                        onClick={() => handlePageChange(currentPage - 1)}
-                        disabled={currentPage === 1}
-                        className="btn"
-                    >
-                        Previous
-                    </button>
-                    <span>Page {currentPage} of {totalPages}</span>
-                    <button
-                        onClick={() => handlePageChange(currentPage + 1)}
-                        disabled={currentPage === totalPages}
-                        className="btn"
-                    >
-                        Next
-                    </button>
-                    </div>
-                </div>
-                </div>
-
+            </div>
+            <div id="odds-container">
+                {getPaginatedData().map((odds, index) => (
+                    <StatCard key={index} odds={odds} showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} />
+                ))}
+            </div>
+            <div className="pagination-controls flex justify-center gap-4 mt-4">
+                <button
+                    onClick={() => handlePageChange(currentPage - 1)}
+                    disabled={currentPage === 1}
+                    className="btn"
+                >
+                    Previous
+                </button>
+                <span>Page {currentPage} of {totalPages}</span>
+                <button
+                    onClick={() => handlePageChange(currentPage + 1)}
+                    disabled={currentPage === totalPages}
+                    className="btn"
+                >
+                    Next
+                </button>
+            </div>
             <div id="historicalModal">
                 <div className="modal-header">
                     <select id="data-filter" onChange={handleDataFilterChange} value={dataFilter} className="select select-bordered">
