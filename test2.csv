@@ -1,65 +1,40 @@
 ,Name,Team,Value,Prop
-0,Elly De La Cruz,CIN - IF,9.5,Hitter Fantasy Score
-1,José Ramírez,CLE - IF,10.0,Hitter Fantasy Score
+0,José Ramírez,CLE - IF,10.0,Hitter Fantasy Score
+1,Ben Lively,CLE - P,3.0,Pitcher Strikeouts
 2,Jack Flaherty,DET - P,41.5,Pitcher Fantasy Score
-3,Ben Lively,CLE - P,3.0,Pitcher Strikeouts
-4,Andrew Abbott,CIN - P,4.0,Pitcher Strikeouts
-5,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
-6,Andrew Abbott + Miles Mikolas,CIN/STL - P,0.5,1st Inning Runs Allowed
-7,Paul Goldschmidt,STL - IF,1.5,Hits+Runs+RBIs
-8,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
-9,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
-10,Miles Mikolas,STL - P,4.5,Pitcher Strikeouts
-11,Andrew Abbott,CIN - P,16.5,Pitching Outs
-12,Michael Wacha,KC - P,16.0,Pitching Outs
-13,Miles Mikolas,STL - P,28.5,Pitcher Fantasy Score
+3,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
+4,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
+5,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
+6,Michael Wacha,KC - P,16.5,Pitching Outs
+7,José Ramírez,CLE - IF,1.5,Total Bases
+8,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
+9,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
+10,Ben Lively,CLE - P,3.0,Pitcher Strikeouts
+11,Davis Daniel,LAA - P,4.0,Pitcher Strikeouts
+12,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
+13,Maikel Garcia,KC - IF,1.5,Total Bases
 14,José Ramírez,CLE - IF,1.5,Total Bases
-15,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
-16,Miles Mikolas,STL - P,4.5,Pitcher Strikeouts
-17,Andrew Abbott,CIN - P,4.0,Pitcher Strikeouts
-18,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
-19,Ben Lively,CLE - P,3.0,Pitcher Strikeouts
-20,Davis Daniel,LAA - P,4.0,Pitcher Strikeouts
-21,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
-22,Maikel Garcia,KC - IF,1.5,Total Bases
-23,José Ramírez,CLE - IF,1.5,Total Bases
-24,Jo Adell,LAA - OF,0.5,Total Bases
-25,Andrew Abbott + Miles Mikolas,CIN/STL - P,0.5,1st Inning Runs Allowed
-26,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
-27,Miles Mikolas,STL - P,5.5,Hits Allowed
-28,Michael Wacha,KC - P,5.5,Hits Allowed
-29,Miles Mikolas,STL - P,28.5,Pitcher Fantasy Score
-30,Andrew Abbott,CIN - P,24.5,Pitcher Fantasy Score
-31,Jack Flaherty,DET - P,41.5,Pitcher Fantasy Score
-32,Masyn Winn,STL - IF,1.5,Hits+Runs+RBIs
-33,Nolan Arenado,STL - IF,1.5,Hits+Runs+RBIs
-34,Paul Goldschmidt,STL - IF,1.5,Hits+Runs+RBIs
-35,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
-36,Daniel Schneemann,CLE - IF,1.5,Hits+Runs+RBIs
-37,MJ Melendez,KC - OF,1.5,Hits+Runs+RBIs
-38,Andrés Giménez,CLE - IF,1.5,Hits+Runs+RBIs
-39,Gio Urshela,DET - IF,1.5,Hits+Runs+RBIs
-40,Mark Canha,DET - OF,1.5,Hits+Runs+RBIs
-41,Wenceel Pérez,DET - OF,1.5,Hits+Runs+RBIs
-42,Tyler Freeman,CLE - OF,1.5,Hits+Runs+RBIs
-43,Andrés Giménez,CLE - IF,0.5,Singles
-44,Tyler Freeman,CLE - OF,0.5,Singles
-45,Andrew Abbott,CIN - P,16.5,Pitching Outs
-46,Ben Lively,CLE - P,16.5,Pitching Outs
-47,Michael Wacha,KC - P,16.0,Pitching Outs
-48,Elly De La Cruz,CIN - IF,9.5,Hitter Fantasy Score
-49,José Ramírez,CLE - IF,10.0,Hitter Fantasy Score
-50,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
-51,Steven Kwan,CLE - OF,7.5,Hitter Fantasy Score
-52,Riley Greene,DET - OF,0.5,Walks
-53,Stuart Fairchild,CIN - OF,0.5,Hits
-54,Andrew Abbott,CIN - P,2.5,Earned Runs Allowed
-55,Elly De La Cruz,CIN - IF,0.5,Runs
-56,Willson Contreras,STL - C,0.5,Runs
-57,José Ramírez,CLE - IF,0.5,Runs
-58,Steven Kwan,CLE - OF,0.5,Runs
-59,Matt Vierling,DET - IF,0.5,Runs
-60,Riley Greene,DET - OF,0.5,Runs
-61,José Fermín,STL - IF,0.5,Hitter Strikeouts
-62,Andrés Giménez,CLE - IF,0.5,Hitter Strikeouts
-63,Hunter Renfroe,KC - OF,0.5,Hitter Strikeouts
+15,Jo Adell,LAA - OF,0.5,Total Bases
+16,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
+17,Michael Wacha,KC - P,5.5,Hits Allowed
+18,Jack Flaherty,DET - P,41.5,Pitcher Fantasy Score
+19,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
+20,Daniel Schneemann,CLE - IF,1.5,Hits+Runs+RBIs
+21,MJ Melendez,KC - OF,1.5,Hits+Runs+RBIs
+22,Andrés Giménez,CLE - IF,1.5,Hits+Runs+RBIs
+23,Wenceel Pérez,DET - OF,1.5,Hits+Runs+RBIs
+24,Tyler Freeman,CLE - OF,1.5,Hits+Runs+RBIs
+25,Andrés Giménez,CLE - IF,0.5,Singles
+26,Tyler Freeman,CLE - OF,0.5,Singles
+27,Ben Lively,CLE - P,16.5,Pitching Outs
+28,Michael Wacha,KC - P,16.5,Pitching Outs
+29,José Ramírez,CLE - IF,10.0,Hitter Fantasy Score
+30,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
+31,Steven Kwan,CLE - OF,7.5,Hitter Fantasy Score
+32,Riley Greene,DET - OF,0.5,Walks
+33,José Ramírez,CLE - IF,0.5,Runs
+34,Steven Kwan,CLE - OF,0.5,Runs
+35,Matt Vierling,DET - IF,0.5,Runs
+36,Riley Greene,DET - OF,0.5,Runs
+37,Andrés Giménez,CLE - IF,0.5,Hitter Strikeouts
+38,Hunter Renfroe,KC - OF,0.5,Hitter Strikeouts
