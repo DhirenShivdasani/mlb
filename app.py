@@ -6,7 +6,8 @@ import pandas as pd
 import os
 import psycopg2
 import bcrypt
-from flask import Flask, jsonify, request, session, send_from_directory,redirect, url_for,render_template
+from flask import Flask, jsonify, request, session, send_from_directory, redirect, url_for, render_template
+import re
 
 prod = False
 DATABASE_URL = os.getenv('DATABASE_URL')
@@ -14,6 +15,7 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for sessions
 CORS(app)
+
 
 connected_clients = set()
 
@@ -32,7 +34,7 @@ def init_db():
     cur.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id SERIAL PRIMARY KEY,
-            username VARCHAR(255) UNIQUE NOT NULL,
+            email VARCHAR(255) UNIQUE NOT NULL,
             password TEXT NOT NULL
         )
     ''')
@@ -43,6 +45,13 @@ def init_db():
 
 init_db()
 
+def is_valid_email(email):
+    regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w+$'
+    if re.search(regex, email):
+        return True
+    else:
+        return False
+    
 async def notify_clients():
     if connected_clients:
         message = "update"
@@ -125,25 +134,31 @@ def get_merged_data():
         return jsonify({"error": str(e)}), 500
 
 # User authentication routes
+
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         data = request.json
-        username = data['username']
+        email = data['email']
         password = data['password']
+        
+        if not is_valid_email(email):
+            return jsonify({"status": "error", "message": "Email is invalid"}), 400
+
         hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
         conn = get_db_connection()
         cur = conn.cursor()
         try:
             cur.execute('''
-                INSERT INTO users (username, password)
+                INSERT INTO users (email, password)
                 VALUES (%s, %s)
-            ''', (username, hashed_password))
+            ''', (email, hashed_password))
             conn.commit()
             return jsonify({"status": "success"}), 201
         except psycopg2.IntegrityError:
             conn.rollback()
-            return jsonify({"status": "error", "message": "Username already exists"}), 400
+            return jsonify({"status": "error", "message": "Email already exists"}), 400
         finally:
             cur.close()
             conn.close()
@@ -153,14 +168,18 @@ def register():
 def login():
     if request.method == 'POST':
         data = request.json
-        username = data['username']
+        email = data['email']
         password = data['password']
+        
+        if not is_valid_email(email):
+            return jsonify({"status": "error", "message": "Email is invalid"}), 400
+
         conn = get_db_connection()
         cur = conn.cursor()
         try:
             cur.execute('''
-                SELECT id, password FROM users WHERE username = %s
-            ''', (username,))
+                SELECT id, password FROM users WHERE email = %s
+            ''', (email,))
             user = cur.fetchone()
             if user and bcrypt.checkpw(password.encode('utf-8'), user[1].encode('utf-8')):
                 session['user_id'] = user[0]
@@ -183,4 +202,5 @@ def logout():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     threading.Thread(target=start_websocket_server, args=(port,)).start()
+
     app.run(debug=True, use_reloader=False, port=port)
