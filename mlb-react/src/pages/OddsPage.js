@@ -286,83 +286,88 @@ const OddsPage = ({ updateLastUpdated }) => {
     return (
         <div>
             <div id="notification" className="bg-yellow-300 text-gray-800 p-2 text-center">New data available. Please refresh the page.</div>
-            <div className="filters flex flex-wrap justify-center gap-4 p-4 bg-base-200 rounded-lg shadow-md">
-                <div className="filter">
+            <div className="flex">
+                <div className="filters flex flex-col justify-start gap-4 p-4 bg-base-200 rounded-lg shadow-md w-1/4">
+                    <div className="filter">
                     <label htmlFor="player-name" className="text-white">Filter by Player:</label>
                     <input
                         type="text"
                         id="player-name"
                         name="playerName"
                         placeholder="Enter player name"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full"
                         onChange={handleFilterChange}
-                        value={filters.playerName} // Ensure input value reflects the filter state
+                        value={filters.playerName}
                     />
-                </div>
-                <div className="filter">
+                    </div>
+                    <div className="filter">
                     <label htmlFor="team-opponent" className="text-white">Filter by Game:</label>
                     <input
                         type="text"
                         id="team-opponent"
                         name="teamOpponent"
                         placeholder="Enter team vs opponent"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full"
                         onChange={handleFilterChange}
-                        value={filters.teamOpponent} // Ensure input value reflects the filter state
+                        value={filters.teamOpponent}
                     />
-                </div>
-                <div className="filter">
+                    </div>
+                    <div className="filter">
                     <label htmlFor="prop-type" className="text-white">Filter by Prop:</label>
                     <select
                         id="prop-type"
                         name="propType"
-                        className="select select-bordered w-full max-w-xs"
+                        className="select select-bordered w-full"
                         onChange={handleFilterChange}
-                        value={filters.propType} // Ensure select value reflects the filter state
+                        value={filters.propType}
                     >
                         <option value="all">All</option>
                         <option value="Runs">Runs</option>
                         <option value="Strikeouts">Strikeouts</option>
                         <option value="Total Bases">Total Bases</option>
                     </select>
-                </div>
-                <div className="filter">
+                    </div>
+                    <div className="filter">
                     <label htmlFor="sort-by" className="text-white">Sort by:</label>
                     <select
                         id="sort-by"
                         name="sortBy"
-                        className="select select-bordered w-full max-w-xs"
+                        className="select select-bordered w-full"
                         onChange={handleFilterChange}
-                        value={filters.sortBy} // Ensure select value reflects the filter state
+                        value={filters.sortBy}
                     >
                         <option value="default">Default</option>
                         <option value="impliedProbAsc">Implied Prob % (Low to High)</option>
                         <option value="impliedProbDesc">Implied Prob % (High to Low)</option>
                     </select>
+                    </div>
                 </div>
-            </div>
-            <div id="odds-container">
-                {getPaginatedData().map((odds, index) => (
-                    <StatCard key={index} odds={odds} showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} />
-                ))}
-            </div>
-            <div className="pagination-controls flex justify-center gap-4 mt-4">
-                <button
-                    onClick={() => handlePageChange(currentPage - 1)}
-                    disabled={currentPage === 1}
-                    className="btn"
-                >
-                    Previous
-                </button>
-                <span>Page {currentPage} of {totalPages}</span>
-                <button
-                    onClick={() => handlePageChange(currentPage + 1)}
-                    disabled={currentPage === totalPages}
-                    className="btn"
-                >
-                    Next
-                </button>
-            </div>
+                <div className="flex-grow">
+                    <div id="odds-container">
+                    {getPaginatedData().map((odds, index) => (
+                        <StatCard key={index} odds={odds} showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} />
+                    ))}
+                    </div>
+                    <div className="pagination-controls flex justify-center gap-4 mt-4">
+                    <button
+                        onClick={() => handlePageChange(currentPage - 1)}
+                        disabled={currentPage === 1}
+                        className="btn"
+                    >
+                        Previous
+                    </button>
+                    <span>Page {currentPage} of {totalPages}</span>
+                    <button
+                        onClick={() => handlePageChange(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                        className="btn"
+                    >
+                        Next
+                    </button>
+                    </div>
+                </div>
+                </div>
+
             <div id="historicalModal">
                 <div className="modal-header">
                     <select id="data-filter" onChange={handleDataFilterChange} value={dataFilter} className="select select-bordered">

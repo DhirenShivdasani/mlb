@@ -6,33 +6,35 @@ body {
     padding: 0;
 }
 
-/* styles.css */
+/* Light and Dark mode colors */
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
     --navbar-color: #f8f9fa;
-  }
-  
+}
+
 .dark {
     --bg-color: #1a202c;
     --text-color: #f7fafc;
     --navbar-color: #2d3748;
-  }
-  
-  body {
+}
+
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
-  }
-  
-  .navbar {
+}
+
+.navbar {
     background-color: var(--navbar-color);
-  }
-  
+}
+
 .last-updated {
     font-size: 0.875rem; /* Adjust font size */
     margin-left: auto; /* Move it to the right */
     padding: 10px 0;
 }
+
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -52,18 +54,7 @@ body {
     font-size: 1rem;
 }
 
-.filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color: #1a1a1a; /* Dark background for contrast */
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
+/* Filter styles */
 .filter {
     display: flex;
     flex-direction: column;
@@ -93,11 +84,24 @@ body {
     border-color: #007bff;
 }
 
+/* Sidebar and main content layout */
+.filters {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    flex: 1; /* Ensure sidebar takes appropriate space */
+}
+
+.flex-grow {
+    margin-left: 1rem;
+    flex: 3; /* Ensure main content takes more space */
+}
+
+/* Odds container and card styles */
 #odds-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    gap: 1rem;
 }
 
 .card {
@@ -125,6 +129,7 @@ body {
     border-color: #374151; /* Dark gray divider */
 }
 
+/* Button styles */
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
@@ -135,6 +140,7 @@ body {
     border-color: #0056b3;
 }
 
+/* Odds card styles */
 .odds-card {
     background: white;
     border-radius: 10px;
@@ -180,6 +186,7 @@ body {
     color: #333;
 }
 
+/* Notification styles */
 #notification {
     display: none;
     text-align: center;
@@ -191,6 +198,7 @@ body {
     font-weight: bold;
 }
 
+/* Modal styles */
 #historicalModal {
     display: none;
     position: fixed;
@@ -230,6 +238,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Red button styles */
 .red-button {
     background-color: #ff4d4d;
     color: white;
@@ -242,4 +251,3 @@ body {
 .red-button:hover {
     background-color: darkred;
 }
-
