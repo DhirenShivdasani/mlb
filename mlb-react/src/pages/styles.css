@@ -1,0 +1,192 @@
+/* Container for the flip animation */
+.flip-card {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+/* Inner container */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+/* Flip the card when it has the flip class */
+.flip-card.flip .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces of the card */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Ensure the card content is centered */
+.flip-card-front .card-content, .flip-card-back .card-content {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-back {
+  background-color: #fff;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+/* Animated Background */
+.animated-background {
+  background: linear-gradient(45deg, #3b82f6, #2563eb, #1e40af);
+  background-size: 600% 600%;
+  animation: gradientAnimation 16s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+   50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Material Design Inputs */
+.input-material {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.input-material input {
+  font-size: 1rem;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+  background-color: transparent;
+}
+
+.input-material label {
+  color: #999;
+  font-size: 1rem;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+.input-material input:focus ~ label, .input-material input:not(:placeholder-shown) ~ label {
+  top: -20px;
+  font-size: 0.75rem;
+  color: #5264ae;
+}
+
+.input-material input:focus {
+  outline: none;
+  border-bottom: 2px solid #5264ae;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #60a5fa;
+}
+
+.input-bordered {
+  padding-left: 2.5rem;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-google, .btn-facebook {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-google {
+  background-color: #db4437;
+  color: white;
+}
+
+.btn-google:hover {
+  background-color: #c23321;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+.btn-facebook:hover {
+  background-color: #2d4373;
+}
+
+.loading {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #3b82f6;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

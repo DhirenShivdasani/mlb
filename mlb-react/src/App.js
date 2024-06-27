@@ -1,54 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
-import StatCard from './components/StatCard';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import OddsPage from './pages/OddsPage';
-
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-
+import LoginPage from './pages/LoginPage';
+import './App.css';
 
 function App() {
   const [lastUpdated, setLastUpdated] = useState('N/A');
-  
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const updateLastUpdated = (date) => {
     setLastUpdated(date);
+  };
+
+  const handleLogin = (username) => {
+    setIsLoggedIn(true);
+    console.log(`User ${username} logged in.`);
   };
 
   return (
     <Router>
       <div className="App">
-        <Navbar lastUpdated={lastUpdated} />
+        <ConditionalNavbar isLoggedIn={isLoggedIn} lastUpdated={lastUpdated} />
         <Routes>
-          
-          <Route path="/" element={<OddsPage updateLastUpdated={updateLastUpdated} />} />
-          {/* Add more routes as needed */}
+          <Route 
+            path="/" 
+            element={
+              isLoggedIn ? (
+                <OddsPage updateLastUpdated={updateLastUpdated} />
+              ) : (
+                <LoginPage onLogin={handleLogin} />
+              )
+            } 
+          />
+          <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
         </Routes>
       </div>
     </Router>
   );
 }
 
-const Navbar = ({ lastUpdated }) => {
-  const handleLogout = () => {
-    // Logic for logout
-    console.log('Logged out');
-  };
+const ConditionalNavbar = ({ isLoggedIn, lastUpdated }) => {
+  const location = useLocation();
 
-  return (
-    <div className="navbar bg-base-100 shadow-lg px-4 py-2 flex justify-between items-center">
-      <div>
-        <a className="btn btn-ghost normal-case text-xl" href="/">Live Odds Tracker</a>
-      </div>
-      <div className="flex items-center space-x-4">
-        <div className="text-sm text-gray-400">Last updated: {lastUpdated}</div>
-        <button className="btn btn-primary" onClick={handleLogout}>
-          Logout
-        </button>
-      </div>
-    </div>
-  );
+  if (location.pathname === '/login') {
+    return null;
+  }
+
+  return isLoggedIn && <Navbar lastUpdated={lastUpdated} />;
 };
 
 export default App;

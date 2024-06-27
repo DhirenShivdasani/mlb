@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Chart from 'chart.js/auto';
 import './OddsPage.css';
 import StatCard from '../components/StatCard';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const OddsPage = ({ updateLastUpdated }) => {
     const [oddsData, setOddsData] = useState([]);
@@ -18,23 +19,26 @@ const OddsPage = ({ updateLastUpdated }) => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 20;
 
+    const originalOddsData = useRef([]);
+    const filterTimeout = useRef(null);
+    const navigate = useNavigate(); // Initialize navigate
+
     useEffect(() => {
         fetchOdds();
     }, []);
-
-    useEffect(() => {
-        applyFilters();
-    }, [filters, oddsData]);
 
     const fetchOdds = async () => {
         const response = await fetch('/merged_data');
         const data = await response.json();
         setOddsData(data);
+        setFilteredData(data); // Set filteredData to initial data
+        originalOddsData.current = data;
         updateLastUpdated(formatDate(new Date()));
     };
 
-    const applyFilters = () => {
-        let filtered = oddsData;
+    const applyFilters = (filters) => {
+        console.log('Applying filters:', filters); // Debug logging
+        let filtered = [...originalOddsData.current]; // Ensure we start with original data
 
         if (filters.playerName) {
             filtered = filtered.filter(odds => odds.PlayerName.toLowerCase().includes(filters.playerName.toLowerCase()));
@@ -54,8 +58,31 @@ const OddsPage = ({ updateLastUpdated }) => {
             filtered.sort((a, b) => parseFloat(b.Implied_Prob) - parseFloat(a.Implied_Prob));
         }
 
+        console.log('Filtered data:', filtered); // Debug logging
         setFilteredData(filtered);
     };
+
+    useEffect(() => {
+        if (filterTimeout.current) {
+            clearTimeout(filterTimeout.current);
+        }
+
+        filterTimeout.current = setTimeout(() => {
+            console.log('Filters changed:', filters); // Debug logging
+            if (filters.sortBy === 'default') {
+                console.log('Resetting to original data:', originalOddsData.current);
+                setFilteredData([...originalOddsData.current]); // Reset to original data
+            } else {
+                applyFilters(filters);
+            }
+        }, 300); // Debounce delay of 300ms
+
+        return () => {
+            if (filterTimeout.current) {
+                clearTimeout(filterTimeout.current);
+            }
+        };
+    }, [filters]);
 
     const formatDate = (date) => {
         return date.toLocaleString('en-US', {
@@ -67,19 +94,19 @@ const OddsPage = ({ updateLastUpdated }) => {
             minute: '2-digit'
         });
     };
+
     const showHistoricalData = async (playerName, prop, overUnder) => {
         const encodedPlayerName = encodeURIComponent(playerName);
         const encodedProp = encodeURIComponent(prop);
         const encodedOverUnder = encodeURIComponent(overUnder);
-        
+
         const url = `/get_historical_data?player_name=${encodedPlayerName}&prop=${encodedProp}&over_under=${encodedOverUnder}`;
-    
+
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`Error fetching historical data: ${response.statusText}`);
             const data = await response.json();
-    
-            // Only update chart with filtered data based on over/under
+
             setHistoricalData(data);
             updateChart(data);
             document.getElementById('historicalModal').style.display = 'block';
@@ -87,28 +114,24 @@ const OddsPage = ({ updateLastUpdated }) => {
             console.error(error.message);
         }
     };
-    
-    
 
     const updateChart = (data) => {
         const extractOddsValue = (value) => {
             const parts = value.split(' ');
             return parts.length > 1 ? parseFloat(parts[1]) : null;
         };
-    
-        // Log data to inspect timestamps
-    
+
         const filteredData = data.slice(-dataFilter);
         const timestamps = filteredData.map(item => new Date(item.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
         const draftkings = filteredData.map(item => extractOddsValue(item.draftkings));
         const fanduel = filteredData.map(item => extractOddsValue(item.fanduel));
         const mgm = filteredData.map(item => extractOddsValue(item.mgm));
         const betrivers = filteredData.map(item => extractOddsValue(item.betrivers));
-    
+
         if (historicalChart) {
             historicalChart.destroy();
         }
-    
+
         const ctx = document.getElementById('historicalChart').getContext('2d');
         if (ctx) {
             const newChart = new Chart(ctx, {
@@ -211,13 +234,12 @@ const OddsPage = ({ updateLastUpdated }) => {
                     maintainAspectRatio: false,
                 }
             });
-    
+
             setHistoricalChart(newChart);
         } else {
             console.error('Historical chart element not found');
         }
     };
-    
 
     const closeHistoricalModal = () => {
         document.getElementById('historicalModal').style.display = 'none';
@@ -225,10 +247,10 @@ const OddsPage = ({ updateLastUpdated }) => {
 
     const handleFilterChange = (e) => {
         const { name, value } = e.target;
-        setFilters({
-            ...filters,
+        setFilters(prevFilters => ({
+            ...prevFilters,
             [name]: value
-        });
+        }));
     };
 
     const handleDataFilterChange = (e) => {
@@ -251,13 +273,15 @@ const OddsPage = ({ updateLastUpdated }) => {
         return filteredData.slice(startIndex, endIndex);
     };
 
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+    const totalPages = useMemo(() => Math.ceil(filteredData.length / itemsPerPage), [filteredData.length]);
 
     const handlePageChange = (newPage) => {
         if (newPage >= 1 && newPage <= totalPages) {
             setCurrentPage(newPage);
         }
     };
+
+   
 
     return (
         <div>
@@ -319,7 +343,7 @@ const OddsPage = ({ updateLastUpdated }) => {
             </div>
             <div id="odds-container">
                 {getPaginatedData().map((odds, index) => (
-                    <StatCard odds={odds} index={index} showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} />
+                    <StatCard key={index} odds={odds} showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} />
                 ))}
             </div>
             <div className="pagination-controls flex justify-center gap-4 mt-4">

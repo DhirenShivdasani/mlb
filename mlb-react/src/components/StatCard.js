@@ -8,9 +8,12 @@ export default function StatCard({ index, odds, showHistoricalData }) {
             <div className="card-body p-4">
                 <h2 className="card-title text-2xl font-bold text-white">{odds.PlayerName}</h2>
                 <p className="text-sm text-gray-300"><strong>Team:</strong> {odds.team} vs. <strong>Opponent:</strong> {odds.opp}</p>
+
                 <div className="divider"></div>
                 <div className="flex flex-col space-y-2">
                     <div className="flex justify-between text-gray-400">
+                        <p><strong>Prop:</strong> {odds.Prop}</p>
+
                         <p><strong>Over/Under:</strong> {odds.Over_Under}</p>
                     </div>
                     <div className="flex justify-between text-gray-400">

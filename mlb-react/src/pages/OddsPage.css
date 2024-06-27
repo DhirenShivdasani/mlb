@@ -6,8 +6,26 @@ body {
     padding: 0;
 }
 
-.navbar {
-    height: 64px; /* Adjust height based on your Navbar height */
+/* styles.css */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --navbar-color: #f8f9fa;
+  }
+  
+.dark {
+    --bg-color: #1a202c;
+    --text-color: #f7fafc;
+    --navbar-color: #2d3748;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  .navbar {
+    background-color: var(--navbar-color);
   }
   
 .last-updated {
@@ -224,3 +242,4 @@ body {
 .red-button:hover {
     background-color: darkred;
 }
+

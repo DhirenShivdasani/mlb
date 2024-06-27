@@ -7,11 +7,25 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.1.0",
+    "axios": "^1.7.2",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
     "chart.js": "^4.4.3",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
     "react-router-dom": "^6.24.0",
     "react-scripts": "5.0.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "timers-browserify": "^2.0.12",
+    "url": "^0.11.3",
+    "util": "^0.12.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -41,5 +55,28 @@
   "devDependencies": {
     "daisyui": "^4.12.7",
     "tailwindcss": "^3.4.4"
+  },
+  "resolutions": {
+    "webpack": "^5.0.0"
+  },
+  "overrides": {
+    "webpack": {
+      "resolve": {
+        "fallback": {
+          "http": "stream-http",
+          "https": "https-browserify",
+          "buffer": "buffer",
+          "util": "util",
+          "url": "url",
+          "assert": "assert",
+          "timers": "timers-browserify",
+          "stream": "stream-browserify",
+          "zlib": "browserify-zlib",
+          "path": "path-browserify",
+          "os": "os-browserify/browser",
+          "fs": false
+        }
+      }
+    }
   }
 }
