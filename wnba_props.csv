@@ -18,15 +18,15 @@ Aliyah Boston,IND,@SEA,threes,Under,(8.5) -110,(8.5) -105,(8.5) -102,(8.5) -105
 Alyssa Thomas,CON,@WAS,ast,Over,(7.5) 105,(7.5) 110,(7.5) 102,(7.5) 105
 Alyssa Thomas,CON,@WAS,ast,Under,(7.5) -139,(7.5) -140,(7.5) -136,(7.5) -135
 Alyssa Thomas,CON,@WAS,pts,Over,(12.5) -106,(12.5) 100,(12.5) -115,(12.5) 100
-Alyssa Thomas,CON,@WAS,pts,Under,(12.5) -125,(12.5) -130,(12.5) -113,(12.5) -130
+Alyssa Thomas,CON,@WAS,pts,Under,(12.5) -125,(12.5) -130,(12.5) -114,(12.5) -130
 Alyssa Thomas,CON,@WAS,reb,Over,(9.5) -132,(9.5) -130,(9.5) -132,(9.5) -130
 Alyssa Thomas,CON,@WAS,reb,Under,(9.5) 100,(9.5) 100,(9.5) 100,(9.5) 100
 Alyssa Thomas,CON,@WAS,threes,Over,(9.5) 100,(9.5) 100,(9.5) 100,(9.5) 100
 Alyssa Thomas,CON,@WAS,threes,Under,(9.5) 100,(9.5) 100,(9.5) 100,(9.5) 100
 Angel Reese,CHI,LVA,ast,Over,(9.5) 100,(9.5) 100,(9.5) 100,(9.5) 100
 Angel Reese,CHI,LVA,ast,Under,(9.5) 100,(9.5) 100,(9.5) 100,(9.5) 100
-Angel Reese,CHI,LVA,pts,Over,(13.5) -106,(13.5) -105,(13.5) 100,(13.5) 110
-Angel Reese,CHI,LVA,pts,Under,(13.5) -125,(13.5) -125,(13.5) -130,(13.5) -145
+Angel Reese,CHI,LVA,pts,Over,(13.5) -106,(13.5) 105,(13.5) 100,(13.5) 110
+Angel Reese,CHI,LVA,pts,Under,(13.5) -125,(13.5) -135,(13.5) -130,(13.5) -145
 Angel Reese,CHI,LVA,reb,Over,(11.5) -110,(11.5) 100,(10.5) -132,(10.5) -135
 Angel Reese,CHI,LVA,reb,Under,(11.5) -121,(11.5) -130,(10.5) 100,(10.5) 105
 Angel Reese,CHI,LVA,threes,Over,(11.5) -121,(11.5) -130,(10.5) 100,(10.5) 105
@@ -37,10 +37,10 @@ Ariel Atkins,WAS,CON,pts,Over,(14.5) 100,(15.5) 120,(14.5) -104,(14.5) -115
 Ariel Atkins,WAS,CON,pts,Under,(14.5) -132,(15.5) -154,(14.5) -125,(14.5) -115
 Ariel Atkins,WAS,CON,reb,Over,(3.5) -110,(3.5) -105,(3.5) -104,(3.5) -105
 Ariel Atkins,WAS,CON,reb,Under,(3.5) -121,(3.5) -125,(3.5) -128,(3.5) -125
-Ariel Atkins,WAS,CON,threes,Over,(1.5) -113,(1.5) -115,(1.5) -106,(1.5) -105
-Ariel Atkins,WAS,CON,threes,Under,(1.5) -118,(1.5) -115,(1.5) -125,(1.5) -125
-Brionna Jones,CON,@WAS,ast,Over,(1.5) -118,(1.5) -115,(1.5) -125,(1.5) -125
-Brionna Jones,CON,@WAS,ast,Under,(1.5) -118,(1.5) -115,(1.5) -125,(1.5) -125
+Ariel Atkins,WAS,CON,threes,Over,(1.5) -113,(1.5) -115,(1.5) -108,(1.5) -105
+Ariel Atkins,WAS,CON,threes,Under,(1.5) -118,(1.5) -115,(1.5) -122,(1.5) -125
+Brionna Jones,CON,@WAS,ast,Over,(1.5) -118,(1.5) -115,(1.5) -122,(1.5) -125
+Brionna Jones,CON,@WAS,ast,Under,(1.5) -118,(1.5) -115,(1.5) -122,(1.5) -125
 Brionna Jones,CON,@WAS,pts,Over,(14.5) -125,(13.5) -135,(14.5) -114,(14.5) -105
 Brionna Jones,CON,@WAS,pts,Under,(14.5) -106,(13.5) 105,(14.5) -114,(14.5) -125
 Brionna Jones,CON,@WAS,reb,Over,(5.5) 105,(5.5) 110,(5.5) 104,(5.5) 110
@@ -51,8 +51,8 @@ Caitlin Clark,IND,@SEA,ast,Over,(6.5) -125,(6.5) -125,(6.5) -118,(6.5) -120
 Caitlin Clark,IND,@SEA,ast,Under,(6.5) -106,(6.5) -105,(6.5) -110,(6.5) -110
 Caitlin Clark,IND,@SEA,pts,Over,(17.5) -106,(17.5) 100,(16.5) -125,(17.5) 100
 Caitlin Clark,IND,@SEA,pts,Under,(17.5) -125,(17.5) -130,(16.5) -104,(17.5) -130
-Caitlin Clark,IND,@SEA,reb,Over,(5.5) -139,(5.5) -140,(5.5) -125,(5.5) -125
-Caitlin Clark,IND,@SEA,reb,Under,(5.5) 105,(5.5) 110,(5.5) -106,(5.5) -105
+Caitlin Clark,IND,@SEA,reb,Over,(5.5) -139,(5.5) -140,(5.5) -106,(5.5) -125
+Caitlin Clark,IND,@SEA,reb,Under,(5.5) 105,(5.5) 110,(5.5) -125,(5.5) -105
 Caitlin Clark,IND,@SEA,threes,Over,(2.5) -152,(2.5) -145,(2.5) -152,(2.5) -165
 Caitlin Clark,IND,@SEA,threes,Under,(2.5) 114,(2.5) 105,(2.5) 114,(2.5) 125
 Chennedy Carter,CHI,LVA,ast,Over,(2.5) 114,(2.5) 105,(2.5) 114,(2.5) 125
@@ -65,8 +65,8 @@ Chennedy Carter,CHI,LVA,threes,Over,(16.5) -125,(15.5) 110,(16.5) -122,(16.5) -1
 Chennedy Carter,CHI,LVA,threes,Under,(16.5) -125,(15.5) 110,(16.5) -122,(16.5) -120
 DeWanna Bonner,CON,@WAS,ast,Over,(16.5) -125,(15.5) 110,(16.5) -122,(16.5) -120
 DeWanna Bonner,CON,@WAS,ast,Under,(16.5) -125,(15.5) 110,(16.5) -122,(16.5) -120
-DeWanna Bonner,CON,@WAS,pts,Over,(17.5) -107,(16.5) -120,(16.5) -113,(16.5) -120
-DeWanna Bonner,CON,@WAS,pts,Under,(17.5) -125,(16.5) -110,(16.5) -115,(16.5) -110
+DeWanna Bonner,CON,@WAS,pts,Over,(17.5) -107,(16.5) -120,(16.5) -110,(16.5) -120
+DeWanna Bonner,CON,@WAS,pts,Under,(17.5) -125,(16.5) -110,(16.5) -118,(16.5) -110
 DeWanna Bonner,CON,@WAS,reb,Over,(6.5) -132,(6.5) -140,(6.5) -152,(6.5) -135
 DeWanna Bonner,CON,@WAS,reb,Under,(6.5) 100,(6.5) 110,(6.5) 114,(6.5) 105
 DeWanna Bonner,CON,@WAS,threes,Over,(1.5) -121,(1.5) -140,(1.5) -122,(1.5) -135
@@ -76,11 +76,11 @@ DiJonai Carrington,CON,@WAS,ast,Under,(1.5) -110,(1.5) 105,(1.5) -108,(1.5) 105
 DiJonai Carrington,CON,@WAS,pts,Over,(11.5) -125,(12.5) -115,(11.5) -130,(12.5) -110
 DiJonai Carrington,CON,@WAS,pts,Under,(11.5) -106,(12.5) -115,(11.5) 100,(12.5) -120
 DiJonai Carrington,CON,@WAS,reb,Over,(4.5) -107,(4.5) 105,(4.5) 114,(4.5) 105
-DiJonai Carrington,CON,@WAS,reb,Under,(4.5) -125,(4.5) -135,(4.5) -152,(4.5) -135
-DiJonai Carrington,CON,@WAS,threes,Over,(4.5) -125,(4.5) -135,(4.5) -152,(4.5) -135
-DiJonai Carrington,CON,@WAS,threes,Under,(4.5) -125,(4.5) -135,(4.5) -152,(4.5) -135
-Ezi Magbegor,SEA,IND,ast,Over,(4.5) -125,(4.5) -135,(4.5) -152,(4.5) -135
-Ezi Magbegor,SEA,IND,ast,Under,(4.5) -125,(4.5) -135,(4.5) -152,(4.5) -135
+DiJonai Carrington,CON,@WAS,reb,Under,(4.5) -125,(4.5) -135,(4.5) -148,(4.5) -135
+DiJonai Carrington,CON,@WAS,threes,Over,(4.5) -125,(4.5) -135,(4.5) -148,(4.5) -135
+DiJonai Carrington,CON,@WAS,threes,Under,(4.5) -125,(4.5) -135,(4.5) -148,(4.5) -135
+Ezi Magbegor,SEA,IND,ast,Over,(4.5) -125,(4.5) -135,(4.5) -148,(4.5) -135
+Ezi Magbegor,SEA,IND,ast,Under,(4.5) -125,(4.5) -135,(4.5) -148,(4.5) -135
 Ezi Magbegor,SEA,IND,pts,Over,(13.5) -121,(13.5) -115,(13.5) -120,(13.5) -115
 Ezi Magbegor,SEA,IND,pts,Under,(13.5) -110,(13.5) -115,(13.5) -108,(13.5) -115
 Ezi Magbegor,SEA,IND,reb,Over,(9.5) 100,(9.5) -115,(9.5) 102,(9.5) -110
@@ -103,12 +103,12 @@ Jewell Loyd,SEA,IND,reb,Over,(4.5) -106,(4.5) 114,(4.5) 112,(4.5) 115
 Jewell Loyd,SEA,IND,reb,Under,(4.5) -125,(4.5) -145,(4.5) -148,(4.5) -150
 Jewell Loyd,SEA,IND,threes,Over,(1.5) -148,(1.5) -150,(1.5) -144,(1.5) -130
 Jewell Loyd,SEA,IND,threes,Under,(1.5) 110,(1.5) 110,(1.5) 108,(1.5) 100
-Julie Vanloo,WAS,CON,ast,Over,(5.5) 100,(5.5) 105,(5.5) 100,(5.5) 100
-Julie Vanloo,WAS,CON,ast,Under,(5.5) -132,(5.5) -135,(5.5) -132,(5.5) -130
-Julie Vanloo,WAS,CON,pts,Over,(5.5) -132,(5.5) -135,(5.5) -132,(5.5) -130
-Julie Vanloo,WAS,CON,pts,Under,(5.5) -132,(5.5) -135,(5.5) -132,(5.5) -130
-Julie Vanloo,WAS,CON,reb,Over,(5.5) -132,(5.5) -135,(5.5) -132,(5.5) -130
-Julie Vanloo,WAS,CON,reb,Under,(5.5) -132,(5.5) -135,(5.5) -132,(5.5) -130
+Julie Vanloo,WAS,CON,ast,Over,(5.5) 100,(5.5) 105,(5.5) 118,(5.5) 100
+Julie Vanloo,WAS,CON,ast,Under,(5.5) -132,(5.5) -135,(5.5) -158,(5.5) -130
+Julie Vanloo,WAS,CON,pts,Over,(5.5) -132,(5.5) -135,(5.5) -158,(5.5) -130
+Julie Vanloo,WAS,CON,pts,Under,(5.5) -132,(5.5) -135,(5.5) -158,(5.5) -130
+Julie Vanloo,WAS,CON,reb,Over,(5.5) -132,(5.5) -135,(5.5) -158,(5.5) -130
+Julie Vanloo,WAS,CON,reb,Under,(5.5) -132,(5.5) -135,(5.5) -158,(5.5) -130
 Julie Vanloo,WAS,CON,threes,Over,(1.5) -143,(1.5) -140,(1.5) -138,(1.5) -135
 Julie Vanloo,WAS,CON,threes,Under,(1.5) 108,(1.5) 105,(1.5) 104,(1.5) 105
 Kamilla Cardoso,CHI,LVA,ast,Over,(1.5) 108,(1.5) 105,(1.5) 104,(1.5) 105
@@ -181,10 +181,10 @@ Stefanie Dolson,WAS,CON,pts,Over,(9.5) -121,(9.5) -130,(9.5) -130,
 Stefanie Dolson,WAS,CON,pts,Under,(9.5) -110,(9.5) 100,(9.5) 100,
 Stefanie Dolson,WAS,CON,reb,Over,(6.5) 110,(6.5) 120,(6.5) 116,
 Stefanie Dolson,WAS,CON,reb,Under,(6.5) -148,(6.5) -154,(6.5) -154,
-Stefanie Dolson,WAS,CON,threes,Over,(1.5) -155,(1.5) -160,(1.5) -166,
-Stefanie Dolson,WAS,CON,threes,Under,(1.5) 115,(1.5) 120,(1.5) 124,
-Tyasha Harris,CON,@WAS,ast,Over,(1.5) 115,(1.5) 120,(1.5) 124,
-Tyasha Harris,CON,@WAS,ast,Under,(1.5) 115,(1.5) 120,(1.5) 124,
+Stefanie Dolson,WAS,CON,threes,Over,(1.5) -155,(1.5) -160,(1.5) -146,
+Stefanie Dolson,WAS,CON,threes,Under,(1.5) 115,(1.5) 120,(1.5) 110,
+Tyasha Harris,CON,@WAS,ast,Over,(1.5) 115,(1.5) 120,(1.5) 110,
+Tyasha Harris,CON,@WAS,ast,Under,(1.5) 115,(1.5) 120,(1.5) 110,
 Tyasha Harris,CON,@WAS,pts,Over,(10.5) -121,(10.5) -115,(10.5) -130,(10.5) -120
 Tyasha Harris,CON,@WAS,pts,Under,(10.5) -110,(10.5) -115,(10.5) 100,(10.5) -110
 Tyasha Harris,CON,@WAS,reb,Over,(10.5) -110,(10.5) -115,(10.5) 100,(10.5) -110
