@@ -68,8 +68,8 @@ def push_to_github():
 
         # Print content before download
         print("Content of merged_data.csv before download:")
-        if os.path.exists('mlb_props.csv'):
-            with open('mlb_props.csv', 'r') as file:
+        if os.path.exists('wnba_props.csv'):
+            with open('wnba_props.csv', 'r') as file:
                 print(file.read())
 
         # Configure Git
@@ -77,20 +77,20 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
         # Download the file from S3 again
-        download_from_s3(BUCKET_NAME, 'mlb_props.csv', 'mlb_props.csv')
+        download_from_s3(BUCKET_NAME, 'wnba_props.csv', 'wnba_props.csv')
 
         # Ensure file system registers the changes
         time.sleep(2)
 
         # Force update file timestamp
-        os.utime('mlb_props.csv', None)
+        os.utime('wnba_props.csv', None)
 
         # Add and commit changes
-        subprocess.check_call(['git', 'add', 'mlb_props.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.check_call(['git', 'add', 'wnba_props.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Print content after download
         print("Content of mlb_props.csv after download:")
-        with open('mlb_props.csv', 'r') as file:
+        with open('wnba_props.csv', 'r') as file:
             print(file.read())
 
         # Check the status to ensure files are staged
@@ -181,13 +181,13 @@ pivot_df.replace('() nan', None, inplace=True)
 
 pivot_df.to_csv('wnba_props.csv', index=False)
 
-# upload_to_aws('wnba_props.csv', BUCKET_NAME, 'mlb_props.csv')
+upload_to_aws('wnba_props.csv', BUCKET_NAME, 'mlb_props.csv')
 
-# s3_file = 'mlb_props.csv'
-# local_file = 'mlb_props.csv'
+s3_file = 'wnba_props.csv'
+local_file = 'wnba_props.csv'
 
-# # Download the file from S3
-# if download_from_s3(BUCKET_NAME, s3_file, local_file):
-#     push_to_github()
-# else:
-#     print("Failed to download file from S3, not pushing to GitHub")
+# Download the file from S3
+if download_from_s3(BUCKET_NAME, s3_file, local_file):
+    push_to_github()
+else:
+    print("Failed to download file from S3, not pushing to GitHub")
