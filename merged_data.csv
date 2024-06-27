@@ -1,27 +1,35 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
-Matt Olson,ATL,@STL,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Matt Olson,ATL,@STL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Willson Contreras,STL,ATL,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Jarred Kelenic,ATL,@STL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Jarred Kelenic,ATL,@STL,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Matt Olson,ATL,@STL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Matt Olson,ATL,@STL,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Jarred Kelenic,ATL,@STL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Willson Contreras,STL,ATL,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Elly De La Cruz,CIN,PIT,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Willson Contreras,STL,ATL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Elly De La Cruz,CIN,PIT,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Bryce Harper,PHI,@DET,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Bryce Harper,PHI,@DET,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Bo Bichette,TOR,@BOS,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Willson Contreras,STL,ATL,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Anthony Volpe,NYY,@NYM,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Anthony Volpe,NYY,@NYM,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Alec Bohm,PHI,@DET,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Elly De La Cruz,CIN,PIT,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Alec Bohm,PHI,@DET,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Bo Bichette,TOR,@BOS,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Nick Castellanos,PHI,@DET,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Nick Castellanos,PHI,@DET,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
+Bo Bichette,TOR,@BOS,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Trea Turner,PHI,@DET,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Trea Turner,PHI,@DET,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Paul DeJong,CWS,LAD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Paul DeJong,CWS,LAD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Nick Fortes,MIA,@KC,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
+Nick Fortes,MIA,@KC,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
 Nick Castellanos,PHI,@DET,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Nick Castellanos,PHI,@DET,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Aaron Judge,NYY,@NYM,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Alec Bohm,PHI,@DET,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Marcell Ozuna,ATL,@STL,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Marcell Ozuna,ATL,@STL,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Nick Fortes,MIA,@KC,Total Bases,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
-Nick Fortes,MIA,@KC,Total Bases,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
-Paul DeJong,CWS,LAD,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Paul DeJong,CWS,LAD,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
-Trea Turner,PHI,@DET,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Trea Turner,PHI,@DET,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Alec Bohm,PHI,@DET,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Alec Bohm,PHI,@DET,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Bo Bichette,TOR,@BOS,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Nick Castellanos,PHI,@DET,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Aaron Judge,NYY,@NYM,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
