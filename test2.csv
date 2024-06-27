@@ -16,8 +16,8 @@
 14,Marcell Ozuna,ATL - DH,8.0,Hitter Fantasy Score
 15,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
 16,Danny Mendick,CWS - IF,0.5,Total Bases
-17,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score
-18,Trevor Rogers,MIA - P,4.5,Pitcher Strikeouts
+17,Trevor Rogers,MIA - P,4.5,Pitcher Strikeouts
+18,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score
 19,Ketel Marte,AZ - IF,7.5,Hitter Fantasy Score
 20,Jordan Hicks,SF - P,4.5,Pitcher Strikeouts
 21,Trevor Rogers,MIA - P,4.5,Pitcher Strikeouts
@@ -35,71 +35,79 @@
 33,Alec Bohm,PHI - IF,1.5,Total Bases
 34,Nick Castellanos,PHI - OF,1.5,Total Bases
 35,Trea Turner,PHI - IF,1.5,Total Bases
-36,Bo Bichette,TOR - IF,1.5,Total Bases
-37,Maikel Garcia,KC - IF,1.5,Total Bases
-38,José Ramírez,CLE - IF,1.5,Total Bases
-39,Salvador Perez,KC - C,1.5,Total Bases
-40,Steven Kwan,CLE - OF,1.5,Total Bases
-41,Trevor Rogers + Zack Wheeler,MIA/PHI - P,0.5,1st Inning Runs Allowed
-42,Jon Gray + Corbin Burnes,TEX/BAL - P,0.5,1st Inning Runs Allowed
-43,Carlos Rodón + José Berríos,NYY/TOR - P,0.5,1st Inning Runs Allowed
-44,Andrew Abbott + Miles Mikolas,CIN/STL - P,0.5,1st Inning Runs Allowed
-45,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
-46,Christopher Morel,CHC - IF,1.5,Hits+Runs+RBIs
-47,Heliot Ramos,SF - OF,1.5,Hits+Runs+RBIs
-48,Ian Happ,CHC - OF,1.5,Hits+Runs+RBIs
-49,Jorge Soler,SF - DH,1.5,Hits+Runs+RBIs
-50,Matt Chapman,SF - IF,1.5,Hits+Runs+RBIs
-51,Thairo Estrada,SF - IF,1.5,Hits+Runs+RBIs
-52,Wilmer Flores,SF - IF,1.5,Hits+Runs+RBIs
-53,Korey Lee,CWS - C,0.5,Hits+Runs+RBIs
-54,Edmundo Sosa,PHI - IF,1.5,Hits+Runs+RBIs
-55,Kyle Schwarber,PHI - DH,1.5,Hits+Runs+RBIs
-56,George Springer,TOR - OF,1.5,Hits+Runs+RBIs
-57,Alex Verdugo,NYY - OF,1.5,Hits+Runs+RBIs
-58,Justin Turner,TOR - IF,1.5,Hits+Runs+RBIs
-59,Kevin Kiermaier,TOR - OF,0.5,Hits+Runs+RBIs
-60,Masyn Winn,STL - IF,1.5,Hits+Runs+RBIs
-61,Nick Martini,CIN - OF,1.5,Hits+Runs+RBIs
-62,Nolan Arenado,STL - IF,1.5,Hits+Runs+RBIs
-63,Paul Goldschmidt,STL - IF,1.5,Hits+Runs+RBIs
-64,Bobby Witt Jr.,KC - IF,2.5,Hits+Runs+RBIs
-65,Brayan Rocchio,CLE - IF,1.5,Hits+Runs+RBIs
-66,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
-67,Daniel Schneemann,CLE - IF,1.5,Hits+Runs+RBIs
-68,Michael Massey,KC - IF,1.5,Hits+Runs+RBIs
-69,Gabriel Arias,CLE - IF,1.5,Hits+Runs+RBIs
-70,MJ Melendez,KC - OF,1.5,Hits+Runs+RBIs
-71,Royce Lewis,MIN - IF,7.5,Hitter Fantasy Score
-72,Ketel Marte,AZ - IF,7.5,Hitter Fantasy Score
-73,Carlos Correa,MIN - IF,6.5,Hitter Fantasy Score
-74,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score
-75,Seiya Suzuki,CHC - OF,6.5,Hitter Fantasy Score
-76,Marcell Ozuna,ATL - DH,8.0,Hitter Fantasy Score
-77,Bryce Harper,PHI - IF,8.5,Hitter Fantasy Score
-78,Trea Turner,PHI - IF,8.5,Hitter Fantasy Score
-79,Kyle Schwarber,PHI - DH,7.5,Hitter Fantasy Score
-80,Gunnar Henderson,BAL - IF,8.5,Hitter Fantasy Score
-81,Corey Seager,TEX - IF,7.0,Hitter Fantasy Score
-82,Adley Rutschman,BAL - C,6.5,Hitter Fantasy Score
-83,Aaron Judge,NYY - OF,10.0,Hitter Fantasy Score
-84,Vladimir Guerrero Jr.,TOR - IF,7.5,Hitter Fantasy Score
-85,Juan Soto,NYY - OF,8.0,Hitter Fantasy Score
-86,Elly De La Cruz,CIN - IF,9.0,Hitter Fantasy Score
-87,José Ramírez,CLE - IF,9.0,Hitter Fantasy Score
-88,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
-89,Steven Kwan,CLE - OF,7.5,Hitter Fantasy Score
-90,Ian Happ,CHC - OF,0.5,Walks
-91,Michael Busch,CHC - IF,0.5,Walks
-92,Matt Olson,ATL - IF,0.5,Walks
-93,Jarred Kelenic,ATL - OF,0.5,Runs
-94,Matt Olson,ATL - IF,0.5,Runs
-95,Alec Bohm,PHI - IF,0.5,Runs
-96,Nick Castellanos,PHI - OF,0.5,Runs
-97,Bryce Harper,PHI - IF,0.5,Runs
-98,Bo Bichette,TOR - IF,0.5,Runs
-99,Anthony Volpe,NYY - IF,0.5,Runs
-100,Elly De La Cruz,CIN - IF,0.5,Runs
-101,Willson Contreras,STL - C,0.5,Runs
-102,José Ramírez,CLE - IF,0.5,Runs
-103,Steven Kwan,CLE - OF,0.5,Runs
+36,Gunnar Henderson,BAL - IF,1.5,Total Bases
+37,Ryan Mountcastle,BAL - IF,1.5,Total Bases
+38,Bo Bichette,TOR - IF,1.5,Total Bases
+39,Maikel Garcia,KC - IF,1.5,Total Bases
+40,José Ramírez,CLE - IF,1.5,Total Bases
+41,Salvador Perez,KC - C,1.5,Total Bases
+42,Steven Kwan,CLE - OF,1.5,Total Bases
+43,Trevor Rogers + Zack Wheeler,MIA/PHI - P,0.5,1st Inning Runs Allowed
+44,Jon Gray + Corbin Burnes,TEX/BAL - P,0.5,1st Inning Runs Allowed
+45,Carlos Rodón + José Berríos,NYY/TOR - P,0.5,1st Inning Runs Allowed
+46,Andrew Abbott + Miles Mikolas,CIN/STL - P,0.5,1st Inning Runs Allowed
+47,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
+48,Christopher Morel,CHC - IF,1.5,Hits+Runs+RBIs
+49,Heliot Ramos,SF - OF,1.5,Hits+Runs+RBIs
+50,Ian Happ,CHC - OF,1.5,Hits+Runs+RBIs
+51,Jorge Soler,SF - DH,1.5,Hits+Runs+RBIs
+52,Matt Chapman,SF - IF,1.5,Hits+Runs+RBIs
+53,Thairo Estrada,SF - IF,1.5,Hits+Runs+RBIs
+54,Wilmer Flores,SF - IF,1.5,Hits+Runs+RBIs
+55,Korey Lee,CWS - C,0.5,Hits+Runs+RBIs
+56,Edmundo Sosa,PHI - IF,1.5,Hits+Runs+RBIs
+57,Kyle Schwarber,PHI - DH,1.5,Hits+Runs+RBIs
+58,Adolis García,TEX - OF,1.5,Hits+Runs+RBIs
+59,Anthony Santander,BAL - OF,1.5,Hits+Runs+RBIs
+60,Cedric Mullins,BAL - OF,1.5,Hits+Runs+RBIs
+61,Corey Seager,TEX - IF,1.5,Hits+Runs+RBIs
+62,Marcus Semien,TEX - IF,1.5,Hits+Runs+RBIs
+63,Wyatt Langford,TEX - OF,1.5,Hits+Runs+RBIs
+64,George Springer,TOR - OF,1.5,Hits+Runs+RBIs
+65,Alex Verdugo,NYY - OF,1.5,Hits+Runs+RBIs
+66,Justin Turner,TOR - IF,1.5,Hits+Runs+RBIs
+67,Kevin Kiermaier,TOR - OF,0.5,Hits+Runs+RBIs
+68,Masyn Winn,STL - IF,1.5,Hits+Runs+RBIs
+69,Nick Martini,CIN - OF,1.5,Hits+Runs+RBIs
+70,Nolan Arenado,STL - IF,1.5,Hits+Runs+RBIs
+71,Paul Goldschmidt,STL - IF,1.5,Hits+Runs+RBIs
+72,Bobby Witt Jr.,KC - IF,2.5,Hits+Runs+RBIs
+73,Brayan Rocchio,CLE - IF,1.5,Hits+Runs+RBIs
+74,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
+75,Daniel Schneemann,CLE - IF,1.5,Hits+Runs+RBIs
+76,Michael Massey,KC - IF,1.5,Hits+Runs+RBIs
+77,Gabriel Arias,CLE - IF,1.5,Hits+Runs+RBIs
+78,MJ Melendez,KC - OF,1.5,Hits+Runs+RBIs
+79,Royce Lewis,MIN - IF,7.5,Hitter Fantasy Score
+80,Ketel Marte,AZ - IF,7.5,Hitter Fantasy Score
+81,Carlos Correa,MIN - IF,6.5,Hitter Fantasy Score
+82,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score
+83,Seiya Suzuki,CHC - OF,6.5,Hitter Fantasy Score
+84,Marcell Ozuna,ATL - DH,8.0,Hitter Fantasy Score
+85,Bryce Harper,PHI - IF,8.5,Hitter Fantasy Score
+86,Trea Turner,PHI - IF,8.5,Hitter Fantasy Score
+87,Kyle Schwarber,PHI - DH,7.5,Hitter Fantasy Score
+88,Gunnar Henderson,BAL - IF,8.5,Hitter Fantasy Score
+89,Corey Seager,TEX - IF,7.0,Hitter Fantasy Score
+90,Adley Rutschman,BAL - C,6.5,Hitter Fantasy Score
+91,Aaron Judge,NYY - OF,10.0,Hitter Fantasy Score
+92,Vladimir Guerrero Jr.,TOR - IF,7.5,Hitter Fantasy Score
+93,Juan Soto,NYY - OF,8.0,Hitter Fantasy Score
+94,Elly De La Cruz,CIN - IF,9.0,Hitter Fantasy Score
+95,José Ramírez,CLE - IF,9.0,Hitter Fantasy Score
+96,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
+97,Steven Kwan,CLE - OF,7.5,Hitter Fantasy Score
+98,Ian Happ,CHC - OF,0.5,Walks
+99,Michael Busch,CHC - IF,0.5,Walks
+100,Matt Olson,ATL - IF,0.5,Walks
+101,Jarred Kelenic,ATL - OF,0.5,Runs
+102,Matt Olson,ATL - IF,0.5,Runs
+103,Alec Bohm,PHI - IF,0.5,Runs
+104,Nick Castellanos,PHI - OF,0.5,Runs
+105,Bryce Harper,PHI - IF,0.5,Runs
+106,Bo Bichette,TOR - IF,0.5,Runs
+107,Anthony Volpe,NYY - IF,0.5,Runs
+108,Elly De La Cruz,CIN - IF,0.5,Runs
+109,Willson Contreras,STL - C,0.5,Runs
+110,José Ramírez,CLE - IF,0.5,Runs
+111,Steven Kwan,CLE - OF,0.5,Runs
