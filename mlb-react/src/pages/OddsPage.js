@@ -28,7 +28,7 @@ const OddsPage = ({ updateLastUpdated }) => {
     }, []);
 
     const fetchOdds = async () => {
-        const response = await fetch('/merged_data');
+        const response = await fetch('/merged_${sport}');
         const data = await response.json();
         setOddsData(data);
         setFilteredData(data); // Set filteredData to initial data

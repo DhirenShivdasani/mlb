@@ -6,16 +6,16 @@ import pandas as pd
 import os
 import psycopg2
 import bcrypt
-from flask import Flask, jsonify, request, session, send_from_directory, redirect, url_for, render_template
+from flask import Flask, jsonify, request, session, redirect, url_for, render_template
 import re
 
 prod = False
-DATABASE_URL = os.getenv('DATABASE_URL')
+# DATABASE_URL = os.getenv('DATABASE_URL')
+DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for sessions
 CORS(app)
-
 
 connected_clients = set()
 
@@ -51,7 +51,7 @@ def is_valid_email(email):
         return True
     else:
         return False
-    
+
 async def notify_clients():
     if connected_clients:
         message = "update"
@@ -84,19 +84,20 @@ def get_historical_data():
     player_name = request.args.get('player_name')
     prop = request.args.get('prop')
     over_under = request.args.get('over_under')
+    sport = request.args.get('sport', 'mlb')  # Default to 'mlb' if sport is not provided
 
-    print(f"Received player_name: {player_name}, prop: {prop}, over_under: {over_under}")  # Debug print
+    print(f"Received player_name: {player_name}, prop: {prop}, over_under: {over_under}, sport: {sport}")  # Debug print
 
     if not player_name or not prop or not over_under:
         return jsonify({"error": "Missing player_name, prop, or over_under parameter"}), 400
-    
+
     conn = get_db_connection()
     cur = conn.cursor()
 
     try:
-        query = """
+        query = f"""
         SELECT timestamp, draftkings, fanduel, mgm, betrivers 
-        FROM odds 
+        FROM {sport} 
         WHERE player_name = %s AND prop = %s AND over_under = %s 
         ORDER BY timestamp;
         """
@@ -113,8 +114,6 @@ def get_historical_data():
         cur.close()
         conn.close()
 
-
-
 @app.route('/')
 def index():
     if 'user_id' not in session and prod:
@@ -127,14 +126,16 @@ def get_merged_data():
         return jsonify({"error": "Unauthorized"}), 401
     if request.method == 'POST':
         threading.Thread(target=asyncio.run, args=(notify_clients(),)).start()
+    
+    sport = request.args.get('sport', 'mlb')  # Default to 'mlb' if sport is not provided
+
     try:
-        merged_data = pd.read_csv('merged_data.csv')
+        merged_data = pd.read_csv(f'merged_{sport}.csv')
         return jsonify(merged_data.sort_values(by='fanduel', ascending=True).to_dict(orient='records'))
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
 # User authentication routes
-
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -198,9 +199,7 @@ def logout():
     session.pop('user_id', None)
     return jsonify({"status": "success"}), 200
 
-
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     threading.Thread(target=start_websocket_server, args=(port,)).start()
-
     app.run(debug=True, use_reloader=False, port=port)

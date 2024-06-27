@@ -23,7 +23,9 @@ s3 = boto3.client(
 BUCKET_NAME = os.getenv('BUCKET_NAME')
 
 # PostgreSQL connection
-DATABASE_URL = os.getenv('DATABASE_URL')
+# DATABASE_URL = os.getenv('DATABASE_URL')
+DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
+
 conn = psycopg2.connect(DATABASE_URL)
 cur = conn.cursor()
 
@@ -73,8 +75,8 @@ def push_to_github():
 
         # Print content before download
         print("Content of merged_data.csv before download:")
-        if os.path.exists('merged_data.csv'):
-            with open('merged_data.csv', 'r') as file:
+        if os.path.exists('merged_mlb.csv'):
+            with open('merged_mlb.csv', 'r') as file:
                 print(file.read())
 
         # Configure Git
@@ -82,20 +84,20 @@ def push_to_github():
         subprocess.check_call(['git', 'config', '--global', 'user.name', 'DhirenShivdasani'])
 
         # Download the file from S3 again
-        download_from_s3(BUCKET_NAME, 'merged_data.csv', 'merged_data.csv')
+        download_from_s3(BUCKET_NAME, 'merged_mlb.csv', 'merged_mlb.csv')
 
         # Ensure file system registers the changes
         time.sleep(2)
 
         # Force update file timestamp
-        os.utime('merged_data.csv', None)
+        os.utime('merged_mlb.csv', None)
 
         # Add and commit changes
-        subprocess.check_call(['git', 'add', 'merged_data.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.check_call(['git', 'add', 'merged_mlb.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Print content after download
-        print("Content of merged_data.csv after download:")
-        with open('merged_data.csv', 'r') as file:
+        print("Content of merged_mlb.csv after download:")
+        with open('merged_mlb.csv', 'r') as file:
             print(file.read())
 
         # Check the status to ensure files are staged
@@ -158,7 +160,7 @@ def save_to_postgres(df):
             implied_prob = float(implied_prob.strip('%'))
 
         cur.execute("""
-            INSERT INTO odds (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
+            INSERT INTO mlb (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob))
     conn.commit()
@@ -206,16 +208,16 @@ print("Merged data:\n", r.head())
 save_to_postgres(r)
 
 # Remove the existing file to force Git to recognize changes
-if os.path.exists('merged_data.csv'):
-    os.remove('merged_data.csv')
+if os.path.exists('merged_mlb.csv'):
+    os.remove('merged_mlb.csv')
 
 # Save the updated data to the file
-r.to_csv('merged_data.csv', index=False)
+r.to_csv('merged_mlb.csv', index=False)
 
-upload_to_aws('merged_data.csv', BUCKET_NAME, 'merged_data.csv')
+upload_to_aws('merged_mlb.csv', BUCKET_NAME, 'merged_mlb.csv')
 
-s3_file = 'merged_data.csv'
-local_file = 'merged_data.csv'
+s3_file = 'merged_mlb.csv'
+local_file = 'merged_mlb.csv'
 
 # Download the file from S3
 if download_from_s3(BUCKET_NAME, s3_file, local_file):
