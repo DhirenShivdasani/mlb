@@ -1,23 +1,39 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm,Value,Implied_Prob
+Corbin Carroll,ARI,MIN,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Marcus Semien,TEX,@BAL,Runs,Under,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Marcus Semien,TEX,@BAL,Runs,Over,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Corey Seager,TEX,@BAL,Runs,Under,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Corey Seager,TEX,@BAL,Runs,Over,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Corbin Carroll,ARI,MIN,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Corbin Carroll,ARI,MIN,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Christian Walker,ARI,MIN,Runs,Under,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
 Christian Walker,ARI,MIN,Runs,Over,(0.5) ,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
-Marcus Semien,TEX,@BAL,Runs,Over,None,(0.5) ,(0.5) ,(0.5) ,0.5,nan%
+Matt Vierling,DET,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) -1000,(0.5) ,0.5,90.91%
+Colt Keith,DET,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) -1200,(0.5) ,0.5,92.31%
+Riley Greene,DET,@LAA,Runs,Under,(0.5) ,(0.5) ,(0.5) -2200,(0.5) ,0.5,95.65%
+Matt Vierling,DET,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) 550,(0.5) ,0.5,15.38%
+Colt Keith,DET,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) 650,(0.5) ,0.5,13.33%
+Riley Greene,DET,@LAA,Runs,Over,(0.5) ,(0.5) ,(0.5) 900,(0.5) ,0.5,10.0%
 Bo Bichette,TOR,NYY,Runs,Under,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
 Bo Bichette,TOR,NYY,Runs,Over,(0.5) ,(0.5) ,(1.5) ,(0.5) ,0.5,nan%
-Bo Bichette,TOR,NYY,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Anthony Volpe,NYY,@TOR,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Anthony Volpe,NYY,@TOR,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Alec Burleson,STL,CIN,Total Bases,Under,None,(1.5) ,None,(1.5) ,1.5,nan%
-Alec Burleson,STL,CIN,Total Bases,Over,None,(1.5) ,None,(1.5) ,1.5,nan%
-Alec Bohm,PHI,MIA,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Alec Bohm,PHI,MIA,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Riley Greene,DET,@LAA,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Riley Greene,DET,@LAA,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Aaron Judge,NYY,@TOR,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
-Kevin Kiermaier,TOR,NYY,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Matt Vierling,DET,@LAA,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Matt Vierling,DET,@LAA,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Alec Bohm,PHI,MIA,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Alec Bohm,PHI,MIA,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Kevin Kiermaier,TOR,NYY,Total Bases,Under,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Kevin Kiermaier,TOR,NYY,Total Bases,Over,(1.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Jonathan India,CIN,@STL,Runs,Over,None,(0.5) ,None,(0.5) ,0.5,nan%
+Elly De La Cruz,CIN,@STL,Runs,Under,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Elly De La Cruz,CIN,@STL,Runs,Over,(0.5) ,(0.5) ,None,(0.5) ,0.5,nan%
+Alec Burleson,STL,CIN,Total Bases,Over,None,(1.5) ,None,(1.5) ,1.5,nan%
+Alec Burleson,STL,CIN,Total Bases,Under,None,(1.5) ,None,(1.5) ,1.5,nan%
+Anthony Volpe,NYY,@TOR,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Anthony Volpe,NYY,@TOR,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Colt Keith,DET,@LAA,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Colt Keith,DET,@LAA,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Bo Bichette,TOR,NYY,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
 Bo Bichette,TOR,NYY,Total Bases,Under,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
+Jonathan India,CIN,@STL,Runs,Under,None,(0.5) ,None,(0.5) ,0.5,nan%
 Aaron Judge,NYY,@TOR,Total Bases,Over,(1.5) ,(1.5) ,None,(1.5) ,1.5,nan%
