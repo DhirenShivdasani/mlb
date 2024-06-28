@@ -1,40 +1,46 @@
 ,Name,Team,Value,Prop
-0,José Ramírez,CLE - IF,10.0,Hitter Fantasy Score
-1,Ben Lively,CLE - P,3.0,Pitcher Strikeouts
-2,Jack Flaherty,DET - P,41.5,Pitcher Fantasy Score
-3,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
-4,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
-5,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
-6,Michael Wacha,KC - P,16.5,Pitching Outs
-7,José Ramírez,CLE - IF,1.5,Total Bases
-8,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
-9,Michael Wacha,KC - P,3.5,Pitcher Strikeouts
-10,Ben Lively,CLE - P,3.0,Pitcher Strikeouts
-11,Davis Daniel,LAA - P,4.0,Pitcher Strikeouts
-12,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
-13,Maikel Garcia,KC - IF,1.5,Total Bases
-14,José Ramírez,CLE - IF,1.5,Total Bases
-15,Jo Adell,LAA - OF,0.5,Total Bases
-16,Ben Lively + Michael Wacha,CLE/KC - P,0.5,1st Inning Runs Allowed
-17,Michael Wacha,KC - P,5.5,Hits Allowed
-18,Jack Flaherty,DET - P,41.5,Pitcher Fantasy Score
-19,Hunter Renfroe,KC - OF,1.5,Hits+Runs+RBIs
-20,Daniel Schneemann,CLE - IF,1.5,Hits+Runs+RBIs
-21,MJ Melendez,KC - OF,1.5,Hits+Runs+RBIs
-22,Andrés Giménez,CLE - IF,1.5,Hits+Runs+RBIs
-23,Wenceel Pérez,DET - OF,1.5,Hits+Runs+RBIs
-24,Tyler Freeman,CLE - OF,1.5,Hits+Runs+RBIs
-25,Andrés Giménez,CLE - IF,0.5,Singles
-26,Tyler Freeman,CLE - OF,0.5,Singles
-27,Ben Lively,CLE - P,16.5,Pitching Outs
-28,Michael Wacha,KC - P,16.5,Pitching Outs
-29,José Ramírez,CLE - IF,10.0,Hitter Fantasy Score
-30,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score
-31,Steven Kwan,CLE - OF,7.5,Hitter Fantasy Score
-32,Riley Greene,DET - OF,0.5,Walks
-33,José Ramírez,CLE - IF,0.5,Runs
-34,Steven Kwan,CLE - OF,0.5,Runs
-35,Matt Vierling,DET - IF,0.5,Runs
-36,Riley Greene,DET - OF,0.5,Runs
-37,Andrés Giménez,CLE - IF,0.5,Hitter Strikeouts
-38,Hunter Renfroe,KC - OF,0.5,Hitter Strikeouts
+0,Jack Flaherty,DET - P,41.5,Pitcher Fantasy Score
+1,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
+2,Davis Daniel,LAA - P,4.0,Pitcher Strikeouts
+3,Riley Greene,DET - OF,0.5,Runs
+4,Wenceel Pérez,DET - OF,1.5,Hits+Runs+RBIs
+5,Jo Adell,LAA - OF,0.5,Total Bases
+6,Mitchell Parker,WSH - P,5.0,Pitcher Strikeouts
+7,José Quintana,NYM - P,3.5,Pitcher Strikeouts
+8,Ronel Blanco,HOU - P,6.0,Pitcher Strikeouts
+9,Davis Daniel,LAA - P,4.0,Pitcher Strikeouts
+10,Jack Flaherty,DET - P,7.0,Pitcher Strikeouts
+11,Bailey Ober,MIN - P,7.0,Pitcher Strikeouts
+12,Logan Gilbert,SEA - P,6.5,Pitcher Strikeouts
+13,Alex Jackson,TB - C,0.5,Total Bases
+14,Amed Rosario,TB - OF,1.5,Total Bases
+15,Yandy Díaz,TB - IF,1.5,Total Bases
+16,Harrison Bader,NYM - OF,0.5,Total Bases
+17,Joey Loperfido,HOU - OF,0.5,Total Bases
+18,Jo Adell,LAA - OF,0.5,Total Bases
+19,Jorge Polanco,SEA - IF,0.5,Total Bases
+20,Josh Rojas,SEA - IF,0.5,Total Bases
+21,Luke Raley Jr.,SEA - OF,0.5,Total Bases
+22,Mitch Garver,SEA - DH,0.5,Total Bases
+23,Jack Flaherty,DET - P,41.5,Pitcher Fantasy Score
+24,CJ Abrams,WSH - IF,1.5,Hits+Runs+RBIs
+25,Joey Meneses,WSH - IF,1.5,Hits+Runs+RBIs
+26,Lane Thomas,WSH - OF,1.5,Hits+Runs+RBIs
+27,Isaac Paredes,TB - IF,1.5,Hits+Runs+RBIs
+28,Jonny DeLuca,TB - OF,1.5,Hits+Runs+RBIs
+29,Brandon Nimmo,NYM - OF,1.5,Hits+Runs+RBIs
+30,Alex Bregman,HOU - IF,1.5,Hits+Runs+RBIs
+31,Francisco Lindor,NYM - IF,1.5,Hits+Runs+RBIs
+32,Mauricio Dubón,HOU - OF,1.5,Hits+Runs+RBIs
+33,Yainer Diaz,HOU - C,1.5,Hits+Runs+RBIs
+34,Wenceel Pérez,DET - OF,1.5,Hits+Runs+RBIs
+35,Carlos Correa,MIN - IF,1.5,Hits+Runs+RBIs
+36,Max Kepler,MIN - OF,1.5,Hits+Runs+RBIs
+37,Royce Lewis,MIN - IF,1.5,Hits+Runs+RBIs
+38,Julio Rodríguez,SEA - OF,1.5,Hits+Runs+RBIs
+39,Brandon Nimmo,NYM - OF,0.5,Walks
+40,Riley Greene,DET - OF,0.5,Walks
+41,Yandy Díaz,TB - IF,0.5,Runs
+42,Randy Arozarena,TB - OF,0.5,Runs
+43,Matt Vierling,DET - IF,0.5,Runs
+44,Riley Greene,DET - OF,0.5,Runs
