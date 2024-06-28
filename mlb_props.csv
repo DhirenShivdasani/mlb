@@ -36,7 +36,7 @@ Alex Bregman,HOU,@NYM,bases,Under,,(1.5) -185,,(1.5) -185
 Alex Bregman,HOU,@NYM,runs,Over,,(0.5) 115,,(0.5) 115
 Alex Bregman,HOU,@NYM,runs,Under,,(0.5) -155,,(0.5) -155
 Alex Jackson,TB,WSH,bases,Over,,(0.5) -115,,(0.5) -110
-Alex Jackson,TB,WSH,bases,Under,,(0.5) -120,,(0.5) -120
+Alex Jackson,TB,WSH,bases,Under,,(0.5) -110,,(0.5) -120
 Alex Jackson,TB,WSH,runs,Over,,(0.5) 180,,(0.5) 180
 Alex Jackson,TB,WSH,runs,Under,,(0.5) -255,,(0.5) -250
 Alex Verdugo,NYY,@TOR,bases,Over,,(0.5) -210,,(0.5) -200
@@ -201,8 +201,8 @@ Cody Bellinger,CHC,@MIL,bases,Over,,(1.5) 110,,(1.5) 110
 Cody Bellinger,CHC,@MIL,bases,Under,,(1.5) -150,,(1.5) -145
 Cody Bellinger,CHC,@MIL,runs,Over,,(0.5) 105,,(0.5) 105
 Cody Bellinger,CHC,@MIL,runs,Under,,(0.5) -145,,(0.5) -140
-Colin Rea,MIL,CHC,strikeouts,Over,,(4.5) -115,,(4.5) -115
-Colin Rea,MIL,CHC,strikeouts,Under,,(4.5) -115,,(4.5) -115
+Colin Rea,MIL,CHC,strikeouts,Over,,(4.5) -115,(4.5) -108,(4.5) -115
+Colin Rea,MIL,CHC,strikeouts,Under,,(4.5) -115,(4.5) -118,(4.5) -115
 Colt Keith,DET,@LAA,bases,Over,,(1.5) -115,,(1.5) -110
 Colt Keith,DET,@LAA,bases,Under,,(1.5) -120,,(1.5) -120
 Colt Keith,DET,@LAA,runs,Over,,(0.5) -115,,(0.5) -115
@@ -271,8 +271,8 @@ Donovan Solano,SD,@BOS,bases,Over,,(1.5) 145,,(1.5) 145
 Donovan Solano,SD,@BOS,bases,Under,,(1.5) -200,,(1.5) -190
 Donovan Solano,SD,@BOS,runs,Over,,(0.5) 130,,(0.5) 130
 Donovan Solano,SD,@BOS,runs,Under,,(0.5) -180,,(0.5) -175
-Drew Thorpe,CWS,COL,strikeouts,Over,,(4.5) -150,(4.5) -122,(4.5) -150
-Drew Thorpe,CWS,COL,strikeouts,Under,,(4.5) 115,(4.5) -106,(4.5) 115
+Drew Thorpe,CWS,COL,strikeouts,Over,,(4.5) -150,(4.5) -134,(4.5) -150
+Drew Thorpe,CWS,COL,strikeouts,Under,,(4.5) 115,(4.5) 104,(4.5) 115
 Eddie Rosario,WSH,@TB,bases,Over,,(0.5) -190,,(0.5) -185
 Eddie Rosario,WSH,@TB,bases,Under,,(0.5) 140,,(0.5) 140
 Eddie Rosario,WSH,@TB,runs,Over,,(0.5) 165,,(0.5) 165
@@ -449,8 +449,8 @@ Jake Meyers,HOU,@NYM,bases,Over,,(0.5) -180,,(0.5) -175
 Jake Meyers,HOU,@NYM,bases,Under,,(0.5) 135,,(0.5) 135
 Jake Meyers,HOU,@NYM,runs,Over,,(0.5) 140,,(0.5) 140
 Jake Meyers,HOU,@NYM,runs,Under,,(0.5) -190,,(0.5) -185
-Jameson Taillon,CHC,@MIL,strikeouts,Over,,(4.5) -135,,(4.5) 
-Jameson Taillon,CHC,@MIL,strikeouts,Under,,(4.5) 105,,(4.5) 
+Jameson Taillon,CHC,@MIL,strikeouts,Over,,(4.5) -135,(4.5) -128,(4.5) 
+Jameson Taillon,CHC,@MIL,strikeouts,Under,,(4.5) 105,(4.5) 100,(4.5) 
 Jarred Kelenic,ATL,PIT,bases,Over,,(1.5) 140,,(1.5) 140
 Jarred Kelenic,ATL,PIT,bases,Under,,(1.5) -190,,(1.5) -190
 Jarred Kelenic,ATL,PIT,runs,Over,,(0.5) 100,,(0.5) 105
@@ -545,7 +545,7 @@ Jose Ramirez,CLE,@KC,bases,Over,,(1.5) -155,,(1.5) -150
 Jose Ramirez,CLE,@KC,bases,Under,,(1.5) 115,,(1.5) 115
 Jose Ramirez,CLE,@KC,runs,Over,,(0.5) -155,,(0.5) -150
 Jose Ramirez,CLE,@KC,runs,Under,,(0.5) 115,,(0.5) 115
-Jose Siri,TB,WSH,bases,Over,,(0.5) -165,,(0.5) -160
+Jose Siri,TB,WSH,bases,Over,,(0.5) -180,,(0.5) -160
 Jose Siri,TB,WSH,bases,Under,,(0.5) 120,,(0.5) 125
 Jose Siri,TB,WSH,runs,Over,,(0.5) 140,,(0.5) 145
 Jose Siri,TB,WSH,runs,Under,,(0.5) -195,,(0.5) -190
