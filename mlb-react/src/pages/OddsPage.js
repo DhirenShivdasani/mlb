@@ -2,6 +2,9 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Chart from 'chart.js/auto';
 import './OddsPage.css';
 import StatCard from '../components/StatCard';
+import Sidebar from '../components/Sidebar';
+import Navbar from '../components/Navbar';  // Ensure this is imported
+
 
 const OddsPage = ({ updateLastUpdated, sport }) => {
     const [oddsData, setOddsData] = useState([]);
@@ -16,6 +19,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     });
     const [dataFilter, setDataFilter] = useState(10);
     const [currentPage, setCurrentPage] = useState(1);
+    const [sidebarOpen, setSidebarOpen] = useState(true); // Sidebar open by default for testing
     const itemsPerPage = 20;
 
     const originalOddsData = useRef([]);
@@ -35,8 +39,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     };
 
     const applyFilters = (filters) => {
-        console.log('Applying filters:', filters); // Debug logging
-        let filtered = [...originalOddsData.current]; // Ensure we start with original data
+        let filtered = [...originalOddsData.current];
 
         if (filters.playerName) {
             filtered = filtered.filter(odds => odds.PlayerName.toLowerCase().includes(filters.playerName.toLowerCase()));
@@ -56,7 +59,6 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
             filtered.sort((a, b) => parseFloat(b.Implied_Prob) - parseFloat(a.Implied_Prob));
         }
 
-        console.log('Filtered data:', filtered); // Debug logging
         setFilteredData(filtered);
     };
 
@@ -66,9 +68,8 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         }
 
         filterTimeout.current = setTimeout(() => {
-            console.log('Filters changed:', filters); // Debug logging
-            applyFilters(filters); // Always apply filters
-        }, 300); // Debounce delay of 300ms
+            applyFilters(filters);
+        }, 300);
 
         return () => {
             if (filterTimeout.current) {
@@ -275,116 +276,65 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         }
     };
 
+    const toggleSidebar = () => {
+        setSidebarOpen(!sidebarOpen);
+    };
+
     return (
-        <div>
-            <div id="notification" className="bg-yellow-300 text-gray-800 p-2 text-center">New data available. Please refresh the page.</div>
-            <div className="filters flex flex-wrap justify-center gap-4 p-4 bg-base-200 rounded-lg shadow-md">
-                <div className="filter">
-                    <label htmlFor="player-name" className="text-white">Filter by Player:</label>
-                    <input
-                        type="text"
-                        id="player-name"
-                        name="playerName"
-                        placeholder="Enter player name"
-                        className="input input-bordered w-full max-w-xs"
-                        onChange={handleFilterChange}
-                        value={filters.playerName} // Ensure input value reflects the filter state
-                    />
-                </div>
-                <div className="filter">
-                    <label htmlFor="team-opponent" className="text-white">Filter by Game:</label>
-                    <input
-                        type="text"
-                        id="team-opponent"
-                        name="teamOpponent"
-                        placeholder="Enter team vs opponent"
-                        className="input input-bordered w-full max-w-xs"
-                        onChange={handleFilterChange}
-                        value={filters.teamOpponent} // Ensure input value reflects the filter state
-                    />
-                </div>
-                <div className="filter">
-                    <label htmlFor="prop-type" className="text-white">Filter by Prop:</label>
-                    <select
-                        id="prop-type"
-                        name="propType"
-                        className="select select-bordered w-full max-w-xs"
-                        onChange={handleFilterChange}
-                        value={filters.propType} // Ensure select value reflects the filter state
-                    >
-                        {sport === 'mlb' ? (
-                            <>
-                                <option value="all">All</option>
-                                <option value="Runs">Runs</option>
-                                <option value="Strikeouts">Strikeouts</option>
-                                <option value="Total Bases">Total Bases</option>
-                            </>
-                        ) : (
-                            <>
-                                <option value="all">All</option>
-                                <option value="Points">Points</option>
-                                <option value="Rebounds">Rebounds</option>
-                                <option value="Assists">Assists</option>
-                                <option value="3-Pointers Made">3-Pointers Made</option>
-                            </>
-                        )}
-                    </select>
-                </div>
-                <div className="filter">
-                    <label htmlFor="sort-by" className="text-white">Sort by:</label>
-                    <select
-                        id="sort-by"
-                        name="sortBy"
-                        className="select select-bordered w-full max-w-xs"
-                        onChange={handleFilterChange}
-                        value={filters.sortBy} // Ensure select value reflects the filter state
-                    >
-                        <option value="default">Default</option>
-                        <option value="impliedProbAsc">Implied Prob % (Low to High)</option>
-                        <option value="impliedProbDesc">Implied Prob % (High to Low)</option>
-                    </select>
-                </div>
-            </div>
-            <div id="odds-container">
-                {getPaginatedData().map((odds, index) => (
-                    <StatCard 
-                        key={index} 
-                        odds={odds} 
-                        showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
-                        sport={sport} 
-                    />
-                ))}
-            </div>
-            <div className="pagination-controls flex justify-center gap-4 mt-4">
-                <button
-                    onClick={() => handlePageChange(currentPage - 1)}
-                    disabled={currentPage === 1}
-                    className="btn"
-                >
-                    Previous
+        <div className="odds-page-container">
+            {sidebarOpen && (
+                <Sidebar
+                    filters={filters}
+                    handleFilterChange={handleFilterChange}
+                    sport={sport}
+                />
+            )}
+            <div className={`flex-grow ${sidebarOpen ? 'pl-64' : ''}`}>
+                <button onClick={() => setSidebarOpen(!sidebarOpen)} className="toggle-button">
                 </button>
-                <span>Page {currentPage} of {totalPages}</span>
-                <button
-                    onClick={() => handlePageChange(currentPage + 1)}
-                    disabled={currentPage === totalPages}
-                    className="btn"
-                >
-                    Next
-                </button>
-            </div>
-            <div id="historicalModal">
-                <div className="modal-header">
-                    <select id="data-filter" onChange={handleDataFilterChange} value={dataFilter} className="select select-bordered">
-                        <option value={10}>Last 10</option>
-                        <option value={50}>Last 50</option>
-                        <option value={historicalData.length}>All</option>
-                    </select>
-                    <button onClick={closeHistoricalModal} className="red-button">Close</button>
+                <div id="notification" className="bg-yellow-300 text-gray-800 p-2 text-center">New data available. Please refresh the page.</div>
+                <div id="odds-container">
+                    {getPaginatedData().map((odds, index) => (
+                        <StatCard 
+                            key={index} 
+                            odds={odds} 
+                            showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
+                            sport={sport} 
+                        />
+                    ))}
                 </div>
-                <canvas id="historicalChart"></canvas>
+                <div className="pagination-controls flex justify-center gap-4 mt-4">
+                    <button
+                        onClick={() => handlePageChange(currentPage - 1)}
+                        disabled={currentPage === 1}
+                        className="btn"
+                    >
+                        Previous
+                    </button>
+                    <span>Page {currentPage} of {totalPages}</span>
+                    <button
+                        onClick={() => handlePageChange(currentPage + 1)}
+                        disabled={currentPage === totalPages}
+                        className="btn"
+                    >
+                        Next
+                    </button>
+                </div>
+                <div id="historicalModal">
+                    <div className="modal-header">
+                        <select id="data-filter" onChange={handleDataFilterChange} value={dataFilter} className="select select-bordered">
+                            <option value={10}>Last 10</option>
+                            <option value={50}>Last 50</option>
+                            <option value={historicalData.length}>All</option>
+                        </select>
+                        <button onClick={closeHistoricalModal} className="red-button">Close</button>
+                    </div>
+                    <canvas id="historicalChart"></canvas>
+                </div>
             </div>
         </div>
     );
+    
 };
 
 export default OddsPage;

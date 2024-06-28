@@ -1,27 +1,12 @@
 /* General styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --navbar-color: #f8f9fa;
-}
-
-.dark {
-    --bg-color: #1a202c;
-    --text-color: #f7fafc;
-    --navbar-color: #2d3748;
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
 
 .navbar {
     background-color: var(--navbar-color);
@@ -37,27 +22,11 @@ body {
     padding: 10px 0;
 }
 
-/* Sidebar styles */
-.filters-sidebar {
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%);
-    width: 250px;
-    background-color: var(--navbar-color);
-    color: var(--text-color);
-    padding: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    height: 100vh;
-}
-
-.filters-sidebar.open {
-    transform: translateX(0);
-}
 
 .toggle-button {
-    position: absolute;
+    position: fixed;
     top: 10px;
-    right: -50px;
+    left: 10px;
     background-color: var(--navbar-color);
     color: var(--text-color);
     border: none;
@@ -67,15 +36,12 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.filters-content {
-    margin-top: 40px;
-}
-
 .filter {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    margin-bottom: 10px;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin-top: 25px;
 }
 
 .filter label {
@@ -90,8 +56,8 @@ body {
     outline: none;
     font-size: 1rem;
     transition: border-color 0.3s ease;
-    background-color: #333;
-    color: white;
+    background-color: var(--card-bg-color);
+    color: var(--text-color);
 }
 
 .filter input:focus,
@@ -101,28 +67,29 @@ body {
 
 .odds-page-container {
     display: flex;
+    margin-top: auto;
 }
 
 .flex-grow {
     flex: 1;
     padding-left: 260px; /* Account for sidebar width */
-    padding-top: 64px; /* Account for navbar height */
+    top: 64px;
 }
 
 /* Odds container and card styles */
 #odds-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 20px;
 }
 
 .card {
-    background-color: #1a1a1a;
+    background-color: var(--card-bg-color);
 }
 
 .card-title {
-    color: #fff;
+    color: var(--card-title-color);
 }
 
 .card-body {
@@ -130,26 +97,26 @@ body {
 }
 
 .text-gray-300 {
-    color: #d1d5db;
+    color: var(--text-gray-300);
     margin-right: auto;
 }
 
 .text-gray-400 {
-    color: #9ca3af;
+    color: var(--text-gray-400);
 }
 
 .divider {
-    border-color: #374151;
+    border-color: var(--divider-color);
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: var(--btn-primary-bg-color);
+    border-color: var(--btn-primary-border-color);
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: var(--btn-primary-hover-bg-color);
+    border-color: var(--btn-primary-hover-border-color);
 }
 
 /* Odds card styles */
@@ -170,7 +137,7 @@ body {
 
 .odds-card p {
     margin: 5px 0;
-    color: rgb(255, 60, 0);
+    color: var(--card-text-color);
 }
 
 .odds-card hr {
@@ -189,13 +156,13 @@ body {
 .prop-row p {
     flex: 1;
     min-width: 140px;
-    color: rgb(17, 0, 255);
+    color: var(--prop-text-color);
 }
 
 .prop-row p strong {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: var(--text-color);
 }
 
 /* Notification styles */
@@ -261,4 +228,8 @@ body {
 
 .red-button:hover {
     background-color: darkred;
+}
+
+.pl-64 {
+    padding-left: 16rem;
 }

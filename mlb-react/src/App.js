@@ -9,6 +9,7 @@ function App() {
   const [lastUpdated, setLastUpdated] = useState('N/A');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [sport, setSport] = useState('mlb');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const updateLastUpdated = (date) => {
     setLastUpdated(date);
@@ -19,6 +20,10 @@ function App() {
     console.log(`User ${username} logged in.`);
   };
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', sport === 'mlb' ? 'forest' : 'valentine');
   }, [sport]);
@@ -26,7 +31,7 @@ function App() {
   return (
     <Router>
       <div className={`App ${sport}`}>
-        <ConditionalNavbar isLoggedIn={isLoggedIn} lastUpdated={lastUpdated} sport={sport} setSport={setSport} />
+        <ConditionalNavbar isLoggedIn={isLoggedIn} lastUpdated={lastUpdated} sport={sport} setSport={setSport} toggleSidebar={toggleSidebar} />
         <div className="main-content">
           <Routes>
             <Route path="/login" element={<LoginPage onLogin={handleLogin} />} />
@@ -40,14 +45,14 @@ function App() {
   );
 }
 
-const ConditionalNavbar = ({ isLoggedIn, lastUpdated, sport, setSport }) => {
+const ConditionalNavbar = ({ isLoggedIn, lastUpdated, sport, setSport, toggleSidebar }) => {
   const location = useLocation();
 
   if (location.pathname === '/login') {
     return null;
   }
 
-  return isLoggedIn && <Navbar lastUpdated={lastUpdated} sport={sport} setSport={setSport} />;
+  return isLoggedIn && <Navbar lastUpdated={lastUpdated} sport={sport} setSport={setSport} toggleSidebar={toggleSidebar} />;
 };
 
 export default App;

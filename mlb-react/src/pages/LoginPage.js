@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FaEnvelope, FaLock } from 'react-icons/fa';
+import 'daisyui/dist/full.css'; // Import daisyUI styles
 import './styles.css'; // Import the CSS for flip animation
 
 const LoginPage = ({ onLogin }) => {
@@ -15,7 +16,17 @@ const LoginPage = ({ onLogin }) => {
   const [signupEmail, setSignupEmail] = useState('');
   const [signupPassword, setSignupPassword] = useState('');
   const [signupError, setSignupError] = useState('');
+  const [currentSlide, setCurrentSlide] = useState(1);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide % 3) + 1); // Assuming 3 slides
+    }, 5000); // Change slide every 5 seconds
+  
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
+  
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
@@ -87,6 +98,48 @@ const LoginPage = ({ onLogin }) => {
           <div className="text-white text-center px-10 space-y-5">
             <h2 className="text-4xl font-bold">Welcome to Live Odds Tracker for Player Props</h2>
             <p className="text-lg">Track the latest sports betting odds available with ease for the wide variety of player props available on DFS betting platforms</p>
+              <div className="carousel w-full mt-8">
+                <div id="slide1" className={`carousel-item relative w-full ${currentSlide === 1 ? 'block' : 'hidden'}`}>
+                  <div className="card w-full bg-base-100 shadow-xl image-full">
+                    <figure><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="Real-time Odds" /></figure>
+                    <div className="card-body p-6">
+                      <h2 className="card-title text-2xl font-bold">Real-time Odds</h2>
+                      <p className="mt-4">Stay updated with real-time odds for various player props. Never miss an opportunity to make informed betting decisions with up-to-the-minute data.</p>
+                    </div>
+                  </div>
+                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" className="btn btn-circle">❮</a>
+                    <a href="#slide2" className="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" className={`carousel-item relative w-full ${currentSlide === 2 ? 'block' : 'hidden'}`}>
+                  <div className="card w-full bg-base-100 shadow-xl image-full">
+                    <figure><img src="https://images.unsplash.com/photo-1543163521-1bf374cb1a4e" alt="Wide Variety of Props" /></figure>
+                    <div className="card-body p-6">
+                      <h2 className="card-title text-2xl font-bold">Wide Variety of Props</h2>
+                      <p className="mt-4">Choose from a wide variety of player props available. From points scored to rebounds, find the perfect bet that suits your strategy.</p>
+                    </div>
+                  </div>
+                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" className="btn btn-circle">❮</a>
+                    <a href="#slide3" className="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" className={`carousel-item relative w-full ${currentSlide === 3 ? 'block' : 'hidden'}`}>
+                  <div className="card w-full bg-base-100 shadow-xl image-full">
+                    <figure><img src="https://images.unsplash.com/photo-1553356084-28c76f48c088" alt="Accurate Data" /></figure>
+                    <div className="card-body p-6">
+                      <h2 className="card-title text-2xl font-bold">Accurate Data</h2>
+                      <p className="mt-4">Get reliable and accurate data for your betting needs. Our data is sourced from trusted providers to ensure you make the best bets.</p>
+                    </div>
+                  </div>
+                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" className="btn btn-circle">❮</a>
+                    <a href="#slide1" className="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+
           </div>
         </div>
       </div>
@@ -96,7 +149,7 @@ const LoginPage = ({ onLogin }) => {
             <div className="flip-card-inner">
               {/* Login Form */}
               <div className="flip-card-front flex items-center justify-center">
-                <div className="card-content">
+                <div className="card-content w-full">
                   <div className="text-center mb-6">
                     <img src="https://via.placeholder.com/100" alt="Logo" className="mx-auto w-24 h-24" />
                     <h2 className="text-3xl font-bold text-gray-900 mt-4">Login</h2>
@@ -175,7 +228,7 @@ const LoginPage = ({ onLogin }) => {
 
               {/* Signup Form */}
               <div className="flip-card-back flex items-center justify-center">
-                <div className="card-content">
+                <div className="card-content w-full">
                   <div className="text-center mb-6">
                     <img src="https://via.placeholder.com/100" alt="Logo" className="mx-auto w-24 h-24" />
                     <h2 className="text-3xl font-bold text-gray-900 mt-4">Sign Up</h2>
