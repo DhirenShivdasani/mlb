@@ -4,12 +4,12 @@
 2,Dearica Hamby,LAS - F,10.5,Rebounds
 3,Diana Taurasi,PHO - G,15.5,Points
 4,Brittney Griner,PHO - C,19.5,Points
-5,Kahleah Copper,PHO - G-F,20.5,Points
-6,Natasha Cloud,PHO - G,4.5,Rebounds
-7,Diana Taurasi,PHO - G,4.0,Assists
-8,Natasha Cloud,PHO - G,10.5,Points
-9,DiJonai Carrington,CON - G-F,11.5,Points
-10,Tyasha Harris,CON - G,9.5,Points
+5,Diana Taurasi,PHO - G,4.0,Assists
+6,Kahleah Copper,PHO - G-F,20.5,Points
+7,Natasha Cloud,PHO - G,4.5,Rebounds
+8,DiJonai Carrington,CON - G-F,11.5,Points
+9,Tyasha Harris,CON - G,9.5,Points
+10,Natasha Cloud,PHO - G,10.5,Points
 11,Diana Taurasi,PHO - G,4.5,Rebounds
 12,Alyssa Thomas,CON - F,9.5,Rebounds
 13,Alyssa Thomas,CON - F,7.5,Assists
@@ -17,8 +17,8 @@
 15,Aari McDonald,LAS - G,1.5,3-PT Made
 16,DeWanna Bonner,CON - F-G,7.5,Rebounds
 17,DeWanna Bonner,CON - F-G,15.5,Points
-18,Natasha Cloud,PHO - G,7.0,Assists
-19,Allisha Gray,ATL - G,28.5,Fantasy Score
+18,Allisha Gray,ATL - G,28.5,Fantasy Score
+19,Natasha Cloud,PHO - G,7.0,Assists
 20,Alyssa Thomas,CON - F,28.5,Pts+Rebs+Asts
 21,Brionna Jones,CON - F,19.5,Pts+Rebs+Asts
 22,Tina Charles,ATL - C,25.5,Pts+Rebs+Asts
@@ -51,40 +51,52 @@
 49,Diana Taurasi,PHO - G,4.5,Rebounds
 50,Natasha Cloud,PHO - G,4.5,Rebounds
 51,Brittney Griner,PHO - C,7.5,Rebounds
-52,Alyssa Thomas,CON - F,36.5,Fantasy Score
-53,Allisha Gray,ATL - G,28.5,Fantasy Score
-54,Brionna Jones,CON - F,26.5,Fantasy Score
-55,Tina Charles,ATL - C,31.5,Fantasy Score
-56,DeWanna Bonner,CON - F-G,32.5,Fantasy Score
-57,DiJonai Carrington,CON - G-F,23.5,Fantasy Score
-58,Dearica Hamby,LAS - F,36.0,Fantasy Score
-59,Diana Taurasi,PHO - G,28.5,Fantasy Score
-60,Kahleah Copper,PHO - G-F,30.5,Fantasy Score
-61,Natasha Cloud,PHO - G,29.5,Fantasy Score
-62,Aari McDonald,LAS - G,24.5,Fantasy Score
-63,Brittney Griner,PHO - C,36.5,Fantasy Score
-64,Alyssa Thomas,CON - F,7.5,Assists
-65,Diana Taurasi,PHO - G,4.0,Assists
-66,Natasha Cloud,PHO - G,7.0,Assists
-67,Aari McDonald,LAS - G,4.5,Assists
-68,Tyasha Harris,CON - G,1.5,3-PT Made
-69,Aari McDonald,LAS - G,1.5,3-PT Made
-70,Alyssa Thomas,CON - F,20.5,Pts+Rebs
-71,Allisha Gray,ATL - G,18.5,Pts+Rebs
-72,Brionna Jones,CON - F,18.5,Pts+Rebs
-73,Tina Charles,ATL - C,23.5,Pts+Rebs
-74,DeWanna Bonner,CON - F-G,23.5,Pts+Rebs
-75,DiJonai Carrington,CON - G-F,16.5,Pts+Rebs
-76,Dearica Hamby,LAS - F,26.5,Pts+Rebs
-77,Diana Taurasi,PHO - G,20.5,Pts+Rebs
-78,Kahleah Copper,PHO - G-F,25.5,Pts+Rebs
-79,Natasha Cloud,PHO - G,14.5,Pts+Rebs
-80,Brittney Griner,PHO - C,27.5,Pts+Rebs
-81,Alyssa Thomas,CON - F,19.0,Pts+Asts
-82,Allisha Gray,ATL - G,17.5,Pts+Asts
-83,Diana Taurasi,PHO - G,19.5,Pts+Asts
-84,Natasha Cloud,PHO - G,17.5,Pts+Asts
-85,Aari McDonald,LAS - G,17.5,Pts+Asts
-86,Alyssa Thomas,CON - F,16.5,Rebs+Asts
-87,Diana Taurasi,PHO - G,8.5,Rebs+Asts
-88,Natasha Cloud,PHO - G,11.5,Rebs+Asts
+52,DeWanna Bonner + Allisha Gray,CON/ATL - F/G,30.5,Points (Combo)
+53,Brionna Jones + Tina Charles,CON/ATL - F/C,29.5,Points (Combo)
+54,Kahleah Copper + Dearica Hamby,PHO/LAS - F,36.5,Points (Combo)
+55,Brittney Griner + Dearica Hamby,PHO/LAS - C/F,35.5,Points (Combo)
+56,Allisha Gray + Diana Taurasi,ATL/PHO - G,30.5,Points (Combo)
+57,Brionna Jones + Dearica Hamby,CON/LAS - F,30.5,Points (Combo)
+58,Alyssa Thomas,CON - F,36.5,Fantasy Score
+59,Allisha Gray,ATL - G,28.5,Fantasy Score
+60,Brionna Jones,CON - F,26.5,Fantasy Score
+61,Tina Charles,ATL - C,31.5,Fantasy Score
+62,DeWanna Bonner,CON - F-G,32.5,Fantasy Score
+63,DiJonai Carrington,CON - G-F,23.5,Fantasy Score
+64,Dearica Hamby,LAS - F,36.0,Fantasy Score
+65,Diana Taurasi,PHO - G,28.5,Fantasy Score
+66,Kahleah Copper,PHO - G-F,30.5,Fantasy Score
+67,Natasha Cloud,PHO - G,29.5,Fantasy Score
+68,Aari McDonald,LAS - G,24.5,Fantasy Score
+69,Brittney Griner,PHO - C,36.5,Fantasy Score
+70,Alyssa Thomas,CON - F,7.5,Assists
+71,Diana Taurasi,PHO - G,4.0,Assists
+72,Natasha Cloud,PHO - G,7.0,Assists
+73,Aari McDonald,LAS - G,4.5,Assists
+74,Tyasha Harris,CON - G,1.5,3-PT Made
+75,Aari McDonald,LAS - G,1.5,3-PT Made
+76,Alyssa Thomas + Natasha Cloud,CON/PHO - F/G,14.5,Assists (Combo)
+77,Alyssa Thomas + Tina Charles,CON/ATL - F/C,17.5,Rebounds (Combo)
+78,Brittney Griner + Dearica Hamby,PHO/LAS - C/F,18.0,Rebounds (Combo)
+79,Alyssa Thomas + Dearica Hamby,CON/LAS - F,20.0,Rebounds (Combo)
+80,Tina Charles + Brittney Griner,ATL/PHO - C,15.5,Rebounds (Combo)
+81,DeWanna Bonner + Kahleah Copper,CON/PHO - F/G,3.5,3-PT Made (Combo)
+82,Alyssa Thomas,CON - F,20.5,Pts+Rebs
+83,Allisha Gray,ATL - G,18.5,Pts+Rebs
+84,Brionna Jones,CON - F,18.5,Pts+Rebs
+85,Tina Charles,ATL - C,23.5,Pts+Rebs
+86,DeWanna Bonner,CON - F-G,23.5,Pts+Rebs
+87,DiJonai Carrington,CON - G-F,16.5,Pts+Rebs
+88,Dearica Hamby,LAS - F,26.5,Pts+Rebs
+89,Diana Taurasi,PHO - G,20.5,Pts+Rebs
+90,Kahleah Copper,PHO - G-F,25.5,Pts+Rebs
+91,Natasha Cloud,PHO - G,14.5,Pts+Rebs
+92,Brittney Griner,PHO - C,27.5,Pts+Rebs
+93,Alyssa Thomas,CON - F,19.0,Pts+Asts
+94,Allisha Gray,ATL - G,17.5,Pts+Asts
+95,Diana Taurasi,PHO - G,19.5,Pts+Asts
+96,Natasha Cloud,PHO - G,17.5,Pts+Asts
+97,Aari McDonald,LAS - G,17.5,Pts+Asts
+98,Alyssa Thomas,CON - F,16.5,Rebs+Asts
+99,Diana Taurasi,PHO - G,8.5,Rebs+Asts
+100,Natasha Cloud,PHO - G,11.5,Rebs+Asts
