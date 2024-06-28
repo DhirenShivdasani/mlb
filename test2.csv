@@ -1,24 +1,24 @@
 ,Name,Team,Value,Prop
 0,Vladimir Guerrero Jr.,TOR - IF,9.0,Hitter Fantasy Score
 1,Shohei Ohtani,LAD - DH,1.5,Total Bases
-2,Jose Altuve,HOU - IF,9.0,Hitter Fantasy Score
+2,Jose Altuve,HOU - IF,8.5,Hitter Fantasy Score
 3,Triston McKenzie,CLE - P,4.0,Pitcher Strikeouts
-4,Elly De La Cruz,CIN - IF,10.0,Hitter Fantasy Score
-5,Yandy Díaz,TB - IF,1.5,Total Bases
+4,Yandy Díaz,TB - IF,1.5,Total Bases
+5,Elly De La Cruz,CIN - IF,10.0,Hitter Fantasy Score
 6,Shohei Ohtani,LAD - DH,10.5,Hitter Fantasy Score
 7,Vladimir Guerrero Jr.,TOR - IF,1.5,Total Bases
 8,Aaron Judge,NYY - OF,1.5,Total Bases
-9,Gunnar Henderson,BAL - IF,8.5,Hitter Fantasy Score
-10,Max Scherzer,TEX - P,4.5,Pitcher Strikeouts
+9,Max Scherzer,TEX - P,4.5,Pitcher Strikeouts
+10,Gunnar Henderson,BAL - IF,8.5,Hitter Fantasy Score
 11,Cristopher Sánchez,PHI - P,33.0,Pitcher Fantasy Score
 12,Logan Webb,SF - P,5.0,Pitcher Strikeouts
-13,Charlie Morton,ATL - P,6.0,Pitcher Strikeouts
-14,CJ Abrams,WSH - IF,1.5,Hits+Runs+RBIs
+13,CJ Abrams,WSH - IF,1.5,Hits+Runs+RBIs
+14,Charlie Morton,ATL - P,6.0,Pitcher Strikeouts
 15,Charlie Morton,ATL - P,34.5,Pitcher Fantasy Score
 16,Mitch Garver,SEA - DH,0.5,Total Bases
 17,Francisco Lindor,NYM - IF,1.5,Hits+Runs+RBIs
-18,Bailey Ober,MIN - P,6.5,Pitcher Strikeouts
-19,Logan Gilbert,SEA - P,6.0,Pitcher Strikeouts
+18,Logan Gilbert,SEA - P,34.5,Pitcher Fantasy Score
+19,Bailey Ober,MIN - P,6.5,Pitcher Strikeouts
 20,Cristopher Sánchez,PHI - P,5.0,Pitcher Strikeouts
 21,Kyle Tyler,MIA - P,3.0,Pitcher Strikeouts
 22,Mitchell Parker,WSH - P,4.5,Pitcher Strikeouts
@@ -33,7 +33,7 @@
 31,Drew Thorpe,CWS - P,5.0,Pitcher Strikeouts
 32,Dakota Hudson,COL - P,3.0,Pitcher Strikeouts
 33,Charlie Morton,ATL - P,6.0,Pitcher Strikeouts
-34,Martín Pérez,PIT - P,4.0,Pitcher Strikeouts
+34,Martín Pérez,PIT - P,3.5,Pitcher Strikeouts
 35,Alec Marsh,KC - P,4.0,Pitcher Strikeouts
 36,Triston McKenzie,CLE - P,4.0,Pitcher Strikeouts
 37,Jameson Taillon,CHC - P,4.0,Pitcher Strikeouts
@@ -51,7 +51,7 @@
 49,Marcus Stroman + Yusei Kikuchi,NYY/TOR - P,9.0,Pitcher Strikeouts (Combo)
 50,Ronel Blanco + José Quintana,HOU/NYM - P,9.0,Pitcher Strikeouts (Combo)
 51,Randy Vásquez + Nick Pivetta,SD/BOS - P,8.5,Pitcher Strikeouts (Combo)
-52,Martín Pérez + Charlie Morton,PIT/ATL - P,10.0,Pitcher Strikeouts (Combo)
+52,Martín Pérez + Charlie Morton,PIT/ATL - P,9.5,Pitcher Strikeouts (Combo)
 53,JP Sears + Slade Cecconi,OAK/AZ - P,8.0,Pitcher Strikeouts (Combo)
 54,Bailey Ober + Logan Gilbert,MIN/SEA - P,12.5,Pitcher Strikeouts (Combo)
 55,Alec Bohm,PHI - IF,1.5,Total Bases
@@ -100,36 +100,36 @@
 98,JP Sears,OAK - P,5.5,Hits Allowed
 99,Landon Knack,LAD - P,4.5,Hits Allowed
 100,Logan Webb,SF - P,6.5,Hits Allowed
-101,Martín Pérez,PIT - P,5.5,Hits Allowed
-102,Colin Rea,MIL - P,4.5,Hits Allowed
-103,Jameson Taillon,CHC - P,5.5,Hits Allowed
-104,Mitchell Parker,WSH - P,1.5,Walks Allowed
-105,Nick Pivetta,BOS - P,1.5,Walks Allowed
-106,Colin Rea,MIL - P,1.5,Walks Allowed
-107,Kenta Maeda,DET - P,1.5,Walks Allowed
-108,Bailey Ober,MIN - P,1.5,Walks Allowed
-109,JP Sears,OAK - P,1.5,Walks Allowed
-110,Logan Webb,SF - P,1.5,Walks Allowed
-111,José Quintana,NYM - P,1.5,Walks Allowed
-112,Jameson Taillon,CHC - P,1.5,Walks Allowed
-113,Cristopher Sánchez,PHI - P,33.0,Pitcher Fantasy Score
-114,Zach Eflin,TB - P,28.5,Pitcher Fantasy Score
-115,Marcus Stroman,NYY - P,24.5,Pitcher Fantasy Score
-116,José Quintana,NYM - P,24.0,Pitcher Fantasy Score
-117,Ronel Blanco,HOU - P,32.0,Pitcher Fantasy Score
-118,Nick Pivetta,BOS - P,25.5,Pitcher Fantasy Score
-119,Charlie Morton,ATL - P,34.5,Pitcher Fantasy Score
-120,Jameson Taillon,CHC - P,26.5,Pitcher Fantasy Score
-121,Kenta Maeda,DET - P,23.5,Pitcher Fantasy Score
-122,Bailey Ober,MIN - P,33.5,Pitcher Fantasy Score
-123,Logan Gilbert,SEA - P,34.5,Pitcher Fantasy Score
-124,Logan Webb,SF - P,30.5,Pitcher Fantasy Score
-125,Bryan De La Cruz,MIA - OF,1.5,Hits+Runs+RBIs
-126,Brandon Marsh,PHI - OF,1.5,Hits+Runs+RBIs
-127,Jake Burger,MIA - IF,1.5,Hits+Runs+RBIs
-128,David Dahl,PHI - OF,1.5,Hits+Runs+RBIs
-129,Josh Bell,MIA - IF,1.5,Hits+Runs+RBIs
-130,Edmundo Sosa,PHI - IF,1.5,Hits+Runs+RBIs
+101,Cristopher Sánchez,PHI - P,5.5,Hits Allowed
+102,José Quintana,NYM - P,5.5,Hits Allowed
+103,Martín Pérez,PIT - P,5.5,Hits Allowed
+104,Colin Rea,MIL - P,4.5,Hits Allowed
+105,Jameson Taillon,CHC - P,5.5,Hits Allowed
+106,Mitchell Parker,WSH - P,1.5,Walks Allowed
+107,Nick Pivetta,BOS - P,1.5,Walks Allowed
+108,Colin Rea,MIL - P,1.5,Walks Allowed
+109,Kenta Maeda,DET - P,1.5,Walks Allowed
+110,Bailey Ober,MIN - P,1.5,Walks Allowed
+111,JP Sears,OAK - P,1.5,Walks Allowed
+112,Logan Webb,SF - P,1.5,Walks Allowed
+113,José Quintana,NYM - P,1.5,Walks Allowed
+114,Jameson Taillon,CHC - P,1.5,Walks Allowed
+115,Cristopher Sánchez,PHI - P,33.0,Pitcher Fantasy Score
+116,Zach Eflin,TB - P,28.5,Pitcher Fantasy Score
+117,Marcus Stroman,NYY - P,24.5,Pitcher Fantasy Score
+118,José Quintana,NYM - P,24.0,Pitcher Fantasy Score
+119,Ronel Blanco,HOU - P,32.0,Pitcher Fantasy Score
+120,Nick Pivetta,BOS - P,25.5,Pitcher Fantasy Score
+121,Charlie Morton,ATL - P,34.5,Pitcher Fantasy Score
+122,Jameson Taillon,CHC - P,26.5,Pitcher Fantasy Score
+123,Kenta Maeda,DET - P,23.5,Pitcher Fantasy Score
+124,Bailey Ober,MIN - P,33.5,Pitcher Fantasy Score
+125,Logan Gilbert,SEA - P,34.5,Pitcher Fantasy Score
+126,Logan Webb,SF - P,30.5,Pitcher Fantasy Score
+127,Bryan De La Cruz,MIA - OF,1.5,Hits+Runs+RBIs
+128,Brandon Marsh,PHI - OF,1.5,Hits+Runs+RBIs
+129,Jake Burger,MIA - IF,1.5,Hits+Runs+RBIs
+130,Josh Bell,MIA - IF,1.5,Hits+Runs+RBIs
 131,Otto Lopez,MIA - IF,1.5,Hits+Runs+RBIs
 132,Trea Turner,PHI - IF,2.5,Hits+Runs+RBIs
 133,Whit Merrifield,PHI - OF,1.5,Hits+Runs+RBIs
@@ -228,7 +228,7 @@
 226,Juan Soto,NYY - OF,8.5,Hitter Fantasy Score
 227,Yordan Alvarez,HOU - OF,7.5,Hitter Fantasy Score
 228,Pete Alonso,NYM - IF,6.5,Hitter Fantasy Score
-229,Jose Altuve,HOU - IF,9.0,Hitter Fantasy Score
+229,Jose Altuve,HOU - IF,8.5,Hitter Fantasy Score
 230,Manny Machado,SD - IF,7.5,Hitter Fantasy Score
 231,Rafael Devers,BOS - IF,7.5,Hitter Fantasy Score
 232,Luis Arraez,SD - IF,6.5,Hitter Fantasy Score
