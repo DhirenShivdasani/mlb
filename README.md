@@ -27,8 +27,7 @@ The web application retrieves odds data from the backend and displays it in a us
 ### Screenshots
 
 ![Odds Comparison Example](Example.png)
-![MLB Odds](mlb_odds_example.png)
-![WNBA Odds](wnba_odds_example.png)
+
 
 ## Technology Stack
 
