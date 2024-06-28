@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import Link and useNavigate
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = ({ lastUpdated, sport, setSport }) => {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
 
   const handleLogout = async () => {
     try {
@@ -22,10 +22,9 @@ const Navbar = ({ lastUpdated, sport, setSport }) => {
     }
   };
 
-  const handleSportChange = (e) => {
-    const selectedSport = e.target.value;
-    setSport(selectedSport);
-    navigate(`/${selectedSport}`);
+  const handleSportChange = (newSport) => {
+    setSport(newSport);
+    navigate(`/${newSport}`);
   };
 
   return (
@@ -34,18 +33,20 @@ const Navbar = ({ lastUpdated, sport, setSport }) => {
         <a className="btn btn-ghost normal-case text-xl" href="/">Live Odds Tracker</a>
       </div>
       <div className="flex items-center space-x-4">
-        <select 
-          value={sport} 
-          onChange={handleSportChange} 
-          className="sport-selector"
-        >
-          <option value="mlb">MLB</option>
-          <option value="wnba">WNBA</option>
-        </select>
         <div className="text-sm text-gray-400">Last updated: {lastUpdated}</div>
-        <button className="btn btn-primary" onClick={handleLogout}>
-          Logout
+        <button 
+          className={`btn ${sport === 'mlb' ? 'btn-primary' : ''}`} 
+          onClick={() => handleSportChange('mlb')}
+        >
+          MLB
         </button>
+        <button 
+          className={`btn ${sport === 'wnba' ? 'btn-primary' : ''}`} 
+          onClick={() => handleSportChange('wnba')}
+        >
+          WNBA
+        </button>
+        <button className="btn btn-primary" onClick={handleLogout}>Logout</button>
       </div>
     </div>
   );

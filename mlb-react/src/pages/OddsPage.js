@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import Chart from 'chart.js/auto';
 import './OddsPage.css';
 import StatCard from '../components/StatCard';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const OddsPage = ({ updateLastUpdated, sport }) => {
     const [oddsData, setOddsData] = useState([]);
@@ -21,14 +20,13 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
 
     const originalOddsData = useRef([]);
     const filterTimeout = useRef(null);
-    const navigate = useNavigate(); // Initialize navigate
 
     useEffect(() => {
         fetchOdds();
     }, [sport]);
 
     const fetchOdds = async () => {
-        const response = await fetch('/merged_data?sport=${sport}`');
+        const response = await fetch(`/merged_data?sport=${sport}`);
         const data = await response.json();
         setOddsData(data);
         setFilteredData(data); // Set filteredData to initial data
@@ -69,12 +67,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
 
         filterTimeout.current = setTimeout(() => {
             console.log('Filters changed:', filters); // Debug logging
-            if (filters.sortBy === 'default') {
-                console.log('Resetting to original data:', originalOddsData.current);
-                setFilteredData([...originalOddsData.current]); // Reset to original data
-            } else {
-                applyFilters(filters);
-            }
+            applyFilters(filters); // Always apply filters
         }, 300); // Debounce delay of 300ms
 
         return () => {
@@ -99,14 +92,14 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         const encodedPlayerName = encodeURIComponent(playerName);
         const encodedProp = encodeURIComponent(prop);
         const encodedOverUnder = encodeURIComponent(overUnder);
-
-        const url = `/get_historical_data?player_name=${encodedPlayerName}&prop=${encodedProp}&over_under=${encodedOverUnder}`;
-
+    
+        const url = `/get_historical_data?player_name=${encodedPlayerName}&prop=${encodedProp}&over_under=${encodedOverUnder}&sport=${sport}`;
+    
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`Error fetching historical data: ${response.statusText}`);
             const data = await response.json();
-
+    
             setHistoricalData(data);
             updateChart(data);
             document.getElementById('historicalModal').style.display = 'block';
@@ -120,18 +113,18 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
             const parts = value.split(' ');
             return parts.length > 1 ? parseFloat(parts[1]) : null;
         };
-
+    
         const filteredData = data.slice(-dataFilter);
-        const timestamps = filteredData.map(item => new Date(item.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
+        const timestamps = filteredData.map(item => new Date(item.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'}));
         const draftkings = filteredData.map(item => extractOddsValue(item.draftkings));
         const fanduel = filteredData.map(item => extractOddsValue(item.fanduel));
         const mgm = filteredData.map(item => extractOddsValue(item.mgm));
         const betrivers = filteredData.map(item => extractOddsValue(item.betrivers));
-
+    
         if (historicalChart) {
             historicalChart.destroy();
         }
-
+    
         const ctx = document.getElementById('historicalChart').getContext('2d');
         if (ctx) {
             const newChart = new Chart(ctx, {
@@ -234,12 +227,13 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                     maintainAspectRatio: false,
                 }
             });
-
+    
             setHistoricalChart(newChart);
         } else {
             console.error('Historical chart element not found');
         }
     };
+    
 
     const closeHistoricalModal = () => {
         document.getElementById('historicalModal').style.display = 'none';
@@ -281,8 +275,6 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         }
     };
 
-   
-
     return (
         <div>
             <div id="notification" className="bg-yellow-300 text-gray-800 p-2 text-center">New data available. Please refresh the page.</div>
@@ -320,10 +312,22 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                         onChange={handleFilterChange}
                         value={filters.propType} // Ensure select value reflects the filter state
                     >
-                        <option value="all">All</option>
-                        <option value="Runs">Runs</option>
-                        <option value="Strikeouts">Strikeouts</option>
-                        <option value="Total Bases">Total Bases</option>
+                        {sport === 'mlb' ? (
+                            <>
+                                <option value="all">All</option>
+                                <option value="Runs">Runs</option>
+                                <option value="Strikeouts">Strikeouts</option>
+                                <option value="Total Bases">Total Bases</option>
+                            </>
+                        ) : (
+                            <>
+                                <option value="all">All</option>
+                                <option value="Points">Points</option>
+                                <option value="Rebounds">Rebounds</option>
+                                <option value="Assists">Assists</option>
+                                <option value="3-Pointers Made">3-Pointers Made</option>
+                            </>
+                        )}
                     </select>
                 </div>
                 <div className="filter">
@@ -343,7 +347,12 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
             </div>
             <div id="odds-container">
                 {getPaginatedData().map((odds, index) => (
-                    <StatCard key={index} odds={odds} showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} />
+                    <StatCard 
+                        key={index} 
+                        odds={odds} 
+                        showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
+                        sport={sport} 
+                    />
                 ))}
             </div>
             <div className="pagination-controls flex justify-center gap-4 mt-4">

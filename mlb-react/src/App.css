@@ -13,17 +13,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px; /* Adjust height based on your Navbar height */
-  background-color: #282c34;
+  height: 64px;
   color: white;
   padding: 0 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Default button styles */
 .navbar .btn {
   color: #61dafb;
 }
 
+/* Primary button styles */
 .navbar .btn-primary {
   background-color: #007bff;
   border-color: #007bff;
@@ -40,7 +41,7 @@ body {
 }
 
 .main-content {
-  padding-top: 64px; /* Adjust height based on your Navbar height */
+  padding-top: 64px;
 }
 
 .form-container {
@@ -98,4 +99,54 @@ body {
 .sport-selector:hover {
   background-color: #555;
   color: #fff;
+}
+
+/* MLB Theme */
+.mlb .navbar {
+  background-color: #001f3f;
+}
+
+.mlb .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.mlb .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.mlb .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.mlb .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+/* WNBA Theme */
+.wnba .navbar {
+  background-color: #3f1f00;
+}
+
+.wnba .btn-primary {
+  background-color: #ff4500;
+  border-color: #ff4500;
+}
+
+.wnba .btn-primary:hover {
+  background-color: #cc3700;
+  border-color: #cc3700;
+}
+
+.wnba .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.wnba .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
 }

@@ -23,8 +23,8 @@ s3 = boto3.client(
 BUCKET_NAME = os.getenv('BUCKET_NAME')
 
 # PostgreSQL connection
-# DATABASE_URL = os.getenv('DATABASE_URL')
-DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
+DATABASE_URL = os.getenv('DATABASE_URL')
+# DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
 
 conn = psycopg2.connect(DATABASE_URL)
 cur = conn.cursor()
@@ -208,7 +208,7 @@ r = calculate_average_implied_probability(r)
 print("Merged data:\n", r.head())
 
 # Save the updated data to PostgreSQL
-# save_to_postgres(r)
+save_to_postgres(r)
 
 # Remove the existing file to force Git to recognize changes
 if os.path.exists('merged_wnba.csv'):
