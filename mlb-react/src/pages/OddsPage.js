@@ -3,7 +3,9 @@ import Chart from 'chart.js/auto';
 import './OddsPage.css';
 import StatCard from '../components/StatCard';
 import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';  // Ensure this is imported
+import zoomPlugin from 'chartjs-plugin-zoom';
+
+Chart.register(zoomPlugin);
 
 
 const OddsPage = ({ updateLastUpdated, sport }) => {
@@ -127,6 +129,27 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         }
     
         const ctx = document.getElementById('historicalChart').getContext('2d');
+       
+        const themeColors = {
+            mlb: {
+                backgroundColor: '#001f3f',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                draftkings: 'rgba(255, 99, 132, 1)',
+                fanduel: 'rgba(54, 162, 235, 1)',
+                mgm: 'rgba(75, 192, 192, 1)',
+                betrivers: 'rgba(153, 102, 255, 1)',
+            },
+            wnba: {
+                backgroundColor: '#3f1f00',
+                borderColor: 'rgba(255, 69, 0, 1)',
+                draftkings: 'rgba(255, 99, 132, 1)',
+                fanduel: 'rgba(54, 162, 235, 1)',
+                mgm: 'rgba(75, 192, 192, 1)',
+                betrivers: 'rgba(153, 102, 255, 1)',
+            }
+        };
+    
+        const theme = themeColors[sport] || themeColors.mlb;
         if (ctx) {
             const newChart = new Chart(ctx, {
                 type: 'line',
@@ -136,41 +159,41 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                         {
                             label: 'DraftKings',
                             data: draftkings,
-                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderColor: theme.draftkings,
                             backgroundColor: 'rgba(255, 99, 132, 0.2)',
                             borderWidth: 2,
                             pointRadius: 5,
-                            fill: false,
+                            fill: true,
                             tension: 0.4,
                         },
                         {
                             label: 'FanDuel',
                             data: fanduel,
-                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderColor: theme.fanduel,
                             backgroundColor: 'rgba(54, 162, 235, 0.2)',
                             borderWidth: 2,
                             pointRadius: 5,
-                            fill: false,
+                            fill: true,
                             tension: 0.4,
                         },
                         {
                             label: 'MGM',
                             data: mgm,
-                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderColor: theme.mgm,
                             backgroundColor: 'rgba(75, 192, 192, 0.2)',
                             borderWidth: 2,
                             pointRadius: 5,
-                            fill: false,
+                            fill: true,
                             tension: 0.4,
                         },
                         {
                             label: 'BetRivers',
                             data: betrivers,
-                            borderColor: 'rgba(153, 102, 255, 1)',
+                            borderColor: theme.betrivers,
                             backgroundColor: 'rgba(153, 102, 255, 0.2)',
                             borderWidth: 2,
                             pointRadius: 5,
-                            fill: false,
+                            fill: true,
                             tension: 0.4,
                         }
                     ]
@@ -180,11 +203,24 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                         legend: {
                             display: true,
                             position: 'top',
+                            labels: {
+                                color: '#fff', // Set legend text color
+                                font: {
+                                    size: 14,
+                                },
+                            },
                         },
                         tooltip: {
-                            mode: 'index',
-                            intersect: false,
-                        }
+                            backgroundColor: 'rgba(0,0,0,0.8)', // Set tooltip background color
+                            titleColor: '#fff', // Set tooltip title color
+                            bodyColor: '#fff', // Set tooltip body color
+                        },
+                        zoom: {
+                            pan: {
+                                enabled: true,
+                                mode: 'xy',
+                            },
+                        },
                     },
                     scales: {
                         x: {
@@ -192,7 +228,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                             title: {
                                 display: true,
                                 text: 'Time',
-                                color: '#191',
+                                color: '#fff', // Set x-axis title color
                                 font: {
                                     family: 'Arial',
                                     size: 16,
@@ -202,18 +238,22 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                                 padding: { top: 20, left: 0, right: 0, bottom: 0 }
                             },
                             ticks: {
+                                color: '#fff', // Set x-axis tick color
                                 maxRotation: 45,
                                 minRotation: 45,
                                 autoSkip: true,
                                 maxTicksLimit: 10,
-                            }
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.2)', // Set x-axis grid line color
+                            },
                         },
                         y: {
                             display: true,
                             title: {
                                 display: true,
                                 text: 'Odds',
-                                color: '#191',
+                                color: '#fff', // Set y-axis title color
                                 font: {
                                     family: 'Arial',
                                     size: 16,
@@ -221,7 +261,14 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                                     lineHeight: 1.2,
                                 },
                                 padding: { top: 30, left: 0, right: 0, bottom: 0 }
-                            }
+                            },
+                            ticks: {
+                                color: '#fff', // Set y-axis tick color
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.2)', // Set y-axis grid line color
+                            },
+                            
                         }
                     },
                     responsive: true,
@@ -234,6 +281,8 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
             console.error('Historical chart element not found');
         }
     };
+    
+    
     
 
     const closeHistoricalModal = () => {
@@ -293,16 +342,19 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                 <button onClick={() => setSidebarOpen(!sidebarOpen)} className="toggle-button">
                 </button>
                 <div id="notification" className="bg-yellow-300 text-gray-800 p-2 text-center">New data available. Please refresh the page.</div>
-                <div id="odds-container">
-                    {getPaginatedData().map((odds, index) => (
-                        <StatCard 
-                            key={index} 
-                            odds={odds} 
-                            showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
-                            sport={sport} 
-                        />
-                    ))}
-                </div>
+                <div class="scrollable-container">
+
+                    <div id="odds-container">
+                        {getPaginatedData().map((odds, index) => (
+                            <StatCard 
+                                key={index} 
+                                odds={odds} 
+                                showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
+                                sport={sport} 
+                            />
+                        ))}
+                    </div>
+                   </div> 
                 <div className="pagination-controls flex justify-center gap-4 mt-4">
                     <button
                         onClick={() => handlePageChange(currentPage - 1)}

@@ -28,29 +28,33 @@ const Navbar = ({ lastUpdated, sport, setSport, toggleSidebar }) => {
   };
 
   return (
-    <div className="navbar bg-base-100 shadow-lg px-4 py-2 flex justify-between items-center">
-      <div className="flex items-center space-x-4">
-        <button onClick={toggleSidebar} className="btn btn-ghost">
-          ☰
-        </button>
-        <a className="btn btn-ghost normal-case text-xl" href="/">Live Odds Tracker</a>
-      </div>
-      <div className="flex items-center space-x-4">
-        <div className="text-sm text-gray-400">Last updated: {lastUpdated}</div>
-        <button 
-          className={`btn ${sport === 'mlb' ? 'btn-primary' : 'btn-secondary'}`} 
-          onClick={() => handleSportChange('mlb')}
-        >
-          MLB
-        </button>
-        <button 
-          className={`btn ${sport === 'wnba' ? 'btn-primary' : 'btn-secondary'}`} 
-          onClick={() => handleSportChange('wnba')}
-        >
-          WNBA
-        </button>
-        <button className="btn btn-primary" onClick={handleLogout}>Logout</button>
-      </div>
+    <div class="navbar-container">
+      <div class="navbar"></div>
+        <div className="navbar bg-base-100 shadow-lg px-4 py-2 flex justify-between items-center">
+          <div className="flex items-center space-x-4">
+            <button onClick={toggleSidebar} className="btn btn-ghost">
+              ☰
+            </button>
+            <a className="btn btn-ghost normal-case text-xl" href="/">Live Odds Tracker</a>
+          </div>
+          <div className="flex items-center space-x-4">
+            <div className="text-sm text-gray-400">Last updated: {lastUpdated}</div>
+            <button 
+              className={`btn ${sport === 'mlb' ? 'btn-primary' : 'btn-secondary wnba-link'}`} 
+              onClick={() => handleSportChange('mlb')}
+            >
+              MLB
+            </button>
+            <button 
+              className={`btn ${sport === 'wnba' ? 'btn-primary' : 'btn-secondary mlb-link'}`} 
+              onClick={() => handleSportChange('wnba')}
+            >
+              WNBA
+            </button>
+            <button className="btn btn-primary" onClick={handleLogout}>Logout</button>
+          </div>
+        </div>
+        <div class="navbar-border"></div>
     </div>
   );
 };

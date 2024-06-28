@@ -51,12 +51,12 @@
 
 /* WNBA Theme */
 .wnba .card {
-    --card-bg-color: #3f1f00;
+    --card-bg-color: #ff8a80;
     --card-text-color: white;
     --card-title-color: white;
-    --text-gray-300: #ffcccb;
-    --text-gray-400: #ff9980;
-    --divider-color: #ff9980;
+    --text-gray-300: #ffe5e5;
+    --text-gray-400: #ffcccc;
+    --divider-color: #ffcccc;
     --btn-primary-bg-color: #ff4500;
     --btn-primary-border-color: #ff4500;
     --btn-primary-hover-bg-color: #cc3700;

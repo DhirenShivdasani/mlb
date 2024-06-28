@@ -1,11 +1,19 @@
-/* Container for the flip animation */
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Flip Card Styles */
 .flip-card {
   width: 100%;
   height: 100%;
   perspective: 1000px;
 }
 
-/* Inner container */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -14,12 +22,10 @@
   transform-style: preserve-3d;
 }
 
-/* Flip the card when it has the flip class */
 .flip-card.flip .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Front and back faces of the card */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -32,7 +38,6 @@
   flex-direction: column;
 }
 
-/* Ensure the card content is centered */
 .flip-card-front .card-content, .flip-card-back .card-content {
   width: 100%;
   max-width: 400px;
@@ -48,7 +53,7 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-front{
+.flip-card-front {
   color: white;
 }
 
@@ -63,7 +68,7 @@
   0% {
     background-position: 0% 50%;
   }
-   50% {
+  50% {
     background-position: 100% 50%;
   }
   100% {
@@ -109,6 +114,7 @@
   border-bottom: 2px solid #5264ae;
 }
 
+/* Input Fields */
 .input {
   display: block;
   width: 100%;
@@ -127,6 +133,7 @@
   padding-left: 2.5rem;
 }
 
+/* Buttons */
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -179,6 +186,7 @@
   background-color: #2d4373;
 }
 
+/* Loading Spinner */
 .loading {
   display: inline-block;
   width: 1rem;
@@ -193,4 +201,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Carousel Styles */
+.carousel-container {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .carousel-item .card {
+  max-width: 80%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .carousel-item .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carousel-item .card-body {
+  padding: 20px;
+}
+
+.carousel .card-title {
+  color: var(--card-title-color);
+}
+
+.carousel .card-body p {
+  color: var(--card-text-color);
+}
+
+.carousel .btn-circle {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.carousel .btn-circle:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel .card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-bg-color);
+}
+
+.carousel .card .card-body {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text */
+  color: #fff; /* Ensure text is white for better contrast */
+  padding: 20px; /* Add padding for better spacing */
+  text-align: left; /* Align text to the left */
+}
+
+.carousel .card .card-body h2 {
+  color: #fff; /* Ensure text is white for better contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+.carousel .card .card-body p {
+  color: #fff; /* Ensure text is white for better contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add subtle text shadow */
+}
+
+.carousel .card figure {
+  margin: 0; /* Remove default figure margin */
+}
+
+.carousel .card img {
+  object-fit: cover;
+  height: 96; /* Adjust height as needed */
+  width: 100%;
+}
+
+.carousel .btn-circle {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.carousel .btn-circle:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .card-body p {
+  color: var(--card-text-color);
+}
+
+.left-section {
+  width: 75%;
+}
+
+.right-section {
+  width: 25%;
 }

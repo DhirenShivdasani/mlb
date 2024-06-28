@@ -24,7 +24,6 @@ BUCKET_NAME = os.getenv('BUCKET_NAME')
 
 # PostgreSQL connection
 DATABASE_URL = os.getenv('DATABASE_URL')
-# DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
 
 conn = psycopg2.connect(DATABASE_URL)
 cur = conn.cursor()
@@ -160,11 +159,10 @@ def save_to_postgres(df):
             implied_prob = float(implied_prob.strip('%'))
 
         cur.execute("""
-            INSERT INTO mlb (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-        """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob))
+            INSERT INTO mlb (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob, image_url)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob, row['ImageURL']))
     conn.commit()
-
 
 # Load the CSV files
 betting_odds_data = pd.read_csv('mlb_props.csv')

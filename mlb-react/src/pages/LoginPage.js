@@ -23,10 +23,17 @@ const LoginPage = ({ onLogin }) => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide % 3) + 1); // Assuming 3 slides
     }, 5000); // Change slide every 5 seconds
-  
+
     return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
-  
+
+  useEffect(() => {
+    const savedEmail = localStorage.getItem('email');
+    if (savedEmail) {
+      setEmail(savedEmail);
+      setRememberMe(true);
+    }
+  }, []);
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();
@@ -45,6 +52,8 @@ const LoginPage = ({ onLogin }) => {
         onLogin(email);
         if (rememberMe) {
           localStorage.setItem('email', email);
+        } else {
+          localStorage.removeItem('email');
         }
         navigate('/');
       } else {
@@ -93,57 +102,56 @@ const LoginPage = ({ onLogin }) => {
 
   return (
     <div className="min-h-screen flex">
-      <div className="hidden lg:flex w-1/2 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557683304-673a23048d34')" }}>
-        <div className="bg-gradient-to-r from-black to-transparent opacity-75 w-full h-full flex items-center justify-center">
+      <div className="left-section bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1557683304-673a23048d34')" }}>
+        <div className="bg-gradient-to-r from-black to-transparent w-full h-full flex items-center justify-center">
           <div className="text-white text-center px-10 space-y-5">
             <h2 className="text-4xl font-bold">Welcome to Live Odds Tracker for Player Props</h2>
             <p className="text-lg">Track the latest sports betting odds available with ease for the wide variety of player props available on DFS betting platforms</p>
-              <div className="carousel w-full mt-8">
-                <div id="slide1" className={`carousel-item relative w-full ${currentSlide === 1 ? 'block' : 'hidden'}`}>
-                  <div className="card w-full bg-base-100 shadow-xl image-full">
-                    <figure><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="Real-time Odds" /></figure>
-                    <div className="card-body p-6">
-                      <h2 className="card-title text-2xl font-bold">Real-time Odds</h2>
-                      <p className="mt-4">Stay updated with real-time odds for various player props. Never miss an opportunity to make informed betting decisions with up-to-the-minute data.</p>
-                    </div>
-                  </div>
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" className="btn btn-circle">❮</a>
-                    <a href="#slide2" className="btn btn-circle">❯</a>
+            <div className="carousel w-full mt-8">
+              <div id="slide1" className="carousel-item relative w-full">
+                <div className="card w-full bg-base-100 shadow-xl image-full">
+                  <div className="card-body p-6">
+                    <h2 className="card-title text-2xl font-bold">Real-time Odds</h2>
+                    <figure><img src="real_time_odds.png" alt="Real-time Odds" /></figure>
+                    <p className="mt-4">Stay updated with real-time odds for various player props. Never miss an opportunity to make informed betting decisions with up-to-the-minute data.</p>
                   </div>
                 </div>
-                <div id="slide2" className={`carousel-item relative w-full ${currentSlide === 2 ? 'block' : 'hidden'}`}>
-                  <div className="card w-full bg-base-100 shadow-xl image-full">
-                    <figure><img src="https://images.unsplash.com/photo-1543163521-1bf374cb1a4e" alt="Wide Variety of Props" /></figure>
-                    <div className="card-body p-6">
-                      <h2 className="card-title text-2xl font-bold">Wide Variety of Props</h2>
-                      <p className="mt-4">Choose from a wide variety of player props available. From points scored to rebounds, find the perfect bet that suits your strategy.</p>
-                    </div>
-                  </div>
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" className="btn btn-circle">❮</a>
-                    <a href="#slide3" className="btn btn-circle">❯</a>
-                  </div>
-                </div>
-                <div id="slide3" className={`carousel-item relative w-full ${currentSlide === 3 ? 'block' : 'hidden'}`}>
-                  <div className="card w-full bg-base-100 shadow-xl image-full">
-                    <figure><img src="https://images.unsplash.com/photo-1553356084-28c76f48c088" alt="Accurate Data" /></figure>
-                    <div className="card-body p-6">
-                      <h2 className="card-title text-2xl font-bold">Accurate Data</h2>
-                      <p className="mt-4">Get reliable and accurate data for your betting needs. Our data is sourced from trusted providers to ensure you make the best bets.</p>
-                    </div>
-                  </div>
-                  <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" className="btn btn-circle">❮</a>
-                    <a href="#slide1" className="btn btn-circle">❯</a>
-                  </div>
+                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" className="btn btn-circle">❮</a>
+                  <a href="#slide2" className="btn btn-circle">❯</a>
                 </div>
               </div>
-
+              <div id="slide2" className="carousel-item relative w-full">
+                <div className="card w-full bg-base-100 shadow-xl image-full">
+                  <div className="card-body p-6">
+                    <h2 className="card-title text-2xl font-bold">Wide Variety of Props</h2>
+                    <figure><img src="https://images.unsplash.com/photo-1543163521-1bf374cb1a4e" alt="Wide Variety of Props" /></figure>
+                    <p className="mt-4">Choose from a wide variety of player props available. From points scored to rebounds, find the perfect bet that suits your strategy.</p>
+                  </div>
+                </div>
+                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" className="btn btn-circle">❮</a>
+                  <a href="#slide3" className="btn btn-circle">❯</a>
+                </div>
+              </div>
+              <div id="slide3" className="carousel-item relative w-full">
+                <div className="card w-full bg-base-100 shadow-xl image-full">
+                  <div className="card-body p-6">
+                    <h2 className="card-title text-2xl font-bold">Favorite Props & Notifications</h2>
+                    <figure><img src="https://images.unsplash.com/photo-1553356084-28c76f48c088" alt="Favorite Props & Notifications" /></figure>
+                    <p className="mt-4">Select your favorite props and receive real-time notifications whenever the odds change. Stay ahead of the game and make timely betting decisions.</p>
+                  </div>
+                </div>
+                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" className="btn btn-circle">❮</a>
+                  <a href="#slide1" className="btn btn-circle">❯</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center w-full lg:w-1/2 bg-gray-100 p-8">
+      <div className="right-section flex items-center justify-center w-full lg:w-1/2 bg-gray-100 p-8">
         <div className="relative w-full max-w-md">
           <div className={`flip-card ${isFlipped ? 'flip' : ''}`}>
             <div className="flip-card-inner">

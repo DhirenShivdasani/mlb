@@ -1,6 +1,4 @@
-import React from "react";
-import '../pages/OddsPage.css';
-import './StatCard.css';
+import React from 'react';
 
 export default function StatCard({ index, odds, showHistoricalData, sport }) {
     const getPropLabel = () => {
@@ -18,10 +16,16 @@ export default function StatCard({ index, odds, showHistoricalData, sport }) {
         // Default to MLB options if not WNBA
         return ['Runs', 'Strikeouts', 'Total Bases'];
     };
+    console.log(odds.ImageUrl); // Debugging: Check if image_url is being passed
 
     return (
         <div key={index} className={`card w-full max-w-lg bg-base-100 shadow-xl mx-auto my-4 ${sport}`}>
             <div className="card-body p-4">
+                <img 
+                    src={odds.ImageUrl} 
+                    alt={`${odds.PlayerName} image`} 
+                    className="w-16 h-16 rounded-full mx-auto mb-4" 
+                />
                 <h2 className="card-title text-2xl font-bold">{odds.PlayerName}</h2>
                 <p className="text-sm text-gray-300"><strong>Team:</strong> {odds.team} vs. <strong>Opponent:</strong> {odds.opp}</p>
 

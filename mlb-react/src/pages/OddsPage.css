@@ -8,12 +8,38 @@ body {
 }
 
 
+
 .navbar {
     background-color: var(--navbar-color);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #ccc;
+}
+
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+/* Styles for the active link */
+.navbar a.active {
+    color: var(--active-link-color);
+}
+
+
+.navbar .mlb-link.active {
+    background-color: var(--mlb-active-bg-color);
+    color: var(--mlb-active-text-color);
+}
+
+.navbar .wnba-link.active {
+    background-color: var(--wnba-active-bg-color);
+    color: var(--wnba-active-text-color);
 }
 
 .last-updated {
@@ -21,27 +47,20 @@ body {
     margin-left: auto;
     padding: 10px 0;
 }
-
-
-.toggle-button {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: var(--navbar-color);
-    color: var(--text-color);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1001;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+.scrollable-container {
+    margin-top: 64px; /* Adjust this value based on the height of your navbar */
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100vh - 64px); /* Adjust this value based on the height of your navbar */
 }
+
 
 .filter {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 30px;
-    margin-top: 25px;
+    margin-top: 95px;
 }
 
 .filter label {
@@ -111,7 +130,7 @@ body {
 
 .btn-primary {
     background-color: var(--btn-primary-bg-color);
-    border-color: var(--btn-primary-border-color);
+    border-color: var (--btn-primary-border-color);
 }
 
 .btn-primary:hover {

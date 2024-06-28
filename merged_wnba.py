@@ -74,7 +74,7 @@ def push_to_github():
         print(f"Current directory: {os.getcwd()}")
 
         # Print content before download
-        print("Content of merged_data.csv before download:")
+        print("Content of merged_wnba.csv before download:")
         if os.path.exists('merged_wnba.csv'):
             with open('merged_wnba.csv', 'r') as file:
                 print(file.read())
@@ -96,7 +96,7 @@ def push_to_github():
         subprocess.check_call(['git', 'add', 'merged_wnba.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Print content after download
-        print("Content of merged_mlb.csv after download:")
+        print("Content of merged_wnba.csv after download:")
         with open('merged_wnba.csv', 'r') as file:
             print(file.read())
 
@@ -160,11 +160,10 @@ def save_to_postgres(df):
             implied_prob = float(implied_prob.strip('%'))
 
         cur.execute("""
-            INSERT INTO wnba (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-        """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob))
+            INSERT INTO wnba (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob, image_url)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob, row['ImageURL']))
     conn.commit()
-
 
 # Load the CSV files
 betting_odds_data = pd.read_csv('wnba_props.csv')
