@@ -1,74 +1,112 @@
 ,Name,Team,Value,Prop,ImageURL
-0,Vladimir Guerrero Jr.,TOR - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Vladimir_Guerrero_Jr_fa26a373-a427-4558-ba5e-6d6c0f0148c5.webp
-1,Jose Altuve,HOU - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Second_Base_1616381c-d6ac-40b1-8c3f-c70d51bda098.webp
-2,Elly De La Cruz,CIN - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Elly_De_La_Cruz_457e0d34-698f-4ee3-ba0e-4bf703200d8f.webp
-3,Aaron Judge,NYY - OF,10.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Aaron_Judge_86f7390e-61bd-4556-8325-a6705c7f693b.webp
-4,Shohei Ohtani,LAD - DH,10.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Shohei_Ohtani_80de60c9-74e3-4a50-b128-b3dc7456a254.webp
-5,Rafael Devers,BOS - IF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Third_Base_fe966998-15e1-4022-89d5-6b4750516176.webp
-6,Tanner Bibee + Cole Ragans,CLE/KC - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Tanner%20Bibee%20+%20Cole%20Ragans.png
-7,Juan Soto,NYY - OF,8.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Juan_Soto_2aadd7c6-eaea-4975-934e-e504fe9903a2.webp
-8,Michael King + Tanner Houck,SD/BOS - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Michael%20King%20+%20Tanner%20Houck.png
-9,Pablo López + Bryce Miller,MIN/SEA - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Pablo%20L%C3%B3pez%20+%20Bryce%20Miller.png
-10,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Cody_Bellinger_bbe79e92-c56f-4e17-b5e4-6427c9fb7dce.webp
-11,Seiya Suzuki,CHC - OF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Seiya_Suzuki_aa691806-f8a0-4dc7-b833-94e59dc22a34.webp
-12,Roddery Muñoz,MIA - P,4.0,Pitcher Strikeouts,https://static.prizepicks.com/images/players/placeholder.png
-13,Tobias Myers,MIL - P,5.0,Pitcher Strikeouts,https://static.prizepicks.com/images/players/mlb/Tobias_Myers_ca6fc8d3-9e53-4140-aea1-04ae893c3a30.webp
-14,Cole Ragans,KC - P,6.5,Pitcher Strikeouts,https://static.prizepicks.com/images/players/mlb/Cole_Ragans_9941a844-9315-4f2f-9fc2-533c07b625f2.webp
-15,Tanner Bibee,CLE - P,5.5,Pitcher Strikeouts,https://static.prizepicks.com/images/players/mlb/Tanner_Bibee_337921aa-4410-42f6-9900-3f81ad7fb00c.webp
-16,Alec Bohm,PHI - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Alec_Bohm_93102f45-b65e-4512-bb76-c6ca023dc7db.webp
-17,Bryson Stott,PHI - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Bryson_Stott_b563181c-665a-42d7-b628-596bae2fe192.webp
-18,Nick Fortes,MIA - C,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Nick_Fortes_25e9b010-c188-43f6-bbd3-1e29428b73ed.webp
-19,Trea Turner,PHI - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Trea_Turner_67dc86a1-cc03-41ae-ba7d-e5b8434c83e8.webp
-20,Bobby Witt Jr.,KC - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Bobby_Witt_Jr._0f20f69e-28c9-4fb4-8b1e-cde154780682.webp
-21,Gabriel Arias,CLE - IF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Gabriel_Arias_73c62d3d-8dbc-465f-8dc6-0d0c2f40e4b2.webp
-22,Kyle Isbel,KC - OF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Kyle_Isbel_5678ca88-577b-46f9-9f9f-5a118003db1a.webp
-23,MJ Melendez,KC - OF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/MJ_Melendez_6494810c-fc26-4bec-95f5-0cd7d2b4a4e9.webp
-24,Carson Spiers + Sonny Gray,CIN/STL - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Carson%20Spiers%20+%20Sonny%20Gray.png
-25,Nestor Cortes + Chris Bassitt,NYY/TOR - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Nestor%20Cortes%20+%20Chris%20Bassitt.png
-26,Roddery Muñoz + Aaron Nola,MIA/PHI - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Roddery%20Mu%C3%B1oz%20+%20Aaron%20Nola.png
-27,Tanner Bibee + Cole Ragans,CLE/KC - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Tanner%20Bibee%20+%20Cole%20Ragans.png
-28,Framber Valdez + Tylor Megill,HOU/NYM - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Framber%20Valdez%20+%20Tylor%20Megill.png
-29,Michael King + Tanner Houck,SD/BOS - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Michael%20King%20+%20Tanner%20Houck.png
-30,Jake Irvin + Aaron Civale,WSH/TB - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Jake%20Irvin%20+%20Aaron%20Civale.png
-31,Justin Steele + Tobias Myers,CHC/MIL - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Justin%20Steele%20+%20Tobias%20Myers.png
-32,Michael Lorenzen + Cade Povich,TEX/BAL - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Michael%20Lorenzen%20+%20Cade%20Povich.png
-33,Reese Olson + Griffin Canning,DET/LAA - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Reese%20Olson%20+%20Griffin%20Canning.png
-34,Pablo López + Bryce Miller,MIN/SEA - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Pablo%20L%C3%B3pez%20+%20Bryce%20Miller.png
-35,Bryan De La Cruz,MIA - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Bryan_De_La_Cruz_d95948d8-a368-4865-addb-7ebcba183429.webp
-36,Jesús Sánchez,MIA - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Jes%C3%BAs_S%C3%A1nchez_135d9e6d-7c40-4efa-acff-e68b4bd5c1ef.webp
-37,Kody Clemens,PHI - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Kody_Clemens_a4630a73-2fd8-4558-b4ca-87a6b305497c.webp
-38,Whit Merrifield,PHI - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Whit_Merrifield_92500d32-2314-4c7c-91c5-110f95229f9a.webp
-39,Andrés Giménez,CLE - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Andr%C3%A9s_Gim%C3%A9nez_0d84b0e6-869f-4b15-8eea-0d8444c49906.webp
-40,José Ramírez,CLE - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Jos%C3%A9_Ram%C3%ADrez_17e633e5-e7a5-445c-8206-4770254ea2fd.webp
-41,Josh Naylor,CLE - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Josh_Naylor_cdad7ebb-4b31-4e40-a6af-e63206766801.webp
-42,Salvador Perez,KC - C,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Salvador_Perez_9baf07d4-b1cb-4494-8c95-600d9e8de1a9.webp
-43,Tyler Freeman,CLE - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Tyler_Freeman_87056925-aecb-4af8-9fa5-f08c96bae9f8.webp
-44,Elly De La Cruz,CIN - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Elly_De_La_Cruz_457e0d34-698f-4ee3-ba0e-4bf703200d8f.webp
-45,Aaron Judge,NYY - OF,10.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Aaron_Judge_86f7390e-61bd-4556-8325-a6705c7f693b.webp
-46,Vladimir Guerrero Jr.,TOR - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Vladimir_Guerrero_Jr_fa26a373-a427-4558-ba5e-6d6c0f0148c5.webp
-47,Juan Soto,NYY - OF,8.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Juan_Soto_2aadd7c6-eaea-4975-934e-e504fe9903a2.webp
-48,Trea Turner,PHI - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Trea_Turner_67dc86a1-cc03-41ae-ba7d-e5b8434c83e8.webp
-49,Cody Bellinger,CHC - OF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Cody_Bellinger_bbe79e92-c56f-4e17-b5e4-6427c9fb7dce.webp
-50,Christian Yelich,MIL - OF,7.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Christian_Yelich_42cb5171-ffa3-4600-9c41-dbc3805206ea.webp
-51,Seiya Suzuki,CHC - OF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Seiya_Suzuki_aa691806-f8a0-4dc7-b833-94e59dc22a34.webp
-52,William Contreras,MIL - C,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/William_Contreras_1015a557-8e55-4c12-b63c-3306e25ae6e6.webp
-53,Ketel Marte,AZ - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Second_Base_04b68b54-6217-4436-b3e8-bed6d3bd4942.webp
-54,Rafael Devers,BOS - IF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Third_Base_fe966998-15e1-4022-89d5-6b4750516176.webp
-55,Manny Machado,SD - IF,7.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Third_Base_3bb4a60b-953e-4bef-8b25-c6f07d54eddf.webp
-56,Jarren Duran,BOS - OF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Jarren_Duran_b8124420-b124-4e28-a719-c7a124917735.webp
-57,Luis Arraez,SD - IF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Luis_Arraez_b8261ada-763e-4d7e-8ac5-0636c87d1ac1.webp
-58,Jose Altuve,HOU - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Second_Base_1616381c-d6ac-40b1-8c3f-c70d51bda098.webp
-59,Pete Alonso,NYM - IF,5.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Pete_Alonso_e91e752d-6a11-4f69-8244-77cf03a233d2.webp
-60,Yordan Alvarez,HOU - OF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Yordan_Alvarez_fdc9c3af-4ad2-43b1-8537-10732d013ed8.webp
-61,Marcell Ozuna,ATL - DH,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Marcell_Ozuna_57f0a40f-e0f5-4e76-bd59-b8c4de7a680c.webp
-62,Bryan Reynolds,PIT - OF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Bryan_Reynolds_bf611376-2b1d-4d5f-9805-57cbfb852063.webp
-63,Yandy Díaz,TB - IF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Yandy_D%C3%ADaz_c91b7458-14bf-4a62-b147-c47ad2f19396.webp
-64,CJ Abrams,WSH - IF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/CJ_Abrams_35ee7e68-0049-4c84-9691-07c49b44fbfa.webp
-65,José Ramírez,CLE - IF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Jos%C3%A9_Ram%C3%ADrez_17e633e5-e7a5-445c-8206-4770254ea2fd.webp
-66,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Bobby_Witt_Jr._0f20f69e-28c9-4fb4-8b1e-cde154780682.webp
-67,Steven Kwan,CLE - OF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Steven_Kwan_a0cad108-d00e-422a-bd43-36601fbe0db4.webp
-68,Gunnar Henderson,BAL - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Gunnar_Henderson_770894ef-45bc-4a10-a18e-d35b4b1fa867.webp
-69,Corey Seager,TEX - IF,7.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Corey_Seager_ca159e78-05a9-410a-be7b-3ebad5496a88.webp
-70,Shohei Ohtani,LAD - DH,10.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Shohei_Ohtani_80de60c9-74e3-4a50-b128-b3dc7456a254.webp
-71,Freddie Freeman,LAD - IF,8.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Freddie_Freeman_ea1a2111-44cc-4996-babb-9439465e6760.webp
-72,Royce Lewis,MIN - IF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Third_Base_01776cda-8dd8-465b-8635-d314fb002c1a.webp
+0,Jose Altuve,HOU - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Second_Base_1616381c-d6ac-40b1-8c3f-c70d51bda098.webp
+1,Elly De La Cruz,CIN - IF,9.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Elly_De_La_Cruz_457e0d34-698f-4ee3-ba0e-4bf703200d8f.webp
+2,Shohei Ohtani,LAD - DH,10.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Shohei_Ohtani_80de60c9-74e3-4a50-b128-b3dc7456a254.webp
+3,Rafael Devers,BOS - IF,8.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Third_Base_fe966998-15e1-4022-89d5-6b4750516176.webp
+4,Michael King + Tanner Houck,SD/BOS - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Michael%20King%20+%20Tanner%20Houck.png
+5,Tanner Bibee + Cole Ragans,CLE/KC - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Tanner%20Bibee%20+%20Cole%20Ragans.png
+6,Tanner Bibee,CLE - P,5.5,Pitcher Strikeouts,https://static.prizepicks.com/images/players/mlb/Tanner_Bibee_337921aa-4410-42f6-9900-3f81ad7fb00c.webp
+7,Pablo López + Bryce Miller,MIN/SEA - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Pablo%20L%C3%B3pez%20+%20Bryce%20Miller.png
+8,Juan Soto,NYY - OF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Juan_Soto_2aadd7c6-eaea-4975-934e-e504fe9903a2.webp
+9,Carson Spiers + Sonny Gray,CIN/STL - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Carson%20Spiers%20+%20Sonny%20Gray.png
+10,Seiya Suzuki,CHC - OF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Seiya_Suzuki_aa691806-f8a0-4dc7-b833-94e59dc22a34.webp
+11,Framber Valdez + Tylor Megill,HOU/NYM - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Framber%20Valdez%20+%20Tylor%20Megill.png
+12,Cody Bellinger,CHC - OF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Cody_Bellinger_bbe79e92-c56f-4e17-b5e4-6427c9fb7dce.webp
+13,Gabriel Arias,CLE - IF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Gabriel_Arias_73c62d3d-8dbc-465f-8dc6-0d0c2f40e4b2.webp
+14,Nestor Cortes + Chris Bassitt,NYY/TOR - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Nestor%20Cortes%20+%20Chris%20Bassitt.png
+15,Jake Irvin + Aaron Civale,WSH/TB - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Jake%20Irvin%20+%20Aaron%20Civale.png
+16,Justin Steele + Tobias Myers,CHC/MIL - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Justin%20Steele%20+%20Tobias%20Myers.png
+17,Reese Olson + Griffin Canning,DET/LAA - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Reese%20Olson%20+%20Griffin%20Canning.png
+18,Kyle Isbel,KC - OF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Kyle_Isbel_5678ca88-577b-46f9-9f9f-5a118003db1a.webp
+19,Carson Spiers,CIN - P,4.0,Pitcher Strikeouts,https://static.prizepicks.com/images/players/placeholder.png
+20,Nestor Cortes,NYY - P,4.5,Pitcher Strikeouts,https://static.prizepicks.com/images/players/mlb/Nestor_Cortes_Jr._ba4aa21b-081c-4ce4-a3db-b1ddf6a08c4c.webp
+21,Roddery Muñoz,MIA - P,4.0,Pitcher Strikeouts,https://static.prizepicks.com/images/players/placeholder.png
+22,Tobias Myers,MIL - P,5.0,Pitcher Strikeouts,https://static.prizepicks.com/images/players/mlb/Tobias_Myers_ca6fc8d3-9e53-4140-aea1-04ae893c3a30.webp
+23,Cole Ragans,KC - P,6.5,Pitcher Strikeouts,https://static.prizepicks.com/images/players/mlb/Cole_Ragans_9941a844-9315-4f2f-9fc2-533c07b625f2.webp
+24,Tanner Bibee,CLE - P,5.5,Pitcher Strikeouts,https://static.prizepicks.com/images/players/mlb/Tanner_Bibee_337921aa-4410-42f6-9900-3f81ad7fb00c.webp
+25,Luke Maile,CIN - C,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Luke_Maile_d7bb376c-9f2b-449b-b1eb-c6be13aa4886.webp
+26,Bo Bichette,TOR - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Bo_Bichette_88344347-d02f-4bb0-ab54-81f26f13e5b1.webp
+27,Aaron Judge,NYY - OF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Aaron_Judge_86f7390e-61bd-4556-8325-a6705c7f693b.webp
+28,Daulton Varsho,TOR - OF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Daulton_Varsho_4d568c58-5600-406f-8c67-6d7197e25976.webp
+29,Trent Grisham,NYY - OF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Trent_Grisham_314288f6-29ce-438c-a7a1-5f86402cc406.webp
+30,Alec Bohm,PHI - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Alec_Bohm_93102f45-b65e-4512-bb76-c6ca023dc7db.webp
+31,Nick Fortes,MIA - C,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Nick_Fortes_25e9b010-c188-43f6-bbd3-1e29428b73ed.webp
+32,Bryson Stott,PHI - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Bryson_Stott_b563181c-665a-42d7-b628-596bae2fe192.webp
+33,Trea Turner,PHI - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Trea_Turner_67dc86a1-cc03-41ae-ba7d-e5b8434c83e8.webp
+34,Jake Bauers,MIL - IF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/First_Base_4f278e0d-ab63-4c05-906e-5a876497c0f2.webp
+35,Michael Busch,CHC - IF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/First_Base_9819d25c-beaf-48f5-909d-94bbbb6de37f.webp
+36,Miguel Amaya,CHC - C,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Miguel_Amaya_b8dbec1d-4f7b-46d0-942a-61df9d8341d0.webp
+37,Gabriel Arias,CLE - IF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Gabriel_Arias_73c62d3d-8dbc-465f-8dc6-0d0c2f40e4b2.webp
+38,Bobby Witt Jr.,KC - IF,1.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Bobby_Witt_Jr._0f20f69e-28c9-4fb4-8b1e-cde154780682.webp
+39,Kyle Isbel,KC - OF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/Kyle_Isbel_5678ca88-577b-46f9-9f9f-5a118003db1a.webp
+40,MJ Melendez,KC - OF,0.5,Total Bases,https://static.prizepicks.com/images/players/mlb/MJ_Melendez_6494810c-fc26-4bec-95f5-0cd7d2b4a4e9.webp
+41,Carson Spiers + Sonny Gray,CIN/STL - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Carson%20Spiers%20+%20Sonny%20Gray.png
+42,Nestor Cortes + Chris Bassitt,NYY/TOR - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Nestor%20Cortes%20+%20Chris%20Bassitt.png
+43,Roddery Muñoz + Aaron Nola,MIA/PHI - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Roddery%20Mu%C3%B1oz%20+%20Aaron%20Nola.png
+44,Tanner Bibee + Cole Ragans,CLE/KC - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Tanner%20Bibee%20+%20Cole%20Ragans.png
+45,Framber Valdez + Tylor Megill,HOU/NYM - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Framber%20Valdez%20+%20Tylor%20Megill.png
+46,Michael King + Tanner Houck,SD/BOS - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Michael%20King%20+%20Tanner%20Houck.png
+47,Jake Irvin + Aaron Civale,WSH/TB - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Jake%20Irvin%20+%20Aaron%20Civale.png
+48,Justin Steele + Tobias Myers,CHC/MIL - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Justin%20Steele%20+%20Tobias%20Myers.png
+49,Michael Lorenzen + Cade Povich,TEX/BAL - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Michael%20Lorenzen%20+%20Cade%20Povich.png
+50,Reese Olson + Griffin Canning,DET/LAA - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Reese%20Olson%20+%20Griffin%20Canning.png
+51,Pablo López + Bryce Miller,MIN/SEA - P,0.5,1st Inning Runs Allowed,https://static.prizepicks.com/images/manual/Pablo%20L%C3%B3pez%20+%20Bryce%20Miller.png
+52,Brendan Donovan,STL - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Brendan_Donovan_8babdbd4-d607-4bb0-a6c1-708c247c08ed.webp
+53,Nolan Arenado,STL - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Third_Base_aec77ff1-c238-449c-9af6-ed76ff9dd702.webp
+54,Nolan Gorman,STL - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Nolan_Gorman_862615a7-5f5f-45f7-bb55-d774f97da6a2.webp
+55,Elly De La Cruz,CIN - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Elly_De_La_Cruz_457e0d34-698f-4ee3-ba0e-4bf703200d8f.webp
+56,Willson Contreras,STL - C,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Willson_Contreras_9d93f121-f032-407d-bb30-ad3593641db9.webp
+57,Jonathan India,CIN - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Jonathan_India_68a3f6f5-5bc0-4048-acc7-f9cda1545f0b.webp
+58,Noelvi Marte,CIN - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/placeholder.png
+59,Spencer Steer,CIN - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Spencer_Steer_22bcbdc8-1a8c-4dea-8794-b17c88c7b8b9.webp
+60,Davis Schneider,TOR - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Davis_Schneider_f48aaaa7-9891-4752-a650-1f625d153e6e.webp
+61,DJ LeMahieu,NYY - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/DJ_LeMahieu_d1c07b01-a86d-4c17-ac38-8217e364c2cf.webp
+62,George Springer,TOR - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/George_Springer_7f92278a-91c4-4c25-9e75-eaff3aed89b3.webp
+63,Gleyber Torres,NYY - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Gleyber_Torres_781d3396-df55-4b42-bea4-5c9cad9dcad0.webp
+64,Isiah Kiner-Falefa,TOR - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Isiah_Kiner-Falefa_283f2c57-6441-4173-b5a0-728e46b8c894.webp
+65,Justin Turner,TOR - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Justin_Turner_893e5243-1278-476c-8801-280b9b14aea7.webp
+66,Bryan De La Cruz,MIA - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Bryan_De_La_Cruz_d95948d8-a368-4865-addb-7ebcba183429.webp
+67,Jesús Sánchez,MIA - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Jes%C3%BAs_S%C3%A1nchez_135d9e6d-7c40-4efa-acff-e68b4bd5c1ef.webp
+68,Kody Clemens,PHI - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Kody_Clemens_a4630a73-2fd8-4558-b4ca-87a6b305497c.webp
+69,Whit Merrifield,PHI - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Whit_Merrifield_92500d32-2314-4c7c-91c5-110f95229f9a.webp
+70,Christian Yelich,MIL - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Christian_Yelich_42cb5171-ffa3-4600-9c41-dbc3805206ea.webp
+71,Jackson Chourio,MIL - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Jackson_Chourio_87128c5c-da3c-4fe6-9f04-83d6f8dc1302.webp
+72,Christopher Morel,CHC - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Second_Base_70573042-2ab4-4d82-b86e-9325f8d7686d.webp
+73,Joey Ortiz,MIL - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Joey_Ortiz_93c07f1f-40bf-49dc-8176-5448d57ad9dc.webp
+74,Cody Bellinger,CHC - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Cody_Bellinger_bbe79e92-c56f-4e17-b5e4-6427c9fb7dce.webp
+75,Rhys Hoskins,MIL - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/First_Base_171b88ff-8043-4895-9e37-cc550071816e.webp
+76,Willy Adames,MIL - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Willy_Adames_81af51ef-1387-495a-bef2-57f219415370.webp
+77,Andrés Giménez,CLE - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Andr%C3%A9s_Gim%C3%A9nez_0d84b0e6-869f-4b15-8eea-0d8444c49906.webp
+78,José Ramírez,CLE - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Jos%C3%A9_Ram%C3%ADrez_17e633e5-e7a5-445c-8206-4770254ea2fd.webp
+79,Josh Naylor,CLE - IF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Josh_Naylor_cdad7ebb-4b31-4e40-a6af-e63206766801.webp
+80,Salvador Perez,KC - C,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Salvador_Perez_9baf07d4-b1cb-4494-8c95-600d9e8de1a9.webp
+81,Tyler Freeman,CLE - OF,1.5,Hits+Runs+RBIs,https://static.prizepicks.com/images/players/mlb/Tyler_Freeman_87056925-aecb-4af8-9fa5-f08c96bae9f8.webp
+82,Elly De La Cruz,CIN - IF,9.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Elly_De_La_Cruz_457e0d34-698f-4ee3-ba0e-4bf703200d8f.webp
+83,Juan Soto,NYY - OF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Juan_Soto_2aadd7c6-eaea-4975-934e-e504fe9903a2.webp
+84,Trea Turner,PHI - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Trea_Turner_67dc86a1-cc03-41ae-ba7d-e5b8434c83e8.webp
+85,Cody Bellinger,CHC - OF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Cody_Bellinger_bbe79e92-c56f-4e17-b5e4-6427c9fb7dce.webp
+86,Christian Yelich,MIL - OF,7.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Christian_Yelich_42cb5171-ffa3-4600-9c41-dbc3805206ea.webp
+87,Seiya Suzuki,CHC - OF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Seiya_Suzuki_aa691806-f8a0-4dc7-b833-94e59dc22a34.webp
+88,William Contreras,MIL - C,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/William_Contreras_1015a557-8e55-4c12-b63c-3306e25ae6e6.webp
+89,Ketel Marte,AZ - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Second_Base_04b68b54-6217-4436-b3e8-bed6d3bd4942.webp
+90,Rafael Devers,BOS - IF,8.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Third_Base_fe966998-15e1-4022-89d5-6b4750516176.webp
+91,Manny Machado,SD - IF,7.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Third_Base_3bb4a60b-953e-4bef-8b25-c6f07d54eddf.webp
+92,Jarren Duran,BOS - OF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Jarren_Duran_b8124420-b124-4e28-a719-c7a124917735.webp
+93,Luis Arraez,SD - IF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Luis_Arraez_b8261ada-763e-4d7e-8ac5-0636c87d1ac1.webp
+94,Jose Altuve,HOU - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Second_Base_1616381c-d6ac-40b1-8c3f-c70d51bda098.webp
+95,Pete Alonso,NYM - IF,5.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Pete_Alonso_e91e752d-6a11-4f69-8244-77cf03a233d2.webp
+96,Yordan Alvarez,HOU - OF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Yordan_Alvarez_fdc9c3af-4ad2-43b1-8537-10732d013ed8.webp
+97,Marcell Ozuna,ATL - DH,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Marcell_Ozuna_57f0a40f-e0f5-4e76-bd59-b8c4de7a680c.webp
+98,Bryan Reynolds,PIT - OF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Bryan_Reynolds_bf611376-2b1d-4d5f-9805-57cbfb852063.webp
+99,CJ Abrams,WSH - IF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/CJ_Abrams_35ee7e68-0049-4c84-9691-07c49b44fbfa.webp
+100,José Ramírez,CLE - IF,7.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Jos%C3%A9_Ram%C3%ADrez_17e633e5-e7a5-445c-8206-4770254ea2fd.webp
+101,Bobby Witt Jr.,KC - IF,9.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Bobby_Witt_Jr._0f20f69e-28c9-4fb4-8b1e-cde154780682.webp
+102,Steven Kwan,CLE - OF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Steven_Kwan_a0cad108-d00e-422a-bd43-36601fbe0db4.webp
+103,Gunnar Henderson,BAL - IF,8.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Gunnar_Henderson_770894ef-45bc-4a10-a18e-d35b4b1fa867.webp
+104,Corey Seager,TEX - IF,7.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Corey_Seager_ca159e78-05a9-410a-be7b-3ebad5496a88.webp
+105,Shohei Ohtani,LAD - DH,10.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Shohei_Ohtani_80de60c9-74e3-4a50-b128-b3dc7456a254.webp
+106,Freddie Freeman,LAD - IF,8.0,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Freddie_Freeman_ea1a2111-44cc-4996-babb-9439465e6760.webp
+107,Royce Lewis,MIN - IF,6.5,Hitter Fantasy Score,https://static.prizepicks.com/images/players/mlb/Third_Base_01776cda-8dd8-465b-8635-d314fb002c1a.webp
+108,Brandon Marsh,PHI - OF,0.5,Walks,https://static.prizepicks.com/images/players/mlb/Brandon_Marsh_cbc7880d-aacf-494d-83b9-5441533451a2.webp
+109,Alec Bohm,PHI - IF,0.5,Runs,https://static.prizepicks.com/images/players/mlb/Alec_Bohm_93102f45-b65e-4512-bb76-c6ca023dc7db.webp
+110,Brandon Marsh,PHI - OF,0.5,Runs,https://static.prizepicks.com/images/players/mlb/Brandon_Marsh_cbc7880d-aacf-494d-83b9-5441533451a2.webp
