@@ -1,6 +1,6 @@
 PlayerName,team,opp,Prop,Over_Under,draftkings,fanduel,mgm
-Aaron Civale,TB,WSH,strikeouts,Over,(4.5) -115,,(4.5) -120
-Aaron Civale,TB,WSH,strikeouts,Under,(4.5) -110,,(4.5) -110
+Aaron Civale,TB,WSH,strikeouts,Over,(4.5) -115,(4.5) -118,(4.5) -120
+Aaron Civale,TB,WSH,strikeouts,Under,(4.5) -110,(4.5) -108,(4.5) -110
 Aaron Judge,NYY,@TOR,bases,Over,(1.5) -105,,(1.5) 100
 Aaron Judge,NYY,@TOR,bases,Under,(1.5) -130,,(1.5) -130
 Aaron Judge,NYY,@TOR,runs,Over,(0.5) -120,,(0.5) -120
@@ -120,7 +120,7 @@ Bryce Johnson,SD,@BOS,bases,Under,(0.5) 115,,(0.5) 120
 Bryce Johnson,SD,@BOS,runs,Over,(0.5) 170,,(0.5) 175
 Bryce Johnson,SD,@BOS,runs,Under,(0.5) -235,,(0.5) -225
 Bryce Miller,SEA,MIN,strikeouts,Over,(4.5) -135,(5.5) 120,(4.5) -140
-Bryce Miller,SEA,MIN,strikeouts,Under,(4.5) 105,(5.5) -154,(4.5) 105
+Bryce Miller,SEA,MIN,strikeouts,Under,(4.5) 105,(5.5) -152,(4.5) 105
 Bryson Stott,PHI,MIA,bases,Over,(1.5) -110,,(1.5) -110
 Bryson Stott,PHI,MIA,bases,Under,(1.5) -120,,(1.5) -120
 Bryson Stott,PHI,MIA,runs,Over,(0.5) -145,,(0.5) -140
@@ -359,8 +359,8 @@ Jake Fraley,CIN,@STL,bases,Over,(0.5) -190,,(0.5) -185
 Jake Fraley,CIN,@STL,bases,Under,(0.5) 140,,(0.5) 140
 Jake Fraley,CIN,@STL,runs,Over,(0.5) 160,,(0.5) 160
 Jake Fraley,CIN,@STL,runs,Under,(0.5) -220,,(0.5) -225
-Jake Irvin,WSH,@TB,strikeouts,Over,(5.5) -115,,
-Jake Irvin,WSH,@TB,strikeouts,Under,(5.5) -115,,
+Jake Irvin,WSH,@TB,strikeouts,Over,(5.5) -115,(5.5) -115,
+Jake Irvin,WSH,@TB,strikeouts,Under,(5.5) -115,(5.5) -111,
 Jake Meyers,HOU,@NYM,bases,Over,(0.5) -185,,(0.5) -175
 Jake Meyers,HOU,@NYM,bases,Under,(0.5) 135,,(0.5) 135
 Jake Meyers,HOU,@NYM,runs,Over,(0.5) 140,,(0.5) 140
@@ -717,8 +717,8 @@ Ozzie Albies,ATL,PIT,bases,Over,(1.5) 115,,(1.5) 120
 Ozzie Albies,ATL,PIT,bases,Under,(1.5) -155,,(1.5) -155
 Ozzie Albies,ATL,PIT,runs,Over,(0.5) 105,,(0.5) 105
 Ozzie Albies,ATL,PIT,runs,Under,(0.5) -140,,(0.5) -140
-Pablo Lopez,MIN,@SEA,strikeouts,Over,(7.5) 100,(6.5) -156,(7.5) 100
-Pablo Lopez,MIN,@SEA,strikeouts,Under,(7.5) -130,(6.5) 122,(7.5) -130
+Pablo Lopez,MIN,@SEA,strikeouts,Over,(7.5) 100,(7.5) 110,(7.5) 100
+Pablo Lopez,MIN,@SEA,strikeouts,Under,(7.5) -130,(7.5) -140,(7.5) -130
 Paul DeJong,CWS,COL,bases,Over,(1.5) 110,,(1.5) 110
 Paul DeJong,CWS,COL,bases,Under,(1.5) -150,,(1.5) -145
 Paul DeJong,CWS,COL,runs,Over,(0.5) 110,,(0.5) 110
