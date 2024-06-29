@@ -25,6 +25,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
 
     const originalOddsData = useRef([]);
     const filterTimeout = useRef(null);
+    const chartRef = useRef(null);
 
     useEffect(() => {
         fetchOdds();
@@ -123,8 +124,8 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         const mgm = filteredData.map(item => extractOddsValue(item.mgm));
         const betrivers = filteredData.map(item => extractOddsValue(item.betrivers));
 
-        if (historicalChart) {
-            historicalChart.destroy();
+        if (chartRef.current) {
+            chartRef.current.destroy();
         }
 
         const ctx = document.getElementById('historicalChart').getContext('2d');
@@ -150,7 +151,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
 
         const theme = themeColors[sport] || themeColors.mlb;
         if (ctx) {
-            const newChart = new Chart(ctx, {
+            chartRef.current = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: timestamps,
@@ -273,8 +274,6 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                     maintainAspectRatio: false,
                 }
             });
-
-            setHistoricalChart(newChart);
         } else {
             console.error('Historical chart element not found');
         }
@@ -367,7 +366,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                         Next
                     </button>
                 </div>
-                <div id="historicalModal" className="modal">
+                <div id="historicalModal" >
                     <div className="modal-header">
                         <select id="data-filter" onChange={handleDataFilterChange} value={dataFilter} className="select select-bordered">
                             <option value={10}>Last 10</option>
@@ -382,5 +381,6 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         </div>
     );
 };
+
 
 export default OddsPage;

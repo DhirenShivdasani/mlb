@@ -1,13 +1,6 @@
 
 
 /* General styles for OddsPage */
-.odds-page-container {
-    display: flex;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-}
 
 .scrollable-container {
     margin-top: 64px; /* Adjust this value based on the height of your navbar */
@@ -28,6 +21,7 @@
     font-weight: bold;
 }
 
+
 .filter input,
 .filter select {
     padding: 8px;
@@ -38,6 +32,10 @@
     transition: border-color 0.3s ease;
     background-color: var(--card-bg-color);
     color: var(--text-color);
+}
+
+.select .value{
+    color:white
 }
 
 .filter input:focus,
@@ -95,9 +93,6 @@
     height: calc(100% - 40px);
 }
 
-.modal {
-    display: none;
-}
 
 .modal-box {
     width: 100%;
@@ -164,3 +159,25 @@
     --btn-primary-hover-border-color: #cc3700;
 }
 
+
+:root {
+    --text-color: #ffffff; /* Example white text color */
+  }
+  /* Custom styles for select element */
+.custom-select {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .custom-select option {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  

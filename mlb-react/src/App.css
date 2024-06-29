@@ -22,6 +22,7 @@ body {
   padding: 10px 0;
 }
 
+
 .toggle-button {
   position: fixed;
   top: 10px;
@@ -165,16 +166,7 @@ body {
 }
 
 /* Notification styles */
-#notification {
-  display: none;
-  text-align: center;
-  padding: 10px;
-  background-color: #ffeb3b;
-  color: #333;
-  margin: 0;
-  font-size: 1rem;
-  font-weight: bold;
-}
+
 
 /* Modal styles */
 #historicalModal {
@@ -196,18 +188,6 @@ body {
   height: calc(100% - 40px);
 }
 
-.modal {
-  display: none;
-}
-
-.modal-box {
-  width: 100%;
-  max-width: 700px;
-}
-
-.modal.active {
-  display: block;
-}
 
 .modal-header {
   display: flex;

@@ -138,17 +138,27 @@ def calculate_average_implied_probability(df):
     # Calculate the implied probability for each sportsbook's odds
     for sportsbook in ['betrivers', 'draftkings', 'fanduel', 'mgm']:
         df[f'{sportsbook}_implied_prob'] = df[sportsbook].apply(
-            lambda x: implied_probability(x.split(' ')[1]) if ' ' in x and x.split(' ')[1] else np.nan
+            lambda x: implied_probability(x.split(' ')[1]) if ' ' in x and x.split(' ')[1].isdigit() else np.nan
         )
     
+    # Determine the most frequent prop line
+    prop_lines = df.apply(lambda row: [row[sportsbook].split(' ')[0] for sportsbook in ['betrivers', 'draftkings', 'fanduel', 'mgm']], axis=1)
+    df['most_frequent_prop_line'] = prop_lines.apply(lambda x: max(set(x), key=x.count) if x else np.nan)
+    
+    # Filter the rows where the prop line matches the most frequent prop line
+    for sportsbook in ['betrivers', 'draftkings', 'fanduel', 'mgm']:
+        df[f'{sportsbook}_implied_prob'] = df.apply(
+            lambda row: row[f'{sportsbook}_implied_prob'] if row[sportsbook].split(' ')[0] == row['most_frequent_prop_line'] else np.nan, axis=1
+        )
+
     # Calculate the average implied probability for each row
     df['Implied_Prob'] = df[['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob']].mean(axis=1) * 100
-    df['Implied_Prob'] =df['Implied_Prob'].round(2).astype(str) + '%'
+    df['Implied_Prob'] = df['Implied_Prob'].round(2).astype(str) + '%'
+
     # Clean up the intermediate columns
-    df.drop(columns=['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob'], inplace=True)
+    df.drop(columns=['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob', 'most_frequent_prop_line'], inplace=True)
     
     return df
-
 def save_to_postgres(df):
     timestamp = datetime.now()
     for index, row in df.iterrows():
