@@ -1,24 +1,8 @@
 PlayerName,team,opp,Prop,Over_Under,betrivers,draftkings,fanduel,mgm
-A'ja Wilson,LVA,@WAS,ast,Over,() nan,() nan,() nan,() nan
-A'ja Wilson,LVA,@WAS,ast,Under,() nan,() nan,() nan,() nan
-A'ja Wilson,LVA,@WAS,pts,Over,(27.5) -103,(27.5) -105,(27.5) -106,(27.5) -105
-A'ja Wilson,LVA,@WAS,pts,Under,(27.5) -130,(27.5) -125,(27.5) -122,(27.5) -125
-A'ja Wilson,LVA,@WAS,reb,Over,(10.5) -139,(10.5) 100,(10.5) -112,(10.5) -110
-A'ja Wilson,LVA,@WAS,reb,Under,(10.5) 105,(10.5) -130,(10.5) -118,(10.5) -120
-A'ja Wilson,LVA,@WAS,threes,Over,(10.5) 105,(10.5) -130,(10.5) -118,(10.5) -120
-A'ja Wilson,LVA,@WAS,threes,Under,(10.5) 105,(10.5) -130,(10.5) -118,(10.5) -120
-Ariel Atkins,WAS,LVA,ast,Over,(3.5) -112,(3.5) -120,(10.5) -118,(3.5) -110
-Ariel Atkins,WAS,LVA,ast,Under,(3.5) -118,(3.5) -110,(10.5) -118,(3.5) -120
-Ariel Atkins,WAS,LVA,pts,Over,(14.5) -125,(14.5) -115,(14.5) -118,(14.5) -105
-Ariel Atkins,WAS,LVA,pts,Under,(14.5) -106,(14.5) -115,(14.5) -110,(14.5) -125
-Ariel Atkins,WAS,LVA,reb,Over,(3.5) -121,(3.5) -125,(3.5) -132,(3.5) -120
-Ariel Atkins,WAS,LVA,reb,Under,(3.5) -110,(3.5) -105,(3.5) 100,(3.5) -110
-Ariel Atkins,WAS,LVA,threes,Over,(1.5) -130,(1.5) -120,(1.5) -130,(1.5) -130
-Ariel Atkins,WAS,LVA,threes,Under,(1.5) -103,(1.5) -110,(1.5) -102,(1.5) 100
-Arike Ogunbowale,DAL,@SEA,ast,Over,(4.5) -125,(4.5) -125,(4.5) -114,(4.5) -125
-Arike Ogunbowale,DAL,@SEA,ast,Under,(4.5) -106,(4.5) -105,(4.5) -114,(4.5) -105
-Arike Ogunbowale,DAL,@SEA,pts,Over,(22.5) -115,(22.5) -120,(22.5) -114,(22.5) -130
-Arike Ogunbowale,DAL,@SEA,pts,Under,(22.5) -115,(22.5) -110,(22.5) -115,(22.5) 100
+Arike Ogunbowale,DAL,@SEA,ast,Over,(4.5) -125,(4.5) -125,(4.5) -114,(4.5) -115
+Arike Ogunbowale,DAL,@SEA,ast,Under,(4.5) -106,(4.5) -105,(4.5) -114,(4.5) -115
+Arike Ogunbowale,DAL,@SEA,pts,Over,(22.5) -115,(22.5) -120,(22.5) -114,(22.5) -115
+Arike Ogunbowale,DAL,@SEA,pts,Under,(22.5) -115,(22.5) -110,(22.5) -114,(22.5) -115
 Arike Ogunbowale,DAL,@SEA,reb,Over,(4.5) 115,(4.5) 120,(3.5) -178,(4.5) 115
 Arike Ogunbowale,DAL,@SEA,reb,Under,(4.5) -155,(4.5) -154,(3.5) 132,(4.5) -150
 Arike Ogunbowale,DAL,@SEA,threes,Over,(2.5) -167,(2.5) -185,(2.5) -166,(2.5) -165
@@ -31,74 +15,42 @@ Ezi Magbegor,SEA,DAL,reb,Over,(8.5) -106,(8.5) -120,(8.5) -122,(8.5) -110
 Ezi Magbegor,SEA,DAL,reb,Under,(8.5) -125,(8.5) -110,(8.5) -108,(8.5) -120
 Ezi Magbegor,SEA,DAL,threes,Over,(8.5) -125,(8.5) -110,(8.5) -108,(8.5) -120
 Ezi Magbegor,SEA,DAL,threes,Under,(8.5) -125,(8.5) -110,(8.5) -108,(8.5) -120
-Jackie Young,LVA,@WAS,ast,Over,(4.5) 105,(4.5) -110,(4.5) 100,(4.5) 100
-Jackie Young,LVA,@WAS,ast,Under,(4.5) -139,(4.5) -120,(4.5) -132,(4.5) -130
-Jackie Young,LVA,@WAS,pts,Over,(18.5) -112,(18.5) -105,(18.5) -114,(18.5) -115
-Jackie Young,LVA,@WAS,pts,Under,(18.5) -118,(18.5) -125,(18.5) -114,(18.5) -115
-Jackie Young,LVA,@WAS,reb,Over,(4.5) 115,(4.5) 124,(4.5) 116,(4.5) 115
-Jackie Young,LVA,@WAS,reb,Under,(4.5) -155,(4.5) -160,(4.5) -158,(4.5) -150
-Jackie Young,LVA,@WAS,threes,Over,(2.5) 125,(2.5) 130,(2.5) 128,(2.5) 125
-Jackie Young,LVA,@WAS,threes,Under,(2.5) -167,(2.5) -175,(2.5) -172,(2.5) -165
-Jewell Loyd,SEA,DAL,ast,Over,(3.5) -132,(4.5) 120,(4.5) 134,(4.5) 120
-Jewell Loyd,SEA,DAL,ast,Under,(3.5) 100,(4.5) -154,(4.5) -180,(4.5) -155
+Jewell Loyd,SEA,DAL,ast,Over,(3.5) -118,(4.5) 135,(4.5) 134,(4.5) 135
+Jewell Loyd,SEA,DAL,ast,Under,(3.5) -112,(4.5) -175,(4.5) -180,(4.5) -185
 Jewell Loyd,SEA,DAL,pts,Over,(20.5) -110,(20.5) 100,(20.5) -108,(20.5) -105
 Jewell Loyd,SEA,DAL,pts,Under,(20.5) -121,(20.5) -130,(20.5) -120,(20.5) -125
-Jewell Loyd,SEA,DAL,reb,Over,(4.5) -132,(4.5) -130,(4.5) -110,(4.5) -130
-Jewell Loyd,SEA,DAL,reb,Under,(4.5) 100,(4.5) 100,(4.5) -120,(4.5) 100
+Jewell Loyd,SEA,DAL,reb,Over,(4.5) -132,(4.5) -130,(4.5) -108,(4.5) -130
+Jewell Loyd,SEA,DAL,reb,Under,(4.5) 100,(4.5) 100,(4.5) -122,(4.5) 100
 Jewell Loyd,SEA,DAL,threes,Over,(1.5) -148,(1.5) -165,(1.5) -166,(1.5) -165
 Jewell Loyd,SEA,DAL,threes,Under,(1.5) 110,(1.5) 120,(1.5) 124,(1.5) 125
-Kelsey Plum,LVA,@WAS,ast,Over,(4.5) 100,(4.5) -110,(4.5) -108,(4.5) -105
-Kelsey Plum,LVA,@WAS,ast,Under,(4.5) -132,(4.5) -120,(4.5) -122,(4.5) -125
-Kelsey Plum,LVA,@WAS,pts,Over,(17.5) -132,(17.5) -130,(17.5) -130,(17.5) -130
-Kelsey Plum,LVA,@WAS,pts,Under,(17.5) 100,(17.5) 100,(17.5) 100,(17.5) 100
-Kelsey Plum,LVA,@WAS,reb,Over,(17.5) 100,(17.5) 100,(17.5) 100,(17.5) 100
-Kelsey Plum,LVA,@WAS,reb,Under,(17.5) 100,(17.5) 100,(17.5) 100,(17.5) 100
-Kelsey Plum,LVA,@WAS,threes,Over,(2.5) -139,(2.5) -130,(2.5) -144,(2.5) -150
-Kelsey Plum,LVA,@WAS,threes,Under,(2.5) 105,(2.5) -105,(2.5) 108,(2.5) 115
-Myisha Hines-Allen,WAS,LVA,ast,Over,(2.5) 105,(2.5) -105,,(2.5) 115
-Myisha Hines-Allen,WAS,LVA,ast,Under,(2.5) 105,(2.5) -105,,(2.5) 115
-Myisha Hines-Allen,WAS,LVA,pts,Over,(8.5) 100,(8.5) -115,,(8.5) -125
-Myisha Hines-Allen,WAS,LVA,pts,Under,(8.5) -132,(8.5) -115,,(8.5) -105
-Myisha Hines-Allen,WAS,LVA,reb,Over,(8.5) -132,(8.5) -115,,(8.5) -105
-Myisha Hines-Allen,WAS,LVA,reb,Under,(8.5) -132,(8.5) -115,,(8.5) -105
-Myisha Hines-Allen,WAS,LVA,threes,Over,(8.5) -132,(8.5) -115,,(8.5) -105
-Myisha Hines-Allen,WAS,LVA,threes,Under,(8.5) -132,(8.5) -115,,(8.5) -105
-Natasha Howard,DAL,@SEA,ast,Over,(8.5) -132,(8.5) -115,,(8.5) -105
-Natasha Howard,DAL,@SEA,ast,Under,(8.5) -132,(8.5) -115,,(8.5) -105
-Natasha Howard,DAL,@SEA,pts,Over,(15.5) 100,(14.5) -140,(15.5) 102,(14.5) -125
-Natasha Howard,DAL,@SEA,pts,Under,(15.5) -132,(14.5) 110,(15.5) -132,(14.5) -105
+Natasha Howard,DAL,@SEA,ast,Over,(1.5) 110,(1.5) 120,(1.5) 124,(1.5) 125
+Natasha Howard,DAL,@SEA,ast,Under,(1.5) 110,(1.5) 120,(1.5) 124,(1.5) 125
+Natasha Howard,DAL,@SEA,pts,Over,(15.5) 100,(14.5) -140,(15.5) 102,(15.5) 100
+Natasha Howard,DAL,@SEA,pts,Under,(15.5) -132,(14.5) 110,(15.5) -132,(15.5) -130
 Natasha Howard,DAL,@SEA,reb,Over,(6.5) -132,(6.5) -125,(6.5) -122,(6.5) -125
 Natasha Howard,DAL,@SEA,reb,Under,(6.5) 100,(6.5) -105,(6.5) -108,(6.5) -105
 Natasha Howard,DAL,@SEA,threes,Over,(6.5) 100,(6.5) -105,(6.5) -108,(6.5) -105
 Natasha Howard,DAL,@SEA,threes,Under,(6.5) 100,(6.5) -105,(6.5) -108,(6.5) -105
 Nneka Ogwumike,SEA,DAL,ast,Over,(6.5) 100,(6.5) -105,(6.5) -108,(6.5) -105
 Nneka Ogwumike,SEA,DAL,ast,Under,(6.5) 100,(6.5) -105,(6.5) -108,(6.5) -105
-Nneka Ogwumike,SEA,DAL,pts,Over,(16.5) -132,(16.5) -140,(16.5) -120,(16.5) -125
-Nneka Ogwumike,SEA,DAL,pts,Under,(16.5) 100,(16.5) 110,(16.5) -108,(16.5) -105
+Nneka Ogwumike,SEA,DAL,pts,Over,(16.5) -132,(16.5) -140,(17.5) 100,(16.5) -125
+Nneka Ogwumike,SEA,DAL,pts,Under,(16.5) 100,(16.5) 110,(17.5) -130,(16.5) -105
 Nneka Ogwumike,SEA,DAL,reb,Over,(7.5) 105,(7.5) 100,(7.5) 104,(7.5) 105
 Nneka Ogwumike,SEA,DAL,reb,Under,(7.5) -139,(7.5) -130,(7.5) -138,(7.5) -135
 Nneka Ogwumike,SEA,DAL,threes,Over,(7.5) -139,(7.5) -130,(7.5) -138,(7.5) -135
 Nneka Ogwumike,SEA,DAL,threes,Under,(7.5) -139,(7.5) -130,(7.5) -138,(7.5) -135
-Skylar Diggins-Smith,SEA,DAL,ast,Over,(6.5) 100,(6.5) 100,(6.5) 108,(6.5) -105
-Skylar Diggins-Smith,SEA,DAL,ast,Under,(6.5) -134,(6.5) -130,(6.5) -144,(6.5) -125
+Skylar Diggins-Smith,SEA,DAL,ast,Over,(6.5) 110,(6.5) 100,(6.5) 108,(6.5) 110
+Skylar Diggins-Smith,SEA,DAL,ast,Under,(6.5) -148,(6.5) -130,(6.5) -144,(6.5) -140
 Skylar Diggins-Smith,SEA,DAL,pts,Over,(14.5) -115,(14.5) -115,(14.5) -108,(14.5) -110
 Skylar Diggins-Smith,SEA,DAL,pts,Under,(14.5) -115,(14.5) -115,(14.5) -120,(14.5) -120
 Skylar Diggins-Smith,SEA,DAL,reb,Over,(14.5) -115,(14.5) -115,(14.5) -120,(14.5) -120
 Skylar Diggins-Smith,SEA,DAL,reb,Under,(14.5) -115,(14.5) -115,(14.5) -120,(14.5) -120
 Skylar Diggins-Smith,SEA,DAL,threes,Over,(1.5) 180,(1.5) 180,(1.5) 178,(1.5) 180
 Skylar Diggins-Smith,SEA,DAL,threes,Under,(1.5) -250,(1.5) -250,(1.5) -245,(1.5) -250
-Stefanie Dolson,WAS,LVA,ast,Over,(1.5) -250,(1.5) -250,(1.5) -245,
-Stefanie Dolson,WAS,LVA,ast,Under,(1.5) -250,(1.5) -250,(1.5) -245,
-Stefanie Dolson,WAS,LVA,pts,Over,(10.5) 100,(10.5) 100,(9.5) -114,
-Stefanie Dolson,WAS,LVA,pts,Under,(10.5) -132,(10.5) -130,(9.5) -114,
-Stefanie Dolson,WAS,LVA,reb,Over,(5.5) 115,(5.5) 124,(5.5) 128,
-Stefanie Dolson,WAS,LVA,reb,Under,(5.5) -155,(5.5) -160,(5.5) -172,
-Stefanie Dolson,WAS,LVA,threes,Over,(1.5) -177,(1.5) -195,(1.5) -178,
-Stefanie Dolson,WAS,LVA,threes,Under,(1.5) 130,(1.5) 140,(1.5) 132,
-Teaira McCowan,DAL,@SEA,ast,Over,(1.5) 130,(1.5) 140,(1.5) 132,
-Teaira McCowan,DAL,@SEA,ast,Under,(1.5) 130,(1.5) 140,(1.5) 132,
-Teaira McCowan,DAL,@SEA,pts,Over,(11.5) -110,(11.5) -110,(10.5) -130,(11.5) -110
-Teaira McCowan,DAL,@SEA,pts,Under,(11.5) -121,(11.5) -120,(10.5) 100,(11.5) -120
+Teaira McCowan,DAL,@SEA,ast,Over,(1.5) -250,(1.5) -250,(1.5) -245,(1.5) -250
+Teaira McCowan,DAL,@SEA,ast,Under,(1.5) -250,(1.5) -250,(1.5) -245,(1.5) -250
+Teaira McCowan,DAL,@SEA,pts,Over,(11.5) 100,(11.5) -110,(10.5) -130,(11.5) -110
+Teaira McCowan,DAL,@SEA,pts,Under,(11.5) -132,(11.5) -120,(10.5) 100,(11.5) -120
 Teaira McCowan,DAL,@SEA,reb,Over,(7.5) -132,(7.5) -135,(7.5) -118,(7.5) -135
 Teaira McCowan,DAL,@SEA,reb,Under,(7.5) 100,(7.5) 105,(7.5) -112,(7.5) 105
 Teaira McCowan,DAL,@SEA,threes,Over,(7.5) 100,(7.5) 105,(7.5) -112,(7.5) 105
