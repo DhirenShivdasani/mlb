@@ -9,6 +9,7 @@ body {
 
 .navbar {
   background-color: var(--navbar-color);
+  background-color: fixed;
   position: fixed;
   width: 100%;
   top: 0;

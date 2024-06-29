@@ -1,59 +1,20 @@
-/* General styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+/* General styles for OddsPage */
+.odds-page-container {
+    display: flex;
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
-
-
-.navbar {
-    background-color: var(--navbar-color);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 2px solid #ccc;
-}
-
-
-.navbar a {
-    color: var(--text-color);
-    text-decoration: none;
-    padding: 0 15px;
-    font-weight: bold;
-}
-
-/* Styles for the active link */
-.navbar a.active {
-    color: var(--active-link-color);
-}
-
-
-.navbar .mlb-link.active {
-    background-color: var(--mlb-active-bg-color);
-    color: var(--mlb-active-text-color);
-}
-
-.navbar .wnba-link.active {
-    background-color: var(--wnba-active-bg-color);
-    color: var(--wnba-active-text-color);
-}
-
-.last-updated {
-    font-size: 0.875rem;
-    margin-left: auto;
-    padding: 10px 0;
-}
 .scrollable-container {
     margin-top: 64px; /* Adjust this value based on the height of your navbar */
     padding: 20px;
     overflow-y: auto;
     height: calc(100vh - 64px); /* Adjust this value based on the height of your navbar */
 }
-
 
 .filter {
     display: flex;
@@ -84,15 +45,14 @@ body {
     border-color: #007bff;
 }
 
-.odds-page-container {
-    display: flex;
-    margin-top: auto;
-}
-
 .flex-grow {
     flex: 1;
-    padding-left: 260px; /* Account for sidebar width */
     top: 64px;
+    transition: padding-left 0.3s;
+}
+
+.flex-grow.pl-64 {
+    padding-left: 16rem; /* Sidebar width */
 }
 
 /* Odds container and card styles */
@@ -101,87 +61,6 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 20px;
-}
-
-.card {
-    background-color: var(--card-bg-color);
-}
-
-.card-title {
-    color: var(--card-title-color);
-}
-
-.card-body {
-    padding: 16px;
-}
-
-.text-gray-300 {
-    color: var(--text-gray-300);
-    margin-right: auto;
-}
-
-.text-gray-400 {
-    color: var(--text-gray-400);
-}
-
-.divider {
-    border-color: var(--divider-color);
-}
-
-.btn-primary {
-    background-color: var(--btn-primary-bg-color);
-    border-color: var (--btn-primary-border-color);
-}
-
-.btn-primary:hover {
-    background-color: var(--btn-primary-hover-bg-color);
-    border-color: var(--btn-primary-hover-border-color);
-}
-
-/* Odds card styles */
-.odds-card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
-    width: calc(100% - 40px);
-    max-width: 600px;
-    transition: transform 0.3s;
-}
-
-.odds-card:hover {
-    transform: translateY(-5px);
-}
-
-.odds-card p {
-    margin: 5px 0;
-    color: var(--card-text-color);
-}
-
-.odds-card hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 15px 0;
-}
-
-.prop-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.prop-row p {
-    flex: 1;
-    min-width: 140px;
-    color: var(--prop-text-color);
-}
-
-.prop-row p strong {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--text-color);
 }
 
 /* Notification styles */
@@ -249,6 +128,39 @@ body {
     background-color: darkred;
 }
 
-.pl-64 {
-    padding-left: 16rem;
+
+
+
+
+
+
+
+
+/* MLB Theme */
+.mlb {
+    --card-bg-color: #001f3f;
+    --card-text-color: white;
+    --card-title-color: white;
+    --text-gray-300: #d1d5db;
+    --text-gray-400: #9ca3af;
+    --divider-color: #374151;
+    --btn-primary-bg-color: #007bff;
+    --btn-primary-border-color: #007bff;
+    --btn-primary-hover-bg-color: #0056b3;
+    --btn-primary-hover-border-color: #0056b3;
 }
+
+/* WNBA Theme */
+.wnba {
+    --card-bg-color: #3f1f00;
+    --card-text-color: white;
+    --card-title-color: white;
+    --text-gray-300: #ffcccb;
+    --text-gray-400: #ff9980;
+    --divider-color: #ff9980;
+    --btn-primary-bg-color: #ff4500;
+    --btn-primary-border-color: #ff4500;
+    --btn-primary-hover-bg-color: #cc3700;
+    --btn-primary-hover-border-color: #cc3700;
+}
+

@@ -7,7 +7,6 @@ import zoomPlugin from 'chartjs-plugin-zoom';
 
 Chart.register(zoomPlugin);
 
-
 const OddsPage = ({ updateLastUpdated, sport }) => {
     const [oddsData, setOddsData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
@@ -21,7 +20,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     });
     const [dataFilter, setDataFilter] = useState(10);
     const [currentPage, setCurrentPage] = useState(1);
-    const [sidebarOpen, setSidebarOpen] = useState(true); // Sidebar open by default for testing
+    const [sidebarOpen, setSidebarOpen] = useState(true);
     const itemsPerPage = 20;
 
     const originalOddsData = useRef([]);
@@ -35,7 +34,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         const response = await fetch(`/merged_data?sport=${sport}`);
         const data = await response.json();
         setOddsData(data);
-        setFilteredData(data); // Set filteredData to initial data
+        setFilteredData(data);
         originalOddsData.current = data;
         updateLastUpdated(formatDate(new Date()));
     };
@@ -95,14 +94,14 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         const encodedPlayerName = encodeURIComponent(playerName);
         const encodedProp = encodeURIComponent(prop);
         const encodedOverUnder = encodeURIComponent(overUnder);
-    
+
         const url = `/get_historical_data?player_name=${encodedPlayerName}&prop=${encodedProp}&over_under=${encodedOverUnder}&sport=${sport}`;
-    
+
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`Error fetching historical data: ${response.statusText}`);
             const data = await response.json();
-    
+
             setHistoricalData(data);
             updateChart(data);
             document.getElementById('historicalModal').style.display = 'block';
@@ -116,20 +115,20 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
             const parts = value.split(' ');
             return parts.length > 1 ? parseFloat(parts[1]) : null;
         };
-    
+
         const filteredData = data.slice(-dataFilter);
         const timestamps = filteredData.map(item => new Date(item.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'}));
         const draftkings = filteredData.map(item => extractOddsValue(item.draftkings));
         const fanduel = filteredData.map(item => extractOddsValue(item.fanduel));
         const mgm = filteredData.map(item => extractOddsValue(item.mgm));
         const betrivers = filteredData.map(item => extractOddsValue(item.betrivers));
-    
+
         if (historicalChart) {
             historicalChart.destroy();
         }
-    
+
         const ctx = document.getElementById('historicalChart').getContext('2d');
-       
+
         const themeColors = {
             mlb: {
                 backgroundColor: '#001f3f',
@@ -148,7 +147,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                 betrivers: 'rgba(153, 102, 255, 1)',
             }
         };
-    
+
         const theme = themeColors[sport] || themeColors.mlb;
         if (ctx) {
             const newChart = new Chart(ctx, {
@@ -268,22 +267,18 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                             grid: {
                                 color: 'rgba(255, 255, 255, 0.2)', // Set y-axis grid line color
                             },
-                            
                         }
                     },
                     responsive: true,
                     maintainAspectRatio: false,
                 }
             });
-    
+
             setHistoricalChart(newChart);
         } else {
             console.error('Historical chart element not found');
         }
     };
-    
-    
-    
 
     const closeHistoricalModal = () => {
         document.getElementById('historicalModal').style.display = 'none';
@@ -342,8 +337,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                 <button onClick={() => setSidebarOpen(!sidebarOpen)} className="toggle-button">
                 </button>
                 <div id="notification" className="bg-yellow-300 text-gray-800 p-2 text-center">New data available. Please refresh the page.</div>
-                <div class="scrollable-container">
-
+                <div className="scrollable-container">
                     <div id="odds-container">
                         {getPaginatedData().map((odds, index) => (
                             <StatCard 
@@ -351,10 +345,11 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                                 odds={odds} 
                                 showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
                                 sport={sport} 
+                                imageUrl={odds.ImageURL}
                             />
                         ))}
                     </div>
-                   </div> 
+                </div>
                 <div className="pagination-controls flex justify-center gap-4 mt-4">
                     <button
                         onClick={() => handlePageChange(currentPage - 1)}
@@ -372,7 +367,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                         Next
                     </button>
                 </div>
-                <div id="historicalModal">
+                <div id="historicalModal" className="modal">
                     <div className="modal-header">
                         <select id="data-filter" onChange={handleDataFilterChange} value={dataFilter} className="select select-bordered">
                             <option value={10}>Last 10</option>
@@ -386,7 +381,6 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
             </div>
         </div>
     );
-    
 };
 
 export default OddsPage;
