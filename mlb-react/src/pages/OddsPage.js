@@ -4,10 +4,28 @@ import './OddsPage.css';
 import StatCard from '../components/StatCard';
 import Sidebar from '../components/Sidebar';
 import zoomPlugin from 'chartjs-plugin-zoom';
+import { getMessaging, getToken, onMessage } from 'firebase/messaging';
+import { initializeApp } from 'firebase/app';
 
 Chart.register(zoomPlugin);
 
-const OddsPage = ({ updateLastUpdated, sport }) => {
+// Initialize Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyA40g-cxWxQV1R0niqZfBpwJ1OlImx1ghE",
+    authDomain: "live-odds-tracker.firebaseapp.com",
+    projectId: "live-odds-tracker",
+    storageBucket: "live-odds-tracker.appspot.com",
+    messagingSenderId: "78785845250",
+    appId: "1:78785845250:web:9e756ade4fd465f494af1b",
+    measurementId: "G-L9G8SVLWJB"
+};
+
+const app = initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
+
+Chart.register(zoomPlugin);
+
+const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
     const [oddsData, setOddsData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [historicalData, setHistoricalData] = useState([]);
@@ -25,23 +43,27 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
 
     const originalOddsData = useRef([]);
     const filterTimeout = useRef(null);
-    const chartRef = useRef(null);
 
     useEffect(() => {
         fetchOdds();
     }, [sport]);
 
     const fetchOdds = async () => {
-        const response = await fetch(`/merged_data?sport=${sport}`);
-        const data = await response.json();
-        setOddsData(data);
-        setFilteredData(data);
-        originalOddsData.current = data;
-        updateLastUpdated(formatDate(new Date()));
+        try {
+            const response = await fetch(`/merged_data?sport=${sport}`);
+            const data = await response.json();
+            console.log('Fetched odds data:', data); // Log the fetched data
+            setOddsData(data);
+            setFilteredData(data);
+            originalOddsData.current = data;
+            updateLastUpdated(formatDate(new Date()));
+        } catch (error) {
+            console.error('Error fetching odds data:', error);
+        }
     };
 
     const applyFilters = (filters) => {
-        let filtered = [...originalOddsData.current];
+        let filtered = Array.isArray(originalOddsData.current) ? [...originalOddsData.current] : [];
 
         if (filters.playerName) {
             filtered = filtered.filter(odds => odds.PlayerName.toLowerCase().includes(filters.playerName.toLowerCase()));
@@ -124,8 +146,8 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         const mgm = filteredData.map(item => extractOddsValue(item.mgm));
         const betrivers = filteredData.map(item => extractOddsValue(item.betrivers));
 
-        if (chartRef.current) {
-            chartRef.current.destroy();
+        if (historicalChart) {
+            historicalChart.destroy();
         }
 
         const ctx = document.getElementById('historicalChart').getContext('2d');
@@ -151,7 +173,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
 
         const theme = themeColors[sport] || themeColors.mlb;
         if (ctx) {
-            chartRef.current = new Chart(ctx, {
+            const newChart = new Chart(ctx, {
                 type: 'line',
                 data: {
                     labels: timestamps,
@@ -274,6 +296,8 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                     maintainAspectRatio: false,
                 }
             });
+
+            setHistoricalChart(newChart);
         } else {
             console.error('Historical chart element not found');
         }
@@ -306,12 +330,22 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     }, [dataFilter]);
 
     const getPaginatedData = () => {
+        if (!Array.isArray(filteredData)) {
+            console.error('filteredData is not an array:', filteredData);
+            return [];
+        }
+
         const startIndex = (currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         return filteredData.slice(startIndex, endIndex);
     };
 
-    const totalPages = useMemo(() => Math.ceil(filteredData.length / itemsPerPage), [filteredData.length]);
+    const totalPages = useMemo(() => {
+        if (!Array.isArray(filteredData)) {
+            return 1;
+        }
+        return Math.ceil(filteredData.length / itemsPerPage);
+    }, [filteredData.length]);
 
     const handlePageChange = (newPage) => {
         if (newPage >= 1 && newPage <= totalPages) {
@@ -322,6 +356,20 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
     };
+
+    // Handle incoming messages for notifications
+    useEffect(() => {
+        onMessage(messaging, (payload) => {
+            console.log('Message received: ', payload);
+            // Show notification or handle it accordingly
+            if (Notification.permission === 'granted') {
+                new Notification(payload.notification.title, {
+                    body: payload.notification.body,
+                    icon: payload.notification.icon,
+                });
+            }
+        });
+    }, []);
 
     return (
         <div className="odds-page-container">
@@ -345,6 +393,8 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                                 showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
                                 sport={sport} 
                                 imageUrl={odds.ImageURL}
+                                favorites={favorites}
+                                setFavorites={setFavorites}
                             />
                         ))}
                     </div>
@@ -366,7 +416,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                         Next
                     </button>
                 </div>
-                <div id="historicalModal" >
+                <div id="historicalModal">
                     <div className="modal-header">
                         <select id="data-filter" onChange={handleDataFilterChange} value={dataFilter} className="select select-bordered">
                             <option value={10}>Last 10</option>
@@ -381,6 +431,5 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         </div>
     );
 };
-
 
 export default OddsPage;

@@ -16,6 +16,7 @@
     overflow: hidden;
     width: 300px;
     margin: auto;
+    position: relative;
 }
 
 .stat-card-title {
@@ -93,4 +94,22 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+/* Favorite icon styling */
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.favorite-icon.favorite {
+    color: red;
+}
+
+.favorite-icon:not(.favorite) {
+    color: gray;
 }

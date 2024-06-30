@@ -35,7 +35,7 @@ const Navbar = ({ lastUpdated, sport, setSport, toggleSidebar }) => {
           <button onClick={toggleSidebar} className="btn btn-ghost">
             ☰
           </button>
-          <a className="btn btn-ghost normal-case text-xl" href="/">Live Odds Tracker</a>
+          <a className="btn btn-ghost normal-case text-xl" href="/">Prop Scout</a>
         </div>
         <div className="flex items-center space-x-4">
           <div className="text-sm text-gray-400">Last updated: {lastUpdated}</div>
