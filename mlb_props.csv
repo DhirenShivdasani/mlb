@@ -3,16 +3,16 @@ Aaron Judge,NYY,@TOR,bases,Over,(1.5) -132,(1.5) -130,,(1.5) -135
 Aaron Judge,NYY,@TOR,bases,Under,(1.5) -106,(1.5) -105,,(1.5) 100
 Aaron Judge,NYY,@TOR,runs,Over,(0.5) -134,(0.5) -155,,(0.5) -160
 Aaron Judge,NYY,@TOR,runs,Under,(0.5) -103,(0.5) 115,,(0.5) 125
-Adam Duvall,ATL,PIT,bases,Over,(1.5) -109,(1.5) -110,,(1.5) -110
-Adam Duvall,ATL,PIT,bases,Under,(1.5) -129,(1.5) -125,,(1.5) -120
+Adam Duvall,ATL,PIT,bases,Over,(1.5) -109,(1.5) -115,,(1.5) -110
+Adam Duvall,ATL,PIT,bases,Under,(1.5) -129,(1.5) -120,,(1.5) -120
 Adam Duvall,ATL,PIT,runs,Over,(0.5) 100,(0.5) -120,,(0.5) -115
 Adam Duvall,ATL,PIT,runs,Under,(0.5) -136,(0.5) -115,,(0.5) -110
-Adley Rutschman,BAL,TEX,bases,Over,,(1.5) -110,,(1.5) -110
-Adley Rutschman,BAL,TEX,bases,Under,,(1.5) -125,,(1.5) -120
-Adley Rutschman,BAL,TEX,runs,Over,,(0.5) -145,,(0.5) -150
-Adley Rutschman,BAL,TEX,runs,Under,,(0.5) 110,,(0.5) 115
-Adolis Garcia,TEX,@BAL,bases,Over,,(1.5) -135,,(1.5) -135
-Adolis Garcia,TEX,@BAL,bases,Under,,(1.5) 100,,(1.5) 100
+Adley Rutschman,BAL,TEX,bases,Over,,(1.5) -105,,(1.5) -110
+Adley Rutschman,BAL,TEX,bases,Under,,(1.5) -130,,(1.5) -120
+Adley Rutschman,BAL,TEX,runs,Over,,(0.5) -140,,(0.5) -150
+Adley Rutschman,BAL,TEX,runs,Under,,(0.5) 105,,(0.5) 115
+Adolis Garcia,TEX,@BAL,bases,Over,,(1.5) -125,,(1.5) -135
+Adolis Garcia,TEX,@BAL,bases,Under,,(1.5) -105,,(1.5) 100
 Adolis Garcia,TEX,@BAL,runs,Over,,(0.5) -130,,(0.5) -130
 Adolis Garcia,TEX,@BAL,runs,Under,,(0.5) -105,,(0.5) 100
 Alec Bohm,PHI,MIA,bases,Over,(1.5) -120,(1.5) -120,,(1.5) -115
@@ -43,8 +43,8 @@ Andres Gimenez,CLE,@KC,bases,Over,(1.5) 170,(0.5) -195,,(0.5) -190
 Andres Gimenez,CLE,@KC,bases,Under,(1.5) -245,(0.5) 145,,(0.5) 145
 Andres Gimenez,CLE,@KC,runs,Over,(0.5) 150,(0.5) 155,,(0.5) 155
 Andres Gimenez,CLE,@KC,runs,Under,(0.5) -210,(0.5) -215,,(0.5) -210
-Andrew Heaney,TEX,@BAL,strikeouts,Over,,(4.5) -130,(4.5) -125,(4.5) -130
-Andrew Heaney,TEX,@BAL,strikeouts,Under,,(4.5) 100,(4.5) -102,(4.5) 100
+Andrew Heaney,TEX,@BAL,strikeouts,Over,,(4.5) -135,(4.5) -128,(4.5) -130
+Andrew Heaney,TEX,@BAL,strikeouts,Under,,(4.5) 105,(4.5) 100,(4.5) 100
 Andrew McCutchen,PIT,@ATL,bases,Over,(1.5) 120,(1.5) 125,,(1.5) 125
 Andrew McCutchen,PIT,@ATL,bases,Under,(1.5) -167,(1.5) -170,,(1.5) -160
 Andrew McCutchen,PIT,@ATL,runs,Over,(0.5) -114,(0.5) -110,,(0.5) -110
@@ -59,8 +59,8 @@ Andy Ibanez,DET,@LAA,runs,Over,,(0.5) 105,,(0.5) 105
 Andy Ibanez,DET,@LAA,runs,Under,,(0.5) -140,,(0.5) -140
 Anthony Santander,BAL,TEX,bases,Over,,(1.5) 100,,(1.5) 100
 Anthony Santander,BAL,TEX,bases,Under,,(1.5) -135,,(1.5) -130
-Anthony Santander,BAL,TEX,runs,Over,,(0.5) -125,,(0.5) -125
-Anthony Santander,BAL,TEX,runs,Under,,(0.5) -105,,(0.5) -105
+Anthony Santander,BAL,TEX,runs,Over,,(0.5) -115,,(0.5) -125
+Anthony Santander,BAL,TEX,runs,Under,,(0.5) -110,,(0.5) -105
 Anthony Volpe,NYY,@TOR,bases,Over,(1.5) 102,(1.5) 105,,(1.5) 105
 Anthony Volpe,NYY,@TOR,bases,Under,(1.5) -141,(1.5) -140,,(1.5) -135
 Anthony Volpe,NYY,@TOR,runs,Over,,(0.5) -115,,(0.5) -110
@@ -69,10 +69,10 @@ Armando Alvarez,OAK,@ARI,bases,Over,,(0.5) -160,,
 Armando Alvarez,OAK,@ARI,bases,Under,,(0.5) 120,,
 Armando Alvarez,OAK,@ARI,runs,Over,,(0.5) 185,,
 Armando Alvarez,OAK,@ARI,runs,Under,,(0.5) -255,,
-Austin Hays,BAL,TEX,bases,Over,,(1.5) 115,,(1.5) 115
-Austin Hays,BAL,TEX,bases,Under,,(1.5) -155,,(1.5) -155
-Austin Hays,BAL,TEX,runs,Over,,(0.5) 110,,(0.5) 110
-Austin Hays,BAL,TEX,runs,Under,,(0.5) -145,,(0.5) -140
+Austin Hays,BAL,TEX,bases,Over,,(1.5) 120,,(1.5) 115
+Austin Hays,BAL,TEX,bases,Under,,(1.5) -165,,(1.5) -155
+Austin Hays,BAL,TEX,runs,Over,,(0.5) 115,,(0.5) 110
+Austin Hays,BAL,TEX,runs,Under,,(0.5) -155,,(0.5) -140
 Austin Hedges,CLE,@KC,bases,Over,,(0.5) -120,,(0.5) -115
 Austin Hedges,CLE,@KC,bases,Under,,(0.5) -115,,(0.5) -110
 Austin Hedges,CLE,@KC,runs,Over,,(0.5) 260,,(0.5) 260
@@ -81,16 +81,16 @@ Austin Riley,ATL,PIT,bases,Over,(1.5) -121,(1.5) -120,,(1.5) -120
 Austin Riley,ATL,PIT,bases,Under,(1.5) -115,(1.5) -110,,(1.5) -105
 Austin Riley,ATL,PIT,runs,Over,(0.5) -124,(0.5) -145,,(0.5) -135
 Austin Riley,ATL,PIT,runs,Under,(0.5) -110,(0.5) 105,,(0.5) 105
-Austin Slater,SF,LAD,bases,Over,,(0.5) -195,,
-Austin Slater,SF,LAD,bases,Under,,(0.5) 140,,
-Austin Slater,SF,LAD,runs,Over,,(0.5) -115,,
-Austin Slater,SF,LAD,runs,Under,,(0.5) -120,,
+Austin Slater,SF,LAD,bases,Over,(1.5) 143,(0.5) -195,,
+Austin Slater,SF,LAD,bases,Under,(1.5) -205,(0.5) 140,,
+Austin Slater,SF,LAD,runs,Over,(0.5) 106,(0.5) -115,,
+Austin Slater,SF,LAD,runs,Under,(0.5) -143,(0.5) -120,,
 Austin Wells,NYY,@TOR,bases,Over,(1.5) 155,(0.5) -190,,(1.5) 140
 Austin Wells,NYY,@TOR,bases,Under,(1.5) -225,(0.5) 140,,(1.5) -185
 Austin Wells,NYY,@TOR,runs,Over,(0.5) 145,(0.5) 130,,(0.5) 130
 Austin Wells,NYY,@TOR,runs,Under,(0.5) -200,(0.5) -175,,(0.5) -175
-Bailey Falter,PIT,@ATL,strikeouts,Over,(4.5) 120,(4.5) 130,(4.5) 130,(4.5) 125
-Bailey Falter,PIT,@ATL,strikeouts,Under,(4.5) 140,(4.5) -170,(4.5) -166,(4.5) -160
+Bailey Falter,PIT,@ATL,strikeouts,Over,(4.5) 120,(4.5) 140,(4.5) 132,(4.5) 125
+Bailey Falter,PIT,@ATL,strikeouts,Under,(4.5) 140,(4.5) -180,(4.5) -170,(4.5) -160
 Ben Rice,NYY,@TOR,bases,Over,(1.5) 155,(0.5) -175,,(0.5) -175
 Ben Rice,NYY,@TOR,bases,Under,(1.5) -225,(0.5) 130,,(0.5) 130
 Ben Rice,NYY,@TOR,runs,Over,(0.5) 120,(0.5) 105,,(0.5) 105
@@ -173,8 +173,8 @@ Carson Kelly,DET,@LAA,bases,Over,,(0.5) -150,,(0.5) -145
 Carson Kelly,DET,@LAA,bases,Under,,(0.5) 110,,(0.5) 110
 Carson Kelly,DET,@LAA,runs,Over,,(0.5) 155,,(0.5) 160
 Carson Kelly,DET,@LAA,runs,Under,,(0.5) -215,,(0.5) -210
-Casey Mize,DET,@LAA,strikeouts,Over,,(5.5) 120,(4.5) -162,(5.5) 125
-Casey Mize,DET,@LAA,strikeouts,Under,,(5.5) -155,(4.5) 128,(5.5) -160
+Casey Mize,DET,@LAA,strikeouts,Over,,(5.5) 120,(4.5) -170,(5.5) 125
+Casey Mize,DET,@LAA,strikeouts,Under,,(5.5) -155,(4.5) 132,(5.5) -160
 Ceddanne Rafaela,BOS,SD,bases,Over,(1.5) 143,(1.5) 145,,(1.5) 145
 Ceddanne Rafaela,BOS,SD,bases,Under,(1.5) -200,(1.5) -195,,(1.5) -190
 Ceddanne Rafaela,BOS,SD,runs,Over,(0.5) 135,(0.5) 135,,(0.5) 130
@@ -193,8 +193,8 @@ Christian Walker,ARI,OAK,runs,Over,,(0.5) -105,,(0.5) -105
 Christian Walker,ARI,OAK,runs,Under,,(0.5) -125,,(0.5) -125
 Christian Yelich,MIL,CHC,bases,Over,(1.5) 123,(1.5) 120,,(1.5) 120
 Christian Yelich,MIL,CHC,bases,Under,(1.5) -175,(1.5) -165,,(1.5) -160
-Christian Yelich,MIL,CHC,runs,Over,(0.5) 114,(0.5) 105,,(0.5) 100
-Christian Yelich,MIL,CHC,runs,Under,(0.5) -155,(0.5) -140,,(0.5) -135
+Christian Yelich,MIL,CHC,runs,Over,(0.5) 114,(0.5) 100,,(0.5) 100
+Christian Yelich,MIL,CHC,runs,Under,(0.5) -155,(0.5) -135,,(0.5) -135
 Christopher Morel,CHC,@MIL,bases,Over,(1.5) 205,(0.5) -125,,(0.5) -130
 Christopher Morel,CHC,@MIL,bases,Under,(1.5) -305,(0.5) -105,,(0.5) 100
 Christopher Morel,CHC,@MIL,runs,Over,(0.5) 180,(0.5) 165,,(0.5) 170
@@ -203,10 +203,10 @@ Cody Bellinger,CHC,@MIL,bases,Over,(1.5) 138,(1.5) 135,,(1.5) 135
 Cody Bellinger,CHC,@MIL,bases,Under,(1.5) -195,(1.5) -185,,(1.5) -185
 Cody Bellinger,CHC,@MIL,runs,Over,(0.5) 140,(0.5) 145,,(0.5) 140
 Cody Bellinger,CHC,@MIL,runs,Under,(0.5) -195,(0.5) -200,,(0.5) -190
-Cole Irvin,BAL,TEX,strikeouts,Over,,(3.5) -115,(3.5) -118,(3.5) -110
-Cole Irvin,BAL,TEX,strikeouts,Under,,(3.5) -115,(3.5) -108,(3.5) -120
-Colton Cowser,BAL,TEX,bases,Over,,(0.5) -150,,(0.5) -145
-Colton Cowser,BAL,TEX,bases,Under,,(0.5) 110,,(0.5) 110
+Cole Irvin,BAL,TEX,strikeouts,Over,,(3.5) -115,(3.5) -116,(3.5) -110
+Cole Irvin,BAL,TEX,strikeouts,Under,,(3.5) -115,(3.5) -110,(3.5) -120
+Colton Cowser,BAL,TEX,bases,Over,,(0.5) -140,,(0.5) -145
+Colton Cowser,BAL,TEX,bases,Under,,(0.5) 105,,(0.5) 110
 Colton Cowser,BAL,TEX,runs,Over,,(0.5) 135,,(0.5) 135
 Colton Cowser,BAL,TEX,runs,Under,,(0.5) -185,,(0.5) -185
 Connor Wong,BOS,SD,bases,Over,,(1.5) 145,,(1.5) 145
@@ -261,18 +261,18 @@ David Hamilton,BOS,SD,bases,Over,(1.5) 125,(1.5) 110,,(1.5) 110
 David Hamilton,BOS,SD,bases,Under,(1.5) -177,(1.5) -150,,(1.5) -145
 David Hamilton,BOS,SD,runs,Over,(0.5) -108,(0.5) -115,,(0.5) -115
 David Hamilton,BOS,SD,runs,Under,(0.5) -127,(0.5) -115,,(0.5) -115
-David Villar,SF,LAD,bases,Over,,(0.5) -135,,
-David Villar,SF,LAD,bases,Under,,(0.5) 100,,
-David Villar,SF,LAD,runs,Over,,(0.5) 170,,
-David Villar,SF,LAD,runs,Under,,(0.5) -240,,
-Davis Wendzel,TEX,@BAL,bases,Over,,(1.5) 130,,(1.5) 125
-Davis Wendzel,TEX,@BAL,bases,Under,,(1.5) -175,,(1.5) -165
-Davis Wendzel,TEX,@BAL,runs,Over,,(0.5) 115,,(0.5) 120
-Davis Wendzel,TEX,@BAL,runs,Under,,(0.5) -160,,(0.5) -155
-Derek Hill,TEX,@BAL,bases,Over,,(1.5) 135,,
-Derek Hill,TEX,@BAL,bases,Under,,(1.5) -180,,
-Derek Hill,TEX,@BAL,runs,Over,,(0.5) 120,,
-Derek Hill,TEX,@BAL,runs,Under,,(0.5) -165,,
+David Villar,SF,LAD,bases,Over,(1.5) 160,(0.5) -135,,
+David Villar,SF,LAD,bases,Under,(1.5) -230,(0.5) 100,,
+David Villar,SF,LAD,runs,Over,(0.5) 155,(0.5) 170,,
+David Villar,SF,LAD,runs,Under,(0.5) -220,(0.5) -240,,
+Davis Wendzel,TEX,@BAL,bases,Over,,(0.5) -180,,(1.5) 125
+Davis Wendzel,TEX,@BAL,bases,Under,,(0.5) 130,,(1.5) -165
+Davis Wendzel,TEX,@BAL,runs,Over,,(0.5) 135,,(0.5) 120
+Davis Wendzel,TEX,@BAL,runs,Under,,(0.5) -185,,(0.5) -155
+Derek Hill,TEX,@BAL,bases,Over,,(1.5) 140,,
+Derek Hill,TEX,@BAL,bases,Under,,(1.5) -190,,
+Derek Hill,TEX,@BAL,runs,Over,,(0.5) 130,,
+Derek Hill,TEX,@BAL,runs,Under,,(0.5) -180,,
 Dominic Canzone,SEA,MIN,bases,Over,,(0.5) -125,,(0.5) -120
 Dominic Canzone,SEA,MIN,bases,Under,,(0.5) -110,,(0.5) -105
 Dominic Canzone,SEA,MIN,runs,Over,,(0.5) 200,,(0.5) 210
@@ -284,7 +284,7 @@ Dominic Smith,BOS,SD,runs,Under,(0.5) -190,(0.5) -180,,(0.5) -175
 Donovan Solano,SD,@BOS,bases,Over,(1.5) 115,(1.5) 115,,(1.5) 120
 Donovan Solano,SD,@BOS,bases,Under,(1.5) -162,(1.5) -160,,(1.5) -155
 Donovan Solano,SD,@BOS,runs,Over,(0.5) 125,(0.5) 110,,(0.5) 115
-Donovan Solano,SD,@BOS,runs,Under,(0.5) -175,(0.5) -150,,(0.5) -150
+Donovan Solano,SD,@BOS,runs,Under,(0.5) -175,(0.5) -165,,(0.5) -150
 Dylan Carlson,STL,CIN,bases,Over,,(0.5) -110,,(0.5) -110
 Dylan Carlson,STL,CIN,bases,Under,,(0.5) -125,,(0.5) -120
 Dylan Carlson,STL,CIN,runs,Over,,(0.5) 195,,(0.5) 200
@@ -367,10 +367,10 @@ Gleyber Torres,NYY,@TOR,bases,Over,(1.5) 140,(1.5) 125,,(1.5) 130
 Gleyber Torres,NYY,@TOR,bases,Under,(1.5) -200,(1.5) -170,,(1.5) -165
 Gleyber Torres,NYY,@TOR,runs,Over,(0.5) 140,(0.5) 110,,(0.5) 110
 Gleyber Torres,NYY,@TOR,runs,Under,(0.5) -195,(0.5) -150,,(0.5) -145
-Gunnar Henderson,BAL,TEX,bases,Over,,(1.5) 140,,(1.5) 145
-Gunnar Henderson,BAL,TEX,bases,Under,,(1.5) -190,,(1.5) -190
-Gunnar Henderson,BAL,TEX,runs,Over,,(0.5) -105,,(0.5) 100
-Gunnar Henderson,BAL,TEX,runs,Under,,(0.5) -130,,(0.5) -130
+Gunnar Henderson,BAL,TEX,bases,Over,,(0.5) -200,,(1.5) 145
+Gunnar Henderson,BAL,TEX,bases,Under,,(0.5) 145,,(1.5) -190
+Gunnar Henderson,BAL,TEX,runs,Over,,(0.5) 100,,(0.5) 100
+Gunnar Henderson,BAL,TEX,runs,Under,,(0.5) -135,,(0.5) -130
 Ha-Seong Kim,SD,@BOS,bases,Over,(1.5) 145,(1.5) 135,,(1.5) 135
 Ha-Seong Kim,SD,@BOS,bases,Under,(1.5) -210,(1.5) -185,,(1.5) -185
 Ha-Seong Kim,SD,@BOS,runs,Over,(0.5) 133,(0.5) 115,,(0.5) 115
@@ -383,10 +383,10 @@ Harrison Bader,NYM,HOU,bases,Over,(1.5) 170,(0.5) -190,,(0.5) -190
 Harrison Bader,NYM,HOU,bases,Under,(1.5) -250,(0.5) 140,,(0.5) 140
 Harrison Bader,NYM,HOU,runs,Over,(0.5) 133,(0.5) 135,,(0.5) 140
 Harrison Bader,NYM,HOU,runs,Under,(0.5) -182,(0.5) -190,,(0.5) -185
-Heliot Ramos,SF,LAD,bases,Over,,(1.5) 125,,
-Heliot Ramos,SF,LAD,bases,Under,,(1.5) -170,,
-Heliot Ramos,SF,LAD,runs,Over,,(0.5) -105,,
-Heliot Ramos,SF,LAD,runs,Under,,(0.5) -130,,
+Heliot Ramos,SF,LAD,bases,Over,(1.5) 117,(1.5) 125,,
+Heliot Ramos,SF,LAD,bases,Under,(1.5) -165,(1.5) -170,,
+Heliot Ramos,SF,LAD,runs,Over,(0.5) 110,(0.5) -105,,
+Heliot Ramos,SF,LAD,runs,Under,(0.5) -150,(0.5) -130,,
 Hunter Goodman,COL,@CWS,bases,Over,,(0.5) 105,,(0.5) 110
 Hunter Goodman,COL,@CWS,bases,Under,,(0.5) -140,,(0.5) -140
 Hunter Goodman,COL,@CWS,runs,Over,,(0.5) 245,,(0.5) 240
@@ -465,12 +465,12 @@ Jake Meyers,HOU,@NYM,bases,Over,(1.5) 148,(1.5) 140,,(1.5) 140
 Jake Meyers,HOU,@NYM,bases,Under,(1.5) -220,(1.5) -190,,(1.5) -190
 Jake Meyers,HOU,@NYM,runs,Over,(0.5) 160,(0.5) 140,,(0.5) 140
 Jake Meyers,HOU,@NYM,runs,Under,(0.5) -225,(0.5) -190,,(0.5) -185
-James McCann,BAL,TEX,bases,Over,,(1.5) 130,,(1.5) 135
-James McCann,BAL,TEX,bases,Under,,(1.5) -175,,(1.5) -175
-James McCann,BAL,TEX,runs,Over,,(0.5) 130,,(0.5) 130
-James McCann,BAL,TEX,runs,Under,,(0.5) -175,,(0.5) -165
-James Paxton,LAD,@SF,strikeouts,Over,,(4.5) -130,(4.5) -138,
-James Paxton,LAD,@SF,strikeouts,Under,,(4.5) 100,(4.5) 108,
+James McCann,BAL,TEX,bases,Over,,(1.5) 135,,(1.5) 135
+James McCann,BAL,TEX,bases,Under,,(1.5) -190,,(1.5) -175
+James McCann,BAL,TEX,runs,Over,,(0.5) 135,,(0.5) 130
+James McCann,BAL,TEX,runs,Under,,(0.5) -185,,(0.5) -165
+James Paxton,LAD,@SF,strikeouts,Over,(4.5) -122,(4.5) -130,(4.5) -132,
+James Paxton,LAD,@SF,strikeouts,Under,(4.5) -109,(4.5) 100,(4.5) 104,
 Jarred Kelenic,ATL,PIT,bases,Over,(1.5) 118,(1.5) 125,,(1.5) 125
 Jarred Kelenic,ATL,PIT,bases,Under,(1.5) -167,(1.5) -170,,(1.5) -160
 Jarred Kelenic,ATL,PIT,runs,Over,(0.5) -114,(0.5) -110,,(0.5) -110
@@ -511,8 +511,8 @@ Joc Pederson,ARI,OAK,bases,Over,,(1.5) 135,,(1.5) 140
 Joc Pederson,ARI,OAK,bases,Under,,(1.5) -185,,(1.5) -185
 Joc Pederson,ARI,OAK,runs,Over,,(0.5) -105,,(0.5) 100
 Joc Pederson,ARI,OAK,runs,Under,,(0.5) -130,,(0.5) -130
-Joe Ryan,MIN,@SEA,strikeouts,Over,,(7.5) 100,(7.5) 122,(7.5) 100
-Joe Ryan,MIN,@SEA,strikeouts,Under,,(7.5) -130,(7.5) -156,(7.5) -135
+Joe Ryan,MIN,@SEA,strikeouts,Over,,(7.5) 100,(7.5) 124,(7.5) 100
+Joe Ryan,MIN,@SEA,strikeouts,Under,,(7.5) -130,(7.5) -160,(7.5) -135
 Joey Loperfido,HOU,@NYM,bases,Over,,(0.5) -160,,(0.5) -155
 Joey Loperfido,HOU,@NYM,bases,Under,,(0.5) 115,,(0.5) 115
 Joey Loperfido,HOU,@NYM,runs,Over,,(0.5) 155,,(0.5) 155
@@ -533,10 +533,10 @@ Jon Singleton,HOU,@NYM,bases,Over,(1.5) 165,(0.5) -180,,(0.5) -175
 Jon Singleton,HOU,@NYM,bases,Under,(1.5) -240,(0.5) 130,,(0.5) 135
 Jon Singleton,HOU,@NYM,runs,Over,(0.5) 155,(0.5) 140,,(0.5) 140
 Jon Singleton,HOU,@NYM,runs,Under,(0.5) -220,(0.5) -195,,(0.5) -190
-Jonah Heim,TEX,@BAL,bases,Over,,(1.5) -105,,(1.5) -105
-Jonah Heim,TEX,@BAL,bases,Under,,(1.5) -130,,(1.5) -125
-Jonah Heim,TEX,@BAL,runs,Over,,(0.5) 105,,(0.5) 105
-Jonah Heim,TEX,@BAL,runs,Under,,(0.5) -145,,(0.5) -140
+Jonah Heim,TEX,@BAL,bases,Over,,(1.5) 100,,(1.5) -105
+Jonah Heim,TEX,@BAL,bases,Under,,(1.5) -135,,(1.5) -125
+Jonah Heim,TEX,@BAL,runs,Over,,(0.5) 110,,(0.5) 105
+Jonah Heim,TEX,@BAL,runs,Under,,(0.5) -150,,(0.5) -140
 Jonathan India,CIN,@STL,bases,Over,(1.5) 128,(1.5) 150,,(1.5) 150
 Jonathan India,CIN,@STL,bases,Under,(1.5) -180,(1.5) -210,,(1.5) -200
 Jonathan India,CIN,@STL,runs,Over,(0.5) 105,(0.5) 110,,(0.5) 115
@@ -545,18 +545,18 @@ Jonny DeLuca,TB,WSH,bases,Over,(1.5) 130,(1.5) 135,,(1.5) 135
 Jonny DeLuca,TB,WSH,bases,Under,(1.5) -182,(1.5) -180,,(1.5) -175
 Jonny DeLuca,TB,WSH,runs,Over,(0.5) 135,(0.5) 125,,(0.5) 125
 Jonny DeLuca,TB,WSH,runs,Under,(0.5) -190,(0.5) -175,,(0.5) -165
-Jordan Westburg,BAL,TEX,bases,Over,,(1.5) 105,,(1.5) 110
-Jordan Westburg,BAL,TEX,bases,Under,,(1.5) -145,,(1.5) -140
+Jordan Westburg,BAL,TEX,bases,Over,,(1.5) 110,,(1.5) 110
+Jordan Westburg,BAL,TEX,bases,Under,,(1.5) -150,,(1.5) -140
 Jordan Westburg,BAL,TEX,runs,Over,,(0.5) 100,,(0.5) 100
 Jordan Westburg,BAL,TEX,runs,Under,,(0.5) -135,,(0.5) -130
-Jorge Mateo,BAL,TEX,bases,Over,,(1.5) 125,,(1.5) 130
-Jorge Mateo,BAL,TEX,bases,Under,,(1.5) -170,,(1.5) -165
+Jorge Mateo,BAL,TEX,bases,Over,,(1.5) 130,,(1.5) 130
+Jorge Mateo,BAL,TEX,bases,Under,,(1.5) -180,,(1.5) -165
 Jorge Mateo,BAL,TEX,runs,Over,,(0.5) 115,,(0.5) 115
 Jorge Mateo,BAL,TEX,runs,Under,,(0.5) -160,,(0.5) -155
-Jorge Soler,SF,LAD,bases,Over,,(1.5) 125,,
-Jorge Soler,SF,LAD,bases,Under,,(1.5) -175,,
-Jorge Soler,SF,LAD,runs,Over,,(0.5) 110,,
-Jorge Soler,SF,LAD,runs,Under,,(0.5) -145,,
+Jorge Soler,SF,LAD,bases,Over,(1.5) -104,(1.5) 125,,
+Jorge Soler,SF,LAD,bases,Under,(1.5) -136,(1.5) -175,,
+Jorge Soler,SF,LAD,runs,Over,(0.5) 102,(0.5) 110,,
+Jorge Soler,SF,LAD,runs,Under,(0.5) -139,(0.5) -145,,
 Jose Altuve,HOU,@NYM,bases,Over,(1.5) 115,(1.5) 110,,(1.5) 115
 Jose Altuve,HOU,@NYM,bases,Under,(1.5) -162,(1.5) -150,,(1.5) -150
 Jose Altuve,HOU,@NYM,runs,Over,,(0.5) -105,,(0.5) -105
@@ -585,10 +585,10 @@ Josh Rojas,SEA,MIN,bases,Over,,(0.5) -175,,(0.5) -175
 Josh Rojas,SEA,MIN,bases,Under,,(0.5) 130,,(0.5) 130
 Josh Rojas,SEA,MIN,runs,Over,,(0.5) 170,,(0.5) 170
 Josh Rojas,SEA,MIN,runs,Under,,(0.5) -235,,(0.5) -225
-Josh Smith,TEX,@BAL,bases,Over,,(1.5) 150,,(1.5) 155
-Josh Smith,TEX,@BAL,bases,Under,,(1.5) -210,,(1.5) -200
-Josh Smith,TEX,@BAL,runs,Over,,(0.5) 120,,(0.5) 120
-Josh Smith,TEX,@BAL,runs,Under,,(0.5) -160,,(0.5) -160
+Josh Smith,TEX,@BAL,bases,Over,,(0.5) -205,,(1.5) 155
+Josh Smith,TEX,@BAL,bases,Under,,(0.5) 150,,(1.5) -200
+Josh Smith,TEX,@BAL,runs,Over,,(0.5) 130,,(0.5) 120
+Josh Smith,TEX,@BAL,runs,Under,,(0.5) -180,,(0.5) -160
 Josh Winckowski,BOS,SD,strikeouts,Over,(3.5) 104,(3.5) 115,(3.5) 114,(3.5) 115
 Josh Winckowski,BOS,SD,strikeouts,Under,(3.5) -139,(3.5) -150,(3.5) -144,(3.5) -150
 Julio Rodriguez,SEA,MIN,bases,Over,,(1.5) 120,,(1.5) 120
@@ -631,8 +631,8 @@ Kody Clemens,PHI,MIA,runs,Over,(0.5) 120,(0.5) 110,,(0.5) 115
 Kody Clemens,PHI,MIA,runs,Under,(0.5) -167,(0.5) -150,,(0.5) -155
 Kyle Freeland,COL,@CWS,strikeouts,Over,(4.5) 128,(4.5) 110,(4.5) 128,(4.5) 110
 Kyle Freeland,COL,@CWS,strikeouts,Under,(4.5) 130,(4.5) -140,(4.5) -164,(4.5) -145
-Kyle Hendricks,CHC,@MIL,strikeouts,Over,(4.5) 150,(3.5) -170,(3.5) -136,(3.5) -165
-Kyle Hendricks,CHC,@MIL,strikeouts,Under,(4.5) 115,(3.5) 130,(3.5) 106,(3.5) 125
+Kyle Hendricks,CHC,@MIL,strikeouts,Over,(4.5) 150,(3.5) -165,(3.5) -136,(3.5) -165
+Kyle Hendricks,CHC,@MIL,strikeouts,Under,(4.5) 115,(3.5) 125,(3.5) 106,(3.5) 125
 Kyle Higashioka,SD,@BOS,bases,Over,,(1.5) 140,,(1.5) 145
 Kyle Higashioka,SD,@BOS,bases,Under,,(1.5) -195,,(1.5) -190
 Kyle Higashioka,SD,@BOS,runs,Over,,(0.5) 140,,(0.5) 140
@@ -641,8 +641,8 @@ Kyle Isbel,KC,CLE,bases,Over,,(0.5) -140,,(0.5) -145
 Kyle Isbel,KC,CLE,bases,Under,,(0.5) 105,,(0.5) 110
 Kyle Isbel,KC,CLE,runs,Over,,(0.5) 145,,(0.5) 150
 Kyle Isbel,KC,CLE,runs,Under,,(0.5) -200,,(0.5) -200
-Lance Lynn,STL,CIN,strikeouts,Over,(5.5) 110,(5.5) 100,(5.5) -112,(5.5) 100
-Lance Lynn,STL,CIN,strikeouts,Under,(5.5) 145,(5.5) -130,(5.5) -116,(5.5) -130
+Lance Lynn,STL,CIN,strikeouts,Over,(5.5) 110,(5.5) 100,(5.5) -108,(5.5) 100
+Lance Lynn,STL,CIN,strikeouts,Under,(5.5) 145,(5.5) -130,(5.5) -118,(5.5) -130
 Lane Thomas,WSH,@TB,bases,Over,(1.5) 135,(1.5) 135,,(1.5) 135
 Lane Thomas,WSH,@TB,bases,Under,(1.5) -190,(1.5) -185,,(1.5) -175
 Lane Thomas,WSH,@TB,runs,Over,(0.5) 133,(0.5) 125,,(0.5) 130
@@ -669,16 +669,16 @@ Luis Arraez,SD,@BOS,bases,Over,(1.5) -114,(1.5) -130,,(1.5) -130
 Luis Arraez,SD,@BOS,bases,Under,(1.5) -122,(1.5) -105,,(1.5) 100
 Luis Arraez,SD,@BOS,runs,Over,(0.5) -109,(0.5) -115,,(0.5) -115
 Luis Arraez,SD,@BOS,runs,Under,(0.5) -124,(0.5) -120,,(0.5) -115
-Luis Castillo,SEA,MIN,strikeouts,Over,,(5.5) -160,(6.5) 102,(5.5) -160
-Luis Castillo,SEA,MIN,strikeouts,Under,,(5.5) 125,(6.5) -128,(5.5) 125
+Luis Castillo,SEA,MIN,strikeouts,Over,,(5.5) -160,(6.5) 104,(5.5) -160
+Luis Castillo,SEA,MIN,strikeouts,Under,,(5.5) 125,(6.5) -130,(5.5) 125
 Luis Garcia,WSH,@TB,bases,Over,(1.5) 148,(1.5) 135,,(1.5) 140
 Luis Garcia,WSH,@TB,bases,Under,(1.5) -210,(1.5) -185,,(1.5) -185
 Luis Garcia,WSH,@TB,runs,Over,(0.5) 175,(0.5) 145,,(0.5) 150
 Luis Garcia,WSH,@TB,runs,Under,(0.5) -245,(0.5) -200,,(0.5) -200
-Luis Matos,SF,LAD,bases,Over,,(1.5) 150,,
-Luis Matos,SF,LAD,bases,Under,,(1.5) -205,,
-Luis Matos,SF,LAD,runs,Over,,(0.5) 155,,
-Luis Matos,SF,LAD,runs,Under,,(0.5) -215,,
+Luis Matos,SF,LAD,bases,Over,(1.5) 135,(1.5) 150,,
+Luis Matos,SF,LAD,bases,Under,(1.5) -195,(1.5) -205,,
+Luis Matos,SF,LAD,runs,Over,(0.5) 150,(0.5) 155,,
+Luis Matos,SF,LAD,runs,Under,(0.5) -215,(0.5) -215,,
 Luis Medina,OAK,@ARI,strikeouts,Over,,(4.5) 130,(3.5) -158,(4.5) 130
 Luis Medina,OAK,@ARI,strikeouts,Under,,(4.5) -170,(3.5) 124,(4.5) -165
 Luis Rengifo,LAA,DET,bases,Over,,(1.5) 115,,(1.5) 120
@@ -689,8 +689,8 @@ Luis Robert,CWS,COL,bases,Over,(1.5) 120,(1.5) 115,,(1.5) 120
 Luis Robert,CWS,COL,bases,Under,(1.5) -167,(1.5) -155,,(1.5) -155
 Luis Robert,CWS,COL,runs,Over,(0.5) 128,(0.5) 105,,(0.5) 105
 Luis Robert,CWS,COL,runs,Under,(0.5) -177,(0.5) -140,,(0.5) -140
-Luis Severino,NYM,HOU,strikeouts,Over,(4.5) -124,(4.5) -125,(4.5) -120,(4.5) 
-Luis Severino,NYM,HOU,strikeouts,Under,(4.5) -108,(4.5) -105,(4.5) -106,(4.5) 
+Luis Severino,NYM,HOU,strikeouts,Over,(4.5) -124,(4.5) -125,(4.5) -116,(4.5) 
+Luis Severino,NYM,HOU,strikeouts,Under,(4.5) -108,(4.5) -105,(4.5) -110,(4.5) 
 Luis Torrens,NYM,HOU,bases,Over,,(0.5) -210,,(0.5) -200
 Luis Torrens,NYM,HOU,bases,Under,,(0.5) 155,,(0.5) 150
 Luis Torrens,NYM,HOU,runs,Over,,(0.5) 160,,(0.5) 160
@@ -719,10 +719,10 @@ Marcell Ozuna,ATL,PIT,bases,Over,(1.5) -132,(1.5) -135,,(1.5) -135
 Marcell Ozuna,ATL,PIT,bases,Under,(1.5) -105,(1.5) 100,,(1.5) 100
 Marcell Ozuna,ATL,PIT,runs,Over,(0.5) -132,(0.5) -145,,(0.5) -145
 Marcell Ozuna,ATL,PIT,runs,Under,(0.5) -104,(0.5) 110,,(0.5) 110
-Marcus Semien,TEX,@BAL,bases,Over,,(1.5) -140,,(1.5) -140
-Marcus Semien,TEX,@BAL,bases,Under,,(1.5) 100,,(1.5) 105
-Marcus Semien,TEX,@BAL,runs,Over,,(0.5) -130,,(0.5) -130
-Marcus Semien,TEX,@BAL,runs,Under,,(0.5) -105,,(0.5) 100
+Marcus Semien,TEX,@BAL,bases,Over,,(1.5) -130,,(1.5) -140
+Marcus Semien,TEX,@BAL,bases,Under,,(1.5) -105,,(1.5) 105
+Marcus Semien,TEX,@BAL,runs,Over,,(0.5) -115,,(0.5) -130
+Marcus Semien,TEX,@BAL,runs,Under,,(0.5) -115,,(0.5) 100
 Mark Canha,DET,@LAA,bases,Over,,(1.5) 140,,(1.5) 140
 Mark Canha,DET,@LAA,bases,Under,,(1.5) -190,,(1.5) -190
 Mark Canha,DET,@LAA,runs,Over,,(0.5) 110,,(0.5) 105
@@ -743,10 +743,10 @@ Matt Carpenter,STL,CIN,bases,Over,(1.5) 240,(0.5) 115,,(0.5) 115
 Matt Carpenter,STL,CIN,bases,Under,(1.5) -375,(0.5) -155,,(0.5) -155
 Matt Carpenter,STL,CIN,runs,Over,(0.5) 175,(0.5) 180,,(0.5) 185
 Matt Carpenter,STL,CIN,runs,Under,(0.5) -245,(0.5) -255,,(0.5) -250
-Matt Chapman,SF,LAD,bases,Over,,(1.5) 100,,
-Matt Chapman,SF,LAD,bases,Under,,(1.5) -140,,
-Matt Chapman,SF,LAD,runs,Over,,(0.5) -105,,
-Matt Chapman,SF,LAD,runs,Under,,(0.5) -125,,
+Matt Chapman,SF,LAD,bases,Over,(1.5) -109,(1.5) 100,,
+Matt Chapman,SF,LAD,bases,Under,(1.5) -129,(1.5) -140,,
+Matt Chapman,SF,LAD,runs,Over,(0.5) -107,(0.5) -105,,
+Matt Chapman,SF,LAD,runs,Under,(0.5) -129,(0.5) -125,,
 Matt Olson,ATL,PIT,bases,Over,(1.5) 114,(1.5) 110,,(1.5) 110
 Matt Olson,ATL,PIT,bases,Under,(1.5) -159,(1.5) -150,,(1.5) -145
 Matt Olson,ATL,PIT,runs,Over,(0.5) -113,(0.5) -115,,(0.5) -110
@@ -784,7 +784,7 @@ Michael Massey,KC,CLE,runs,Under,,(0.5) ,,(0.5)
 Michael Toglia,COL,@CWS,bases,Over,(1.5) 220,(0.5) 105,,(0.5) 105
 Michael Toglia,COL,@CWS,bases,Under,(1.5) -335,(0.5) -145,,(0.5) -140
 Michael Toglia,COL,@CWS,runs,Over,(0.5) 175,(0.5) 235,,(0.5) 230
-Michael Toglia,COL,@CWS,runs,Under,(0.5) -245,(0.5) -360,,(0.5) -350
+Michael Toglia,COL,@CWS,runs,Under,(0.5) -245,(0.5) -340,,(0.5) -350
 Mickey Moniak,LAA,DET,bases,Over,,(0.5) -160,,(0.5) -160
 Mickey Moniak,LAA,DET,bases,Under,,(0.5) 120,,(0.5) 120
 Mickey Moniak,LAA,DET,runs,Over,,(0.5) 140,,(0.5) 145
@@ -809,14 +809,14 @@ Mitch Haniger,SEA,MIN,bases,Over,,(0.5) -135,,(0.5) -125
 Mitch Haniger,SEA,MIN,bases,Under,,(0.5) 100,,(0.5) -105
 Mitch Haniger,SEA,MIN,runs,Over,,(0.5) 165,,(0.5) 165
 Mitch Haniger,SEA,MIN,runs,Under,,(0.5) -225,,(0.5) -225
-Nathaniel Lowe,TEX,@BAL,bases,Over,,(1.5) 155,,(1.5) 155
-Nathaniel Lowe,TEX,@BAL,bases,Under,,(1.5) -210,,(1.5) -210
-Nathaniel Lowe,TEX,@BAL,runs,Over,,(0.5) 135,,(0.5) 140
-Nathaniel Lowe,TEX,@BAL,runs,Under,,(0.5) -185,,(0.5) -185
-Nick Ahmed,SF,LAD,bases,Over,,(0.5) -150,,
-Nick Ahmed,SF,LAD,bases,Under,,(0.5) 110,,
-Nick Ahmed,SF,LAD,runs,Over,,(0.5) 200,,
-Nick Ahmed,SF,LAD,runs,Under,,(0.5) -285,,
+Nathaniel Lowe,TEX,@BAL,bases,Over,,(0.5) -225,,(1.5) 155
+Nathaniel Lowe,TEX,@BAL,bases,Under,,(0.5) 160,,(1.5) -210
+Nathaniel Lowe,TEX,@BAL,runs,Over,,(0.5) 150,,(0.5) 140
+Nathaniel Lowe,TEX,@BAL,runs,Under,,(0.5) -205,,(0.5) -185
+Nick Ahmed,SF,LAD,bases,Over,(1.5) 190,(0.5) -150,,
+Nick Ahmed,SF,LAD,bases,Under,(1.5) -278,(0.5) 110,,
+Nick Ahmed,SF,LAD,runs,Over,(0.5) 185,(0.5) 200,,
+Nick Ahmed,SF,LAD,runs,Under,(0.5) -265,(0.5) -285,,
 Nick Castellanos,PHI,MIA,bases,Over,(1.5) 106,(1.5) -105,,(1.5) 100
 Nick Castellanos,PHI,MIA,bases,Under,(1.5) -148,(1.5) -130,,(1.5) -130
 Nick Castellanos,PHI,MIA,runs,Over,(0.5) 102,(0.5) -110,,(0.5) -105
@@ -825,7 +825,7 @@ Nick Fortes,MIA,@PHI,bases,Over,,(0.5) -160,,(0.5) -155
 Nick Fortes,MIA,@PHI,bases,Under,,(0.5) 115,,(0.5) 115
 Nick Fortes,MIA,@PHI,runs,Over,,(0.5) 210,,(0.5) 210
 Nick Fortes,MIA,@PHI,runs,Under,,(0.5) -300,,(0.5) -275
-Nick Gonzales,PIT,@ATL,bases,Over,(1.5) 130,(1.5) 130,,(1.5) 130
+Nick Gonzales,PIT,@ATL,bases,Over,(1.5) 130,(1.5) 125,,(1.5) 130
 Nick Gonzales,PIT,@ATL,bases,Under,(1.5) -182,(1.5) -180,,(1.5) -175
 Nick Gonzales,PIT,@ATL,runs,Over,(0.5) 148,(0.5) 135,,(0.5) 135
 Nick Gonzales,PIT,@ATL,runs,Under,(0.5) -205,(0.5) -180,,(0.5) -175
@@ -911,8 +911,8 @@ Randy Arozarena,TB,WSH,bases,Over,(1.5) 104,(1.5) 105,,(1.5) 110
 Randy Arozarena,TB,WSH,bases,Under,(1.5) -143,(1.5) -140,,(1.5) -145
 Randy Arozarena,TB,WSH,runs,Over,(0.5) -109,(0.5) -135,,(0.5) -130
 Randy Arozarena,TB,WSH,runs,Under,(0.5) -124,(0.5) 100,,(0.5) 100
-Ranger Suarez,PHI,MIA,strikeouts,Over,(5.5) 125,(5.5) 115,(5.5) 120,(5.5) 105
-Ranger Suarez,PHI,MIA,strikeouts,Under,(5.5) 130,(5.5) -150,(5.5) -154,(5.5) -135
+Ranger Suarez,PHI,MIA,strikeouts,Over,(5.5) 125,(5.5) 115,(5.5) 114,(5.5) 105
+Ranger Suarez,PHI,MIA,strikeouts,Under,(5.5) 130,(5.5) -150,(5.5) -146,(5.5) -135
 Rhys Hoskins,MIL,CHC,bases,Over,(1.5) 150,(0.5) -175,,(0.5) -175
 Rhys Hoskins,MIL,CHC,bases,Under,(1.5) -215,(0.5) 130,,(0.5) 130
 Rhys Hoskins,MIL,CHC,runs,Over,(0.5) 135,(0.5) 135,,(0.5) 135
@@ -921,10 +921,10 @@ Riley Greene,DET,@LAA,bases,Over,,(1.5) 135,,(1.5) 135
 Riley Greene,DET,@LAA,bases,Under,,(1.5) -185,,(1.5) -175
 Riley Greene,DET,@LAA,runs,Over,,(0.5) 110,,(0.5) 115
 Riley Greene,DET,@LAA,runs,Under,,(0.5) -150,,(0.5) -150
-Robbie Grossman,TEX,@BAL,bases,Over,,(1.5) 105,,(1.5) 105
-Robbie Grossman,TEX,@BAL,bases,Under,,(1.5) -140,,(1.5) -135
-Robbie Grossman,TEX,@BAL,runs,Over,,(0.5) -105,,(0.5) -105
-Robbie Grossman,TEX,@BAL,runs,Under,,(0.5) -130,,(0.5) -125
+Robbie Grossman,TEX,@BAL,bases,Over,,(1.5) 115,,(1.5) 105
+Robbie Grossman,TEX,@BAL,bases,Under,,(1.5) -155,,(1.5) -135
+Robbie Grossman,TEX,@BAL,runs,Over,,(0.5) 105,,(0.5) -105
+Robbie Grossman,TEX,@BAL,runs,Under,,(0.5) -140,,(0.5) -125
 Rowdy Tellez,PIT,@ATL,bases,Over,(1.5) 160,(1.5) 145,,(1.5) 145
 Rowdy Tellez,PIT,@ATL,bases,Under,(1.5) -235,(1.5) -195,,(1.5) -190
 Rowdy Tellez,PIT,@ATL,runs,Over,(0.5) 155,(0.5) 145,,(0.5) 140
@@ -965,8 +965,8 @@ Seiya Suzuki,CHC,@MIL,bases,Over,(1.5) 175,(0.5) -170,,(0.5) -160
 Seiya Suzuki,CHC,@MIL,bases,Under,(1.5) -265,(0.5) 125,,(0.5) 125
 Seiya Suzuki,CHC,@MIL,runs,Over,(0.5) 165,(0.5) 145,,(0.5) 145
 Seiya Suzuki,CHC,@MIL,runs,Under,(0.5) -235,(0.5) -200,,(0.5) -200
-Seth Lugo,KC,CLE,strikeouts,Over,(4.5) 102,(4.5) 110,(4.5) 100,(4.5) 100
-Seth Lugo,KC,CLE,strikeouts,Under,(4.5) -137,(4.5) -150,(4.5) -128,(4.5) -130
+Seth Lugo,KC,CLE,strikeouts,Over,(4.5) 102,(4.5) 110,(4.5) 120,(4.5) 100
+Seth Lugo,KC,CLE,strikeouts,Under,(4.5) -137,(4.5) -155,(4.5) -152,(4.5) -130
 Shea Langeliers,OAK,@ARI,bases,Over,,(0.5) -160,,(0.5) -155
 Shea Langeliers,OAK,@ARI,bases,Under,,(0.5) 120,,(0.5) 120
 Shea Langeliers,OAK,@ARI,runs,Over,,(0.5) 145,,(0.5) 140
@@ -975,8 +975,8 @@ Spencer Horwitz,TOR,NYY,bases,Over,(1.5) 175,(0.5) -200,,(0.5) -190
 Spencer Horwitz,TOR,NYY,bases,Under,(1.5) -250,(0.5) 145,,(0.5) 145
 Spencer Horwitz,TOR,NYY,runs,Over,(0.5) 135,(0.5) 115,,(0.5) 120
 Spencer Horwitz,TOR,NYY,runs,Under,(0.5) -190,(0.5) -160,,(0.5) -155
-Spencer Schwellenbach,ATL,PIT,strikeouts,Over,(4.5) -143,(4.5) -145,(5.5) 130,(4.5) -145
-Spencer Schwellenbach,ATL,PIT,strikeouts,Under,(4.5) 108,(4.5) 110,(5.5) -168,(4.5) 110
+Spencer Schwellenbach,ATL,PIT,strikeouts,Over,(4.5) -143,(4.5) -145,(4.5) -166,(4.5) -145
+Spencer Schwellenbach,ATL,PIT,strikeouts,Under,(4.5) 108,(4.5) 110,(4.5) 130,(4.5) 110
 Spencer Steer,CIN,@STL,bases,Over,(1.5) 130,(1.5) 140,,(1.5) 140
 Spencer Steer,CIN,@STL,bases,Under,(1.5) -182,(1.5) -190,,(1.5) -185
 Spencer Steer,CIN,@STL,runs,Over,(0.5) 123,(0.5) 140,,(0.5) 135
@@ -1073,10 +1073,10 @@ Wilyer Abreu,BOS,SD,bases,Over,(1.5) 105,(1.5) 110,,(1.5) 110
 Wilyer Abreu,BOS,SD,bases,Under,(1.5) -148,(1.5) -150,,(1.5) -145
 Wilyer Abreu,BOS,SD,runs,Over,(0.5) -110,(0.5) -105,,(0.5) -105
 Wilyer Abreu,BOS,SD,runs,Under,(0.5) -124,(0.5) -130,,(0.5) -125
-Wyatt Langford,TEX,@BAL,bases,Over,,(1.5) -110,,(1.5) -105
-Wyatt Langford,TEX,@BAL,bases,Under,,(1.5) -125,,(1.5) -125
-Wyatt Langford,TEX,@BAL,runs,Over,,(0.5) -120,,(0.5) -120
-Wyatt Langford,TEX,@BAL,runs,Under,,(0.5) -115,,(0.5) -110
+Wyatt Langford,TEX,@BAL,bases,Over,,(1.5) -105,,(1.5) -105
+Wyatt Langford,TEX,@BAL,bases,Under,,(1.5) -130,,(1.5) -125
+Wyatt Langford,TEX,@BAL,runs,Over,,(0.5) -115,,(0.5) -120
+Wyatt Langford,TEX,@BAL,runs,Under,,(0.5) -120,,(0.5) -110
 Yainer Diaz,HOU,@NYM,bases,Over,(1.5) -108,(1.5) -110,,(1.5) 100
 Yainer Diaz,HOU,@NYM,bases,Under,(1.5) -130,(1.5) -125,,(1.5) -130
 Yainer Diaz,HOU,@NYM,runs,Over,,(0.5) 120,,(0.5) 120
@@ -1089,7 +1089,7 @@ Yasmani Grandal,PIT,@ATL,bases,Over,,(0.5) -160,,(0.5) -160
 Yasmani Grandal,PIT,@ATL,bases,Under,,(0.5) 120,,(0.5) 125
 Yasmani Grandal,PIT,@ATL,runs,Over,,(0.5) 185,,(0.5) 185
 Yasmani Grandal,PIT,@ATL,runs,Under,,(0.5) -260,,(0.5) -250
-Yonny Chirinos,MIA,@PHI,strikeouts,Over,(3.5) -132,(3.5) -125,(3.5) -106,(3.5) -125
+Yonny Chirinos,MIA,@PHI,strikeouts,Over,(3.5) -132,(3.5) -125,(3.5) -108,(3.5) -125
 Yonny Chirinos,MIA,@PHI,strikeouts,Under,(3.5) 100,(3.5) -105,(3.5) -120,(3.5) -105
 Yordan Alvarez,HOU,@NYM,bases,Over,(1.5) -103,(1.5) -105,,(1.5) -105
 Yordan Alvarez,HOU,@NYM,bases,Under,(1.5) -137,(1.5) -130,,(1.5) -125
