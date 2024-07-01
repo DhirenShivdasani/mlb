@@ -29,7 +29,7 @@ export default function StatCard({ index, odds, showHistoricalData, sport, image
 
     try {
       const url = isFavorite ? '/remove_favorite_prop' : '/favorite_prop';
-      await fetch(url, {
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -43,6 +43,10 @@ export default function StatCard({ index, odds, showHistoricalData, sport, image
         }),
         credentials: 'include'
       });
+
+      if (!response.ok) {
+        throw new Error('Failed to update favorite prop');
+      }
     } catch (error) {
       console.error('Error updating favorite prop:', error);
     }

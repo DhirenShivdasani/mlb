@@ -1,7 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getMessaging, getToken, onMessage } from 'firebase/messaging';
 
-// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyA40g-cxWxQV1R0niqZfBpwJ1OlImx1ghE",
     authDomain: "live-odds-tracker.firebaseapp.com",
@@ -12,7 +11,6 @@ const firebaseConfig = {
     measurementId: "G-L9G8SVLWJB"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 
@@ -21,6 +19,7 @@ export const requestNotificationPermission = async () => {
         const permission = await Notification.requestPermission();
         if (permission === 'granted') {
             const token = await getToken(messaging, { vapidKey: 'BILIitJgxFJzZ_sMil8xtUNIClecmloK57n-zCRP-OE9pFm1RqP3ast942bW5v4vrhFxwx4KkRxaYDVx3lKMpso' });
+            console.log('FCM Token:', token);
             return token;
         } else {
             console.error('Notification permission not granted');
@@ -32,6 +31,7 @@ export const requestNotificationPermission = async () => {
     }
 };
 
+// Handle incoming messages for notifications
 onMessage(messaging, (payload) => {
     console.log('Message received. ', payload);
     // Customize notification here
@@ -46,5 +46,14 @@ onMessage(messaging, (payload) => {
     }
 });
 
-
-// In your component, call this function and send the FCM token to your backend when a user favorites a prop
+// Register the service worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('/firebase-messaging-sw.js')
+        .then((registration) => {
+            console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch((err) => {
+            console.error('Service Worker registration failed:', err);
+        });
+}
