@@ -138,41 +138,42 @@ const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
             const parts = value.split(' ');
             return parts.length > 1 ? parseFloat(parts[1]) : null;
         };
-
+    
         const filteredData = data.slice(-dataFilter);
         const timestamps = filteredData.map(item => new Date(item.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit'}));
         const draftkings = filteredData.map(item => extractOddsValue(item.draftkings));
         const fanduel = filteredData.map(item => extractOddsValue(item.fanduel));
         const mgm = filteredData.map(item => extractOddsValue(item.mgm));
         const betrivers = filteredData.map(item => extractOddsValue(item.betrivers));
-
+    
         if (historicalChart) {
             historicalChart.destroy();
         }
-
+    
         const ctx = document.getElementById('historicalChart').getContext('2d');
-
-        const themeColors = {
-            mlb: {
-                backgroundColor: '#001f3f',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                draftkings: 'rgba(255, 99, 132, 1)',
-                fanduel: 'rgba(54, 162, 235, 1)',
-                mgm: 'rgba(75, 192, 192, 1)',
-                betrivers: 'rgba(153, 102, 255, 1)',
-            },
-            wnba: {
-                backgroundColor: '#3f1f00',
-                borderColor: 'rgba(255, 69, 0, 1)',
-                draftkings: 'rgba(255, 99, 132, 1)',
-                fanduel: 'rgba(54, 162, 235, 1)',
-                mgm: 'rgba(75, 192, 192, 1)',
-                betrivers: 'rgba(153, 102, 255, 1)',
-            }
-        };
-
-        const theme = themeColors[sport] || themeColors.mlb;
+    
         if (ctx) {
+            const themeColors = {
+                mlb: {
+                    backgroundColor: '#001f3f',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    draftkings: 'rgba(255, 99, 132, 1)',
+                    fanduel: 'rgba(54, 162, 235, 1)',
+                    mgm: 'rgba(75, 192, 192, 1)',
+                    betrivers: 'rgba(153, 102, 255, 1)',
+                },
+                wnba: {
+                    backgroundColor: '#3f1f00',
+                    borderColor: 'rgba(255, 69, 0, 1)',
+                    draftkings: 'rgba(255, 99, 132, 1)',
+                    fanduel: 'rgba(54, 162, 235, 1)',
+                    mgm: 'rgba(75, 192, 192, 1)',
+                    betrivers: 'rgba(153, 102, 255, 1)',
+                }
+            };
+    
+            const theme = themeColors[sport] || themeColors.mlb;
+    
             const newChart = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -296,13 +297,13 @@ const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
                     maintainAspectRatio: false,
                 }
             });
-
+    
             setHistoricalChart(newChart);
         } else {
             console.error('Historical chart element not found');
         }
     };
-
+    
     const closeHistoricalModal = () => {
         document.getElementById('historicalModal').style.display = 'none';
     };
