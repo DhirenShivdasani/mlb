@@ -10,8 +10,8 @@ from flask import Flask, jsonify, request, session, redirect, url_for, render_te
 import re
 
 prod = False
-DATABASE_URL = os.getenv('DATABASE_URL')
-# DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
+# DATABASE_URL = os.getenv('DATABASE_URL')
+DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for sessions
