@@ -86,19 +86,15 @@ def start_websocket_server(port):
     loop.run_forever()
 
 def send_push_notification(fcm_token, title, body):
-    try:
-        message = messaging.Message(
-            notification=messaging.Notification(
-                title=title,
-                body=body,
-            ),
-            token=fcm_token,
-        )
-        response = messaging.send(message)
-        print('Successfully sent message:', response)
-    except Exception as e:
-        print(f"Failed to send notification: {str(e)}")
-
+    message = messaging.Message(
+        notification=messaging.Notification(
+            title=title,
+            body=body,
+        ),
+        token=fcm_token,
+    )
+    response = messaging.send(message)
+    print('Successfully sent message:', response)
 
 def check_for_changes_and_notify(new_data, sport):
     global previous_data
@@ -114,7 +110,6 @@ def check_for_changes_and_notify(new_data, sport):
                     old_value = old_row[column].values[0]
                     new_value = new_row[column]
                     if old_value != new_value:
-                        print(f"Change detected for {new_row['PlayerName']} {new_row['Prop']} in {column}: {old_value} -> {new_value}")
                         changes.append((new_row['PlayerName'], new_row['Prop'], column, new_value))
 
     if changes:
@@ -124,7 +119,6 @@ def check_for_changes_and_notify(new_data, sport):
             cur.execute("SELECT fcm_token FROM user_favorites WHERE player_name = %s AND prop = %s", (player_name, prop))
             tokens = cur.fetchall()
             for token in tokens:
-                print(f"Sending notification for {player_name} {prop}: {column} changed to {new_value}")
                 send_push_notification(token[0], 'Prop Update', f"{player_name} {prop} {column} odds changed to {new_value}")
         cur.close()
         conn.close()
