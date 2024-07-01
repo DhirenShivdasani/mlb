@@ -3,14 +3,14 @@ Alex Bregman,HOU,@TOR,bases,Over,(1.5) 123,(1.5) 120,,(1.5) 120
 Alex Bregman,HOU,@TOR,bases,Under,(1.5) -175,(1.5) -165,,(1.5) -160
 Alex Bregman,HOU,@TOR,runs,Over,(0.5) -121,(0.5) -105,,(0.5) -105
 Alex Bregman,HOU,@TOR,runs,Under,(0.5) -113,(0.5) -130,,(0.5) -125
-Austin Gomber,COL,MIL,strikeouts,Over,(3.5) -132,(3.5) -130,(3.5) -118,(3.5) -145
+Austin Gomber,COL,MIL,strikeouts,Over,(3.5) -132,(3.5) -130,(3.5) -120,(3.5) -145
 Austin Gomber,COL,MIL,strikeouts,Under,(3.5) 100,(3.5) 100,(3.5) -106,(3.5) 110
 Blake Perkins,MIL,@COL,bases,Over,(1.5) 135,(1.5) 120,,(1.5) 125
 Blake Perkins,MIL,@COL,bases,Under,(1.5) -195,(1.5) -165,,(1.5) -165
 Blake Perkins,MIL,@COL,runs,Over,(0.5) 102,(0.5) 110,,(0.5) 110
 Blake Perkins,MIL,@COL,runs,Under,(0.5) -139,(0.5) -150,,(0.5) -145
 Bo Bichette,TOR,HOU,bases,Over,(1.5) -104,(1.5) 110,,(1.5) 110
-Bo Bichette,TOR,HOU,bases,Under,(1.5) -136,(1.5) -145,,(1.5) -145
+Bo Bichette,TOR,HOU,bases,Under,(1.5) -136,(1.5) ,,(1.5) -145
 Bo Bichette,TOR,HOU,runs,Over,(0.5) 108,(0.5) 110,,(0.5) 115
 Bo Bichette,TOR,HOU,runs,Under,(0.5) -148,(0.5) -150,,(0.5) -150
 Brandon Nimmo,NYM,@WSH,bases,Over,(1.5) 120,(1.5) 125,,(1.5) 125
@@ -21,7 +21,7 @@ Brendan Rodgers,COL,MIL,bases,Over,(1.5) 102,(1.5) -105,,(1.5) -105
 Brendan Rodgers,COL,MIL,bases,Under,(1.5) -143,(1.5) -125,,(1.5) -125
 Brendan Rodgers,COL,MIL,runs,Over,(0.5) 117,(0.5) 115,,(0.5) 110
 Brendan Rodgers,COL,MIL,runs,Under,(0.5) -159,(0.5) -155,,(0.5) -145
-Brenton Doyle,COL,MIL,bases,Over,(1.5) 102,(1.5) -115,,(1.5) -110
+Brenton Doyle,COL,MIL,bases,Over,(1.5) 102,(1.5) -110,,(1.5) -110
 Brenton Doyle,COL,MIL,bases,Under,(1.5) -141,(1.5) -125,,(1.5) -120
 Brenton Doyle,COL,MIL,runs,Over,(0.5) -110,(0.5) -115,,(0.5) -120
 Brenton Doyle,COL,MIL,runs,Under,(0.5) -124,(0.5) -120,,(0.5) -110
@@ -29,8 +29,8 @@ Brice Turang,MIL,@COL,bases,Over,,(1.5) 125,,(1.5) 125
 Brice Turang,MIL,@COL,bases,Under,,(1.5) -170,,(1.5) -160
 Brice Turang,MIL,@COL,runs,Over,,(0.5) 110,,(0.5) 110
 Brice Turang,MIL,@COL,runs,Under,,(0.5) -145,,(0.5) -140
-Bryse Wilson,MIL,@COL,strikeouts,Over,(4.5) 135,(4.5) 125,(4.5) 134,(4.5) 125
-Bryse Wilson,MIL,@COL,strikeouts,Under,(4.5) 125,(4.5) -160,(4.5) -172,(4.5) -160
+Bryse Wilson,MIL,@COL,strikeouts,Over,(4.5) 135,(4.5) 125,(4.5) 136,(4.5) 125
+Bryse Wilson,MIL,@COL,strikeouts,Under,(4.5) 125,(4.5) -160,(4.5) -174,(4.5) -160
 CJ Abrams,WSH,NYM,bases,Over,(1.5) 130,(1.5) 150,,(1.5) 150
 CJ Abrams,WSH,NYM,bases,Under,(1.5) -182,(1.5) -205,,(1.5) -200
 CJ Abrams,WSH,NYM,runs,Over,(0.5) 102,(0.5) 105,,(0.5) 110
@@ -76,7 +76,7 @@ George Springer,TOR,HOU,runs,Under,(0.5) -200,(0.5) -195,,(0.5) -190
 Harold Ramirez,WSH,NYM,bases,Over,,(1.5) 130,,(1.5) 130
 Harold Ramirez,WSH,NYM,bases,Under,,(1.5) -175,,(1.5) -175
 Harold Ramirez,WSH,NYM,runs,Over,,(0.5) 140,,(0.5) 140
-Harold Ramirez,WSH,NYM,runs,Under,,(0.5) ,,(0.5) -185
+Harold Ramirez,WSH,NYM,runs,Under,,(0.5) -190,,(0.5) -185
 Harrison Bader,NYM,@WSH,bases,Over,,(0.5) -160,,(0.5) -160
 Harrison Bader,NYM,@WSH,bases,Under,,(0.5) 115,,(0.5) 120
 Harrison Bader,NYM,@WSH,runs,Over,,(0.5) 140,,(0.5) 140
@@ -95,8 +95,8 @@ J.D. Martinez,NYM,@WSH,bases,Over,(1.5) 123,(1.5) 130,,(1.5) 130
 J.D. Martinez,NYM,@WSH,bases,Under,(1.5) -175,(1.5) -175,,(1.5) -165
 J.D. Martinez,NYM,@WSH,runs,Over,(0.5) 120,(0.5) 115,,(0.5) 120
 J.D. Martinez,NYM,@WSH,runs,Under,(0.5) -165,(0.5) -160,,(0.5) -155
-Jackson Chourio,MIL,@COL,bases,Over,(1.5) -106,(1.5) -120,,(1.5) -125
-Jackson Chourio,MIL,@COL,bases,Under,(1.5) -132,(1.5) -110,,(1.5) -105
+Jackson Chourio,MIL,@COL,bases,Over,(1.5) -106,(1.5) -140,,(1.5) -125
+Jackson Chourio,MIL,@COL,bases,Under,(1.5) -132,(1.5) 105,,(1.5) -105
 Jackson Chourio,MIL,@COL,runs,Over,(0.5) -120,(0.5) -120,,(0.5) -115
 Jackson Chourio,MIL,@COL,runs,Under,(0.5) -113,(0.5) -115,,(0.5) -110
 Jacob Stallings,COL,MIL,bases,Over,,(1.5) 140,,(1.5) 145
@@ -164,7 +164,7 @@ Mark Vientos,NYM,@WSH,runs,Under,(0.5) -195,(0.5) -190,,(0.5) -185
 Mauricio Dubon,HOU,@TOR,bases,Over,,(1.5) 120,,(1.5) 120
 Mauricio Dubon,HOU,@TOR,bases,Under,,(1.5) -165,,(1.5) -160
 Mauricio Dubon,HOU,@TOR,runs,Over,,(0.5) 145,,(0.5) 150
-Mauricio Dubon,HOU,@TOR,runs,Under,,(0.5) -200,,(0.5) -200
+Mauricio Dubon,HOU,@TOR,runs,Under,,(0.5) ,,(0.5) -200
 Michael Toglia,COL,MIL,bases,Over,(1.5) 133,(1.5) 120,,(1.5) 120
 Michael Toglia,COL,MIL,bases,Under,(1.5) -190,(1.5) -160,,(1.5) -160
 Michael Toglia,COL,MIL,runs,Over,(0.5) 120,(0.5) 105,,(0.5) 110
