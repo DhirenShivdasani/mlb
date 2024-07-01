@@ -23,8 +23,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 
-Chart.register(zoomPlugin);
-
 const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
     const [oddsData, setOddsData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
@@ -125,6 +123,8 @@ const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
             if (!response.ok) throw new Error(`Error fetching historical data: ${response.statusText}`);
             const data = await response.json();
 
+            console.log('Fetched historical data:', data); // Log fetched data
+
             setHistoricalData(data);
             updateChart(data);
             document.getElementById('historicalModal').style.display = 'block';
@@ -135,6 +135,7 @@ const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
 
     const updateChart = (data) => {
         const extractOddsValue = (value) => {
+            if (!value) return null;
             const parts = value.split(' ');
             return parts.length > 1 ? parseFloat(parts[1]) : null;
         };
@@ -145,6 +146,13 @@ const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
         const fanduel = filteredData.map(item => extractOddsValue(item.fanduel));
         const mgm = filteredData.map(item => extractOddsValue(item.mgm));
         const betrivers = filteredData.map(item => extractOddsValue(item.betrivers));
+    
+        console.log('Filtered data:', filteredData);
+        console.log('Timestamps:', timestamps);
+        console.log('DraftKings:', draftkings);
+        console.log('FanDuel:', fanduel);
+        console.log('MGM:', mgm);
+        console.log('BetRivers:', betrivers);
     
         if (historicalChart) {
             historicalChart.destroy();
@@ -304,6 +312,7 @@ const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
         }
     };
     
+
     const closeHistoricalModal = () => {
         document.getElementById('historicalModal').style.display = 'none';
     };

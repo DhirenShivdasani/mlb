@@ -8,8 +8,8 @@ import psycopg2
 import bcrypt
 from flask import Flask, jsonify, request, session, redirect, url_for, render_template
 import re
-import firebase_admin
-from firebase_admin import credentials, messaging
+# import firebase_admin
+# from firebase_admin import credentials, messaging
 from flask_session import Session
 
 prod = False
