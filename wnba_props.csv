@@ -8,16 +8,16 @@ Alyssa Thomas,CON,@PHO,reb,Under,(8.5) 105,(9.5) -130,(9.5) -132,(8.5) 120
 Alyssa Thomas,CON,@PHO,threes,Over,(8.5) 105,(9.5) -130,(9.5) -132,(8.5) 120
 Alyssa Thomas,CON,@PHO,threes,Under,(8.5) 105,(9.5) -130,(9.5) -132,(8.5) 120
 Arike Ogunbowale,DAL,@SEA,ast,Over,(4.5) -110,(4.5) 100,(4.5) -110,(4.5) -110
-Arike Ogunbowale,DAL,@SEA,ast,Under,(4.5) -121,(4.5) ,(4.5) -120,(4.5) -120
-Arike Ogunbowale,DAL,@SEA,pts,Over,(22.5) -110,(22.5) -105,(21.5) -128,(22.5) 100
-Arike Ogunbowale,DAL,@SEA,pts,Under,(22.5) -121,(22.5) -125,(21.5) -102,(22.5) -130
+Arike Ogunbowale,DAL,@SEA,ast,Under,(4.5) -121,(4.5) -130,(4.5) -120,(4.5) -120
+Arike Ogunbowale,DAL,@SEA,pts,Over,(22.5) -110,(22.5) -105,(21.5) -128,(22.5) 105
+Arike Ogunbowale,DAL,@SEA,pts,Under,(22.5) -121,(22.5) -125,(21.5) -102,(22.5) -140
 Arike Ogunbowale,DAL,@SEA,reb,Over,(4.5) -106,(22.5) -125,(4.5) 114,(4.5) 110
 Arike Ogunbowale,DAL,@SEA,reb,Under,(4.5) -127,(22.5) -125,(4.5) -152,(4.5) -145
 Arike Ogunbowale,DAL,@SEA,threes,Over,(3.5) 135,(2.5) -170,(3.5) 142,(2.5) -175
 Arike Ogunbowale,DAL,@SEA,threes,Under,(3.5) -182,(2.5) 125,(3.5) -192,(2.5) 135
 Brionna Jones,CON,@PHO,ast,Over,(3.5) -182,(2.5) 125,(3.5) -192,(2.5) 135
 Brionna Jones,CON,@PHO,ast,Under,(3.5) -182,(2.5) 125,(3.5) -192,(2.5) 135
-Brionna Jones,CON,@PHO,pts,Over,(13.5) -110,(13.5) -110,(13.5) -110,(13.5) -110
+Brionna Jones,CON,@PHO,pts,Over,(13.5) -110,(13.5) -110,(13.5) -113,(13.5) -110
 Brionna Jones,CON,@PHO,pts,Under,(13.5) -121,(13.5) -120,(13.5) -118,(13.5) -120
 Brionna Jones,CON,@PHO,reb,Over,(5.5) -106,(5.5) -105,(5.5) -114,(5.5) -115
 Brionna Jones,CON,@PHO,reb,Under,(5.5) -127,(5.5) -125,(5.5) -114,(5.5) -115
@@ -28,13 +28,13 @@ Brittney Griner,PHO,CON,ast,Under,(5.5) -127,(5.5) -125,(5.5) -114,(5.5) -115
 Brittney Griner,PHO,CON,pts,Over,(19.5) -110,(18.5) -125,(18.5) -114,(18.5) -125
 Brittney Griner,PHO,CON,pts,Under,(19.5) -121,(18.5) -105,(18.5) -114,(18.5) -105
 Brittney Griner,PHO,CON,reb,Over,(7.5) 110,(7.5) 105,(7.5) 100,(7.5) 105
-Brittney Griner,PHO,CON,reb,Under,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -140
-Brittney Griner,PHO,CON,threes,Over,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -140
-Brittney Griner,PHO,CON,threes,Under,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -140
-DeWanna Bonner,CON,@PHO,ast,Over,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -140
-DeWanna Bonner,CON,@PHO,ast,Under,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -140
-DeWanna Bonner,CON,@PHO,pts,Over,(16.5) -115,(16.5) -125,(17.5) 100,(16.5) -115
-DeWanna Bonner,CON,@PHO,pts,Under,(16.5) -115,(16.5) -105,(17.5) -130,(16.5) -115
+Brittney Griner,PHO,CON,reb,Under,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -135
+Brittney Griner,PHO,CON,threes,Over,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -135
+Brittney Griner,PHO,CON,threes,Under,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -135
+DeWanna Bonner,CON,@PHO,ast,Over,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -135
+DeWanna Bonner,CON,@PHO,ast,Under,(7.5) -148,(7.5) -135,(7.5) -132,(7.5) -135
+DeWanna Bonner,CON,@PHO,pts,Over,(16.5) -115,(16.5) -140,(17.5) 100,(17.5) 100
+DeWanna Bonner,CON,@PHO,pts,Under,(16.5) -115,(16.5) 110,(17.5) -130,(17.5) -130
 DeWanna Bonner,CON,@PHO,reb,Over,(6.5) 100,(6.5) 100,(6.5) 100,(6.5) 100
 DeWanna Bonner,CON,@PHO,reb,Under,(6.5) -132,(6.5) -130,(6.5) -132,(6.5) -130
 DeWanna Bonner,CON,@PHO,threes,Over,(1.5) -148,(1.5) -140,(1.5) -114,(1.5) -115
@@ -42,21 +42,21 @@ DeWanna Bonner,CON,@PHO,threes,Under,(1.5) 110,(1.5) 100,(1.5) -114,(1.5) -115
 DiJonai Carrington,CON,@PHO,ast,Over,(1.5) 110,(1.5) 100,(1.5) -114,(1.5) -115
 DiJonai Carrington,CON,@PHO,ast,Under,(1.5) 110,(1.5) 100,(1.5) -114,(1.5) -115
 DiJonai Carrington,CON,@PHO,pts,Over,(13.5) 105,(13.5) 110,(13.5) 102,(13.5) -105
-DiJonai Carrington,CON,@PHO,pts,Under,(13.5) -139,(13.5) -130,(13.5) -132,(13.5) -125
-DiJonai Carrington,CON,@PHO,reb,Over,(4.5) -143,(13.5) -130,(5.5) 126,(5.5) 130
-DiJonai Carrington,CON,@PHO,reb,Under,(4.5) 108,(13.5) -130,(5.5) -168,(5.5) -165
-DiJonai Carrington,CON,@PHO,threes,Over,(4.5) 108,(13.5) -130,(5.5) -168,(5.5) -165
-DiJonai Carrington,CON,@PHO,threes,Under,(4.5) 108,(13.5) -130,(5.5) -168,(5.5) -165
-Diana Taurasi,PHO,CON,ast,Over,(3.5) -155,(13.5) -130,,
-Diana Taurasi,PHO,CON,ast,Under,(3.5) 115,(13.5) -130,,
-Diana Taurasi,PHO,CON,pts,Over,(14.5) -115,(14.5) -105,,
-Diana Taurasi,PHO,CON,pts,Under,(14.5) -115,(14.5) -125,,
-Diana Taurasi,PHO,CON,reb,Over,(4.5) 125,(14.5) -125,,
-Diana Taurasi,PHO,CON,reb,Under,(4.5) -167,(14.5) -125,,
-Diana Taurasi,PHO,CON,threes,Over,(2.5) 110,(2.5) 110,,
-Diana Taurasi,PHO,CON,threes,Under,(2.5) -148,(2.5) -150,,
-Ezi Magbegor,SEA,DAL,ast,Over,(2.5) -127,(2.5) -150,,
-Ezi Magbegor,SEA,DAL,ast,Under,(2.5) -106,(2.5) -150,,
+DiJonai Carrington,CON,@PHO,pts,Under,(13.5) -139,(13.5) -140,(13.5) -132,(13.5) -125
+DiJonai Carrington,CON,@PHO,reb,Over,(4.5) -143,(13.5) -140,(5.5) 126,(5.5) 130
+DiJonai Carrington,CON,@PHO,reb,Under,(4.5) 108,(13.5) -140,(5.5) -168,(5.5) -165
+DiJonai Carrington,CON,@PHO,threes,Over,(4.5) 108,(13.5) -140,(5.5) -168,(5.5) -165
+DiJonai Carrington,CON,@PHO,threes,Under,(4.5) 108,(13.5) -140,(5.5) -168,(5.5) -165
+Diana Taurasi,PHO,CON,ast,Over,(3.5) -155,,,
+Diana Taurasi,PHO,CON,ast,Under,(3.5) 115,,,
+Diana Taurasi,PHO,CON,pts,Over,(14.5) -115,,,
+Diana Taurasi,PHO,CON,pts,Under,(14.5) -115,,,
+Diana Taurasi,PHO,CON,reb,Over,(4.5) 125,,,
+Diana Taurasi,PHO,CON,reb,Under,(4.5) -167,,,
+Diana Taurasi,PHO,CON,threes,Over,(2.5) 110,,,
+Diana Taurasi,PHO,CON,threes,Under,(2.5) -148,,,
+Ezi Magbegor,SEA,DAL,ast,Over,(2.5) -127,,,
+Ezi Magbegor,SEA,DAL,ast,Under,(2.5) -106,,,
 Ezi Magbegor,SEA,DAL,pts,Over,(13.5) -132,(13.5) -130,(13.5) -114,(13.5) -130
 Ezi Magbegor,SEA,DAL,pts,Under,(13.5) 100,(13.5) 100,(13.5) -114,(13.5) 100
 Ezi Magbegor,SEA,DAL,reb,Over,(8.5) 110,(8.5) 110,(8.5) 116,(8.5) 110
@@ -92,11 +92,11 @@ Natasha Howard,DAL,@SEA,ast,Under,(3.5) 100,(10.5) 100,(3.5) 108,(3.5) 110
 Natasha Howard,DAL,@SEA,pts,Over,(14.5) -125,(14.5) -125,(14.5) -110,(14.5) -110
 Natasha Howard,DAL,@SEA,pts,Under,(14.5) -107,(14.5) -105,(14.5) -118,(14.5) -120
 Natasha Howard,DAL,@SEA,reb,Over,(6.5) -155,(6.5) -154,(6.5) -152,(6.5) -155
-Natasha Howard,DAL,@SEA,reb,Under,(6.5) 115,(6.5) 114,(6.5) 114,(6.5) 120
-Natasha Howard,DAL,@SEA,threes,Over,(6.5) 115,(6.5) 114,(6.5) 114,(6.5) 120
-Natasha Howard,DAL,@SEA,threes,Under,(6.5) 115,(6.5) 114,(6.5) 114,(6.5) 120
-Nneka Ogwumike,SEA,DAL,ast,Over,(6.5) 115,(6.5) 114,(6.5) 114,(6.5) 120
-Nneka Ogwumike,SEA,DAL,ast,Under,(6.5) 115,(6.5) 114,(6.5) 114,(6.5) 120
+Natasha Howard,DAL,@SEA,reb,Under,(6.5) 115,(6.5) 120,(6.5) 114,(6.5) 120
+Natasha Howard,DAL,@SEA,threes,Over,(6.5) 115,(6.5) 120,(6.5) 114,(6.5) 120
+Natasha Howard,DAL,@SEA,threes,Under,(6.5) 115,(6.5) 120,(6.5) 114,(6.5) 120
+Nneka Ogwumike,SEA,DAL,ast,Over,(6.5) 115,(6.5) 120,(6.5) 114,(6.5) 120
+Nneka Ogwumike,SEA,DAL,ast,Under,(6.5) 115,(6.5) 120,(6.5) 114,(6.5) 120
 Nneka Ogwumike,SEA,DAL,pts,Over,(16.5) -125,(16.5) -130,(16.5) -125,(16.5) -130
 Nneka Ogwumike,SEA,DAL,pts,Under,(16.5) -107,(16.5) 100,(16.5) -104,(16.5) 100
 Nneka Ogwumike,SEA,DAL,reb,Over,(7.5) 115,(7.5) 120,(7.5) 116,(7.5) 115
@@ -113,8 +113,8 @@ Skylar Diggins-Smith,SEA,DAL,threes,Over,(2.5) 120,(14.5) -120,(14.5) -115,(14.5
 Skylar Diggins-Smith,SEA,DAL,threes,Under,(2.5) 120,(14.5) -120,(14.5) -115,(14.5) -115
 Teaira McCowan,DAL,@SEA,ast,Over,(2.5) 120,(14.5) -120,(14.5) -115,(14.5) -115
 Teaira McCowan,DAL,@SEA,ast,Under,(2.5) 120,(14.5) -120,(14.5) -115,(14.5) -115
-Teaira McCowan,DAL,@SEA,pts,Over,(10.5) -125,(10.5) -125,(10.5) -130,(10.5) -115
-Teaira McCowan,DAL,@SEA,pts,Under,(10.5) -106,(10.5) -105,(10.5) 100,(10.5) -115
+Teaira McCowan,DAL,@SEA,pts,Over,(10.5) -125,(10.5) -125,(10.5) -130,(10.5) -135
+Teaira McCowan,DAL,@SEA,pts,Under,(10.5) -106,(10.5) -105,(10.5) 100,(10.5) 105
 Teaira McCowan,DAL,@SEA,reb,Over,(7.5) 115,(6.5) -160,(6.5) -158,(6.5) -155
 Teaira McCowan,DAL,@SEA,reb,Under,(7.5) -155,(6.5) 124,(6.5) 118,(6.5) 120
 Teaira McCowan,DAL,@SEA,threes,Over,(7.5) -155,(6.5) 124,(6.5) 118,(6.5) 120
