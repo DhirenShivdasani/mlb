@@ -10,7 +10,7 @@ from flask import Flask, jsonify, request, session, redirect, url_for, render_te
 import re
 # import firebase_admin
 # from firebase_admin import credentials, messaging
-from flask_session import Session
+# from flask_session import Session
 
 prod = False
 DATABASE_URL = os.getenv('DATABASE_URL')
@@ -22,7 +22,7 @@ app.secret_key = os.urandom(24)  # Secret key for sessions
 CORS(app)
      
 app.config['SESSION_TYPE'] = 'filesystem'
-Session(app)
+# Session(app)
 
 
 connected_clients = set()
