@@ -3,10 +3,27 @@ import Chart from 'chart.js/auto';
 import './OddsPage.css';
 import StatCard from '../components/StatCard';
 import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';  // Ensure this is imported
+import zoomPlugin from 'chartjs-plugin-zoom';
+import { getMessaging, getToken, onMessage } from 'firebase/messaging';
+import { initializeApp } from 'firebase/app';
 
+Chart.register(zoomPlugin);
 
-const OddsPage = ({ updateLastUpdated, sport }) => {
+// Initialize Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyA40g-cxWxQV1R0niqZfBpwJ1OlImx1ghE",
+    authDomain: "live-odds-tracker.firebaseapp.com",
+    projectId: "live-odds-tracker",
+    storageBucket: "live-odds-tracker.appspot.com",
+    messagingSenderId: "78785845250",
+    appId: "1:78785845250:web:9e756ade4fd465f494af1b",
+    measurementId: "G-L9G8SVLWJB"
+};
+
+const app = initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
+
+const OddsPage = ({ updateLastUpdated, sport, favorites, setFavorites }) => {
     const [oddsData, setOddsData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [historicalData, setHistoricalData] = useState([]);
@@ -19,7 +36,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     });
     const [dataFilter, setDataFilter] = useState(10);
     const [currentPage, setCurrentPage] = useState(1);
-    const [sidebarOpen, setSidebarOpen] = useState(true); // Sidebar open by default for testing
+    const [sidebarOpen, setSidebarOpen] = useState(true);
     const itemsPerPage = 20;
 
     const originalOddsData = useRef([]);
@@ -30,16 +47,21 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     }, [sport]);
 
     const fetchOdds = async () => {
-        const response = await fetch(`/merged_data?sport=${sport}`);
-        const data = await response.json();
-        setOddsData(data);
-        setFilteredData(data); // Set filteredData to initial data
-        originalOddsData.current = data;
-        updateLastUpdated(formatDate(new Date()));
+        try {
+            const response = await fetch(`/merged_data?sport=${sport}`);
+            const data = await response.json();
+            console.log('Fetched odds data:', data); // Log the fetched data
+            setOddsData(data);
+            setFilteredData(data);
+            originalOddsData.current = data;
+            updateLastUpdated(formatDate(new Date()));
+        } catch (error) {
+            console.error('Error fetching odds data:', error);
+        }
     };
 
     const applyFilters = (filters) => {
-        let filtered = [...originalOddsData.current];
+        let filtered = Array.isArray(originalOddsData.current) ? [...originalOddsData.current] : [];
 
         if (filters.playerName) {
             filtered = filtered.filter(odds => odds.PlayerName.toLowerCase().includes(filters.playerName.toLowerCase()));
@@ -93,14 +115,16 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         const encodedPlayerName = encodeURIComponent(playerName);
         const encodedProp = encodeURIComponent(prop);
         const encodedOverUnder = encodeURIComponent(overUnder);
-    
+
         const url = `/get_historical_data?player_name=${encodedPlayerName}&prop=${encodedProp}&over_under=${encodedOverUnder}&sport=${sport}`;
-    
+
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error(`Error fetching historical data: ${response.statusText}`);
             const data = await response.json();
-    
+
+            console.log('Fetched historical data:', data); // Log fetched data
+
             setHistoricalData(data);
             updateChart(data);
             document.getElementById('historicalModal').style.display = 'block';
@@ -111,6 +135,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
 
     const updateChart = (data) => {
         const extractOddsValue = (value) => {
+            if (!value) return null;
             const parts = value.split(' ');
             return parts.length > 1 ? parseFloat(parts[1]) : null;
         };
@@ -122,12 +147,41 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
         const mgm = filteredData.map(item => extractOddsValue(item.mgm));
         const betrivers = filteredData.map(item => extractOddsValue(item.betrivers));
     
+        console.log('Filtered data:', filteredData);
+        console.log('Timestamps:', timestamps);
+        console.log('DraftKings:', draftkings);
+        console.log('FanDuel:', fanduel);
+        console.log('MGM:', mgm);
+        console.log('BetRivers:', betrivers);
+    
         if (historicalChart) {
             historicalChart.destroy();
         }
     
         const ctx = document.getElementById('historicalChart').getContext('2d');
+    
         if (ctx) {
+            const themeColors = {
+                mlb: {
+                    backgroundColor: '#001f3f',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    draftkings: 'rgba(255, 99, 132, 1)',
+                    fanduel: 'rgba(54, 162, 235, 1)',
+                    mgm: 'rgba(75, 192, 192, 1)',
+                    betrivers: 'rgba(153, 102, 255, 1)',
+                },
+                wnba: {
+                    backgroundColor: '#3f1f00',
+                    borderColor: 'rgba(255, 69, 0, 1)',
+                    draftkings: 'rgba(255, 99, 132, 1)',
+                    fanduel: 'rgba(54, 162, 235, 1)',
+                    mgm: 'rgba(75, 192, 192, 1)',
+                    betrivers: 'rgba(153, 102, 255, 1)',
+                }
+            };
+    
+            const theme = themeColors[sport] || themeColors.mlb;
+    
             const newChart = new Chart(ctx, {
                 type: 'line',
                 data: {
@@ -136,41 +190,41 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                         {
                             label: 'DraftKings',
                             data: draftkings,
-                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderColor: theme.draftkings,
                             backgroundColor: 'rgba(255, 99, 132, 0.2)',
                             borderWidth: 2,
                             pointRadius: 5,
-                            fill: false,
+                            fill: true,
                             tension: 0.4,
                         },
                         {
                             label: 'FanDuel',
                             data: fanduel,
-                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderColor: theme.fanduel,
                             backgroundColor: 'rgba(54, 162, 235, 0.2)',
                             borderWidth: 2,
                             pointRadius: 5,
-                            fill: false,
+                            fill: true,
                             tension: 0.4,
                         },
                         {
                             label: 'MGM',
                             data: mgm,
-                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderColor: theme.mgm,
                             backgroundColor: 'rgba(75, 192, 192, 0.2)',
                             borderWidth: 2,
                             pointRadius: 5,
-                            fill: false,
+                            fill: true,
                             tension: 0.4,
                         },
                         {
                             label: 'BetRivers',
                             data: betrivers,
-                            borderColor: 'rgba(153, 102, 255, 1)',
+                            borderColor: theme.betrivers,
                             backgroundColor: 'rgba(153, 102, 255, 0.2)',
                             borderWidth: 2,
                             pointRadius: 5,
-                            fill: false,
+                            fill: true,
                             tension: 0.4,
                         }
                     ]
@@ -180,11 +234,24 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                         legend: {
                             display: true,
                             position: 'top',
+                            labels: {
+                                color: '#fff', // Set legend text color
+                                font: {
+                                    size: 14,
+                                },
+                            },
                         },
                         tooltip: {
-                            mode: 'index',
-                            intersect: false,
-                        }
+                            backgroundColor: 'rgba(0,0,0,0.8)', // Set tooltip background color
+                            titleColor: '#fff', // Set tooltip title color
+                            bodyColor: '#fff', // Set tooltip body color
+                        },
+                        zoom: {
+                            pan: {
+                                enabled: true,
+                                mode: 'xy',
+                            },
+                        },
                     },
                     scales: {
                         x: {
@@ -192,7 +259,7 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                             title: {
                                 display: true,
                                 text: 'Time',
-                                color: '#191',
+                                color: '#fff', // Set x-axis title color
                                 font: {
                                     family: 'Arial',
                                     size: 16,
@@ -202,18 +269,22 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                                 padding: { top: 20, left: 0, right: 0, bottom: 0 }
                             },
                             ticks: {
+                                color: '#fff', // Set x-axis tick color
                                 maxRotation: 45,
                                 minRotation: 45,
                                 autoSkip: true,
                                 maxTicksLimit: 10,
-                            }
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.2)', // Set x-axis grid line color
+                            },
                         },
                         y: {
                             display: true,
                             title: {
                                 display: true,
                                 text: 'Odds',
-                                color: '#191',
+                                color: '#fff', // Set y-axis title color
                                 font: {
                                     family: 'Arial',
                                     size: 16,
@@ -221,7 +292,13 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                                     lineHeight: 1.2,
                                 },
                                 padding: { top: 30, left: 0, right: 0, bottom: 0 }
-                            }
+                            },
+                            ticks: {
+                                color: '#fff', // Set y-axis tick color
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.2)', // Set y-axis grid line color
+                            },
                         }
                     },
                     responsive: true,
@@ -263,12 +340,22 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     }, [dataFilter]);
 
     const getPaginatedData = () => {
+        if (!Array.isArray(filteredData)) {
+            console.error('filteredData is not an array:', filteredData);
+            return [];
+        }
+
         const startIndex = (currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         return filteredData.slice(startIndex, endIndex);
     };
 
-    const totalPages = useMemo(() => Math.ceil(filteredData.length / itemsPerPage), [filteredData.length]);
+    const totalPages = useMemo(() => {
+        if (!Array.isArray(filteredData)) {
+            return 1;
+        }
+        return Math.ceil(filteredData.length / itemsPerPage);
+    }, [filteredData.length]);
 
     const handlePageChange = (newPage) => {
         if (newPage >= 1 && newPage <= totalPages) {
@@ -279,6 +366,20 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
     };
+
+    // Handle incoming messages for notifications
+    useEffect(() => {
+        onMessage(messaging, (payload) => {
+            console.log('Message received: ', payload);
+            // Show notification or handle it accordingly
+            if (Notification.permission === 'granted') {
+                new Notification(payload.notification.title, {
+                    body: payload.notification.body,
+                    icon: payload.notification.icon,
+                });
+            }
+        });
+    }, []);
 
     return (
         <div className="odds-page-container">
@@ -293,15 +394,20 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
                 <button onClick={() => setSidebarOpen(!sidebarOpen)} className="toggle-button">
                 </button>
                 <div id="notification" className="bg-yellow-300 text-gray-800 p-2 text-center">New data available. Please refresh the page.</div>
-                <div id="odds-container">
-                    {getPaginatedData().map((odds, index) => (
-                        <StatCard 
-                            key={index} 
-                            odds={odds} 
-                            showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
-                            sport={sport} 
-                        />
-                    ))}
+                <div className="scrollable-container">
+                    <div id="odds-container">
+                        {getPaginatedData().map((odds, index) => (
+                            <StatCard 
+                                key={index} 
+                                odds={odds} 
+                                showHistoricalData={() => showHistoricalData(odds.PlayerName, odds.Prop, odds.Over_Under)} 
+                                sport={sport} 
+                                imageUrl={odds.ImageURL}
+                                favorites={favorites}
+                                setFavorites={setFavorites}
+                            />
+                        ))}
+                    </div>
                 </div>
                 <div className="pagination-controls flex justify-center gap-4 mt-4">
                     <button
@@ -334,7 +440,6 @@ const OddsPage = ({ updateLastUpdated, sport }) => {
             </div>
         </div>
     );
-    
 };
 
 export default OddsPage;

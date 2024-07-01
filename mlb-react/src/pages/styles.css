@@ -1,11 +1,18 @@
-/* Container for the flip animation */
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Flip Card Styles */
 .flip-card {
   width: 100%;
   height: 100%;
   perspective: 1000px;
 }
 
-/* Inner container */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -14,12 +21,10 @@
   transform-style: preserve-3d;
 }
 
-/* Flip the card when it has the flip class */
 .flip-card.flip .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-/* Front and back faces of the card */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -32,7 +37,6 @@
   flex-direction: column;
 }
 
-/* Ensure the card content is centered */
 .flip-card-front .card-content, .flip-card-back .card-content {
   width: 100%;
   max-width: 400px;
@@ -44,11 +48,10 @@
 
 .flip-card-back {
   background-color: #fff;
-  color: white;
   transform: rotateY(180deg);
 }
 
-.flip-card-front{
+.flip-card-front {
   color: white;
 }
 
@@ -63,7 +66,7 @@
   0% {
     background-position: 0% 50%;
   }
-   50% {
+  50% {
     background-position: 100% 50%;
   }
   100% {
@@ -109,6 +112,7 @@
   border-bottom: 2px solid #5264ae;
 }
 
+/* Input Fields */
 .input {
   display: block;
   width: 100%;
@@ -127,6 +131,7 @@
   padding-left: 2.5rem;
 }
 
+/* Buttons */
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -179,6 +184,7 @@
   background-color: #2d4373;
 }
 
+/* Loading Spinner */
 .loading {
   display: inline-block;
   width: 1rem;
@@ -192,5 +198,88 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Carousel Styles */
+.carousel .carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .carousel-item .card {
+  max-width: 80%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .carousel-item .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.carousel .carousel-item .card-body {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: left;
+}
+
+.carousel .card-title {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel .card-body p {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel .card figure {
+  margin: 0;
+}
+
+.carousel .card img {
+  object-fit: cover;
+  height: 96px;
+  width: 100%;
+}
+
+.carousel .btn-circle {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.carousel .btn-circle:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-section {
+  width: 75%;
+}
+
+.right-section {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: #f3f4f6;
+}
+
+@media (min-width: 1024px) {
+  .right-section {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-section, .right-section {
+    width: 100%;
   }
 }

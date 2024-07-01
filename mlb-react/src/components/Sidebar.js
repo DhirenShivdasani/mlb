@@ -33,9 +33,10 @@ const Sidebar = ({ filters, handleFilterChange, sport }) => {
           <select
             id="prop-type"
             name="propType"
-            className="select select-bordered w-full max-w-xs"
+            className="custom-select"
             onChange={handleFilterChange}
             value={filters.propType}
+            
           >
             {sport === 'mlb' ? (
               <>
@@ -60,9 +61,9 @@ const Sidebar = ({ filters, handleFilterChange, sport }) => {
           <select
             id="sort-by"
             name="sortBy"
-            className="select select-bordered w-full max-w-xs"
             onChange={handleFilterChange}
             value={filters.sortBy}
+            className="custom-select"
           >
             <option value="default">Default</option>
             <option value="impliedProbAsc">Implied Prob % (Low to High)</option>

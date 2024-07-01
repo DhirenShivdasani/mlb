@@ -1,0 +1,42 @@
+/* Navbar Component Styles */
+
+.navbar-container {
+    width: 100%;
+}
+
+.navbar {
+    background-color: var(--navbar-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ccc;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+/* Styles for the active link */
+.navbar a.active {
+    color: var(--active-link-color);
+}
+
+.navbar .mlb-link.active {
+    background-color: var(--mlb-active-bg-color);
+    color: var(--mlb-active-text-color);
+}
+
+.navbar .wnba-link.active {
+    background-color: var(--wnba-active-bg-color);
+    color: var(--wnba-active-text-color);
+}
+
+.last-updated {
+    font-size: 0.875rem;
+    margin-left: auto;
+    padding: 10px 0;
+}

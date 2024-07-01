@@ -74,7 +74,7 @@ def push_to_github():
         print(f"Current directory: {os.getcwd()}")
 
         # Print content before download
-        print("Content of merged_data.csv before download:")
+        print("Content of merged_wnba.csv before download:")
         if os.path.exists('merged_wnba.csv'):
             with open('merged_wnba.csv', 'r') as file:
                 print(file.read())
@@ -96,7 +96,7 @@ def push_to_github():
         subprocess.check_call(['git', 'add', 'merged_wnba.csv'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
         # Print content after download
-        print("Content of merged_mlb.csv after download:")
+        print("Content of merged_wnba.csv after download:")
         with open('merged_wnba.csv', 'r') as file:
             print(file.read())
 
@@ -135,17 +135,25 @@ def implied_probability(odds):
         return np.nan
 
 def calculate_average_implied_probability(df):
+    # List of sportsbooks
+    sportsbooks = ['betrivers', 'draftkings', 'fanduel', 'mgm']
+    
     # Calculate the implied probability for each sportsbook's odds
-    for sportsbook in ['betrivers', 'draftkings', 'fanduel', 'mgm']:
-        df[f'{sportsbook}_implied_prob'] = df[sportsbook].apply(
-            lambda x: implied_probability(x.split(' ')[1]) if ' ' in x and x.split(' ')[1] else np.nan
-        )
+    for sportsbook in sportsbooks:
+        if sportsbook in df.columns:
+            df[f'{sportsbook}_implied_prob'] = df[sportsbook].apply(
+                lambda x: implied_probability(x.split(' ')[1]) if ' ' in x and x.split(' ')[1] else np.nan
+            )
+        else:
+            df[f'{sportsbook}_implied_prob'] = np.nan
     
     # Calculate the average implied probability for each row
-    df['Implied_Prob'] = df[['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob']].mean(axis=1) * 100
-    df['Implied_Prob'] =df['Implied_Prob'].round(2).astype(str) + '%'
+    implied_prob_columns = [f'{sb}_implied_prob' for sb in sportsbooks if f'{sb}_implied_prob' in df.columns]
+    df['Implied_Prob'] = df[implied_prob_columns].mean(axis=1) * 100
+    df['Implied_Prob'] = df['Implied_Prob'].round(2).astype(str) + '%'
+    
     # Clean up the intermediate columns
-    df.drop(columns=['betrivers_implied_prob', 'draftkings_implied_prob', 'fanduel_implied_prob', 'mgm_implied_prob'], inplace=True)
+    df.drop(columns=implied_prob_columns, inplace=True)
     
     return df
 
@@ -159,12 +167,17 @@ def save_to_postgres(df):
         else:
             implied_prob = float(implied_prob.strip('%'))
 
-        cur.execute("""
-            INSERT INTO wnba (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-        """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], row['draftkings'], row['fanduel'], row['mgm'], row['betrivers'], row['Value'], implied_prob))
-    conn.commit()
+        # Safely get each column, return None if it does not exist
+        draftkings = row.get('draftkings', None)
+        fanduel = row.get('fanduel', None)
+        mgm = row.get('mgm', None)
+        betrivers = row.get('betrivers', None)
 
+        cur.execute("""
+            INSERT INTO wnba (timestamp, player_name, team, opponent, prop, over_under, draftkings, fanduel, mgm, betrivers, value, implied_prob, image_url)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """, (timestamp, row['PlayerName'], row['team'], row['opp'], row['Prop'], row['Over_Under'], draftkings, fanduel, mgm, betrivers, row['Value'], implied_prob, row['ImageURL']))
+    conn.commit()
 
 # Load the CSV files
 betting_odds_data = pd.read_csv('wnba_props.csv')
