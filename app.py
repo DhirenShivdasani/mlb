@@ -11,27 +11,24 @@ import re
 import firebase_admin
 from firebase_admin import credentials, messaging
 from flask_session import Session
-from twilio.rest import Client
-
 
 prod = False
 DATABASE_URL = os.getenv('DATABASE_URL')
+# DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
 cred = credentials.Certificate(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
 firebase_admin.initialize_app(cred)
 
-account_sid = os.getenv('TWILIO_ACCOUNT_SID')
-auth_token = os.getenv('TWILIO_AUTH_TOKEN')
-twilio_phone_number = os.getenv('TWILIO_PHONE_NUMBER')
-client = Client(account_sid, auth_token)
-
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for sessions
-CORS(app, supports_credentials=True)
+CORS(app,supports_credentials=True)
+     
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
 
+
 connected_clients = set()
 previous_data = {}  # Store previous data in memory
+
 
 def get_db_connection():
     try:
@@ -49,8 +46,7 @@ def init_db():
         CREATE TABLE IF NOT EXISTS users (
             id SERIAL PRIMARY KEY,
             email VARCHAR(255) UNIQUE NOT NULL,
-            password TEXT NOT NULL,
-            phone_number VARCHAR(20)
+            password TEXT NOT NULL
         )
     ''')
     conn.commit()
@@ -62,7 +58,10 @@ init_db()
 
 def is_valid_email(email):
     regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w+$'
-    return bool(re.search(regex, email))
+    if re.search(regex, email):
+        return True
+    else:
+        return False
 
 async def notify_clients():
     if connected_clients:
@@ -100,21 +99,11 @@ def send_push_notification(fcm_token, title, body):
     except Exception as e:
         print(f"Failed to send notification: {str(e)}")
 
-def send_sms(to_number, message):
-    try:
-        message = client.messages.create(
-            body=message,
-            from_=twilio_phone_number,
-            to=to_number
-        )
-        print(f"Message sent: {message.sid}")
-    except Exception as e:
-        print(f"Error sending message: {e}")
 
 def check_for_changes_and_notify(new_data, sport):
     global previous_data
     changes = []
-
+    
     old_data = previous_data.get(sport)
     if old_data is not None:
         old_df = pd.DataFrame(old_data)
@@ -132,12 +121,11 @@ def check_for_changes_and_notify(new_data, sport):
         conn = get_db_connection()
         cur = conn.cursor()
         for player_name, prop, column, new_value in changes:
-            cur.execute("SELECT phone_number FROM user_favorites JOIN users ON user_favorites.user_id = users.id WHERE player_name = %s AND prop = %s", (player_name, prop))
+            cur.execute("SELECT fcm_token FROM user_favorites WHERE player_name = %s AND prop = %s", (player_name, prop))
             tokens = cur.fetchall()
             for token in tokens:
-                phone_number = token[0]
-                message = f"Update: {player_name}'s {prop} {column} changed to {new_value}"
-                send_sms(phone_number, message)
+                print(f"Sending notification for {player_name} {prop}: {column} changed to {new_value}")
+                send_push_notification(token[0], 'Prop Update', f"{player_name} {prop} {column} odds changed to {new_value}")
         cur.close()
         conn.close()
 
@@ -189,22 +177,14 @@ def favorite_prop():
 
     data = request.json
     user_id = session['user_id']
-    fcm_token = data.get('fcm_token')
+    fcm_token = data['fcm_token']
     sport = data['sport']
     player_name = data['player_name']
     prop = data['prop']
     over_under = data['over_under']
-    phone_number = data['phone_number']
 
-    # Update user profile with phone number if not already stored
     conn = get_db_connection()
     cur = conn.cursor()
-    cur.execute('SELECT phone_number FROM users WHERE id = %s', (user_id,))
-    result = cur.fetchone()
-    if result and not result[0]:
-        cur.execute('UPDATE users SET phone_number = %s WHERE id = %s', (phone_number, user_id))
-    conn.commit()
-
     try:
         cur.execute('''
             INSERT INTO user_favorites (user_id, fcm_token, sport, player_name, prop, over_under)
@@ -218,7 +198,6 @@ def favorite_prop():
     finally:
         cur.close()
         conn.close()
-
 
 @app.route('/remove_favorite_prop', methods=['POST'])
 def remove_favorite_prop():
