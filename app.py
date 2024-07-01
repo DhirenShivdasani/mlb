@@ -19,7 +19,7 @@ DATABASE_URL = os.getenv('DATABASE_URL')
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for sessions
-CORS(app,supports_credentials=True)
+CORS(app)
      
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
