@@ -294,7 +294,6 @@ def register():
         finally:
             cur.close()
             conn.close()
-    return render_template('register.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -323,7 +322,6 @@ def login():
         finally:
             cur.close()
             conn.close()
-    return render_template('login.html')
 
 @app.route('/logout', methods=['POST'])
 def logout():
