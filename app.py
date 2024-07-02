@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import psycopg2
 import bcrypt
-from flask import Flask, jsonify, request, session, redirect, url_for, render_template, Response
+from flask import Flask, jsonify, request, session, redirect,send_from_directory, url_for, render_template, Response
 import re
 import queue
 import threading
@@ -268,65 +268,69 @@ async def send_notification_to_user(user_id, message):
         await client.send(message_json)
 
 
-@app.route('/register', methods=['GET', 'POST'])
+@app.route('/register', methods=['POST'])
 def register():
-    if request.method == 'POST':
-        data = request.json
-        email = data['email']
-        password = data['password']
-        
-        if not is_valid_email(email):
-            return jsonify({"status": "error", "message": "Email is invalid"}), 400
+    data = request.json
+    email = data['email']
+    password = data['password']
+    
+    if not is_valid_email(email):
+        return jsonify({"status": "error", "message": "Email is invalid"}), 400
 
-        hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
-        conn = get_db_connection()
-        cur = conn.cursor()
-        try:
-            cur.execute('''
-                INSERT INTO users (email, password)
-                VALUES (%s, %s)
-            ''', (email, hashed_password))
-            conn.commit()
-            return jsonify({"status": "success"}), 201
-        except psycopg2.IntegrityError:
-            conn.rollback()
-            return jsonify({"status": "error", "message": "Email already exists"}), 400
-        finally:
-            cur.close()
-            conn.close()
+    hashed_password = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
+    conn = get_db_connection()
+    cur = conn.cursor()
+    try:
+        cur.execute('''
+            INSERT INTO users (email, password)
+            VALUES (%s, %s)
+        ''', (email, hashed_password))
+        conn.commit()
+        return jsonify({"status": "success"}), 201
+    except psycopg2.IntegrityError:
+        conn.rollback()
+        return jsonify({"status": "error", "message": "Email already exists"}), 400
+    finally:
+        cur.close()
+        conn.close()
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST'])
 def login():
-    if request.method == 'POST':
-        data = request.json
-        email = data['email']
-        password = data['password']
-        
-        if not is_valid_email(email):
-            return jsonify({"status": "error", "message": "Email is invalid"}), 400
+    data = request.json
+    email = data['email']
+    password = data['password']
+    
+    if not is_valid_email(email):
+        return jsonify({"status": "error", "message": "Email is invalid"}), 400
 
-        conn = get_db_connection()
-        cur = conn.cursor()
-        try:
-            cur.execute('''
-                SELECT id, password FROM users WHERE email = %s
-            ''', (email,))
-            user = cur.fetchone()
-            if user and bcrypt.checkpw(password.encode('utf-8'), user[1].encode('utf-8')):
-                session['user_id'] = user[0]
-                return jsonify({"status": "success"}), 200
-            return jsonify({"status": "error", "message": "Invalid credentials"}), 401
-        except psycopg2.Error as e:
-            conn.rollback()
-            return jsonify({"status": "error", "message": str(e)}), 500
-        finally:
-            cur.close()
-            conn.close()
+    conn = get_db_connection()
+    cur = conn.cursor()
+    try:
+        cur.execute('''
+            SELECT id, password FROM users WHERE email = %s
+        ''', (email,))
+        user = cur.fetchone()
+        if user and bcrypt.checkpw(password.encode('utf-8'), user[1].encode('utf-8')):
+            session['user_id'] = user[0]
+            return jsonify({"status": "success"}), 200
+        return jsonify({"status": "error", "message": "Invalid credentials"}), 401
+    except psycopg2.Error as e:
+        conn.rollback()
+        return jsonify({"status": "error", "message": str(e)}), 500
+    finally:
+        cur.close()
+        conn.close()
 
 @app.route('/logout', methods=['POST'])
 def logout():
     session.pop('user_id', None)
     return jsonify({"status": "success"}), 200
+
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    return render_template('index.html')
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
