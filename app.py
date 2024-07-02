@@ -1,33 +1,25 @@
 from flask_cors import CORS
-import asyncio
-import websockets
-import threading
 import pandas as pd
 import os
 import psycopg2
 import bcrypt
-from flask import Flask, jsonify, request, session, redirect, url_for, render_template
+from flask import Flask, jsonify, request, session, redirect, url_for, render_template, Response
 import re
-# import firebase_admin
-# from firebase_admin import credentials, messaging
-# from flask_session import Session
-
+import queue
+import threading
+import asyncio
+import json
 prod = False
 DATABASE_URL = os.getenv('DATABASE_URL')
-# DATABASE_URL ='postgres://u6aoo300n98jv9:p5b0f8d8acf4792b0bfd49cb4f620561db87f220ced59f5ad9d729ddda6cbfc97@cd5gks8n4kb20g.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/doo2eame5lshp'
-# cred = credentials.Certificate(os.getenv('GOOGLE_APPLICATION_CREDENTIALS'))
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for sessions
 CORS(app)
-     
-app.config['SESSION_TYPE'] = 'filesystem'
-# Session(app)
 
+app.config['SESSION_TYPE'] = 'filesystem'
 
 connected_clients = set()
 previous_data = {}  # Store previous data in memory
-
 
 def get_db_connection():
     try:
@@ -62,67 +54,32 @@ def is_valid_email(email):
     else:
         return False
 
-async def notify_clients():
+@app.route('/notify_new_data', methods=['POST'])
+def notify_new_data():
+    data = request.json
+    message = data['message']
+    for client in connected_clients:
+        client.put(message)
+    return jsonify({"status": "success"}), 200
+
+async def notify_clients(message):
     if connected_clients:
-        message = "update"
         await asyncio.gather(*(client.send(message) for client in connected_clients))
+    print(f"Sent message to {len(connected_clients)} clients")
 
-async def register(websocket):
-    connected_clients.add(websocket)
-    try:
-        await websocket.wait_closed()
-    finally:
-        connected_clients.remove(websocket)
-
-async def websocket_handler(websocket, path):
-    await register(websocket)
-
-def start_websocket_server(port):
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    start_server = websockets.serve(websocket_handler, "0.0.0.0", port + 1)  # WebSocket on different port
-    loop.run_until_complete(start_server)
-    loop.run_forever()
-
-def send_push_notification(fcm_token, title, body):
-    message = messaging.Message(
-        notification=messaging.Notification(
-            title=title,
-            body=body,
-        ),
-        token=fcm_token,
-    )
-    response = messaging.send(message)
-    print('Successfully sent message:', response)
-
-def check_for_changes_and_notify(new_data, sport):
-    global previous_data
-    changes = []
+@app.route('/events')
+def events():
+    def event_stream():
+        messages = queue.Queue()
+        connected_clients.add(messages)
+        try:
+            while True:
+                message = messages.get()
+                yield f'data: {message}\n\n'
+        except GeneratorExit:
+            connected_clients.remove(messages)
     
-    old_data = previous_data.get(sport)
-    if old_data is not None:
-        old_df = pd.DataFrame(old_data)
-        for _, new_row in new_data.iterrows():
-            old_row = old_df[(old_df['PlayerName'] == new_row['PlayerName']) & (old_df['Prop'] == new_row['Prop'])]
-            if not old_row.empty:
-                for column in ['draftkings', 'fanduel', 'mgm', 'betrivers']:
-                    old_value = old_row[column].values[0]
-                    new_value = new_row[column]
-                    if old_value != new_value:
-                        changes.append((new_row['PlayerName'], new_row['Prop'], column, new_value))
-
-    if changes:
-        conn = get_db_connection()
-        cur = conn.cursor()
-        for player_name, prop, column, new_value in changes:
-            cur.execute("SELECT fcm_token FROM user_favorites WHERE player_name = %s AND prop = %s", (player_name, prop))
-            tokens = cur.fetchall()
-            for token in tokens:
-                send_push_notification(token[0], 'Prop Update', f"{player_name} {prop} {column} odds changed to {new_value}")
-        cur.close()
-        conn.close()
-
-    previous_data[sport] = new_data.to_dict(orient='records')
+    return Response(event_stream(), content_type='text/event-stream')
 
 @app.route('/get_historical_data', methods=['GET'])
 def get_historical_data():
@@ -173,16 +130,19 @@ def favorite_prop():
     fcm_token = data['fcm_token']
     sport = data['sport']
     player_name = data['player_name']
-    prop = data['prop']
     over_under = data['over_under']
+    draftkings = data['draftkings']
+    fanduel = data['fanduel']
+    mgm = data['mgm']
+    betrivers = data['betrivers']
 
     conn = get_db_connection()
     cur = conn.cursor()
     try:
         cur.execute('''
-            INSERT INTO user_favorites (user_id, fcm_token, sport, player_name, prop, over_under)
-            VALUES (%s, %s, %s, %s, %s, %s)
-        ''', (user_id, fcm_token, sport, player_name, prop, over_under))
+            INSERT INTO user_favorites (user_id, fcm_token, sport, player_name, over_under, draftkings, fanduel, mgm, betrivers)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+        ''', (user_id, fcm_token, sport, player_name, over_under, draftkings, fanduel, mgm, betrivers))
         conn.commit()
         return jsonify({"status": "success"}), 201
     except Exception as e:
@@ -191,6 +151,7 @@ def favorite_prop():
     finally:
         cur.close()
         conn.close()
+
 
 @app.route('/remove_favorite_prop', methods=['POST'])
 def remove_favorite_prop():
@@ -201,16 +162,19 @@ def remove_favorite_prop():
     user_id = session['user_id']
     sport = data['sport']
     player_name = data['player_name']
-    prop = data['prop']
     over_under = data['over_under']
+    draftkings = data['draftkings']
+    fanduel = data['fanduel']
+    mgm = data['mgm']
+    betrivers = data['betrivers']
 
     conn = get_db_connection()
     cur = conn.cursor()
     try:
         cur.execute('''
             DELETE FROM user_favorites
-            WHERE user_id = %s AND sport = %s AND player_name = %s AND prop = %s AND over_under = %s
-        ''', (user_id, sport, player_name, prop, over_under))
+            WHERE user_id = %s AND sport = %s AND player_name = %s AND over_under = %s AND draftkings = %s AND fanduel = %s AND mgm = %s AND betrivers = %s
+        ''', (user_id, sport, player_name, over_under, draftkings, fanduel, mgm, betrivers))
         conn.commit()
         return jsonify({"status": "success"}), 200
     except Exception as e:
@@ -232,18 +196,19 @@ def get_favorite_props():
     cur = conn.cursor()
     try:
         cur.execute('''
-            SELECT player_name, prop, over_under
+            SELECT player_name, over_under, draftkings, fanduel, mgm, betrivers
             FROM user_favorites
             WHERE user_id = %s AND sport = %s
         ''', (user_id, sport))
         rows = cur.fetchall()
-        favorites = [{'player_name': row[0], 'prop': row[1], 'over_under': row[2]} for row in rows]
+        favorites = [{'player_name': row[0], 'over_under': row[1], 'draftkings': row[2], 'fanduel': row[3], 'mgm': row[4], 'betrivers': row[5]} for row in rows]
         return jsonify(favorites)
     except Exception as e:
         return jsonify({"error": "Error fetching favorite props"}), 500
     finally:
         cur.close()
         conn.close()
+
 
 @app.route('/merged_data', methods=['GET', 'POST'])
 def get_merged_data():
@@ -263,6 +228,43 @@ def get_merged_data():
         return jsonify(merged_data.sort_values(by='fanduel', ascending=True).to_dict(orient='records'))
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+def check_for_changes_and_notify(new_data, sport):
+    global previous_data
+    changes = []
+
+    old_data = previous_data.get(sport)
+    if old_data is not None:
+        old_df = pd.DataFrame(old_data)
+        for _, new_row in new_data.iterrows():
+            old_row = old_df[(old_df['PlayerName'] == new_row['PlayerName']) & (old_df['Over_Under'] == new_row['Over_Under'])]
+            if not old_row.empty:
+                for column in ['draftkings', 'fanduel', 'mgm', 'betrivers']:
+                    old_value = old_row[column].values[0]
+                    new_value = new_row[column]
+                    if old_value != new_value:
+                        changes.append((new_row['PlayerName'], new_row['Over_Under'], column, new_value))
+
+    if changes:
+        conn = get_db_connection()
+        cur = conn.cursor()
+        for player_name, over_under, column, new_value in changes:
+            cur.execute("SELECT user_id, fcm_token FROM user_favorites WHERE player_name = %s AND over_under = %s", (player_name, over_under))
+            users = cur.fetchall()
+            for user in users:
+                email = user[0]
+                message = f"{player_name} {over_under} {column} odds changed to {new_value}"
+                asyncio.run(send_notification_to_user(user[0], message))
+        cur.close()
+        conn.close()
+
+    previous_data[sport] = new_data.to_dict(orient='records')
+
+async def send_notification_to_user(user_id, message):
+    message_json = json.dumps(message)
+    for client in connected_clients:
+        await client.send(message_json)
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -328,5 +330,4 @@ def logout():
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
-    threading.Thread(target=start_websocket_server, args=(port,)).start()
     app.run(debug=True, use_reloader=False, port=port)

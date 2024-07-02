@@ -18,12 +18,12 @@ export default function StatCard({ index, odds, showHistoricalData, sport, image
     fetchToken();
   }, []);
 
-  const isFavorite = favorites[sport]?.includes(odds.PlayerName + odds.Prop + odds.Over_Under);
+  const isFavorite = favorites[sport]?.includes(odds.PlayerName + odds.Over_Under);
 
   const toggleFavorite = async () => {
     const updatedFavorites = isFavorite
-      ? favorites[sport].filter(fav => fav !== odds.PlayerName + odds.Prop + odds.Over_Under)
-      : [...favorites[sport], odds.PlayerName + odds.Prop + odds.Over_Under];
+      ? favorites[sport].filter(fav => fav !== odds.PlayerName + odds.Over_Under)
+      : [...favorites[sport], odds.PlayerName + odds.Over_Under];
 
     setFavorites(prevFavorites => ({ ...prevFavorites, [sport]: updatedFavorites }));
 
@@ -38,8 +38,11 @@ export default function StatCard({ index, odds, showHistoricalData, sport, image
           fcm_token: fcmToken,
           sport,
           player_name: odds.PlayerName,
-          prop: odds.Prop,
           over_under: odds.Over_Under,
+          draftkings: odds.draftkings,
+          fanduel: odds.fanduel,
+          mgm: odds.mgm,
+          betrivers: odds.betrivers
         }),
         credentials: 'include'
       });
