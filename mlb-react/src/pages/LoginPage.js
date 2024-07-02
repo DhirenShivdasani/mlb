@@ -112,7 +112,7 @@ const LoginPage = ({ onLogin }) => {
                 <div className="card w-full bg-base-100 shadow-xl image-full">
                   <div className="card-body p-6">
                     <h2 className="card-title text-2xl font-bold">Real-time Odds</h2>
-                    <figure><img src="/images/real_time_odds.png" alt="Real-time Odds" /></figure>
+                    <figure><img src={`${process.env.PUBLIC_URL}/images/real_time_odds.png`} alt="Real-time Odds" /></figure>
                     <p className="mt-4">Stay updated with real-time odds for various player props. Never miss an opportunity to make informed betting decisions with up-to-the-minute data.</p>
                   </div>
                 </div>
